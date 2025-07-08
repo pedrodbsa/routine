@@ -4,10 +4,10 @@
 
 ### Daily Caloric & Macronutrient Goals
 
-**Total Daily Calories:** 2,200
-**Protein:** 190g (35% of calories, 2.4g/kg bodyweight)
-**Carbohydrates:** 200g (35% of calories, 2.5g/kg bodyweight)
-**Fat:** 65g (25% of calories, 0.8g/kg bodyweight)
+**Total Daily Calories:** 2,000
+**Protein:** 190g (38% of calories, 2.4g/kg bodyweight)
+**Carbohydrates:** 165g (33% of calories, 2.1g/kg bodyweight)
+**Fat:** 60g (27% of calories, 0.75g/kg bodyweight)
 **Fiber:** 30-35g daily
 **Water:** 3.5-4 liters daily
 
@@ -15,8 +15,8 @@
 
 **Post-Workout (12:30):** 200 calories - 25g protein, 25g carbs, 2g fat
 **Lunch (13:00):** 800 calories - 55g protein, 60g carbs, 25g fat
-**Snack (17:00):** 350 calories - 25g protein, 35g carbs, 10g fat
-**Dinner (21:00):** 850 calories - 50g protein, 80g carbs, 28g fat
+**Snack (17:00):** 275 calories - 25g protein, 25g carbs, 8g fat
+**Dinner (21:00):** 725 calories - 50g protein, 55g carbs, 25g fat
 
 ## DETAILED MEAL PLANS
 
@@ -47,73 +47,73 @@
 -   Avocado: 1/4 medium (60 cal, 1g protein, 3g carbs, 6g fat)
 -   **Total: 790 cal, 72g protein, 55g carbs, 24g fat**
 
-**Option 2: Salmon & Sweet Potato**
+**Option 2: Salmon & Potatoes**
 
 -   Baked salmon fillet: 180g (350 cal, 50g protein, 20g fat)
--   Roasted sweet potato: 150g (130 cal, 2g protein, 30g carbs)
+-   Roasted baby potatoes: 200g (160 cal, 4g protein, 36g carbs)
 -   Green salad with mixed vegetables: 150g (30 cal, 2g protein, 6g carbs)
 -   Olive oil dressing: 1 tbsp (120 cal, 14g fat)
 -   Walnuts: 15g (100 cal, 2g protein, 2g carbs, 10g fat)
--   **Total: 730 cal, 56g protein, 38g carbs, 44g fat**
+-   **Total: 760 cal, 58g protein, 44g carbs, 44g fat**
 
-**Option 3: Lean Beef & Rice**
+**Option 3: Lean Beef & White Rice**
 
 -   Lean ground beef (93/7): 150g (250 cal, 45g protein, 8g fat)
--   Brown rice (cooked): 200g (220 cal, 5g protein, 45g carbs, 2g fat)
+-   White rice (cooked): 200g (260 cal, 5g protein, 58g carbs, 0g fat)
 -   Steamed broccoli: 200g (55 cal, 6g protein, 11g carbs)
 -   Almonds: 20g (120 cal, 4g protein, 2g carbs, 11g fat)
 -   Cooking oil: 1 tsp (40 cal, 4g fat)
--   **Total: 685 cal, 60g protein, 58g carbs, 25g fat**
+-   **Total: 725 cal, 60g protein, 71g carbs, 23g fat**
 
-### AFTERNOON SNACK (17:00 PM) - 350 Calories
+### AFTERNOON SNACK (17:00 PM) - 275 Calories
 
-**Option 1: Greek Yogurt Power**
+**Option 1: Greek Yogurt Plus**
 
--   Greek yogurt (2% fat): 200g (150 cal, 20g protein, 8g carbs, 4g fat)
--   Mixed nuts (almonds/walnuts): 20g (130 cal, 4g protein, 2g carbs, 12g fat)
--   Honey: 1 tbsp (60 cal, 16g carbs)
--   **Total: 340 cal, 24g protein, 26g carbs, 16g fat**
+-   Greek yogurt (0% fat): 200g (130 cal, 23g protein, 9g carbs, 0g fat)
+-   Mixed nuts (almonds/walnuts): 15g (100 cal, 4g protein, 2g carbs, 9g fat)
+-   Berries (blueberries/strawberries): 100g (50 cal, 1g protein, 12g carbs, 0g fat)
+-   **Total: 280 cal, 28g protein, 23g carbs, 9g fat**
 
-**Option 2: Protein Shake Plus**
+**Option 2: Protein Shake Standard**
 
 -   Whey protein powder: 25g (100 cal, 25g protein)
--   Medium banana: 1 whole (100 cal, 25g carbs)
--   Almond butter: 1 tbsp (95 cal, 4g protein, 3g carbs, 9g fat)
+-   Medium banana: 100g (90 cal, 23g carbs)
+-   Almond butter: 1/2 tbsp (50 cal, 2g protein, 1g carbs, 4g fat)
 -   Unsweetened almond milk: 250ml (40 cal, 1g protein, 2g carbs, 3g fat)
--   **Total: 335 cal, 30g protein, 30g carbs, 12g fat**
+-   **Total: 280 cal, 28g protein, 26g carbs, 7g fat**
 
 **Option 3: Cottage Cheese Bowl**
 
--   Cottage cheese (2% fat): 150g (180 cal, 25g protein, 8g carbs, 5g fat)
+-   Cottage cheese (0% fat): 150g (120 cal, 24g protein, 6g carbs, 0g fat)
 -   Apple slices: 1 medium (80 cal, 20g carbs)
--   Walnuts: 15g (100 cal, 2g protein, 2g carbs, 10g fat)
--   **Total: 360 cal, 27g protein, 30g carbs, 15g fat**
+-   Walnuts: 10g (70 cal, 2g protein, 1g carbs, 7g fat)
+-   **Total: 270 cal, 26g protein, 27g carbs, 7g fat**
 
-### DINNER (21:00 PM) - 850 Calories
+### DINNER (21:00 PM) - 725 Calories
 
-**Option 1: Steak & Vegetables**
+**Option 1: Lean Steak & Potatoes**
 
 -   Lean sirloin steak: 180g (400 cal, 55g protein, 16g fat)
--   Roasted sweet potato: 200g (180 cal, 4g protein, 40g carbs)
--   Roasted mixed vegetables (asparagus, zucchini, bell peppers): 250g (70 cal, 4g protein, 14g carbs)
--   Olive oil for cooking: 1.5 tbsp (180 cal, 20g fat)
--   **Total: 830 cal, 63g protein, 54g carbs, 36g fat**
+-   Roasted baby potatoes: 200g (160 cal, 4g protein, 36g carbs)
+-   Roasted mixed vegetables (asparagus, zucchini, bell peppers): 300g (85 cal, 5g protein, 17g carbs)
+-   Olive oil for cooking: 1 tbsp (120 cal, 14g fat)
+-   **Total: 765 cal, 64g protein, 53g carbs, 30g fat**
 
-**Option 2: Salmon Family Meal**
+**Option 2: Salmon & Quinoa**
 
--   Grilled salmon: 200g (400 cal, 56g protein, 18g fat)
--   Quinoa pilaf: 100g dry weight (350 cal, 12g protein, 65g carbs, 6g fat)
--   Steamed broccoli: 200g (55 cal, 6g protein, 11g carbs)
--   Olive oil: 1 tbsp (120 cal, 14g fat)
--   **Total: 925 cal, 74g protein, 76g carbs, 38g fat**
+-   Grilled salmon: 180g (360 cal, 50g protein, 16g fat)
+-   Quinoa: 65g dry weight (230 cal, 8g protein, 42g carbs, 4g fat)
+-   Steamed broccoli: 250g (70 cal, 8g protein, 14g carbs)
+-   Olive oil: 1/2 tbsp (60 cal, 7g fat)
+-   **Total: 720 cal, 66g protein, 56g carbs, 27g fat**
 
-**Option 3: Chicken Thigh Comfort**
+**Option 3: Chicken Breast & White Rice**
 
--   Chicken thighs (skinless): 200g (350 cal, 50g protein, 15g fat)
--   Brown rice: 80g dry weight (280 cal, 6g protein, 58g carbs, 2g fat)
--   Sautéed spinach: 200g (50 cal, 6g protein, 8g carbs)
+-   Chicken breast (skinless): 200g (330 cal, 62g protein, 7g fat)
+-   White rice: 65g dry weight (230 cal, 5g protein, 52g carbs, 0g fat)
+-   Sautéed spinach: 250g (65 cal, 8g protein, 10g carbs)
 -   Coconut oil for cooking: 1 tbsp (120 cal, 14g fat)
--   **Total: 800 cal, 62g protein, 66g carbs, 31g fat**
+-   **Total: 745 cal, 75g protein, 62g carbs, 21g fat**
 
 ## MEAL PREPARATION STRATEGIES
 
@@ -235,14 +235,14 @@
 
 **Tier 1 (Primary Sources):**
 
--   Sweet potatoes, quinoa, brown rice, oats
+-   White rice, potatoes, quinoa, oats
 -   Fresh fruits (especially post-workout)
 -   Vegetables (unlimited leafy greens)
 
 **Tier 2 (Moderate Use):**
 
--   Whole grain bread and pasta
--   White rice (post-workout timing only)
+-   Sweet potatoes, whole grain bread and pasta
+-   Brown rice
 -   Legumes and beans
 
 **Tier 3 (Limited Use):**
@@ -353,8 +353,9 @@
 
 **Step 1:** Reduce total calories by 100-150
 
--   Remove 25-30g carbohydrates (100-120 calories)
--   Maintain protein and fat intake
+-   Remove 20-25g carbohydrates (80-100 calories)
+-   Reduce fat by 5-10g (45-90 calories)
+-   Maintain protein intake
 
 **Step 2:** Add metabolic flexibility
 

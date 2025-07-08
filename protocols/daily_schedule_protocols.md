@@ -35,8 +35,8 @@
 ### Training Schedule Overview
 
 -   **Monday:** Padel practice (10:30-12:30) + daily run
--   **Tuesday:** Upper Body B (Back/Biceps) + daily run
--   **Wednesday:** Upper Body A (Chest/Triceps) + daily run
+-   **Tuesday:** Upper Body A (Chest/Triceps) + daily run
+-   **Wednesday:** Lower Body (Maintenance/Hormonal) + daily run
 -   **Thursday:** Upper Body B (Back/Biceps) + daily run
 -   **Friday:** Upper Body A (Chest/Triceps) + daily run
 -   **Saturday:** Optional padel/complete rest + daily run
@@ -109,14 +109,20 @@
 -   Immediate post-workout nutrition optimizes recovery
 -   Fits family schedule constraints perfectly
 
-### Upper Body Focus Rationale
+### Training Split Rationale
 
-**Why Not Lower Body:**
+**Upper Body Focus (2 sessions/week each):**
 
--   Daily running provides sufficient leg stimulation
--   Legs develop quickly (user preference)
--   Time efficiency for desired physique outcome
--   Allows 4 focused upper body sessions weekly
+-   Primary physique goal emphasis
+-   Balanced push/pull development
+-   Adequate recovery between sessions
+
+**Lower Body Integration (1 session/week):**
+
+-   Hormonal optimization for upper body growth
+-   Strength maintenance without excessive size gains
+-   Heavy compound movements for testosterone/GH release
+-   Low volume, high intensity approach
 
 ## SLEEP OPTIMIZATION SCHEDULE
 

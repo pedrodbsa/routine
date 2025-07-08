@@ -1,6 +1,6 @@
 # COMPLETE EXERCISE PROGRAMS & PROGRESSIONS
 
-## UPPER BODY A: CHEST & TRICEPS FOCUS (Wednesday/Friday)
+## UPPER BODY A: CHEST & TRICEPS FOCUS (Tuesday/Friday)
 
 ### Primary Workout Structure (45-60 minutes)
 **Warm-up (5-10 minutes):**
@@ -58,7 +58,7 @@
 - Triceps overhead stretch: 30 seconds each arm
 - Cross-body shoulder stretch: 30 seconds each arm
 
-## UPPER BODY B: BACK & BICEPS FOCUS (Tuesday/Thursday)
+## UPPER BODY B: BACK & BICEPS FOCUS (Thursday)
 
 ### Primary Workout Structure (45-60 minutes)
 **Warm-up (5-10 minutes):**
@@ -115,6 +115,66 @@
 - Lat stretch against wall: 30 seconds each arm
 - Biceps doorway stretch: 30 seconds each arm
 - Upper trap stretch: 30 seconds each side
+
+## LOWER BODY: MAINTENANCE & HORMONAL OPTIMIZATION (Wednesday)
+
+### Primary Workout Structure (40-50 minutes)
+**Purpose:** Maximize hormonal benefits while maintaining leg strength without excessive size gains
+
+**Warm-up (5-10 minutes):**
+- Leg swings: 10 forward/back, 10 side-to-side each leg
+- Bodyweight squats: 2 sets × 10 reps
+- Walking lunges: 10 each leg
+- Hip circles: 10 each direction
+
+### Main Exercises (Strength Focus - Low Volume, High Intensity)
+
+**1. Barbell Back Squats**
+- **Sets:** 4 sets × 3-5 reps
+- **Rest:** 3-4 minutes between sets
+- **Focus:** Maximum hormonal response, strength maintenance
+- **Form:** Full depth, explosive up, controlled descent
+- **Weight:** 85-90% of 1RM for hormonal benefits
+
+**2. Romanian Deadlifts**
+- **Sets:** 3 sets × 5-6 reps
+- **Rest:** 2-3 minutes between sets
+- **Focus:** Hamstring/glute strength, hormone optimization
+- **Form:** Hip hinge pattern, feel stretch in hamstrings
+- **Weight:** Heavy but controlled
+
+**3. Bulgarian Split Squats**
+- **Sets:** 2 sets × 8-10 reps each leg
+- **Rest:** 90 seconds between sets
+- **Focus:** Unilateral strength, stability
+- **Form:** Controlled tempo, full range of motion
+- **Weight:** Bodyweight or light dumbbells
+
+**4. Walking Lunges**
+- **Sets:** 2 sets × 12 steps each leg
+- **Rest:** 60 seconds between sets
+- **Focus:** Functional movement, light metabolic stress
+- **Form:** Step into lunge, drive through heel
+- **Weight:** Bodyweight or light dumbbells
+
+**5. Calf Raises**
+- **Sets:** 3 sets × 15-20 reps
+- **Rest:** 60 seconds between sets
+- **Focus:** Lower leg strength and definition
+- **Form:** Full range of motion, pause at top
+- **Weight:** Bodyweight or light added weight
+
+### Cool-down (5 minutes)
+- Quad stretch: 30 seconds each leg
+- Hamstring stretch: 30 seconds each leg
+- Calf stretch: 30 seconds each leg
+- Hip flexor stretch: 30 seconds each leg
+
+**Key Protocol Notes:**
+- **Low Volume:** Prevents excessive leg growth
+- **High Intensity:** Maximizes hormonal response
+- **Compound Focus:** Squats and deadlifts for maximum testosterone/GH release
+- **Short Rest:** Maintains efficiency while allowing proper recovery
 
 ## PROGRESSION PROTOCOLS
 
