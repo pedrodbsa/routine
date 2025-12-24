@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__time__get_current_time",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(ls:*)",
+      "Bash(git --version)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(sed:*)",
+      "Bash(for:*)",
+      "Bash(do echo \"Updating $file\")",
+      "Bash(done)",
+      "Bash(do echo \"Processing $file\")",
+      "mcp__mcp-sequentialthinking-tools__sequentialthinking_tools"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "mcp-sequentialthinking-tools",
+    "time"
+  ]
+}
