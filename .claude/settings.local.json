@@ -14,12 +14,39 @@
       "Bash(do echo \"Updating $file\")",
       "Bash(done)",
       "Bash(do echo \"Processing $file\")",
-      "mcp__mcp-sequentialthinking-tools__sequentialthinking_tools"
+      "mcp__mcp-sequentialthinking-tools__sequentialthinking_tools",
+      "mcp__garmin__get_sleep_summary",
+      "mcp__garmin__get_activities_by_date",
+      "mcp__garmin__get_race_predictions",
+      "mcp__garmin__get_training_status",
+      "mcp__garmin__get_training_readiness",
+      "mcp__garmin__get_max_metrics",
+      "Bash(do echo \"DATE: $date\")",
+      "mcp__plugin_serena_serena__write_memory",
+      "mcp__garmin__get_rhr_day",
+      "mcp__garmin__get_hrv_data",
+      "mcp__garmin__get_user_profile",
+      "mcp__garmin__get_body_composition",
+      "mcp__garmin__get_weigh_ins",
+      "mcp__plugin_serena_serena__list_dir",
+      "mcp__plugin_serena_serena__activate_project",
+      "mcp__garmin__get_endurance_score",
+      "mcp__garmin__get_hill_score",
+      "mcp__garmin__get_fitnessage_data",
+      "mcp__garmin__get_stats",
+      "mcp__garmin__get_user_summary",
+      "mcp__garmin__get_activity",
+      "mcp__garmin__get_training_effect",
+      "WebSearch",
+      "mcp__garmin__get_stats_and_body",
+      "mcp__serena__write_memory",
+      "Bash(del \"X:\\\\pedrodbsa\\\\routine\\\\protocols\\\\running.md.tmp.5992.1770725693651\")"
     ]
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "mcp-sequentialthinking-tools",
-    "time"
+    "time",
+    "garmin"
   ]
 }

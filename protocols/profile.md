@@ -10,21 +10,20 @@
 
 ## GOALS
 
-### Half Marathon (March 29, 2025)
+### Primary: Half Marathon (March 29, 2026)
 - **Target:** Sub-2h (5:40/km pace)
-- **Training:** Garmin adaptive plan
+- **Training:** Garmin Coach adaptive plan
+- **Tune-up:** 10K race March 1, 2026 (fitness benchmark)
+- **Current 10K:** 52:12 (5:13/km) - on track
 
-### Body Recomposition
-- **Target:** 72-74kg at 18-20% body fat
-- **Timeline:** Race prep phase
+### Secondary: Body Recomposition
+- **Current:** 78.5kg at 30.5% body fat
+- **Phase 1 (race prep):** 74-76kg at 24-26% body fat (maintain muscle during deficit)
+- **Phase 2 (post-race):** 72-74kg at 18-20% body fat (lean mass gain focus)
 
-### Hyrox Preparation
-- **Current:** Foundation building
-- **Timeline:** Post-race competition entry
+## PRIORITIES (Race Prep Phase)
 
-## PRIORITIES
-
-1. Running performance
-2. Fat loss (caloric deficit)
-3. Hyrox station skills
-4. Strength maintenance
+1. **Running performance** - sub-2h half marathon achievement
+2. **Muscle retention** - 3x/week strength training at maintenance intensity
+3. **Fat loss** - modest deficit (2000 cal), preserve training quality
+4. **Recovery optimization** - sleep quality, caffeine management, HR monitoring

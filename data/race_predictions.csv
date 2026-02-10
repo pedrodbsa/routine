@@ -1,0 +1,5 @@
+date,pred_5k_seconds,pred_5k_time,pred_10k_seconds,pred_10k_time,pred_half_marathon_seconds,pred_half_marathon_time,pred_marathon_seconds,pred_marathon_time
+2026-02-02,1332,22:12,2842,47:22,6471,1:47:51,14452,4:00:52
+2026-02-03,1334,22:14,2846,47:26,6480,1:48:00,14469,4:01:09
+2026-02-04,1332,22:12,2843,47:23,6474,1:47:54,14460,4:01:00
+2026-02-10,1339,22:19,2857,47:37,6507,1:48:27,14527,4:02:07

@@ -1,0 +1,20 @@
+{
+	"servers": {
+		"garmin": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"--python",
+				"3.12",
+				"--from",
+				"git+https://github.com/Taxuspt/garmin_mcp",
+				"garmin-mcp"
+			],
+			"env": {
+				"GARMIN_EMAIL": "pedrodbsa@gmail.com",
+				"GARMIN_PASSWORD": "k3s^jT@nPjUYv6"
+			}
+		}
+	},
+	"inputs": []
+}

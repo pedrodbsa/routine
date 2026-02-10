@@ -1,0 +1,558 @@
+# RUNNING PROTOCOL
+
+## ATHLETE PROFILE
+
+### Current Stats (January 2026)
+
+- **Age:** 39 (DOB: March 1986)
+- **Resting HR:** 61 bpm
+- **HRV:** 47-54 ms (weekly average)
+- **VO2max:** 49 (Garmin estimate)
+- **Smoking:** 1 year smoke-free (quit early 2025)
+- **Recent 10K:** 52:12 (5:13/km)
+
+### Physiological Context
+
+**Post-Smoking Recovery (Critical Factor)**
+Even 1 year smoke-free, cardiovascular adaptations continue:
+
+- Stroke volume optimization takes 2-3 years of consistent aerobic training
+- Heart compensates for lower stroke volume by beating more frequently
+- Lung capillary density and oxygen transfer improve gradually over 1-5 years
+
+**Result:** You achieve similar race times to experienced runners through raw effort (higher HR) rather than efficiency. Your aerobic base is underdeveloped relative to your overall fitness.
+
+---
+
+## HR ZONES
+
+### MAF-Based Zones (Recommended)
+
+Using Maffetone formula (180 - age = 141):
+
+| Zone | Name         | HR Range    | Purpose                             |
+| ---- | ------------ | ----------- | ----------------------------------- |
+| 1    | Recovery     | <130 bpm    | Active recovery, walk breaks        |
+| 2    | Aerobic Base | 130-141 bpm | Easy runs, long runs, base building |
+| 3    | Tempo        | 142-155 bpm | Threshold work, tempo runs          |
+| 4    | VO2max       | 156-170 bpm | Intervals, speed work               |
+| 5    | Anaerobic    | >170 bpm    | Sprints, race finish kicks          |
+
+### Key Insight: Your "Easy" Isn't Easy
+
+- Current easy runs: 150-155 bpm average
+- True aerobic ceiling (MAF): 141 bpm
+- **You're running 10-15 bpm above your aerobic threshold on "easy" days**
+
+This chronic moderate-intensity training:
+
+- Prevents aerobic base development
+- Accumulates fatigue
+- Explains inconsistent recovery
+- Limits long-term performance gains
+
+### Two Filters for "Easy"
+
+Use either of these to ensure Zone 1 compliance:
+
+| Method                | Formula       | Your Target | Best For                   |
+| --------------------- | ------------- | ----------- | -------------------------- |
+| **MAF (180 Formula)** | 180 - age     | 141 bpm     | Primary training guidance  |
+| **70% Max HR**        | Max HR × 0.70 | ~126 bpm    | Conservative recovery days |
+
+The 70% rule provides a more conservative ceiling for pure recovery runs. If you find yourself gasping or unable to hold a full conversation, you've exited Zone 1.
+
+---
+
+## NEUROMUSCULAR & WARM-UP ROUTINE
+
+**Priming for Performance & Injury Prevention**
+
+As a masters athlete (35+), muscle power declines slower than tendon elasticity. This routine targets stiffness (elastic return) and running economy before every run.
+
+**The "Daily 5" Warm-Up (5 Minutes)**
+
+Perform 30 seconds of each before starting your GPS watch:
+
+1. **Pogo Hops:** 30s. Double-leg hops on spot, focus on minimal ground contact time. "Bounce", don't "jump".
+2. **A-Skips:** 30s. Rhythmic skipping, knee drive to 90 degrees, coordinate arm swing.
+3. **Leg Swings (Front/Back):** 30s per leg. Dynamic range of motion.
+4. **Leg Swings (Lateral):** 30s per leg. Hip inductor/abductor mobility.
+5. **Walking Lunges:** 30s. Open hip flexors, activate glutes.
+
+**Why Plyometrics?**
+Running is a series of single-leg hops. Stiffer tendons return more "free energy" from the ground. This improves running economy without cardiovascular cost.
+
+---
+
+## PHYSIOLOGICAL FRAMEWORK
+
+### Lactate: Fuel, Not Waste
+
+Modern sports science has recharacterized lactate. It's not a waste product causing soreness—it's a valuable fuel source and signaling molecule.
+
+**The Threshold Concept:**
+
+- At any pace, the body produces and clears lactate simultaneously
+- The "threshold" is where production equals clearance (~4.0 mmol/L traditionally)
+- Training just below threshold (2.3-3.0 mmol/L) upregulates MCT1/MCT4 transporters
+- These transporters shuttle lactate from working muscles to be used as fuel by the heart and non-working muscles
+
+**Why Sub-Threshold Beats Traditional Tempo:**
+
+Training at 4.0 mmol/L is taxing—it's the point of metabolic failure. The Norwegian model discovered that training at 2.3-3.0 mmol/L allows 2x more quality volume without disproportionate fatigue. More volume at slightly lower intensity = greater total adaptation.
+
+### Energy System Integration
+
+| System     | Duration  | Primary Fuel  | Training Method                |
+| ---------- | --------- | ------------- | ------------------------------ |
+| Alactic    | 0-10 sec  | ATP-CP        | Hill sprints, strides          |
+| Glycolytic | 10-90 sec | Glucose       | Short repeats, VO2max work     |
+| Aerobic    | >90 sec   | Fat + Glucose | Easy runs, threshold intervals |
+
+Your half marathon will be 95%+ aerobic. The base-building phase develops this system. The race-specific phase teaches your body to clear lactate at race pace.
+
+### Muscle Fiber Recruitment
+
+- **Type I (Slow-twitch):** Primary endurance fibers, trained by easy volume
+- **Type IIA (Fast-twitch Oxidative):** Recruited as Type I fatigue, trained by long runs and threshold work
+- **Type IIB (Fast-twitch Glycolytic):** Speed/power, trained by hills and short sprints
+
+Long runs (90+ min) serve a hidden purpose: once Type I fibers deplete glycogen, the body recruits Type II fibers for endurance work, effectively "endurance-training" your fast-twitch fibers.
+
+---
+
+## TRAINING PHILOSOPHY
+
+### Core Framework: Polarized Base → Norwegian Race-Specific
+
+Training is divided into two distinct phases with different intensity distributions:
+
+**Phase 1: MAF Base Building (Current → Feb 22)**
+
+- Cap ALL easy runs at 140 bpm (strict)
+- Accept slower paces (7:00-7:30/km initially)
+- Expect pace to improve at same HR over time
+- This builds the aerobic engine you're missing post-smoking
+
+**Phase 2: Norwegian Sub-Threshold (Feb 23 → Race)**
+
+- Replace traditional tempo runs with sub-threshold intervals
+- Target HR: 145-155 bpm (just under lactate threshold)
+- Interval format allows more total threshold volume with less fatigue
+- Use "Norwegian Singles" method (see Workout Types below)
+
+### The Gray Zone Problem (Critical Insight)
+
+Research identifies three metabolic zones bounded by two lactate thresholds:
+
+| Zone | Lactate        | HR Range    | Training Effect                                           |
+| ---- | -------------- | ----------- | --------------------------------------------------------- |
+| 1    | <2.0 mmol/L    | <141 bpm    | Aerobic development, fat adaptation                       |
+| 2    | 2.0-4.0 mmol/L | 141-165 bpm | **"Black hole" - too hard to recover, too easy to adapt** |
+| 3    | >4.0 mmol/L    | >165 bpm    | VO2max development, anaerobic capacity                    |
+
+**Your current easy runs (150-155 bpm) fall squarely in Zone 2.** This chronic moderate-intensity training:
+
+- Accumulates fatigue without proportional adaptation
+- Prevents true aerobic base development
+- Is the most common mistake recreational runners make
+
+**Solution:** Strict polarization—easy runs truly easy (<141 bpm), hard work truly hard (intervals >165 bpm or sub-threshold clusters at 145-155 bpm).
+
+### Talk Test Standard
+
+- **Zone 1 (Easy):** Full conversation without pausing to breathe
+- **Zone 2 (Gray Zone):** Can talk in short phrases—**avoid this zone on easy days**
+- **Zone 3 (Hard):** Single words only, or silence
+
+### Coaching Approach
+
+Claude leads all training decisions based on:
+
+- Your physiological profile and post-smoking recovery context
+- Recent Garmin data (HR, pace, sleep, HRV trends)
+- Evidence-based methodology (Norwegian/Polarized hybrid)
+- Race schedule and periodization requirements
+
+Garmin suggestions may inform decisions when useful, but are not authoritative—their algorithms don't account for individual context or the specific methodology we're following.
+
+---
+
+## RACE SCHEDULE 2026
+
+| Date       | Distance | Type | Race                        | Role       | Goal                            |
+| ---------- | -------- | ---- | --------------------------- | ---------- | ------------------------------- |
+| 01/03/2026 | 10K      | Road | 4 Estações Coimbra          | Tune-up    | Fitness benchmark, race on feel |
+| 29/03/2026 | 21K      | Road | **Meia Maratona de Fátima** | **A-Race** | Sub-2:00:00 (stretch: sub-1:50) |
+
+**Race Priority Note:** Only the Half Marathon (Mar 29) requires dedicated preparation. The 10K (Mar 1) now serves as a tune-up race entering the HM-specific phase—no taper, but don't arrive exhausted. Reduce volume 2-3 days before, race on feel.
+
+### Periodization Strategy (4-Phase Model for 10K/HM)
+
+The 12-16 week cycle prevents plateaus and builds race-specific fitness:
+
+| Phase        | Weeks | Focus                              | Key Sessions                          |
+| ------------ | ----- | ---------------------------------- | ------------------------------------- |
+| **Base**     | 1-6   | Mileage + Easy pace                | All <141 bpm, build injury resistance |
+| **Strength** | 7-10  | Hill work + neuromuscular power    | 8-10×200m uphill, quad/ankle strength |
+| **Specific** | 11-14 | Race-pace integration              | Time trials, Threshold Sandwiches     |
+| **Taper**    | 15-16 | Volume -20-30%, maintain intensity | Sharp race-pace efforts               |
+
+**Current Schedule Application:**
+
+**Now → Feb 22 (Base Phase)**
+
+- Strict MAF base building (<141 bpm on all easy runs)
+- No race interruption — full uninterrupted aerobic block
+- Perform MAF Test week of Feb 16 to establish baseline
+- Build long run toward 90 min
+
+**Feb 23 → Feb 28 (Transition/Pre-10K)**
+
+- Short transition block introducing quality work
+- 1-2 sub-threshold sessions (Norwegian Singles introduction)
+- Introduce hill repetitions: 6-8×200m uphill, walk back recovery
+- Reduce volume Thu-Sat before 10K (don't arrive fatigued)
+
+**Mar 1: 10K Race (4 Estações Coimbra)**
+
+- Fitness benchmark entering specific phase
+- Race on feel — no taper, but well-rested from reduced volume
+- Use result to recalibrate HM pace predictions
+
+**Mar 2 → Mar 22 (Specific Phase)**
+
+- 3-week race-specific block
+- HM-specific sessions: 4-6×2000m at goal HM pace
+- Norwegian Singles: 2-3 sub-T sessions/week
+- Integration workouts mimicking race conditions
+- Peak long run (19-24 km) around March 15
+- Add X-element (strides or hill sprints) 1x/week
+- Total weekly volume: 45-55 km
+
+**Mar 23 → Mar 29 (Taper)**
+
+- Reduce volume 20-30%
+- Maintain 1-2 sub-threshold sessions (reduced duration)
+- Final tune-up: 2-3×1K at HM pace, 3 days before race
+- Prioritize sleep and carb loading
+
+**Mar 30+ (Recovery & Maintenance)**
+
+- Recovery week post-HM (easy only)
+- Gradual return to volume over 2 weeks
+- Maintain fitness with 2 quality sessions/week
+- Reassess goals and plan next training cycle
+
+### Predicted Race Performances (Current Fitness)
+
+Based on VO2max 49 and recent training:
+
+| Distance      | Conservative | Optimistic |
+| ------------- | ------------ | ---------- |
+| 5K            | 24:30        | 23:30      |
+| 10K           | 51:00        | 49:00      |
+| Half Marathon | 1:55:00      | 1:50:00    |
+| Marathon      | 4:10:00      | 4:00:00    |
+
+---
+
+## WORKOUT TYPES
+
+### Easy/Base Runs
+
+- **HR Target:** 130-140 bpm (strict ceiling—no exceptions)
+- **Pace:** Whatever keeps HR in zone (likely 6:30-7:30/km initially)
+- **Duration:** 30-60 minutes
+- **Frequency:** 3-4x/week
+- **Purpose:** Aerobic base development, recovery, lactate transporter upregulation
+
+### Long Runs
+
+- **HR Target:** 130-145 bpm (allow slight HR drift in final third)
+- **Pace:** Easy + patience
+- **Frequency:** 1x/week (typically Sunday)
+- **Purpose:** Endurance, fat adaptation, Type II fiber endurance recruitment
+
+**Distance-Specific Duration:**
+
+| Target  | Duration   | Peak Long Run          | Notes                                    |
+| ------- | ---------- | ---------------------- | ---------------------------------------- |
+| **10K** | 60-90 min  | 90 min                 | Sufficient aerobic engine for 10K        |
+| **HM**  | 60-120 min | 19-24 km (100-120 min) | Only need 16 km (10 mi) 1-2× before race |
+
+### Sub-Threshold Intervals (Norwegian Singles Method)
+
+The Norwegian model found that training at 2.3-3.0 mmol/L lactate (just below threshold) yields more adaptations than traditional tempo work at 4.0 mmol/L. Key insight: intervals with mini-recoveries allow more total volume at threshold than continuous runs.
+
+**Distance-Specific Sessions:**
+
+| Target  | Structure              | Pace Target                              | Recovery | Purpose                           |
+| ------- | ---------------------- | ---------------------------------------- | -------- | --------------------------------- |
+| **10K** | 8-12×1000m             | 10-mile/15K pace (5-10s slower than 10K) | 60 sec   | Threshold at race-specific effort |
+| **HM**  | 4-6×2000m (or 6-8 min) | Goal HM pace                             | 60 sec   | Sustained threshold volume        |
+
+**General Weekly Session Types (Race-Specific Phase):**
+
+| Session   | Structure    | HR Target   | Recovery  | Purpose                       |
+| --------- | ------------ | ----------- | --------- | ----------------------------- |
+| **Long**  | 3×10 min     | 145-152 bpm | 60-90 sec | Threshold volume accumulation |
+| **Short** | 8-10×3 min   | 148-155 bpm | 45-60 sec | Lactate clearance efficiency  |
+| **Micro** | 12-15×90 sec | 150-158 bpm | 30-45 sec | Speed at threshold, turnover  |
+
+**Execution Guidelines:**
+
+- Stay strictly below "straining" or gasping—target "controlled discomfort"
+- If breathing becomes labored, you've exceeded threshold—slow down
+- Short recoveries prevent full lactate clearance, teaching the body to run on lactate
+- All sessions include 15 min easy warm-up and cool-down
+
+**Sample Norwegian Singles Week (Race Phase):**
+
+- Tuesday: Sub-T Long (3×10 min @ threshold)
+- Thursday: Sub-T Short (10×3 min @ threshold)
+- Saturday: Sub-T Micro (15×90 sec @ threshold)
+- Other days: Easy runs at <140 bpm or rest
+
+### Traditional Tempo Runs (Alternative)
+
+- **HR Target:** 155-165 bpm
+- **Pace:** 5:20-5:40/km
+- **Duration:** 20-40 minutes continuous
+- **Frequency:** Can substitute for one sub-T session if preferred
+- **Note:** Norwegian intervals are generally superior for adaptation-to-fatigue ratio
+
+### VO2max Intervals
+
+- **HR Target:** 170-180 bpm during work, <140 during recovery
+- **Pace:** 4:50-5:10/km
+- **Structure:** 400m-1600m repeats with equal or shorter recovery
+- **Frequency:** 1x/week during race-specific phase (replaces one sub-T session)
+- **Purpose:** VO2max development, anaerobic capacity
+
+**10K-Specific Sequencing:**
+
+- Early phases: Short, fast intervals (200m-400m) to improve running economy
+- Later phases: Longer VO2max intervals (800m-1200m) closer to race day
+
+**HM-Specific Addition:**
+
+- Include "endurance pace" runs: faster than easy, slower than marathon pace
+- Builds musculoskeletal durability for 13.1 miles without threshold fatigue
+
+### X-Element Sessions (Neuromuscular)
+
+After weeks of threshold focus, add variety to prevent plateau:
+
+- **Hill Sprints:** 6-8×10-15 sec max effort uphill, full recovery walk back
+- **Strides:** 6-8×20 sec accelerations at end of easy runs
+- **Short Repeats:** 6-8×200m at mile pace with full recovery
+
+**Purpose:** Maintain neuromuscular power and speed that pure aerobic training neglects. Add 1x/week during final 4 weeks before race.
+
+---
+
+## WEEKLY VOLUME GUIDELINES
+
+### Base Building Phase (Current)
+
+- **Total weekly distance:** 35-45 km
+- **Total weekly time:** 4-5 hours
+- **Easy volume:** 100% at <141 bpm (strict polarization)
+- **Quality volume:** 0% (aerobic base only)
+- **Long run:** 60-90 min easy
+
+### Norwegian Race-Specific Phase
+
+- **Total weekly distance:** 45-55 km
+- **Total weekly time:** 5-6 hours
+- **Easy volume:** 75-80% at <141 bpm
+- **Sub-threshold volume:** 15-20% (3 sessions/week totaling 25-35 min of intervals)
+- **VO2max volume:** 0-5% (optional, 1 session/week in peak block)
+- **Long run:** 90-120 min, can include HM-pace segments
+
+### Intensity Distribution Comparison
+
+| Model     | Zone 1 (<LT1) | Zone 2 (LT1-LT2) | Zone 3 (>LT2) | Best For                   |
+| --------- | ------------- | ---------------- | ------------- | -------------------------- |
+| Polarized | 80%           | 0%               | 20%           | Burnout recovery, plateaus |
+| Norwegian | 75-80%        | 15-20%           | 5%            | Race-specific HM/Marathon  |
+| Pyramidal | 75%           | 15-20%           | 5-10%         | High-volume elite training |
+| Your Base | 100%          | 0%               | 0%            | Aerobic development (now)  |
+| Your Race | 75-80%        | 15-20%           | 0-5%          | HM-specific (Mar 2+)       |
+
+**10K/HM vs Marathon Intensity:**
+
+10K and HM training requires more frequent visits to "Zone X" (moderate intensity) than marathon training:
+
+- **10K:** Higher concentration of speed work—short intervals (200-400m) early, VO2max (800-1200m) later
+- **HM:** Premium on "endurance pace" runs—faster than easy, slower than MP—for musculoskeletal durability
+- **Marathon:** More polarized distribution, longer threshold sessions, fewer high-end intervals
+
+**Key Principle:** The Norwegian model adds threshold volume that polarized avoids, but crucially keeps it as intervals at sub-threshold intensity (2.3-3.0 mmol/L), not continuous tempo at threshold (4.0 mmol/L). This gets the benefits of threshold work with the recovery profile of polarized training.
+
+---
+
+## MONITORING & METRICS
+
+### Daily Checks
+
+- Resting HR (track trends, not single days)
+- Sleep score and body battery
+- Subjective fatigue (1-10 scale)
+
+### Weekly Analysis
+
+- Average easy run HR at given pace (should decrease over time)
+- Total volume (distance and time)
+- Quality session completion rate
+- Sleep score average
+
+### MAF Test Protocol (Monthly)
+
+The MAF Test objectively tracks aerobic development. Perform once per month on a flat route.
+
+**Protocol:**
+
+1. Warm up 10-15 min at very easy effort
+2. Run 5 km at exactly 140-141 bpm (use Garmin HR alerts)
+3. Record split times for each kilometer
+4. Note conditions (temperature, wind, sleep quality)
+
+**Interpreting Results:**
+
+| Result Pattern           | Meaning                                         | Action                          |
+| ------------------------ | ----------------------------------------------- | ------------------------------- |
+| Pace improving           | Aerobic system developing                       | Continue current approach       |
+| Pace plateau (3+ months) | Aerobic base maximized                          | Introduce sub-threshold work    |
+| Pace declining           | Overtraining, illness, or insufficient recovery | Reduce volume, prioritize sleep |
+| Large splits variation   | Poor pacing discipline or terrain effects       | Use flat route, practice pacing |
+
+**Expected Progression (Post-Smoking Recovery):**
+
+- Months 1-3: Rapid improvement (10-20 sec/km per month)
+- Months 4-6: Moderate improvement (5-10 sec/km per month)
+- Months 7+: Gradual improvement or plateau (time to add intensity)
+
+### Progress Indicators (Aerobic Development)
+
+Track these monthly to confirm MAF approach is working:
+
+1. **MAF Test pace:** Primary metric—pace at 140 bpm (goal: improve 10-15 sec/km per month)
+2. **Cardiac drift:** HR increase during steady-state easy runs (goal: <5% drift over 60 min)
+3. **Recovery HR:** Time to return to <100 bpm post-effort (goal: <2 minutes)
+4. **Resting HR trend:** Should decrease as aerobic fitness improves
+5. **Lactate clearance feel:** Ability to hold threshold HR without "redlining" during sub-T sessions
+
+### Warning Signs (Back Off)
+
+- Resting HR elevated >5 bpm above baseline for 3+ days
+- Easy runs requiring >150 bpm to maintain normal pace
+- Sleep scores consistently <60
+- Body battery not recovering above 50
+- Persistent leg heaviness or unusual fatigue
+
+---
+
+## DATA FILES
+
+### Available Data (./data/)
+
+- `activities.csv`: All Garmin activities (Aug 2025 - present)
+- `sleep.csv`: Daily sleep metrics
+- `stats.csv`: Daily wellness stats (steps, calories, resting HR)
+
+### Data Schema
+
+Activities: activity_id, name, type, start_time, distance_m, duration_s, avg/max_speed, avg/max_hr, calories, elevation
+
+Sleep: date, sleep times, duration, deep/light/REM/awake, stress, HR, sleep score, body battery, HRV
+
+Stats: date, calories (total/active/bmr), steps, distance, stress, resting HR
+
+---
+
+## METHODOLOGY SELECTION
+
+### Why This Hybrid Approach
+
+Based on research analysis, the optimal approach for a 39-year-old post-smoking runner targeting a half marathon combines:
+
+| Methodology   | What We Take                                        | Why                                                |
+| ------------- | --------------------------------------------------- | -------------------------------------------------- |
+| **MAF**       | Strict aerobic ceiling, monthly pace testing        | Rebuilds underdeveloped post-smoking aerobic base  |
+| **Polarized** | 80/20 intensity discipline, avoid gray zone         | Prevents chronic fatigue from moderate intensity   |
+| **Norwegian** | Sub-threshold intervals, 3 quality sessions/week    | More threshold volume with less fatigue than tempo |
+| **Lydiard**   | Sequential phases, base → race-specific progression | Structured periodization toward goal race          |
+| **Daniels**   | VDOT pace precision for quality sessions            | Objective targets for sub-T and VO2max work        |
+
+### What We Avoid
+
+- Traditional continuous tempo runs at 4.0 mmol/L threshold (too fatiguing for volume)
+- Running easy days in the "gray zone" (150-155 bpm)
+- High VO2max volume (saves glycolytic stress for racing)
+- Complex periodization schemes designed for professionals
+
+### Future Cycle Considerations
+
+After the HM, if MAF Test shows plateau for 3+ months:
+
+- Consider adding VO2max-focused block (Daniels 2Q style)
+- Trail racing can serve as "X-element" variety
+- Marathon training would shift toward methodology below
+
+### Marathon Methodology Selection
+
+When planning for a full marathon, select methodology based on your weakness:
+
+| Goal                    | Methodology    | Key Feature         | Action                                                                                |
+| ----------------------- | -------------- | ------------------- | ------------------------------------------------------------------------------------- |
+| **Master Race Pace**    | Hansons        | Cumulative Fatigue  | Long runs (16 mi) on tired legs, high-volume MP work (~120 mi/cycle at marathon pace) |
+| **Endure the Distance** | Pfitzinger     | Distance Mastery    | Traditional long runs (20-24 mi) for muscular and psychological durability            |
+| **Data-Driven Pacing**  | Daniels (VDOT) | Precision Intervals | Use recent race to calculate exact paces; "2Q" sessions with MP sandwiches            |
+
+**The Marathon Bind:** You must choose between volume and intensity.
+
+- Hansons prioritizes pace specificity over distance
+- Pfitzinger prioritizes distance over pace work
+- Daniels balances both with complex quality sessions
+
+Your post-smoking cardiovascular context suggests Pfitzinger's distance-first approach may be most appropriate initially, building muscular endurance before adding pace-specific work.
+
+---
+
+## DISTANCE-SPECIFIC RACE PREP
+
+### 10K Race Day
+
+- **Nutrition:** No in-race fueling needed if event <75 minutes
+- **Pre-race:** Focus on hydration and a thorough warm-up
+- **Warm-up:** 15-20 min easy jog + 4-6 strides (essential for short, fast races)
+- **Pacing:** Start controlled, negative split if possible
+
+### HM Race Day
+
+- **Nutrition:** Practice fueling (gels/electrolytes) during long runs if >90 min
+- **Pre-race:** Carb loading 2-3 days before, hydration morning of
+- **Warm-up:** 10-15 min easy jog + 2-4 strides (shorter than 10K warm-up)
+- **Pacing:** Even effort, save energy for final 5K
+
+### Recovery Between Hard Sessions
+
+- Allow 2-3 days between quality workouts (including long runs)
+- Hard session spacing ensures fresh legs for high-intensity work
+- If fatigue persists beyond 48h, extend recovery or reduce next session intensity
+
+---
+
+## INTEGRATION WITH OTHER PROTOCOLS
+
+Running performance depends on:
+
+- **Nutrition:** Adequate glycogen for quality sessions, protein for recovery
+- **Strength:** Maintain leg strength to support running mechanics
+- **Sleep:** Critical for cardiovascular adaptation and recovery
+- **Supplements:** Omega-3 for inflammation, magnesium for muscle function
+
+See [protocols/nutrition.md](nutrition.md), [protocols/training.md](training.md), [protocols/supplements.md](supplements.md) for details.
