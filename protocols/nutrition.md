@@ -4,12 +4,12 @@
 
 | Macro         | Ratio    | Grams | Calories  |
 | ------------- | -------- | ----- | --------- |
-| Protein       | 35%      | 156g  | 625       |
-| Carbohydrates | 35%      | 156g  | 625       |
-| Fat           | 30%      | 60g   | 537       |
-| **Total**     | **100%** |       | **1,787** |
+| Protein       | 33%      | 156g  | 624       |
+| Carbohydrates | 40%      | 190g  | 760       |
+| Fat           | 27%      | 57g   | 513       |
+| **Total**     | **100%** |       | **1,900** |
 
-**Rationale:** ~500 cal deficit for 0.45 kg/week fat loss. High protein (156g) preserves muscle during cut. Balanced carbs support running performance. Adequate fat for hormone function at 39. Sustainable deficit through race prep.
+**Rationale:** ~400-500 cal deficit for ~0.4 kg/week fat loss. High protein (2.0 g/kg) preserves muscle during cut. Carbs raised vs previous 156g to properly fuel 35-45 km/week running (minimum 3-5 g/kg for endurance athletes in deficit per Stellingwerff 2019). Fat lowered slightly but above 0.5 g/kg floor for hormone function. Previous 1,787 cal target was too aggressive — January data showed 67% of weight loss was lean mass, indicating excessive deficit.
 
 ## PERFORMANCE FUELING STRATEGY
 
@@ -37,14 +37,15 @@ To balance fat adaptation with high-intensity performance, we use a hybrid appro
 
 | Meal         | Time  | Calories  | Protein  | Carbs    | Fat     |
 | ------------ | ----- | --------- | -------- | -------- | ------- |
-| Post-workout | 12:30 | 280       | 38g      | 28g      | 4g      |
-| Lunch        | 13:00 | 550       | 46g      | 48g      | 17g     |
-| Snack        | 17:00 | 260       | 27g      | 18g      | 11g     |
-| Dinner       | 21:00 | 697       | 45g      | 62g      | 28g     |
-| **Total**    |       | **1,787** | **156g** | **156g** | **60g** |
+| Post-workout | 12:30 | 300       | 38g      | 35g      | 5g      |
+| Lunch        | 13:00 | 600       | 46g      | 60g      | 18g     |
+| Snack        | 17:00 | 270       | 27g      | 22g      | 12g     |
+| Dinner       | 21:00 | 730       | 45g      | 73g      | 22g     |
+| **Total**    |       | **1,900** | **156g** | **190g** | **57g** |
 
 **Eating window:** 12:30-21:00 (intermittent fasting)
-**Macro ratio:** 35% protein / 35% carbs / 30% fat
+**Macro ratio:** 33% protein / 40% carbs / 27% fat
+**Post-workout timing:** Shake within 30 min of finishing training (don't wait for clock time). MPS window is most responsive 0-2h post-exercise.
 
 ---
 
@@ -128,15 +129,15 @@ To balance fat adaptation with high-intensity performance, we use a hybrid appro
 
 ## HIGH-INTENSITY DAY ADJUSTMENTS
 
-**Long run days or hard interval days:** Add ~320 calories from carbs (see High-Intensity Day template above)
+**Long run days or hard interval days:** Add ~300 calories (mostly carbs) to support performance and recovery.
 
 **Key additions vs standard day:**
 
 - Pre-run banana for long runs (+100 cal, +27g carbs)
-- 40g oats added to shake (+150 cal, +27g carbs)
-- Extra 20g rice at lunch (+50 cal, +10g carbs)
+- 40g oats added to shake (+120 cal, +22g carbs)
+- Extra 30g rice at lunch (+75 cal, +17g carbs)
 
-**This brings you to ~2,107 cal on hard days - still a ~180 cal deficit.**
+**This brings you to ~2,200 cal on hard days — still a ~200 cal deficit.**
 
 ---
 
@@ -180,24 +181,24 @@ To balance fat adaptation with high-intensity performance, we use a hybrid appro
 
 | Meal               | Time  | Food                                                   | Macros                               |
 | ------------------ | ----- | ------------------------------------------------------ | ------------------------------------ |
-| Post-workout shake | 12:30 | 35g whey + 1 banana + 5g creatine                      | 280 cal, 38g P, 28g C, 4g F          |
-| Lunch              | 13:00 | 180g chicken + 130g rice + 200g veg + 1 tbsp olive oil | 550 cal, 46g P, 48g C, 17g F         |
-| Snack              | 17:00 | 200g Greek yogurt 0% + 20g almonds + 30g berries       | 260 cal, 27g P, 18g C, 11g F         |
-| Dinner             | 21:00 | 180g protein + 200g potato + 250g veg + 2 tsp oil      | 697 cal, 45g P, 62g C, 28g F         |
-| **TOTAL**          |       |                                                        | **1,787 cal, 156g P, 156g C, 60g F** |
+| Post-workout shake | 12:30 | 35g whey + 1 banana + 5g creatine                      | 300 cal, 38g P, 35g C, 5g F          |
+| Lunch              | 13:00 | 180g chicken + 150g rice + 200g veg + 1 tbsp olive oil | 600 cal, 46g P, 60g C, 18g F         |
+| Snack              | 17:00 | 200g Greek yogurt 0% + 20g almonds + 30g berries       | 270 cal, 27g P, 22g C, 12g F         |
+| Dinner             | 21:00 | 180g protein + 220g potato + 250g veg + 2 tsp oil      | 730 cal, 45g P, 73g C, 22g F         |
+| **TOTAL**          |       |                                                        | **1,900 cal, 156g P, 190g C, 57g F** |
 
 ### High-Intensity Day (Long Run, Tempo, Intervals)
 
 | Meal                     | Time       | Food                                              | Macros                               |
 | ------------------------ | ---------- | ------------------------------------------------- | ------------------------------------ |
 | Pre-run (long runs only) | Before run | 1 banana                                          | 100 cal, 0g P, 27g C, 0g F           |
-| Post-workout shake       | 12:30      | 35g whey + 1 banana + 40g oats + 5g creatine      | 430 cal, 41g P, 55g C, 6g F          |
-| Lunch                    | 13:00      | 180g chicken + 150g rice + 200g veg + 1 tbsp oil  | 600 cal, 46g P, 58g C, 17g F         |
-| Snack                    | 17:00      | 200g Greek yogurt 0% + 20g almonds + 50g berries  | 280 cal, 27g P, 22g C, 11g F         |
-| Dinner                   | 21:00      | 180g protein + 200g potato + 250g veg + 2 tsp oil | 697 cal, 45g P, 62g C, 28g F         |
-| **TOTAL**                |            |                                                   | **2,107 cal, 159g P, 224g C, 62g F** |
+| Post-workout shake       | 12:30      | 35g whey + 1 banana + 40g oats + 5g creatine      | 420 cal, 41g P, 57g C, 7g F          |
+| Lunch                    | 13:00      | 180g chicken + 180g rice + 200g veg + 1 tbsp oil  | 675 cal, 46g P, 77g C, 18g F         |
+| Snack                    | 17:00      | 200g Greek yogurt 0% + 20g almonds + 50g berries  | 280 cal, 27g P, 25g C, 12g F         |
+| Dinner                   | 21:00      | 180g protein + 220g potato + 250g veg + 2 tsp oil | 730 cal, 45g P, 73g C, 22g F         |
+| **TOTAL**                |            |                                                   | **2,205 cal, 159g P, 259g C, 59g F** |
 
-**Note:** High-intensity days add ~320 cal (mostly carbs) to fuel performance and recovery. Still a ~180 cal deficit.
+**Note:** High-intensity days add ~300 cal (mostly carbs) to fuel performance and recovery. Still a ~200 cal deficit.
 
 ---
 
@@ -292,13 +293,30 @@ All portions: 180g protein, 150g carb source, 250g vegetables, 1 tsp olive oil
 | Energy crashes mid-run   | Add 50g carbs around training                   |
 | Protein under 150g       | Add egg whites or extra shake                   |
 | Strength dropping badly  | Increase protein to 170g, add pre-workout carbs |
+| Lean mass declining      | Raise calories 100-200, increase carbs first    |
 
 **Stall Protocol (no change for 3+ weeks):**
 
 1. Audit tracking accuracy (weighing food?)
-2. Drop calories to 1,600 for 2 weeks
+2. Drop calories to 1,700 for 2 weeks
 3. Add 20 min daily walking
-4. If still stuck: 1 week diet break at 2,300 cal, then resume
+
+---
+
+## CAFFEINE PROTOCOL
+
+**Current intake:** 2-4 cups/day (1 americano on waking, 1 espresso ~1h later, optional espresso mid-morning, optional espresso with post-workout shake or after lunch).
+
+**Rules:**
+
+- **Hard cutoff: 15:00** — No caffeine after 3pm (gives ~9h before 22:30 sleep target)
+- **Pre-run:** Black coffee is fine before fasted easy runs (no calories)
+- **Race day:** 3mg/kg caffeine 30-60 min pre-race (~230mg = ~2 espressos)
+- **If sleep quality drops:** Tighten cutoff to 13:00 for one week and reassess
+
+**Evidence:** Drake et al. (2013): Caffeine consumed <6h before bed disturbs sleep architecture. Gardiner et al. (2023): Caffeine within 6h of bed reduces deep sleep by 20%.
+
+**Track daily:** Note cups and last intake time in daily Status table. 4. If still stuck: 1 week diet break at 2,300 cal, then resume
 
 ---
 

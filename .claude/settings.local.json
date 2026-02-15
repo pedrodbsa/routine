@@ -40,7 +40,8 @@
       "WebSearch",
       "mcp__garmin__get_stats_and_body",
       "mcp__serena__write_memory",
-      "Bash(del \"X:\\\\pedrodbsa\\\\routine\\\\protocols\\\\running.md.tmp.5992.1770725693651\")"
+      "Bash(del \"X:\\\\pedrodbsa\\\\routine\\\\protocols\\\\running.md.tmp.5992.1770725693651\")",
+      "mcp__garmin__add_body_composition"
     ]
   },
   "enableAllProjectMcpServers": true,

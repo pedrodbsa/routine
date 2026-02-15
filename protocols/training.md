@@ -2,40 +2,40 @@
 
 ## WEEKLY STRUCTURE
 
-3 strength sessions/week:
+3 strength sessions/week + running + daily mobility:
 
 - **1 PT session:** Typically leg-focused, PT-selected exercises
 - **2 self-directed:** User chooses exercises and gym location
-- **Running:** Garmin Coach half-marathon plan (race March 29, 2026)
+- **Running:** Claude-coached plan (MAF base → Norwegian race-specific)
+- **Mobility:** 10-min daily routine (see `protocols/mobility.md`)
 - **Schedule flexibility:** Training times vary daily based on availability
 
-## RUNNING (GARMIN PLAN)
+## RUNNING
 
-Garmin handles all running periodization. Trust the plan.
+Claude owns all running programming. See `protocols/running.md` for full details.
 
-**Garmin Coach Configuration:**
+**Race Calendar:**
 
-- **Training frequency:** 5 days/week
-- **Long run day:** Sunday
-- **Blocked day:** Thursday (PT session scheduled)
-- Garmin auto-assigns remaining workouts (Mon/Tue/Wed/Fri/Sat)
+- **10K tune-up:** March 1, 2026 (4 Estações Coimbra)
+- **A-Race:** Half Marathon, March 29, 2026 (Meia Maratona de Fátima)
 
 **Race Target: Sub-2h Half Marathon (March 29, 2026)**
 
 - Race pace: 5:40/km
-- Easy runs: 6:00-6:30/km (HR ~130-145 bpm)
+- Easy runs: 6:00-6:30/km (HR <138 bpm, adjusted MAF)
 - Tempo runs: 5:20-5:30/km (HR ~155-165 bpm)
-- Intervals: 4:50-5:10/km (HR ~170-180 bpm)
+- Intervals: 4:50-5:10/km (HR ~165-180 bpm)
 
 **Key Principles:**
 
-- Follow suggested workouts (easy, tempo, intervals, long runs)
-- **Mandatory Warm-up:** Execute the "Daily 5" neuromuscular routine (hops, skips, swings) before EVERY run.
-- **Performance Fueling:** On high-intensity days (intervals/tempo), consume ~25g carbs 30 mins pre-run (see Nutrition Protocol).
+- **Mandatory Warm-up:** Execute the "Daily 5" neuromuscular routine before EVERY run.
+- **Mandatory Cool-down:** 2-3 min walk + stretching (see `protocols/mobility.md`)
+- **Performance Fueling:** On high-intensity days (intervals/tempo), consume ~25g carbs 30 mins pre-run.
 - Respect recovery recommendations
 - Don't add extra volume beyond the plan
 - Long runs build toward 18-20km pre-race
 - Monitor HR drift—elevated baseline suggests overtraining or poor recovery
+- **RPE logging:** Record RPE (1-10) for every session
 
 ---
 
@@ -69,17 +69,20 @@ _Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday b
 
 **Goal:** Support running strength, maintain muscle during deficit, 45-50 minutes
 
-**1. Squat or Leg Press**
+**1. Squat Variation** (rotate weekly)
 
 - 4 x 6-8 reps, rest 2-3 min
+- Options: Back Squat, Front Squat, Leg Press, Goblet Squat
 
-**2. Romanian Deadlift**
+**2. Hip Hinge** (rotate weekly)
 
 - 3 x 8-10 reps, rest 2 min
+- Options: Romanian Deadlift, Stiff-Leg Deadlift, Hip Thrust
 
-**3. Bulgarian Split Squat**
+**3. Single-Leg** (rotate weekly)
 
 - 3 x 8-10 reps/leg, rest 90 sec
+- Options: Bulgarian Split Squat, Walking Lunges, Step-Ups
 
 **4. Leg Curl**
 
@@ -89,9 +92,15 @@ _Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday b
 
 - 3 x 12-15 reps, rest 60 sec
 
-**6. Core: Plank or Copenhagen Plank**
+**6a. Core — Isometric/Anti-Extension**
 
-- 3 x 30-45 sec (rotate between standard and Copenhagen each session), rest 60 sec
+- 3 x 30-45 sec, rest 60 sec
+- Options: Plank, Copenhagen Plank, RKC Plank
+
+**6b. Core — Dynamic**
+
+- 3 x 10-12 reps, rest 60 sec
+- Options: Cable Crunches, Ab Wheel Rollout, Hanging Leg Raise
 
 ---
 
@@ -99,17 +108,20 @@ _Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday b
 
 **Goal:** Maintain pressing strength, 45-50 minutes
 
-**1. Bench Press**
+**1. Horizontal Press** (rotate weekly)
 
-- 4 x 6-8 reps, rest 2-3 min
+- 4 x 6-10 reps, rest 2-3 min
+- Options: Barbell Bench Press, Dumbbell Bench Press, Floor Press
 
-**2. Overhead Press**
+**2. Vertical/Overhead Press** (rotate weekly)
 
-- 3 x 8-10 reps, rest 2 min
+- 3 x 8-12 reps, rest 2 min
+- Options: Overhead Press, Arnold Press, Landmine Press
 
-**3. Incline Dumbbell Press**
+**3. Chest Accessory** (rotate weekly)
 
-- 3 x 10-12 reps, rest 90 sec
+- 3 x 10-15 reps, rest 90 sec
+- Options: Incline Dumbbell Press, Cable Flyes, Machine Chest Press
 
 **4. Dips**
 
@@ -119,9 +131,15 @@ _Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday b
 
 - 3 x 12-15 reps, rest 60 sec
 
-**6. Core: Dead Bug or Ab Wheel Rollout**
+**6a. Core — Anti-Extension**
 
-- 3 x 10/side (Dead Bug) or 3 x 8-10 (Ab Wheel), rest 60 sec
+- 3 x 10/side or 3 x 8-10, rest 60 sec
+- Options: Dead Bug, Ab Wheel Rollout, Plank variations
+
+**6b. Core — Anti-Rotation or Flexion**
+
+- 3 x 10-12/side or reps, rest 60 sec
+- Options: Pallof Press, Cable Woodchops, Hanging Knee Raise
 
 ---
 
@@ -129,29 +147,64 @@ _Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday b
 
 **Goal:** Maintain pulling strength, support running posture, 45-50 minutes
 
-**1. Pull-ups or Lat Pulldown**
+**1. Vertical Pull** (rotate weekly)
 
 - 4 x 6-10 reps, rest 2-3 min
+- Options: Pull-ups, Lat Pulldown, Neutral-Grip Pulldown
 
-**2. Barbell or Dumbbell Row**
+**2. Horizontal Row** (rotate weekly)
 
 - 4 x 8-10 reps, rest 2 min
+- Options: Barbell Row, Dumbbell Row, Pendlay Row
 
-**3. Chest-Supported Row**
+**3. Row Accessory** (rotate weekly)
 
 - 3 x 10-12 reps, rest 90 sec
+- Options: Chest-Supported Row, Seated Cable Row, Single-Arm DB Row
 
 **4. Face Pulls**
 
 - 3 x 15-20 reps, rest 60 sec
 
-**5. Barbell or Dumbbell Curls**
+**5. Curls** (rotate weekly)
 
 - 3 x 10-12 reps, rest 60 sec
+- Options: Barbell Curls, Dumbbell Curls, Hammer Curls, Incline DB Curls
 
-**6. Core: Pallof Press or Hanging Knee Raise**
+**6a. Core — Anti-Rotation or Flexion**
 
-- 3 x 10-12 reps/side (Pallof) or 3 x 10-12 reps (Hanging Knee Raise), rest 60 sec
+- 3 x 10-12/side or reps, rest 60 sec
+- Options: Pallof Press, Cable Woodchops, Hanging Knee Raise
+
+**6b. Core — Carry or Stability**
+
+- 3 x 30-40m or 30-45 sec, rest 60 sec
+- Options: Farmer's Carry, Suitcase Carry, Turkish Get-Up (light)
+
+---
+
+## EXERCISE ROTATION RULES
+
+**Why rotate:** Repeated identical sessions reduce stimulus, increase overuse injury risk, and stall progress. Rotating within movement patterns maintains the training effect while providing novel stimulus.
+
+**How to rotate:**
+
+- **Never repeat the exact same exercise selection two weeks in a row.** Swap at least 2-3 exercises per session.
+- Rotate within the listed options for each movement slot. All options hit the same muscle groups.
+- Keep the **movement pattern** constant (horizontal press, vertical pull, etc.) — change the **implement/variation**.
+- Dips, Lateral Raises, Face Pulls, and Calf Raises are stable — these can repeat weekly since variation options are limited.
+- Track which exercises were used in the previous session (check the last daily file for that session type) before programming.
+
+**Core programming:**
+
+- Every strength session includes **2 core exercises** (slots 6a + 6b).
+- Core exercises should cover **different movement categories** across the week:
+  - Anti-extension (Dead Bug, Plank, Ab Wheel)
+  - Anti-rotation (Pallof Press, Cable Woodchops)
+  - Flexion (Hanging Knee/Leg Raise, Cable Crunches)
+  - Carry/Stability (Farmer's Carry, Suitcase Carry, Turkish Get-Up)
+  - Isometric (Plank, Copenhagen Plank, RKC Plank)
+- Aim to hit at least 3 different categories across the week's 3 sessions (minimum 18 core sets/week).
 
 ---
 
@@ -184,12 +237,13 @@ _Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday b
 
 - Sleep: 7-8 hours minimum target (reality: fragmented with baby)
 - Hydration: 3-4L daily
-- Protein timing: Within 2h of training
+- Protein timing: Within 30 min of finishing training (don't wait for clock time)
+- Mobility: Daily 10-min routine (see `protocols/mobility.md`)
 
 **Heart Rate Monitoring:**
 
-- Track resting HR daily (normal: 55-65 bpm for trained athletes)
-- Easy run HR should be ~60-70% max (~109-127 bpm for age 39)
+- Track resting HR daily (normal: 55-60 bpm for this athlete)
+- Easy run HR should stay <138 bpm (adjusted MAF ceiling)
 - **Elevated HR causes:** Caffeine >400mg/day, sleep deprivation, overtraining, dehydration
 - If easy pace (6:20/km) puts you >145 bpm consistently → address caffeine/sleep first
 
@@ -200,3 +254,40 @@ _Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday b
 - Garmin body battery consistently <20
 - Persistent muscle soreness >48h
 - Sleep quality declining further
+- Pain/tightness severity ≥3 for 2+ consecutive days (see `protocols/mobility.md`)
+
+---
+
+## STRENGTH TRACKING
+
+**Every strength session must log actual weights.** Without tracked numbers, progressive overload is impossible and the LLM coach cannot make informed programming decisions.
+
+### Required Log Fields (in daily files)
+
+| Exercise    | Sets x Reps | Weight (kg) | RPE | Notes              |
+| ----------- | ----------- | ----------- | --- | ------------------ |
+| Bench Press | 4 x 8       | 50          | 7   | Last rep was grind |
+
+### Progression Rules (Race Prep Phase = Maintenance)
+
+- **Do NOT chase PRs** during race prep — goal is muscle retention, not growth
+- Keep weights stable week-to-week at RPE 7-8
+- If weight feels like RPE 6 for 2 consecutive sessions → increase by 2.5 kg
+- If RPE hits 9 or form breaks → reduce weight 5% next session
+- Track all PT session exercises too (ask PT for weights if needed)
+
+### Progression Rules (Post-Race = Hypertrophy)
+
+- Progressive overload: add 2.5-5kg when hitting top of rep range for all prescribed sets
+- Use double progression: increase reps within range first, then increase weight and reset reps
+- Deload every 4th week (reduce volume 40%, keep intensity)
+
+### Body Measurements (Weekly, Sunday)
+
+Track alongside weight for proper recomposition monitoring:
+
+| Metric              | How                                   | Frequency                      |
+| ------------------- | ------------------------------------- | ------------------------------ |
+| Weight (7-day avg)  | Morning, post-bathroom, before eating | Daily weigh-in, weekly average |
+| Waist circumference | At navel, relaxed, standing           | Weekly (Sunday)                |
+| Optional: Navy BF%  | Neck + waist + height formula         | Monthly                        |
