@@ -16,15 +16,16 @@ Claude owns all running programming. See `protocols/running.md` for full details
 
 **Race Calendar:**
 
-- **10K tune-up:** March 1, 2026 (4 Estações Coimbra)
+- **10K tune-up:** March 8, 2026 (4 Estações Coimbra)
 - **A-Race:** Half Marathon, March 29, 2026 (Meia Maratona de Fátima)
 
 **Race Target: Sub-2h Half Marathon (March 29, 2026)**
 
 - Race pace: 5:40/km
-- Easy runs: 6:00-6:30/km (HR <138 bpm, adjusted MAF)
-- Tempo runs: 5:20-5:30/km (HR ~155-165 bpm)
-- Intervals: 4:50-5:10/km (HR ~165-180 bpm)
+- Easy runs: 6:15-7:15/km (HR <142 bpm, adjusted MAF)
+- Tempo runs: 5:00-5:10/km (HR ~160-170 bpm)
+- Cruise intervals: 4:50-5:00/km (HR ~165-175 bpm)
+- VO2max intervals: 4:30-4:50/km (HR ~175-185 bpm)
 
 **Key Principles:**
 
@@ -51,17 +52,17 @@ Claude owns all running programming. See `protocols/running.md` for full details
 **Duration:** 45-50 minutes per session
 **Intensity:** RPE 7-8 max (never compromise running recovery)
 
-**Weekly Integration Example:**
+**Weekly Integration Example (Race-Specific Phase):**
 
-- **Sunday:** Long run (Garmin) - no strength
-- **Monday:** Garmin run (likely recovery run)
-- **Tuesday:** Garmin run (likely base run) + Upper Push
-- **Wednesday:** Garmin run (likely quality workout)
-- **Thursday:** PT session (Legs) - NO RUNNING
-- **Friday:** Garmin run (likely base or tempo run)
-- **Saturday:** Rest day OR light Garmin run + Upper Pull
+- **Sunday:** Long run MAF (<145 HR) + Legs (if not covered by PT)
+- **Monday:** Rest
+- **Tuesday:** Quality run (tempo/intervals) + Upper Pull
+- **Wednesday:** Easy base run MAF + Upper Push
+- **Thursday:** PT session (Legs) — NO RUNNING
+- **Friday:** Quality run (cruise intervals/threshold) OR easy base
+- **Saturday:** Rest
 
-_Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday blocked for PT legs to avoid hard running on tired legs._
+_Note: Quality running sessions on Tue/Fri are bracketed by rest days. Upper body strength on same day as quality runs is fine — the strength work is maintenance-level. Thursday blocked for PT legs._
 
 ---
 
@@ -218,7 +219,7 @@ _Note: Upper body strength on Mon/Wed doesn't interfere with running. Thursday b
 - RPE 7-8 maximum (save energy for running)
 - If fatigued from running, reduce volume (drop 1 set per exercise)
 - Never sacrifice running quality for lifting
-- 10K tune-up race on Mar 1 — no strength session that day
+- 10K tune-up race on Mar 8 — no strength session that day
 
 ### Post-Race (April 2026 onwards)
 

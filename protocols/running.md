@@ -2,11 +2,11 @@
 
 ## ATHLETE PROFILE
 
-### Current Stats (January 2026)
+### Current Stats (February 2026)
 
 - **Age:** 39 (DOB: March 1986)
-- **Resting HR:** 61 bpm
-- **HRV:** 47-54 ms (weekly average)
+- **Resting HR:** 51-55 bpm
+- **HRV:** 65 ms (weekly average, trending up)
 - **VO2max:** 49 (Garmin estimate)
 - **Smoking:** 1 year smoke-free (quit early 2025)
 - **Recent 10K:** 52:12 (5:13/km)
@@ -22,6 +22,8 @@ Even 1 year smoke-free, cardiovascular adaptations continue:
 
 **Result:** You achieve similar race times to experienced runners through raw effort (higher HR) rather than efficiency. Your aerobic base is underdeveloped relative to your overall fitness.
 
+**Primary Limiter: Cardiovascular, not muscular.** At sub-threshold and above paces (≤4:45/km), legs feel fine — no burn, no fatigue. The ceiling is breathing and HR. This is consistent with strong leg musculature from concurrent strength training but an aerobic engine still catching up post-smoking. Implication: pace discipline matters more than mental toughness at race effort — once HR maxes out, pace drops involuntarily.
+
 ---
 
 ## HR ZONES
@@ -32,40 +34,32 @@ Using Maffetone formula (180 - age = 141), **adjusted -1 bpm** for overfat statu
 
 **Max HR: 190 bpm** (observed 188-192 on Garmin; auto-set 195; Tanaka formula: 181)
 
-| Zone | Name         | HR Range    | Purpose                             |
-| ---- | ------------ | ----------- | ----------------------------------- |
-| 1    | Recovery     | <128 bpm    | Active recovery, walk breaks        |
-| 2    | Aerobic Base | 128-142 bpm | Easy runs, long runs, base building |
-| 3    | Tempo        | 143-155 bpm | Threshold work, tempo runs          |
-| 4    | VO2max       | 156-171 bpm | Intervals, speed work               |
-| 5    | Anaerobic    | >171 bpm    | Sprints, race finish kicks          |
+| Zone | Name           | HR (Treadmill) | HR (Outdoor)  | Purpose                                  |
+| ---- | -------------- | -------------- | ------------- | ---------------------------------------- |
+| 1    | Recovery       | <128 bpm       | <128 bpm      | Active recovery, walk breaks             |
+| 2    | Aerobic Base   | 128-142 bpm    | 128-148 bpm   | Easy runs, long runs, base building      |
+| 3    | Sub-Threshold  | 143-160 bpm    | 148-168 bpm   | Norwegian intervals, cruise intervals    |
+| 4    | Threshold      | 161-175 bpm    | 168-175 bpm   | Tempo runs, race-pace work               |
+| 5    | VO2max         | 175-185 bpm    | 175-185 bpm   | Hard intervals, race finish              |
+| 6    | Anaerobic      | >185 bpm       | >185 bpm      | Sprints, max effort                      |
 
-### Key Insight: Your "Easy" Isn't Easy
+**Treadmill vs Outdoor offset:** Outdoor running costs ~6-10 bpm more than treadmill at equivalent effort due to terrain, wind, and thermoregulation. Treadmill base runs are the controlled benchmark; outdoor zones are adjusted accordingly.
 
-- Current easy runs: 144-155 bpm average (improving but still high)
-- True aerobic ceiling (adjusted MAF): **142 bpm**
-- Hard spike max on easy days: **145 bpm** (brief spikes OK, sustained = slow down)
-- Best recent MAF compliance: Feb 3 — 8.4km at 6:25/km, avg HR 136 ✓
-- **You're running 3-13 bpm above your aerobic threshold on many "easy" days**
+**HR monitor:** COROS armband (optical, arm-worn) — near chest-strap accuracy. HR data is trustworthy.
 
-This chronic moderate-intensity training:
+**Zone revision (Feb 20):** Original zones were based on MAF formula alone. Revised after cruise interval session (Feb 20, outdoor park) showed warmup at 7:00/km producing 146-149 HR and intervals at 5:00-5:15/km producing 165-176 HR. Observed lactate threshold is ~170 bpm, significantly higher than the original Zone 3 ceiling of 155.
 
-- Prevents aerobic base development
-- Accumulates fatigue
-- Explains inconsistent recovery
-- Limits long-term performance gains
+### Easy Run Guidelines
 
-### Two Filters for "Easy"
+| Environment  | MAF Ceiling | Hard Spike Max | Typical Pace     |
+| ------------ | ----------- | -------------- | ---------------- |
+| **Treadmill** | 142 bpm    | 145 bpm        | 8-9 km/h (6:40-7:30/km) |
+| **Outdoor**   | 148 bpm    | 152 bpm        | 6:30-7:30/km (terrain dependent) |
 
-Use either of these to ensure Zone 1-2 compliance:
-
-| Method           | Formula       | Your Target | Best For                   |
-| ---------------- | ------------- | ----------- | -------------------------- |
-| **Adjusted MAF** | 180 - age - 1 | **142 bpm** | Primary training guidance  |
-| **Hard spike max** | —           | **145 bpm** | Brief spikes OK, not sustained |
-| **70% Max HR**   | Max HR × 0.70 | ~133 bpm    | Conservative recovery days |
-
-The 70% rule provides a more conservative ceiling for pure recovery runs. If you find yourself gasping or unable to hold a full conversation, you've exited Zone 2.
+- Treadmill MAF compliance confirmed: multiple runs at 136-140 avg HR ✓
+- Outdoor easy runs inherently cost 6-10 bpm more at equivalent effort
+- **RPE filter still applies:** Easy should feel RPE 3-4 ("full conversation"). If RPE exceeds 5, slow down regardless of HR.
+- For pure recovery runs: target <133 bpm (70% Max HR), walk if needed
 
 **RPE filter:** Easy runs should feel RPE 3-4 ("could talk in full sentences, effort feels light"). If RPE exceeds 5, slow down regardless of HR.
 
@@ -135,20 +129,29 @@ Long runs (90+ min) serve a hidden purpose: once Type I fibers deplete glycogen,
 
 Training is divided into two distinct phases with different intensity distributions:
 
-**Phase 1: MAF Base Building (Current → Feb 22)**
+**Phase 1: MAF Base Building (Dec 2025 → Feb 16)**
 
 - Cap ALL easy runs at **142 bpm** (ceiling, 145 hard spike max)
 - Accept slower paces (6:30-7:30/km initially)
-- Expect pace to improve at same HR over time
-- This builds the aerobic engine you're missing post-smoking
-- Recent compliance improving: Feb 3 run at avg HR 136 ✓
+- MAF discipline now established: base runs consistently 136-140 avg HR
+- Aerobic engine significantly improved from starting point
+- **Status: COMPLETE.** Base is solid. Athlete fully recovered (HRV 65↑, BB 100, RHR 51).
 
-**Phase 2: Norwegian Sub-Threshold (Feb 23 → Race)**
+**Phase 1.5: Quality Reintroduction (Feb 17 → Feb 22)**
 
-- Replace traditional tempo runs with sub-threshold intervals
+- Reintroduce 2 quality sessions/week (tempo + cruise intervals)
+- Easy runs remain MAF (<142 bpm)
+- Purpose: bridge from base to race-specific without shock-loading the system
+- Tempo: 4km @ ~5:05/km (HR 160-170)
+- Cruise intervals: 5x1km @ ~4:50-5:00/km with 90s jog recovery
+
+**Phase 2: Race-Specific (Feb 23 → Mar 22)**
+
+- Norwegian sub-threshold intervals: 2-3 quality sessions/week
 - Target HR: 145-155 bpm (just under lactate threshold)
 - Interval format allows more total threshold volume with less fatigue
 - Use "Norwegian Singles" method (see Workout Types below)
+- Includes 10K tune-up race on Mar 8
 
 ### The Gray Zone Problem (Critical Insight)
 
@@ -194,7 +197,7 @@ Garmin suggestions may inform decisions when useful, but are not authoritative�
 | 08/03/2026 | 10K      | Road | 4 Estações Coimbra          | Tune-up    | Fitness benchmark, race on feel |
 | 29/03/2026 | 21K      | Road | **Meia Maratona de Fátima** | **A-Race** | Sub-2:00:00 (stretch: sub-1:50) |
 
-**Race Priority Note:** Only the Half Marathon (Mar 29) requires dedicated preparation. The 10K (Mar 1) now serves as a tune-up race entering the HM-specific phase—no taper, but don't arrive exhausted. Reduce volume 2-3 days before, race on feel.
+**Race Priority Note:** Only the Half Marathon (Mar 29) requires dedicated preparation. The 10K (Mar 8) serves as a tune-up race within the HM-specific phase—no taper, but don't arrive exhausted. Reduce volume 2-3 days before, race on feel.
 
 ### Periodization Strategy (4-Phase Model for 10K/HM)
 
@@ -209,17 +212,16 @@ The 12-16 week cycle prevents plateaus and builds race-specific fitness:
 
 **Current Schedule Application:**
 
-**Now → Feb 28 (Base Phase)**
+**Feb 17 → Feb 22 (Quality Reintroduction — 1 week)**
 
-- Strict MAF base building (<142 bpm on all easy runs, 145 hard max)
-- Strides (6×20s) included at end of 1-2 easy runs/week for neuromuscular maintenance
-- Perform MAF Test week of Feb 16 to establish baseline
-- Build long run toward 90 min
-- **Priority:** Long runs MUST stay under 145 avg HR — walk uphills aggressively
+- 2 quality sessions/week: tempo (Tue) + cruise intervals (Fri)
+- Easy runs remain strict MAF (<142 bpm)
+- Long run stays MAF (<145 avg HR) — walk uphills aggressively
+- Purpose: reintroduce intensity stimulus after extended base block
+- **Lesson learned:** don't extend easy-only blocks beyond 1 recovery week when recovery markers are green
 
-**Mar 1 → Mar 22 (HM-Specific Phase — 4 weeks)**
+**Feb 23 → Mar 22 (HM-Specific Phase — 4 weeks)**
 
-- 4-week race-specific block
 - Norwegian Singles: 2-3 sub-T sessions/week
 - HM-specific sessions: 4-6×2000m at goal HM pace
 - Integration workouts mimicking race conditions
@@ -361,7 +363,7 @@ After weeks of threshold focus, add variety to prevent plateau:
 
 ## WEEKLY VOLUME GUIDELINES
 
-### Base Building Phase (Current)
+### Base Building Phase (Complete)
 
 - **Total weekly distance:** 35-45 km
 - **Total weekly time:** 4-5 hours
@@ -385,8 +387,8 @@ After weeks of threshold focus, add variety to prevent plateau:
 | Polarized | 80%           | 0%               | 20%           | Burnout recovery, plateaus |
 | Norwegian | 75-80%        | 15-20%           | 5%            | Race-specific HM/Marathon  |
 | Pyramidal | 75%           | 15-20%           | 5-10%         | High-volume elite training |
-| Your Base | 100%          | 0%               | 0%            | Aerobic development (now)  |
-| Your Race | 75-80%        | 15-20%           | 0-5%          | HM-specific (Mar 2+)       |
+| Your Base | 100%          | 0%               | 0%            | Aerobic development (complete) |
+| Your Race | 75-80%        | 15-20%           | 0-5%          | HM-specific (Feb 17+)          |
 
 **10K/HM vs Marathon Intensity:**
 

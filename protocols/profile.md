@@ -3,16 +3,16 @@
 ## CURRENT STATS (February 2026)
 
 - **Age:** 39, Male, 172cm
-- **Weight:** 77.8kg (Feb 2)
-- **Body Fat:** 30.0%
-- **Muscle Mass:** 51.7kg
+- **Weight:** 77.7kg (Feb 10)
+- **Body Fat:** 29.8%
+- **Muscle Mass:** 51.8kg
 - **Recent 10K:** 52:12 (5:13/km)
 - **Medications:** Finasteride 1mg/day
 - **Max HR:** 190 bpm (observed 188-192; Garmin auto-set 195)
 - **VO2max:** 49 (Garmin estimate)
-- **HRV baseline:** 55-65 ms (weekly avg when balanced)
-- **Resting HR:** 55-60 bpm
-- **Fitness Age:** 34.0 years
+- **HRV baseline:** 65 ms (weekly avg, trending up; range 48-74)
+- **Resting HR:** 51-55 bpm
+- **Fitness Age:** 36.5 years (regressed from 34.0 due to extended easy block — recovering)
 - **Smoking:** Quit early 2025 (1+ year smoke-free)
 
 ## GOALS
@@ -21,7 +21,7 @@
 
 - **Target:** Sub-2h (5:40/km pace)
 - **Training:** Claude-coached MAF base → Norwegian race-specific
-- **Tune-up:** 10K race March 1, 2026 (fitness benchmark)
+- **Tune-up:** 10K race March 8, 2026 (fitness benchmark)
 - **Current 10K:** 52:12 (5:13/km) - on track
 
 ### Secondary: Body Recomposition

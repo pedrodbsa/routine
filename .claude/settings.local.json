@@ -41,7 +41,22 @@
       "mcp__garmin__get_stats_and_body",
       "mcp__serena__write_memory",
       "Bash(del \"X:\\\\pedrodbsa\\\\routine\\\\protocols\\\\running.md.tmp.5992.1770725693651\")",
-      "mcp__garmin__add_body_composition"
+      "mcp__garmin__add_body_composition",
+      "mcp__garmin__get_activities_fordate",
+      "mcp__garmin__get_stress_summary",
+      "WebFetch(domain:www.doctorsofrunning.com)",
+      "WebFetch(domain:believeintherun.com)",
+      "WebFetch(domain:runrepeat.com)",
+      "WebFetch(domain:www.solereview.com)",
+      "WebFetch(domain:meta-endurance.com)",
+      "WebFetch(domain:theruntesters.com)",
+      "mcp__garmin__get_body_battery",
+      "mcp__garmin__get_activity_hr_in_timezones",
+      "mcp__garmin__get_activity_splits",
+      "mcp__garmin__get_heart_rates_summary",
+      "mcp__garmin__get_activity_exercise_sets",
+      "mcp__garmin__get_activities",
+      "mcp__garmin__get_body_battery_events"
     ]
   },
   "enableAllProjectMcpServers": true,
