@@ -3,6 +3,23 @@
 > **Living document.** Update weekly (Sundays) or after significant changes.
 > Last verified: 2026-02-15
 
+## Athlete Profile
+
+- **Age:** 39, Male, 172cm
+- **Medications:** Finasteride 1mg/day
+- **Smoking:** Quit early 2025 (1+ year smoke-free)
+- **Recent 10K:** 49:57 (4:57/km) — Mar 8, 2026 (prev: 52:12)
+- **Max HR:** 190 bpm (observed 188-192; Garmin auto-set 195)
+
+## Goals & Priorities
+
+**Primary:** Sub-2h Half Marathon (March 29, 2026) — 5:40/km pace
+**Secondary:** Body recomposition — Phase 1: 74-76kg at 24-26% BF → Phase 2: 72-74kg at 18-20% BF
+
+**Priority order (race prep):** Running performance > Muscle retention > Fat loss > Recovery optimization
+
+**Success metrics:** Body composition → Performance → Energy & mood → Health markers
+
 ## Phase & Timeline
 
 | Field             | Value                                                                                     |
@@ -14,12 +31,21 @@
 
 ## Body Composition
 
-| Metric      | Value   | Date   | Target                                |
-| ----------- | ------- | ------ | ------------------------------------- |
-| Weight      | 77.7 kg | Feb 10 | Phase 1: 74-76 kg · Phase 2: 72-74 kg |
-| Body Fat    | 29.8%   | Feb 10 | Phase 1: 24-26% · Phase 2: 18-20%     |
-| Muscle Mass | 51.8 kg | Feb 10 | Maintain or increase                  |
-| BMI         | 26.3    | Feb 10 | —                                     |
+| Metric       | Value    | Date       | Target                                 |
+| ------------ | -------- | ---------- | -------------------------------------- |
+| Weight       | 76.8 kg  | Mar avg    | Phase 1: 74-76 kg · Phase 2: 72-74 kg |
+| Body Fat     | 29.2%    | Mar avg    | Phase 1: 24-26% · Phase 2: 18-20%     |
+| Lean Mass    | 70.8%    | Mar avg    | Maintain or increase                   |
+| Bone Mass    | 3.6%     | Mar avg    | —                                      |
+| Visceral Fat | 2.1      | Mar avg    | —                                      |
+| BMI          | 26.0     | Mar avg    | —                                      |
+
+### Body Composition History
+
+| Date       | Weight  | BF%   | Fat Mass | Lean Mass | Notes                                |
+| ---------- | ------- | ----- | -------- | --------- | ------------------------------------ |
+| Feb 10     | 77.7 kg | 29.8% | 23.15 kg | —         | Baseline (Index Scale)               |
+| Mar avg    | 76.8 kg | 29.2% | 22.43 kg | 54.37 kg  | -0.9kg total, -0.72kg fat (82% fat)  |
 
 ## Training Load (Last 7 Days: Feb 9-15)
 

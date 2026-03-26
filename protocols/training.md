@@ -12,31 +12,7 @@
 
 ## RUNNING
 
-Claude owns all running programming. See `protocols/running.md` for full details.
-
-**Race Calendar:**
-
-- **10K tune-up:** March 8, 2026 (4 Estações Coimbra)
-- **A-Race:** Half Marathon, March 29, 2026 (Meia Maratona de Fátima)
-
-**Race Target: Sub-2h Half Marathon (March 29, 2026)**
-
-- Race pace: 5:40/km
-- Easy runs: 6:15-7:15/km (HR <142 bpm, adjusted MAF)
-- Tempo runs: 5:00-5:10/km (HR ~160-170 bpm)
-- Cruise intervals: 4:50-5:00/km (HR ~165-175 bpm)
-- VO2max intervals: 4:30-4:50/km (HR ~175-185 bpm)
-
-**Key Principles:**
-
-- **Mandatory Warm-up:** Execute the "Daily 5" neuromuscular routine before EVERY run.
-- **Mandatory Cool-down:** 2-3 min walk + stretching (see `protocols/mobility.md`)
-- **Performance Fueling:** On high-intensity days (intervals/tempo), consume ~25g carbs 30 mins pre-run.
-- Respect recovery recommendations
-- Don't add extra volume beyond the plan
-- Long runs build toward 18-20km pre-race
-- Monitor HR drift—elevated baseline suggests overtraining or poor recovery
-- **RPE logging:** Record RPE (1-10) for every session
+See `protocols/running.md` for zones, workout types, and periodization.
 
 ---
 
@@ -221,41 +197,17 @@ _Note: Quality running sessions on Tue/Fri are bracketed by rest days. Upper bod
 - Never sacrifice running quality for lifting
 - 10K tune-up race on Mar 8 — no strength session that day
 
-### Post-Race (April 2026 onwards)
+### Post-Race (April 2026+)
 
-**Recomposition Focus:**
-
-- Increase calories to maintenance (~2400-2600)
-- Progressive overload: add 2.5-5kg when hitting top of rep range
-- Potentially add 4th training day if recovery allows
-- Shift to hypertrophy blocks (3-4 sets of 8-12 reps)
+Shift to recomp: maintenance cals (~2400-2600), progressive overload, hypertrophy blocks (3-4×8-12), potentially add 4th day.
 
 ---
 
 ## RECOVERY & MONITORING
 
-**Between Sessions:**
-
-- Sleep: 7-8 hours minimum target (reality: fragmented with baby)
-- Hydration: 3-4L daily
-- Protein timing: Within 30 min of finishing training (don't wait for clock time)
-- Mobility: Daily 10-min routine (see `protocols/mobility.md`)
-
-**Heart Rate Monitoring:**
-
-- Track resting HR daily (normal: 55-60 bpm for this athlete)
-- Easy run HR should stay <138 bpm (adjusted MAF ceiling)
-- **Elevated HR causes:** Caffeine >400mg/day, sleep deprivation, overtraining, dehydration
-- If easy pace (6:20/km) puts you >145 bpm consistently → address caffeine/sleep first
-
-**Warning Signs to Back Off:**
-
-- Resting HR elevated >5bpm above baseline
-- Easy run HR drift >10 bpm during session
-- Garmin body battery consistently <20
-- Persistent muscle soreness >48h
-- Sleep quality declining further
-- Pain/tightness severity ≥3 for 2+ consecutive days (see `protocols/mobility.md`)
+- **Sleep:** 7-8h target (fragmented with baby). **Protein:** Within 30 min post-training. **Mobility:** Daily 10 min (see `protocols/mobility.md`).
+- **Back off if:** RHR elevated >5 bpm for 3+ days, muscle soreness >48h, BB consistently <20, pain severity ≥3 for 2+ days.
+- See `protocols/running.md` for running-specific warning signs.
 
 ---
 
@@ -279,16 +231,5 @@ _Note: Quality running sessions on Tue/Fri are bracketed by rest days. Upper bod
 
 ### Progression Rules (Post-Race = Hypertrophy)
 
-- Progressive overload: add 2.5-5kg when hitting top of rep range for all prescribed sets
-- Use double progression: increase reps within range first, then increase weight and reset reps
-- Deload every 4th week (reduce volume 40%, keep intensity)
-
-### Body Measurements (Weekly, Sunday)
-
-Track alongside weight for proper recomposition monitoring:
-
-| Metric              | How                                   | Frequency                      |
-| ------------------- | ------------------------------------- | ------------------------------ |
-| Weight (7-day avg)  | Morning, post-bathroom, before eating | Daily weigh-in, weekly average |
-| Waist circumference | At navel, relaxed, standing           | Weekly (Sunday)                |
-| Optional: Navy BF%  | Neck + waist + height formula         | Monthly                        |
+- Double progression: increase reps within range first, then +2.5-5kg and reset reps
+- Deload every 4th week (volume -40%, keep intensity)
