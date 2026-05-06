@@ -1,59 +1,34 @@
-# Plan - Daily Workout & Nutrition Plan
-
-Get today's personalized workout and nutrition plan based on recent data and goals.
+# Plan - Daily Workout and Nutrition Plan (MASTER)
 
 ## Usage
+
 ```
 /plan
 /plan [schedule constraints]
 ```
 
-## Examples
-- `/plan`
-- `/plan "8am free slot before work"`
-- `/plan "only have 45 minutes after lunch"`
-
 ## Function
-Uses the **coach skill** to:
 
-1. Check recent data from `/data` CSVs and Garmin
-2. Analyze current training state and progression
-3. Generate today's workout:
-   - Running (easy/tempo/intervals/long run)
-   - OR Strength (full-body session with exercises/sets/reps/weights)
-4. Plan nutrition:
-   - Meal timing aligned with workout
-   - Macro targets: 2,000 cal | 140g protein | 175g carbs | 50g fat
-   - Specific meal suggestions based on training day
-5. Consider schedule constraints if provided
-
-## Output Format
-```
-## Daily Plan - [Date]
-
-### Workout
-**Type:** [Running/Strength]
-**Timing:** [Recommended time based on schedule]
-
-[Detailed workout with exercises/distances/paces/weights]
-
-### Nutrition
-**Post-Workout (12:30):** [meal] - XXX cal
-**Lunch (13:00):** [meal] - XXX cal
-**Snack (17:00):** [meal] - XXX cal
-**Dinner (21:00):** [meal] - XXX cal
-
-**Daily Total:** 2,000 cal | 140g protein | 175g carbs | 50g fat
-
-### Notes
-[Any relevant context or adjustments based on recent performance]
-```
+1. Read `protocols/current-status.md`
+2. Determine today's day type from `protocols/training.md`
+3. Look up calories and macros in `protocols/nutrition.md`
+4. Check recent data from daily files and Garmin CSVs
+5. Apply the sleep/readiness decision tree from `protocols/training.md`
+6. Apply heat rules from `protocols/running.md` when relevant
+7. Generate the workout and meal plan
+8. Include mobility and weigh-in reminders
 
 ## Requirements
-- Automatically invokes coach skill
-- Uses recent performance data for workout planning
-- No Garmin Coach workouts - Claude plans everything
-- Considers 39yo parent constraints and recovery needs
-- Progressive overload based on logged performance
-- Meal timing fits eating window (12:30-21:00)
-- **ALWAYS save to `days/YYYY-MM-DD.md`** with Plan and empty Log sections
+
+- Always be phase-aware and day-type-aware.
+- Never use a flat calorie number across the week.
+- Thursday rule: no running on Thursday; legs on Thursday except Phase 6 weeks 6-8.
+- Long runs >90 min require banana + coffee and quality-day calories.
+- If sleep was <5 h or Body Battery <30, write a rest-day plan.
+- If weather is hot or humid, bias the session toward HR and RPE rather than pace.
+- On double days, partition carbs so recovery between the run and PM lift is protected.
+- In the 3 weeks before the May 24 trail 21K, include gut-training practice on 2-3 long runs over 75 min.
+- Include 10-minute mobility.
+- Compute and include ACWR on Sundays.
+- Compute and include Composite Load on Sundays when enough session data exists.
+- Save to `plans/YYYY-MM-DD.md`.

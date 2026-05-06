@@ -1,151 +1,166 @@
-# CURRENT STATUS
+# CURRENT STATUS - MASTER
 
-> **Living document.** Update weekly (Sundays) or after significant changes.
-> Last verified: 2026-02-15
+> Definitive versioned stack for the post-HM block.
+> Last verified: 2026-05-05
 
 ## Athlete Profile
 
-- **Age:** 39, Male, 172cm
-- **Medications:** Finasteride 1mg/day
-- **Smoking:** Quit early 2025 (1+ year smoke-free)
-- **Recent 10K:** 49:57 (4:57/km) — Mar 8, 2026 (prev: 52:12)
-- **Max HR:** 190 bpm (observed 188-192; Garmin auto-set 195)
+- **Age:** 40 (DOB 1986-03-12), Male, 170 cm (Bod Pod 2026-04-28)
+- **Medications:** Finasteride 1 mg/day
+- **Smoking:** Quit early 2025
+- **Family:** 2-year-old toddler (structural sleep disruption and ~4-6 harder-adherence days/month)
+- **Recent 10K PR:** 49:57 (2026-03-08) — pace 5:00/km, almost exactly LT2
+- **Lactate Threshold (treadmill ramp, 2026-04-28, FCDEFUC lab):**
+  - LT1 (2 mmol/L): **145 bpm @ 5:52/km (10.2 km/h)**
+  - LT2 (4 mmol/L): **172 bpm @ 5:00/km (12 km/h)**
+  - Lab-prescribed individual threshold: **142 bpm @ 6:00/km (10 km/h)** — operational easy/MAF ceiling
+  - Resting lactate: 1.37 mmol/L
+- **Max HR:** 190 bpm observed (race); ramp test peak ~180 bpm
+- **Hydration status:** Chronically under-hydrated at lab evaluation (urine SG 1.021, osmolality 750 mOsm/kg, lab flag: "Mal Hidratado", 2026-04-28). Habitual deficit, not acute.
 
 ## Goals & Priorities
 
-**Primary:** Sub-2h Half Marathon (March 29, 2026) — 5:40/km pace
-**Secondary:** Body recomposition — Phase 1: 74-76kg at 24-26% BF → Phase 2: 72-74kg at 18-20% BF
+**Primary:** Body recomposition - 76.11 kg / 21.7% BF (Bod Pod 2026-04-28) -> **71.0 kg / 16% BF** by August-September 2026 (~5 kg fat loss, hold 59.6 kg lean mass)
+**Secondary:** 10K PR - sub-47:00 at the October 25 A-race (stretch: sub-46:00)
 
-**Priority order (race prep):** Running performance > Muscle retention > Fat loss > Recovery optimization
+**Priority order (cut phases):** Fat loss = Muscle retention > Running performance > Recovery optimization
+**Priority order (peak phase, Sep-Oct):** Running performance > Muscle retention > Body maintenance > Recovery
 
-**Success metrics:** Body composition → Performance → Energy & mood → Health markers
+**Success metrics:** 7-day bodyweight trend -> lean-mass retention -> strength stability -> running performance -> energy and mood
 
 ## Phase & Timeline
 
-| Field             | Value                                                                                     |
-| ----------------- | ----------------------------------------------------------------------------------------- |
-| **Current Phase** | Quality Reintroduction (transitioning from base to race-specific)                         |
-| **Next Race**     | 10K — 4 Estações Coimbra — March 8, 2026 (21 days)                                        |
-| **A-Race**        | Half Marathon — Meia Maratona de Fátima — March 29, 2026 (42 days)                        |
-| **Periodization** | Quality reintro Feb 17-22 · HM-Specific (incl. 10K Mar 8) Feb 23-Mar 22 · Taper Mar 23-29 |
+| Phase                          | Dates           | Weeks | Focus                                      | Avg Cal        | Run km/wk  | Strength    | Status on 2026-05-05 |
+| ------------------------------ | --------------- | ----- | ------------------------------------------ | -------------- | ---------- | ----------- | -------------------- |
+| Bridge: HM Taper + Race        | Mar 23-29       | 1     | Finish HM build cleanly                    | race-week      | ~15        | minimal     | DONE                 |
+| 1. Post-HM Recovery            | Mar 30 - Apr 12 | 2     | Recover, restore routine, hold maintenance | 2,300          | 15-25      | 1-3x/wk     | DONE                 |
+| 2. Base Rebuild + Cut          | Apr 13 - May 4  | 3     | Aerobic rebuild and first deficit          | ~1,850 (plan)  | 35-45      | 3x/wk       | DID NOT EXECUTE      |
+| 2b. Re-entry + Race Block      | May 5 - May 25  | 3     | Strength reintro, hydration, races at maint | ~2,400         | 28-35      | 3x/wk       | CURRENT              |
+| 4. Cut Block 1                 | May 26 - Jul 5  | 6     | Main fat-loss push and 10K speed           | ~2,100         | 40-50      | 3-4x/wk     | Planned              |
+| 5. Cut Block 2                 | Jul 6 - Aug 30  | 8     | Final cut with synchronized deloads        | ~2,000         | 35-45      | 3-4x/wk     | Planned              |
+| 6. Reverse + 10K Peak          | Sep 1 - Oct 25  | 8     | Reverse diet, peak, taper                  | 2,150 -> 2,750 | 45-55      | 3 -> 2 -> 1 | Planned              |
+
+> Calorie targets recalibrated 2026-05-05 against Bod Pod LBM (59.6 kg). Old targets ran ~150-220 cal/day below TDEE — would have produced 0.5+ kg/wk loss with LBM risk at low starting BF.
+
+## Race Schedule
+
+| Date             | Distance     | Race                        | Priority   | Target                                |
+| ---------------- | ------------ | --------------------------- | ---------- | ------------------------------------- |
+| ~~Mar 29~~       | ~~HM~~       | ~~Meia Maratona de Fatima~~ | ~~A-Race~~ | ~~Sub-1:48~~                          |
+| May 17 (Sun)     | 10K (road)   | TBD                         | Leisure    | Run on feel, target sub-50, no PR    |
+| May 24 (Sun)     | 10K (trail)  | TBD                         | Leisure    | Easy-moderate, finish strong          |
+| Jun 20 (Sat)     | 10K          | TBD                         | Benchmark  | Fitness check mid-cut                 |
+| **Oct 25 (Sun)** | **10K**      | **TBD**                     | **A-Race** | **Sub-47:00 (stretch 46)**            |
 
 ## Body Composition
 
-| Metric       | Value    | Date       | Target                                 |
-| ------------ | -------- | ---------- | -------------------------------------- |
-| Weight       | 76.8 kg  | Mar avg    | Phase 1: 74-76 kg · Phase 2: 72-74 kg |
-| Body Fat     | 29.2%    | Mar avg    | Phase 1: 24-26% · Phase 2: 18-20%     |
-| Lean Mass    | 70.8%    | Mar avg    | Maintain or increase                   |
-| Bone Mass    | 3.6%     | Mar avg    | —                                      |
-| Visceral Fat | 2.1      | Mar avg    | —                                      |
-| BMI          | 26.0     | Mar avg    | —                                      |
+> **Method correction (2026-04-28):** Bod Pod plethysmography reveals scale BIA was overestimating BF by ~7 percentage points. Lean mass is 5.7 kg higher than the BIA estimate. Phase calorie math may need recalibration on the new LBM (TDEE estimate goes up).
+
+| Metric       | Current Reference | Date         | Method   | Notes                                  |
+| ------------ | ----------------- | ------------ | -------- | -------------------------------------- |
+| Weight       | 76.11 kg          | 2026-04-28   | Bod Pod  | Above legacy 70-72 kg target           |
+| Body Fat     | 21.7%             | 2026-04-28   | Bod Pod  | Already inside legacy 21-23% target    |
+| Fat Mass     | 16.48 kg          | 2026-04-28   | Bod Pod  | Loss target depends on revised goal    |
+| Lean Mass    | 59.6 kg           | 2026-04-28   | Bod Pod  | +5.7 kg vs prior BIA estimate          |
+| Body Density | 1.0495 kg/L       | 2026-04-28   | Bod Pod  | Body volume 72.52 L, TGV 3.71 L        |
+| Visceral Fat | 2.1               | Mar 2026 avg | BIA      | Bod Pod does not measure               |
+| BMI          | 26.24             | 2026-04-28   | Bod Pod  | Per lab measurement                    |
 
 ### Body Composition History
 
-| Date       | Weight  | BF%   | Fat Mass | Lean Mass | Notes                                |
-| ---------- | ------- | ----- | -------- | --------- | ------------------------------------ |
-| Feb 10     | 77.7 kg | 29.8% | 23.15 kg | —         | Baseline (Index Scale)               |
-| Mar avg    | 76.8 kg | 29.2% | 22.43 kg | 54.37 kg  | -0.9kg total, -0.72kg fat (82% fat)  |
+| Date              | Weight   | BF%    | Fat Mass  | Lean Mass    | Method  | Notes                                           |
+| ----------------- | -------- | ------ | --------- | ------------ | ------- | ----------------------------------------------- |
+| 2026-02-10        | 77.7 kg  | 29.8%  | 23.2 kg   | 54.5 kg est. | BIA     | Last exported scale row before HM baseline      |
+| 2026-03 avg       | 76.8 kg  | 29.2%  | 22.4 kg   | 54.4 kg      | BIA     | Baseline for the original post-HM stack         |
+| 2026-04-08        | 75.7 kg  | 28.8%  | 21.8 kg   | 53.9 kg est. | BIA     | End of Phase 1 — overestimated BF               |
+| **2026-04-28**    | 76.11 kg | 21.7%  | 16.48 kg  | 59.6 kg      | Bod Pod | Lab-grade reference. Supersedes BIA history.    |
+| **2026-08/09 target** | **71 kg** | **16%** | **~11.4 kg** | **Maintain 59.6 kg** | —   | Locked 2026-05-05. Visible-abs / athletic recomp.   |
+| 2026-10 target    | 71 kg    | 16%    | ~11.4 kg  | Maintain 59.6 kg | —       | Hold through 10K peak                           |
 
-## Training Load (Last 7 Days: Feb 9-15)
+### Goal Recalibration Math (lean mass 59.6 kg, assuming maintenance)
 
-| Domain   | Sessions | Volume | Notes                                          |
-| -------- | -------- | ------ | ---------------------------------------------- |
-| Running  | 4        | ~25 km | All MAF base + long run (pending today)        |
-| Strength | 2        | 2/3    | Upper Pull ✓, Upper Push ✓, Legs today         |
-| Quality  | 0        | —      | No intensity sessions — undertrained, see note |
+| BF Target | Implied Weight | Fat-Loss Delta | Notes                                          |
+| --------- | -------------- | -------------- | ---------------------------------------------- |
+| 18%       | 72.7 kg        | -3.4 kg fat    | Mild lean look, comfortable cut                |
+| 16%       | 71.0 kg        | -5.0 kg fat    | Visible-abs territory, athletic                |
+| 14%       | 69.3 kg        | -6.7 kg fat    | Lab recommendation, aggressive but not extreme |
 
-## Key Metrics (Feb 15)
+## Training Load
 
-| Metric          | Value     | Trend       | Status    |
-| --------------- | --------- | ----------- | --------- |
-| HRV 7-day avg   | 65 ms     | ↑ improving | BALANCED  |
-| HRV last night  | 78 ms     | High        | Excellent |
-| Resting HR      | 51-55 bpm | ↓ improving | Excellent |
-| Sleep score     | 89        | ↑ improving | GOOD      |
-| VO2max (Garmin) | 49        | Stable      | —         |
-| Body Battery    | 100 peak  | ↑ peak      | Excellent |
-| Stress avg      | 9         | Very low    | Excellent |
-| Fitness Age     | 36.5      | ↑ regressed | See below |
+Training load is tracked in `plans/YYYY-MM-DD.md` and summarized weekly by `/report`.
 
-### Fitness Age & Race Prediction Regression (Feb 15)
+- Weekly running km: computed from daily files and Garmin exports
+- ACWR: acute km / 4-week rolling average
+- Composite weekly load: session duration x RPE summed across running and lifting, compared against the rolling 4-week average
+- Strength compliance: counted from logged sessions
+- Heat-stress notes: flag weeks with repeated runs in warm conditions
 
-**Fitness age: 34.0 → 36.5.** Half marathon prediction: 1:47:51 → 1:48:44.
+## Key Metrics (Latest Available Snapshot)
 
-**Root cause:** 3 weeks of easy-only running (Feb 1-15) produced near-zero vigorous minutes for Garmin's algorithm. Recovery markers (HRV, BB, RHR, stress) all confirm the athlete is fully recovered and undertrained — not overtrained as previously assumed. The base-only prescription was appropriate for 1 recovery week post-January but was extended too long, causing detraining.
+> **Stale as of 2026-05-05** — pull fresh values from Garmin before next plan generation.
 
-**Resolution:** Quality work reintroduced starting Feb 17 (tempo + cruise intervals). Expect fitness age and predictions to respond within 7-10 days as vigorous minutes increase.
+| Metric                          | Value                   | Date       | Notes                          |
+| ------------------------------- | ----------------------- | ---------- | ------------------------------ |
+| Sleep                           | 8.18 h / score 95       | 2026-04-08 | STALE                          |
+| HRV                             | 80 ms (7-day avg 63)    | 2026-04-08 | STALE                          |
+| Resting HR                      | 52 bpm                  | 2026-04-08 | STALE                          |
+| Body Battery                    | 100 peak / charged 66   | 2026-04-08 | STALE                          |
+| Stress                          | Avg 9                   | 2026-04-08 | STALE — likely worse now       |
+| Fitness Age                     | 38.5 yr (prev 37.3)     | 2026-04-08 | STALE                          |
+| Latest race prediction          | HM 1:47:19 / 10K 48:06  | 2026-04-08 | STALE — pre-detrain            |
 
-## MAF Compliance
+_Update via `/report` before next plan._
 
-MAF discipline established on base runs. Long runs still need compliance work.
+## Aerobic Threshold Compliance
 
-| Date   | Run Type   | Avg HR | MAF Ceiling (142) | Compliant?    |
-| ------ | ---------- | ------ | ----------------- | ------------- |
-| Feb 3  | Base 8.4km | 136    | 142               | ✓             |
-| Feb 5  | Base 5.0km | 136    | 142               | ✓             |
-| Feb 9  | Base 5.3km | 144    | 142               | ✗             |
-| Feb 11 | Base 6.0km | 140    | 142               | ✓             |
-| Feb 13 | Base 7.9km | 139    | 142               | ✓             |
-| Feb 1  | Long 13km  | 168    | 145 drift         | ✗ (gray zone) |
-| Feb 8  | Long 13km  | 162    | 145 drift         | ✗ (gray zone) |
+Anchored to lab-prescribed individual threshold (2026-04-28): 142 bpm @ 6:00/km @ 10 km/h. LT1 (2 mmol/L) sits at 145 bpm. Easy work stays at or below 142 bpm regardless of environment.
+
+- **Easy ceiling (all environments):** ≤142 bpm
+- **Long-run drift ceiling:** ≤145 bpm (LT1)
+- **Old MAF 148 outdoor ceiling retired** — too aerobic-glycolytic per ramp test
+- Review weekly from logged runs instead of carrying stale tables forward
 
 ## Strength Baselines
 
-> Fill in as weights are logged. Update when progression occurs.
+| Exercise          | Last Logged Weight | Last Reps    | Date            | Notes                            |
+| ----------------- | ------------------ | ------------ | --------------- | -------------------------------- |
+| Bench Press       | 40 kg              | 10, 10, 8, 7 | 2026-02-18      | Current barbell baseline         |
+| Squat             | 60 kg              | 8 top set    | 2026-03-02      | Equipment-adjusted legs session  |
+| Pull-ups          | BW                 | 5-8 target   | 2026-02-26 plan | Actual reps need fresh log       |
+| Barbell Row       | 40 kg              | 10, 10, 9    | 2026-02-16      | Pronated row log                 |
+| Overhead Press    | 30 kg              | 10, 8, 10    | 2026-02-18      | Standing strict press            |
+| Romanian Deadlift | 20 kg KB           | 12, 12 alt   | 2026-03-02      | Equipment-limited hinge baseline |
 
-| Exercise          | Last Weight | Last Reps | Date   | Notes |
-| ----------------- | ----------- | --------- | ------ | ----- |
-| Bench Press       | —           | —         | —      |       |
-| Squat / Leg Press | —           | —         | —      |       |
-| Pull-ups          | BW          | 5-8       | Feb 10 |       |
-| Barbell Row       | 40-50 kg    | 8-10      | Feb 10 |       |
-| OHP               | —           | —         | —      |       |
-| RDL               | —           | —         | —      |       |
+## Adherence Targets (Weekly Non-Negotiables)
 
-## Adherence (Week of Feb 9-15)
-
-| Metric                  | Score | Target |
-| ----------------------- | ----- | ------ |
-| Nutrition days tracked  | /7    | 7/7    |
-| Protein ≥156g           | /7    | 7/7    |
-| Calories ±10% of target | /7    | 7/7    |
-| Sleep ≥7h               | /7    | 5/7    |
-| Strength sessions       | 2/3   | 3/3    |
+| Metric                                  | Target |
+| --------------------------------------- | ------ |
+| Nutrition days tracked                  | 7/7    |
+| Protein >= 160 g                        | 7/7    |
+| Calories within day-type target +/- 10% | 6/7    |
+| Garmin Sleep Score >= 75                | 5/7    |
+| Strength sessions                       | 3/3    |
+| Daily weigh-in                          | 7/7    |
+| Mobility                                | 7/7    |
 
 ## Active Constraints
 
-- No current injuries
-
-## Upcoming Week Plan (Feb 16-22) — Quality Reintroduction
-
-| Day        | Session 1                                                                    | Session 2  | Cal   |
-| ---------- | ---------------------------------------------------------------------------- | ---------- | ----- |
-| **Mon 16** | Upper Pull                                                                   | —          | 1,900 |
-| **Tue 17** | **Tempo 7.5km** (2km WU + 4km @ 5:05-5:15/km + 1.5km CD)                     | —          | 2,200 |
-| **Wed 18** | Easy base 5km MAF (<142)                                                     | Upper Push | 1,900 |
-| **Thu 19** | PT Legs (before lunch)                                                       | —          | 1,900 |
-| **Fri 20** | **Cruise intervals 9km** (2km WU + 5×1km @ 4:55-5:05/km, 90s jog + 1.5km CD) | —          | 2,200 |
-| **Sat 21** | REST                                                                         | —          | 1,900 |
-| **Sun 22** | Long Run 14km MAF (<145 HR)                                                  | —          | 2,200 |
-
-**Totals:** ~35.5 km running | 3 strength sessions | 2 quality sessions | ACWR ~1.18
-**Note:** Plans are daily-adjustable based on morning Garmin metrics and prior day logs.
-
-## Race Predictions (Garmin, Feb 15 — post-long run)
-
-| Distance      | Prediction | Trend vs Feb 13 |
-| ------------- | ---------- | --------------- |
-| 5K            | 22:22      | +3s improved    |
-| 10K           | 47:41      | +8s improved    |
-| Half Marathon | 1:48:36    | +18s improved   |
-| Marathon      | 4:02:26    | +29s improved   |
+- Right knee had intermittent pain; currently resolved. Standard pain-tracking protocol applies (no special mandatory tracking).
+- Recovery capacity is materially lower during the deepest cut phases.
+- Sleep disruption from toddler is chronic, not occasional. The protocol must treat broken sleep as a baseline condition, not an exception.
+- Expect ~4-6 days/month where strict plan adherence is harder due to family or social demands. Use the disrupted-day protocol on those days.
 
 ## Coaching Log
 
-| Date   | Decision                                  | Rationale                                                                                                                                    | Outcome                            |
-| ------ | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| ~Feb 2 | Prescribed easy-only base block           | Post-January high-volume block, assumed athlete needed extended recovery                                                                     | Overcorrective — caused detraining |
-| Feb 15 | End easy-only block, reintroduce quality  | Recovery markers all excellent (HRV 65↑, BB 100, RHR 51, stress 9). 3 weeks base-only caused fitness age 34→36.5, HM prediction worsened 53s | Pending                            |
-| Feb 15 | First MAF-compliant long run (141 avg HR) | 13km at 141 avg vs prior 162/168. Predictions immediately improved. Validates MAF approach.                                                  | Success — repeat weekly            |
-| Feb 15 | Skip Mon legs, protect Tue tempo          | PT legs covers Thu. First quality session in 3 weeks takes priority over self-directed legs with DOMS risk.                                  | Pending                            |
+| Date       | Decision                                                     | Rationale                                                                                                | Outcome                             |
+| ---------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| 2026-02-15 | End easy-only block and reintroduce quality                  | Recovery markers were strong; prolonged easy-only block caused detraining                                | Successful transition into HM build |
+| 2026-03-23 | Start aggressive HM taper                                    | Recovery rebounded and race prediction stabilized near 1:48                                              | In progress                         |
+| 2026-03-26 | Approved 30-week concurrent cut + 10K peak plan (Approach B) | Need one integrated system that solves body composition and October 10K performance                      | Locked                              |
+| 2026-03-26 | Master protocol stack selected from cross-agent review       | GPT stack best operating scaffold, Claude training detail best-in-class, missing recovery controls added | Active after HM                     |
+| 2026-05-05 | Body comp + LT data updated from FCDEFUC lab session         | Bod Pod (2026-04-28) corrects scale BIA: 21.7% BF (not 28.8%), 59.6 kg LBM (+5.7 vs estimate). Treadmill ramp gives LT1 145 bpm, LT2 172 bpm, individual threshold 142 bpm. Lab flags chronic under-hydration. | Goal/phase reset pending discussion |
+| 2026-05-05 | Adherence reality logged                                     | Apr 8 → May 5: 1 strength session logged (vs ~12 planned). Running held ~24 km/wk with 1 quality + two long runs (15 km, 19 km) — aerobic fitness intact. Nutrition not tracked. | Strength is the gap, not running    |
+| 2026-05-05 | Recomp target locked                                         | Goal set to 71 kg / 16% BF by Aug-Sep, holding 59.6 kg LBM. Lab's 14% rec rejected as too aggressive given finasteride + sleep disruption + family load. | Active                              |
+| 2026-05-05 | May races confirmed: 10K road May 17, **10K** trail May 24   | User attending both. Trail event corrected from 21K to 10K. Both raced on feel, no PR target — fitness benchmarks. | Active                              |
+| 2026-05-05 | Calorie targets recalibrated to measured LBM                 | Katch-McArdle BMR with 59.6 kg LBM = 1,657 kcal (+123 vs old). All phase targets bumped: re-entry 2,400, Cut 1 2,100, Cut 2 2,000, Reverse 2,150→2,750. Old plan would have run too aggressive a deficit at 21.7% start BF. | Active                              |
+| 2026-05-05 | Eating window: hybrid IF (rest = IF, training = breakfast)   | At higher calorie totals and with LBM retention as priority during cut, packing all training days into 12:30-21:00 compressed protein feedings and stripped pre-training fuel. Hybrid keeps IF benefits 2-3x/wk on rest days, fuels training days properly. | Active                              |

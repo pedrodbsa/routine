@@ -1,60 +1,42 @@
-# CLAUDE.md
+# MASTER Protocol Stack
 
-> **Read `protocols/current-status.md` first** for current phase, body composition, and recent training data before generating any plan.
+> Read `protocols/current-status.md` first before generating any plan from this stack.
 
-## Repository Purpose
+## Purpose
 
-Personal routine management system for a 39-year-old male software engineer focused on concurrent running performance and body recomposition.
+Definitive post-HM protocol stack for a 39-year-old male balancing body recomposition with an October 10K peak.
 
 ## Protocol Lookup
 
-| Domain            | File                          | Contains                                                    |
-| ----------------- | ----------------------------- | ----------------------------------------------------------- |
-| Current state     | `protocols/current-status.md` | Profile, goals, phase, metrics, training load, adherence    |
-| Coaching rules    | `protocols/coaching.md`       | Quality standards, accountability, communication style      |
-| Running           | `protocols/running.md`        | HR zones, pacing, race targets, MAF protocol            |
-| Strength          | `protocols/training.md`       | Weekly structure, exercises, progressions               |
-| Nutrition         | `protocols/nutrition.md`      | Macros, meal timing, fueling strategy                   |
-| Supplements       | `protocols/supplements.md`    | Dosages, timing, interactions                           |
-| Mobility          | `protocols/mobility.md`       | Daily routine, injury tracking                          |
-| Daily file format | `protocols/daily-template.md` | Required fields, sections, logging rules                |
+| Domain              | File                            | Contains                                                                  |
+| ------------------- | ------------------------------- | ------------------------------------------------------------------------- |
+| Current state       | `protocols/current-status.md`   | Phase timeline, race calendar, metrics, adherence targets                 |
+| Editorial synthesis | `protocols/review-synthesis.md` | Consensus extraction, conflict decisions, gap fill rationale              |
+| Coaching rules      | `protocols/coaching.md`         | Quality standards, accountability, communication style                    |
+| Running             | `protocols/running.md`          | HR zones, periodization, workout types, heat rules, taper, race execution |
+| Strength            | `protocols/training.md`         | Weekly templates, exercise library, progression, sleep fallback rules     |
+| Nutrition           | `protocols/nutrition.md`        | Phase-aware calories, macros, fueling, hydration, adjustment rules        |
+| Supplements         | `protocols/supplements.md`      | Daily stack, optional items, finasteride compatibility                    |
+| Mobility            | `protocols/mobility.md`         | Daily mobility, prehab, pain tracking                                     |
+| Daily file format   | `protocols/daily-template.md`   | Required daily fields, day type, ACWR, readiness notes                    |
+| Command docs        | `protocols/commands/`           | Versioned `/plan`, `/log`, `/report`, `/body` behavior                    |
 
-## Directory Structure
+## Workflow
 
-- `protocols/` — Core protocols and guidelines
-- `data/` — Garmin data in CSV format (auto-exported)
-- `days/` — Daily files combining plan + log (format: `YYYY-MM-DD.md`)
-- `reports/` — Weekly and monthly progression reviews
-- `research/` — Evidence base for methodology decisions
-
-## Daily Workflow
-
-1. **Morning:** `/plan` → generates today's plan in `days/YYYY-MM-DD.md`
-2. **After training:** `/log-workout` → updates Log section with completion status
-3. **After meals:** `/log-meal` → checks off meals, notes deviations
-4. **As needed:** `/note` → adds observations to Notes section
-5. **Weekly:** `/report` → progression review, updates `current-status.md`
-
-## Available Commands
-
-**Daily (all update `days/YYYY-MM-DD.md`):**
-
-- `/plan` — Generate today's workout + nutrition plan
-- `/log-workout [details]` — Mark workout complete, add actual performance
-- `/log-meal [details]` — Check off meals, note deviations
-- `/note [text]` — Add observations to Notes section
-
-**Periodic:**
-
-- `/report` — Weekly/monthly progression review (also updates `current-status.md`)
-- `/body` — Sync body composition to Garmin
+1. Morning: `/plan` writes `plans/YYYY-MM-DD.md`
+2. After training: `/log [details]`
+3. After meals: `/log meal [details]`
+4. Weekly: `/report` updates the active current-status file
+5. As needed: `/body` syncs scale data and target deltas
 
 ## Coaching Primer
 
-_Full rules in `protocols/coaching.md` — read before generating plans._
-
-- Be critical and data-driven — recovery markers (HRV, BB, RHR, stress) are ground truth
-- Push back on athlete assumptions when wrong
-- Don't be passive or perpetually conservative — recovered athletes need stimulus
-- Evidence-based only; always check finasteride interactions for supplements
-- Include plyometric warm-ups in every plan; pre-run carbs for high-intensity sessions
+- Check the current phase first. Day type, calories, and strength structure all change by phase.
+- Calorie cycling is mandatory. Never use one flat calorie target across the week.
+- Thursday is always rest from running. Legs stay on Thursday except Phase 6 weeks 6-8, when Thursday becomes pure rest.
+- Use objective readiness markers before ego: sleep duration, sleep score, body battery, HRV, resting HR, pain, and ACWR.
+- In hot weather, pace becomes secondary to HR and RPE.
+- Include the Daily 5 warm-up before every run and pre-run carbs before quality sessions and long runs over 90 minutes.
+- If family disruption spikes, use the minimum-effective-dose fallback week instead of forcing the full plan.
+- For individual hard days (~4-6/month), use the disrupted-day protocol — a lighter version that preserves structure without requiring full compliance.
+- Sleep disruption from a toddler is the baseline, not an exception. Don't over-trigger sleep rules on every mildly short night.

@@ -1,37 +1,48 @@
-# SUPPLEMENT PROTOCOL
+# SUPPLEMENT PROTOCOL - MASTER
 
-> Last updated: 2026-02-10. All supplements verified safe with finasteride.
+> Core stack is deliberately conservative. All listed items are compatible with finasteride 1 mg/day.
 
-## DAILY SCHEDULE
+## Daily Schedule
 
-**12:30 — Post-Workout**
-- Creatine Monohydrate: 5g (Creapure; rest days: with first meal)
-- Vitamin D3 + K2: 4000-6000 IU D3 / 100-120mcg K2
-- Multi-vitamin: 1 tablet
+### 12:30 - Post-Workout or First Meal
 
-**13:00 — Lunch**
-- Omega-3 Fish Oil: 2g EPA/DHA (triglyceride form, refrigerate)
-- Zinc: 20mg (bisglycinate/picolinate; total w/ multi must stay <40mg UL)
-- Finasteride: 1mg
+- Creatine Monohydrate: 5 g
+- Vitamin D3 + K2: 4,000-6,000 IU D3 / 100-120 mcg K2
+- Multivitamin: 1 tablet
 
-**21:00 — Dinner**
-- Astaxanthin: 8mg (limited evidence for recovery; don't repurchase when supply runs out)
+### 13:00 - Lunch
 
-**22:00 — Sleep**
-- Magnesium: 400mg elemental (glycinate caused insomnia — try taurate or citrate instead)
+- Omega-3 Fish Oil: 2 g combined EPA/DHA
+- Zinc: 20 mg
+- Finasteride: 1 mg
 
-## AS-NEEDED
+### 22:00 - Pre-Bed
 
-**Curcumin 1000mg (with piperine):** Only for persistent pain/inflammation >48h. Do NOT take daily during training blocks — suppresses inflammatory signaling needed for adaptation (Trappe 2013, Niklas 2021). Safe with finasteride (mild 5AR properties).
+- Magnesium: 400 mg elemental, preferably taurate or citrate
 
-## RECENTLY REMOVED
+## Strategic / Optional
 
-| Supplement | Reason | Revisit When |
-| ---------- | ------ | ------------ |
-| B12 + Folate | Bloodwork showed B12 elevated; multi covers baseline | Next bloodwork |
-| Ashwagandha KSM-66 | Not being taken | Stress/cortisol becomes priority |
-| L-Theanine 300mg | Not being taken | Sleep onset issues |
+- Caffeine: 200-250 mg before quality sessions or races, hard cutoff 13:00 on normal days
+- Collagen Peptides: 15 g + ~50 mg vitamin C 45-60 min before running during high-volume blocks or if tendon stiffness appears
+- Astaxanthin: not recommended as a daily supplement during aerobic-development blocks; only consider it temporarily for a specific non-performance reason
 
-## FINASTERIDE COMPATIBILITY
+## As-Needed Only
 
-All current supplements safe. Zinc supports testosterone, curcumin has mild 5AR properties (additive for hair), D3 supports testosterone without DHT risk, omega-3 neutral re 5AR.
+- Curcumin 1,000 mg with piperine only for pain/inflammation >48 h. Do not use daily during training blocks.
+
+## Compatibility Notes
+
+- Creatine: safe with finasteride
+- Vitamin D3 + K2: safe
+- Omega-3: safe
+- Magnesium: safe
+- Zinc: safe if total daily intake stays below the tolerable upper limit
+- Curcumin: use sparingly; not a direct finasteride problem, but chronic anti-inflammatory use can blunt adaptation
+
+## Removed / Do Not Readd Automatically
+
+| Supplement         | Reason                                                      | Revisit                                |
+| ------------------ | ----------------------------------------------------------- | -------------------------------------- |
+| B12 + Folate       | Bloodwork showed B12 elevated; multivitamin covers baseline | Next bloodwork                         |
+| Ashwagandha KSM-66 | Inconsistent use and unclear need                           | If stress profile changes materially   |
+| L-Theanine         | Inconsistent use                                            | If sleep-onset issues become recurrent |

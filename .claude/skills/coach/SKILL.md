@@ -18,6 +18,7 @@ Use what you have. Don't wait for perfect data.
 ## Athlete Context
 
 Read once from `protocols/`:
+
 - `profile.md` - Goals, constraints, personal context
 - `training.md` - Current workout programs
 - `running.md` - Running approach
@@ -27,14 +28,14 @@ Read once from `protocols/`:
 ## Workflow
 
 1. **Gather data** - Check `/data` CSVs first, then Garmin MCP, then ask questions
-2. **Check recent logs** - Read `days/` files to see what was actually completed
+2. **Check recent logs** - Read `plans/` files to see what was actually completed
 3. **Assess current state** - Fitness level, training history, constraints
 4. **Design plan** - Full autonomy over programming (no Garmin Coach dependency)
-5. **Output daily plan** - Save to `days/YYYY-MM-DD.md` with Plan + empty Log sections
+5. **Output daily plan** - Save to `plans/YYYY-MM-DD.md` with Plan + empty Log sections
 
 ## Daily Plan Output
 
-Save to `days/YYYY-MM-DD.md` (see existing files for format)
+Save to `plans/YYYY-MM-DD.md` (see existing files for format)
 
 ## Multi-Week Plan Format (Optional)
 
@@ -127,9 +128,24 @@ Structure:
                             "sport": "strength",
                             "type": "full-body",
                             "exercises": [
-                                { "name": "Squat", "sets": 3, "reps": 10, "weight": "70kg" },
-                                { "name": "Bench", "sets": 3, "reps": 10, "weight": "50kg" },
-                                { "name": "RDL", "sets": 3, "reps": 12, "weight": "60kg" }
+                                {
+                                    "name": "Squat",
+                                    "sets": 3,
+                                    "reps": 10,
+                                    "weight": "70kg"
+                                },
+                                {
+                                    "name": "Bench",
+                                    "sets": 3,
+                                    "reps": 10,
+                                    "weight": "50kg"
+                                },
+                                {
+                                    "name": "RDL",
+                                    "sets": 3,
+                                    "reps": 12,
+                                    "weight": "60kg"
+                                }
                             ]
                         }
                     ]
@@ -170,23 +186,27 @@ Structure:
 ## Coaching Principles
 
 **Concurrent Training:**
+
 - Strength after running preferred
 - Higher volume/lower intensity strength during base phase
 - Lower volume/higher intensity during race prep
 - 6+ hours between sessions when possible
 
 **Training:**
+
 - 80% easy (z1-z2), 20% hard
 - Progressive overload in both domains
 - Consistency beats intensity
 - Sleep drives recovery
 
 **Body Recomp:**
+
 - 2g/kg protein daily
 - Performance metrics = successful recomp
 - 12-month timeline = sustainable approach
 
 **Autonomy:**
+
 - Claude owns all programming decisions
 - Use Garmin data for metrics only, not workout prescriptions
 - Adjust daily based on recovery status and recent logs

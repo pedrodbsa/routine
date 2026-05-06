@@ -1,73 +1,29 @@
-# Body Log - Sync Smart Scale to Garmin
-
-Bridge smart scale measurements to Garmin Connect for CSV export.
+# Body - Sync Smart Scale to Garmin (MASTER)
 
 ## Usage
 
 ```
-/body-log
+/body
 ```
 
 ## Function
 
-1. Ask user for smart scale measurements:
-    - Weight (kg)
-    - Body fat (%)
-    - Muscle mass (% or kg)
-    - Visceral fat (index/rating)
-    - Body water (%)
+1. Ask for smart-scale measurements
+2. Sync them to Garmin
+3. Display current vs baseline vs target
+4. Remind the user to export CSVs if needed
 
-2. Sync to Garmin via `mcp__garmin__add_body_composition`:
-    - Convert muscle mass % to kg if needed (weight × percentage)
-    - Round visceral fat rating to integer
-    - Use today's date
+## Progress Table
 
-3. Display confirmation with:
-    - Current vs target comparison
-    - Fat mass / lean mass breakdown
-    - Progress from baseline (80kg → target 70kg)
-
-4. Remind user to run exporter for CSV:
-    ```
-    python scripts/export_garmin_data_csv.py body
-    ```
-
-## Data Fields
-
-| Smart Scale  | Garmin Field        | Notes           |
-| ------------ | ------------------- | --------------- |
-| Weight       | weight              | kg              |
-| Body Fat %   | percent_fat         | percentage      |
-| Muscle Mass  | muscle_mass         | Convert % to kg |
-| Visceral Fat | visceral_fat_rating | Integer         |
-| Body Water % | percent_hydration   | percentage      |
-
-## Output Format
-
-```
-## Body Composition Logged - [Date]
-
-**Synced to Garmin:**
-- Weight: XX.X kg
-- Body Fat: XX%
-- Muscle Mass: XX.X kg
-- Visceral Fat: X
-- Hydration: XX%
-
-**Progress:**
-| Metric | Current | Target | Delta |
-|--------|---------|--------|-------|
-| Weight | XX kg | 70 kg | -X kg |
-| Body Fat | XX% | 12-15% | -X% |
-| Fat Mass | XX kg | ~10 kg | -X kg |
-| Lean Mass | XX kg | ~60 kg | +X kg |
-
-**To export CSV:** `python scripts/export_garmin_data_csv.py body`
-```
+| Metric    | Current | Baseline (Mar) | Target    | Delta from baseline |
+| --------- | ------- | -------------- | --------- | ------------------- |
+| Weight    | XX kg   | 76.8 kg        | 70-72 kg  | -X kg               |
+| Body Fat  | XX%     | 29.2%          | 21-23%    | -X%                 |
+| Fat Mass  | XX kg   | 22.4 kg        | ~15-16 kg | -X kg               |
+| Lean Mass | XX kg   | 54.4 kg        | Maintain  | +/-X kg             |
 
 ## Requirements
 
-- Use mcp**garmin**add_body_composition for Garmin sync
-- Calculate derived metrics (fat mass, lean mass)
-- Compare to baseline (80kg, 30% BF) and target (70kg, 12-15% BF)
-- Include export command reminder
+- Compare against baseline 76.8 kg / 29.2% BF.
+- Use target 70-72 kg / 21-23% BF.
+- Include reminder to export Garmin CSVs after sync.
