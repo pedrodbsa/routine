@@ -1,0 +1,311 @@
+# MEAL ROTATION - MASTER
+
+> Companion to `nutrition.md`. A fixed set of portion-locked meals so the day can be eaten to plan
+> without logging every item. `nutrition.md` holds the authoritative Phase 4 calorie tiers; these cards
+> are the eating mechanism for hitting them.
+> Last verified: 2026-05-31.
+
+> **Phase 4 target correction (2026-05-29 TDEE recalibration).** The cards below were originally built to
+> the draft Phase 4 tiers (Rest 1,850 / Easy 2,050 / Quality 2,300 / Long 2,500). `nutrition.md` has since
+> trimmed those by ~100 kcal/day to **Rest 1,750 / Easy 1,950 / Quality 2,200 / Long 2,400** (avg ~2,000).
+> The cards are **not** re-derived here — that 100 kcal sits inside the eyeballing noise of portion-locked
+> eating and the figure stays provisional until the ~Jun 11 weigh-in reconfirm. To hit the corrected target,
+> shave one carb portion on the highest days (drop ~one mug of cooked rice/potato, or the oats from the
+> post-session shake). The 7-day weight trend is the real governor. Once Jun 11 confirms the final tier, the
+> cards get re-anchored once.
+
+> **Athlete default — Greek yogurt: always 2% fat.** All yogurt in this file and in `/plan` outputs is 2% unless explicitly stated otherwise. Substitute 0% only if the active phase's lowest calorie tier needs the fat trim (per-100 g delta vs 2%: −14 kcal, −2 g F).
+
+## Purpose
+
+This file exists to replace daily food logging with standardised meals. Each meal below is portion-locked
+and its macros are pre-computed, so "tracking" becomes "I ate L2 at the Easy portion" — nothing to weigh
+into an app, nothing to calculate. The work is done once, here, instead of at every meal forever.
+
+Detailed logging stays optional: one full-log calibration day per month is enough to confirm the eyeball
+has not drifted. The daily weigh-in is non-negotiable — with logging gone, the 7-day weight trend is the
+primary feedback loop that governs the cut.
+
+## How It Works
+
+**One mechanic: the day type sets the carb portion.** Every meal has a fixed protein/fat/vegetable anchor
+that never changes. Only the carbohydrate component scales. `/plan` assigns the day type each morning;
+read that one word, then use the matching column.
+
+| Day type        | What it is                                  | Carb portion |
+| --------------- | ------------------------------------------- | ------------ |
+| Rest            | No running, no lifting                      | Rest         |
+| Easy / Strength | Easy run or a strength session              | Easy         |
+| Quality         | Intervals, tempo, threshold                 | Quality      |
+| Long            | Long run                                    | Long         |
+
+**Four feeds a day, every day:**
+
+- **Rest day:** Breakfast shake (07:00-09:00) -> Lunch -> Snack -> Dinner. Breakfast is the protein-dense shake rather than a B-card so the four meals fit inside the rest-day calorie ceiling.
+- **Training day:** Breakfast (B1-B4) -> Post-session shake -> Lunch -> Dinner. No snack.
+
+Dinner finishes ~3 h before bed on every day. This is a soft eating window — captures the sleep and digestive benefit of time-restricted eating without the LBM cost of a hard fasting protocol.
+
+**Picking meals:** choose any breakfast, lunch, and dinner from the rotation freely. The set is built so
+that any combination lands close to target. Lunches are fully yours to standardise. Dinners give options
+for the nights you cook; see the family-meal rule for the rest.
+
+**Weights are cooked weight.** Meats and grains are weighed after cooking — that is what you portion out
+of a batch. If you weigh raw instead, add roughly 30% for meat and roughly 250% for dry-to-cooked rice.
+
+**Protein powder is measured in scoops, not grams.** All whey doses below are written in ON Gold Standard
+scoop fractions. 1 scoop ≈ 30 g powder · ~24 g protein · ~120 kcal · 3 g C · 1 g F. Half-scoop is ~15 g
+powder · ~12 g P · ~60 kcal. Use the scoop that ships in the tub; do not weigh on the kitchen scale.
+
+| Whey dose         | Scoop          | Protein | Calories |
+| ----------------- | -------------- | ------- | -------- |
+| ½ scoop           | half-fill once | ~12 g   | ~60      |
+| 1 scoop           | one level      | ~24 g   | ~120     |
+| 1½ scoops         | one + half     | ~36 g   | ~180     |
+
+**Small liquid/paste fats are measured in spoons, not grams.** Olive oil, almond butter, and similar
+small fat doses are written as tbsp / tsp below — a kitchen scale is too coarse for 5–15 g and a level
+spoon is faster anyway.
+
+| Quantity           | Spoon     | ~grams | Notes                                  |
+| ------------------ | --------- | ------ | -------------------------------------- |
+| 1 tsp olive oil    | 1 tsp     | ~4.5 g | Drizzle-finish                         |
+| 1½ tsp olive oil   | 1½ tsp    | ~6.7 g | Pan-sear small portion                 |
+| 2 tsp olive oil    | 2 tsp     | ~9 g   | Slightly heavier pan / dressing        |
+| 1 tbsp olive oil   | 1 tbsp    | ~13.5 g| Full pan-fry / dressing                |
+| 1 tbsp almond butter | 1 tbsp  | ~16 g  | Heaped if thick, level if runny        |
+| 1 tbsp chia seeds  | 1 tbsp    | ~10 g  | Level                                  |
+
+## Carb Portion Quick Reference
+
+The scalable carb in each meal, in grams of cooked food (dry for oats). Calibrate a mug or scoop to these
+once and you can stop using the scale for carbs entirely.
+
+| Carb food            | Rest  | Easy  | Quality | Long  |
+| -------------------- | ----- | ----- | ------- | ----- |
+| Rice (cooked)        | 121 g | 143 g | 200 g   | 246 g |
+| Potato (boiled)      | 200 g | 235 g | 329 g   | 406 g |
+| Pasta (cooked)       | 113 g | 133 g | 187 g   | 230 g |
+| Quinoa (cooked)      | 162 g | 190 g | 267 g   | 329 g |
+| Oats (dry)           | —     | 67 g  | 93 g    | 115 g |
+| Wholegrain bread     | —     | 93 g  | 130 g   | 160 g |
+
+Oats and bread have no Rest column — breakfast is not eaten on rest days.
+
+## Breakfasts (training days)
+
+Rest days use the Breakfast shake (see Shakes section) — the rest-day calorie ceiling does not fit a B-card alongside lunch, snack, and dinner.
+
+Each card: fixed anchor + the carb portion for the day type. Macros are the full meal total.
+
+### B1 - Eggs & oats
+Anchor: 3 whole eggs + 130 g egg whites + cinnamon. Carb: oats.
+
+| Day     | Oats   | Total                       |
+| ------- | ------ | --------------------------- |
+| Easy    | 67 g   | P42 C41 F20 · 509 kcal      |
+| Quality | 93 g   | P45 C57 F22 · 604 kcal      |
+| Long    | 115 g  | P48 C70 F23 · 681 kcal      |
+
+### B2 - Greek yogurt bowl
+Anchor: 200 g Greek yogurt (2%) + **½ scoop ON whey** + 100 g berries + 18 g almonds. Carb: oats stirred in.
+
+| Day     | Oats   | Total                       |
+| ------- | ------ | --------------------------- |
+| Easy    | 67 g   | P45 C60 F19 · 594 kcal      |
+| Quality | 93 g   | P49 C76 F21 · 689 kcal      |
+| Long    | 115 g  | P52 C89 F22 · 766 kcal      |
+
+### B3 - Eggs & toast
+Anchor: 3 whole eggs + 190 g egg whites. Carb: wholegrain toast.
+
+| Day     | Bread  | Total                       |
+| ------- | ------ | --------------------------- |
+| Easy    | 93 g   | P49 C41 F18 · 526 kcal      |
+| Quality | 130 g  | P53 C57 F20 · 616 kcal      |
+| Long    | 160 g  | P56 C70 F21 · 690 kcal      |
+
+### B4 - Overnight oats
+Anchor: 150 g Greek yogurt (2%) + **1 scoop ON whey** + **1½ tbsp chia seeds** + 80 g berries + 25 g almonds. Carb: oats.
+
+| Day     | Oats   | Total                       |
+| ------- | ------ | --------------------------- |
+| Easy    | 67 g   | P56 C59 F26 · 700 kcal      |
+| Quality | 93 g   | P60 C75 F28 · 794 kcal      |
+| Long    | 115 g  | P62 C88 F30 · 871 kcal      |
+
+## Shakes
+
+| Shake               | When                  | Build                                                                  | Total                  |
+| ------------------- | --------------------- | ---------------------------------------------------------------------- | ---------------------- |
+| Post-session shake  | Training days, <30 min post-session | **1½ scoops ON whey** + 1 banana + 5 g creatine            | P37 C30 F2 · 306 kcal  |
+| Breakfast shake     | Rest days, morning (07:00-09:00) | **1 scoop ON whey** + 200 g Greek yogurt (2%) + 80 g berries + **1 tbsp almond butter** + 5 g creatine | P48 C20 F14 · 398 kcal |
+
+## Lunches (fully standardised — these are yours)
+
+### L1 - Chicken & rice
+Anchor: 130 g chicken breast + 150 g mixed veg + **1 tbsp olive oil**. Carb: rice.
+
+| Day     | Rice   | Total                       |
+| ------- | ------ | --------------------------- |
+| Rest    | 121 g  | P47 C44 F17 · 519 kcal      |
+| Easy    | 143 g  | P47 C50 F18 · 546 kcal      |
+| Quality | 200 g  | P49 C66 F18 · 617 kcal      |
+| Long    | 246 g  | P50 C79 F18 · 676 kcal      |
+
+### L2 - Beef & potato
+Anchor: 140 g lean beef mince (5%) + 200 g veg + **1½ tsp olive oil**. Carb: potato.
+
+| Day     | Potato | Total                       |
+| ------- | ------ | --------------------------- |
+| Rest    | 200 g  | P44 C47 F22 · 565 kcal      |
+| Easy    | 235 g  | P45 C53 F22 · 593 kcal      |
+| Quality | 329 g  | P47 C69 F22 · 665 kcal      |
+| Long    | 406 g  | P49 C82 F22 · 724 kcal      |
+
+### L3 - Tuna & quinoa bowl
+Anchor: 140 g canned tuna (drained) + 150 g veg + **1 tbsp olive oil**. Carb: quinoa. The no-cook-protein
+option — useful on days a batch has run out.
+
+| Day     | Quinoa | Total                       |
+| ------- | ------ | --------------------------- |
+| Rest    | 162 g  | P45 C44 F19 · 526 kcal      |
+| Easy    | 190 g  | P46 C50 F19 · 560 kcal      |
+| Quality | 267 g  | P50 C66 F21 · 650 kcal      |
+| Long    | 329 g  | P52 C79 F22 · 724 kcal      |
+
+### L4 - Turkey pasta
+Anchor: 130 g turkey mince (7%) + 100 g tomato sauce + 100 g veg + **2 tsp olive oil**. Carb: pasta.
+
+| Day     | Pasta  | Total                       |
+| ------- | ------ | --------------------------- |
+| Rest    | 113 g  | P45 C48 F20 · 553 kcal      |
+| Easy    | 133 g  | P46 C53 F21 · 583 kcal      |
+| Quality | 187 g  | P48 C70 F21 · 663 kcal      |
+| Long    | 230 g  | P51 C82 F22 · 728 kcal      |
+
+## Snacks (rest-day feed)
+
+Fixed — no carb scaling. Eaten on rest days as the third feed. On training days a snack is not in the
+base plan and will push the day over target; use one only to replace a feed you missed.
+
+| Snack                   | Build                                                                        | Total                  |
+| ----------------------- | ---------------------------------------------------------------------------- | ---------------------- |
+| S1 - Yogurt & almonds   | 250 g Greek yogurt (2%) + **½ scoop ON whey** + 20 g almonds + 80 g berries  | P42 C20 F16 · 393 kcal |
+| S2 - Yogurt & whey bowl | 250 g Greek yogurt (2%) + **1 scoop ON whey** + 1 apple + 10 g almonds       | P48 C39 F12 · 425 kcal |
+| S3 - Shake & fruit      | **1 scoop ON whey** + 1 apple + **1 tbsp almond butter**                     | P28 C27 F11 · 319 kcal |
+
+## Dinners
+
+Pick from these on the nights you cook. For family-meal nights, see the rule below.
+
+### D1 - Chicken stir-fry
+Anchor: 135 g chicken breast + 250 g veg + **1 tbsp olive oil**. Carb: rice.
+
+| Day     | Rice   | Total                       |
+| ------- | ------ | --------------------------- |
+| Rest    | 121 g  | P50 C50 F19 · 572 kcal      |
+| Easy    | 143 g  | P51 C56 F19 · 599 kcal      |
+| Quality | 200 g  | P52 C72 F19 · 671 kcal      |
+| Long    | 246 g  | P54 C85 F19 · 729 kcal      |
+
+### D2 - Salmon & potato
+Anchor: 135 g salmon + 250 g veg + **1½ tsp olive oil**. Carb: potato.
+
+| Day     | Potato | Total                       |
+| ------- | ------ | --------------------------- |
+| Rest    | 200 g  | P43 C50 F24 · 592 kcal      |
+| Easy    | 235 g  | P43 C56 F25 · 620 kcal      |
+| Quality | 329 g  | P45 C72 F25 · 692 kcal      |
+| Long    | 406 g  | P47 C85 F25 · 751 kcal      |
+
+**Fresh-tuna variant:** swap the salmon for 150 g fresh tuna steak + **1 tbsp olive oil** (tuna is leaner,
+so it takes more oil). Totals shift to roughly P52–57 C50–85 F23 · 618–776 kcal across the tiers — slightly
+higher protein, slightly lower fat than the salmon build.
+
+### D3 - Steak & veg
+Anchor: 135 g lean steak (sirloin) + 300 g veg + **1½ tsp olive oil**. Carb: potato.
+
+| Day     | Potato | Total                       |
+| ------- | ------ | --------------------------- |
+| Rest    | 200 g  | P49 C54 F19 · 584 kcal      |
+| Easy    | 235 g  | P50 C60 F19 · 611 kcal      |
+| Quality | 329 g  | P52 C76 F19 · 683 kcal      |
+| Long    | 406 g  | P53 C88 F19 · 742 kcal      |
+
+### D4 - Turkey meatballs
+Anchor: 140 g turkey mince (7%) + 150 g tomato sauce + 100 g veg + **2 tsp olive oil**. Carb: pasta.
+
+| Day     | Pasta  | Total                       |
+| ------- | ------ | --------------------------- |
+| Rest    | 113 g  | P48 C51 F21 · 591 kcal      |
+| Easy    | 133 g  | P49 C57 F22 · 621 kcal      |
+| Quality | 187 g  | P52 C73 F22 · 701 kcal      |
+| Long    | 230 g  | P54 C86 F23 · 766 kcal      |
+
+## Family-Meal Dinner Rule
+
+On nights dinner is not yours to portion, do not try to force a card. Anchor on:
+
+- **Protein:** a palm to one-and-a-half palms of the meat or fish (~40 g cooked protein).
+- **Carb:** match the day type — Rest = a half cupped hand of cooked starch, Easy = one, Quality = one and
+  a half, Long = two.
+- **Vegetables:** freely.
+- **Added oils, sauces, fried sides:** keep light.
+
+Do not log it. Hit the protein anchor, match the carb to the day, and let the weekly weigh-in absorb the
+imprecision.
+
+## Sample Days
+
+One worked combination per day type, to show the rotation lands on target.
+
+| Day type | Meals                                                    | Total (as built)           | Corrected target |
+| -------- | -------------------------------------------------------- | -------------------------- | ---------------- |
+| Rest     | Breakfast shake + L3 + S2 + D3                           | P190 C157 F60 · 1,905 kcal | 1,750            |
+| Easy     | B2 + Post-session shake + L3 + D3                        | P178 C200 F59 · 2,071 kcal | 1,950            |
+| Quality  | B4 + Post-session shake + L1 + D4                        | P198 C244 F67 · 2,397 kcal | 2,200            |
+| Long     | B2 + Post-session shake + L1 + D3                        | P193 C283 F61 · 2,477 kcal | 2,400            |
+
+Each "as built" combination lands ~150-200 kcal above the corrected target — apply the one-carb-portion shave
+from the correction note at the top of the file (drop the oats from the post-session shake, or take rice/potato
+one tier down) to close the gap. Protein and fat stay put; only carbs come off.
+
+Across every possible meal combination the rotation lands each day type within roughly ±100 kcal of its
+target, with most combinations inside ±60. The 7-day weight trend governs from there.
+
+## What to Watch
+
+The rotation is built to be eaten without arithmetic, but two numbers still deserve a glance:
+
+- **Protein floor (165 g).** Across all combinations the rotation lands protein 163–198 g. The leanest
+  combinations sit 1–2 g under the floor — close enough to ignore most days, but if a day's meals look
+  protein-light, one extra whey scoop closes the gap.
+- **Fat floor (60 g).** The rotation lands fat 57–77 g. The leanest combinations land ~3 g under. If a day
+  is clearly fat-light, add 10–15 g of nuts or a teaspoon of olive oil.
+
+Carbohydrate intentionally lands a little below the nominal `nutrition.md` figures, because real food
+carries protein and fat above the bare minimums and calories are held to target. This is expected. What
+matters is met: calories on target, protein at floor, and carbohydrate still clearly cycled across day
+types (Rest < Easy < Quality < Long).
+
+## Other Phases
+
+The cards are anchored to Phase 4 (Cut Block 1). For other phases, shift the carb portion only:
+
+- **Re-entry / maintenance (~2,400 avg):** eat one carb tier up from the day type (a Rest day uses Easy
+  portions, an Easy day uses Quality portions, and so on).
+- **Cut Block 2 (~2,000 avg):** trim each carb portion by roughly 10%. (Phase 4's corrected target is also ~2,000 avg — the same ~10% carb trim applies now; see the correction note at the top of the file.)
+- **Reverse / peak (Phase 6):** carb portions rise week by week — follow `/plan`, which carries the phase
+  calorie target.
+
+When in doubt, `/plan` states the day's calorie target; adjust the carb portion to close the gap, or ask.
+
+## Batch Prep
+
+Cooking three times a week, each batch covers about two days. A workable rhythm:
+
+- Each cook: prepare 2–3 proteins and 1–2 grains in bulk, portion into containers to the card weights.
+- Keep canned tuna, eggs, Greek yogurt, oats, and frozen berries always stocked — these cover the
+  no-cook meals (L3, B2, B4, snacks) and bridge any gap between batches.
+- Vegetables: roast or steam a large tray per cook; they reheat fine and the cards treat veg loosely.

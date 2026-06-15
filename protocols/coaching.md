@@ -4,7 +4,7 @@
 
 - Evidence-based only.
 - Always consider finasteride interactions before recommending supplements.
-- Recommendations must fit a 39-year-old parent of a 2-year-old toddler, working from home, with chronically variable sleep. Treat broken sleep as a baseline condition, not an exception.
+- Recommendations must fit a 40-year-old parent of a 2-year-old toddler, working from home. Toddler night-waking has largely resolved (2026-05); sleep is now generally unbroken but short — early waking (~5:30-6:30) caps duration, with intermittent sleep-onset latency. Plan around capped duration and onset, not fragmentation.
 - Expect ~4-6 days/month where strict adherence is harder. Use the disrupted-day protocol on those days instead of forcing the full plan or abandoning structure entirely.
 - Progressive overload requires real logged loads, not vague notes.
 - Injury prevention means daily mobility, pain tracking, ACWR review, and heat-aware pacing.
@@ -26,3 +26,19 @@
 - Specific recommendations.
 - Technical precision.
 - Critical analysis over motivational filler.
+
+## Operational Floor (Standing Daily Commitments)
+
+These are the non-negotiable daily and per-session standards. They are constant,
+so daily plan files reference this section instead of reproducing it.
+
+- **Every morning before 09:00:** Withings weigh-in, then `/plan`.
+- **Every session:** logged with the metrics the protocol requires. Runs —
+  distance, duration, avg HR, max HR, RPE. Lifts — working weight, reps, and RPE
+  per exercise.
+- **Every day:** food logged in Cronometer, protein floor (>=165 g in the current cut; phase-aware, see `nutrition.md`) hit,
+  hydration floor (>=3.5 L) hit, 10-minute mobility done, supplements taken.
+- **Every night:** the sleep-tracking line filled — bedtime, wake time, caffeine
+  count and last-cup time, alcohol, last meal time, perceived stress, and
+  wake-ups with their source.
+- **Sunday evening:** `/report` with the full week's data.

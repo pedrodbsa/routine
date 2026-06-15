@@ -1,50 +1,73 @@
 # DAILY FILE TEMPLATE - MASTER
 
-Every `plans/YYYY-MM-DD.md` generated from this stack should include the following sections.
+Every `plans/YYYY-MM-DD.md` follows this structure. Athlete-facing content comes
+first; tracking context is fenced below the divider.
 
-## Status
+## Required structure
 
-| Field          | Description                               |
-| -------------- | ----------------------------------------- |
-| Weight         | Morning Withings reading (kg)             |
-| Sleep          | Duration + score + qualifier              |
-| HRV            | Value in ms                               |
-| Body Battery   | Wake value and current value if available |
-| Resting HR     | bpm                                       |
-| Stress         | Average level                             |
-| Pain/Tightness | None / [location] [severity 1-5]          |
-| Motivation     | 1-5 scale                                 |
-| Caffeine       | Cups + cutoff time                        |
-| Weather        | Temperature / wind / note if hot or humid |
+```
+# YYYY-MM-DD (Day) — <session headline>
 
-## Day Type
-
-| Field          | Description                             |
-| -------------- | --------------------------------------- |
-| Day Type       | Rest / Easy / Quality / Long Run / Race |
-| Calorie Target | Phase-specific target for that day type |
-| Readiness Call | Green / Modified / Rest                 |
-
+## Today
+## Checklist
 ## Workout
-
-- Include RPE for every session
-- Strength entries must include actual load used
-- Running entries must include distance, pace, avg HR, and max HR
-- If heat or sleep modified the session, note the adjustment explicitly
-
+## Nutrition
 ## Log
 
-- Meals with calories and protein
-- Running total vs day-type calorie target
-- Weigh-in and body-comp entries when logged
-- Notes and supplement adherence
+---
 
-## Weekly Check (Sundays only)
+## Context — reference only
+```
 
-| Field            | Description                                                    |
-| ---------------- | -------------------------------------------------------------- |
-| ACWR             | Acute week km / chronic 4-week average km                      |
-| Composite Load   | Weekly sum of session duration x RPE vs 4-week rolling average |
-| 7-day weight avg | Average of daily Withings readings                             |
-| Body comp trend  | BF% and lean mass from Sunday Withings                         |
-| Recovery flags   | Sleep debt / pain / heat / tracking issues                     |
+### `## Today`
+
+Four lines, no more:
+
+- Day type — Rest / Easy / Quality / Long Run / Race
+- Readiness call — Green / Modified / Rest
+- Calorie target — phase and day-type tier
+- Shape of day — one line describing how the day runs
+
+### `## Checklist`
+
+Every must-do as a checkbox, in the order the day needs them. The morning
+weigh-in is always the first item. Include: weigh-in, the prescribed session(s),
+mobility, the protein and hydration floors, and the nightly sleep-tracking line.
+Nothing here should require the reader to look elsewhere to know what to do.
+
+### `## Workout`
+
+Concise session detail.
+
+- Running: distance, HR cap, pace guide, RPE. Note any heat or sleep modification.
+- Strength: the exercise table — slot, exercise, sets x reps, rest, load note.
+- Rest day: state it in one line.
+
+### `## Nutrition`
+
+A meal table (meal, time, target) and a single targets line for calories,
+protein, carbs, and fat. No per-meal prose unless a day genuinely needs it.
+
+### `## Log`
+
+Blanks the athlete fills during the day: workout results, calorie and macro
+totals, the hydration check, the sleep-tracking line, and the weigh-in value.
+
+Skin is tracked weekly, not daily — acne evolves on a multi-week cycle, so daily
+scoring is noise. The weekly skin assessment lives in `protocols/skin-log.md` and
+is captured by `/report`, not in daily files.
+
+### `## Context — reference only`
+
+Sits below a `---` divider. Holds material not needed to act on the day: the
+readiness data snapshot, the rationale for the day's calls, the rest-of-week
+table, notes and flags, and any Garmin workout IDs written by `/garmin`.
+
+## Rules
+
+- Nothing above `## Context` may exceed what the athlete needs to act today.
+- Standing daily commitments are not reproduced in daily files. They live in
+  `protocols/coaching.md` under "Operational Floor". A daily file may reference
+  that section but must not copy it.
+- On Sundays the `## Context` section also carries the weekly check: ACWR,
+  Composite Load, 7-day weight average, body-comp trend, and recovery flags.

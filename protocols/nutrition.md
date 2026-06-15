@@ -6,7 +6,7 @@
 
 **Macro Minimums (Non-Negotiable):**
 
-- **Protein Floor:** 160 g
+- **Protein Floor:** 165 g in the current cut (Phase 4). Phase-aware: 160 g baseline / 165 g Phase 4 / 170 g Phase 5 — see the per-phase tables.
 - **Fat Floor:** 60 g
 
 On the lowest-calorie days, protein and fat come first. Carbs flex around training demand.
@@ -21,7 +21,7 @@ On the lowest-calorie days, protein and fat come first. Carbs flex around traini
 
 Strength sessions and tracking compliance broke down. Running held ~24 km/wk. Replaced from May 5 by Re-entry & Race Block below.
 
-### Phase 2/3 Combined - Re-entry & Race Block (May 5 - May 25)
+### Phase 3 - Re-entry & Race Block (May 5 - May 25)
 
 Maintenance calories. Re-establish strength + tracking, fuel race weeks. No deficit until May 26.
 
@@ -34,18 +34,18 @@ Maintenance calories. Re-establish strength + tracking, fuel race weeks. No defi
 
 Average week: ~2,400 calories (true maintenance at TDEE estimate).
 
-### Phase 4 - Cut Block 1 (May 26 - Jul 5)
+### Phase 4 - Cut Block 1 (May 30 - Jul 5)
 
-Target rate: ~0.3 kg/wk (~325 cal/day average deficit). Slow on purpose — at 21.7% start BF, larger deficits compromise LBM.
+Target rate: ~0.26-0.3 kg/wk (~325 cal/day average deficit). Slow on purpose — at 21.7% start BF, larger deficits compromise LBM. The tiers below already include the 2026-05-29 TDEE recalibration (−100 kcal/tier vs the original draft) and are the **single source of truth**; `current-status.md` and `meal-rotation.md` defer to this table. **Reconfirm at the ~Jun 11 14-day weigh-in trend:** if loss <0.2 kg/wk, trim a further ~75 kcal; if >0.4 kg/wk or LBM/strength drops, add back.
 
 | Day Type        | Calories | Protein | Carbs | Fat  |
 | --------------- | -------- | ------- | ----- | ---- |
-| Rest            | 1,850    | 165 g   | 165 g | 60 g |
-| Easy / Strength | 2,050    | 165 g   | 215 g | 60 g |
-| Quality         | 2,300    | 165 g   | 270 g | 60 g |
-| Long Run        | 2,500    | 165 g   | 320 g | 60 g |
+| Rest            | 1,750    | 165 g   | 140 g | 60 g |
+| Easy / Strength | 1,950    | 165 g   | 190 g | 60 g |
+| Quality         | 2,200    | 165 g   | 250 g | 60 g |
+| Long Run        | 2,400    | 165 g   | 300 g | 60 g |
 
-Average week: ~2,100 calories (vs old plan 1,886 — old plan would have produced ~0.5 kg/wk loss with LBM risk at this BF).
+Average week: ~2,000 calories. (Original draft averaged ~2,100; recalibrated down after actual May-block load implied a true TDEE ~2,240 rather than the assumed ~2,425. Old pre-2026-05 plan ran ~1,886 — too aggressive for this BF.)
 
 ### Phase 5 - Cut Block 2 (Jul 6 - Aug 30)
 
@@ -99,33 +99,37 @@ If sleep was <6 h, do not force fasted running.
 
 ## Meal Distribution
 
-**Eating window: hybrid IF (decided 2026-05-05).**
+**Eating structure: 4 meals daily, breakfast every day (decided 2026-05-25; supersedes the IF rule from 2026-05-05).**
 
-- **Rest days:** Intermittent fasting 12:30-21:00 (8.5 h window). Lower calorie totals fit cleanly.
-- **Training days (run, strength, quality, long, or doubles):** Breakfast included. ~5 feedings across the day to hit protein distribution and fuel performance.
-- **Race days:** Breakfast 2-3 h pre-race regardless.
+IF was dropped because compressing protein into an 8-hour window fits only 2-3 MPS-stimulating boluses; spreading protein across the day fits 3-4, which materially improves LBM retention during the cut. The behavioral simplicity IF offered is already provided by the portion-locked meal rotation, so IF no longer earns its cost in cortisol load, training quality, or protein distribution.
 
-Easy short runs (<60 min, well-rested) may still be done fasted by preference — breakfast then comes after the run. Strength, quality, long-run, and race-day sessions are not fasted.
+- **Every day (rest and training):** breakfast included, 4 protein feedings distributed across the day (~30-45 g protein per feed).
+- **Soft eating window:** stop eating ~3 h before bed. Captures the digestive and sleep benefit of time-restricted eating without the LBM cost of a hard fasting window.
+- **Race days:** breakfast 2-3 h pre-race regardless.
 
-### Rest Day (IF, ~1,750-2,200 cal depending on phase)
+Easy short runs (<60 min, well-rested) may still be done fasted by preference — breakfast then comes immediately after the run, not skipped. Strength, quality, long-run, and race-day sessions are not fasted.
 
-| Meal               | Time  | Notes                               |
-| ------------------ | ----- | ----------------------------------- |
-| Break-fast shake   | 12:30 | 35 g whey + 1 banana + creatine 5 g |
-| Lunch              | 13:00 | Protein + carb + veg + fat          |
-| Snack              | 17:00 | 35-40 g protein + small carb/fat    |
-| Dinner             | 21:00 | Protein + carb + veg                |
+### Rest Day (~1,750-2,200 cal depending on phase)
 
-### Training Day (Breakfast in, ~2,050-2,750 cal depending on phase + session)
+| Meal              | Time        | Notes                                                                  |
+| ----------------- | ----------- | ---------------------------------------------------------------------- |
+| Breakfast (shake) | 07:00-09:00 | Protein-dense shake (~44 g protein). See meal rotation Shakes section. |
+| Lunch             | 13:00-14:00 | Protein + carb + veg + fat                                             |
+| Snack             | 17:00       | 35-40 g protein + small carb/fat                                       |
+| Dinner            | 19:30-20:30 | Protein + carb + veg. Finish ~3 h before bed.                          |
+
+On rest days breakfast is the protein-dense shake rather than a full B-card because the rest-day calorie ceiling (1,850 kcal in Phase 4) does not fit four full meals. A small high-protein breakfast preserves the four-feed protein distribution without crowding lunch, snack, and dinner.
+
+### Training Day (~2,050-2,750 cal depending on phase + session)
 
 | Meal               | Time             | Notes                                                            |
 | ------------------ | ---------------- | ---------------------------------------------------------------- |
-| Breakfast          | 07:00-09:00      | 35-40 g protein + carbs (eggs + oats, Greek yogurt + fruit)      |
+| Breakfast          | 07:00-09:00      | 35-50 g protein + carbs (B1-B4 from meal rotation).              |
 | Pre-session snack  | 30-45 min pre    | Optional if breakfast was recent. Banana + whey on quality/long. |
 | Post-session shake | within 30 min    | 35-45 g whey + carb + 5 g creatine                               |
 | Lunch              | 13:00-14:00      | Protein + carb + veg + fat                                       |
 | Snack (optional)   | 17:00            | Drop if calories already on track                                |
-| Dinner             | 20:00-21:00      | Protein + carb + veg                                             |
+| Dinner             | 19:30-20:30      | Protein + carb + veg. Finish ~3 h before bed.                    |
 
 Protein and fat stay mostly constant. Carbs move up or down with day type and session.
 
@@ -138,7 +142,7 @@ Aim for 4 protein feedings that all clear the leucine threshold:
 - Feed 3: ~35-40 g
 - Feed 4: ~45-55 g
 
-On training days, breakfast counts as Feed 1.
+Breakfast counts as Feed 1 every day. On rest days it is the protein-dense shake; on training days it is one of B1-B4 from the meal rotation.
 
 ### Quality / Long Run Day
 
@@ -150,17 +154,26 @@ Layered on the training-day template, add roughly 300 calories, mostly carbs:
 
 ### Carbohydrate Partitioning on Double Days
 
-When a run is followed by a PM lift on the same day:
+Default training is clustered before lunch (run before breakfast, upper lift before lunch). Legs is the sole after-lunch session — see `training.md` § Double-Day Guidelines.
 
-- Consume at least 40% of the day's total carbs between the AM run and the PM lift
-- Consume another ~20% of the day's total carbs in the 60-90 minutes before the PM lift
-- Do not back-load most of the day's carbs to dinner on double days
+**Default (pre-lunch double — run before breakfast, upper lift before lunch):**
+
+- Post-run shake plus breakfast are the pre-lift fuel — land roughly 35-45% of the day's carbs there so the lift is fed.
+- **Lunch is the post-workout meal** — place the largest single carb feed here, right after the lift.
+- Snack and dinner carry the remainder; do not back-load most of the day's carbs to dinner.
+
+**Legs day (PM, after lunch — typically Thursday):**
+
+- Lunch is the pre-lift meal — ~35-45% of the day's carbs in the 2-3 h before the session.
+- Dinner is the post-workout + pre-bed protein meal — a large carb feed plus ≥40 g slow protein.
 
 ## Meal Options
 
 ### Post-Workout Shake
 
-- 35 g whey + 1 banana + 5 g creatine + water
+- 35 g whey + 1 banana + 5 g creatine + ~250 mL unsweetened almond milk
+
+> Athlete default liquid for shakes: unsweetened almond milk (~30 kcal / cup, +1 g P / +1 g C / +2.5 g F vs water). Substitute water only when the calorie tier is the lowest of the active phase and the liquid kcal need to be trimmed.
 
 ### Lunch
 
@@ -184,10 +197,12 @@ When a run is followed by a PM lift on the same day:
 
 ## Hydration and Heat Rules
 
-- Daily baseline: 3.0-4.0 L fluids
+- Daily baseline: **3.5-4.5 L fluids** (raised from 3.0-4.0 due to chronic under-hydration lab flag, 2026-04-28; heavy daily salt intake increases the water requirement, it does not substitute for it)
 - Quality, long, or hot-weather days: add 500-1000 mL above baseline
-- For quality sessions and long runs in temperatures >24 C, take 500-800 mg sodium with about 400 mL water 60 minutes pre-run
+- **Pre-run sodium loading** (Quality, Long Run, or temps >24 C): 600-800 mg sodium with 500 mL water 60-90 min pre-run. Timing-driven for plasma-volume expansion, not additive to daily intake. Dose kept modest because daily salt is already high — 1 g+ pre-run risks GI distress at this baseline
 - For runs >60-75 min in warm weather: 400-700 mL fluid/hour and 300-600 mg sodium/hour
+- **Daily potassium target ~3,500-4,000 mg from food.** Sources: potato (~900 mg), banana (~400 mg), cooked spinach (~840 mg/cup), Greek yogurt (~250 mg/cup), salmon (~400 mg/serving), beans (~700 mg/cup). A standard multivitamin covers <5% of this — must come from food
+- **Daily magnesium target ~400 mg.** Food sources: pumpkin seeds (~150 mg/oz), almonds (~80 mg/oz), cooked spinach (~150 mg/cup), dark chocolate 70%+ (~65 mg/oz). Multis typically cover only 12-25%; supplemental Mg glycinate **200-350 mg** pre-bed is acceptable (kept at or below the 350 mg supplemental UL, since the food target already supplies ~400 mg). Benefit for sleep onset is modest and evidence-light — keep it because Mg is well-tolerated and corrects a common dietary shortfall, not as a primary sleep lever. (Single supplement spec lives in `supplements.md`.)
 - Use normal thirst plus urine color as a simple check. Avoid compulsive overdrinking.
 
 ## Race and Long-Effort Fueling
@@ -219,6 +234,7 @@ When a run is followed by a PM lift on the same day:
 | Motivation <2 for 3+ days               | Insert unplanned refeed day at 2,300 cal             |
 | Lean mass declines 2+ weeks             | Raise calories 100-200, carbs first                  |
 | 3+ untracked days in a week             | Flag in weekly report and audit honestly             |
+| Strength compliance <2/3 sessions in a week | Reduce next week's daily targets by 75-100 cal (carbs first); flag in weekly report. Calories are "earned" by stimulus — but at the weekly level, not punitively same-day |
 | Low motivation 5+ days                  | Consider moving diet break earlier                   |
 | Pain severity 3+ in cut phase           | Raise intake to 2,300 for that day plus the next day |
 | Sleep <5 h for 2 nights                 | Use maintenance calories for 1-2 days                |
@@ -240,7 +256,7 @@ During weeks 3-4 of Phase 6, if the 7-day average bodyweight jumps >0.5 kg in on
 
 ### Pre-Bed Protein Rule
 
-The final meal of the day should contain 30-40 g of slow-digesting or mixed protein, especially after PM lifting.
+The final meal of the day contains **≥40 g of slow-digesting or mixed protein** (casein, Greek yogurt, cottage cheese, mixed dinner protein). Non-negotiable on PM lift days. Supports overnight MPS during the deficit and across nights shortened by early waking.
 
 ## Diet Breaks
 

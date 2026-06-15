@@ -18,6 +18,14 @@ Primary limiter remains cardiovascular, not muscular. Post-smoking aerobic devel
 
 Anchors: LT1 = 145, LT2 = 172, max ~190 (race-observed). Treadmill ≈ outdoor at same HR — pace differs, HR doesn't.
 
+**Athlete compressed-range note (2026-06-13):** this athlete cannot run below ~130 bpm — below that is a walk, not a jog. Two consequences for the zone table: (1) **Zone 1 (<125) is walk-only** — "recovery jogs" do not exist down there; a real recovery jog runs ~135–145. (2) The **functional easy-running band is ~135–142**, not the full 125–142 — a ~7 bpm window pinned just under the cap. Easy runs intrinsically sit near the 142 ceiling, so 143–145 is this athlete's natural easy-gait HR, governed by RPE/conversation, not a discipline failure. The easy–to–sub-T gap is only ~10 bpm (142 → 152), so easy and sub-T cannot be separated by HR alone — RPE and pace must do that work. This is also why outdoor easy pace-at-HR is a noisy fitness signal (always at the rail) and the treadmill control run is the cleaner read.
+
+### Garmin Device Calibration (2026-06-11)
+
+The Garmin watch only offers a 5-zone HR model (no native lactate-threshold anchor), so zones are entered in **BPM** to honor the lab. Mapping to Garmin's 5 zones: Warm Up ≥95, Easy ≥120, Aerobic ≥143, Threshold ≥158, **Maximum ≥172 (= LT2)**. This is a coarse on-watch display only; real training stays governed by the 7-zone table above and per-session HR targets.
+
+**Running power:** Garmin auto-detected FTP (403 W) was inflated — above the athlete's hardest recorded effort. Threshold Power was set manually to **360 W**, derived from the Ansião 10K (May 17) normalized power of 371 W (52-min effort at avg HR 176, slightly above LT2). Garmin's default power-zone percentages are kept (threshold = 100% at the Z3/Z4 boundary). Power is not lab-measured and is not a training governor here — it exists only so the watch's power gauge and power-based Training Effect are not wrong.
+
 ### Easy-Run Rules
 
 | Environment | Ceiling | Spike Max | Typical Pace            |
@@ -26,7 +34,8 @@ Anchors: LT1 = 145, LT2 = 172, max ~190 (race-observed). Treadmill ≈ outdoor a
 
 - Easy = RPE 3-4 and full conversation.
 - If RPE exceeds 5, slow down even if HR looks acceptable.
-- Recovery jogs stay below ~133 bpm.
+- Recovery jogs run **~135–145 bpm** — this athlete can't jog below ~130 (Zone 1 is walk-only), so don't chase a sub-133 "recovery jog" that doesn't exist for this physiology. Govern recovery by easing effort and letting HR fall, not by a walk-level number.
+- **Weekly treadmill control run (2026-06-12):** one of the week's easy runs is done on the treadmill under fixed conditions — ~30 min, HR capped at 142, same incline every time (1%). This is the heat-independent fitness signal: outdoor pace-at-HR is confounded by season, so the control run is the only easy-run pace series that is compared week to week. Log it as a normal easy run; `/report` reads its pace-at-HR trend.
 
 ## Pre-Run Warm-Up (Daily 5)
 
@@ -38,67 +47,64 @@ Anchors: LT1 = 145, LT2 = 172, max ~190 (race-observed). Treadmill ≈ outdoor a
 
 ## Current Periodization
 
-| Phase                      | Dates             | Focus                                          | Volume      |
-| -------------------------- | ----------------- | ---------------------------------------------- | ----------- |
-| Base (COMPLETE)            | Dec 2025 - Feb 16 | All <142 bpm                                   | 35-45 km/wk |
-| Quality Reintro (COMPLETE) | Feb 17-22         | 2 quality sessions/wk                          | 35 km/wk    |
-| HM-Specific (COMPLETE)     | Feb 23 - Mar 22   | 2-3 sub-T sessions/wk                          | 45-55 km/wk |
-| Taper + HM Race (CURRENT)  | Mar 23-29         | Volume -70%, maintain intensity                | ~15 km/wk   |
-| Post-HM Recovery           | Mar 30 - Apr 12   | Easy only, habit building                      | 15-25 km/wk |
-| Base Rebuild + Cut         | Apr 13 - May 11   | 1 quality/wk, aerobic rebuild                  | 35-45 km/wk |
-| May Race Block             | May 12-25         | 10K + trail 21K, no deep fatigue               | race weeks  |
-| Cut Block 1                | May 26 - Jul 5    | 2 quality/wk, 10K pace introduced              | 40-50 km/wk |
-| Cut Block 2                | Jul 6 - Aug 30    | 2 quality/wk, synchronized deload every 3rd wk | 35-40 km/wk |
-| 10K Peak                   | Sep 1 - Oct 25    | 2 quality/wk + selective VO2max, taper         | 45-55 km/wk |
+Everything through the May race block is complete (Base → Quality Reintro → HM-Specific → HM taper + race Mar 29 → Post-HM Recovery → Base Rebuild → May races: Ansião 10K May 17, Anadia 14.7 km trail May 24). Live and upcoming:
+
+| Phase                  | Dates           | Focus                                                   | Volume      |
+| ---------------------- | --------------- | ------------------------------------------------------- | ----------- |
+| Cut Block 1 (CURRENT)  | May 30 - Jul 5  | 2 quality/wk (1 harder + 1 lighter), 10K pace from wk 4 | 35-42 km/wk |
+| Cut Block 2            | Jul 6 - Aug 30  | 2 quality/wk, synchronized deload every 3rd wk          | 35-40 km/wk |
+| 10K Peak               | Sep 1 - Oct 25  | 2 quality/wk + selective VO2max, taper                  | 45-55 km/wk |
 
 ## Race Schedule
 
-| Date             | Distance  | Race                        | Priority   | Target                     |
-| ---------------- | --------- | --------------------------- | ---------- | -------------------------- |
-| ~~Mar 29~~       | ~~HM~~    | ~~Meia Maratona de Fatima~~ | ~~A-Race~~ | ~~Sub-1:48~~               |
-| May 17 (Sun)     | 10K       | TBD                         | Leisure    | Run on feel, sub-49        |
-| May 24 (Sun)     | 21K Trail | TBD                         | Leisure    | Easy-moderate, HR cap 155  |
-| Jun 20 (Sat)     | 10K       | TBD                         | Benchmark  | Fitness check mid-cut      |
-| **Oct 25 (Sun)** | **10K**   | **TBD**                     | **A-Race** | **Sub-47:00 (stretch 46)** |
+| Date             | Distance        | Race         | Priority   | Result / Target                          |
+| ---------------- | --------------- | ------------ | ---------- | ---------------------------------------- |
+| May 17 (Sun)     | 10K (road)      | Ansião 10K   | Done       | 52:16 / 5:13/km, avg HR 176 (raced hard) |
+| May 24 (Sun)     | 14.7 km (trail) | Anadia trail | Done       | 2:07:42, avg HR 172, 413 m climb         |
+| Jun 20 (Sat)     | 10K             | TBD          | Benchmark  | Fitness check mid-cut — **hard decision gate (2026-06-12):** if the heat-adjusted result is slower than ~51:30, formally re-baseline the October target to sub-48:00/48:30 and log the decision. A stale sub-47 target poisons Phase 6 pacing. |
+| **Oct 25 (Sun)** | **10K**         | **TBD**      | **A-Race** | **Sub-47:00 (stretch 46)** — subject to the Jun 20 re-baseline gate |
 
 ## Workout Types
 
 ### Easy/Base Runs
 
-- **HR:** 128-142 treadmill, 128-148 outdoor
-- **Pace:** 6:15-7:30/km
+- **HR:** functional band **~135-142** (cap = lab individual threshold 142 bpm; the old 148 outdoor ceiling is retired). The athlete's easy gait sits near the cap — below ~130 is a walk, so the usable easy window is the top ~7 bpm of Zone 2, not the full 125–142.
+- **Pace:** 6:30-7:30/km outdoor, 6:40-7:30/km treadmill
 - **Duration:** 30-60 min
 - **RPE:** 3-4
 
 ### Long Runs
 
-- **HR:** 128-145 with drift ceiling around 150 outdoor when prescribed
+- **HR:** ~135-142, drift ceiling 145 (LT1) when prescribed
 - **Duration:** 75-120 min depending on phase
 - **RPE:** 4-5
 - Long runs over 90 min use quality-day fueling.
 
 ### Sub-Threshold Intervals
 
-| Session          | Structure        | HR Target       | Recovery      |
-| ---------------- | ---------------- | --------------- | ------------- |
-| Norwegian Long   | 3x10 to 4x10 min | 148-160 outdoor | 60-90 sec jog |
-| Norwegian Short  | 8-10x3 min       | 152-165 outdoor | 45-60 sec jog |
-| Cruise Intervals | 5-6x1 km         | 150-165 outdoor | 60-90 sec jog |
-| HM-pace          | 4-6x2 km         | Goal HM effort  | 60 sec jog    |
+| Session          | Structure        | HR Target      | Recovery      |
+| ---------------- | ---------------- | -------------- | ------------- |
+| Norwegian Long   | 3x10 to 4x10 min | 152-165        | 60-90 sec jog |
+| Norwegian Short  | 8-10x3 min       | 152-165        | 45-60 sec jog |
+| Cruise Intervals | 5-6x1 km         | 152-165        | 60-90 sec jog |
+| HM-pace          | 4-6x2 km         | Goal HM effort | 60 sec jog    |
 
-### Tempo
+All sub-T sessions target **152–165 bpm** (≈2.5–3.5 mmol/L, between LT1 145 and LT2 172). Longer reps (Norwegian Long) sit toward the low end (~152–160); shorter reps (Cruise/Short) can reach ~165. **Hard ceiling 168** — past that you've drifted into threshold (athlete tendency: Jun 2 reps spiked to 179, over-cooked). HR is lactate-anchored and environment-independent — the same numbers apply on the treadmill.
 
-- **HR:** 155-168
+### Tempo (threshold)
+
+- **HR:** 163-172 — at or just under LT2 (172). This is the distinct **threshold** stimulus, deliberately above the sub-T sessions (152–165), not overlapping them.
 - **Structure:** 20-30 min continuous
 - **RPE:** 7-8
+- Hold at/just under LT2. If HR climbs past 172 you're racing the tempo, not running it — back off; that turns a steady threshold piece into a threshold-rep/VO2 effort.
 
 ### 10K-Pace Intervals
 
-- **HR:** 160-172
-- **Pace:** 4:36-4:50/km
+- **Governor:** HR/effort, not pace. Run reps at 168-174 bpm (around LT2 172) at RPE 8-9.
+- **Pace:** currently ~4:55-5:05/km — current 10K race pace (≈5:00/km) sits right at LT2. Goal pace 4:42/km (sub-47) is a **convergence target**: the pace earned at the same HR as fitness rises, not a number to force from day one. Forcing 4:42 now drives HR into the VO2 zone (176+) and turns this into a VO2 session rather than threshold work.
 - **Structure:** 6-8x1 km or 4-5x1.5 km with 60 sec jog
 - **RPE:** 8-9
-- Introduce in Cut Block 1. This is the core 10K-specific session.
+- Introduce in Cut Block 1 (from week 4). This is the core 10K-specific session.
 
 ### VO2max Intervals
 
@@ -115,15 +121,20 @@ Anchors: LT1 = 145, LT2 = 172, max ~190 (race-observed). Treadmill ≈ outdoor a
 
 ## Weekly Rules by Phase
 
+Scheduling is fully flexible across the week (Thursday no-running rule retired 2026-05-28). The rules below describe **session counts and spacing**, not weekday assignment.
+
 - **Phase 1:** easy-only running. No quality work.
-- **Phase 2:** Tuesday is the only quality day. Thursday is always no-running.
-- **Phase 3:** sharpen, race, recover. No heavy taper and no hard legs late in the week.
-- **Phases 4-5:** Tuesday and Friday quality, Thursday no-running, Sunday long run.
-- **Phase 4 weeks 1-3:** Tuesday is the harder quality session. Friday stays lighter, preferably Norwegian/sub-threshold rather than 10K pace.
-- **If Friday quality misses target by 2+ RPE points for 3 straight exposures:** move legs to Wednesday PM and leave Thursday as pure no-running recovery.
-- **Phase 5:** cap volume at 40 km/week. If 7-day HRV average drops >10% below baseline, replace Friday quality with an easy aerobic run.
+- **Phase 2:** one quality session per week. Long run on the weekend.
+- **Phase 3:** sharpen, race, recover. No heavy taper and no hard legs in the last 3 days before a race.
+- **Phases 4-5:** two quality sessions per week (one harder, one lighter) with ≥72 h between them; long run on the weekend; legs needs ≥36 h before the next quality run and never stacks with a hard run on the same day.
+- **Phase 4 volume note (~35-42 km/wk, ceiling relaxed 2026-06-03):** the original 30-35 cap was lifted because the two quality sessions are a deliberate, athlete-chosen motivation / 10K-specificity priority, and with the quality + long-run trio already near ~30 km only one easy run fit under the old ceiling. The athlete chose to raise the cap rather than cut easy runs. The added load is **easy** km, which moves the week back toward 80/20 rather than degrading it. The long run stays **12-14 km** (≤~35-40% of the week); the lighter quality session stays genuinely short (~5-6 km of work). The band is a guide, not a hard cap: **recovery markers govern** — if flags stack, the lighter quality session is the first thing to downgrade to easy. The higher mileage raises TDEE modestly (~+70 kcal/day at the top of the band); the ~Jun 11 14-day weigh-in read absorbs it (add carbs back if loss runs >0.4 kg/wk or strength/LBM dips).
+- **Phase 4 volume floor (2026-06-12): 30 km/wk minimum, enforced.** The Apr-May trough (weeks of 10-15 km while the narrative said "aerobic fitness intact") cost real fitness — VO2max estimate 49→47, easy-run efficiency −4%. Consistency at 30-38 km/wk through the cut matters more than any single session's design. A week below 30 km (outside illness, injury, or a declared fallback week) is a protocol breach: it triggers a logged corrective action in the coaching log, same as ACWR >1.5.
+- **Phase 4-5 running success metrics (2026-06-12):** easy-run pace is **off the scoreboard until September** — it is sacrificed to the deficit and the season by design, and is not a failure signal. The cut-phase running scoreboard is: (1) heat-adjusted efficiency (treadmill control run pace-at-HR) stable within ~2%, (2) both weekly quality sessions completed at target HR, (3) VO2max estimate holds ≥47, (4) weekly volume ≥30 km. Pace-at-HR improvement is a Phase 6 deliverable, not a Phase 4-5 one.
+- **Phase 4 weeks 1-3:** the harder quality session is the sub-T / Norwegian work; the lighter one is aerobic-development or short sub-T. 10K-pace work enters from week 4.
+- **Q2 survivability rule (2026-06-12):** the second quality session has structural attrition — when a session is missed every week, the schedule is wrong, not the athlete. On any compromised week (readiness flags, family disruption, time pressure), Q2 converts to **6×20 s strides or 6×10-15 s hill sprints appended to an easy run** instead of being skipped. A 10-minute quality touch that happens beats a 40-minute session that doesn't. This conversion counts as Q2 completed for compliance.
+- **Phase 5:** cap volume at 40 km/week. If 7-day HRV average drops >10% below baseline, downgrade the lighter quality session of the week to an easy aerobic run.
 - **Phase 5 deload weeks:** every 3rd week reduce run volume 15-20% and keep only one quality session.
-- **Phase 6:** keep Tuesday/Friday quality rhythm, add selective VO2max, taper last 2 weeks.
+- **Phase 6:** keep two quality sessions per week, add selective VO2max, taper last 2 weeks.
 
 ## Heat and Weather Adaptation
 
@@ -148,7 +159,7 @@ Acute km this week / 4-week rolling average.
 | 0.8-1.3 | Sweet spot      | Continue               |
 | 1.3-1.5 | Caution         | Hold or trim next week |
 | >1.5    | Danger          | Reduce volume          |
-| <0.8    | Detraining risk | Build gradually        |
+| <0.8    | Detraining risk | **Enforced (2026-06-12):** log a corrective action in the coaching log and rebuild toward the 30 km floor next week. This flag fired silently through the Apr-May trough; it is no longer advisory. |
 
 ### Warning Signs
 
@@ -201,19 +212,16 @@ Keep the contacts crisp and low-fatigue. This is for stiffness and elastic retur
 - 5-7 days before hard lower-body lifting returns
 - Keep calories at maintenance for 2 days post-race
 
-## Historical Longer-Race Fueling Reference
+## Longer-Race Fueling Reference
 
-For future HM or trail races around 90-120 minutes:
+Generic reference for any future HM or trail race around 90-120 minutes. None is currently on the calendar — the A-race is a 10K, which needs no in-race fuel — so this is kept only for if a longer event is added.
 
 - Carb load 36-48 h pre-race: 6-8 g/kg/day carbohydrate
 - Race breakfast 3-4 h pre-start: 1-1.5 g/kg carbohydrate
 - In-race: 30-45 g carbohydrate/hour
 - Fluids: 400-700 mL/hour adjusted by weather and thirst
 - Sodium: 300-600 mg/hour in moderate-to-warm conditions
-
-### Trail 21K Gut-Training Note
-
-In the 3 weeks before the May 24 trail 21K, practice mid-run fueling on 2-3 long runs over 75 minutes using the same products planned for race day.
+- Practice mid-run fueling on 2-3 long runs >75 min in the weeks before any such race, using race-day products.
 
 ## Data Files
 
