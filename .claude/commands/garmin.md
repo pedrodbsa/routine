@@ -13,7 +13,7 @@
 and schedules them on the calendar. It is user-triggered — run it after `/plan`,
 once the plan has been reviewed.
 
-1. Read the plan file for the target date — today's `plans/YYYY-MM-DD.md`, or the
+1. Read the plan file for the target date — today's `logbook/YYYY-MM/YYYY-MM-DD.md`, or the
    date passed as an argument.
 2. Parse the prescribed session(s) from the `## Workout` section.
 3. Replace-on-rerun: look up workouts whose name carries the target date
@@ -94,6 +94,13 @@ Build strength with `mcp__garmin__upload_workout`, never
 `mcp__garmin__create_strength_workout` (the latter produces fixed-time blocks
 with the exercise name in a description — no reps, no load, untrackable as sets).
 
+**Consult `protocols/strength-exercises.md` first.** Its exercise table holds the
+verified `category` / `exerciseName` for each movement (status `✓ <date>`), the
+`⚠ not …` enum traps (known silent drops), and the `free-entry` movements — use
+those instead of re-guessing an enum. After the read-back verification (step 5),
+upgrade the status there (a `⚠ guess` that survived becomes `✓ <date>`, or record a
+new trap) so the next upload doesn't repeat the guess.
+
 - Every exercise is its own `RepeatGroupDTO` (`numberOfIterations` = number of
   sets) wrapping an exercise step + a `rest` step. The exercise step uses a
   **reps** end condition (`conditionTypeId: 10`, value = target reps; use the low
@@ -115,5 +122,5 @@ with the exercise name in a description — no reps, no load, untrackable as set
   confirm each name survived; if one dropped, retry with the correct enum or
   record it as a closest-category + note.
 - Loads come from the plan file. If the plan only gives a range or "RPE 7", pick
-  a starting load from the last logged session (see `protocols/current-status.md`
-  § Strength Baselines) and use that as the prescribed load.
+  a starting load from the last logged session in `protocols/strength-exercises.md`
+  § Working Loads and use that as the prescribed load.

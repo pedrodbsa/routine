@@ -40,7 +40,7 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
    `/report` run. Do not write the file yet.
 8. Wait for the athlete to approve or request edits. Iterate as needed.
 9. On approval:
-   - Write `plans/YYYY-MM-DD.md` using the structure in
+   - Write `logbook/YYYY-MM/YYYY-MM-DD.md` using the structure in
      `protocols/daily-template.md`.
    - Refresh `protocols/current-status.md`: update the `## Key Metrics` recovery
      rows (Sleep, HRV, Resting HR, Body Battery, Stress) with today's pulled
@@ -63,6 +63,11 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
   convenient easy day and label it in the plan file.
 - Long runs >90 min require banana + coffee and quality-day calories.
 - If sleep was <5 h or Body Battery <30, write a rest-day plan.
+- Rest-day plans include the standing **Rest-Day NEAT incline-walk block**
+  (`training.md` § Rest-Day NEAT — incline 8% / 5.0 km/h / 40 min / HR ≤125,
+  fasted first thing) in both the `## Workout` and `## Checklist` sections —
+  unless recovery is genuinely depleted (Body Battery <30 at wake or sleep <5 h),
+  in which case it is full rest and the walk is dropped.
 - Synthesize trailing multi-day load before prescribing, not only same-day
   markers: apply the Cumulative-Load Rules in `protocols/training.md`
   § Sleep and Readiness Decision Tree. When a race or benchmark is within ~7
@@ -71,10 +76,25 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
 - If weather is hot or humid, bias the session toward HR and RPE rather than pace.
 - On double days, partition carbs so recovery between the run and PM lift is
   protected.
+- When the day includes a strength session, read
+  `protocols/strength-exercises.md`. Filter exercises to the **Gym** column for
+  the day's location (default **G1**; confirm the gym if unstated, and record it
+  in the plan) — do not prescribe a movement the day's gym can't do (e.g. no
+  cable rows / full dips / pull-ups at G1; PT-tagged leg machines only on
+  PT-led days). Use the current working load to set progression and the rotation
+  group to rotate the selection vs the last same-type session. It is the single
+  source of truth for strength loads; `/plan` reads it but does not write it —
+  `/report` owns the numbers.
 - Before a trail or long race, include gut-training practice on 2-3 long runs
   over 75 min.
-- The `## Checklist` section must include the morning weigh-in and 10-minute
-  mobility.
+- The `## Checklist` section must include the morning weigh-in, 10-minute
+  mobility, and the **daily steps target (~8-10k, the cut's primary NEAT deficit
+  lever, 2026-06-18)**.
+- Nutrition follows `nutrition.md` § Meal Distribution: **3 protein feeds on
+  easy/rest days** (no post-run shake — breakfast is the post-run meal; the
+  dropped shake is a deliberate ~240 kcal deficit lever) and **4 on
+  quality/long/strength days**. Do not cut the weighed plan-day meals to chase the
+  deficit — the levers are NEAT and social-day control, not plan-day food.
 - Compute and include ACWR on Sundays, and Composite Load on Sundays when enough
   session data exists. Both go in the `## Context` section.
 - The plan file follows `protocols/daily-template.md`. Standing daily commitments

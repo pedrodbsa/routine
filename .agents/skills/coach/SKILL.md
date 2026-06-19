@@ -28,14 +28,14 @@ Read once from `protocols/`:
 ## Workflow
 
 1. **Gather data** - Check `/data` CSVs first, then Garmin MCP, then ask questions
-2. **Check recent logs** - Read `plans/` files to see what was actually completed
+2. **Check recent logs** - Read `logbook/` files (organized by month: `logbook/YYYY-MM/`) to see what was actually completed
 3. **Assess current state** - Fitness level, training history, constraints
 4. **Design plan** - Full autonomy over programming (no Garmin Coach dependency)
-5. **Output daily plan** - Save to `plans/YYYY-MM-DD.md` with Plan + empty Log sections
+5. **Output daily plan** - Save to `logbook/YYYY-MM/YYYY-MM-DD.md` with Plan + empty Log sections
 
 ## Daily Plan Output
 
-Save to `plans/YYYY-MM-DD.md` (see existing files for format)
+Save to `logbook/YYYY-MM/YYYY-MM-DD.md` (see existing files for format)
 
 ## Multi-Week Plan Format (Optional)
 

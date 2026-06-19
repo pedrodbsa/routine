@@ -39,10 +39,10 @@ read that one word, then use the matching column.
 | Quality         | Intervals, tempo, threshold                 | Quality      |
 | Long            | Long run                                    | Long         |
 
-**Four feeds a day, every day:**
+**Feeds per day (revised 2026-06-18 — fewer, bigger meals; see `nutrition.md` § Meal Distribution):**
 
-- **Rest day:** Breakfast shake (07:00-09:00) -> Lunch -> Snack -> Dinner. Breakfast is the protein-dense shake rather than a B-card so the four meals fit inside the rest-day calorie ceiling.
-- **Training day:** Breakfast (B1-B4) -> Post-session shake -> Lunch -> Dinner. No snack.
+- **Easy / rest day — 3 feeds:** Breakfast -> **big** Lunch -> **big** Dinner. **No post-session shake** — on easy days breakfast is the post-run meal. Feeds run protein-forward; the cards are protein-tight at 3 feeds, so add ½-1 scoop whey to a meal if the day lands under the 165 g floor. A snack is optional, not a base feed.
+- **Quality / long / strength day — 4 feeds:** Breakfast (B1-B4) -> Post-session shake -> Lunch -> Dinner. The shake is reserved for these sessions, which earn the recovery fuel.
 
 Dinner finishes ~3 h before bed on every day. This is a soft eating window — captures the sleep and digestive benefit of time-restricted eating without the LBM cost of a hard fasting protocol.
 
@@ -91,6 +91,30 @@ once and you can stop using the scale for carbs entirely.
 | Wholegrain bread     | —     | 93 g  | 130 g   | 160 g |
 
 Oats and bread have no Rest column — breakfast is not eaten on rest days.
+
+## Fruit Dessert Swap (athlete preference, 2026-06-18)
+
+The athlete prefers a smaller starch portion at lunch and dinner with a piece of fruit afterwards as
+dessert, rather than a large serving of rice or potato. Honour this: cap the starch at a comfortable
+portion and take the remaining day-type carbs as fruit, eaten after the meal.
+
+**Mechanic — match by carbohydrate grams so calories and the day-type carb total stay on target.** Cap
+the starch around the Easy-tier portion the athlete actually eats (~140–160 g cooked rice, ~235 g potato,
+~130 g pasta), then convert the carbs above that into fruit:
+
+- One medium piece of fruit ≈ **20–25 g carbs** ≈ **~80 g cooked rice** / **~145 g boiled potato** / **~75 g cooked pasta**.
+- Carb-by-fruit quick reference: peach ~13 g · orange ~15 g · two kiwis ~20 g · apple ~22 g · pear ~25 g · one cup grapes ~26 g · banana ~27 g.
+
+So a Quality lunch specced at 200 g rice becomes ~140 g rice + one apple; a Long-day 246 g becomes
+~160 g rice + a banana. `/plan` should present the starch at the comfortable cap and name the fruit that
+closes the carb gap.
+
+**Quality / long days:** keep the bulk of the pre- and post-workout carb as starch — fruit (mostly
+fructose) refills liver glycogen well but muscle glycogen less directly than starch. The swap is a
+top-slice of the portion, not a wholesale replacement; the larger the day's carb target, the more of it
+stays as the starch anchor. On easy and rest days this distinction does not matter and the swap is free.
+
+Fruit eaten as dessert does not change the protein or fat anchors — only the scalable carb moves.
 
 ## Breakfasts (training days)
 
@@ -184,10 +208,11 @@ Anchor: 130 g turkey mince (7%) + 100 g tomato sauce + 100 g veg + **2 tsp olive
 | Quality | 187 g  | P48 C70 F21 · 663 kcal      |
 | Long    | 230 g  | P51 C82 F22 · 728 kcal      |
 
-## Snacks (rest-day feed)
+## Snacks (optional feed)
 
-Fixed — no carb scaling. Eaten on rest days as the third feed. On training days a snack is not in the
-base plan and will push the day over target; use one only to replace a feed you missed.
+Fixed — no carb scaling. **Optional, not a base feed** (revised 2026-06-18 — easy/rest days are now 3 feeds).
+Use a snack only to backfill a feed you missed or to close the 165 g protein floor on a 3-feed day. On
+training days it will push calories over target unless it is replacing a dropped feed.
 
 | Snack                   | Build                                                                        | Total                  |
 | ----------------------- | ---------------------------------------------------------------------------- | ---------------------- |
@@ -262,10 +287,13 @@ One worked combination per day type, to show the rotation lands on target.
 
 | Day type | Meals                                                    | Total (as built)           | Corrected target |
 | -------- | -------------------------------------------------------- | -------------------------- | ---------------- |
-| Rest     | Breakfast shake + L3 + S2 + D3                           | P190 C157 F60 · 1,905 kcal | 1,750            |
-| Easy     | B2 + Post-session shake + L3 + D3                        | P178 C200 F59 · 2,071 kcal | 1,950            |
+| Rest     | Breakfast shake + L2 + D2 + 1½ scoops whey               | P171 C121 F61 · 1,735 kcal | 1,750            |
+| Easy     | B4 + L3 + D1 + ½ scoop whey                              | P165 C167 F65 · 1,919 kcal | 1,950            |
 | Quality  | B4 + Post-session shake + L1 + D4                        | P198 C244 F67 · 2,397 kcal | 2,200            |
 | Long     | B2 + Post-session shake + L1 + D3                        | P193 C283 F61 · 2,477 kcal | 2,400            |
+
+Note the 3-feed easy/rest rows: dropping the post-session shake is what brings them onto target without cutting
+the real meals, and a whey top-up clears the 165 g protein floor (the cards run protein-tight at three feeds).
 
 Each "as built" combination lands ~150-200 kcal above the corrected target — apply the one-carb-portion shave
 from the correction note at the top of the file (drop the oats from the post-session shake, or take rice/potato

@@ -11,10 +11,10 @@ Definitive post-HM protocol stack for a 40-year-old male balancing body recompos
 | Domain              | File                            | Contains                                                                  |
 | ------------------- | ------------------------------- | ------------------------------------------------------------------------- |
 | Current state       | `protocols/current-status.md`   | Phase timeline, race calendar, metrics, adherence targets                 |
-| Editorial synthesis | `protocols/review-synthesis.md` | Consensus extraction, conflict decisions, gap fill rationale              |
 | Coaching rules      | `protocols/coaching.md`         | Quality standards, accountability, communication style                    |
 | Running             | `protocols/running.md`          | HR zones, periodization, workout types, heat rules, taper, race execution |
 | Strength            | `protocols/training.md`         | Weekly templates, exercise library, progression, sleep fallback rules     |
+| Strength DB         | `protocols/strength-exercises.md` | Per-exercise working loads, movement library, rotation groups, verified Garmin enum mappings (single source of truth for loads) |
 | Nutrition           | `protocols/nutrition.md`        | Phase-aware calories, macros, fueling, hydration, adjustment rules        |
 | Meal rotation       | `protocols/meal-rotation.md`    | Portion-locked meal cards, carb-tier portions, day-type sample days       |
 | Supplements         | `protocols/supplements.md`      | Daily stack, optional items, finasteride compatibility                    |
@@ -25,7 +25,7 @@ Definitive post-HM protocol stack for a 40-year-old male balancing body recompos
 
 ## Workflow
 
-1. Morning: `/plan` generates `plans/YYYY-MM-DD.md`. It is interactive — it pulls data, presents the key decisions for review, and writes the file on approval. `/plan` does not touch Garmin.
+1. Morning: `/plan` generates `logbook/YYYY-MM/YYYY-MM-DD.md`. It is interactive — it pulls data, presents the key decisions for review, and writes the file on approval. `/plan` does not touch Garmin.
 2. After reviewing the plan: `/garmin` uploads the day's prescribed workouts to Garmin Connect and schedules them for the plan date, replacing any existing workout for that date. See `.claude/commands/garmin.md` for the upload behavior.
 3. After training: `/log [details]`
 4. After meals: `/log meal [details]`
@@ -43,3 +43,4 @@ Definitive post-HM protocol stack for a 40-year-old male balancing body recompos
 - If family disruption spikes, use the minimum-effective-dose fallback week instead of forcing the full plan.
 - For individual hard days (~4-6/month), use the disrupted-day protocol — a lighter version that preserves structure without requiring full compliance.
 - Toddler night-waking has largely resolved (2026-05); the athlete now sleeps through but wakes early (~5:30-6:30), so sleep is capped by wake time, not fragmentation. Sleep-onset latency is the live recovery issue. Don't catastrophize one short night, but treat a genuinely short or late-onset night as a real signal — not dismissable toddler noise.
+- Build the cut deficit from **NEAT (daily steps ~8-10k) + social-day damage control**, plus the small food lever of dropping the easy-day post-run shake — **not** plan-day meal cuts or added hard running. The athlete weighs his food and adheres on plan days, and prefers adding activity to eating less (2026-06-18). Meal structure: **3 protein feeds on easy/rest days, 4 on quality/long/strength** — the governed variable is protein distribution (≥3 boluses ≥30 g, pre-bed ≥40 g), not meal count. See `nutrition.md` § Meal Distribution and the 2026-06-18 coaching-log entries.

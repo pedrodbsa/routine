@@ -83,7 +83,8 @@
       "Bash(python -c ' *)",
       "mcp__plugin_claude-mem_mcp-search__observation_search",
       "mcp__plugin_claude-mem_mcp-search__search",
-      "mcp__plugin_claude-mem_mcp-search__get_observations"
+      "mcp__plugin_claude-mem_mcp-search__get_observations",
+      "mcp__garmin__unschedule_workout"
     ]
   },
   "enableAllProjectMcpServers": true,

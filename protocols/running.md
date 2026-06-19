@@ -18,7 +18,7 @@ Primary limiter remains cardiovascular, not muscular. Post-smoking aerobic devel
 
 Anchors: LT1 = 145, LT2 = 172, max ~190 (race-observed). Treadmill ≈ outdoor at same HR — pace differs, HR doesn't.
 
-**Athlete compressed-range note (2026-06-13):** this athlete cannot run below ~130 bpm — below that is a walk, not a jog. Two consequences for the zone table: (1) **Zone 1 (<125) is walk-only** — "recovery jogs" do not exist down there; a real recovery jog runs ~135–145. (2) The **functional easy-running band is ~135–142**, not the full 125–142 — a ~7 bpm window pinned just under the cap. Easy runs intrinsically sit near the 142 ceiling, so 143–145 is this athlete's natural easy-gait HR, governed by RPE/conversation, not a discipline failure. The easy–to–sub-T gap is only ~10 bpm (142 → 152), so easy and sub-T cannot be separated by HR alone — RPE and pace must do that work. This is also why outdoor easy pace-at-HR is a noisy fitness signal (always at the rail) and the treadmill control run is the cleaner read.
+**Athlete compressed-range note (2026-06-13):** this athlete cannot run below ~130 bpm — below that is a walk, not a jog. Two consequences for the zone table: (1) **Zone 1 (<125) is walk-only** — "recovery jogs" do not exist down there; a real recovery jog runs ~135–145. (2) The **functional easy-running band is ~135–142**, not the full 125–142 — a ~7 bpm window pinned just under the cap. Easy runs intrinsically sit near the 142 ceiling (logged easy runs average ~138–142); brief drift to 143–145 is this athlete's natural easy ceiling, governed by RPE/conversation, not a discipline failure. The easy–to–sub-T gap is only ~10 bpm (142 → 152), so easy and sub-T cannot be separated by HR alone — RPE and pace must do that work. This is also why outdoor easy pace-at-HR is a noisy fitness signal (always at the rail) and the treadmill control run is the cleaner read.
 
 ### Garmin Device Calibration (2026-06-11)
 
@@ -61,8 +61,8 @@ Everything through the May race block is complete (Base → Quality Reintro → 
 | ---------------- | --------------- | ------------ | ---------- | ---------------------------------------- |
 | May 17 (Sun)     | 10K (road)      | Ansião 10K   | Done       | 52:16 / 5:13/km, avg HR 176 (raced hard) |
 | May 24 (Sun)     | 14.7 km (trail) | Anadia trail | Done       | 2:07:42, avg HR 172, 413 m climb         |
-| Jun 20 (Sat)     | 10K             | TBD          | Benchmark  | Fitness check mid-cut — **hard decision gate (2026-06-12):** if the heat-adjusted result is slower than ~51:30, formally re-baseline the October target to sub-48:00/48:30 and log the decision. A stale sub-47 target poisons Phase 6 pacing. |
-| **Oct 25 (Sun)** | **10K**         | **TBD**      | **A-Race** | **Sub-47:00 (stretch 46)** — subject to the Jun 20 re-baseline gate |
+| ~~Jun 20~~       | ~~10K~~         | —            | Dropped    | **Benchmark dropped (2026-06-16).** No mid-cut 10K race; Saturday is an easy/leisure run. No result to gate on — the decision-gate is void. Next real fitness validation is the September Phase 6 build. |
+| **Oct 25 (Sun)** | **10K**         | **TBD**      | **A-Race** | **Sub-47:00 (stretch 46)** — retained but unvalidated until the Sep Phase 6 build; rides on the Phase 4-5 scoreboard (VO2max proxy ≥47 / ≤50:30, control-run trend, quality execution at HR) |
 
 ## Workout Types
 
@@ -93,7 +93,7 @@ All sub-T sessions target **152–165 bpm** (≈2.5–3.5 mmol/L, between LT1 14
 
 ### Tempo (threshold)
 
-- **HR:** 163-172 — at or just under LT2 (172). This is the distinct **threshold** stimulus, deliberately above the sub-T sessions (152–165), not overlapping them.
+- **HR:** 165-172 — at or just under LT2 (172). This is the distinct **threshold** stimulus: it sits at the top of Zone 4 into Zone 5, deliberately higher than the sub-T working band (152–165) — a continuous tempo ramps up to LT2 and holds just under it, while the sub-T sessions stay below.
 - **Structure:** 20-30 min continuous
 - **RPE:** 7-8
 - Hold at/just under LT2. If HR climbs past 172 you're racing the tempo, not running it — back off; that turns a steady threshold piece into a threshold-rep/VO2 effort.
@@ -119,6 +119,18 @@ All sub-T sessions target **152–165 bpm** (≈2.5–3.5 mmol/L, between LT1 14
 - Strides: 4-8x20 sec after easy runs
 - Short reps: 6-8x200 m at mile effort
 
+## Quality Session Selection (derive before prescribing)
+
+Before naming the week's harder quality run, do not reach for the session in the athlete's words ("speed work") or the prior day's frame — derive it. Answer these, and surface the derivation in one or two lines in the `/plan` summary:
+
+1. **Recent quality history** — the last 2–3 quality session types (read the daily files). Don't repeat a stimulus blindly or skip a rung.
+2. **Ladder + phase week** — the current rung on sub-T → threshold → 10K-pace → VO2, and what the phase/week schedules (e.g. 10K-pace enters Cut Block 1 wk4; VO2 is late Cut Block 1 / Phase 6). The default session is the **next correct rung**.
+3. **Block gap** — the under-trained stimulus this block; bias toward closing it.
+4. **Recovery + trailing load** — can today carry the intended intensity, or does it down-dose one rung?
+5. **Goal relevance** — what the next race actually needs *now* (threshold base before speed sharpening for the October 10K).
+
+Pick the session this produces. If it deviates from the next rung — pulled forward or held back — log the explicit reason in the daily file. Garmin's Daily Suggested Workout is a useful independent cross-check, not an authority (its pace targets are heat-blind; govern by HR). A 22-min threshold tempo, not 10K-pace intervals, is the wk3 default after a sub-T-only block (2026-06-16 lesson).
+
 ## Weekly Rules by Phase
 
 Scheduling is fully flexible across the week (Thursday no-running rule retired 2026-05-28). The rules below describe **session counts and spacing**, not weekday assignment.
@@ -129,7 +141,7 @@ Scheduling is fully flexible across the week (Thursday no-running rule retired 2
 - **Phases 4-5:** two quality sessions per week (one harder, one lighter) with ≥72 h between them; long run on the weekend; legs needs ≥36 h before the next quality run and never stacks with a hard run on the same day.
 - **Phase 4 volume note (~35-42 km/wk, ceiling relaxed 2026-06-03):** the original 30-35 cap was lifted because the two quality sessions are a deliberate, athlete-chosen motivation / 10K-specificity priority, and with the quality + long-run trio already near ~30 km only one easy run fit under the old ceiling. The athlete chose to raise the cap rather than cut easy runs. The added load is **easy** km, which moves the week back toward 80/20 rather than degrading it. The long run stays **12-14 km** (≤~35-40% of the week); the lighter quality session stays genuinely short (~5-6 km of work). The band is a guide, not a hard cap: **recovery markers govern** — if flags stack, the lighter quality session is the first thing to downgrade to easy. The higher mileage raises TDEE modestly (~+70 kcal/day at the top of the band); the ~Jun 11 14-day weigh-in read absorbs it (add carbs back if loss runs >0.4 kg/wk or strength/LBM dips).
 - **Phase 4 volume floor (2026-06-12): 30 km/wk minimum, enforced.** The Apr-May trough (weeks of 10-15 km while the narrative said "aerobic fitness intact") cost real fitness — VO2max estimate 49→47, easy-run efficiency −4%. Consistency at 30-38 km/wk through the cut matters more than any single session's design. A week below 30 km (outside illness, injury, or a declared fallback week) is a protocol breach: it triggers a logged corrective action in the coaching log, same as ACWR >1.5.
-- **Phase 4-5 running success metrics (2026-06-12):** easy-run pace is **off the scoreboard until September** — it is sacrificed to the deficit and the season by design, and is not a failure signal. The cut-phase running scoreboard is: (1) heat-adjusted efficiency (treadmill control run pace-at-HR) stable within ~2%, (2) both weekly quality sessions completed at target HR, (3) VO2max estimate holds ≥47, (4) weekly volume ≥30 km. Pace-at-HR improvement is a Phase 6 deliverable, not a Phase 4-5 one.
+- **Phase 4-5 running success metrics (2026-06-12):** easy-run pace is **off the scoreboard until September** — it is sacrificed to the deficit and the season by design, and is not a failure signal. The cut-phase running scoreboard is: (1) heat-adjusted efficiency (treadmill control run pace-at-HR) stable within ~2%, (2) both weekly quality sessions completed at target HR, (3) VO2max estimate holds ≥47 — read via the Garmin race-time prediction as proxy (10K not slower than ~50:00-50:30), since the direct VO2max endpoint is unreliable, (4) weekly volume ≥30 km. Pace-at-HR improvement is a Phase 6 deliverable, not a Phase 4-5 one.
 - **Phase 4 weeks 1-3:** the harder quality session is the sub-T / Norwegian work; the lighter one is aerobic-development or short sub-T. 10K-pace work enters from week 4.
 - **Q2 survivability rule (2026-06-12):** the second quality session has structural attrition — when a session is missed every week, the schedule is wrong, not the athlete. On any compromised week (readiness flags, family disruption, time pressure), Q2 converts to **6×20 s strides or 6×10-15 s hill sprints appended to an easy run** instead of being skipped. A 10-minute quality touch that happens beats a 40-minute session that doesn't. This conversion counts as Q2 completed for compliance.
 - **Phase 5:** cap volume at 40 km/week. If 7-day HRV average drops >10% below baseline, downgrade the lighter quality session of the week to an easy aerobic run.

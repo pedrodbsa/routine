@@ -1,6 +1,6 @@
 # DAILY FILE TEMPLATE - MASTER
 
-Every `plans/YYYY-MM-DD.md` follows this structure. Athlete-facing content comes
+Every `logbook/YYYY-MM/YYYY-MM-DD.md` follows this structure. Athlete-facing content comes
 first; tracking context is fenced below the divider.
 
 ## Required structure
@@ -41,7 +41,8 @@ Concise session detail.
 
 - Running: distance, HR cap, pace guide, RPE. Note any heat or sleep modification.
 - Strength: the exercise table — slot, exercise, sets x reps, rest, load note.
-- Rest day: state it in one line.
+- Rest day: state it in one line, plus the standing incline-walk NEAT block
+  (`training.md` § Rest-Day NEAT) unless recovery is depleted.
 
 ### `## Nutrition`
 

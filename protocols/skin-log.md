@@ -45,7 +45,7 @@ Recurring acne for over a year. Key history, from the athlete:
 Raw mid-week notes captured by `/log`, awaiting weekly synthesis. Not a substitute
 for the weekly block below.
 
-> **Folded into _Week ending 2026-06-08_** (below) by the 2026-06-08 `/report`. Retained here for detail; clear at the next weekly synthesis.
+> _Archived 2026-06-18: the Jun 2 and Jun 4 notes below were synthesized into **Week ending 2026-06-08** and are kept only as audit history. **No new `/log` skin observations are pending** — this week's assessment came directly from the athlete and is folded into **Week ending 2026-06-18**._
 
 - **2026-06-02 (Tue):** Skin raw and itchy; the itch flared *during* the morning
   quality run (heat + sweat + salt on the face). Regimen over the prior 3 days:
@@ -105,6 +105,12 @@ revises the hypotheses if warranted.
 - **Drivers:** sleep avg <h> / score <n>; weekly stress <n>; HRV <trend>; training <volume / intensity>
 - **Read:** <how skin tracked the drivers this week; hypothesis update if any>
 ```
+
+### Week ending 2026-06-18
+- **Skin severity:** 2/5 — much improved. **Raw/barrier feeling resolved.** PIE/scars (post-inflammatory red marks) starting to fade; **1 cystic lesion remaining** (down from 2).
+- **Regimen this week:** water cleanse + **niacinamide** + moisturizer + **SPF** — still no retinoids/actives. Change vs last week: stepped up from barrier-repair-only to a gentle, barrier-friendly routine (added niacinamide + daily SPF).
+- **Drivers:** sleep avg ~7.3 h, scores 79–86 (all ≥70); weekly stress 28–31 (low); HRV BALANCED, weekly avg 62–70 ms; training **high** (wk2 45.5 km, 2 quality/wk, strength 3/3 → wk3 2/3; heat elevated) + one planned alcohol night (Jun 17).
+- **Read:** Big drop (4→2), and more telling, the **raw/barrier feeling went away** — the mechanistic sign the barrier has healed. This strongly reaffirms **hypothesis #1 (over-treatment barrier damage)** as the perpetuating driver: two consecutive weeks of improvement on barrier-rest, now with the barrier-feel itself resolved. The regimen step-up (niacinamide + SPF) is exactly the *gentle* anti-inflammatory the last entry anticipated — barrier-friendly, not the aggressive retinoid stack that caused the damage — and it coincided with continued improvement, not a flare. The cystic count fell 2→1, arguing those lesions were part of the same irritation cycle rather than an independent inflammatory process needing escalation — watch the last one, but **no escalation**. Crucially, skin improved markedly *despite* high training load, heat, and an alcohol night (Jun 17 produced no flare), which is evidence **against** stress/load (#3) and alcohol/diet (#4) as dominant drivers and **for** barrier state setting the baseline. **No re-rank** — #1 holds, now strongly. Continue the current gentle routine; SPF is the right move for fading PIE (sun prolongs red marks). If the last cystic lesion persists or recurs after full barrier recovery, revisit a targeted step then.
 
 ### Week ending 2026-06-08
 - **Skin severity:** 4/5 — nose and under-eyes; mildly inflamed, **2 cystic lesions**, a few small whiteheads, redness.

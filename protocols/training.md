@@ -22,7 +22,7 @@ Strength supports the running plan. Running quality stays protected. Scheduling 
 | Sat | Rest                | --                            |                          |
 | Sun | Easy 6-7 km         | --                            | No quality work          |
 
-### Phase 2 - Base Rebuild + Cut (Apr 13 - May 11)
+### Phase 2 - Base Rebuild + Cut (Apr 13 - May 4)
 
 | Day | Running           | Strength                   | Notes                        |
 | --- | ----------------- | -------------------------- | ---------------------------- |
@@ -34,10 +34,10 @@ Strength supports the running plan. Running quality stays protected. Scheduling 
 | Sat | Rest              | --                         |                              |
 | Sun | Long run 12-14 km | --                         | Fueled as quality day        |
 
-### Phase 3 - May Race Block (May 12 - May 25)
+### Phase 3 - May Race Block (May 5 - May 29)
 
 - Week 1 centers on the May 17 10K.
-- Week 2 centers on the May 24 trail 21K.
+- Week 2 centers on the May 24 trail 14.7 km.
 - No heavy legs from Wednesday onward in either race week.
 
 ### Phases 4-5 - Cut Blocks (May 30 - Aug 30)
@@ -65,6 +65,19 @@ Legs day requires ≥36 h before the next quality run and should not stack on th
 | Weeks 1-5  | 3 sessions: Push, Pull, Legs     | Full hypertrophy schedule              |
 | Weeks 6-7  | 2 sessions: Push + Pull only     | Drop legs                              |
 | Week 8     | 1 light upper session            | RPE 5 pump only                        |
+
+## Rest-Day NEAT — Incline Walk (Cut Blocks, from 2026-06-18)
+
+On true rest days (no run, no lift) the cut's NEAT deficit lever is a fasted incline-treadmill walk, done first thing after waking. It is recovery-zone activity, not a session — it must stay a walk.
+
+- **Incline 8%** (drop to 6% if HR runs high; progress toward 10% over weeks)
+- **Speed 5.0 km/h** — a steady easy walk, nasal-breathing / conversational
+- **40 min** (progress by adding *time* first → 45-50 min, then incline; never speed)
+- **HR ceiling ≤125 bpm** — well under the 142 easy cap; if HR drifts over, lower incline/speed, do not jog
+- **Hands off the rails** (holding cuts the cost ~20-30% and the incline stops counting)
+- **Fasted is fine** (low-intensity NEAT, no fuel); ~300 mL water on waking first (hydration runs low), black coffee optional
+
+Yields ~300-350 kcal and ~4,000 steps — about half the ~8-10k daily NEAT target in one block, and it counts toward the NEAT target `/report` tracks. **If the rest day carries poor recovery markers (Body Battery <30 at wake, or a <5 h night), drop the walk** — genuine rest wins over NEAT that day.
 
 ## Double-Day Guidelines
 
@@ -273,7 +286,7 @@ Use this on individual days (~4-6 per month) where social events, family demands
 
 - **Running:** keep the run if possible, but shorten by 20-30%. Drop quality to easy if motivation <3 or sleep was <5.5 h.
 - **Strength:** drop to the 2-3 most important compounds for that session, 2 sets each. Skip accessories and core.
-- **Nutrition:** protein floor still applies (160 g). If the day involves a social meal, use it as the flex day. Log what you can.
+- **Nutrition:** protein floor still applies (165 g, the current Phase 4 floor). If the day involves a social meal, use it as the flex day. Log what you can.
 - **Mobility:** do the 3 highest-priority movements (hip flexor stretch, 90/90, cat-cow) instead of the full 10-minute routine.
 - **Mindset:** a disrupted day executed at 60% is better than a skipped day. Do not compensate the next day with extra volume.
 
