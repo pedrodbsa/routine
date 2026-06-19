@@ -26,16 +26,19 @@ working medium. So the requirement is **not** file access. It is a remote
 - Push approved workouts to the Garmin watch, on approval, exactly as `/garmin` does today.
 - Make the coach's own structured metrics (nutrition actuals, day-type, ACWR, RPE, etc.)
   queryable for longitudinal reasoning — without leaving the file-based workflow.
+- Consult **and** edit the protocols (and any document) from the PWA/chat, with every
+  change committed and pushed to git so the rulebook is always recoverable.
+- Deploy as an isolated, Dockerised app via Dokploy from a git remote, so moving servers
+  is just a redeploy.
 
 ## Non-goals (v1)
 
 - No charts, trend graphs, or analytics dashboard (deferred to v2).
 - No history search or full-text search across logbook.
 - No multi-user support; this is single-user.
-- No manual file editing surface — files remain the coach's medium.
+- No manual file-editing surface — documents are edited by *chatting* the coach, not by a
+  rich text editor in the PWA. Files remain the coach's medium.
 - No web-push for the PWA (Signal is the push channel; the PWA is pull-only).
-- No per-message auto-commits — a once-daily logbook commit is the most the service does
-  (see Git model).
 - No per-exercise strength-set table and no reports-as-queries yet — deferred to v2
   (see Data model).
 - No pushing weigh-ins/body composition to Garmin — an external Withings→Garmin job
@@ -48,14 +51,18 @@ working medium. So the requirement is **not** file access. It is a remote
 - **Host:** the athlete's own server, always-on. Becomes the home of the coach.
 - **Front surface:** a self-hosted **PWA** (primary, for reading + chat) plus a
   **Signal** ping each morning with the plan summary and a link.
-- **Auth / network:** deferred. The athlete will handle networking and add a token
-  later if exposed. Design must not depend on a particular network posture; a single
-  shared token can be slotted in front of the relay without structural change.
-- **Git model:** git **is** used in this repo. Canonical files — `protocols/*`, the daily
-  logbook (including its structured frontmatter), and reports — are committed. The live
-  request path only **writes** files (no commit per message, to avoid noise); a once-daily
-  commit job snapshots the logbook. The derived **DuckDB store is gitignored** — a
-  rebuildable artifact (see Data model).
+- **Auth / network:** handled by Dokploy's reverse proxy (Traefik) — HTTPS + domain. A
+  single shared token can sit in front of the relay; not the focus of v1.
+- **Deployment:** the app lives in an isolated **`/app`** folder, is **Dockerised**
+  (compose: app container + `signal-cli-rest-api` sidecar), and deploys via **Dokploy**
+  from a **private GitHub remote**. Data persists on a Docker volume that is a clone of the
+  repo; the app pushes changes back to the remote. See "Deployment & repo layout".
+- **Git model:** git is the durable store. **Every document change** — `protocols/*`, the
+  daily logbook (with its frontmatter), reports — is **committed and pushed** to the
+  private GitHub remote as it happens, so the rulebook is always recoverable. The
+  DuckDB/Parquet **store is committed too, but once daily** (after the morning sync) — it is
+  binary and derived, so per-sync commits would bloat history; daily is enough for
+  warm-start recovery. Move to git LFS if it outgrows ~50–100 MB. See "Data model".
 - **Garmin layer (split):** **reads** go through **`garmin-cli`** (Rust) syncing into a
   local **DuckDB/Parquet** store that the agent queries with SQL; **writes** (structured
   workout creation + scheduling) go through the existing **MCP** (`Taxuspt/garmin_mcp`),
@@ -93,7 +100,7 @@ Mechanism — the first-party **Claude Agent SDK** (`@anthropic-ai/claude-agent-
 
 ## Architecture
 
-One box (the server) runs:
+One host (the server), as Docker containers managed by Dokploy:
 
 1. **garmin-cli + local store** — `garmin sync` pulls Garmin health metrics and activity
    summaries into a local **DuckDB/Parquet** store on a schedule. The agent reads from
@@ -107,10 +114,13 @@ One box (the server) runs:
    report, recent days). Installable to home screen. Pull-only.
 5. **Scheduler** — the periodic `garmin sync` and the morning job, via OS cron or an
    in-process scheduler (e.g. node-cron), at configurable times.
-6. **signal-cli** — sends the morning Signal message. (Registered number or linked as a
-   secondary device; exact setup is an implementation task.)
+6. **signal-cli-rest-api** (sidecar container) — sends the morning Signal message; the app
+   calls it over HTTP. Keeps the JVM out of the app image. (Number registered or linked as
+   a secondary device; setup is an implementation task.)
 7. **Metrics extractor** — parses the structured frontmatter of daily files into the
    DuckDB store; runs on file write and is rebuildable over the whole logbook.
+8. **Git syncer** — commits + pushes document changes per-change, and the store snapshot
+   once daily, to the private GitHub remote.
 
 ```
  phone ──HTTP──▶ relay (Node/TS) ──Agent SDK──▶ Claude Code (in repo)
@@ -120,12 +130,14 @@ One box (the server) runs:
    │                  │                              └─▶ logbook/ + protocols/ (files, git)
    │                  │                                     │ frontmatter
    │                  │                                     ▼ extractor
-   │            ┌─────┴─────────────────┐
-   │            │ local DuckDB/Parquet   │◀── garmin sync (cron) ◀── Garmin Connect
-   │            │ (derived, gitignored)  │
-   │            └────────────────────────┘
+   │            ┌─────┴──────────────────────┐
+   │            │ local DuckDB/Parquet        │◀── garmin sync (cron) ◀── Garmin Connect
+   │            │ (derived; daily git snapshot)│
+   │            └─────────────────────────────┘
    │
-   └◀── Signal ◀── cron + signal-cli (morning push)
+   ├── docs + store ──▶ git syncer ──push──▶ private GitHub remote
+   │
+   └◀── Signal ◀── signal-cli-rest sidecar ◀── morning job
 ```
 
 ## Data flows
@@ -143,14 +155,20 @@ One box (the server) runs:
    metrics* — it queries the local DuckDB with SQL; it falls back to the MCP only for
    Garmin fields the store does not carry (e.g. deep activity splits).
 
-### Reading views
+### Reading views — three document sections
 
-- `GET /today` → relay reads `logbook/<YYYY-MM>/<YYYY-MM-DD>.md` and returns it; PWA
-  renders markdown.
-- `GET /report` → current `logbook/<YYYY-MM>/report.md`.
-- `GET /days` → list of recent daily files for the scrollable history.
+The PWA presents the documents as three nav sections, each a plain file read (no Claude
+round-trip):
 
-These are plain file reads, no Claude round-trip needed.
+- **Protocols** — `GET /protocols` lists `protocols/*`; `GET /protocols/:name` renders one.
+- **Plans** — `GET /today` renders today's `logbook/<YYYY-MM>/<YYYY-MM-DD>.md`;
+  `GET /days` lists recent daily files for the scrollable history.
+- **Reports** — `GET /report` renders the current `logbook/<YYYY-MM>/report.md`.
+
+**Editing** any document (most often a protocol) happens through chat — "raise the easy
+ceiling in `running.md` to 144" — and the coach edits the file via its file tools. Each
+such edit is committed and pushed immediately (see Git model). The PWA has no separate
+editor.
 
 ### Morning push
 
@@ -284,8 +302,11 @@ So the daily file and the DB never drift, the file stays canonical and the DB is
 - A small **extractor** loads that block into DuckDB whenever a daily file is written or
   changed. Lossless, no NLP.
 - The DuckDB is therefore **rebuildable from git at any time** (`garmin sync` + re-run the
-  extractor over the logbook). It is a cache, not a second source of truth — hence
-  gitignored.
+  extractor over the logbook). It is a cache, not a second source of truth.
+- It is nonetheless **committed once daily** (a binary snapshot under `/store`) so a fresh
+  deploy starts warm and the non-reproducible slice — historical Garmin data that may no
+  longer be re-fetchable — is backed up. Daily, not per-sync, because it is binary; LFS if
+  it grows. The canonical markdown remains the real backup, committed per-change.
 
 This keeps the file-based workflow intact (git history, readability, agent-native
 authoring) while making longitudinal queries fast.
@@ -310,14 +331,45 @@ authoring) while making longitudinal queries fast.
 - Sessions can be reset daily (or per the morning job) without loss, since state is the
   files.
 
+## Deployment & repo layout
+
+```
+/app/        ← deployable app: relay (Node/TS) + PWA + Dockerfile + compose — isolated
+/.claude/    ← commands + skills (the coaching brain)
+/protocols/  ← rulebook documents (Protocols section)
+/logbook/    ← daily plans+logs and monthly reports (Plans + Reports sections)
+/store/      ← DuckDB/Parquet store (committed daily)
+AGENTS.md /CLAUDE.md /docs/   ← existing
+```
+
+- **Isolation:** all application code is under `/app`; the rest of the repo is the brain +
+  documents + store. Dokploy builds from `/app`.
+- **Containers (compose):**
+  - *app* — Node + the `claude` CLI + python/`uv` (for the stdio Garmin MCP, spawned as a
+    child process, so it must be in-container) + the `garmin-cli` binary + the DuckDB Node
+    client. This is a multi-runtime image; an explicit non-trivial part of the build.
+  - *signal* — `signal-cli-rest-api` sidecar; the app calls it over HTTP.
+- **Persistence = repo clone on a volume.** Document/store state lives on a Docker volume
+  holding a git working copy. On first boot the app clones the private remote into the
+  volume; thereafter it commits + pushes changes. The container image carries the app; the
+  volume carries the brain + documents + store.
+- **Source of truth is the remote, not the server.** Move servers → Dokploy redeploys,
+  the app re-clones from GitHub, and everything (documents + last daily store snapshot) is
+  there. This is the "ready to go" guarantee.
+- **Prerequisites:** a **private GitHub repo** (none configured today) connected to Dokploy
+  via its GitHub app/deploy key; and a push credential (deploy key or fine-scoped PAT) the
+  app uses to push, stored as a Dokploy secret.
+
 ## Secrets and configuration
 
-- Garmin email/password, Signal config, and any future PWA token live in server **env
-  vars** (e.g. a `.env` not committed). This also fixes the current plaintext password in
-  `.mcp.json`.
-- Configurable: morning-job time, `garmin sync` cadence (default: hourly + a forced sync
-  at the head of the morning job), Signal recipient, model id, repo path, DuckDB store path.
-- The DuckDB store path is **gitignored** (derived artifact).
+- **Mandatory before any remote push:** move the Garmin password out of the committed
+  `.mcp.json` into a Dokploy secret / env var. Plaintext in a repo with a remote is a leak.
+- Secrets (Dokploy env): Garmin credentials, the git push credential (deploy key / PAT),
+  `signal-cli-rest` config, and any PWA token. The `garmin-cli` SSO token and the MCP
+  `garth` token persist on the volume, not in the image.
+- Configurable: morning-job time, `garmin sync` cadence (default: hourly + a forced sync at
+  the head of the morning job), daily store-commit time, Signal recipient, model id, repo
+  path, store path, GitHub remote URL.
 
 ## Risks and open implementation questions
 
@@ -341,6 +393,15 @@ authoring) while making longitudinal queries fast.
 - **signal-cli registration** — number registration vs. linked-device; rate limits.
 - **External Withings→Garmin job** — weight freshness depends on that job (outside this
   system); if it stalls, `/body` reads stale weight. Not ours to fix, but worth surfacing.
+- **Store binary churn in git** — even daily, a binary store grows history; watch its size
+  and move to git LFS past ~50–100 MB before clones/Dokploy pulls slow down.
+- **Push credential + remote prerequisite** — a private GitHub repo must exist and the app
+  must hold a scoped push credential (Dokploy secret). No remote ⇒ no recoverability and no
+  deploy. This is prerequisite #0.
+- **Multi-runtime app image** — Node + `claude` CLI + python/`uv` + `garmin-cli` in one
+  image is the build's heaviest part; pin versions and keep the Dockerfile reproducible.
+- **Volume bootstrap** — first-boot clone, and reconciling a divergence if both the server
+  working copy and the remote change (single-writer assumption keeps this simple; document it).
 - **Long-running Claude calls** — the morning `/plan` pulls a lot of Garmin data; ensure
   the relay handles multi-minute streaming and timeouts gracefully.
 - **Concurrency** — single user, but guard against overlapping morning job + manual chat
