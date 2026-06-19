@@ -82,11 +82,12 @@ Mechanism — the first-party **Claude Agent SDK** (`@anthropic-ai/claude-agent-
 - `options.resume = sessionId` to continue the same conversation within a day.
 - The relay runs in the repo working directory so file reads/writes land in the logbook.
 
-> Verify during the plan: confirm the SDK executes project **slash commands** (e.g.
-> issuing `/plan` as the prompt) under the `claude_code` preset with
-> `settingSources: ['project']`. Fallback if not: the relay inlines the relevant command
-> file's prompt text instead of the `/slash` shorthand. Skills under `.claude/skills` (the
-> `coach` skill) load via the same project settings.
+> Confirmed: the SDK executes project **slash commands** under the `claude_code` preset
+> with `settingSources: ['project']`, so the relay issues `/plan`, `/log`, etc. as prompts.
+> Optional refinement: inline a command file's prompt text instead of the `/slash`
+> shorthand for tighter parameterization (e.g. injecting the date or the user's message) —
+> an implementation choice, not a blocker. Skills under `.claude/skills` (the `coach`
+> skill) load via the same project settings.
 
 ## Architecture
 
@@ -186,13 +187,27 @@ structured workouts** (strength-exercise enum mappings, `create_strength_workout
 `schedule_workout`, `upload_workout`). `garmin-cli` has no planned-workout builder — its
 writes are weight, activity-note edits, and completed-FIT upload (the wrong direction).
 
+### Writes — what we push to Garmin (all via the MCP)
+
+`garmin-cli` is read-only for our purposes. Everything the coach pushes out goes through
+the MCP:
+
+- **Structured workouts → watch calendar** (`/garmin`): `create_strength_workout`,
+  `create_walk_run_workout`, `upload_workout`, then `schedule_workout` / `schedule_week`.
+- **Weigh-ins / body composition** (`/body`): `add_weigh_in`, `add_body_composition`.
+
+Not pushed: nutrition/food — the athlete logs none digitally, and nutrition is deliberately
+kept out of Garmin.
+
 ### Freshness — sync-then-query
 
 The store does **not** eliminate the morning fetch: training readiness, last night's
 sleep, HRV, and body battery only exist after the watch syncs this morning. So:
 
 - a periodic `garmin sync` (cron) keeps the store warm during the day;
-- the morning job **forces a `garmin sync` first**, then the agent queries local.
+- the morning job **forces a `garmin sync` first**, then the agent queries local;
+- more generally, **any command that needs current data — `/plan`, `/log`, `/body` —
+  forces a sync before it reads**, so it never reasons on stale data.
 
 The win is on history (incremental sync) and on every aggregate query, not on skipping the
 day's first pull.
@@ -316,8 +331,9 @@ authoring) while making longitudinal queries fast.
   because derived) full re-extract. Keep the DB strictly derived so rebuild is always safe.
 - **Daily-template migration** — existing logbook files predate the frontmatter; either
   back-fill them or accept that the metrics history starts at cut-over.
-- **Slash-command execution under the SDK** — verify the SDK runs project `/` commands
-  under the `claude_code` preset; fallback is inlining the command file's prompt text.
+- **Slash vs inline command invocation** — confirmed the SDK runs project `/` commands;
+  the only open choice is `/plan` directly vs. inlining the command prompt for tighter
+  parameterization. Implementation detail, not a blocker.
 - **signal-cli registration** — number registration vs. linked-device; rate limits.
 - **Long-running Claude calls** — the morning `/plan` pulls a lot of Garmin data; ensure
   the relay handles multi-minute streaming and timeouts gracefully.
