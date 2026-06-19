@@ -38,6 +38,8 @@ working medium. So the requirement is **not** file access. It is a remote
   (see Git model).
 - No per-exercise strength-set table and no reports-as-queries yet — deferred to v2
   (see Data model).
+- No pushing weigh-ins/body composition to Garmin — an external Withings→Garmin job
+  already handles that; the coach only reads weight. Workouts are the sole Garmin write.
 
 ## Constraints and decisions
 
@@ -187,17 +189,19 @@ structured workouts** (strength-exercise enum mappings, `create_strength_workout
 `schedule_workout`, `upload_workout`). `garmin-cli` has no planned-workout builder — its
 writes are weight, activity-note edits, and completed-FIT upload (the wrong direction).
 
-### Writes — what we push to Garmin (all via the MCP)
+### Writes — what we push to Garmin
 
-`garmin-cli` is read-only for our purposes. Everything the coach pushes out goes through
-the MCP:
+The coach pushes **only structured workouts**, via the MCP (`/garmin`):
+`create_strength_workout`, `create_walk_run_workout`, `upload_workout`, then
+`schedule_workout` / `schedule_week`. This is the entire Garmin write surface.
 
-- **Structured workouts → watch calendar** (`/garmin`): `create_strength_workout`,
-  `create_walk_run_workout`, `upload_workout`, then `schedule_workout` / `schedule_week`.
-- **Weigh-ins / body composition** (`/body`): `add_weigh_in`, `add_body_composition`.
+**Body/weight is not pushed by the coach.** An existing external job syncs the Withings
+scale into Garmin automatically, so weigh-ins arrive on their own and flow into the local
+store via `garmin sync` (the `WeightEntry` table). `/body` therefore only **reads** that
+weight and updates target deltas in the logbook — no Garmin write.
 
-Not pushed: nutrition/food — the athlete logs none digitally, and nutrition is deliberately
-kept out of Garmin.
+Not pushed either: nutrition/food — logged nowhere digitally, deliberately kept out of
+Garmin.
 
 ### Freshness — sync-then-query
 
@@ -335,6 +339,8 @@ authoring) while making longitudinal queries fast.
   the only open choice is `/plan` directly vs. inlining the command prompt for tighter
   parameterization. Implementation detail, not a blocker.
 - **signal-cli registration** — number registration vs. linked-device; rate limits.
+- **External Withings→Garmin job** — weight freshness depends on that job (outside this
+  system); if it stalls, `/body` reads stale weight. Not ours to fix, but worth surfacing.
 - **Long-running Claude calls** — the morning `/plan` pulls a lot of Garmin data; ensure
   the relay handles multi-minute streaming and timeouts gracefully.
 - **Concurrency** — single user, but guard against overlapping morning job + manual chat
