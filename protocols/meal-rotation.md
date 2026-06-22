@@ -122,6 +122,23 @@ Rest days use the Breakfast shake (see Shakes section) — the rest-day calorie 
 
 Each card: fixed anchor + the carb portion for the day type. Macros are the full meal total.
 
+### Breakfast Oats — Fruit Mix-In (athlete preference, 2026-06-21)
+
+Plain oats are unpalatable to the athlete; mixing fruit in makes the bowl acceptable. For every oat-based
+breakfast (B1, B2, B4 — and any `/plan`-specced oat breakfast), take part of the oat portion as fruit
+stirred into the bowl rather than serving the full oat weight plain.
+
+**Mechanic — same carb-match rule as the dessert swap above.** Cut the dry oats by ~15–20 g and add fruit
+that replaces those carbs, so calories and the day-type carb total stay on target:
+
+- ~20 g dry oats ≈ **13 g carbs** ≈ ~100 g berries / ½ banana / ½ apple chopped in.
+- Use the carb-by-fruit quick reference under the dessert-swap section to size it.
+
+Example — a Quality B1 specced at 93 g oats becomes **~73 g oats + 100 g berries stirred in**; an Easy
+67 g becomes **~50 g oats + a handful of berries**. The egg/yogurt/whey protein and fat anchors do not
+change — only the oat carb moves to fruit. `/plan` should present oat breakfasts in this reduced-oats +
+fruit form by default.
+
 ### B1 - Eggs & oats
 Anchor: 3 whole eggs + 130 g egg whites + cinnamon. Carb: oats.
 

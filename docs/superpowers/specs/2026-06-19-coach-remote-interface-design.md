@@ -245,29 +245,37 @@ The store's tables cover what the commands consume:
   lactate-threshold HR, endurance score.
 - **Activity summaries** (`Activity`): avg/max HR, distance, duration, speed, elevation,
   cadence, power, training effect, training load, running dynamics.
-- **Per-sample** (`TrackPoint`, per activity): timestamp, HR, lat/lon, elevation, cadence,
-  power, speed.
+- **Per-sample** (`track_points`, per **GPS** activity): `timestamp`, `heart_rate`, `lat`,
+  `lon`, `elevation`, `cadence` are populated; `speed` and `power` exist in the schema but
+  are **never populated**. Indoor/treadmill activities produce **no rows at all**.
 
-There is **no splits/laps table and no time-in-HR-zone field**, but both are **derivable
-from `TrackPoint`**:
+There is **no splits/laps table and no time-in-HR-zone field**. Both are **derivable from
+`track_points` — but for outdoor GPS runs only** (resolved by the spike, 2026-06-19; see
+`2026-06-19-trackpoint-spike-findings.md`):
 
-- **Time-in-HR-zone** — bucket points by `heart_rate` band, sum time deltas. Direct.
-- **Per-km splits** — `TrackPoint` has no distance column, so distance is integrated from
-  `speed × Δt` (haversine over `lat/lon` as a cross-check), then bucketed into 1000 m.
-  A reusable `v_activity_splits` SQL view is a v1 build item. Expect minor divergence from
-  Garmin's device-measured splits — acceptable for coaching.
+- **Time-in-HR-zone** — bucket outdoor points by `heart_rate` band, sum time deltas. Works
+  outdoors. **Not available indoors** — treadmill runs produce zero track points, so indoor
+  HR-zone must come from the activity summary (`avg_hr`/`max_hr`) or the MCP.
+- **Per-km splits** — `track_points` has no distance column, and **`speed` is unpopulated**
+  (null on every run), so `speed × Δt` does not work. Outdoor splits are integrated from
+  **haversine over `lat/lon`** instead; a reusable `v_activity_splits` view is a v1 build
+  item, **outdoor-only**. Treadmill splits are **not** derivable from track points — use the
+  activity summary (`distance_m` / `duration_sec` / `avg_speed`).
 
-Consequence: the MCP **read** fallback for `/log` is **likely unnecessary** — the store
-covers run analysis. Keep the MCP available, but treat any read fallback as an exception,
-not a design assumption.
+Consequence: the MCP **read** fallback for `/log` is **required after all** — for
+per-sample analysis of treadmill/indoor runs, which the local store does not cover. Most
+`/log`, `/plan`, and `/body` needs are nonetheless met by the **activity summary** (avg/max
+HR, distance, duration, pace, cadence, training effect/load, elevation, running dynamics);
+track points add per-km splits and intra-run HR-zone/drift for outdoor runs only.
 
-### The real open item — does `sync` populate `TrackPoint`?
+### Resolved — does `sync` populate `track_points`? (spike, 2026-06-19)
 
-The schema *supports* per-sample data; the question is whether the sync pipeline actually
-**ingests** it. The Taxuspt MCP deliberately skips GPS tracks for their size (50–500 KB
-each), so this is not a given. **First plan task: a spike** — run `garmin sync` against a
-few real runs (outdoor and treadmill) and confirm `TrackPoint` is populated (including
-`speed` on indoor runs with no GPS), and measure the storage cost of retaining tracks.
+**Yes for outdoor GPS runs; no for indoor/treadmill.** `garmin sync run` ingests per-sample
+points by default (no flag) for any activity carrying a GPS track — ~1 Hz, ~54 KB of
+Parquet per outdoor run. Treadmill runs produce **zero** track points, and `speed`/`power`
+are unpopulated even outdoors (so outdoor splits use haversine over `lat/lon`, not speed).
+Storage is ~10 MB/year — well under the LFS threshold. Full evidence and the read-path
+decisions are in `2026-06-19-trackpoint-spike-findings.md`.
 
 ### Auth
 
@@ -373,9 +381,11 @@ AGENTS.md /CLAUDE.md /docs/   ← existing
 
 ## Risks and open implementation questions
 
-- **TrackPoint ingestion** — schema supports per-sample data and splits/zones derive from
-  it, but confirm `garmin sync` actually populates `TrackPoint` (and `speed` on treadmill
-  runs) and the storage cost. If it does not populate, `/log` needs the MCP fallback after all.
+- **TrackPoint ingestion (resolved 2026-06-19)** — `garmin sync` populates `track_points`
+  for outdoor GPS runs (default, ~54 KB/run) but **not** for treadmill/indoor runs (zero
+  points), and `speed`/`power` are never populated. `/log` **does** need the MCP read
+  fallback for indoor per-sample analysis; outdoor splits use haversine over `lat/lon`, not
+  `speed`. See `2026-06-19-trackpoint-spike-findings.md`.
 - **Sync ordering/freshness** — the morning job must force a sync before reasoning; guard
   against a `/plan` running against a stale store.
 - **Two third-party Garmin deps** — `garmin-cli` and the MCP can each break or drift
