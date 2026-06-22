@@ -40,8 +40,9 @@ Concise session detail.
 
 ### `## Nutrition`
 
-A meal table (meal, time, target) and a single targets line for calories,
-protein, carbs, and fat. No per-meal prose unless a day genuinely needs it.
+A meal table (meal, time, target, macros) and a single targets line for
+calories, protein, carbs, and fat. No per-meal prose unless a day genuinely
+needs it.
 
 ### `## Actuals`
 
