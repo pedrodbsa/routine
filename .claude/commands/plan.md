@@ -65,7 +65,7 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
 - If sleep was <5 h or Body Battery <30, write a rest-day plan.
 - Rest-day plans include the standing **Rest-Day NEAT incline-walk block**
   (`training.md` § Rest-Day NEAT — incline 8% / 5.0 km/h / 40 min / HR ≤125,
-  fasted first thing) in both the `## Workout` and `## Checklist` sections —
+  fasted first thing) in the `## Workout` section —
   unless recovery is genuinely depleted (Body Battery <30 at wake or sleep <5 h),
   in which case it is full rest and the walk is dropped.
 - Synthesize trailing multi-day load before prescribing, not only same-day
@@ -87,9 +87,6 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
   `/report` owns the numbers.
 - Before a trail or long race, include gut-training practice on 2-3 long runs
   over 75 min.
-- The `## Checklist` section must include the morning weigh-in, 10-minute
-  mobility, and the **daily steps target (~8-10k, the cut's primary NEAT deficit
-  lever, 2026-06-18)**.
 - Nutrition follows `nutrition.md` § Meal Distribution: **3 protein feeds on
   easy/rest days** (no post-run shake — breakfast is the post-run meal; the
   dropped shake is a deliberate ~240 kcal deficit lever) and **4 on
