@@ -40,7 +40,6 @@ so daily plan files reference this section instead of reproducing it.
   portions are the mechanism, the 7-day weight trend is the feedback loop), protein floor (>=165 g in the current
   cut; phase-aware, see `nutrition.md`) hit, hydration floor (>=3.5 L) hit, **daily steps ~8-10k (NEAT — the cut's
   primary deficit lever, 2026-06-18)**, 10-minute mobility done, supplements taken.
-- **Every night:** the sleep-tracking line filled — bedtime, wake time, caffeine
-  count and last-cup time, alcohol, last meal time, perceived stress, and
-  wake-ups with their source.
+- **Every night:** sleep is captured by Garmin and reviewed by the coach the next
+  morning (it feeds the readiness call) — not hand-logged in the daily file.
 - **Sunday evening:** `/report` with the full week's data.
