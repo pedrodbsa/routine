@@ -51,14 +51,44 @@ Average week: ~2,000 calories. (Original draft averaged ~2,100; recalibrated dow
 
 Slightly steeper deficit toward end. Target ~0.4 kg/wk (~400 cal/day deficit).
 
+**Tiers trimmed −100 kcal (carbs only) effective 2026-07-22.** The weigh-in-protocol audit of 2026-07-21 established that the apparent mid-July descent was a measurement artifact (post-run readings compared against morning readings) and that morning-to-morning weight has been **flat since ~Jun 24**. That fires the standing rule below — *7-day average stalls 2+ weeks → reduce daily target by 100 cal from carbs* — and it is the plan-day trim deferred on 2026-06-18 and 2026-06-23. **Rest is deliberately held at 1,750:** at the 170 g protein and 60 g fat floors a 1,650 rest day forces carbs to ~107 g, and rest-day carbs below 130 g were explicitly rejected on 2026-05-06.
+
 | Day Type        | Calories | Protein | Carbs | Fat  |
 | --------------- | -------- | ------- | ----- | ---- |
 | Rest            | 1,750    | 170 g   | 145 g | 60 g |
-| Easy / Strength | 1,950    | 170 g   | 195 g | 60 g |
-| Quality         | 2,250    | 170 g   | 260 g | 60 g |
-| Long Run        | 2,450    | 170 g   | 310 g | 60 g |
+| Easy / Strength | 1,850    | 170 g   | 170 g | 60 g |
+| Quality         | 2,150    | 170 g   | 235 g | 60 g |
+| Long Run        | 2,350    | 170 g   | 285 g | 60 g |
 
-Average week: ~2,000 calories. Protein nudges up to 170 g to extra-insure LBM as BF drops.
+Average week: **~1,915 calories** (was ~2,000). Protein nudges up to 170 g to extra-insure LBM as BF drops. **The protein and fat floors do not scale with the trim** — the entire reduction comes from carbohydrate.
+
+Target rate rises to ~0.45-0.5 kg/wk. Watch for the cost: if lean mass declines 2+ weeks, quality-session pace-at-HR degrades across two consecutive sessions, or the Phase 5 compound-stress guardrail fires, **restore the 100 kcal to carbs first**.
+
+#### Checkpoint: 2026-08-04 (two clean weeks)
+
+The trim was applied at the same time running volume returned to the 35-40 km band after a three-week trough, so **two variables moved at once**. The Jun 24 - Jul 21 stall correlates tightly with that trough (three weeks averaging ~21 km against a plan built on 35-42, costing roughly 150-200 kcal/day of assumed expenditure), which means restored volume alone may have been sufficient. At a TDEE of ~2,400-2,500 the old ~2,000 average already implied ~0.4 kg/wk; the trimmed ~1,915 implies ~0.49 kg/wk, at the top of the rate that protects lean mass.
+
+Read the **fasted-morning 7-day average on 2026-08-04** and act symmetrically:
+
+| Rate over Jul 22 - Aug 4 | Action |
+| ------------------------ | ------ |
+| **> 0.6 kg/wk** | **Restore the 100 kcal to carbs immediately.** Too fast six weeks out from the peak block; lean-mass loss costs more than a slower landing |
+| **0.3 - 0.5 kg/wk** | **Hold.** On track for ~73.5-74 kg by Sep 1 |
+| **< 0.25 kg/wk** *with volume ≥35 km/wk and strength 3/3 delivered* | The tier is genuinely too high — trim again |
+| **< 0.25 kg/wk** *with volume or strength missed* | **Do not trim.** The output side failed, not the food side — fix that first. Cutting further would repeat the Jun-Jul error in the opposite direction |
+
+The last row is the important one: **a stall only justifies a food cut once the training was actually delivered.** Judge the input before adjusting the target.
+
+#### Interim read 2026-07-29 (`/report`) — running hot, held by athlete's decision
+
+Six fasted mornings Jul 22–29 average **74.85 kg** against **75.94** for Jul 15–21: **≈ −0.92 kg/wk**, which lands in the `>0.6` row. The hydration-matched subset (Jul 22/23/26/27, excluding the two readings that followed three consecutive training days) shows **−0.84 kg with absolute body water unchanged** — not a water artifact. **Coach recommended restoring the 100 kcal immediately; the athlete elected to hold to Aug 4 as written**, on the grounds that six readings across eight days with two gaps is not the two clean weeks this checkpoint specifies, and that a ~55 g/day carb cut over eight days plausibly explains 1.0–1.2 kg as glycogen plus bound water — a self-limiting drawdown that Aug 4 will distinguish from fat loss. Sound reasoning, recorded as a knowing choice.
+
+**Binding until then:**
+
+- **Aug 4 fires without further debate.** >0.6 kg/wk on that read returns the 100 kcal to carbs the same day. No third deferral.
+- **Early-restore tripwires — any one fires immediately:** BIA muscle mass down again on the Aug 4 read; quality pace-at-HR degrading across two consecutive sessions; an HRV or RHR override rule firing.
+- **No day-tier shaving before Aug 4.** If the trim is running hot, the direction of travel is restoring calories, not cutting further.
+- **Fasted weigh-in every morning through Aug 4.** Compliance ran 4/7 for the reporting week and 6/8 post-trim; the whole decision rests on this series' density.
 
 ### Consecutive Low-Cal Rule
 
@@ -99,28 +129,32 @@ If sleep was <6 h, do not force fasted running.
 
 ## Meal Distribution
 
-**Eating structure: 3 protein feedings on easy/rest days, 4 on quality/long/strength days (revised 2026-06-18; relaxes the 4-meals-every-day rule from 2026-05-25). Breakfast every day.**
+**Eating structure: 4 feedings on easy/rest days, 5 on quality/long/strength days (revised 2026-06-22). A fixed midafternoon protein snack anchors every day. Breakfast every day, run small to fund the snack.**
 
-The governed variable is **protein distribution, not meal count.** Meal frequency and timing are irrelevant to fat loss — total daily calories and protein drive that. What protects lean mass during the cut is hitting **≥3 protein feedings of ≥30 g each** (each clearing the leucine threshold), with the pre-bed feed ≥40 g. Three feeds satisfies that; four is marginally better but not required. (This is why IF was dropped in May — it compressed protein into *2* boluses in an 8-hour window; 3 spread feeds do not have that problem.) The athlete prefers fewer, larger meals — less in the morning, bigger lunch/dinner — and that is adopted because it costs nothing in fat loss or LBM and improves satiety and adherence.
+The governed variable is **protein distribution, not meal count.** Meal frequency and timing are irrelevant to fat loss — total daily calories and protein drive that. What protects lean mass during the cut is hitting **≥3 protein feedings of ≥30 g each** (each clearing the leucine threshold), with the pre-bed feed ≥40 g. The 4-5 feed structure clears that comfortably. (This is why IF was dropped in May — it compressed protein into *2* boluses in an 8-hour window; the spread feeds do not have that problem.)
 
-- **Easy / rest days — 3 feeds:** breakfast → big lunch → big dinner. **No separate post-run shake** — breakfast is the post-run meal (an easy/short run does not need pre-run carbs *and* a shake *and* breakfast). Feeds run protein-forward (~45-55 g each); if the day lands under the 165 g floor, add ½-1 scoop whey to one meal. Dropping the easy-day shake also trims ~240 kcal — a deliberate, small deficit lever (see `current-status.md` coaching log 2026-06-18).
-- **Quality / long / strength days — 4 feeds:** breakfast → post-workout shake (within 30 min; the session earns it) → lunch (post-workout, largest carb) → dinner ≥40 g.
+**The midafternoon snack is an adherence anchor, not a macro requirement (2026-06-22).** The athlete reports that a planned afternoon protein feed blunts evening hunger and keeps him off a night-grazing pattern — a real compliance lever for *him*. Because meal count is fat-loss-neutral, the snack costs nothing on macros and the extra protein bolus is marginally LBM-positive, so it is adopted on every day. **Critical constraint: the snack is funded by a smaller breakfast, never added on top.** A snack treated as a freebie alongside three full meals is ~+250 kcal/day and feeds the stall directly — so breakfast runs small (eggs ± a little oats, ~300 kcal) and the snack carries the calories that left it. The day stays on its tier; only the distribution changes. This revises the 2026-06-18 "fewer, larger meals" structure: the athlete now prefers *less in the morning plus a guaranteed afternoon feed*, which costs nothing and improves adherence.
+
+- **Easy / rest days — 4 feeds:** small breakfast → big lunch → **midafternoon protein snack** → pre-bed dinner. **No separate post-run shake** — breakfast is the post-run meal (an easy/short run does not need pre-run carbs *and* a shake *and* breakfast). Dropping the easy-day shake still trims ~240 kcal (a deliberate deficit lever, 2026-06-18). Breakfast runs small to fund the afternoon snack; lunch and dinner stay the anchors.
+- **Quality / long / strength days — 5 feeds:** breakfast → post-workout shake (within 30 min; the session earns it) → lunch (post-workout, largest carb) → **midafternoon protein snack** → dinner ≥40 g. On these days the snack is the least necessary feed — the morning shake already spreads protein — but is kept for habit consistency; keep it small and protein-forward so it does not crowd the peri-workout carb.
+- **Midafternoon snack (all days):** ~200-280 kcal, protein-forward (≥30 g, low fat) — a skyr or Greek-yogurt + whey bowl is the default (see `meal-rotation.md` § Snacks). Timed ~15:30-16:30 to bridge lunch → dinner and pre-empt evening appetite. Skyr (high-protein) clears the 30 g bolus whey-free; the athlete's staple Greek yogurt is protein-weak (~5.3 g/100 g) and needs ½-1 scoop whey to clear it.
 - **Soft eating window:** stop eating ~3 h before bed. Captures the digestive and sleep benefit of time-restricted eating without the LBM cost of a hard fasting window.
 - **Race days:** breakfast 2-3 h pre-race regardless.
 
 Easy short runs (<60 min, well-rested) may still be done fasted by preference — breakfast then comes immediately after the run, not skipped. Strength, quality, long-run, and race-day sessions are not fasted.
 
-### Rest Day — 3 feeds (~1,750-2,200 cal depending on phase)
+### Rest / Easy Day — 4 feeds (~1,750-1,950 cal Phase 4)
 
-| Meal      | Time        | Notes                                                          |
-| --------- | ----------- | -------------------------------------------------------------- |
-| Breakfast | 07:00-09:00 | Protein-forward; shake or a light B-card (~40-45 g protein)    |
-| Lunch     | 13:00-14:00 | **Larger** — protein + carb + veg + fat (~50-55 g protein)     |
-| Dinner    | 19:30-20:30 | **Larger** — protein + carb + veg, ≥40 g pre-bed. Finish ~3 h before bed. |
+| Meal               | Time        | Notes                                                          |
+| ------------------ | ----------- | -------------------------------------------------------------- |
+| Breakfast (small)  | 07:00-09:00 | Protein-forward but **run small** — eggs ± a little oats (~300 kcal, ~25-35 g protein), held down to fund the afternoon snack |
+| Lunch              | 13:00-14:00 | **Larger** — protein + carb + veg + fat (~50-55 g protein)     |
+| Midafternoon snack | 15:30-16:30 | Skyr / Greek-yogurt + whey bowl (~30-40 g protein, low fat). The adherence anchor — blunts evening appetite |
+| Dinner             | 19:30-20:30 | **Larger** — protein + carb + veg, ≥40 g pre-bed. Finish ~3 h before bed. |
 
-Three feeds fits the rest-day ceiling and keeps protein in 3 boluses ≥30 g. The cards run protein-tight at 3 feeds, so if the day lands under the 165 g floor, add ½-1 scoop whey to lunch (or size the lunch/dinner protein up). A snack is optional, not a base feed — use one only to backfill a missed feed or close the protein floor.
+Four feeds keep protein in ≥3 boluses ≥30 g (lunch, snack, dinner clear it; the small breakfast may run under and is the lighter fourth). Fat is the binding constraint at the easy/rest tier — hold whole eggs to ~3 and take the snack's protein from lean skyr + whey so fat lands at the ~60 g floor, not over it. The snack is **funded by the smaller breakfast, not added on top** — the day stays on tier.
 
-### Quality / Long / Strength Day — 4 feeds (~2,050-2,750 cal depending on phase + session)
+### Quality / Long / Strength Day — 5 feeds (~2,050-2,750 cal depending on phase + session)
 
 | Meal               | Time             | Notes                                                            |
 | ------------------ | ---------------- | ---------------------------------------------------------------- |
@@ -128,18 +162,19 @@ Three feeds fits the rest-day ceiling and keeps protein in 3 boluses ≥30 g. Th
 | Pre-session snack  | 30-45 min pre    | Optional if breakfast was recent. Banana + whey on quality/long. |
 | Post-session shake | within 30 min    | 35-45 g whey + carb + 5 g creatine. **This is the feed dropped on easy days.** |
 | Lunch              | 13:00-14:00      | Protein + carb + veg + fat (post-workout, largest carb)          |
+| Midafternoon snack | 15:30-16:30      | Small, protein-forward — kept for habit consistency; do not let it crowd the peri-workout carb |
 | Dinner             | 19:30-20:30      | Protein + carb + veg, ≥40 g pre-bed. Finish ~3 h before bed.     |
 
-Protein and fat stay mostly constant; carbs move up or down with day type and session. **An easy run is not a 4-feed day** — it follows the 3-feed easy/rest structure above (no separate post-run shake; breakfast is the post-run meal). Reserve the shake for quality, long, and strength sessions, which need the recovery fuel.
+Protein and fat stay mostly constant; carbs move up or down with day type and session. **An easy run is not a 5-feed day** — it follows the 4-feed easy/rest structure above (no separate post-run shake; breakfast is the post-run meal). Reserve the shake for quality, long, and strength sessions, which need the recovery fuel.
 
 ### Protein Distribution Rule
 
-Aim for **3-4 protein feedings that each clear the leucine threshold (~30 g+)**, with the last (pre-bed) feed ≥40 g. Four feeds on quality/long/strength days, three on easy/rest days — both satisfy the LBM-retention requirement.
+Aim for **≥3 protein feedings that each clear the leucine threshold (~30 g+)**, with the last (pre-bed) feed ≥40 g. The 4-feed easy/rest and 5-feed quality/long structures both clear this; the small breakfast may run below 30 g without breaking the rule, since lunch, snack, and dinner carry it.
 
-- **4-feed day:** ~35 / ~45 / ~35-40 / ~45-55 g
-- **3-feed day:** ~45-50 / ~50-55 / ~50-55 g (protein-forward, since there is no shake; top up with ½-1 scoop whey if the day lands under the 165 g floor)
+- **Easy / rest (4 feeds):** breakfast ~25-35 / lunch ~50-55 / snack ~30-40 / dinner ~45-55 g
+- **Quality / long / strength (5 feeds):** breakfast ~30-40 / shake ~35 / lunch ~45 / snack ~30 / dinner ~45-55 g
 
-Breakfast counts as Feed 1 every day.
+Breakfast is Feed 1 every day, even when small.
 
 ### Quality / Long Run Day
 
@@ -206,6 +241,22 @@ The athlete prefers a smaller starch portion at lunch and dinner with a piece of
 - **Daily magnesium target ~400 mg.** Food sources: pumpkin seeds (~150 mg/oz), almonds (~80 mg/oz), cooked spinach (~150 mg/cup), dark chocolate 70%+ (~65 mg/oz). Multis typically cover only 12-25%; supplemental Mg glycinate **200-350 mg** pre-bed is acceptable (kept at or below the 350 mg supplemental UL, since the food target already supplies ~400 mg). Benefit for sleep onset is modest and evidence-light — keep it because Mg is well-tolerated and corrects a common dietary shortfall, not as a primary sleep lever. (Single supplement spec lives in `supplements.md`.)
 - Use normal thirst plus urine color as a simple check. Avoid compulsive overdrinking.
 
+### Paired Weigh-In and Sweat-Rate Tracking (from 2026-07-21)
+
+On days with a **morning run**, the athlete weighs **twice**: fasted pre-run, and again immediately post-run. The two readings serve different purposes and must never be mixed.
+
+- **The fasted pre-run reading is the sole weight-trend entry.** Wake, void, naked, scale, then eat or drink. Same scale, same spot.
+- **The post-run reading is a hydration metric only.** It never enters the weight trend, the 7-day average, or any body-composition claim. A post-run reading runs roughly **0.8-1.0 kg below** the same morning's fasted reading (measured pairs: 0.84 kg on 2026-07-15, 1.04 kg on 2026-07-21).
+- **Ignore the BIA channel on post-run readings entirely.** Peripheral blood flow and skin sweat corrupt it — two readings 76 seconds apart on 2026-07-21 disagreed by 1.1 points of body water and 1.0 point of body fat.
+
+For the sweat number to be usable: weigh **before the post-run shake**, nude and towel-dried, and **record fluid drunk during the run**.
+
+**Sweat rate ≈ (pre-weight − post-weight + fluid drunk) ÷ running hours.** Reference: ~1.2-1.4 L/h at threshold effort in 21 °C / 94 % RH (2026-07-21).
+
+**Flag any session finishing more than 2% of bodyweight down** — about **1.5 kg** at current weight. That is the level at which performance measurably degrades, and it indicates the pre-run 500 mL and sodium load were skipped or were insufficient for the conditions.
+
+> Why this matters here: the athlete carries a standing lab flag for chronic under-hydration (urine SG 1.021, osmolality 750 mOsm/kg, 2026-04-28). Under-hydration raises heart rate at any given pace through plasma-volume loss, which contaminates the HR-governed prescriptions this stack runs on.
+
 ## Race and Long-Effort Fueling
 
 ### 10K
@@ -224,7 +275,9 @@ The athlete prefers a smaller starch portion at lunch and dinner with a piece of
 
 ## Tracking and Adjustments
 
-**Daily:** eat to the portion-locked rotation (`meal-rotation.md`) or the `/plan` meal table, morning Withings weigh-in, confirm the protein floor. Digital food-logging is not used — the weighed portion plan is the mechanism and the 7-day weight trend is the feedback loop.
+**Daily:** eat to the portion-locked rotation (`meal-rotation.md`) or the `/plan` meal table, **fasted morning weigh-in** (plus the post-run hydration reading on morning-run days — see § Paired Weigh-In and Sweat-Rate Tracking), confirm the protein floor. Digital food-logging is not used — the weighed portion plan is the mechanism and the 7-day weight trend is the feedback loop.
+
+> **The trend is built from fasted morning readings only.** Mixing post-run readings into it produced a false ~0.9 kg descent across Jul 12-21 and a `/report` conclusion that had to be retracted. Timestamps, not just values, must be checked when auditing the series.
 
 **Weekly:** compute 7-day weight average, 7-day calorie average, and Sunday body-comp trend.
 
@@ -264,7 +317,17 @@ The final meal of the day contains **≥40 g of slow-digesting or mixed protein*
 | When           | Duration        | Calories                | Notes                                   |
 | -------------- | --------------- | ----------------------- | --------------------------------------- |
 | May 5-25       | 3 weeks         | ~2,400 avg              | Re-entry + race block, no deficit       |
-| Jul 27 - Aug 2 | 1 week          | 2,400                   | Midpoint of Cut Block 2                 |
+| ~~Jul 27 - Aug 2~~ | ~~1 week~~  | ~~2,400~~               | **CANCELLED 2026-07-21** — see below    |
 | Sep 1-21       | 3 weeks gradual | 2,150 -> 2,300 -> 2,500 | Reverse diet into peak                  |
+
+**Jul 27 - Aug 2 break cancelled (athlete decision, 2026-07-21).** The Jul 6-12 holiday functioned as the break — travel and restaurant eating at or above maintenance, three weeks ahead of schedule. A second break so soon after is redundant, and the athlete's priority is maximum leanness entering the September peak block.
+
+The accepted cost is an **unbroken deficit from Jul 13 to Aug 30 (~7 weeks)**, now at the trimmed tiers. **Reinstate a break or a refeed week immediately if any of these fire:**
+
+- the Phase 5 compound-stress guardrail (see above)
+- lean mass declining 2+ weeks
+- quality-session pace-at-HR degrading across two consecutive sessions
+
+The standing allowance of one unplanned refeed per week remains available and should be used rather than held in reserve.
 
 Unplanned refeed days: maximum 1/week during cut blocks. Log them without guilt.

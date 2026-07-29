@@ -22,10 +22,18 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
 
 ### Meal
 
-- Format as `Meal: description, calories, protein`
-- Update running calorie total
-- Compare against the active day-type target from `protocols/nutrition.md`
-- If intake drifts too low on a quality or long-run day, flag underfueling
+- Write the actual into the `## Nutrition` table, **overwriting that meal's row in
+  place** (description + actual macros) and marking it eaten. The planned text need
+  not be preserved — the macro accounting is what's tracked.
+- **Re-tune the remaining (not-yet-eaten) meals' targets** to absorb any macro or
+  calorie deviation and hold the day-type tier. Respect the protein-distribution rule
+  (≥3 boluses ≥30 g, pre-bed ≥40 g) and the fat floor when re-tuning.
+- Keep the section's macro-tracking summary current: **Expected** (day-type tier) /
+  **Actual so far** (eaten meals) / **Projected** (day end).
+- `## Actuals` carries **only genuine deviations, swaps, and flags** — not a duplicate
+  meal-by-meal record (the table holds that).
+- Compare the projection against the active day-type target from
+  `protocols/nutrition.md`; flag underfueling if a quality or long-run day projects low.
 
 ### Workout
 

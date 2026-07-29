@@ -68,7 +68,7 @@ Legs day requires ≥36 h before the next quality run and should not stack on th
 
 ## Rest-Day NEAT — Incline Walk (Cut Blocks, from 2026-06-18)
 
-On true rest days (no run, no lift) the cut's NEAT deficit lever is a fasted incline-treadmill walk, done first thing after waking. It is recovery-zone activity, not a session — it must stay a walk.
+On true rest days (no run, no lift) an **optional** fasted incline-treadmill walk is available, done first thing after waking. It is recovery-zone activity, not a session — it must stay a walk. **NEAT was downgraded to opportunistic on 2026-06-23** — this walk is a nice-to-have on a free rest morning, not a counted deficit lever or a daily commitment; skip it without penalty when time or recovery is short.
 
 - **Incline 8%** (drop to 6% if HR runs high; progress toward 10% over weeks)
 - **Speed 5.0 km/h** — a steady easy walk, nasal-breathing / conversational
@@ -77,7 +77,7 @@ On true rest days (no run, no lift) the cut's NEAT deficit lever is a fasted inc
 - **Hands off the rails** (holding cuts the cost ~20-30% and the incline stops counting)
 - **Fasted is fine** (low-intensity NEAT, no fuel); ~300 mL water on waking first (hydration runs low), black coffee optional
 
-Yields ~300-350 kcal and ~4,000 steps — about half the ~8-10k daily NEAT target in one block, and it counts toward the NEAT target `/report` tracks. **If the rest day carries poor recovery markers (Body Battery <30 at wake, or a <5 h night), drop the walk** — genuine rest wins over NEAT that day.
+Yields ~300-350 kcal and ~4,000 steps when done — a useful bonus on a free rest morning, not a target to hit. **If the rest day carries poor recovery markers (Body Battery <30 at wake, or a <5 h night), or time is short, drop the walk** — genuine rest wins, and NEAT is opportunistic (2026-06-23), not owed.
 
 ## Double-Day Guidelines
 
@@ -130,9 +130,9 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 - 2 x 8-10 reps, moderate load, RIR 3 (hamstring-strain insurance for quality running, not a grower)
 
-**5. Calf raises**
+**5. Calf raises — not programmed (athlete preference, 2026-06-30)**
 
-- 3 x 8-10 reps **heavy** with pause (Achilles/calf stiffness is run-relevant; heavy-slow beats high-rep pump for tendon)
+- Calves are not trained directly: the athlete's calves are already large/disproportionate and he does not want added size (heavy-slow raises drive real calf hypertrophy). The run-relevant Achilles/calf-stiffness role this slot served is retained through the plyometric block (jumps / A-skips — elastic Achilles loading, minimal hypertrophy) plus running's own calf load.
 
 **6a. Core isometric / anti-extension**
 

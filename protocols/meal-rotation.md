@@ -39,10 +39,12 @@ read that one word, then use the matching column.
 | Quality         | Intervals, tempo, threshold                 | Quality      |
 | Long            | Long run                                    | Long         |
 
-**Feeds per day (revised 2026-06-18 — fewer, bigger meals; see `nutrition.md` § Meal Distribution):**
+**Feeds per day (revised 2026-06-22 — fixed midafternoon snack on every day; see `nutrition.md` § Meal Distribution):**
 
-- **Easy / rest day — 3 feeds:** Breakfast -> **big** Lunch -> **big** Dinner. **No post-session shake** — on easy days breakfast is the post-run meal. Feeds run protein-forward; the cards are protein-tight at 3 feeds, so add ½-1 scoop whey to a meal if the day lands under the 165 g floor. A snack is optional, not a base feed.
-- **Quality / long / strength day — 4 feeds:** Breakfast (B1-B4) -> Post-session shake -> Lunch -> Dinner. The shake is reserved for these sessions, which earn the recovery fuel.
+- **Easy / rest day — 4 feeds:** **small** Breakfast -> **big** Lunch -> **midafternoon snack** -> **big** Dinner. **No post-session shake** — on easy days breakfast is the post-run meal. Breakfast runs small to fund the snack (the snack is funded by the breakfast, not added on top — the day stays on tier). Lunch, snack, and dinner each clear ≥30 g protein.
+- **Quality / long / strength day — 5 feeds:** Breakfast (B1-B4) -> Post-session shake -> Lunch -> **midafternoon snack** -> Dinner. The shake is reserved for these sessions; the snack stays small here (the shake already spreads protein) and must not crowd the peri-workout carb.
+
+The **midafternoon snack** is a standing adherence anchor (~15:30-16:30) — it blunts evening appetite and pre-empts night grazing. Use a Snack card (S1-S3 below); skyr clears the 30 g bolus whey-free, the protein-weak Greek yogurt needs ½-1 scoop whey.
 
 Dinner finishes ~3 h before bed on every day. This is a soft eating window — captures the sleep and digestive benefit of time-restricted eating without the LBM cost of a hard fasting protocol.
 
@@ -118,7 +120,7 @@ Fruit eaten as dessert does not change the protein or fat anchors — only the s
 
 ## Breakfasts (training days)
 
-Rest days use the Breakfast shake (see Shakes section) — the rest-day calorie ceiling does not fit a B-card alongside lunch, snack, and dinner.
+On easy/rest days breakfast **runs small** — eggs ± a little oats, or the Breakfast shake (see Shakes section) — because the day now carries lunch, a midafternoon snack, and dinner. A full B-card is a quality/long-day breakfast; on easy/rest days hold it down to ~300 kcal to fund the afternoon snack and keep the day on tier.
 
 Each card: fixed anchor + the carb portion for the day type. Macros are the full meal total.
 
@@ -225,17 +227,25 @@ Anchor: 130 g turkey mince (7%) + 100 g tomato sauce + 100 g veg + **2 tsp olive
 | Quality | 187 g  | P48 C70 F21 · 663 kcal      |
 | Long    | 230 g  | P51 C82 F22 · 728 kcal      |
 
-## Snacks (optional feed)
+## Snacks (midafternoon feed)
 
-Fixed — no carb scaling. **Optional, not a base feed** (revised 2026-06-18 — easy/rest days are now 3 feeds).
-Use a snack only to backfill a feed you missed or to close the 165 g protein floor on a 3-feed day. On
-training days it will push calories over target unless it is replacing a dropped feed.
+Fixed — no carb scaling. **A standing midafternoon feed on every day** (revised 2026-06-22 — the adherence
+anchor that pre-empts evening grazing; see `nutrition.md` § Meal Distribution). Timed ~15:30-16:30 and
+**funded by a smaller breakfast, not added on top**, so the day stays on tier. Keep it protein-forward
+(≥30 g) and low-fat at the easy/rest tier, where fat is the binding constraint.
 
-| Snack                   | Build                                                                        | Total                  |
-| ----------------------- | ---------------------------------------------------------------------------- | ---------------------- |
-| S1 - Yogurt & almonds   | 250 g Greek yogurt (2%) + **½ scoop ON whey** + 20 g almonds + 80 g berries  | P42 C20 F16 · 393 kcal |
-| S2 - Yogurt & whey bowl | 250 g Greek yogurt (2%) + **1 scoop ON whey** + 1 apple + 10 g almonds       | P48 C39 F12 · 425 kcal |
-| S3 - Shake & fruit      | **1 scoop ON whey** + 1 apple + **1 tbsp almond butter**                     | P28 C27 F11 · 319 kcal |
+The S1-S3 cards run ~320-425 kcal — fine when they fully replace breakfast calories, but **at the
+easy/rest tier prefer the leaner skyr builds (S4/S5)**, which land ~220-280 kcal and clear the 30 g bolus
+on less fat. Skyr is high-protein and clears 30 g whey-free; the protein-weak Greek yogurt (~5.3 g/100 g)
+needs ½-1 scoop whey.
+
+| Snack                          | Build                                                                        | Total                  |
+| ------------------------------ | ---------------------------------------------------------------------------- | ---------------------- |
+| S4 - Skyr & whey bowl (lean)   | 200 g skyr + **½ scoop ON whey** + 80 g berries                              | P36 C18 F2 · 220 kcal  |
+| S5 - Skyr & berries (whey-free)| 300 g skyr + 80 g berries + 10 g almonds                                     | P36 C23 F6 · 283 kcal  |
+| S1 - Yogurt & almonds          | 250 g Greek yogurt (2%) + **½ scoop ON whey** + 20 g almonds + 80 g berries  | P42 C20 F16 · 393 kcal |
+| S2 - Yogurt & whey bowl        | 250 g Greek yogurt (2%) + **1 scoop ON whey** + 1 apple + 10 g almonds       | P48 C39 F12 · 425 kcal |
+| S3 - Shake & fruit             | **1 scoop ON whey** + 1 apple + **1 tbsp almond butter**                     | P28 C27 F11 · 319 kcal |
 
 ## Dinners
 
@@ -302,19 +312,22 @@ imprecision.
 
 One worked combination per day type, to show the rotation lands on target.
 
-| Day type | Meals                                                    | Total (as built)           | Corrected target |
-| -------- | -------------------------------------------------------- | -------------------------- | ---------------- |
-| Rest     | Breakfast shake + L2 + D2 + 1½ scoops whey               | P171 C121 F61 · 1,735 kcal | 1,750            |
-| Easy     | B4 + L3 + D1 + ½ scoop whey                              | P165 C167 F65 · 1,919 kcal | 1,950            |
-| Quality  | B4 + Post-session shake + L1 + D4                        | P198 C244 F67 · 2,397 kcal | 2,200            |
-| Long     | B2 + Post-session shake + L1 + D3                        | P193 C283 F61 · 2,477 kcal | 2,400            |
+| Day type | Meals                                                          | Total (as built)           | Corrected target |
+| -------- | -------------------------------------------------------------- | -------------------------- | ---------------- |
+| Rest     | Breakfast shake + L2 + **S4** + D2                             | P171 C135 F62 · 1,775 kcal | 1,750            |
+| Easy     | Small eggs breakfast + L1(↑quality carb) + **S4** + D1(↑quality carb) | P170 C176 F57 · 1,875 kcal | 1,950            |
+| Quality  | B1 + Post-session shake + L1 + **S4** + D4 (apply carb shave)  | ~P219 C235 F66 · 2,200 kcal | 2,200            |
+| Long     | B2 + Post-session shake + L1 + **S4** + D3 (apply carb shave)  | ~P225 C275 F62 · 2,400 kcal | 2,400            |
 
-Note the 3-feed easy/rest rows: dropping the post-session shake is what brings them onto target without cutting
-the real meals, and a whey top-up clears the 165 g protein floor (the cards run protein-tight at three feeds).
+The easy/rest rows now carry the **midafternoon snack** as a base feed: the small breakfast funds it, and
+lunch/dinner shift up a carb tier so the day still lands on target (the snack does not push it over). The
+quality/long rows add the snack as a 5th feed — protein then runs high, which is protective, not a problem,
+but **carbs must be protected**, so apply the carb shave to the breakfast/shake, never to the peri-workout
+meals.
 
-Each "as built" combination lands ~150-200 kcal above the corrected target — apply the one-carb-portion shave
-from the correction note at the top of the file (drop the oats from the post-session shake, or take rice/potato
-one tier down) to close the gap. Protein and fat stay put; only carbs come off.
+Each "as built" combination lands ~150-250 kcal above the corrected target before the shave — drop the oats
+from the post-session shake, or take rice/potato one tier down, to close the gap. Protein and fat stay put;
+only carbs come off. The 7-day weight trend governs from there.
 
 Across every possible meal combination the rotation lands each day type within roughly ±100 kcal of its
 target, with most combinations inside ±60. The 7-day weight trend governs from there.

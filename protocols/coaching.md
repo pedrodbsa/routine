@@ -38,8 +38,10 @@ so daily plan files reference this section instead of reproducing it.
   per exercise.
 - **Every day:** eaten to the portion-locked rotation / `/plan` meal table (no digital food-logging — weighed
   portions are the mechanism, the 7-day weight trend is the feedback loop), protein floor (>=165 g in the current
-  cut; phase-aware, see `nutrition.md`) hit, hydration floor (>=3.5 L) hit, **daily steps ~8-10k (NEAT — the cut's
-  primary deficit lever, 2026-06-18)**, 10-minute mobility done, supplements taken.
+  cut; phase-aware, see `nutrition.md`) hit, hydration floor (>=3.5 L) hit, 10-minute mobility done, supplements
+  taken. **Daily steps / walking (NEAT) are opportunistic extra, not a daily commitment (2026-06-23)** — done when
+  time allows, never prescribed to compensate for a skipped session. Steps are still pulled end-of-day as an
+  expenditure/coaching input, just not a floor.
 - **Every night:** sleep is captured by Garmin and reviewed by the coach the next
   morning (it feeds the readiness call) — not hand-logged in the daily file.
 - **Sunday evening:** `/report` with the full week's data.

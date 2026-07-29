@@ -35,14 +35,20 @@ Concise session detail.
 
 - Running: distance, HR cap, pace guide, RPE. Note any heat or sleep modification.
 - Strength: the exercise table — slot, exercise, sets x reps, rest, load note.
-- Rest day: state it in one line, plus the standing incline-walk NEAT block
-  (`training.md` § Rest-Day NEAT) unless recovery is depleted.
+- Rest day: state it in one line, optionally offering the incline-walk NEAT block
+  (`training.md` § Rest-Day NEAT) as a nice-to-have — NEAT is opportunistic, not a
+  prescription; omit it when recovery is depleted or time is short.
 
 ### `## Nutrition`
 
-A meal table (meal, time, target, macros) and a single targets line for
-calories, protein, carbs, and fat. No per-meal prose unless a day genuinely
-needs it.
+A meal table (meal, time, meal, macros, status) plus a macro-tracking summary with
+three rows — **Expected** (day-type tier), **Actual so far** (eaten meals), and
+**Projected** (day end). `/plan` writes the morning plan; `/log` then makes the table
+living: as each meal is eaten it **overwrites that meal's row in place** with the
+actual and marks it eaten, then **re-tunes the remaining meals' targets** to hold the
+day-type macros. This is the one place actuals are recorded above the divider, so the
+athlete tracks the day's macro budget in a single view. No per-meal prose unless a day
+genuinely needs a re-tune rationale.
 
 ### `## Actuals`
 
@@ -58,9 +64,10 @@ Record, when present:
   heat, or pain modification.
 - Strength — per-exercise working load, reps, and RPE. This is the capture point
   `/report` promotes into `strength-exercises.md`.
-- Meals — actuals and modifications against the plan, the running calorie and
-  macro total versus the day-type target, and an underfueling flag on quality or
-  long-run days when intake drifts low.
+- Meals — **only genuine deviations, swaps, and flags** (e.g. a meal swap, an
+  underfueling flag on a quality or long-run day). The meal-by-meal record and the
+  running macro total now live in the living `## Nutrition` table — do not duplicate
+  them here.
 - End-of-day data the coach pulls because it informs coaching — daily steps for
   the NEAT and expenditure read, a newer weigh-in if Garmin returned one, and
   that-night sleep only when notable.
@@ -81,7 +88,9 @@ Garmin workout IDs written by `/garmin`.
 
 - Nothing above `## Context` may exceed what the athlete needs to act today.
 - The athlete never writes to the daily file. `/plan` writes the plan zone and
-  `## Context`; `/log` writes `## Actuals`. No checkboxes, no `___` blanks anywhere.
+  `## Context`; `/log` writes `## Actuals` and keeps the living `## Nutrition` table
+  current (overwriting eaten meals, re-tuning the rest). No checkboxes, no `___`
+  blanks anywhere.
 - Standing daily commitments are not reproduced in daily files. They live in
   `protocols/coaching.md` under "Operational Floor". A daily file may reference
   that section but must not copy it.

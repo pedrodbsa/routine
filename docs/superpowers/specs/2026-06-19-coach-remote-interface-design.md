@@ -1,9 +1,15 @@
+> **⚠ SUPERSEDED (2026-07-23) by `2026-07-23-remote-coach-v1-design.md`.** A wayfinding effort
+> (map at `.scratch/coach-remote/`, 50 decisions) substantially reworked this design: n8n drives
+> a `coach` CLI; plugins + head-coach/specialist agents; four data kinds; one DuckDB per profile;
+> a Tailscale web-app backoffice with the Mini App dropped; runtime settled on the Agent SDK.
+> This document is kept for history only — read the 2026-07-23 spec for the current design.
+
 # Remote Coach Interface — Design
 
 **Date:** 2026-06-19
 **Revised:** 2026-07-22 — added the brief layer, replaced Signal with Telegram, replaced
 `/report` with `/week`
-**Status:** Draft for review
+**Status:** SUPERSEDED — see `2026-07-23-remote-coach-v1-design.md`
 **Author:** Coach service brainstorm (Pedro + Claude)
 
 ## Problem

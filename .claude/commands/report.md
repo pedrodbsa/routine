@@ -23,17 +23,29 @@
     - Flag stalls during cut phases
     - Check whether heat or sleep modified the week materially
     - Check strength-session count and nutrition on-plan compliance (the athlete eats to the portion-locked rotation / `/plan` meal table and does **not** log digitally — judge by the weekly weight trend and the protein floor, not a food log)
-    - Compute the week's **average daily steps** (Garmin daily steps) and flag if it falls short of the ~8-10k NEAT target — this is the cut's primary deficit lever this block (2026-06-18). Also note any social-day surplus pattern, since plan-day food is held fixed.
+    - Report the week's **average daily steps** (Garmin daily steps) as an expenditure/context read only — **NEAT is opportunistic, not a target or deficit lever (2026-06-23)**, so do not flag "short of 8-10k." The deficit rests on the plan-day calorie tiers + social-day control; note any social-day surplus pattern, since plan-day food is held fixed. Note weeks where skipped sessions were correctly absorbed by re-tiering the day's food down (not by added walking).
 7. Run the weekly skin assessment (`protocols/skin-log.md`):
+    - **Drain the week's Pending Observations first.** Read every `/skin` capture in
+      the § Pending Observations section — these are the athlete's verbatim mid-week
+      notes with the day's objective context already attached. They are the primary
+      raw material for the correlation; weigh them, don't just summarize them.
     - Ask the athlete for this week's skin: severity (0–5), affected areas /
       barrier feel, the regimen used this week (products, or "none"), and any
       change versus last week.
     - Pull the week's objective drivers already gathered above: average sleep
       duration and score, weekly stress average, HRV trend, and training load.
     - Append one block to the Weekly Log using the documented format, drawing a
-      conclusion that correlates the skin state against those drivers for the
-      week — not a generic note. Revise the working-hypothesis ranking in that
-      file when the accumulated evidence justifies it.
+      conclusion that correlates the skin state against those drivers **and the
+      drained `/skin` captures** for the week — not a generic note. Name confounders,
+      not just hits. Revise the working-hypothesis ranking in that file only when the
+      accumulated evidence justifies it — never on a single observation.
+    - **Isotretinoin confound (from 2026-06-25):** the microdose course now dominates
+      skin change. Treat any lifestyle correlation as **low-confidence while on the
+      drug** and say so; flag the drug as a major regimen change. Do not over-attribute
+      a flare or a clearing to lifestyle when the drug is the bigger lever.
+    - After synthesizing, **clear (archive) the drained Pending Observations** so they
+      are not re-counted next week — mark them folded into this week's block, matching
+      the existing archive convention in that section.
     - Skin is weekly-only; never request or infer a daily skin score.
 8. Update `protocols/current-status.md` when this stack is active. Set the
    `Last verified` date in the header to the report date — this is the date the
