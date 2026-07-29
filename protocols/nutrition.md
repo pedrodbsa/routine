@@ -86,9 +86,20 @@ Six fasted mornings Jul 22–29 average **74.85 kg** against **75.94** for Jul 1
 **Binding until then:**
 
 - **Aug 4 fires without further debate.** >0.6 kg/wk on that read returns the 100 kcal to carbs the same day. No third deferral.
-- **Early-restore tripwires — any one fires immediately:** BIA muscle mass down again on the Aug 4 read; quality pace-at-HR degrading across two consecutive sessions; an HRV or RHR override rule firing.
+- **Early-restore tripwires — any one fires immediately:** **strength working loads regressing across two consecutive sessions of the same type**; quality pace-at-HR degrading across two consecutive sessions; an HRV or RHR override rule firing.
 - **No day-tier shaving before Aug 4.** If the trim is running hot, the direction of travel is restoring calories, not cutting further.
 - **Fasted weigh-in every morning through Aug 4.** Compliance ran 4/7 for the reporting week and 6/8 post-trim; the whole decision rests on this series' density.
+
+##### Creatine confound (added 2026-07-29 — athlete-raised)
+
+The athlete reports creatine intake fell away **from the start of the Jul 6 holiday** — 23 days by Jul 29. This is a real mechanism (creatine holds ~0.5–1.5 kg of intracellular water at a chronic 5 g/day dose, washing out over a 4–6 week half-life) but the **timing largely defeats it as an explanation for the measured delta**: by the Jul 15–21 baseline window the washout was already ~2 weeks along, so roughly a quarter of the reservoir was gone *before* the baseline was set. Window-to-window it accounts for only about **0.1–0.2 kg of the 1.09 kg**. **The rate question stands.**
+
+Two consequences that do matter:
+
+1. **The BIA muscle-mass channel is uninterpretable for the next 4–6 weeks and has been dropped as a tripwire.** The observed 51.61 → 51.28 kg is exactly the signature creatine washout produces, because BIA derives muscle mass largely from intracellular water — the compartment creatine fills. It would have fired falsely on Aug 4. It is replaced above by strength working loads, which are creatine-independent enough at this timescale and are already tracked in `strength-exercises.md`.
+2. **Aug 4's weight read carries a re-saturation caveat.** With creatine restarting 2026-07-29, expect **~+0.1 kg by Aug 1 and +0.3–0.5 kg by mid-August** as muscle re-saturates. **Read the Aug 4 rate primarily on the Jul 22 – Aug 1 fasted mornings**, before re-saturation shows. A reading that appears to show the rate slowing into the acceptable band may be creatine water, not a slowing cut.
+
+It also slightly **strengthens** the 2026-07-21 "the cut has been flat since Jun 24" diagnosis rather than softening it: washout was pulling the scale *down* through that same window, so the underlying trend was, if anything, worse than the flat reading suggested.
 
 ### Consecutive Low-Cal Rule
 

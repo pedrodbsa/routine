@@ -13,7 +13,15 @@
 
 ### Creatine Monohydrate — 5 g, one dose/day
 
-Timing is irrelevant for creatine; take the single 5 g dose with whichever shake is convenient — the post-session shake on training days, the breakfast shake on rest days. This is the **same** 5 g already written into the `meal-rotation.md` shakes, not an additional dose.
+Timing is irrelevant for creatine. What matters is that the dose happens **every day, including rest days and travel days**.
+
+> ⚠ **Do not attach the dose to the post-workout shake (corrected 2026-07-29).** The old instruction — "take it with whichever shake is convenient" — coupled a daily supplement to a feed that is not daily. The shake gets dropped or shrunk routinely (Jun 25, Jul 20, Jul 22, Jul 27, Jul 28 all logged), and each time the dose survived only if the athlete remembered to relocate it. **Athlete reports intake fell away from the start of the Jul 6 holiday — 23 days by 2026-07-29.** This is the same failure mode as the isotretinoin dose attached to dinner: a daily thing hung on a non-daily anchor.
+>
+> **Attach it to a fixed anchor that exists on all seven days** — the tub sits next to the coffee, and the dose goes in the first drink of the day regardless of what training happens later. On days a shake *is* taken, that is fine too, but the shake is no longer the carrier of record.
+
+**Re-saturation note (relevant 2026-07-29 → ~late August).** Restarting 5 g/day after a ~3-week gap will put **0.5–1.5 kg back on the scale over 2–4 weeks**. That is intracellular water in muscle, not fat, and it is the desired effect. Do **not** read it as a stall or a regain, and do not respond to it with a calorie cut. It will also lift the scale's BIA "muscle mass" channel back up for the same reason.
+
+**Why it matters more, not less, during a cut.** Creatine is the one supplement that clears the athlete's own evidence bar, and its value rises under a deficit where lean-mass retention is a stated priority. Dropping it during Cut Block 2 is the wrong direction.
 
 ### Lunch (~13:00)
 

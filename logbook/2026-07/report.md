@@ -575,3 +575,29 @@ Per the isotretinoin rule, all of this is **low-confidence and no hypotheses are
 The realistic landing zone set on Jul 21 was ~73.5–74 kg by Sep 1. At the current morning average of 74.85 that target is now within reach and possibly conservative — **which is exactly why the rate question matters.** Arriving at 73.5 kg with lean mass intact serves the October race; arriving at 73.5 kg having spent lean mass to get there does not, because Phase 6's priority order puts running performance first and an 8-week A-race build off a depleted base blunts the peak.
 
 Next `/report` checkpoints: **the Aug 4 calorie decision** (which needs a dense fasted-morning series to be answerable), whether Legs re-establishes at 3/3, a third treadmill control-run point, the 10K prediction pushing under 50:00, and whether BIA lean mass stops falling.
+
+### Addendum (2026-07-29, same day) — creatine washout, athlete-raised
+
+The athlete proposed that part of the weight drop is reduced creatine intake, and reports it fell away **from the start of the Jul 6 holiday** — 23 days by the report date. The mechanism is real and the hypothesis was worth testing, but the timing works against it as an explanation for the measured delta, while landing hard on a different part of the analysis.
+
+**Mechanism and magnitude.** Creatine draws water into muscle cells. A chronic 5 g/day maintenance dose holds roughly **0.5–1.5 kg** of intracellular water — the 1–2 kg figures in the literature come from 20 g/day loading protocols, not maintenance — and it washes out on a muscle-creatine half-life of about **4–6 weeks**, as a gradual decay rather than a step.
+
+Running that curve against the actual measurement windows is what settles it. By the **Jul 15–21 baseline window** the athlete was already **9–15 days** into the washout, so roughly a quarter of the reservoir had already gone *before the baseline was set*. The **Jul 22–29 window** sits at days 16–23. The difference between the two window midpoints is only about **13% of the reservoir** — that is **~0.1–0.2 kg of the measured 1.09 kg**, or roughly a tenth to a sixth of it.
+
+**The rate question stands.** Creatine is a real but minor contributor to the window-to-window delta, and it does not rescue the trim from the `>0.6 kg/wk` row.
+
+**Where it does matter — the lean-mass tripwire was contaminated and has been replaced.** This report flagged BIA muscle mass falling **51.61 → 51.28 kg** as a lean-mass warning and made *"muscle mass down again on Aug 4"* one of three early-restore tripwires. **Creatine washout produces exactly that signature:** BIA derives muscle mass largely from intracellular water, which is precisely the compartment creatine fills. On a 23-day washout, a 0.33 kg decline on that channel is expected and carries no information about actual lean tissue. **It would have fired falsely on Aug 4 and pushed calories up for the wrong reason.**
+
+The tripwire is replaced with **strength working loads regressing across two consecutive sessions of the same type** — objective, already tracked in `strength-exercises.md`, and creatine-independent enough over this timescale.
+
+This also resolves the small internal tension noted in the body-composition section. On the hydration-matched subset, *absolute* body water read flat (36.32 vs 36.28 kg), which looked mildly inconsistent with an ongoing washout. At a 13% inter-window difference on a ~1 kg reservoir the expected signal is ~0.13 kg — comfortably inside BIA's ~±0.4 kg noise at this bodyweight. There is no contradiction; the effect is simply too small to see.
+
+**A second-order consequence, in the unwelcome direction.** Washout was pulling the scale *downward* through the whole of July, including the Jun 24 – Jul 21 window that the last report diagnosed as flat. That means the underlying trend over that window was, if anything, **slightly worse than flat** — so this **strengthens** the Jul 21 verdict rather than softening it.
+
+**Root cause, and it is a repeat of a known failure mode.** Every daily plan since June prescribes 5 g. But `supplements.md` instructed *"take the single 5 g dose with whichever shake is convenient"* — **a daily supplement attached to a feed that is not daily.** The post-workout shake is dropped or shrunk routinely: Jun 25 (dropped, creatine relocated to the post-dinner snack), Jul 20 (skipped, relocated to lunch), Jul 22 (no shake, moved to the afternoon snack), Jul 27 (4 feeds, no shake), Jul 28 (ran short). Each time the dose survived only if the athlete remembered to move it. **This is structurally identical to the isotretinoin dose hung on dinner, which has now missed doses three weeks running.** `supplements.md` is corrected: the anchor is the morning coffee, seven days a week, independent of whether a shake happens.
+
+**Restart is prescribed from today, with a measurement caveat attached.** Re-saturating at 5 g/day will put **0.5–1.5 kg back on the scale over 2–4 weeks** — intracellular water, not fat, and the desired effect. It will also lift the BIA muscle-mass channel back up for the same reason. **Neither is to be read as a stall, a regain, or a validation of the trim.**
+
+Because that bounce lands across the checkpoint, **the Aug 4 rate should be read primarily on the Jul 22 – Aug 1 fasted mornings**, before re-saturation shows (expect ~+0.1 kg by Aug 1, +0.3–0.5 kg by mid-August). A reading that appears to show the rate settling into the acceptable band may be creatine water rather than a slowing cut — precisely the class of measurement artifact that invalidated the entire July series once already.
+
+**Holding the restart until after Aug 4 to protect the reading was considered and rejected.** Six more days off creatine, under a deficit with lean-mass retention as priority #2 and six weeks to the peak block, is not worth a cleaner scale number — particularly when reading the pre-Aug-1 subset achieves nearly the same thing at no cost.
