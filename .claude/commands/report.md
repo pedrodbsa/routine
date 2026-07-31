@@ -10,7 +10,7 @@
 
 ## Function
 
-1. **Refresh Garmin data exports first** (2026-06-12): verify `data/activities.csv` includes the current week's activities before computing any trend. A stale export (the Jun 12 review found June runs missing) silently corrupts ACWR, weekly km, and the volume-floor check. If the export is stale, re-pull before proceeding.
+1. **Pull live Garmin data first** (revised 2026-07-31): all trends compute from the live Garmin MCP (fallback: direct `garminconnect` pull). The `data/*.csv` exports are abandoned and stale — never read them. Verify the pull covers the full reporting week before computing ACWR, weekly km, or the volume-floor check.
 2. Analyze recent strength, running, nutrition, body composition, and recovery data
 3. Identify progression, plateaus, and warning signs
 4. Compare outcomes to the live body-recomp target (`current-status.md` § Goals): ~72.5-73 kg / ~17.5-18% BF at the Sep 20 cut hard stop, holding 59.6 kg lean (Bod Pod 2026-04-28 baseline: 76.11 kg @ 21.7%); 71 kg / 16% resumes post-Dec 12. Scale BF% is BIA and reads ~7 pp high vs Bod Pod — govern by the weight trend and lean-mass retention, not scale BF%.
@@ -56,6 +56,32 @@
    sessions, and upgrade any Garmin-enum status that `/garmin` confirmed this week
    (`⚠ guess` → `✓ <date>`, or record a new `⚠ not …` trap). Do not re-add a loads
    table to `current-status.md`.
+10. **Protocol sync check (added 2026-07-31)** — the last step of every report, added
+    after the Oct→Dec A-race change lived only in a conversation for weeks while
+    every file kept planning against the stale calendar. Three passes, cheap and
+    mechanical:
+    - **Unrecorded-decision sweep.** Scan the week's daily files (`## Context` /
+      decision notes) and anything the athlete reports as "we agreed X" for
+      decisions touching the race calendar, goals, targets, phase boundaries, or
+      standing rules. Each one must exist in the `current-status.md` coaching log
+      AND be propagated to every affected protocol file. An unrecorded or
+      half-propagated decision is a defect to fix in this report, not a note. If
+      the athlete references a decision with no file trace at all, say so plainly
+      and reconstruct it with him — never silently adopt or silently ignore it.
+    - **Cross-file consistency check.** Grep the load-bearing values and confirm
+      they agree everywhere they appear: race dates/targets and phase boundaries
+      (`current-status.md` ↔ `running.md` ↔ `training.md` ↔ `nutrition.md` ↔
+      `AGENTS.md`), calorie tiers and protein/fat floors (macros must actually sum
+      to the stated kcal), HR anchors, and volume bands. Disagreements resolve by
+      the source-of-truth hierarchy (lab data > logged data > athlete decisions >
+      the designated single-source file) and get logged.
+    - **Staleness/archive pass.** Anything in the operational files that is
+      superseded, completed, or >2 weeks dead-narrative moves to
+      `protocols/archive/` (pointer left behind). `current-status.md` stays
+      operational-only — if it is growing back toward pre-2026-07-31 size, trim it.
+    This step is the weekly *sync* check. The deep false-assumption hunt
+    (physiology claims, unattainable targets, zombie rules) stays with the `/audit`
+    skill — run that on demand or roughly quarterly, not weekly.
 
 ## Requirements
 

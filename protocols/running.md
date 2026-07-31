@@ -63,7 +63,7 @@ Everything through the May race block is complete (Base → Quality Reintro → 
 | May 17 (Sun)     | 10K (road)      | Ansião 10K   | Done       | 52:16 / 5:13/km, avg HR 176 (raced hard) |
 | May 24 (Sun)     | 14.7 km (trail) | Anadia trail | Done       | 2:07:42, avg HR 172, 413 m climb         |
 | **Oct 25 (Sun)** | **10K (hilly)** | TBD          | **B-race** | **Hard supported effort inside the build** — race-effort hill run, no PR expectation on this course (calendar revised 2026-07-31) |
-| **Dec 12 (Sat)** | **10K**         | **Same event as Dec 2025** | **A-Race** | **Sub-47:00 (stretch 46)** — rides on the Phase 4-5 scoreboard (VO2max proxy ≥47 / ≤50:30, control-run trend, quality execution at HR) until the Phase 6-7 build validates it |
+| **Dec 12 (Sat)** | **10K**         | **S. Silvestre Coimbra, 18:30 (evening)** | **A-Race** | **Sub-47:00 (stretch 46)** — 2025 result ~54:00. Rides on the Phase 4-5 scoreboard (VO2max proxy ≥47 / ≤50:30, control-run trend, quality execution at HR) until the Phase 6-7 build validates it |
 
 ## Workout Types
 
@@ -187,13 +187,20 @@ Acute km this week / 4-week rolling average.
 
 ## Taper and Race Execution
 
-### 10K A-Race (December 12)
+### 10K A-Race — S. Silvestre Coimbra (Dec 12, 18:30 start)
 
-- Warm-up: 15-20 min jog + 4-6 strides
-- Pacing: start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10 (stretch pacing: 4:36-4:39 if fitness supports it)
+- Pacing: start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10 (stretch pacing: 4:36-4:39 if fitness supports it). Reference: 2025 result ~54:00; current prediction 50:19 (Jul 31).
 - No in-race fueling needed
-- Caffeine: ~230 mg 30-60 min pre-race
 - Final 10 days: reduce volume, not intensity. Keep one short 10K-pace touchpoint each week.
+
+**Evening-start logistics (18:30 — this is not a morning race day):**
+
+- **Fueling:** normal carb-forward breakfast and lunch (this is where the race-day carbs live, not a race breakfast); light familiar meal ~15:00-15:30 (~1 g/kg carbs, low fiber/fat); optional 20-30 g easy carbs ~17:30. Nothing new on race day.
+- **Caffeine: ~230 mg ~17:45-18:00.** This is a deliberate exception to the ~10-11:00 caffeine cutoff — accept the degraded post-race night as a known one-off cost; do not read the Dec 12-13 sleep data as a signal.
+- **Hydration:** sip through the day to clear urine by mid-afternoon (chronic under-hydration flag); ~500 mL with sodium 60-90 min pre-start, then stop — avoid a full bladder at the line.
+- **Conditions:** December evening in Coimbra ≈ 8-12 °C, full dark. Warm-up 15-20 min jog + 4-6 strides, finishing as close to the start as possible; keep a warm layer on until the last minutes. Cold start favors a slightly longer warm-up, not a faster opening km.
+- **Day structure:** stay off the legs in the afternoon; a normal short morning shakeout (10-15 min + 2 strides) is fine and helps burn off race-day nerves.
+- Practice the full evening-race day once in Phase 7 (a Saturday ~18:30 quality session run on the race-day eating schedule).
 
 ### Phase 6-7 Quality-Day Warm-Up Upgrade
 
