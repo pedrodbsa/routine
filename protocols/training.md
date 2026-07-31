@@ -49,7 +49,7 @@ Strength supports the running plan. Running quality stays protected. Scheduling 
 | Wed | Easy 5-6 km       | Upper Pull              | Pre-lunch double             |
 | Thu | Easy 5-6 km or rest | Legs (PM, after lunch) | Sole after-lunch session     |
 | Fri | Quality session 2 | --                      | No same-day lifting          |
-| Sat | Easy 5-6 km       | Optional arms/shoulders | Pre-lunch; only if recovered |
+| Sat | Easy 5-6 km       | Arms/shoulders (short, standing) | Pre-lunch; first casualty on compressed weeks |
 | Sun | Long run 12-14 km (P4) / up to 16 km (P5) | --      | Fueled as quality day. P4 long run capped at 12-14 km to keep it ≤~35-40% of a ~35-42 km week (see running.md Phase 4 volume note). |
 
 Session timing follows the pre-lunch default (see `## Double-Day Guidelines`): upper lifts and easy runs cluster before lunch; Legs is the one PM session. Weekday placement remains flexible — the columns are a reference layout, not a constraint.
@@ -93,7 +93,7 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 ### Cut Phases (Apr 13 - Aug 30)
 
-- Hypertrophy remains the main objective **for the upper body only**.
+- Upper-body objective during the cut: **retention first, growth where it comes** (re-stated 2026-07-31). A 400+ kcal deficit plus 35-40 km/wk running does not support growth-grade volume; measurable hypertrophy is a post-October deliverable. The templates hold every small muscle group (biceps, triceps, side delts, rear delts) at **~6-9 direct sets/week** — the evidence-based retention band in a deficit — via the accessory slots below plus the standing arms/shoulders session. **Activation: first full week at the expanded volume is Aug 3+, aligned with the Aug 4 calorie checkpoint — do not stack the extra sets on the hot trim.**
 - **Legs are explicitly not a hypertrophy target** (standing decision 2026-06-12, athlete call): genetically well-developed legs, no added size wanted. Leg training exists for force production, running economy, and structural maintenance — see `## Leg Day` for the running-optimized spec.
 - Upper-body work stays mostly 8-12 reps.
 - RPE stays 7-8 max on working sets (upper). Leg working sets stay at RIR 2-3 — never to failure.
@@ -164,11 +164,15 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 - 3 x 12-15 reps
 
-**6a. Core anti-extension**
+**6. Triceps isolation** (added 2026-07-31 — small-muscle retention volume)
+
+- 3 x 10-15 reps (cable pushdown or overhead cable extension; rotate against dips' loading)
+
+**7a. Core anti-extension**
 
 - 3 sets
 
-**6b. Core anti-rotation or flexion**
+**7b. Core anti-rotation or flexion**
 
 - 3 sets
 
@@ -194,17 +198,21 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 - 3 x 10-12 reps
 
-**6a. Core anti-rotation or flexion**
+**6. Second biceps slot** (added 2026-07-31 — small-muscle retention volume)
+
+- 2-3 x 10-12 reps (different implement or angle from slot 5 — e.g. hammer after incline, cable after barbell)
+
+**7a. Core anti-rotation or flexion**
 
 - 3 sets
 
-**6b. Carry or stability**
+**7b. Carry or stability**
 
 - 3 sets
 
-## Optional: Arms and Shoulders (Sat PM)
+## Arms and Shoulders (standing short session, cut blocks)
 
-Use only in Cut Blocks 1 and 2. Drop if Body Battery <60 at wake, soreness lingers, or sleep was <6 h.
+**Standing, not optional, from 2026-07-31** — ~20-25 min, pre-lunch like the other upper sessions, in Cut Blocks 1 and 2. It supplies the top-up that takes arms/delts from the ~5-6 retention-floor sets in Push/Pull to ~8-9. It remains the **lowest-priority strength session**: on a compressed week it is the first thing dropped (the compression rule below governs the big three), and it still drops same-day if Body Battery <30 at wake or sleep was <5 h.
 
 1. Lateral Raises - 3x15
 2. Rear Delt Flyes - 3x15
@@ -212,13 +220,22 @@ Use only in Cut Blocks 1 and 2. Drop if Body Battery <60 at wake, soreness linge
 4. Tricep Pushdowns - 3x12-15
 5. Hammer Curls - 2x12
 
+## Session Compression Priority (added 2026-07-31)
+
+When a week runs short of 3/3, nothing used to say which session survives — in practice the session paired with the reliable pre-lunch double (Push) always did, producing three Pushes in July while Pull went 3 weeks and Legs 13 days. Two rules fix that:
+
+- **When the prior week ran <3/3, the current week opens with the most-overdue session type** — not with whichever slot is most convenient.
+- **Never run the same session type twice while another type is >10 days old.** The overdue one takes the slot.
+
+The standing arms/shoulders session is outside this rule — it is always the first casualty and never displaces Push/Pull/Legs.
+
 ## Exercise Rotation Rules
 
 - Never repeat the exact same exercise selection two weeks in a row.
 - Swap at least 2-3 exercises per session when repeating the session type.
 - Keep the movement pattern constant, change the implement or variation.
 - Dips, lateral raises, face pulls, calf raises, jumps/plyo, and some core slots can repeat.
-- Check the previous session in the daily files before programming the next one.
+- **Two-session lookback (2026-07-29):** rotate the selection against the last _two_ same-type sessions in the daily files, not just the most recent — a one-session memory degenerates into an A/B flip-flop (see `strength-exercises.md` § How this file is used).
 
 ## Progression Rules
 
@@ -286,7 +303,7 @@ Use this on individual days (~4-6 per month) where social events, family demands
 
 - **Running:** keep the run if possible, but shorten by 20-30%. Drop quality to easy if motivation <3 or sleep was <5.5 h.
 - **Strength:** drop to the 2-3 most important compounds for that session, 2 sets each. Skip accessories and core.
-- **Nutrition:** protein floor still applies (165 g, the current Phase 4 floor). If the day involves a social meal, use it as the flex day. Log what you can.
+- **Nutrition:** protein floor still applies (phase-aware — 170 g in Phase 5; see `nutrition.md`). If the day involves a social meal, use it as the flex day. Log what you can.
 - **Mobility:** do the 3 highest-priority movements (hip flexor stretch, 90/90, cat-cow) instead of the full 10-minute routine.
 - **Mindset:** a disrupted day executed at 60% is better than a skipped day. Do not compensate the next day with extra volume.
 

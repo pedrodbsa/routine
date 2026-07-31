@@ -6,7 +6,7 @@
 
 **Macro Minimums (Non-Negotiable):**
 
-- **Protein Floor:** 165 g in the current cut (Phase 4). Phase-aware: 160 g baseline / 165 g Phase 4 / 170 g Phase 5 — see the per-phase tables.
+- **Protein Floor:** 170 g in the current cut (Phase 5). Phase-aware: 160 g baseline / 165 g Phase 4 / 170 g Phase 5 — see the per-phase tables.
 - **Fat Floor:** 60 g
 
 On the lowest-calorie days, protein and fat come first. Carbs flex around training demand.
@@ -55,10 +55,12 @@ Slightly steeper deficit toward end. Target ~0.4 kg/wk (~400 cal/day deficit).
 
 | Day Type        | Calories | Protein | Carbs | Fat  |
 | --------------- | -------- | ------- | ----- | ---- |
-| Rest            | 1,750    | 170 g   | 145 g | 60 g |
-| Easy / Strength | 1,850    | 170 g   | 170 g | 60 g |
+| Rest            | 1,750    | 170 g   | 132 g | 60 g |
+| Easy / Strength | 1,850    | 170 g   | 158 g | 60 g |
 | Quality         | 2,150    | 170 g   | 235 g | 60 g |
 | Long Run        | 2,350    | 170 g   | 285 g | 60 g |
+
+> **Carb columns corrected 2026-07-31** (flagged by `/plan` Jul 27 and Jul 28): the Rest and Easy rows carried carb values whose macros summed to ~1,800 and ~1,900 kcal against the stated 1,750 / 1,850 — a leftover from raising protein 165 → 170 g without re-deriving carbs. The kcal tier is the governing number (the −100 trim was defined in kcal), so carbs now match it: Rest 132 g (680 + 528 + 540 = 1,748), Easy 158 g (680 + 632 + 540 = 1,852). Rest at 132 g sits just above the 130 g floor rejected on 2026-05-06 — it cannot be trimmed further without breaking that decision.
 
 Average week: **~1,915 calories** (was ~2,000). Protein nudges up to 170 g to extra-insure LBM as BF drops. **The protein and fat floors do not scale with the trim** — the entire reduction comes from carbohydrate.
 
