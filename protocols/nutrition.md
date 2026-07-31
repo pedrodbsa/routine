@@ -125,6 +125,8 @@ Maintenance holds through the entire peak block — no deficit between the Sep 2
 
 If sleep was <6 h, do not force fasted running.
 
+**No breakfast before a run (athlete-corrected 2026-07-31):** the athlete does not run on a full stomach. Never sequence a full breakfast pre-run regardless of the time gap — pre-run is at most banana + coffee per the table above; breakfast is always the post-run meal. On pre-lunch double days, post-run breakfast remains the pre-lift fuel (a whey shake can bridge if the lift is close).
+
 ## Meal Distribution
 
 **Eating structure: 4 feedings on easy/rest days, 5 on quality/long/strength days (revised 2026-06-22). A fixed midafternoon protein snack anchors every day. Breakfast every day, run small to fund the snack.**
