@@ -10,7 +10,7 @@
 
 ## Function
 
-1. **Pull live Garmin data first** (revised 2026-07-31): all trends compute from the live Garmin MCP (fallback: direct `garminconnect` pull). The `data/*.csv` exports are abandoned and stale — never read them. Verify the pull covers the full reporting week before computing ACWR, weekly km, or the volume-floor check.
+1. **Pull live Garmin data first** (revised 2026-07-31): all trends compute from the live Garmin MCP (fallback: direct `garminconnect` pull). Verify the pull covers the full reporting week before computing ACWR, weekly km, or the volume-floor check.
 2. Analyze recent strength, running, nutrition, body composition, and recovery data
 3. Identify progression, plateaus, and warning signs
 4. Compare outcomes to the live body-recomp target (`current-status.md` § Goals): ~72.5-73 kg / ~17.5-18% BF at the Sep 20 cut hard stop, holding 59.6 kg lean (Bod Pod 2026-04-28 baseline: 76.11 kg @ 21.7%); 71 kg / 16% resumes post-Dec 12. Scale BF% is BIA and reads ~7 pp high vs Bod Pod — govern by the weight trend and lean-mass retention, not scale BF%.

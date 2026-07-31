@@ -246,4 +246,4 @@ Generic reference for any future HM or trail race around 90-120 minutes. None is
 
 ## Data Source
 
-Live Garmin MCP only — the `data/*.csv` exports are abandoned and stale (do not read them; removed from this file 2026-07-31).
+Live Garmin MCP only (fallback: direct `garminconnect` pull via the token cache).
