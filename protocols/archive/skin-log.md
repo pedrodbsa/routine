@@ -1,3 +1,4 @@
+> **ARCHIVE — experiment terminated 2026-07-31 (athlete call).** Weekly skin tracking ran ~May-Jul 2026 to hunt triggers; no useful signal emerged beyond what was already known (barrier over-treatment hypothesis, then the isotretinoin microdose dominating all correlation from 2026-06-25). The `/skin` command and the `/report` weekly assessment step were removed. The iso course continues as a medication (with dinner — see `supplements.md` / `nutrition.md`); it is simply no longer tracked here.
 # SKIN LOG
 
 > Weekly subjective skin assessment, correlated against the week's recovery and

@@ -19,9 +19,8 @@ Definitive post-HM protocol stack for a 40-year-old male balancing body recompos
 | Meal rotation       | `protocols/meal-rotation.md`    | Portion-locked meal cards, carb-tier portions, day-type sample days       |
 | Supplements         | `protocols/supplements.md`      | Daily stack, optional items, finasteride compatibility                    |
 | Mobility            | `protocols/mobility.md`         | Daily mobility, prehab, pain tracking                                     |
-| Skin                | `protocols/skin-log.md`         | Weekly acne assessment, trigger hypotheses, metric correlation            |
 | Daily file format   | `protocols/daily-template.md`   | Required daily fields, day type, ACWR, readiness notes                    |
-| Command docs        | `.claude/commands/`             | `/plan`, `/garmin`, `/log`, `/report`, `/body`, `/skin` behavior            |
+| Command docs        | `.claude/commands/`             | `/plan`, `/garmin`, `/log`, `/report`, `/body` behavior                     |
 
 ## Workflow
 
@@ -29,9 +28,8 @@ Definitive post-HM protocol stack for a 40-year-old male balancing body recompos
 2. After reviewing the plan: `/garmin` uploads the day's prescribed workouts to Garmin Connect and schedules them for the plan date, replacing any existing workout for that date. See `.claude/commands/garmin.md` for the upload behavior.
 3. After training: `/log [details]`
 4. After meals: `/log meal [details]`
-5. As needed: `/skin [observation]` captures a skin-relevant note for the weekly correlation
-6. Weekly: `/report` updates the active current-status file, and drains the week's `/skin` captures into the skin assessment
-7. As needed: `/body` syncs scale data and target deltas
+5. Weekly: `/report` updates the active current-status file
+6. As needed: `/body` syncs scale data and target deltas
 
 ## Coaching Primer
 
