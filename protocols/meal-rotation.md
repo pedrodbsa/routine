@@ -124,17 +124,24 @@ On easy/rest days breakfast **runs small** — eggs ± a little oats, or the Bre
 
 Each card: fixed anchor + the carb portion for the day type. Macros are the full meal total.
 
-### Breakfast Oats — Fruit Mix-In (athlete preference, 2026-06-21)
+### Breakfast Oats — Fruit Mix-In (athlete preference, 2026-06-21; fruit named 2026-07-30)
 
 Plain oats are unpalatable to the athlete; mixing fruit in makes the bowl acceptable. For every oat-based
 breakfast (B1, B2, B4 — and any `/plan`-specced oat breakfast), take part of the oat portion as fruit
 stirred into the bowl rather than serving the full oat weight plain.
 
+**The fruit is mango or strawberries — one of the two, always.** The athlete keeps both frozen, and
+stirring them in **cools the oatmeal**, which is a second reason on top of palatability. Do not default an
+oat breakfast to banana, apple, or generic "berries"; spec mango or strawberries and let the athlete pick.
+Other fruit remains fine as a post-lunch or post-dinner item, just not in the oat bowl.
+
 **Mechanic — same carb-match rule as the dessert swap above.** Cut the dry oats by ~15–20 g and add fruit
 that replaces those carbs, so calories and the day-type carb total stay on target:
 
-- ~20 g dry oats ≈ **13 g carbs** ≈ ~100 g berries / ½ banana / ½ apple chopped in.
-- Use the carb-by-fruit quick reference under the dessert-swap section to size it.
+- ~20 g dry oats ≈ **13 g carbs** ≈ ~100 g strawberries / ~85 g mango stirred in.
+- Mango is roughly **2× the carb density of strawberries** (15 g vs 8 g per 100 g), so the two are not
+  gram-for-gram interchangeable — size whichever one is specced off the carb-by-fruit reference under the
+  dessert-swap section.
 
 Example — a Quality B1 specced at 93 g oats becomes **~73 g oats + 100 g berries stirred in**; an Easy
 67 g becomes **~50 g oats + a handful of berries**. The egg/yogurt/whey protein and fat anchors do not
