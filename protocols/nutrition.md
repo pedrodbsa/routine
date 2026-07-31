@@ -192,7 +192,7 @@ Default training is clustered before lunch (run before breakfast, upper lift bef
 - **Lunch is the post-workout meal** — place the largest single carb feed here, right after the lift.
 - Snack and dinner carry the remainder; do not back-load most of the day's carbs to dinner.
 
-**Legs day (PM, after lunch — typically Thursday):**
+**Legs day (PM, after lunch — typically Wednesday):**
 
 - Lunch is the pre-lift meal — ~35-45% of the day's carbs in the 2-3 h before the session.
 - Dinner is the post-workout + pre-bed protein meal — a large carb feed plus ≥40 g slow protein.

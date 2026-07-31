@@ -46,8 +46,8 @@ Strength supports the running plan. Running quality stays protected. Scheduling 
 | --- | ----------------- | ----------------------- | ---------------------------- |
 | Mon | Easy 6-7 km       | Upper Push              | Pre-lunch double             |
 | Tue | Quality session 1 | --                      | No same-day lifting          |
-| Wed | Easy 5-6 km       | Upper Pull              | Pre-lunch double             |
-| Thu | Easy 5-6 km or rest | Legs (PM, after lunch) | Sole after-lunch session     |
+| Wed | Easy 5-6 km or rest | Legs (PM, after lunch) | Sole after-lunch session; ≥36 h before Fri Q2 ✓ (a Thu-PM Legs slot violates that rule — layout corrected 2026-07-31) |
+| Thu | Easy 5-6 km       | Upper Pull              | Pre-lunch double             |
 | Fri | Quality session 2 | --                      | No same-day lifting          |
 | Sat | Easy 5-6 km       | Arms/shoulders (short, standing) | Pre-lunch; first casualty on compressed weeks |
 | Sun | Long run 12-14 km (P4) / up to 16 km (P5) | --      | Fueled as quality day. P4 long run capped at 12-14 km to keep it ≤~35-40% of a ~35-42 km week (see running.md Phase 4 volume note). |
@@ -89,7 +89,7 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 - Run first, lift second. Post-run shake immediately; breakfast between the run and the lift is the lift's fuel. If both sessions are combined fasted before lunch, take the post-run shake before the lift so it is not done empty.
 - The clustered pre-lunch double suits an easy run + an upper session. It is not for a quality run + lift — quality days carry no lifting.
-- **Legs is the sole exception: trained after lunch (PM), typically Thursday.** Lunch fuels it; dinner is the post-workout + pre-bed protein meal. This keeps legs off the same pre-lunch block as the morning run.
+- **Legs is the sole exception: trained after lunch (PM), typically Wednesday** (moved off Thursday 2026-07-31 — a Thu-PM Legs leaves only ~18 h before a Friday quality, breaching the ≥36 h rule). Lunch fuels it; dinner is the post-workout + pre-bed protein meal. This keeps legs off the same pre-lunch block as the morning run.
 - If energy is low for the second session, drop 1 set per exercise before considering cancellation.
 - Never schedule hard running and legs on the same day.
 

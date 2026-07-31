@@ -140,6 +140,7 @@ Anchored to lab-prescribed individual threshold (2026-04-28): 142 bpm @ 6:00/km.
 - Recovery capacity is materially lower during the deepest cut phases.
 - Sleep is duration-capped by early waking (~5:30-6:30); live issue is onset latency. Protect duration via bedtime; treat genuinely short (<6 h) or late-onset nights as real signals.
 - ~4-6 disrupted days/month expected — use the disrupted-day protocol.
+- **PT suspended since ~2026-07-17 (~3 weeks); Legs runs self-led at G1**, where the running-optimized spec is fully enforceable (no leg machines; squat/RDL/deadlift/Nordic/pull-through/split squat + plyo, no calves). **Open decision, due ~Aug 7 when PT returns:** brief the PT directly on the leg spec, or keep Legs self-led permanently — relaying the spec through the athlete mid-session demonstrably failed (Jul 16 breach: hypertrophy rep ranges, loaded prehab slot, calves trained against standing preference).
 
 ## Coaching Log (live entries only)
 
