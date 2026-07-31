@@ -11,28 +11,9 @@
 
 On the lowest-calorie days, protein and fat come first. Carbs flex around training demand.
 
-### Phase 1 - Post-HM Recovery (Mar 30 - Apr 12) — HISTORICAL
+### Phases 1-3 (completed) — archived
 
-| Day Type | Calories | Protein | Carbs | Fat  |
-| -------- | -------- | ------- | ----- | ---- |
-| All days | 2,300    | 160 g   | 230 g | 70 g |
-
-### Phase 2 - Base Rebuild + Cut (Apr 13 - May 4) — DID NOT EXECUTE
-
-Strength sessions and tracking compliance broke down. Running held ~24 km/wk. Replaced from May 5 by Re-entry & Race Block below.
-
-### Phase 3 - Re-entry & Race Block (May 5 - May 29)
-
-Maintenance calories. Re-establish strength + tracking, fuel race weeks. No deficit until May 30.
-
-| Day Type        | Calories | Protein | Carbs | Fat  |
-| --------------- | -------- | ------- | ----- | ---- |
-| Rest            | 2,200    | 160 g   | 230 g | 70 g |
-| Easy / Strength | 2,400    | 160 g   | 270 g | 75 g |
-| Quality         | 2,600    | 160 g   | 320 g | 75 g |
-| Long Run / Race | 2,750    | 160 g   | 360 g | 75 g |
-
-Average week: ~2,400 calories (true maintenance at TDEE estimate).
+Moved to `protocols/archive/nutrition-phases-1-3.md` (2026-07-31).
 
 ### Phase 4 - Cut Block 1 (May 30 - Jul 5)
 
@@ -47,9 +28,11 @@ Target rate: ~0.26-0.3 kg/wk (~325 cal/day average deficit). Slow on purpose —
 
 Average week: ~2,000 calories. (Original draft averaged ~2,100; recalibrated down after actual May-block load implied a true TDEE ~2,240 rather than the assumed ~2,425. Old pre-2026-05 plan ran ~1,886 — too aggressive for this BF.)
 
-### Phase 5 - Cut Block 2 (Jul 6 - Aug 30)
+### Phase 5 - Cut Block 2 (Jul 6 - Sep 20, extended 2026-07-31)
 
 Slightly steeper deficit toward end. Target ~0.4 kg/wk (~400 cal/day deficit).
+
+**Extension to Sep 20 (athlete decision 2026-07-31, with the A-race moved to Dec 12):** the original Aug 30 end date existed to fuel a Sep 1 peak block; with the peak now Oct 26 - Dec 12, September is build volume and tolerates ~3 more deficit weeks (~1.0-1.4 kg ≈ 1.5 BF points, landing ~72.5-73 kg / ~17.5-18%). Conditions: the Aug 4 checkpoint and its tripwires stay binding; if the compound-stress guardrail or quality pace-at-HR degradation fires in September, the reversal pulls forward to ~Sep 14. **Sep 20 is a hard stop regardless of the scale** — remaining leanness belongs to the post-Dec cut, not race prep.
 
 **Tiers trimmed −100 kcal (carbs only) effective 2026-07-22.** The weigh-in-protocol audit of 2026-07-21 established that the apparent mid-July descent was a measurement artifact (post-run readings compared against morning readings) and that morning-to-morning weight has been **flat since ~Jun 24**. That fires the standing rule below — *7-day average stalls 2+ weeks → reduce daily target by 100 cal from carbs* — and it is the plan-day trim deferred on 2026-06-18 and 2026-06-23. **Rest is deliberately held at 1,750:** at the 170 g protein and 60 g fat floors a 1,650 rest day forces carbs to ~107 g, and rest-day carbs below 130 g were explicitly rejected on 2026-05-06.
 
@@ -75,7 +58,7 @@ Read the **fasted-morning 7-day average on 2026-08-04** and act symmetrically:
 | Rate over Jul 22 - Aug 4 | Action |
 | ------------------------ | ------ |
 | **> 0.6 kg/wk** | **Restore the 100 kcal to carbs immediately.** Too fast six weeks out from the peak block; lean-mass loss costs more than a slower landing |
-| **0.3 - 0.5 kg/wk** | **Hold.** On track for ~73.5-74 kg by Sep 1 |
+| **0.3 - 0.5 kg/wk** | **Hold.** On track for the ~72.5-73 kg Sep 20 landing |
 | **< 0.25 kg/wk** *with volume ≥35 km/wk and strength 3/3 delivered* | The tier is genuinely too high — trim again |
 | **< 0.25 kg/wk** *with volume or strength missed* | **Do not trim.** The output side failed, not the food side — fix that first. Cutting further would repeat the Jun-Jul error in the opposite direction |
 
@@ -117,15 +100,17 @@ During cut phases (Phases 4, 5), allow 1 flex day per week at maintenance calori
 - Log the flex day honestly. The weekly report evaluates average, not individual days.
 - If 2+ flex days occur in one week, flag it in the daily log and assess whether a diet break should be pulled forward.
 
-### Phase 6 - Reverse + 10K Peak (Sep 1 - Oct 25)
+### Phases 6-7 - Reverse + Build, then 10K Peak (Sep 21 - Dec 12; re-dated 2026-07-31)
 
-| Week                      | Calories    | Protein | Carbs     | Fat  |
-| ------------------------- | ----------- | ------- | --------- | ---- |
-| 1 (Sep 1)                 | 2,150       | 165 g   | 200 g     | 65 g |
-| 2 (Sep 8)                 | 2,300       | 165 g   | 235 g     | 65 g |
-| 3 (Sep 15)                | 2,500       | 165 g   | 280 g     | 65 g |
-| 4-7 (Sep 22 - Oct 18)     | 2,500-2,650 | 165 g   | 280-310 g | 65 g |
-| 8 - Race Week (Oct 20-25) | 2,650-2,750 | 160 g   | 320 g+    | 65 g |
+| Week                              | Calories    | Protein | Carbs     | Fat  |
+| --------------------------------- | ----------- | ------- | --------- | ---- |
+| 1 (Sep 21)                        | 2,150       | 165 g   | 200 g     | 65 g |
+| 2 (Sep 28)                        | 2,300       | 165 g   | 235 g     | 65 g |
+| 3 (Oct 5)                         | 2,500       | 165 g   | 280 g     | 65 g |
+| Maintenance (Oct 12 - Dec 6)      | 2,500-2,650 | 165 g   | 280-310 g | 65 g |
+| Race Week (Dec 7-12)              | 2,650-2,750 | 160 g   | 320 g+    | 65 g |
+
+Maintenance holds through the entire peak block — no deficit between the Sep 20 hard stop and the Dec 12 race. The Oct 25 B-race sits inside the maintenance band as a normal quality-day-fueled hard effort (pre-race sodium + carbs per § Race and Long-Effort Fueling; no carb load needed for a supported training effort). Fat loss resumes post-Dec 12 (Phase 8) toward 71 kg / 16%.
 
 ## Performance Fueling
 
@@ -331,7 +316,7 @@ The final meal of the day contains **≥40 g of slow-digesting or mixed protein*
 | -------------- | --------------- | ----------------------- | --------------------------------------- |
 | May 5-25       | 3 weeks         | ~2,400 avg              | Re-entry + race block, no deficit       |
 | ~~Jul 27 - Aug 2~~ | ~~1 week~~  | ~~2,400~~               | **CANCELLED 2026-07-21** — see below    |
-| Sep 1-21       | 3 weeks gradual | 2,150 -> 2,300 -> 2,500 | Reverse diet into peak                  |
+| Sep 21 - Oct 11 | 3 weeks gradual | 2,150 -> 2,300 -> 2,500 | Reverse diet into the build (re-dated 2026-07-31; cut hard stop Sep 20) |
 
 **Jul 27 - Aug 2 break cancelled (athlete decision, 2026-07-21).** The Jul 6-12 holiday functioned as the break — travel and restaurant eating at or above maintenance, three weeks ahead of schedule. A second break so soon after is redundant, and the athlete's priority is maximum leanness entering the September peak block.
 

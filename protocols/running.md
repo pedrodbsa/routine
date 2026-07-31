@@ -51,9 +51,10 @@ Everything through the May race block is complete (Base → Quality Reintro → 
 
 | Phase                  | Dates           | Focus                                                   | Volume      |
 | ---------------------- | --------------- | ------------------------------------------------------- | ----------- |
-| Cut Block 1 (CURRENT)  | May 30 - Jul 5  | 2 quality/wk (1 harder + 1 lighter), 10K pace from wk 4 | 35-42 km/wk |
-| Cut Block 2            | Jul 6 - Aug 30  | 2 quality/wk, synchronized deload every 3rd wk          | 35-40 km/wk |
-| 10K Peak               | Sep 1 - Oct 25  | 2 quality/wk + selective VO2max, taper                  | 45-55 km/wk |
+| Cut Block 1            | May 30 - Jul 5  | 2 quality/wk (1 harder + 1 lighter), 10K pace from wk 4 | 35-42 km/wk |
+| Cut Block 2 — extended (CURRENT) | Jul 6 - Sep 20  | 2 quality/wk, synchronized deload every 3rd wk. Cut hard stop Sep 20 | 35-40 km/wk |
+| Reverse + Build        | Sep 21 - Oct 25 | Volume build at rising calories; 2 quality/wk; **Oct 25 B-race = hard supported hill effort** (counts as the week's harder quality, 2-3 easy days before, no full taper) | 40-50 km/wk |
+| 10K Peak               | Oct 26 - Dec 12 | 2 quality/wk + selective VO2max, taper last ~10-14 days, **A-race Dec 12** | 45-55 km/wk |
 
 ## Race Schedule
 
@@ -61,8 +62,8 @@ Everything through the May race block is complete (Base → Quality Reintro → 
 | ---------------- | --------------- | ------------ | ---------- | ---------------------------------------- |
 | May 17 (Sun)     | 10K (road)      | Ansião 10K   | Done       | 52:16 / 5:13/km, avg HR 176 (raced hard) |
 | May 24 (Sun)     | 14.7 km (trail) | Anadia trail | Done       | 2:07:42, avg HR 172, 413 m climb         |
-| ~~Jun 20~~       | ~~10K~~         | —            | Dropped    | **Benchmark dropped (2026-06-16).** No mid-cut 10K race; Saturday is an easy/leisure run. No result to gate on — the decision-gate is void. Next real fitness validation is the September Phase 6 build. |
-| **Oct 25 (Sun)** | **10K**         | **TBD**      | **A-Race** | **Sub-47:00 (stretch 46)** — retained but unvalidated until the Sep Phase 6 build; rides on the Phase 4-5 scoreboard (VO2max proxy ≥47 / ≤50:30, control-run trend, quality execution at HR) |
+| **Oct 25 (Sun)** | **10K (hilly)** | TBD          | **B-race** | **Hard supported effort inside the build** — race-effort hill run, no PR expectation on this course (calendar revised 2026-07-31) |
+| **Dec 12 (Sat)** | **10K**         | **Same event as Dec 2025** | **A-Race** | **Sub-47:00 (stretch 46)** — rides on the Phase 4-5 scoreboard (VO2max proxy ≥47 / ≤50:30, control-run trend, quality execution at HR) until the Phase 6-7 build validates it |
 
 ## Workout Types
 
@@ -127,7 +128,7 @@ Before naming the week's harder quality run, do not reach for the session in the
 2. **Ladder + phase week** — the current rung on sub-T → threshold → 10K-pace → VO2, and what the phase/week schedules (e.g. 10K-pace enters Cut Block 1 wk4; VO2 is late Cut Block 1 / Phase 6). The default session is the **next correct rung**.
 3. **Block gap** — the under-trained stimulus this block; bias toward closing it.
 4. **Recovery + trailing load** — can today carry the intended intensity, or does it down-dose one rung?
-5. **Goal relevance** — what the next race actually needs *now* (threshold base before speed sharpening for the October 10K).
+5. **Goal relevance** — what the next race actually needs *now* (threshold base before speed sharpening for the December 10K).
 
 Pick the session this produces. If it deviates from the next rung — pulled forward or held back — log the explicit reason in the daily file. Garmin's Daily Suggested Workout is a useful independent cross-check, not an authority (its pace targets are heat-blind; govern by HR). A 22-min threshold tempo, not 10K-pace intervals, is the wk3 default after a sub-T-only block (2026-06-16 lesson).
 
@@ -141,12 +142,13 @@ Scheduling is fully flexible across the week (Thursday no-running rule retired 2
 - **Phases 4-5:** two quality sessions per week (one harder, one lighter) with ≥72 h between them; long run on the weekend; legs needs ≥36 h before the next quality run and never stacks with a hard run on the same day.
 - **Phase 4 volume note (~35-42 km/wk, ceiling relaxed 2026-06-03):** the original 30-35 cap was lifted because the two quality sessions are a deliberate, athlete-chosen motivation / 10K-specificity priority, and with the quality + long-run trio already near ~30 km only one easy run fit under the old ceiling. The athlete chose to raise the cap rather than cut easy runs. The added load is **easy** km, which moves the week back toward 80/20 rather than degrading it. The long run stays **12-14 km** (≤~35-40% of the week); the lighter quality session stays genuinely short (~5-6 km of work). The band is a guide, not a hard cap: **recovery markers govern** — if flags stack, the lighter quality session is the first thing to downgrade to easy. The higher mileage raises TDEE modestly (~+70 kcal/day at the top of the band); the ~Jun 11 14-day weigh-in read absorbs it (add carbs back if loss runs >0.4 kg/wk or strength/LBM dips).
 - **Phase 4 volume floor (2026-06-12): 30 km/wk minimum, enforced.** The Apr-May trough (weeks of 10-15 km while the narrative said "aerobic fitness intact") cost real fitness — VO2max estimate 49→47, easy-run efficiency −4%. Consistency at 30-38 km/wk through the cut matters more than any single session's design. A week below 30 km (outside illness, injury, or a declared fallback week) is a protocol breach: it triggers a logged corrective action in the coaching log, same as ACWR >1.5.
-- **Phase 4-5 running success metrics (2026-06-12):** easy-run pace is **off the scoreboard until September** — it is sacrificed to the deficit and the season by design, and is not a failure signal. The cut-phase running scoreboard is: (1) heat-adjusted efficiency (treadmill control run pace-at-HR) stable within ~2%, (2) both weekly quality sessions completed at target HR, (3) VO2max estimate holds ≥47 — read via the Garmin race-time prediction as proxy (10K not slower than ~50:00-50:30), since the direct VO2max endpoint is unreliable, (4) weekly volume ≥30 km. Pace-at-HR improvement is a Phase 6 deliverable, not a Phase 4-5 one.
+- **Phase 4-5 running success metrics (2026-06-12):** easy-run pace is **off the scoreboard until the Sep 21 reversal** — it is sacrificed to the deficit and the season by design, and is not a failure signal. The cut-phase running scoreboard is: (1) heat-adjusted efficiency (treadmill control run pace-at-HR) stable within ~2%, (2) both weekly quality sessions completed at target HR, (3) VO2max estimate holds ≥47 — read via the Garmin race-time prediction as proxy (10K not slower than ~50:00-50:30), since the direct VO2max endpoint is unreliable, (4) weekly volume ≥30 km. Pace-at-HR improvement is a Phase 6-7 deliverable (post-reversal), not a Phase 4-5 one.
 - **Phase 4 weeks 1-3:** the harder quality session is the sub-T / Norwegian work; the lighter one is aerobic-development or short sub-T. 10K-pace work enters from week 4.
 - **Q2 survivability rule (2026-06-12):** the second quality session has structural attrition — when a session is missed every week, the schedule is wrong, not the athlete. On any compromised week (readiness flags, family disruption, time pressure), Q2 converts to **6×20 s strides or 6×10-15 s hill sprints appended to an easy run** instead of being skipped. A 10-minute quality touch that happens beats a 40-minute session that doesn't. This conversion counts as Q2 completed for compliance.
 - **Phase 5:** cap volume at 40 km/week. If 7-day HRV average drops >10% below baseline, downgrade the lighter quality session of the week to an easy aerobic run.
 - **Phase 5 deload weeks:** every 3rd week reduce run volume 15-20% and keep only one quality session.
-- **Phase 6:** keep two quality sessions per week, add selective VO2max, taper last 2 weeks.
+- **Phase 6 (Reverse + Build, Sep 21 - Oct 25):** two quality sessions per week, volume climbing 40-50 km as calories reverse to maintenance. The Oct 25 B-race replaces that week's harder quality — 2-3 easy days before it, normal week after 48-72 h of easy recovery.
+- **Phase 7 (10K Peak, Oct 26 - Dec 12):** keep two quality sessions per week, add selective VO2max, taper the last ~10-14 days into Dec 12.
 
 ## Heat and Weather Adaptation
 
@@ -185,7 +187,7 @@ Acute km this week / 4-week rolling average.
 
 ## Taper and Race Execution
 
-### 10K A-Race (October 25)
+### 10K A-Race (December 12)
 
 - Warm-up: 15-20 min jog + 4-6 strides
 - Pacing: start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10 (stretch pacing: 4:36-4:39 if fitness supports it)
@@ -193,9 +195,9 @@ Acute km this week / 4-week rolling average.
 - Caffeine: ~230 mg 30-60 min pre-race
 - Final 10 days: reduce volume, not intensity. Keep one short 10K-pace touchpoint each week.
 
-### Phase 6 Quality-Day Warm-Up Upgrade
+### Phase 6-7 Quality-Day Warm-Up Upgrade
 
-On the 2 weekly quality sessions in Phase 6, extend the Daily 5 with one short power-focused drill after the jog warm-up:
+On the 2 weekly quality sessions from Phase 6 (Sep 21) onward, extend the Daily 5 with one short power-focused drill after the jog warm-up:
 
 - Broad Jumps - 3x5, or
 - Power A-Skips - 3x20 m
@@ -235,12 +237,6 @@ Generic reference for any future HM or trail race around 90-120 minutes. None is
 - Sodium: 300-600 mg/hour in moderate-to-warm conditions
 - Practice mid-run fueling on 2-3 long runs >75 min in the weeks before any such race, using race-day products.
 
-## Data Files
+## Data Source
 
-- `data/activities.csv`
-- `data/sleep.csv`
-- `data/stats.csv`
-- `data/hrv.csv`
-- `data/body_battery.csv`
-- `data/stress.csv`
-- `data/race_predictions.csv`
+Live Garmin MCP only — the `data/*.csv` exports are abandoned and stale (do not read them; removed from this file 2026-07-31).

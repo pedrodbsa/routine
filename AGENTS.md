@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Definitive post-HM protocol stack for a 40-year-old male balancing body recomposition with an October 10K peak.
+Definitive post-HM protocol stack for a 40-year-old male balancing body recomposition with a December 12 10K A-race (the Oct 25 hilly 10K is a B-race run as a hard supported effort).
 
 ## Protocol Lookup
 

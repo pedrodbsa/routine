@@ -13,7 +13,7 @@
 1. **Refresh Garmin data exports first** (2026-06-12): verify `data/activities.csv` includes the current week's activities before computing any trend. A stale export (the Jun 12 review found June runs missing) silently corrupts ACWR, weekly km, and the volume-floor check. If the export is stale, re-pull before proceeding.
 2. Analyze recent strength, running, nutrition, body composition, and recovery data
 3. Identify progression, plateaus, and warning signs
-4. Compare outcomes to the locked body-recomp target (`current-status.md`): 76.11 kg @ 21.7% BF (Bod Pod 2026-04-28) -> 71 kg @ 16% BF, holding 59.6 kg lean. Scale BF% is BIA and reads ~7 pp high vs Bod Pod — govern by the weight trend and lean-mass retention, not scale BF%.
+4. Compare outcomes to the live body-recomp target (`current-status.md` § Goals): ~72.5-73 kg / ~17.5-18% BF at the Sep 20 cut hard stop, holding 59.6 kg lean (Bod Pod 2026-04-28 baseline: 76.11 kg @ 21.7%); 71 kg / 16% resumes post-Dec 12. Scale BF% is BIA and reads ~7 pp high vs Bod Pod — govern by the weight trend and lean-mass retention, not scale BF%.
 5. Review compliance with sleep, mobility, weigh-ins, and food tracking
 6. Run phase-aware weekly checks:
     - Compute ACWR and flag >1.3 or <0.8. **An ACWR <0.8 or a week below the 30 km volume floor is not advisory** (2026-06-12): it requires a logged corrective action in the coaching log, same as >1.5.

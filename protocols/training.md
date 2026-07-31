@@ -40,7 +40,7 @@ Strength supports the running plan. Running quality stays protected. Scheduling 
 - Week 2 centers on the May 24 trail 14.7 km.
 - No heavy legs from Wednesday onward in either race week.
 
-### Phases 4-5 - Cut Blocks (May 30 - Aug 30)
+### Phases 4-5 - Cut Blocks (May 30 - Sep 20)
 
 | Day | Run               | Strength                | Notes                        |
 | --- | ----------------- | ----------------------- | ---------------------------- |
@@ -58,13 +58,17 @@ Of the two quality sessions per week, one must be the harder (10K-pace or sub-T)
 
 Legs day requires ≥36 h before the next quality run and should not stack on the same day as a hard run.
 
-### Phase 6 - Reverse + 10K Peak (Sep 1 - Oct 25)
+### Phase 6 - Reverse + Build (Sep 21 - Oct 25)
 
-| Week Range | Strength Schedule                | Notes                                  |
-| ---------- | -------------------------------- | -------------------------------------- |
-| Weeks 1-5  | 3 sessions: Push, Pull, Legs     | Full hypertrophy schedule              |
-| Weeks 6-7  | 2 sessions: Push + Pull only     | Drop legs                              |
-| Week 8     | 1 light upper session            | RPE 5 pump only                        |
+3 sessions/week (Push, Pull, Legs) at full volume — calories are rising, so this is the block where the retention volume starts paying as growth. No heavy legs in the 3 days before the Oct 25 B-race effort.
+
+### Phase 7 - 10K Peak (Oct 26 - Dec 12)
+
+| Week Range              | Strength Schedule            | Notes                     |
+| ----------------------- | ---------------------------- | ------------------------- |
+| Weeks 1-5 (Oct 26-Nov 29) | 3 sessions: Push, Pull, Legs | Full schedule             |
+| Week 6 (Nov 30-Dec 6)   | 2 sessions: Push + Pull only | Drop legs                 |
+| Race week (Dec 7-12)    | 1 light upper session        | RPE 5 pump only           |
 
 ## Rest-Day NEAT — Incline Walk (Cut Blocks, from 2026-06-18)
 
@@ -91,18 +95,18 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 ## Strength Focus
 
-### Cut Phases (Apr 13 - Aug 30)
+### Cut Phases (Apr 13 - Sep 20)
 
-- Upper-body objective during the cut: **retention first, growth where it comes** (re-stated 2026-07-31). A 400+ kcal deficit plus 35-40 km/wk running does not support growth-grade volume; measurable hypertrophy is a post-October deliverable. The templates hold every small muscle group (biceps, triceps, side delts, rear delts) at **~6-9 direct sets/week** — the evidence-based retention band in a deficit — via the accessory slots below plus the standing arms/shoulders session. **Activation: first full week at the expanded volume is Aug 3+, aligned with the Aug 4 calorie checkpoint — do not stack the extra sets on the hot trim.**
+- Upper-body objective during the cut: **retention first, growth where it comes** (re-stated 2026-07-31). A 400+ kcal deficit plus 35-40 km/wk running does not support growth-grade volume; measurable hypertrophy is a post-reversal deliverable (Phase 6+, from Sep 21 at maintenance calories). The templates hold every small muscle group (biceps, triceps, side delts, rear delts) at **~6-9 direct sets/week** — the evidence-based retention band in a deficit — via the accessory slots below plus the standing arms/shoulders session. **Activation: first full week at the expanded volume is Aug 3+, aligned with the Aug 4 calorie checkpoint — do not stack the extra sets on the hot trim.**
 - **Legs are explicitly not a hypertrophy target** (standing decision 2026-06-12, athlete call): genetically well-developed legs, no added size wanted. Leg training exists for force production, running economy, and structural maintenance — see `## Leg Day` for the running-optimized spec.
 - Upper-body work stays mostly 8-12 reps.
 - RPE stays 7-8 max on working sets (upper). Leg working sets stay at RIR 2-3 — never to failure.
 
-### Peak Phase (Sep 1 - Oct 25)
+### Build + Peak Phases (Sep 21 - Dec 12)
 
-- Weeks 1-5: full hypertrophy for upper body, progressive overload; legs stay on the running-optimized spec
-- Weeks 6-7: push + pull only
-- Week 8: one light upper pump session
+- Phase 6 (Sep 21 - Oct 25) and Phase 7 weeks 1-5: full hypertrophy for upper body at maintenance calories, progressive overload; legs stay on the running-optimized spec
+- Phase 7 week 6: push + pull only
+- Race week (Dec 7-12): one light upper pump session
 
 ## Leg Day — Running-Optimized (re-specified 2026-06-12)
 
