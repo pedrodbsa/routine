@@ -1,0 +1,7 @@
+.env
+
+# Machine-local permission grants. The shared allowlist lives in .claude/settings.json.
+.claude/settings.local.json
+.claude/worktrees/
+
+.venv/

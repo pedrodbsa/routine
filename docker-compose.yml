@@ -1,0 +1,20 @@
+# Dokploy Compose service. Publishes no ports — Remote Control is outbound HTTPS only.
+services:
+    routine:
+        build: .
+        env_file:
+            - path: .env
+              required: false
+        environment:
+            SESSION_NAME: ${SESSION_NAME:-routine}
+            TZ: ${TZ:-Europe/Lisbon}
+        volumes:
+            # Dokploy's clone of this repo — what the session reads and writes.
+            - .:/app
+            # ../files sits outside the directory Dokploy clears on deploy. Mounting the whole
+            # home in one go keeps .claude/ (credentials), .claude.json (workspace trust) and
+            # .garminconnect/ (Garmin token cache) together.
+            - ../files/home:/root
+        stdin_open: true
+        tty: true
+        restart: unless-stopped

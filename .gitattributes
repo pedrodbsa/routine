@@ -1,0 +1,5 @@
+# These are executed inside the Linux container. A CRLF checkout on Windows would leave
+# `#!/usr/bin/env bash\r` in the shebang and the script would not run.
+*.sh            text eol=lf
+Dockerfile      text eol=lf
+docker-compose.yml text eol=lf
