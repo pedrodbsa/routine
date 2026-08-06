@@ -2,6 +2,10 @@
 services:
     routine:
         build: .
+        # Docker assigns a fresh random hostname every time Dokploy recreates the container, and
+        # Remote Control surfaces it in the app's machine list. Pinning it keeps each deploy from
+        # appearing as a new machine.
+        hostname: ${SESSION_NAME:-routine}
         env_file:
             - path: .env
               required: false
