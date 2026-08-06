@@ -27,4 +27,4 @@ EOF
   exec sleep infinity
 fi
 
-exec claude remote-control --name "${SESSION_NAME:-routine}"
+exec claude remote-control --name "${SESSION_NAME:-routine}" --spawn=same-dir
