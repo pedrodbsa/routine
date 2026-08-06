@@ -7,6 +7,7 @@ services:
               required: false
         environment:
             SESSION_NAME: ${SESSION_NAME:-routine}
+            CLAUDE_REMOTE_CONTROL_SESSION_NAME_PREFIX: ${SESSION_NAME:-routine}
             TZ: ${TZ:-Europe/Lisbon}
         volumes:
             # Dokploy's clone of this repo — what the session reads and writes.
