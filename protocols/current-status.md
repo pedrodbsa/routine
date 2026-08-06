@@ -66,7 +66,7 @@ Revised 2026-07-31: the A-race moved from Oct 25 (hilly course — no PR possibl
 | Body Fat  | 21.7%                                             | 2026-04-28 | Bod Pod                    |
 | Fat Mass  | 16.48 kg                                          | 2026-04-28 | Bod Pod                    |
 | Lean Mass | 59.6 kg                                           | 2026-04-28 | Bod Pod                    |
-| Current   | ~74.8 kg (fasted-morning 8-reading post-trim avg) | 2026-07-31 | scale, weight channel only |
+| Current   | ~74.9 kg (fasted-morning 10-reading avg, Jul 22 - Aug 4) | 2026-08-04 | scale, weight channel only |
 
 | Target                 | Weight        | BF%       | Notes                                                        |
 | ---------------------- | ------------- | --------- | ------------------------------------------------------------ |
@@ -74,20 +74,20 @@ Revised 2026-07-31: the A-race moved from Oct 25 (hilly course — no PR possibl
 | Dec 12 (race)          | ~72.5-73.5 kg | hold      | Maintenance through the peak; race at whatever this delivers |
 | Post-Dec (Phase 8)     | 71 kg         | 16%       | Visible-abs / athletic recomp — resumed cut                  |
 
-## Live Weigh-In Series & Aug 4 Checkpoint
+## Live Weigh-In Series & Checkpoints
 
-**Protocol:** fasted post-void pre-food morning reading is the sole trend entry (state, not clock time). Post-run readings are hydration metrics only and never enter the trend. Weigh every morning through Aug 4.
+**Protocol:** fasted post-void pre-food morning reading is the sole trend entry (state, not clock time). Post-run readings are hydration metrics only and never enter the trend. Weigh every morning.
 
-**Corrected fasted-morning series:** Jun 24 75.27 · Jun 26 75.65 · Jun 30 76.20 · Jul 3 75.42 · Jul 4 75.76 · Jul 15 76.22 · Jul 16 75.98 · Jul 18 75.81 · Jul 21 75.76 ‖ **trim from Jul 22:** Jul 22 75.06 · Jul 23 75.08 · (Jul 24-25 missed) · Jul 26 74.87 · Jul 27 75.40 · Jul 28 74.43 · Jul 29 74.26 · Jul 30 74.28 · Jul 31 74.95 (+0.7 on rising body water — predicted water echo of Jul 30's deliberate C203 refeed, not a stall).
+**Corrected fasted-morning series:** Jun 24 75.27 · Jun 26 75.65 · Jun 30 76.20 · Jul 3 75.42 · Jul 4 75.76 · Jul 15 76.22 · Jul 16 75.98 · Jul 18 75.81 · Jul 21 75.76 ‖ **trim in force Jul 22 - Aug 3:** Jul 22 75.06 · Jul 23 75.08 · (Jul 24-25 missed) · Jul 26 74.87 · Jul 27 75.40 · Jul 28 74.43 · Jul 29 74.26 · Jul 30 74.28 · Jul 31 74.95 (+0.7 on rising body water — predicted water echo of Jul 30's deliberate C203 refeed, not a stall) · **(Aug 1-2 missed)** · **Aug 3 75.81** (post nutrition-break weekend — decomposed in `logbook/2026-08/2026-08-03.md`: ~0.1 kg fat, the balance glycogen/water/sodium/gut content on ~384 g of extra carbohydrate) ‖ **restore from Aug 4:** **Aug 4 74.56** (−1.25 overnight; absolute body water 36.39 → 35.64 kg, back near the Jul 30 baseline of 35.43 — the refeed water clearing, not fat loss) · **(Aug 5 missed)** · **Aug 6 74.12** — **block low**, under Jul 29's 74.26; absolute body water 35.80 kg, *up* 0.16 on Aug 4, so not dehydration. One reading, two opposite framings: −0.44 kg in 2 days vs Aug 4, but **−0.15 kg over 7 days vs the last clean pre-refeed pair (Jul 29/30), i.e. below the 0.3 trim-back threshold.** No call made — input to Aug 11 only.
 
-**State of play (2026-07-31):** post-trim 8-reading average **74.80** vs **75.94** for Jul 15-21 ≈ **−0.85 kg/wk** against a ~0.49 design rate. Hydration-matched subset showed −0.84 kg with absolute body water unchanged (not a water artifact); counter-argument is a self-limiting glycogen+bound-water drawdown from the ~55 g/day carb cut (1.0-1.2 kg possible), supported by the implausible implied TDEE (~2,900). Coach recommended restoring the 100 kcal on 2026-07-29; **athlete chose to hold to Aug 4 as written** — recorded as a knowing choice. The Jul 29 early-restore tripwire arithmetically cannot fire (Aug 1 would need ≤73.7), so the decision rolls to Aug 4.
+**Aug 4 checkpoint — FIRED. 100 kcal restored to carbs, same day.** Clean pre-weekend read (Jul 22-31, 8 readings) **74.79 vs 75.94 = −0.85 kg/wk**; full window including both refeed-inflated readings (10 readings) **74.87 = −0.68 kg/wk**. Both land in the `>0.6` row against a ~0.49 design rate — no ambiguity. The Jul 29 glycogen counter-argument was **tested by the weekend and lost**: ~384 g of extra carbohydrate into a supposedly drawn-down tank produced a one-day spike that half-cleared overnight, not a sustained step up. Athlete challenged on "not hungry, not weak" — accurate (no tripwire has fired; strength loads are *rising*), but those are lagging indicators, and the asymmetry favours restoring (~0.6 kg cost by Sep 20 vs lean mass in week 4 of a 7-week deficit). Restore accepted. Full record: `nutrition.md` § Outcome 2026-08-04 and `logbook/2026-08/2026-08-04.md`.
 
-**Binding until Aug 4:**
+**Binding now:**
 
-1. **Aug 4 fires without further debate** — 7-day fasted-morning average >0.6 kg/wk returns the 100 kcal to carbs that day; no third deferral. Read the rate primarily on Jul 22 - Aug 1 mornings (creatine re-saturation caveat below). Full decision table: `nutrition.md` § Checkpoint.
-2. **Early-restore tripwires, any one fires immediately:** strength working loads regressing across two consecutive same-type sessions · quality pace-at-HR degrading across two consecutive sessions · an HRV/RHR override rule firing.
-3. **No day-tier shaving before Aug 4.**
-4. **Fasted weigh-in 7/7.**
+1. **Symmetric re-read 2026-08-11**, on 7 clean fasted mornings. **Rate below 0.3 kg/wk → trim straight back down, no ceremony.** This is the reversal path the pre-checkpoint setup lacked and the price of firing a restore over a live objection.
+2. **Early-trigger tripwires, any one fires immediately:** strength working loads regressing across two consecutive same-type sessions · quality pace-at-HR degrading across two consecutive sessions · an HRV/RHR override rule firing.
+3. **No day-tier shaving.** Adjustments happen at the checkpoints, on the series.
+4. **Fasted weigh-in 7/7** — Aug 1 and Aug 2 were missed; the Aug 11 read needs a clean series or it will be as arguable as this one was.
 
 **Creatine confound:** intake lapsed Jul 6-28 (washout was pulling the scale down ~0.1-0.2 kg window-to-window — the rate question stands); restarted 2026-07-29, expect ~+0.3-0.5 kg re-saturation water by mid-August. **BIA muscle-mass channel is uninterpretable for 4-6 weeks and is dropped as a tripwire** (replaced by strength working loads). Dose now anchors to morning coffee daily (`supplements.md`).
 
@@ -97,17 +97,17 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan`; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-08-06; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
 
 | Metric          | Value                                                      | Date       | Notes                                                                                                           |
 | --------------- | ---------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| Sleep           | **6.05 h**, score **71 FAIR**, 2 awakenings / 44 min awake | 2026-07-31 | Shortest night of the week after Jul 30's block-best 7.68 h / 90; inside the normal 6-8 h band. Week avg ~7.3 h |
-| HRV             | **68 ms** (weekly avg 72, BALANCED, band 60-99)            | 2026-07-31 | One-day step off the block highs (83 Jul 29); no rule fires. BALANCED every day since Jul 10                    |
-| Resting HR      | **56 bpm**                                                 | 2026-07-31 | +4 over the 52 baseline, single day (trigger is +5 for 3 days)                                                  |
-| Body Battery    | +47 overnight, woke ~70 MODERATE                           | 2026-07-31 | First incomplete recharge in three days                                                                         |
-| Stress          | avg 19 (max 81)                                            | 2026-07-31 | Up from the 7-9 block lows, still low                                                                           |
+| Sleep           | **7.4 h**, score **91 EXCELLENT**, 0 awakenings            | 2026-08-06 | 22:36 → 06:00. **Best score of the block**; deep 18.2% / REM 21.8%, sleep stress 12. Onset 72 min earlier than Aug 5 |
+| HRV             | **77 ms** (weekly avg 76, BALANCED)                        | 2026-08-06 | Weekly average rising a fifth day (71 → 73 → 75 → 76 → 76). BALANCED every day since Jul 10                     |
+| Resting HR      | **52 bpm**                                                 | 2026-08-06 | At the 52 baseline; +2 on Aug 5. Noise — trigger is +5 for 3 days                                                |
+| Body Battery    | +62 overnight, woke HIGH, drained 0                        | 2026-08-06 | Near-full at wake, third consecutive HIGH                                                                       |
+| Stress          | avg 10 (max 51), 98.3% rest                                | 2026-08-06 | Flat against the block                                                                                          |
 | Fitness Age     | **36.0 yr**                                                | 2026-07-29 | Chronological 40; dominant lever is body fat — metric lags the cut                                              |
-| Race prediction | **10K 50:19** / HM 1:51:33                                 | 2026-07-31 | Inside the ≤50:30 proxy band; PR-adjacent (49:57)                                                               |
+| Race prediction | **10K 50:15** / HM 1:51:26                                 | 2026-08-03 | Inside the ≤50:30 proxy band; PR-adjacent (49:57)                                                               |
 
 ## Aerobic Threshold Compliance
 
@@ -153,4 +153,5 @@ Anchored to lab-prescribed individual threshold (2026-04-28): 142 bpm @ 6:00/km.
 | 2026-07-29 | Process rules: two-session rotation lookback; treadmill belt locked; "open below the band" standing instruction                                                                  | All live in `strength-exercises.md` / `running.md` / § Aerobic Threshold above                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | 2026-07-31 | **Protocol audit** (athlete-raised: strength variety/volume, running progress, ab fat, sleep-vs-load)                                                                            | Retention-first upper objective ~6-9 sets/wk/small muscle; Push triceps slot + Pull 2nd biceps slot + standing arms session (**activate Aug 3+, aligned with Aug 4 checkpoint**); Session Compression Priority rule; Phase 5 Rest/Easy carbs corrected to 132/158 g. Verdicts: running flat is the cut-phase contract; ab fat = timeline not defect; sleep data shows no overtraining (levers: bedtime consistency, Aug 4 restore)                                                                                                                                                                     |
 | 2026-07-31 | **A-race moved Oct 25 → Dec 12; cut extended; stack restructured + archived**                                                                                                    | Oct 25 (hilly) demoted to B-race hard supported effort. **Dec 12 10K A-race, sub-47 (stretch 46)** — same event as Dec 2025. Cut extended to **Sep 20 hard stop** (athlete call — wants a few more % without stretching far; sound because the peak block moved to Oct 26+); reversal Sep 21 → maintenance by ~Oct 12, held through the race; 71/16% resumes post-Dec (Phase 8). Root cause of the drift: the race change was agreed in conversation but never written to the stack — **calendar/goal decisions must land in the files in the same session.** History archived to `protocols/archive/` |
+| 2026-08-04 | **Aug 4 checkpoint fired — 100 kcal restored to carbs** (Rest 1,850 / Easy 1,950 / Quality 2,250 / Long 2,450; weekly avg ~2,015). Athlete challenged on "not hungry, not weak"; restore held and accepted | Live tiers in `nutrition.md` § Phase 5. **Symmetric re-read Aug 11 — rate <0.3 kg/wk trims straight back down.** Weigh-in 7/7 is the binding input (Aug 1-2 missed). Glycogen counter-argument tested by the Aug 1-2 nutrition break and rejected. Standing arms session given a protected slot (Wed, tail on Legs PM) after two deferrals |
 | 2026-07-31 | **Skin-tracking experiment terminated** (athlete call — no useful signal after ~3 months; iso dominates all correlation anyway) | `skin-log.md` → `protocols/archive/`; `/skin` command deleted; `/report` weekly skin step removed; AGENTS.md rows dropped. **The isotretinoin course itself continues unchanged** — microdose with dinner (fattiest meal), managed via `supplements.md`/`nutrition.md`, no weekly tracking |

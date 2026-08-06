@@ -96,6 +96,19 @@ Oats and bread have no Rest column — breakfast is not eaten on rest days.
 
 ## Fruit Dessert Swap (athlete preference, 2026-06-18)
 
+> **Post-lunch slot reversed 2026-08-06 (athlete decision).** The post-lunch fruit is retired — the athlete
+> now uses **0-cal gelatin** for the sweet-craving role. That slot's carbohydrate is **folded back into
+> lunch**, so for lunch this swap runs in reverse: **spec the larger starch portion.** Everything below
+> stays live for **dinner** and for the general smaller-starch-plus-fruit preference elsewhere.
+>
+> **Scope narrowly — this is not a "no fruit" rule.** Fruit stirred into oat breakfasts (§ Breakfast Oats —
+> Fruit Mix-In) and the post-dinner skyr + berries dessert are unaffected; they serve palatability and
+> evening hunger, not post-lunch craving control.
+>
+> **The fold is not one-for-one.** Fruit is near-pure carbohydrate (~95 kcal per 22 g C); rice carrying the
+> same carbs also brings ~2 g protein and ~2 g batch cooking oil (~113 kcal). Calorie-neutral and
+> carb-neutral cannot both hold — pick one and state it.
+
 The athlete prefers a smaller starch portion at lunch and dinner with a piece of fruit afterwards as
 dessert, rather than a large serving of rice or potato. Honour this: cap the starch at a comfortable
 portion and take the remaining day-type carbs as fruit, eaten after the meal.

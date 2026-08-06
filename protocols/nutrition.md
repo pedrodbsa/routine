@@ -34,18 +34,22 @@ Slightly steeper deficit toward end. Target ~0.4 kg/wk (~400 cal/day deficit).
 
 **Extension to Sep 20 (athlete decision 2026-07-31, with the A-race moved to Dec 12):** the original Aug 30 end date existed to fuel a Sep 1 peak block; with the peak now Oct 26 - Dec 12, September is build volume and tolerates ~3 more deficit weeks (~1.0-1.4 kg ≈ 1.5 BF points, landing ~72.5-73 kg / ~17.5-18%). Conditions: the Aug 4 checkpoint and its tripwires stay binding; if the compound-stress guardrail or quality pace-at-HR degradation fires in September, the reversal pulls forward to ~Sep 14. **Sep 20 is a hard stop regardless of the scale** — remaining leanness belongs to the post-Dec cut, not race prep.
 
-**Tiers trimmed −100 kcal (carbs only) effective 2026-07-22.** The weigh-in-protocol audit of 2026-07-21 established that the apparent mid-July descent was a measurement artifact (post-run readings compared against morning readings) and that morning-to-morning weight has been **flat since ~Jun 24**. That fires the standing rule below — *7-day average stalls 2+ weeks → reduce daily target by 100 cal from carbs* — and it is the plan-day trim deferred on 2026-06-18 and 2026-06-23. **Rest is deliberately held at 1,750:** at the 170 g protein and 60 g fat floors a 1,650 rest day forces carbs to ~107 g, and rest-day carbs below 130 g were explicitly rejected on 2026-05-06.
+**Tiers trimmed −100 kcal (carbs only) effective 2026-07-22, then RESTORED effective 2026-08-04** when the Aug 4 checkpoint fired. The trim's history: the weigh-in-protocol audit of 2026-07-21 established that the apparent mid-July descent was a measurement artifact (post-run readings compared against morning readings) and that morning-to-morning weight had been **flat since ~Jun 24**, firing the standing *7-day average stalls 2+ weeks* rule. Two clean weeks later the loss rate came in at 1.4–1.7× design and the checkpoint returned the 100 kcal. **Rest is deliberately never taken below 1,750:** at the 170 g protein and 60 g fat floors a 1,650 rest day forces carbs to ~107 g, and rest-day carbs below 130 g were explicitly rejected on 2026-05-06.
+
+**Live tiers (restored 2026-08-04):**
 
 | Day Type        | Calories | Protein | Carbs | Fat  |
 | --------------- | -------- | ------- | ----- | ---- |
-| Rest            | 1,750    | 170 g   | 132 g | 60 g |
-| Easy / Strength | 1,850    | 170 g   | 158 g | 60 g |
-| Quality         | 2,150    | 170 g   | 235 g | 60 g |
-| Long Run        | 2,350    | 170 g   | 285 g | 60 g |
+| Rest            | 1,850    | 170 g   | 157 g | 60 g |
+| Easy / Strength | 1,950    | 170 g   | 183 g | 60 g |
+| Quality         | 2,250    | 170 g   | 258 g | 60 g |
+| Long Run        | 2,450    | 170 g   | 308 g | 60 g |
 
-> **Carb columns corrected 2026-07-31** (flagged by `/plan` Jul 27 and Jul 28): the Rest and Easy rows carried carb values whose macros summed to ~1,800 and ~1,900 kcal against the stated 1,750 / 1,850 — a leftover from raising protein 165 → 170 g without re-deriving carbs. The kcal tier is the governing number (the −100 trim was defined in kcal), so carbs now match it: Rest 132 g (680 + 528 + 540 = 1,748), Easy 158 g (680 + 632 + 540 = 1,852). Rest at 132 g sits just above the 130 g floor rejected on 2026-05-06 — it cannot be trimmed further without breaking that decision.
+*Superseded trimmed tiers, in force 2026-07-22 → 2026-08-03: Rest 1,750 / C132 · Easy 1,850 / C158 · Quality 2,150 / C235 · Long 2,350 / C285.*
 
-Average week: **~1,915 calories** (was ~2,000). Protein nudges up to 170 g to extra-insure LBM as BF drops. **The protein and fat floors do not scale with the trim** — the entire reduction comes from carbohydrate.
+> **Carb columns corrected 2026-07-31** (flagged by `/plan` Jul 27 and Jul 28): the Rest and Easy rows carried carb values whose macros summed to ~1,800 and ~1,900 kcal against their stated tiers — a leftover from raising protein 165 → 170 g without re-deriving carbs. The kcal tier is the governing number, so carbs are derived from it: with P170 (680 kcal) and F60 (540 kcal) fixed, carbs = (tier − 1,220) ÷ 4. The restored rows above follow the same derivation.
+
+Average week: **~2,015 calories**. Protein nudges up to 170 g to extra-insure LBM as BF drops. **The protein and fat floors never scale with a trim or a restore** — the entire movement is carbohydrate.
 
 Target rate rises to ~0.45-0.5 kg/wk. Watch for the cost: if lean mass declines 2+ weeks, quality-session pace-at-HR degrades across two consecutive sessions, or the Phase 5 compound-stress guardrail fires, **restore the 100 kcal to carbs first**.
 
@@ -63,6 +67,21 @@ Read the **fasted-morning 7-day average on 2026-08-04** and act symmetrically:
 | **< 0.25 kg/wk** *with volume or strength missed* | **Do not trim.** The output side failed, not the food side — fix that first. Cutting further would repeat the Jun-Jul error in the opposite direction |
 
 The last row is the important one: **a stall only justifies a food cut once the training was actually delivered.** Judge the input before adjusting the target.
+
+#### Outcome 2026-08-04 — FIRED. 100 kcal restored to carbs, same day.
+
+Every read of the fasted-morning series lands in the `>0.6 kg/wk` row:
+
+| Series | n | Average | vs Jul 15–21 (75.94) | Rate |
+| ------ | - | ------- | -------------------- | ---- |
+| Jul 22–31 — clean pre-weekend, the read this checkpoint specified | 8 | **74.79** | −1.15 kg / 9.5 d | **−0.85 kg/wk** |
+| Jul 22 – Aug 4 — full window, including both refeed-inflated readings | 10 | **74.87** | −1.07 kg / 11 d | **−0.68 kg/wk** |
+
+**The glycogen counter-argument was tested by the Aug 1–2 nutrition break and lost.** The Jul 29 case for holding was that much of the loss was glycogen plus bound water drawn down by the ~55 g/day carb cut — self-limiting, not fat. The weekend put ~384 g of extra carbohydrate into that supposedly empty tank. A genuine 1.0–1.2 kg deficit would have refilled to a **sustained** step up; instead the scale went 75.81 (Aug 3) → **74.56 (Aug 4)**, landing only +0.28 kg on the Jul 29/30 readings, with absolute body water back near baseline (36.39 → 35.64 kg vs 35.43 on Jul 30). That is a large meal passing through, not a reservoir refilling.
+
+**Athlete challenge, rejected with agreement:** the athlete reported no hunger and no weakness. Accurate, and consistent with no early-restore tripwire having fired — strength working loads are *rising* (OHP 30 → 32.5 kg, bench dip +10 → +12.5 kg) and quality pace-at-HR was flat at the Jul 29 read. But hunger and weakness are lagging indicators: in a deficit they arrive after the lean mass has gone. The asymmetry decided it — restoring costs ~0.09 kg/wk (~0.6 kg by Sep 20, landing ~73.1 vs ~72.5, both inside the target band), while not restoring risks lean mass in week 4 of a 7-week unbroken deficit at 38 km/wk plus three lifts, and a blunted athlete entering the Oct 26 peak block is what actually costs the December race.
+
+**Symmetric re-read: 2026-08-11**, on 7 clean fasted mornings. **If the rate falls below 0.3 kg/wk, trim straight back down — no ceremony.** This is the reversal path the pre-checkpoint setup did not offer, and it is the price of firing a restore over a live objection. Weigh-in density is the binding requirement: Aug 1 and Aug 2 were missed against 7/7, and the Aug 11 read needs a clean series or it will be as arguable as this one was.
 
 #### Interim read 2026-07-29 (`/report`) — running hot, held by athlete's decision
 
@@ -230,6 +249,10 @@ Default training is clustered before lunch (run before breakfast, upper lift bef
 ### Fruit Dessert Swap (athlete preference)
 
 The athlete prefers a smaller starch portion at lunch and dinner with a piece of fruit afterwards as dessert, rather than a large serving of rice or potato. Cap the starch at a comfortable portion and take the remaining day-type carbs as fruit, matched by carbohydrate grams so the day's calorie and carb totals are unchanged. Mechanics, carb equivalences, and the quality/long-day guardrail live in `meal-rotation.md` § Fruit Dessert Swap.
+
+> **Post-lunch slot: reversed 2026-08-06 (athlete decision).** The post-lunch fruit is retired — the athlete now uses **0-cal gelatin** for the sweet-craving role, so that slot's carbohydrate is **folded back into lunch** rather than taken as fruit. For lunch the swap therefore runs the other way: **spec the larger starch portion.** The mechanic above stays live for **dinner** and for the general "smaller starch, fruit after" preference at any other meal. Scope this narrowly — fruit stirred into oat breakfasts (mango / strawberries, for palatability) and the post-dinner skyr + berries dessert are **unaffected**; this is not a "no fruit" rule.
+>
+> **The fold is not one-for-one.** Fruit is near-pure carbohydrate (~95 kcal per 22 g C); rice carrying the same carbs also brings ~2 g protein and ~2 g of batch cooking oil (~113 kcal). The swap cannot be simultaneously calorie-neutral and carb-neutral — choose which one gives, and say so in the plan rather than absorbing the difference silently.
 
 ## Hydration and Heat Rules
 
