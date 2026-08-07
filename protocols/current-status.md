@@ -97,15 +97,15 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan` — snapshot 2026-08-06; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-08-07; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
 
 | Metric          | Value                                                      | Date       | Notes                                                                                                           |
 | --------------- | ---------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| Sleep           | **7.4 h**, score **91 EXCELLENT**, 0 awakenings            | 2026-08-06 | 22:36 → 06:00. **Best score of the block**; deep 18.2% / REM 21.8%, sleep stress 12. Onset 72 min earlier than Aug 5 |
-| HRV             | **77 ms** (weekly avg 76, BALANCED)                        | 2026-08-06 | Weekly average rising a fifth day (71 → 73 → 75 → 76 → 76). BALANCED every day since Jul 10                     |
-| Resting HR      | **52 bpm**                                                 | 2026-08-06 | At the 52 baseline; +2 on Aug 5. Noise — trigger is +5 for 3 days                                                |
-| Body Battery    | +62 overnight, woke HIGH, drained 0                        | 2026-08-06 | Near-full at wake, third consecutive HIGH                                                                       |
-| Stress          | avg 10 (max 51), 98.3% rest                                | 2026-08-06 | Flat against the block                                                                                          |
+| Sleep           | **5.52 h**, score **73 FAIR**, 0 awakenings                | 2026-08-07 | 00:43 → 06:17. **Short on onset, not fragmentation** — 3 min awake, deep **29.0%** (block high) / REM 15.7%, sleep stress 10. Bed 2 h 07 min later than Aug 5. Fires the 5–6 h Same-Day rule — **overridden today**, see `logbook/2026-08/2026-08-07.md` |
+| HRV             | **81 ms** (weekly avg 78, BALANCED)                        | 2026-08-07 | Weekly average rising a sixth day (71 → 73 → 75 → 76 → 76 → 78). BALANCED every day since Jul 10                |
+| Resting HR      | **51 bpm**                                                 | 2026-08-07 | Under the 52 baseline. Trigger is +5 for 3 days                                                                 |
+| Body Battery    | +47 overnight, woke HIGH, drained 1                        | 2026-08-07 | Fourth consecutive HIGH. Charged less than Aug 6 because the sleep window was shorter, not because recovery failed |
+| Stress          | avg 10 (max 76), 98.4% rest                                | 2026-08-07 | Flat against the block                                                                                          |
 | Fitness Age     | **36.0 yr**                                                | 2026-07-29 | Chronological 40; dominant lever is body fat — metric lags the cut                                              |
 | Race prediction | **10K 50:15** / HM 1:51:26                                 | 2026-08-03 | Inside the ≤50:30 proxy band; PR-adjacent (49:57)                                                               |
 
