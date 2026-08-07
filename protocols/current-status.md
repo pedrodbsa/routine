@@ -116,7 +116,10 @@ Anchored to lab-prescribed individual threshold (2026-04-28): 142 bpm @ 6:00/km.
 - **Easy ceiling (all environments):** ≤142 bpm
 - **Long-run drift ceiling:** ≤145 bpm (LT1)
 - Old MAF 148 outdoor ceiling retired
-- **Treadmill control run:** belt locked 8.6 km/h, 1% incline, 30:00 — the tracked number is avg HR (Jul 13: 137 · Jul 27: 137). Do not raise the belt.
+- **Treadmill control run:** belt locked 8.6 km/h, 1% incline — the tracked number is avg HR (Jul 13: **137** · Jul 27: **136**). Do not raise the belt. **HR source: COROS armband, always** — an entry recorded on any other sensor is void, not a data point.
+  - **Jul 27 corrected 137 → 136 on 2026-08-06** against the Garmin activity record (id `23748807045`, avg HR 136). The old value made the series look flat when it is in fact −1 bpm.
+  - ⚠ **The written "30:00" is retired — practice has never matched it.** All three logged entries ran ~5.0 km / ~35 min (Jul 13: 5,000 m / 35:40 · Jul 27: 5,100 m / 36:18 · Aug 5: 5,000 m / 34:59). Since avg HR accumulates cardiac drift, a 30-min entry is **not** comparable to a 35-min one, and the series is only internally consistent because every entry overran identically. **The protocol is 5.0 km at 8.6 km/h**, which is what has actually been run. `/report` owns ratifying this.
+  - **Aug 5 (avg HR 129) is void**, and for two reasons, not one: the armband was not worn, *and* the recorded belt speed implies 8.57 km/h against 8.41–8.43 for Jul 13 / Jul 27 — a different device with different treadmill calibration. Do not enter it.
 
 ## Strength Baselines
 
