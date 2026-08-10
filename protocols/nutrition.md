@@ -81,7 +81,52 @@ Every read of the fasted-morning series lands in the `>0.6 kg/wk` row:
 
 **Athlete challenge, rejected with agreement:** the athlete reported no hunger and no weakness. Accurate, and consistent with no early-restore tripwire having fired — strength working loads are *rising* (OHP 30 → 32.5 kg, bench dip +10 → +12.5 kg) and quality pace-at-HR was flat at the Jul 29 read. But hunger and weakness are lagging indicators: in a deficit they arrive after the lean mass has gone. The asymmetry decided it — restoring costs ~0.09 kg/wk (~0.6 kg by Sep 20, landing ~73.1 vs ~72.5, both inside the target band), while not restoring risks lean mass in week 4 of a 7-week unbroken deficit at 38 km/wk plus three lifts, and a blunted athlete entering the Oct 26 peak block is what actually costs the December race.
 
-**Symmetric re-read: 2026-08-11**, on 7 clean fasted mornings. **If the rate falls below 0.3 kg/wk, trim straight back down — no ceremony.** This is the reversal path the pre-checkpoint setup did not offer, and it is the price of firing a restore over a live objection. Weigh-in density is the binding requirement: Aug 1 and Aug 2 were missed against 7/7, and the Aug 11 read needs a clean series or it will be as arguable as this one was.
+**Symmetric re-read: 2026-08-11.** Originally specified as "on 7 clean fasted mornings — if the rate falls below 0.3 kg/wk, trim straight back down, no ceremony." That sentence was the whole instrument, and it was written without a `>0.6` branch, without a method for the creatine confound, and without checking whether 0.3 was consistent with the Sep 20 target. All three gaps are closed below. This remains the reversal path the pre-checkpoint setup did not offer, and the price of firing a restore over a live objection — but a reversal path that fires on noise is not a reversal path, it is a coin flip with a procedure attached.
+
+#### Re-read specification 2026-08-11 — written 2026-08-10, before the data
+
+Four findings drove this. The first three change what the re-read can be asked to do; the fourth changes the threshold itself.
+
+**1. The instrument is underpowered, and that is arithmetic rather than opinion.** A 100 kcal/day change is worth roughly **0.09 kg/wk** of tissue, so across the seven-day Aug 5–11 test window the entire signal the re-read was built to detect is about **0.09 kg**. The athlete's own recent fasted-morning readings (Aug 4 74.56 · Aug 6 74.12 · Aug 8 74.30 · Aug 9 74.09) carry a standard deviation near **0.21 kg**, which puts the standard error on a difference of two window means at roughly **0.11 kg**. The signal is therefore about one standard error. A test that cannot separate its treatment effect from its own noise cannot produce a decision, and dressing one up as a decision is worse than admitting the limit.
+
+**2. The window is confounded three ways at once.** The Aug 3 refeed was still clearing on Aug 4, whose absolute body water sat at 35.64 kg against the Jul 30 baseline of 35.43. Creatine re-saturation was forecast at **+0.3–0.5 kg by mid-August** and lands squarely inside this window. And weigh-in compliance for Aug 5–11 is capped at **5/7** before the week even finishes, because Aug 5 and Aug 7 were already missed.
+
+**3. Once decomposed, the data already available points the other way from the headline.** The scale reads flat — Aug 4–9 averages 74.27 against the clean Jul 29/30 pair at 74.27 — but weight is not the only channel. **Absolute body water rose from 35.43 kg (Jul 30) to 35.79 kg (Aug 9), a gain of about 0.36 kg, while total weight fell 0.19 kg.** Non-water mass therefore fell on the order of **0.55 kg across ten days, roughly 0.39 kg/wk**, which is the design rate rather than a stall. BIA water estimates carry perhaps ±0.5 kg of their own error, so this is a direction and a magnitude, not a precise figure — but it is exactly the pattern the creatine carve-out predicted, and it is the opposite of what a mechanical reading of the scale would conclude. Per `[[feedback-weight-drop-water-vs-tissue]]`, this decomposition uses **absolute body water in kilograms and never the percentage channel**.
+
+**4. The 0.3 kg/wk threshold is inconsistent with the Sep 20 target, and this is the finding that matters most.** From the clean Aug 4–9 average of **74.27 kg**, the Sep 20 landing zone of 72.5–73.0 kg is **1.27–1.77 kg away across exactly six weeks** — a required rate of **0.21–0.30 kg/wk**. The trim-back trigger was set to fire *below 0.30*, which means it fires at rates that comfortably deliver the target. The threshold was inherited from the Phase 5 design rate of ~0.4–0.5 kg/wk, which was set when the timeline and the target were both different, and it was never re-derived after the Sep 20 extension moved them.
+
+The nuance that saves the current tier from being too generous: **the Aug 15–23 holiday will run near maintenance**, so the loss has to come from the ~33 non-holiday days rather than the full 42. That lifts the required training-day rate back to about **0.32 kg/wk** — right at the design rate the restored tiers are built for. **The tier is approximately correct; the holiday is the variable that decides whether the target lands.** That is why the flex-day budget is capped at 2–3 rather than left open.
+
+**What the Aug 11 read is therefore for.** It is a gross-departure check and a compliance check, not a rate measurement. Compare the **Aug 5–11 mean against the Jul 22 – Aug 1 mean**, each requiring **at least 5 fasted-morning readings**, and report **weight and absolute body water in kilograms for every reading in both windows**.
+
+| Aug 5–11 vs Jul 22 – Aug 1 | Action |
+| -------------------------- | ------ |
+| **Gaining, faster than +0.2 kg/wk** | The restore was too large or adherence slipped. **Trim the 100 kcal back, same day.** This is the live reversal branch |
+| **Between +0.2 and −0.6 kg/wk** | **Hold.** The instrument cannot resolve anything finer than this band, and the water decomposition in finding 3 already places the true rate inside it. Re-read Aug 31 |
+| **Faster than −0.6 kg/wk** *(the branch that did not previously exist)* | **Hold the tier and check the early-restore tripwires immediately** — strength working loads across two consecutive same-type sessions, quality pace-at-HR across two consecutive sessions, any HRV or RHR override rule. **If any has fired, restore a further 100 kcal to carbs.** If none has, treat the reading as residual refeed water clearing and take no action. **Do not trim in this row under any circumstance** — a cut already running above design rate is not corrected by cutting further, which was the Jun–Jul error in its original direction |
+| **Fewer than 5 readings in either window** | **No decision.** Record the failure, hold the tier, carry the read to Aug 31. A decision taken on a thin series is what made the Aug 4 read arguable, and repeating it does not make it less so |
+
+**If the athlete disagrees with holding, the disagreement wins on this one.** The Aug 4 restore was fired over his live objection on an asymmetry argument, and the promised price was a real reversal path. Findings 1 through 4 are the reason the reversal should not fire *on this date*, not a reason it should never fire — but he is entitled to hold the coach to the deal as written, and a trim taken on Aug 11 costs at most ~0.1 kg of the Sep 20 landing if it turns out to be wrong.
+
+#### Re-read 2026-08-31 — the real reversal point, pre-committed 2026-08-10
+
+Moving a decision is only legitimate if the moved decision is fixed in advance, so it is fixed here and is not open to re-litigation on the day.
+
+**Why this date.** The weight trend goes dark for the **Aug 15–23 Algarve holiday** — there is no scale there, and the Aug 24 reading will be corrupted by travel, restaurant sodium, and rehydration. The next usable series therefore cannot close before the end of the month. **Whatever Aug 11 decides holds unmonitored for roughly three weeks**, which is itself a strong argument against firing an underpowered trigger on that date.
+
+**Method.** Compare the **Aug 25–31 mean** (discard Aug 24 outright as a travel artifact; require **at least 6 of 7** fasted mornings) against the **Aug 4–11 mean**. Report absolute body water in kilograms alongside weight for both windows. The gap is about twenty days, so a 100 kcal effect is worth roughly **0.26 kg** — around 2.5 standard errors, which is a real test rather than a coin flip.
+
+**The holiday sits between the two windows and inflates the later one.** Adjust for it explicitly rather than silently: subtract roughly **0.1 kg per flex day taken beyond two** before reading the rate, and state the adjustment in the report. If the holiday ran to four or more flex days the window is not clean, and the read moves to Sep 7 on Sep 1–7 readings.
+
+| Aug 25–31 vs Aug 4–11, holiday-adjusted | Action |
+| --------------------------------------- | ------ |
+| **Slower than 0.15 kg/wk** | **Trim the 100 kcal back out of carbs.** This is genuinely off the trajectory the Sep 20 target needs, even allowing for the holiday |
+| **0.15 – 0.45 kg/wk** | **Hold.** On or near the ~0.32 kg/wk the remaining non-holiday days require |
+| **Faster than 0.45 kg/wk** | **Hold, and check the tripwires.** If any has fired, restore 100 kcal. Sep 20 is a hard stop and the landing zone is already inside reach |
+
+**The 0.15 threshold replaces the old 0.3**, for the reason in finding 4: 0.3 was inherited from a superseded timeline and fires at rates that hit the target. **The tripwires remain fully binding throughout and are not deferred by any of this** — any one of them firing acts immediately, on the day it fires, regardless of which re-read is pending.
+
+**Weigh-in density is the binding requirement on both reads.** Aug 1, Aug 2, Aug 5 and Aug 7 were all missed against 7/7, and every missed morning widens the band inside which no decision can be taken.
 
 #### Interim read 2026-07-29 (`/report`) — running hot, held by athlete's decision
 

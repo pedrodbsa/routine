@@ -84,7 +84,7 @@ Revised 2026-07-31: the A-race moved from Oct 25 (hilly course — no PR possibl
 
 **Binding now:**
 
-1. **Symmetric re-read 2026-08-11**, on 7 clean fasted mornings. **Rate below 0.3 kg/wk → trim straight back down, no ceremony.** This is the reversal path the pre-checkpoint setup lacked and the price of firing a restore over a live objection.
+1. **Symmetric re-read 2026-08-11 — fully re-specified 2026-08-10.** The original one-line rule ("below 0.3 kg/wk → trim straight back down") had no `>0.6` branch, no method for the creatine confound, and a threshold inconsistent with the Sep 20 target, which from 74.27 kg needs only **0.21–0.30 kg/wk** (≈0.32 excluding the holiday). **Aug 11 is now a gross-departure and compliance check only — it trims only on a *gain* faster than +0.2 kg/wk.** The real reversal moves to a **pre-committed Aug 31 read** (Aug 25–31 vs Aug 4–11, holiday-adjusted, trim below **0.15 kg/wk**), because the trend goes dark for the Aug 15–23 holiday and a 7-day window cannot resolve a 100 kcal effect. **Full branch tables and the reasoning: `nutrition.md` § Re-read specification 2026-08-11 and § Re-read 2026-08-31** — that file governs; this row is a pointer.
 2. **Early-trigger tripwires, any one fires immediately:** strength working loads regressing across two consecutive same-type sessions · quality pace-at-HR degrading across two consecutive sessions · an HRV/RHR override rule firing.
 3. **No day-tier shaving.** Adjustments happen at the checkpoints, on the series.
 4. **Fasted weigh-in 7/7** — Aug 1 and Aug 2 were missed; the Aug 11 read needs a clean series or it will be as arguable as this one was.
