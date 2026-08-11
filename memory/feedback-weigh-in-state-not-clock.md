@@ -8,7 +8,9 @@ metadata:
   modified: 2026-07-22T09:15:39.247Z
 ---
 
-The athlete weighs **post-void (bladder + bowel), pre-food**. The clock time this lands on varies by a couple of hours (seen 07:31 vs 09:07) because bowel timing is not controllable. He drinks a black coffee first *because it triggers the bowel movement*, so coffee necessarily precedes the weigh-in.
+The athlete weighs **post-void (bladder + bowel), after black coffee, before water and before food**. The clock time this lands on varies by a couple of hours (seen 07:31, 08:28, 09:07) because bowel timing is not controllable. He drinks the coffee first *because it triggers the bowel movement*, so coffee necessarily precedes the weigh-in — and water does not precede it either (restated by the athlete 2026-08-11).
+
+**Corollary, because this was missed once: never flag a reading as food-confounded merely because it is timestamped after the morning coffee.** Every reading in the series is post-coffee; the condition is constant, so it cannot bias a window-to-window comparison. On 2026-08-11 a reading at 08:28 was flagged as possibly-fed because the day's plan put a pre-run banana at 08:15 — the banana came after the weigh-in, as it always does. The flag cost nothing but it should not have been raised, because this file already answered it.
 
 On 2026-07-22 `/plan` told him to "pin the weigh-in time" to remove variance. **That advice was wrong and he corrected it.**
 
