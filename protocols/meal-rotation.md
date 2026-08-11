@@ -161,6 +161,32 @@ Example — a Quality B1 specced at 93 g oats becomes **~73 g oats + 100 g berri
 change — only the oat carb moves to fruit. `/plan` should present oat breakfasts in this reduced-oats +
 fruit form by default.
 
+### Nestum Arroz 0% Açúcares — standing oat substitute (athlete staple, added 2026-08-11)
+
+The athlete keeps **Nestum Arroz 0% Açúcares** and often has it when oats have run out. It is a
+legitimate swap in any oat slot (B1, B2, B4, or a `/plan`-specced oat breakfast) — but it is **not
+gram-for-gram**, and the difference is not only calories.
+
+**Mechanic — match on carbohydrate, then repair protein and fat.** Nestum is a rice flour, so it is
+denser in carbohydrate and far leaner than oats:
+
+| Per 100 g | Oats (dry, rolled) | Nestum Arroz 0% |
+| --------- | ------------------ | --------------- |
+| Carbs     | ~66 g              | **~82 g**       |
+| Protein   | ~13 g              | **~7 g**        |
+| Fat       | ~7 g               | **~1.5 g**      |
+
+- **Weight conversion: Nestum ≈ 0.80 × the oat weight** for the same carbohydrate. 50 g oats → **40 g
+  Nestum**; 93 g (a Quality B1 portion) → **~75 g**.
+- **The swap costs roughly 4 g of protein and 3 g of fat per 50 g of oats replaced**, ~30 kcal. Both
+  have floors in the cut phases and **neither repairs itself** — put the fat back somewhere in the day
+  (see `[[feedback-fat-floor-lean-fish-dinners]]`; it must be built into a dish, not drizzled) and check
+  the day still clears three protein boluses ≥30 g. On a breakfast already running lean this is what
+  pushes that feed under 30 g.
+- Made with milk or almond milk exactly as oats are. **The fruit mix-in is optional here** — the
+  reduced-carb-plus-fruit rule above exists because plain oats are unpalatable to the athlete, and that
+  does not apply to Nestum. If fruit is stirred in anyway, size it off the same carb-match reference.
+
 ### B1 - Eggs & oats
 Anchor: 3 whole eggs + 130 g egg whites + cinnamon. Carb: oats.
 
