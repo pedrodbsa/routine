@@ -97,15 +97,15 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan` — snapshot 2026-08-12; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-08-13; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
 
 | Metric          | Value                                                      | Date       | Notes                                                                                                           |
 | --------------- | ---------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| Sleep           | **7.20 h**, score **82 GOOD**, **0 awakenings**            | 2026-08-12 | 23:17 → 06:30, 1 min awake, deep 18.1% / REM 14.4%, sleep stress 14. Second clean night running at identical duration; staging normal |
-| HRV             | **69 ms** (weekly avg **68**, BALANCED)                    | 2026-08-12 | Overnight flat on Aug 11 and inside the band (balanced-low bound **64**). ⚠ **The weekly average has run 78 → 73 → 71 → 68 across four days** — mostly the rolling mean digesting Aug 10's 53, but it is the one marker moving the wrong way. Re-check before Friday's long run |
-| Resting HR      | **54 bpm** (baseline 52)                                   | 2026-08-12 | A beat better than Aug 11's 55; +2 against a +5-for-3-days trigger |
-| Body Battery    | charged **+68**, drained 3                                 | 2026-08-12 | Second consecutive full recharge (+66 the night before) |
-| Stress          | avg 14 overnight                                           | 2026-08-12 | Holding at the low end                                                                                          |
+| Sleep           | **7.46 h**, score **64 FAIR**, **3 awakenings**            | 2026-08-13 | 23:35 → 07:41, 38 min awake, deep 13.0% / **REM 6.0%**, sleep stress 24. Longest night of the week and the worst score — duration is not the problem |
+| HRV             | **59 ms** (weekly avg **66**, BALANCED)                    | 2026-08-13 | Overnight **below the balanced-low bound of 64** and 1 ms above the low bound of 58. ⚠ **The weekly average has now fallen five consecutive days: 78 → 78 → 73 → 71 → 68 → 66.** Governs the conditional branch on the Aug 14 long run (`logbook/2026-08/2026-08-13.md`) |
+| Resting HR      | **57 bpm** (baseline 52)                                   | 2026-08-13 | **+5** — day 1 of a trigger that requires 3. Up from 54 on Aug 12 |
+| Body Battery    | charged **+50**, drained 0                                 | 2026-08-13 | Recharge down ~27% on the +68 / +66 of the two nights before |
+| Stress          | avg 24 overnight                                           | 2026-08-13 | Nearly doubled on Aug 12's 14                                                                                   |
 | Fitness Age     | **36.0 yr**                                                | 2026-07-29 | Chronological 40; dominant lever is body fat — metric lags the cut                                              |
 | Race prediction | **10K 50:15** / HM 1:51:26                                 | 2026-08-03 | Inside the ≤50:30 proxy band; PR-adjacent (49:57)                                                               |
 
