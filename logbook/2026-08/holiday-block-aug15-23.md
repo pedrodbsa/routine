@@ -15,17 +15,60 @@ a Cabanas rebuild is ever wanted; nothing depends on them.
 | Day | Run | Strength | Garmin workout |
 | --- | --- | -------- | -------------- |
 | Sat Aug 15 | Rest — travel, standing rest day | — | — |
-| Sun Aug 16 | Easy 7 km | — | `1663425221` |
+| **Sun Aug 16** | **Long run 14 km** — Cabanas | — | `1664030085` |
 | Mon Aug 17 | Easy 8 km | — | `1663425244` |
-| Tue Aug 18 | — | **Full-upper bands, ~25 min** | not uploaded |
+| Tue Aug 18 | — | **Upper Push (bands), ~25 min** | `1664073322` |
 | Wed Aug 19 | **Threshold 3 × 7 min @ 165–172** | — | `1663433540` |
-| Thu Aug 20 | — | **Plyo / economy, ~20 min** | not uploaded |
-| Fri Aug 21 | Easy 6 km | — | `1663433595` |
+| Thu Aug 20 | — | **Upper Pull (bands) + quiet leg block, ~35 min** | `1664073522` |
+| Fri Aug 21 | Easy 6 km | — | `1664073730` |
 | Sat Aug 22 | Rest — standing | — | — |
 | Sun Aug 23 | **Long run 14 km** — Coimbra, evening | — | `1663433815` |
 
-Aug 17–23 totals **~35 km across four runs**, unchanged. All five workouts scheduled to their
-dates; the 3 × 7 min repeat structure and custom HR ranges verified on read-back.
+Aug 17–23 totals **~38 km across four runs**. Sunday Aug 16's long run belongs to the Aug 10–16
+week, so the deload week's shape is unchanged by it. All seven workouts scheduled to their dates;
+the 3 × 7 min repeat structure, the custom HR ranges and both strength sessions verified on
+read-back (all 8 Pull slots survived with set counts and instruction text intact).
+
+## Sunday Aug 16 converted to the long run (2026-08-14)
+
+Athlete realised the long run fits Sunday morning in Cabanas, so it came off Friday Aug 14 and the
+scheduled Easy 7 km was deleted. **Distance is 14 km, not the 15 km Friday would have carried** —
+it follows ~4 h in a car, dew points down there run 18–21 °C, and it is the second morning of a
+nine-day block with reduced monitoring. Fluid and 600–800 mg sodium in the **last hour of the
+drive**, not on arrival; run a loop that passes the accommodation at ~7 km so a refill is available
+and stopping at 7 km is a decision rather than a limp home. Drift ceiling 145, pace is not a datum.
+
+## Plyo replaced by Push + Pull, then legs partly recovered (2026-08-14)
+
+Athlete asked to drop the standalone plyo session and run **one Push and one Pull** instead. Taken,
+with the cost stated: the plyo block was the only leg stimulus in the block, so on its own that
+change left **twelve days with no leg work at all** (Aug 12 → Aug 24). The upside is genuine — two
+upper sessions instead of one full-upper fixes the sub-retention upper volume this block was
+otherwise accepting, including the side-delt shortfall carried from Wednesday's skipped arms tail.
+
+He then added the real constraint: **plyo is fine as long as nothing jumps or makes noise for the
+neighbours.** That rules out jump squats, broad jumps and A-skips indoors, but it does not rule out
+leg work. A **silent leg block** — rear-foot-elevated split squat with a 3 s eccentric, Nordic
+hamstring curl with the feet under a sofa, band pull-through — is tacked onto Thursday's Pull. It
+loses the reactive/elastic component that plyometrics buy and it is not a substitute for that, but
+eccentric hamstring work and single-leg stability are the parts of Leg Day that carry the most
+injury insurance into December.
+
+**It sits on Thursday, not Tuesday, and the ≥36 h Legs-to-quality rule is why.** Tue 18 → Wed 19
+threshold is ~15 h, a breach. Thu 20 → Sun 23 long run is ~72 h, clear.
+
+**Strides were briefly added to Friday Aug 21 as the plyo replacement and then removed again** once
+the leg block came back — strides fall under the same ≥36 h rule and Thu 20 → Fri 21 is ~15 h.
+Friday is a plain easy 6 km. The block's only fast running is Wednesday's threshold, which is the
+right amount for a deload week.
+
+**Optional, not prescribed:** if the elastic component is wanted, do it **outdoors after Monday's
+easy 8 km** — 3 × 5 jump squats and broad jumps on grass or sand, where no neighbour is involved.
+Mon 17 → Wed 19 threshold is ~48 h, so it clears. Skip it without comment if the morning is tight.
+
+Thursday now runs ~35 min against the block's 20–25 min intent. It is the one long session of the
+nine days. **If time is short, the two biceps slots go first** — biceps ran 10 sets last week
+against a 6–9 band, so they are the one group that can afford it.
 
 ## Wednesday upgraded to a real quality session (2026-08-13)
 
@@ -49,6 +92,10 @@ or the 07:00 start is missed: 6 × 15 s hill sprints on any ramp — the Q2 surv
 doing what it is for.
 
 ## Strength cut to two sessions, both on non-running days (2026-08-13)
+
+> **Superseded in part 2026-08-14** — the two sessions are now Push (Tue 18) and Pull + a silent leg
+> block (Thu 20), not full-upper and plyo. The slot logic below still holds and is why there are
+> only two slots. See § Plyo replaced by Push + Pull above.
 
 Athlete asked for strength off the running days so the holiday does not turn into two training
 slots a day. The non-running days are Sat 15, Tue 18, Thu 20 and Sat 22, and **both Saturdays are
