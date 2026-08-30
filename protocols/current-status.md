@@ -97,15 +97,15 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan` — snapshot 2026-08-27; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-08-30; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
 
 | Metric          | Value                                                      | Date       | Notes                                                                                                           |
 | --------------- | ---------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| Sleep           | **8.73 h**, score **81 GOOD**, **2 awakenings**            | 2026-08-26 | Night of Aug 25→26; deep 65 min (12.4%), REM 110 min (21.0%), sleep stress 19. ⚠ **The Aug 26→27 night had not synced to Garmin at 07:57 on Aug 27** — no value available for the plan-day night |
-| HRV             | weekly avg **66 ms**, BALANCED                             | 2026-08-26 | Recovered from **56 LOW** on Aug 22 (the illness trough) across four consecutive days: 56 → 60 → 62 → 63 → 66. No Aug 27 value yet |
-| Resting HR      | **48 bpm** (baseline 52)                                   | 2026-08-27 | **Four under baseline** — lowest of the month; overnight min 44. 7-day average 52. Partly a deload artifact (six days of zero load), not only recovery |
-| Body Battery    | charged **+49**, drained **0** (current 100)               | 2026-08-27 | Full charge, nothing spent                                                                                      |
-| Stress          | avg 8 overnight                                            | 2026-08-27 | Block floor. Aug 22 read **36 STRESSFUL** at the illness trough                                                 |
+| Sleep           | **8.73 h**, score **92 EXCELLENT**, **0 awakenings**       | 2026-08-30 | Night of Aug 29→30; deep 67 min (12.8%), REM 110 min (21.0%), sleep stress 9, overnight HRV 91 ms               |
+| HRV             | weekly avg **76 ms**, BALANCED                             | 2026-08-30 | Fifth consecutive rise off the Aug 22 illness trough (56 LOW): 66 → 70 → 72 → 75 → 76. Partly deload-inflated  |
+| Resting HR      | **47 bpm** (baseline 52)                                   | 2026-08-30 | **Five under baseline** — lowest of the month. Partly a deload artifact (ten days of zero load), not only recovery |
+| Body Battery    | charged **+71**, drained **0**                             | 2026-08-30 | Full charge at wake, nothing spent                                                                              |
+| Stress          | avg 8 overnight (97.6% rest)                               | 2026-08-30 | Block floor. Aug 22 read **36 STRESSFUL** at the illness trough                                                 |
 | Fitness Age     | **36.0 yr**                                                | 2026-07-29 | Chronological 40; dominant lever is body fat — metric lags the cut                                              |
 | Race prediction | **10K 50:15** / HM 1:51:26                                 | 2026-08-03 | Inside the ≤50:30 proxy band; PR-adjacent (49:57)                                                               |
 
