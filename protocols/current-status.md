@@ -97,15 +97,15 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan` — snapshot 2026-08-31; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-09-02; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
 
 | Metric          | Value                                                      | Date       | Notes                                                                                                           |
 | --------------- | ---------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| Sleep           | **7.12 h**, score **69 FAIR**, 3 awakenings (49 min awake) | 2026-08-31 | Night of Aug 30→31, first night in Troia. Onset 23:38 / wake 07:34; deep 69 min (16.2%) held, REM cut to 49 min (11.5%), sleep stress 25, overnight HRV 69 ms. Travel-night pattern, not load |
-| HRV             | weekly avg **75 ms**, BALANCED (band 64–93)                | 2026-08-31 | 66 → 70 → 72 → 75 → 76 → **75**. Unmoved inside the balanced band despite the overnight drop to 69 ms           |
-| Resting HR      | **52 bpm** (baseline 52)                                   | 2026-08-31 | Up 5 on Aug 30's 47, back level with baseline. Aug 30's 47 was itself a ten-day-deload artifact                 |
-| Body Battery    | charged **+57**, drained **1**                             | 2026-08-31 | Full at wake                                                                                                    |
-| Stress          | avg **18** (87.4% rest, max 73)                            | 2026-08-31 | Doubled off the Aug 30 block floor of 8. Aug 22 read **36 STRESSFUL** at the illness trough                     |
+| Sleep           | **7.28 h**, score **77 FAIR**, **0 awakenings** (3 min awake) | 2026-09-02 | Night of Sep 1→2. Onset 23:10 / wake 06:30; **deep 105 min (24.0%)** — best of the block; REM 64 min (14.6%), sleep stress 26, overnight HRV 65 ms. A repair night after a stress-driven Sep 1 (score 60, deep 10.6%, sleep stress 38, overnight HRV 55) |
+| HRV             | weekly avg **71 ms**, BALANCED (band 64–93)                | 2026-09-02 | Down from 75. Overnight 91 → 69 → **55** → **65** — bounced off the Sep 1 floor                                 |
+| Resting HR      | **55 bpm** (baseline 52)                                   | 2026-09-02 | 47 → 52 → 54 → **55**. Third consecutive rise, +3 on baseline — the one marker not turning with the others. Inside the +5-for-3-days rule; tripwire at ≥57 |
+| Body Battery    | charged **+54**, drained **0**, MODERATE                   | 2026-09-02 | Recharged. The Sep 1 day-level read was LOW                                                                     |
+| Stress          | avg **19** (79.2% rest, max 65)                            | 2026-09-02 | Against Sep 1's avg **39** at 31.8% rest, max 95 — a stress day, not a load day                                 |
 | Fitness Age     | **36.0 yr**                                                | 2026-07-29 | Chronological 40; dominant lever is body fat — metric lags the cut                                              |
 | Race prediction | **10K 50:15** / HM 1:51:26                                 | 2026-08-03 | Inside the ≤50:30 proxy band; PR-adjacent (49:57)                                                               |
 
