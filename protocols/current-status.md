@@ -97,15 +97,15 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan` — snapshot 2026-09-02; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-09-06; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
 
 | Metric          | Value                                                      | Date       | Notes                                                                                                           |
 | --------------- | ---------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| Sleep           | **7.28 h**, score **77 FAIR**, **0 awakenings** (3 min awake) | 2026-09-02 | Night of Sep 1→2. Onset 23:10 / wake 06:30; **deep 105 min (24.0%)** — best of the block; REM 64 min (14.6%), sleep stress 26, overnight HRV 65 ms. A repair night after a stress-driven Sep 1 (score 60, deep 10.6%, sleep stress 38, overnight HRV 55) |
-| HRV             | weekly avg **71 ms**, BALANCED (band 64–93)                | 2026-09-02 | Down from 75. Overnight 91 → 69 → **55** → **65** — bounced off the Sep 1 floor                                 |
-| Resting HR      | **55 bpm** (baseline 52)                                   | 2026-09-02 | 47 → 52 → 54 → **55**. Third consecutive rise, +3 on baseline — the one marker not turning with the others. Inside the +5-for-3-days rule; tripwire at ≥57 |
-| Body Battery    | charged **+54**, drained **0**, MODERATE                   | 2026-09-02 | Recharged. The Sep 1 day-level read was LOW                                                                     |
-| Stress          | avg **19** (79.2% rest, max 65)                            | 2026-09-02 | Against Sep 1's avg **39** at 31.8% rest, max 95 — a stress day, not a load day                                 |
+| Sleep           | **8.3 h**, score **78 FAIR**, 2 awakenings (29 min awake)   | 2026-09-06 | Night of Sep 5→6. Onset 22:22 / wake 07:09; **deep 100 min (20.1%)**, REM 94 min (18.9%), sleep stress 25, overnight HRV **69 ms**. Best repair night of the block — and it follows Sep 3→4, which crashed to **4.53 h / score 24 POOR / 0 min REM / overnight HRV 37** and was run on anyway |
+| HRV             | weekly avg **58 ms — LOW** (band 65–93, low-upper 59)      | 2026-09-06 | **First LOW status in the record.** Down from 71 on Sep 2. Overnight 65 → 59 → **37** → 62 → **69**; the Sep 4 crash is what drags the average and it clears the window ~Sep 10–11. **Phase 5 HRV rule fired** (−10.8% vs baseline) — binds the Sep 9 tempo, had no session left to take on Sep 6 |
+| Resting HR      | **55 bpm** (baseline 52)                                   | 2026-09-06 | 55 → 53 → 55 → 55 → **55**. Flat at +3 on baseline for five days — no longer rising, but not turning either. Inside the +5-for-3-days rule; tripwire at ≥57 |
+| Body Battery    | charged **+64**, drained **0**, MODERATE                   | 2026-09-06 | Fully recharged across two rest days in three                                                                   |
+| Stress          | avg **14** (93.8% rest, max 69, to 09:00)                  | 2026-09-06 | Against Sep 3 **41** · Sep 4 **51** at 18.3% rest · Sep 5 **42** — four high-stress days, two of them full rest days. Life stress, not training load |
 | Fitness Age     | **36.0 yr**                                                | 2026-07-29 | Chronological 40; dominant lever is body fat — metric lags the cut                                              |
 | Race prediction | **10K 50:15** / HM 1:51:26                                 | 2026-08-03 | Inside the ≤50:30 proxy band; PR-adjacent (49:57)                                                               |
 
