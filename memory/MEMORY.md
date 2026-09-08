@@ -58,6 +58,7 @@ See `coaching-lessons.md` for details.
 - [Strength rotation: two-session lookback](feedback-strength-rotation-two-session-lookback.md) — rotate exercise selection against the last TWO same-type sessions; a one-session lookback flip-flops A/B and repeated 6/7 slots inside 14 days (caught by athlete 2026-07-27)
 - [Saturday is a rest day](feedback-saturday-is-rest-day.md) — standing rest day since Jul 4 (verified, 5 consecutive); never plan a run or lift there, and treat the Phase 4-5 template's Saturday column as a stale reference layout
 - [Ask for the exact location](feedback-ask-exact-location.md) — get the exact town before building routes/courses; a grouped multiple-choice region is not an answer, and flagging an assumption is not resolving it (five Tavira courses built for a Cabanas holiday, 2026-08-13)
+- [Easy run = one Garmin step](feedback-easy-run-single-step.md) — no warmup/cooldown block on easy or long runs; a first-km ceiling looser than the easy cap is backwards (athlete, 2026-09-08). Warmup/cooldown steps are for quality sessions only
 - [Treadmill run back-to-back with lift](feedback-treadmill-run-backtoback-with-lift.md) — when a treadmill run + strength session land on the same day, assume one gym trip done back-to-back; sequence peri-workout fuel accordingly (shake between run and lift if fasted)
 
 ## Tooling & Workflow

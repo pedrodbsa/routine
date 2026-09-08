@@ -73,12 +73,19 @@ gives the athlete nothing to aim for on the watch.
   jog. Jog-step HR **ceilings stay at jog level (~145–150)**; floors stay low
   (~110) so they never false-alert "too low." This applies to every easy/jog step:
   warmup, cooldown, and recovery jogs between reps.
-- **Warmup:** HR **110–150** (a jog band that builds toward the work; ~145 ceiling
-  on easy-run days, up to 150 on quality days), or pace 7:00–8:00/km. Override with
-  the plan file's specifics if present.
-- **Cooldown:** HR **110–145**, or pace 7:00–7:45/km.
-- **Easy main set:** HR cap from the plan (`≤142 bpm` per current protocol) or the
-  plan-prescribed pace range.
+- **Easy runs and long runs are ONE step (athlete correction 2026-09-08).** No
+  warmup or cooldown block: the Daily 5 is the warmup, and the main set already
+  *is* the easy effort. A first-km "warmup" step with a looser ceiling than the
+  main set (145 over 142) is backwards — it silences the watch during the exact
+  km where going out too fast happens, and protects against nothing. Build the
+  whole distance as a single step at the plan's cap (`110–142`, or the long-run
+  drift ceiling if the plan sets one).
+- **Warmup (quality sessions only):** HR **110–150** (a jog band that builds toward
+  the work), or pace 7:00–8:00/km. Override with the plan file's specifics if
+  present.
+- **Cooldown (quality sessions only):** HR **110–145**, or pace 7:00–7:45/km.
+- **Easy main set / the single easy-run step:** HR cap from the plan (`≤142 bpm`
+  per current protocol) or the plan-prescribed pace range.
 - **Quality steps (intervals, tempo, threshold, 10K-pace):** use the HR or pace
   range from `protocols/running.md` for that session type. Never leave a "hard
   effort" step open.
