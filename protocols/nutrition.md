@@ -108,7 +108,18 @@ The nuance that saves the current tier from being too generous: **the Aug 15–2
 
 **If the athlete disagrees with holding, the disagreement wins on this one.** The Aug 4 restore was fired over his live objection on an asymmetry argument, and the promised price was a real reversal path. Findings 1 through 4 are the reason the reversal should not fire *on this date*, not a reason it should never fire — but he is entitled to hold the coach to the deal as written, and a trim taken on Aug 11 costs at most ~0.1 kg of the Sep 20 landing if it turns out to be wrong.
 
-#### Re-read 2026-08-31 — the real reversal point, pre-committed 2026-08-10
+#### Re-read 2026-08-31 — DEAD (superseded 2026-09-07 by the Sep 14 read below)
+
+> **This read never happened and cannot.** Its window (Aug 25–31) closed with **zero readings** — no scale after Aug 24 (holiday follow-on). The Aug 4 restore therefore ran five weeks unmeasured. The spec is kept below as the record of what was committed; the live instrument is § Closing read 2026-09-14.
+
+#### Closing read 2026-09-14 — pre-committed 2026-09-07
+
+- **Window: Sep 7–13 daily fasted mornings** (binding, 7/7 — the series opened Sep 7 at 75.25) **vs the Aug 4–11 mean of 74.38.** Report absolute body water in kg alongside every reading.
+- **What it is for has changed:** with the Sep 20 body-comp target retired (arithmetically unreachable from 75.25 — see `current-status.md`), this is no longer a trim-or-hold decision. It is the **closing measurement of the cut**: it sets the Phase 6 reverse-diet starting weight, checks the restored tier's actual rate over the only clean window available, and informs the athlete's Sep 14 call on whether to start the reversal early (the last six deficit days buy ~0.2–0.3 kg).
+- **Known limitation, stated up front:** seven days cannot resolve a 100 kcal effect (finding 1 of the Aug 11 spec). Expect a direction, not a rate. Discount Sep 7–8 partially for post-holiday water normalisation, using the body-water channel.
+- **Tripwires remain fully binding throughout** and act on the day they fire, independent of this read.
+
+#### Re-read 2026-08-31 (superseded spec, kept for the record) — pre-committed 2026-08-10
 
 Moving a decision is only legitimate if the moved decision is fixed in advance, so it is fixed here and is not open to re-litigation on the day.
 
@@ -370,7 +381,7 @@ If 3 or more of the following occur in the same week during Cut Block 2:
 - Strength regression on 2+ exercises
 - Motivation <3 for 3 days
 
-Raise all rest-day targets to 1,750 calories until the next deload week or diet break.
+**Action (corrected 2026-09-07 — the old text said "raise rest-day targets to 1,750," written when Rest was 1,650; against the restored 1,850 tier that sentence would have *cut* the athlete):** add **+100 kcal (to carbs) to the Rest tier** until the next deload week or diet break. **In September, firing this guardrail additionally pulls the Phase 5 reversal forward to ~Sep 14** (§ Extension above).
 
 ### Reverse Diet Monitoring Note
 

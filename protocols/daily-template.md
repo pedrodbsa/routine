@@ -73,10 +73,6 @@ Record, when present:
   that-night sleep only when notable.
 - Subjective notes — how the session felt, any pain.
 
-Skin is tracked weekly, not daily — acne evolves on a multi-week cycle, so daily
-scoring is noise. The weekly skin assessment lives in `protocols/skin-log.md` and
-is captured by `/report`, not in daily files.
-
 ### `## Context — reference only`
 
 Sits below the `---` divider. Holds material not needed to act on the day: the

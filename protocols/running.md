@@ -35,7 +35,7 @@ The Garmin watch only offers a 5-zone HR model (no native lactate-threshold anch
 - Easy = RPE 3-4 and full conversation.
 - If RPE exceeds 5, slow down even if HR looks acceptable.
 - Recovery jogs run **~135–145 bpm** — this athlete can't jog below ~130 (Zone 1 is walk-only), so don't chase a sub-133 "recovery jog" that doesn't exist for this physiology. Govern recovery by easing effort and letting HR fall, not by a walk-level number.
-- **Weekly treadmill control run (2026-06-12):** one of the week's easy runs is done on the treadmill under fixed conditions — ~30 min, HR capped at 142, same incline every time (1%). This is the heat-independent fitness signal: outdoor pace-at-HR is confounded by season, so the control run is the only easy-run pace series that is compared week to week. Log it as a normal easy run; `/report` reads its pace-at-HR trend.
+- **Weekly treadmill control run (2026-06-12; protocol ratified 2026-09-07):** one of the week's easy runs is done on the treadmill under fixed conditions — **5.0 km at a locked belt speed of 8.6 km/h, 1% incline, treadmill mode, COROS armband always** (an entry on any other sensor is void). The tracked number is **avg HR**, not pace — the belt fixes pace, so avg HR at fixed work is the heat-independent fitness signal. Do not raise the belt speed (it restarts the series). The original "~30 min" wording is retired: every valid entry ran ~5.0 km / ~35 min, and since avg HR accumulates drift, only fixed-distance entries are comparable. Valid series: Jul 13 **137** · Jul 27 **136**. Log it as a normal easy run; `/report` reads the avg-HR trend.
 - **Weekly strides slot — standing, from 2026-08-08.** One easy run per week finishes with **6 × 20 s strides**, relaxed-fast at ~5K/mile turnover, RPE 7–8, **full walk-back recovery** between each. By feel, not by HR — 20 s is far too short for HR to mean anything. Stop the set early if form fades; this is a coordination stimulus, not a conditioning one.
   - **Why it is a standing slot and not a menu item.** Stride length at a given cadence is an *output* of force production and elastic return, not something the athlete can choose — and the Dec 12 target needs it. Sub-47 (4:42/km = 3.55 m/s) requires roughly **cadence 180 × stride 118 cm**, against the Mar 8 race's **175.9 × 113.5**. Strides move that by letting the mechanics self-organise at speed. **Do not prescribe conscious form cueing to chase the same number** — deliberately lengthening the stride means landing ahead of the centre of mass, which is a braking force. See § Running Mechanics below.
   - Cost is near zero (~4 min, negligible recovery), which is exactly why it kept getting dropped: nothing that cheap ever wins an argument against time pressure. It was programmed on 2026-06-23 and then vanished from every subsequent week.
@@ -150,7 +150,7 @@ Scheduling is fully flexible across the week (Thursday no-running rule retired 2
 - **Phase 4-5 running success metrics (2026-06-12):** easy-run pace is **off the scoreboard until the Sep 21 reversal** — it is sacrificed to the deficit and the season by design, and is not a failure signal. The cut-phase running scoreboard is: (1) heat-adjusted efficiency (treadmill control run pace-at-HR) stable within ~2%, (2) both weekly quality sessions completed at target HR, (3) VO2max estimate holds ≥47 — read via the Garmin race-time prediction as proxy (10K not slower than ~50:00-50:30), since the direct VO2max endpoint is unreliable, (4) weekly volume ≥30 km. Pace-at-HR improvement is a Phase 6-7 deliverable (post-reversal), not a Phase 4-5 one.
 - **Phase 4 weeks 1-3:** the harder quality session is the sub-T / Norwegian work; the lighter one is aerobic-development or short sub-T. 10K-pace work enters from week 4.
 - **Q2 survivability rule (2026-06-12):** the second quality session has structural attrition — when a session is missed every week, the schedule is wrong, not the athlete. On any compromised week (readiness flags, family disruption, time pressure), Q2 converts to **6×20 s strides or 6×10-15 s hill sprints appended to an easy run** instead of being skipped. A 10-minute quality touch that happens beats a 40-minute session that doesn't. This conversion counts as Q2 completed for compliance.
-- **Phase 5:** cap volume at 40 km/week. If 7-day HRV average drops >10% below baseline, downgrade the lighter quality session of the week to an easy aerobic run.
+- **Phase 5:** cap volume at 40 km/week. If 7-day HRV average drops >10% below baseline, downgrade the lighter quality session of the week to an easy aerobic run. **"Baseline" defined 2026-09-07:** Garmin's **balanced-low bound** of the athlete's live HRV band (e.g. 65 on a 65–93 band) — the reading the stack has used consistently since Aug 12. Not the band midpoint. The bound moves as Garmin recalibrates; read it live each morning.
 - **Phase 5 deload weeks:** every 3rd week reduce run volume 15-20% and keep only one quality session.
 - **Phase 6 (Reverse + Build, Sep 21 - Oct 25):** two quality sessions per week, volume climbing 40-50 km as calories reverse to maintenance. The Oct 25 B-race replaces that week's harder quality — 2-3 easy days before it, normal week after 48-72 h of easy recovery.
 - **Phase 7 (10K Peak, Oct 26 - Dec 12):** keep two quality sessions per week, add selective VO2max, taper the last ~10-14 days into Dec 12.
@@ -169,6 +169,15 @@ Portugal summer conditions change the session.
 
 ## Monitoring
 
+### Volume Floor and Delivery Tripwire
+
+> Written 2026-09-07 — this section was referenced from § Weekly Rules since ~July but never existed (a dangling pointer), which left the floor specified nowhere while two August weeks breached it unscored.
+
+- **Floor: 30 km/week, all phases** (generalised from the 2026-06-12 Phase 4 rule). It is a floor on *delivered* running, checked weekly by `/report` against the live Garmin pull — the moment at which it actually gets computed.
+- **A week below the floor, or an ACWR <0.8, is not advisory** (2026-06-12): it requires a logged corrective action in the `current-status.md` coaching log, same as ACWR >1.5.
+- **Exemptions must be declared in advance** — a deload, taper, illness week or travel week named before or during the week is exempt (logged, not breached). A week that simply ends low is a breach even if the cause was benign; the point of the rule is that silences get investigated.
+- **Delivery tripwire:** when the same planned session type is missed in two consecutive weeks, the schedule is wrong, not the athlete — restructure the week (the Q2-survivability logic, applied generally).
+
 ### ACWR
 
 Acute km this week / 4-week rolling average.
@@ -186,7 +195,7 @@ Acute km this week / 4-week rolling average.
 - Sleep score <60 for 2 nights -> replace quality with easy
 - RHR elevated 5+ bpm above baseline -> reduce weekly volume 20%
 - HRV drops >15% from 7-day average -> optional rest day or quality downgrade
-- In Phase 5, tighten the HRV rule: if the 7-day HRV average falls >10% below baseline, remove the Friday quality session that week
+- In Phase 5, tighten the HRV rule: if the 7-day HRV average falls >10% below baseline, remove that week's remaining quality session ("baseline" = Garmin's balanced-low bound, defined 2026-09-07 — see § Weekly Rules; the original "Friday" wording predates flexible scheduling)
 - Body Battery <30 at wake -> full rest day
 - Heat + poor sleep on the same day -> no intensity
 
@@ -194,7 +203,7 @@ Acute km this week / 4-week rolling average.
 
 ### 10K A-Race — S. Silvestre Coimbra (Dec 12, 18:30 start)
 
-- Pacing: start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10 (stretch pacing: 4:36-4:39 if fitness supports it). Reference: 2025 result ~54:00; current prediction 50:19 (Jul 31).
+- Pacing: start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10 (stretch pacing: 4:36-4:39 if fitness supports it). Reference: 2025 result ~54:00; current prediction 50:59 (Sep 7 — depressed by the Aug trough; re-test at the Oct 25 B-race).
 - No in-race fueling needed
 - Final 10 days: reduce volume, not intensity. Keep one short 10K-pace touchpoint each week.
 
