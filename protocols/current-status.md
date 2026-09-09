@@ -104,17 +104,17 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan` — snapshot 2026-09-08; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-09-09; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
 
 | Metric          | Value                                                      | Date       | Notes                                                                                                           |
 | --------------- | ---------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| Sleep           | **7.32 h**, score **78 FAIR**, **0 awakenings**            | 2026-09-08 | Night of Sep 7→8. Onset **23:16** / wake 06:37; **deep 64 min (14.6%)** — recovered from 34; REM 52 min (11.8%), light 73.6%, sleep stress 20, overnight HRV **68 ms** |
-| HRV             | weekly avg **58 ms — LOW** (band 64–92, low-upper 59)      | 2026-09-08 | Overnight **68**, best night in the window and above the balanced-low bound (recalibrated 65 → 64). Weekly average rising (56 → 58). **Phase 5 HRV rule no longer fires** (−9.4%); the Sep 4 crash of 37 rolls out ~Sep 11 |
-| Resting HR      | **57 bpm** (baseline 52)                                   | 2026-09-08 | 55 → 55 → 59 → **57**. Falling but still +5 — **second consecutive morning ≥57**. A third on Sep 9 fires the +5-for-3-days rule (−20% weekly volume). Sep 8 easy run kept on a logged override |
-| Body Battery    | charged **+56**, drained 0, MODERATE                       | 2026-09-08 | Up from +45                                                                                                     |
-| Stress          | avg **16** (94.2% rest, max 59, to ~08:25)                 | 2026-09-08 | Against Sep 7's 32 at 43.8% rest                                                                                |
+| Sleep           | **6.91 h**, score **77 FAIR**, **0 awakenings**            | 2026-09-09 | Night of Sep 8→9. Onset **00:32** / wake 07:27 — onset 76 min later, costing duration; **deep 72 min (17.4%)**, best of the block (34 → 64 → 72). REM 45 min (10.9%), light 71.9%, sleep stress 19, overnight HRV **66 ms** |
+| HRV             | weekly avg **58 ms — LOW** (band 64–92, low-upper 58)      | 2026-09-09 | Overnight **66**, second consecutive night above the balanced-low bound of 64. Weekly average flat at 58. **Phase 5 HRV rule does not fire** (−9.4%, second day); the Sep 4 crash of 37 rolls out ~Sep 11 |
+| Resting HR      | **56 bpm** (baseline 52)                                   | 2026-09-09 | 55 → 55 → 59 → 57 → **56**. Third consecutive fall, now **+4**. ✅ **The +5-for-3-days rule does NOT fire** — it missed by one bpm on its third morning, so the −20% weekly volume cut is off and the week runs as drawn |
+| Body Battery    | charged **+59**, drained 1, MODERATE                       | 2026-09-09 | Up from +56; sleep impact +59                                                                                   |
+| Stress          | avg **18** (86.5% rest, max 84, to ~09:30)                 | 2026-09-09 | Flat against Sep 8's 16 at 94.2% rest                                                                           |
 | Fitness Age     | **37.6 yr**                                                | 2026-09-07 | Regressed from 36.0 (Jul 29) — the Aug trough (vigorous minutes collapsed) + weight; expect recovery with the build |
-| Race prediction | **10K 50:59** / HM 1:54:05                                 | 2026-09-07 | ⚠ **First reading outside the ≤50:30 proxy band** (was 50:15 Aug 3). Read as detraining artifact with a deadline: if still >50:30 at end-Sep with volume restored, it is a real signal against Dec 12 |
+| Race prediction | **10K 51:16** / HM 1:54:52                                 | 2026-09-09 | ⚠ **Fourth consecutive worsening reading** and furthest outside the ≤50:30 proxy band (50:15 Aug 3 → 50:59 Sep 7 → 51:09 Sep 8 → 51:16 Sep 9). Read as detraining artifact with a deadline: if still >50:30 at end-Sep with volume restored, it is a real signal against Dec 12 |
 
 ## Aerobic Threshold Compliance
 
