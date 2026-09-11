@@ -66,7 +66,7 @@ Revised 2026-07-31: the A-race moved from Oct 25 (hilly course — no PR possibl
 | Body Fat  | 21.7%                                             | 2026-04-28 | Bod Pod                    |
 | Fat Mass  | 16.48 kg                                          | 2026-04-28 | Bod Pod                    |
 | Lean Mass | 59.6 kg                                           | 2026-04-28 | Bod Pod                    |
-| Current   | 75.25 kg (single fasted reading — first in 14 days; Sep 14 read pending) | 2026-09-07 | scale, weight channel only |
+| Current   | 74.75 kg (fasted 08:54, pre-run; body water 35.88 kg vs 36.42 Sep 7 — the −0.50 kg is water). Sep 7–13 window: Sep 7 75.25 · Sep 9 74.75 · Sep 8 & 10 blank; Sep 14 read pending | 2026-09-09 | scale, weight channel only |
 
 | Target                 | Weight        | BF%       | Notes                                                        |
 | ---------------------- | ------------- | --------- | ------------------------------------------------------------ |
@@ -104,15 +104,15 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan` — snapshot 2026-09-09; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-09-11; Fitness Age and race prediction re-pulled weekly by `/report`. Older snapshots: archive.
 
 | Metric          | Value                                                      | Date       | Notes                                                                                                           |
 | --------------- | ---------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| Sleep           | **6.91 h**, score **77 FAIR**, **0 awakenings**            | 2026-09-09 | Night of Sep 8→9. Onset **00:32** / wake 07:27 — onset 76 min later, costing duration; **deep 72 min (17.4%)**, best of the block (34 → 64 → 72). REM 45 min (10.9%), light 71.9%, sleep stress 19, overnight HRV **66 ms** |
-| HRV             | weekly avg **58 ms — LOW** (band 64–92, low-upper 58)      | 2026-09-09 | Overnight **66**, second consecutive night above the balanced-low bound of 64. Weekly average flat at 58. **Phase 5 HRV rule does not fire** (−9.4%, second day); the Sep 4 crash of 37 rolls out ~Sep 11 |
-| Resting HR      | **56 bpm** (baseline 52)                                   | 2026-09-09 | 55 → 55 → 59 → 57 → **56**. Third consecutive fall, now **+4**. ✅ **The +5-for-3-days rule does NOT fire** — it missed by one bpm on its third morning, so the −20% weekly volume cut is off and the week runs as drawn |
-| Body Battery    | charged **+59**, drained 1, MODERATE                       | 2026-09-09 | Up from +56; sleep impact +59                                                                                   |
-| Stress          | avg **18** (86.5% rest, max 84, to ~09:30)                 | 2026-09-09 | Flat against Sep 8's 16 at 94.2% rest                                                                           |
+| Sleep           | **7.02 h**, score **77 FAIR**, 1 awakening (29 min awake)  | 2026-09-11 | Night of Sep 10→11. Onset **23:11** / wake 06:41 — on time after 00:32 and 00:30 the two nights before (Sep 10 night was 6.28 h). **Deep 91 min (21.6%)**, REM 61 min (14.5%), light 63.9%, sleep stress 21, overnight HRV **74 ms** |
+| HRV             | weekly avg **67 ms — BALANCED** (band 63–93, low-upper 57) | 2026-09-11 | 56 → 58 → 58 → 60 → **67**; first BALANCED reading since Sep 3 — the Sep 4 crash of 37 has rolled out. Overnight 76 (Sep 10) → **74**. **Phase 5 HRV rule clear** |
+| Resting HR      | **53 bpm** (baseline 52)                                   | 2026-09-11 | 59 → 57 → 56 → 51 → **53**. At baseline for a second morning; the RHR rule is well clear                        |
+| Body Battery    | charged **+61**, drained 0, HIGH                           | 2026-09-11 | Sep 10: +66 overnight, then bottomed at **11** on a no-training day (stress avg 29, max 93) — stress-side, recovered overnight |
+| Stress          | avg **15** (90.4% rest, max 56, to ~07:00)                 | 2026-09-11 | Against Sep 10's avg 29, 61.4% rest, 2.2% high                                                                  |
 | Fitness Age     | **37.6 yr**                                                | 2026-09-07 | Regressed from 36.0 (Jul 29) — the Aug trough (vigorous minutes collapsed) + weight; expect recovery with the build |
 | Race prediction | **10K 51:16** / HM 1:54:52                                 | 2026-09-09 | ⚠ **Fourth consecutive worsening reading** and furthest outside the ≤50:30 proxy band (50:15 Aug 3 → 50:59 Sep 7 → 51:09 Sep 8 → 51:16 Sep 9). Read as detraining artifact with a deadline: if still >50:30 at end-Sep with volume restored, it is a real signal against Dec 12 |
 
