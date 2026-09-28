@@ -4,7 +4,7 @@
 FROM debian:bookworm-slim
 
 ARG VERSION=0.1.1
-ARG CLAUDE_CODE_CHANNEL=stable
+ARG CLAUDE_CODE_CHANNEL=latest
 ARG UV_VERSION=0.11.31
 
 # Published at https://code.claude.com/docs/en/setup#binary-integrity-and-code-signing
