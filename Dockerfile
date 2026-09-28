@@ -3,6 +3,7 @@
 # Claude Code in Remote Control server mode, plus the Garmin MCP it needs.
 FROM debian:bookworm-slim
 
+ARG VERSION=0.1.1
 ARG CLAUDE_CODE_CHANNEL=stable
 ARG UV_VERSION=0.11.31
 
