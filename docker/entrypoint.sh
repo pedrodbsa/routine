@@ -27,4 +27,6 @@ EOF
   exec sleep infinity
 fi
 
-exec claude remote-control --name "${SESSION_NAME:-routine}" --spawn=same-dir
+# The status TUI redraws every second and floods the container log, so stdout is dropped.
+# stderr stays attached so crash messages still reach the log.
+exec claude remote-control --name "${SESSION_NAME:-routine}" --spawn=same-dir >/dev/null
