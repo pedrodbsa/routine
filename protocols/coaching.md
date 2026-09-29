@@ -32,16 +32,18 @@
 These are the non-negotiable daily and per-session standards. They are constant,
 so daily plan files reference this section instead of reproducing it.
 
-- **Every morning before 09:00:** Withings weigh-in, then `/plan`.
+- **Every morning:** Withings weigh-in in the fasted post-void, pre-food state (a state, not a clock time — `[[feedback-weigh-in-state-not-clock]]`); Mondays add the navel waist tape. Decisions need ≥4 fasted readings a week; 7/7 is the target. The day's plan is drafted by `/plan` (scheduled from Oct 2026 — `memory/project-workflow-automated-record.md`).
 - **Every session:** logged with the metrics the protocol requires. Runs —
   distance, duration, avg HR, max HR, RPE. Lifts — working weight, reps, and RPE
   per exercise.
 - **Every day:** eaten to the portion-locked rotation / `/plan` meal table (no digital food-logging — weighed
-  portions are the mechanism, the 7-day weight trend is the feedback loop), protein floor (>=165 g in the current
-  cut; phase-aware, see `nutrition.md`) hit, hydration floor (>=3.5 L) hit, 10-minute mobility done, supplements
+  portions are the mechanism, the 7-day weight trend is the feedback loop), protein floor (>=165 g in the build
+  and maintenance phases, >=170 g in the cuts; see `nutrition.md`) hit, hydration floor (>=3.5 L) hit, 10-minute mobility done, supplements
   taken. **Daily steps / walking (NEAT) are opportunistic extra, not a daily commitment (2026-06-23)** — done when
   time allows, never prescribed to compensate for a skipped session. Steps are still pulled end-of-day as an
   expenditure/coaching input, just not a floor.
+- **Every evening (from 2026-09-29):** one line from the athlete — motivation 1–5 plus the reason for any
+  planned session that did not happen. A miss with no reason by the next morning is recorded as a breach.
 - **Every night:** sleep is captured by Garmin and reviewed by the coach the next
   morning (it feeds the readiness call) — not hand-logged in the daily file.
 - **Sunday evening:** `/report` with the full week's data.

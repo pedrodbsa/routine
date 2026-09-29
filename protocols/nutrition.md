@@ -106,11 +106,11 @@ Athlete's call (2026-09-29): the lower of the two candidate tables, as a buffer 
 | Day type | Calories | Protein | Carbs | Fat |
 | --- | --- | --- | --- | --- |
 | Rest | 2,150 | 165 g | 226 g | 65 g |
-| Strength only, or Easy run + lift | 2,250 | 165 g | 251 g | 65 g |
+| Easy / Strength (any easy run, any lift, or both) | 2,250 | 165 g | 251 g | 65 g |
 | Quality | 2,550 | 165 g | 326 g | 65 g |
 | Long | 2,750 | 165 g | 376 g | 65 g |
 
-Week average on the build's standard shape (2 rest, 3 strength or easy+lift, 1 quality, 1 long): **~2,340**. With 1–2 social evenings at roughly +1,500 each, the true weekly average sits ~2,650–2,750 unless § Social Days holds — which is why the band, not the tier, is the governor.
+Week average on the build's standard shape (2 rest, 3 easy/strength, 1 quality, 1 long; ~2,350 on a 1-rest week): **~2,340**. With 1–2 social evenings at roughly +1,500 each, the true weekly average sits ~2,650–2,750 unless § Social Days holds — which is why the band, not the tier, is the governor.
 
 **Build weight band (pre-committed).** Expected 74.5–75.5 kg: the reverse alone returns ~1.0–1.2 kg of glycogen and water (the athlete's own July 2026 data), so a rise into that band is not fat. **Ceiling 76.0 / floor 73.5**, read on the 7-day fasted mean, and acted on only when **two consecutive weeks each carry ≥4 fasted readings**: above 76.0 → hold the tiers and take 100 kcal off carbs on every row; below 73.5 → add 100 to carbs on every row. No data → hold. A single-week move is noise (100 kcal/day ≈ 0.09 kg/wk against ~0.11 kg of standard error on a two-week difference). First possible read: Oct 26.
 

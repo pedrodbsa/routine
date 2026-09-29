@@ -24,9 +24,11 @@ the coach records what happened below it. The athlete never writes to the file �
 
 Four lines, no more:
 
-- Day type — Rest / Easy / Quality / Long Run / Race
+- Day type — Rest / Easy-Strength (any easy run, any lift, or both) / Quality / Long Run / Race.
+  Add **Social** when a social evening is planned; the next day is then planned on the Rest tier
+  (`nutrition.md` § Social Days)
 - Readiness call — Green / Modified / Rest
-- Calorie target — phase and day-type tier
+- Calorie target — phase and day-type tier (build portions: `meal-rotation.md` § Build Day Budgets)
 - Shape of day — one line describing how the day runs
 
 ### `## Workout`
@@ -34,7 +36,9 @@ Four lines, no more:
 Concise session detail.
 
 - Running: distance, HR cap, pace guide, RPE. Note any heat or sleep modification.
-- Strength: the exercise table — slot, exercise, sets x reps, rest, load note.
+- Strength: the exercise table — slot, exercise, sets x reps, rest, load note. Legs is the compressed
+  three-slot session (primary lift, plyo, hamstring; single-leg and core optional — `training.md`
+  § Leg Day).
 - Rest day: state it in one line, optionally offering the incline-walk NEAT block
   (`training.md` § Rest-Day NEAT) as a nice-to-have — NEAT is opportunistic, not a
   prescription; omit it when recovery is depleted or time is short.
@@ -71,6 +75,15 @@ Record, when present:
 - End-of-day data the coach pulls because it informs coaching — daily steps for
   the NEAT and expenditure read, a newer weigh-in if Garmin returned one, and
   that-night sleep only when notable.
+- **Weigh-in and waist** (2026-09-29) — the morning reading with its state
+  (fasted post-void, or not — only fasted readings enter the trend), and on
+  Mondays the navel waist tape in cm.
+- **The athlete's daily line** (2026-09-29) — motivation 1–5 and, for any planned
+  session that did not happen, the reason. If no reason has arrived by the next
+  morning, record the session as **"not delivered — no reason given"**; `/report`
+  counts that as a breach. A miss with a reason is recorded as "not delivered —
+  <reason>".
+- **Social evening**, one word, when it happened.
 - Subjective notes — how the session felt, any pain.
 
 ### `## Context — reference only`
@@ -91,4 +104,9 @@ Garmin workout IDs written by `/garmin`.
   `protocols/coaching.md` under "Operational Floor". A daily file may reference
   that section but must not copy it.
 - On Sundays the `## Context` section also carries the weekly check: ACWR,
-  Composite Load, 7-day weight average, body-comp trend, and recovery flags.
+  Composite Load, 7-day weight average (with its reading count — decisions need
+  ≥4 fasted), body-comp trend against the phase band, recovery flags, the six
+  adherence rows from `current-status.md` (runs ≥4 and ≥30 km, lifts 3/3, fasted
+  weigh-ins ≥4/7, waist 1/wk, sleep onset ≤23:30 5/7, sleep score ≥70 5/7), and
+  the running-numbers line (prediction vs milestone, control run, long-run
+  pace-at-HR).

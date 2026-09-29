@@ -1,9 +1,11 @@
 # MEAL ROTATION - MASTER
 
 > Companion to `nutrition.md`. A fixed set of portion-locked meals so the day can be eaten to plan
-> without logging every item. `nutrition.md` holds the authoritative Phase 4 calorie tiers; these cards
-> are the eating mechanism for hitting them.
-> Last verified: 2026-05-31.
+> without logging every item. `nutrition.md` holds the authoritative calorie tiers for every phase; these
+> cards are the eating mechanism for hitting them. The per-card portion tables are anchored to the Phase 4
+> cut tiers. **For the current phase (Reverse wk 3 → Build, from Oct 5 2026) use § Build Day Budgets**,
+> which re-derives the starch portions for the +300 tiers.
+> Last verified: 2026-09-29.
 
 > **Phase 4 target correction (2026-05-29 TDEE recalibration).** The cards below were originally built to
 > the draft Phase 4 tiers (Rest 1,850 / Easy 2,050 / Quality 2,300 / Long 2,500). `nutrition.md` has since
@@ -382,6 +384,10 @@ target, with most combinations inside ±60. The 7-day weight trend governs from 
 
 The rotation is built to be eaten without arithmetic, but two numbers still deserve a glance:
 
+> Floors are phase-aware: **P165 / F65 in the reverse, build and maintenance phases; P170 / F60 in the cut
+> phases** (`nutrition.md` § Daily Targets). The ranges below were measured on the Phase 4 cards; the
+> § Build Day Budgets rows were checked against the build floors separately.
+
 - **Protein floor (165 g).** Across all combinations the rotation lands protein 163–198 g. The leanest
   combinations sit 1–2 g under the floor — close enough to ignore most days, but if a day's meals look
   protein-light, one extra whey scoop closes the gap.
@@ -393,15 +399,52 @@ carries protein and fat above the bare minimums and calories are held to target.
 matters is met: calories on target, protein at floor, and carbohydrate still clearly cycled across day
 types (Rest < Easy < Quality < Long).
 
+## Build Day Budgets (Phase 6 wk 3 and Phase 7 Build, Oct 5 2026 – Jan 4 2027)
+
+Written 2026-09-29 after the consult set the Build tiers at **Rest 2,150 / Easy-Strength 2,250 / Quality
+2,550 / Long 2,750** (P165 / F65 floors; `nutrition.md` § Phase 7). The Phase 4 portion columns sit
+300–400 kcal below these, and the old "eat one carb tier up" shortcut only recovers ~50–100 kcal of that,
+so the starch portions are re-derived here. The components are the ones `/plan` actually uses (calibrated
+on the Sep 28 quality day, which landed at 2,481 kcal): an **L1-style lunch** (chicken + 80 g beans + veg +
+1 tbsp oil cooked in; base ~430 kcal before rice) and a **D3-style dinner** (sirloin + veg + 1 tbsp oil
+into the pan; base ~420 kcal before potato). Any L or D card can stand in at the same starch weight.
+
+| Day type (tier) | Before / first feed | Lunch starch | Afternoon anchor | Dinner starch | Post-dinner | Lands |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Rest (2,150)** — 4 feeds | Small breakfast: 3 eggs + 30 g oats + 80 g strawberries (~355) | **200 g rice** | **Lean S4**: 200 g skyr + 1 scoop whey + 80 g fruit + **10 g almonds** (~330) | **300 g potato** | Dessert: 100 g Greek yogurt + 100 g frozen mango (~122) | ~2,150 · P166 F66 |
+| **Easy run only (2,250)** — 4 feeds | Post-run breakfast: 3 eggs + **60 g oats** + fruit (~470) | **200 g rice** | Lean S4 (~330) | **280 g potato** | Dessert (~122) | ~2,250 · P170 F68 |
+| **Lift, with or without an easy run (2,250)** — 5 feeds | Small breakfast (~355) + post-lift shake: whey + banana + creatine (~270) | **130 g rice** | Lean S4 (~330) | **200 g potato** | Dessert (~122) | ~2,250 · P191 F70 |
+| **Quality (2,550)** — 5 feeds | Banana + coffee pre-run only; post-run shake: whey + **80 g oats** (~424) | **260 g rice** | **Full S4** with 30 g almonds (~416) | **400 g potato** | Dessert (~122) | ~2,570 · P184 F66 |
+| **Long (2,750)** — 5 feeds | Banana + coffee pre-run; post-run shake: whey + **100 g oats** (~500) | **300 g rice** | Full S4 (~416) | **450 g potato** | Dessert (~122) | ~2,740 · P185 F67 |
+
+Notes on the table:
+
+- **Every row clears both floors and lands within ~1% of its tier.** Fat is the binding constraint on the
+  4-feed days, which is why the anchor carries 10 g of almonds there (without them Rest lands at ~60 g F,
+  under the 65 g build floor). On quality and long days the full S4 carries the fat instead.
+- **The lift day's starch looks small** because the shake takes ~270 kcal. If the athlete would rather have
+  bigger plates, drop the post-dinner dessert and add ~50 g rice at lunch and ~80 g potato at dinner; the
+  day stays on tier. Never delete the starch from either main meal (`[[feedback-starch-at-both-main-meals]]`).
+- **Long-day lunch (~820) and dinner (~770) run slightly over the ~750 single-feed cap**
+  (`[[feedback-no-single-dominant-feed]]`). If a plate feels heavy, move 50 g of the lunch rice into a
+  piece of fruit at dessert.
+- **Social evening:** the plan day is eaten as tabled up to the evening; the next day uses the Rest row
+  (`nutrition.md` § Social Days).
+- **When the build band moves the tiers** (±100 kcal on every row, `nutrition.md` § Phase 7), change
+  the lunch rice by ±40 g and the dinner potato by ±65 g. Nothing else moves.
+
 ## Other Phases
 
-The cards are anchored to Phase 4 (Cut Block 1). For other phases, shift the carb portion only:
+The per-card tables are anchored to Phase 4 (Cut Block 1, Rest 1,750 / Easy 1,950 / Quality 2,200 / Long
+2,400). For other phases:
 
-- **Re-entry / maintenance (~2,400 avg):** eat one carb tier up from the day type (a Rest day uses Easy
-  portions, an Easy day uses Quality portions, and so on).
-- **Cut Block 2 (~2,000 avg):** trim each carb portion by roughly 10%. (Phase 4's corrected target is also ~2,000 avg — the same ~10% carb trim applies now; see the correction note at the top of the file.)
-- **Reverse / peak (Phase 6):** carb portions rise week by week — follow `/plan`, which carries the phase
-  calorie target.
+- **Phase 6 wk 2 (Sep 28 – Oct 4, tiers 2,050 / 2,150 / 2,450 / 2,650):** use § Build Day Budgets and take
+  ~40 g rice and ~65 g potato off every row.
+- **Build (Oct 12 – Jan 4) and Phase 9 maintenance:** § Build Day Budgets. Phase 9 re-bases on the cut's
+  closing weight (roughly −50 kcal per kg lost), applied with the same ±40 g rice / ±65 g potato step.
+- **Cut 3 (Jan 5 – Apr 12) and the optional lean-out:** the tiers are derived on Jan 4 (`nutrition.md`
+  § Phase 8). **Re-derive this table that day**: protein rises to 170 g, fat drops to 60 g (the lean S4
+  loses its almonds), and the rest of the gap comes out of starch. Until then there are no cut portions.
 
 When in doubt, `/plan` states the day's calorie target; adjust the carb portion to close the gap, or ask.
 
