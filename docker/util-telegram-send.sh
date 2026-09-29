@@ -15,7 +15,7 @@ if [ -z "${chat_id}" ] && [ -f "${access_file}" ]; then
   chat_id="$(jq -r '.allowFrom[0] // empty' "${access_file}")"
 fi
 if [ -z "${chat_id}" ]; then
-  echo "telegram-send: no chat id — set TELEGRAM_CHAT_ID or pair the bot first" >&2
+  echo "util-telegram-send: no chat id — set TELEGRAM_CHAT_ID or pair the bot first" >&2
   exit 1
 fi
 

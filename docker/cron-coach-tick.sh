@@ -49,7 +49,7 @@ notify() {
   if [ "${DRY_RUN}" = 1 ]; then
     echo "dry run: would send: $1"
   else
-    printf '%s\n' "$1" | telegram-send || echo "telegram-send failed" >&2
+    printf '%s\n' "$1" | util-telegram-send || echo "util-telegram-send failed" >&2
   fi
 }
 
@@ -80,7 +80,7 @@ run_job() {
   result="$(jq -r 'select(.is_error != true) | .result // empty' <<<"${out}" 2>/dev/null || true)"
 
   if [ "${rc}" -eq 0 ] && [ -n "${result}" ]; then
-    printf '%s\n' "${result}" | telegram-send || echo "${job}: telegram-send failed" >&2
+    printf '%s\n' "${result}" | util-telegram-send || echo "${job}: util-telegram-send failed" >&2
     touch "$(marker "${job}").done"
     echo "${job}: done"
     return 0

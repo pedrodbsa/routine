@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Runs a command in a detached tmux session and restarts it whenever it exits.
-# Usage: keep-alive <session> <command> [args...]
+# Usage: util-keep-alive <session> <command> [args...]
 #
 # The restart loop lives inside the tmux session, so a crashed process comes back where it ran
 # and `tmux attach -t <session>` always lands on the live one. Restarts are written to PID 1's
@@ -19,8 +19,8 @@ tmux new-session -d -s "${name}" -x 200 -y 50 bash -c '
   name=$0
   while true; do
     "$@" && rc=0 || rc=$?
-    echo "$(date -Iseconds) keep-alive: ${name} exited with ${rc}; restarting in 5 s" >/proc/1/fd/1
+    echo "$(date -Iseconds) util-keep-alive: ${name} exited with ${rc}; restarting in 5 s" >/proc/1/fd/1
     sleep 5
   done' "${name}" "$@"
 
-echo "keep-alive: started tmux session ${name}"
+echo "util-keep-alive: started tmux session ${name}"

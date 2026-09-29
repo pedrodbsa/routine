@@ -14,7 +14,7 @@ At the 2026-09-29 consult the athlete chose **option A** for the silent-stretch 
 
 **Why:** on a low day the record is the first thing that goes; the fix has to take the athlete off the record's critical path so a bad week produces evidence instead of a hole. The motivation score has been requested three times and delivered once — one number a day is the whole ask.
 
-**Status (2026-09-29): built, not yet deployed.** Remaining: redeploy the container, create the bot, install + pair the Telegram plugin, add the `cron-coach-tick` Dokploy schedule (`docs/container.md` § Telegram, § Set up the coach schedule), then retire the cloud `/report` routine after the first Sunday report lands (`calendar.md` TODO).
+**Status (2026-09-29): built, not yet deployed.** Remaining: redeploy the container, create the bot and set `COACH_TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` (the Telegram session installs the plugin and writes the allowlist itself), add the `cron-coach-tick` Dokploy schedule (`docs/container.md` § Telegram, § Set up the coach schedule), then retire the cloud `/report` routine after the first Sunday report lands (`calendar.md` TODO).
 
 How it was built (athlete decisions in the build session, 2026-09-29):
 - **Telegram is the single interface** — plan, recap and report all arrive there; Remote Control is for troubleshooting only. Telegram comes from the official channel plugin in a separate interactive session (tmux `telegram`), not the greenfield n8n bot of [[project-remote-coach-service]].

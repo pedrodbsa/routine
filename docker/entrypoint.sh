@@ -54,17 +54,17 @@ EOF
   exec sleep infinity
 fi
 
-# Each long-lived Claude process runs in its own tmux session under keep-alive, so they are
+# Each long-lived Claude process runs in its own tmux session under util-keep-alive, so they are
 # started, restarted and inspected the same way: `tmux attach -t <name>`, detach with C-b d.
 # Session <name> runs the launcher claude-session-<name>, which owns its own preconditions.
 export TERM="${TERM:-xterm-256color}"
 
-# PID 1 (under tini) only supervises: keep-alive is a no-op for a live session, so this just
+# PID 1 (under tini) only supervises: util-keep-alive is a no-op for a live session, so this just
 # recreates any session that was killed.
 trap 'tmux kill-server 2>/dev/null; exit 0' TERM INT
 while true; do
   for name in rc telegram; do
-    keep-alive "${name}" "claude-session-${name}"
+    util-keep-alive "${name}" "claude-session-${name}"
   done
   sleep 30 &
   wait $!
