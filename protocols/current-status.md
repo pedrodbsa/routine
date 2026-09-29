@@ -17,7 +17,7 @@
     - Lab-prescribed individual threshold: **142 bpm @ 6:00/km (10 km/h)** — operational easy/MAF ceiling
     - Resting lactate: 1.37 mmol/L
 - **Max HR:** 190 bpm observed (race); ramp test peak ~180 bpm
-- **Hydration status:** one concentrated spot sample at lab evaluation (urine SG 1.021, osmolality 750 mOsm/kg, "Mal Hidratado"). A single sample cannot show a chronic deficit; urine-SG strip re-test pending (`calendar.md`).
+- **Hydration status:** one concentrated spot sample at lab evaluation (urine SG 1.021, osmolality 750 mOsm/kg, "Mal Hidratado"). A single sample cannot show a chronic deficit; urine colour steers daily intake.
 - **Capacity (athlete-stated 2026-09-29):** 4–5 runs + 3 lifts per week, trips of 90+ min possible on some days, full capacity from Oct 6. Saturday rest. Heavy rain makes the treadmill unappealing — it is the fallback, not the plan. **Motivation driver: running numbers improving** — the prediction, control run and pace-at-HR stay on every report even though they no longer rank first.
 
 ## Goals & Priorities

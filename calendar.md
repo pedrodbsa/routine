@@ -28,11 +28,13 @@
 | 2026-12-12 Sat | race | S. Silvestre Coimbra 10K, 18:30. A **social** run with friends: no taper, no target | athlete | current-status § Race Schedule |
 | 2027-01-04 Mon | checkpoint | **Jan 4 checkpoint**: derive the Cut 3 tiers from verified maintenance; reopen the HM/trail question | coach | consult 2026-09-29 |
 | 2027-01-05 Tue | phase | **Cut 3** starts (Jan 5 – Apr 12) at 0.3 kg/wk | coach | current-status § Phase & Timeline |
+| 2027-01-18 Mon | appointment | 25(OH)D blood test after ~3.5 months at 5,000 IU D3: 30–60 ng/mL holds the dose, above 60 drops it to 2,000–3,000 | athlete | supplements.md |
 | 2027-02-01 Mon | deadline | **Name the spring 10K A-race** (late Apr / May preferred) | athlete | consult 2026-09-29 |
 | 2027-02-01 Mon | checkpoint | Cut 3 4-week rate read #1 | coach | current-status § Phase & Timeline |
 | 2027-03-01 Mon | checkpoint | Cut 3 4-week rate read #2 | coach | current-status § Phase & Timeline |
 | 2027-03-29 Mon | checkpoint | Cut 3 4-week rate read #3 | coach | current-status § Phase & Timeline |
 | 2027-04-01 Thu | checkpoint | Garmin 10K prediction ≤48:30 (motivation line) | coach | current-status § Race Schedule |
+| 2027-04-01 Thu | reminder | D3 back to the summer dose, 2,000 IU | athlete | supplements.md |
 | 2027-04-12 Mon | checkpoint | End of the cut: confirm sub-47 for the spring race, or re-anchor to sub-48 on the session evidence | coach | current-status § Race Schedule |
 | 2027-04-13 Tue | phase | **Maintenance + spring race** starts (Apr 13 – Jun 14): hold ~70–71.5 kg | coach | current-status § Phase & Timeline |
 | 2027-06-15 Tue | phase | **Optional lean-out** starts (Jun 15 – Jul 26), only if stage 1 fell short | coach | current-status § Phase & Timeline |
@@ -54,12 +56,10 @@
 | Item | Owner | Source |
 | --- | --- | --- |
 | Agree the isotretinoin target duration and stop plan with the dermatologist | athlete | memory/project-isotretinoin-course.md |
-| Urine-SG strips on 3 fasted mornings: ≥2 above 1.020 keeps the 3.5–4.5 L fluid guide, otherwise ~3.0 L | athlete | audit 2026-09-29 |
-| 25(OH)D blood test before taking D3 above 2,000–4,000 IU | athlete | audit 2026-09-29 |
-| Garmin profile: height 172 → 170 cm (the Index scale uses it), and add Thursday to the training days | athlete | audit 2026-09-29 |
 | Disable the cloud routine "Weekly /report reminder" (trig_01FHEGq1csjRWNEzYWo2DJw3) once the first scheduled Sunday report reaches Telegram | coach | 2026-09-29 automation |
 
 ## Done
 
 | Date | Kind | Item | Owner |
 | --- | --- | --- | --- |
+| 2026-09-29 | todo | Garmin profile: height 170 cm, Thursday added to the training days | athlete |

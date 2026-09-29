@@ -144,7 +144,7 @@ Before a **quality or long run**, pre-run is at most banana + coffee and breakfa
 
 ## Hydration and Heat Rules
 
-- **Daily guide 3.5–4.5 L fluids, steered by urine colour (pale straw), not by a litre count; avoid compulsive overdrinking.** The lab hydration flag rests on one concentrated spot sample (urine SG 1.021, osmolality 750 mOsm/kg). A urine-SG strip re-test on 3 fasted mornings is pending (`calendar.md`): if ≥2 read >1.020 the guide stands, otherwise it relaxes to ~3.0 L. Heavy salt intake raises the water requirement.
+- **Daily guide 3.5–4.5 L fluids, steered by urine colour (pale straw), not by a litre count; avoid compulsive overdrinking.** The lab hydration flag rests on one concentrated spot sample (urine SG 1.021, osmolality 750 mOsm/kg). Heavy salt intake raises the water requirement.
 - Quality, long or hot days: +500–1,000 mL.
 - **Pre-run sodium** (Quality, Long, or >24 °C): 600–800 mg sodium with 500 mL water, 60–90 min pre-run, to start the session euhydrated. Kept modest because daily salt is already high (1 g+ risks GI distress).
 - Runs >60–75 min in warm weather: 400–700 mL fluid/hour and 300–600 mg sodium/hour.

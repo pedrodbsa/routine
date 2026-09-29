@@ -10,7 +10,7 @@
 
 ### Breakfast (07:00-09:00)
 
-- Vitamin D3 + K2: **2,000-4,000 IU D3** / 100-120 mcg K2 — at or under the 4,000 IU adult upper limit until a 25(OH)D test says otherwise (`calendar.md`).
+- Vitamin D3 + K2: **5,000 IU D3 Oct–Mar, 2,000 IU Apr–Sep** / 100-120 mcg K2. The winter dose sits above the 4,000 IU general upper limit, so a 25(OH)D test in January checks it (target 30–60 ng/mL; above 60, drop to 2,000–3,000). The multivitamin's D3 counts toward the total.
 - Multivitamin: 1 tablet.
 
 ### Lunch (~13:00)
