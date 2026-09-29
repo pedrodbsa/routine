@@ -7,10 +7,12 @@
 #            If there is still no daily file and no sleep record at COACH_PLAN_CUTOFF, the day
 #            is skipped and the evening recap asks why.
 #   recap    every day from COACH_RECAP_AT, plan or not: /recap.
+#   reset    once a night between COACH_RESET_AT and COACH_MORNING_FROM: restarts the Telegram
+#            session, so it starts each day with an empty context. All state is in the repo.
 #   report   on COACH_REPORT_DOW, chained after a successful recap: /report scheduled.
 #
 # Usage: cron-coach                          normal run
-#        cron-coach --force morning|recap|report
+#        cron-coach --force morning|recap|report|reset
 #                                            run one job now, ignoring gates, markers and caps
 # COACH_DRY_RUN=1 prints what a run would do without running Claude or sending anything.
 # COACH_NOW="2026-10-05 06:40" pretends it is that local time (testing the gates).
@@ -22,6 +24,7 @@ MORNING_FROM="${COACH_MORNING_FROM:-05:00}"
 PLAN_CUTOFF="${COACH_PLAN_CUTOFF:-12:00}"
 RECAP_AT="${COACH_RECAP_AT:-21:30}"
 REPORT_DOW="${COACH_REPORT_DOW:-7}"
+RESET_AT="${COACH_RESET_AT:-03:30}"
 MAX_ATTEMPTS="${COACH_MAX_ATTEMPTS:-3}"
 RUN_TIMEOUT="${COACH_RUN_TIMEOUT:-45m}"
 DRY_RUN="${COACH_DRY_RUN:-0}"
@@ -142,12 +145,34 @@ evening() {
   fi
 }
 
+# Killing the tmux session is enough: the entrypoint recreates it within 30 s. A message sent
+# meanwhile waits on Telegram and is picked up when the new session starts polling.
+reset_telegram() {
+  if [ "${DRY_RUN}" = 1 ]; then
+    echo "dry run: would restart the telegram session"
+  elif tmux kill-session -t '=telegram' 2>/dev/null; then
+    echo "reset: telegram session restarted"
+  else
+    echo "reset: no telegram session running"
+  fi
+}
+
+reset() {
+  if [ -e "$(marker reset).done" ]; then return 0; fi
+  # The window ends at the morning start, so a container restarted mid-day never resets a live
+  # conversation.
+  if [[ "${now}" < "${RESET_AT}" ]] || [[ ! "${now}" < "${MORNING_FROM}" ]]; then return 0; fi
+  reset_telegram
+  [ "${DRY_RUN}" = 1 ] || touch "$(marker reset).done"
+}
+
 if [ "${1:-}" = "--force" ]; then
   case "${2:-}" in
     morning) run_job morning "/plan scheduled" 1 ;;
     recap) run_job recap "/recap" 1 ;;
     report) run_job report "/report scheduled" 1 ;;
-    *) echo "usage: cron-coach [--force morning|recap|report]" >&2; exit 2 ;;
+    reset) reset_telegram ;;
+    *) echo "usage: cron-coach [--force morning|recap|report|reset]" >&2; exit 2 ;;
   esac
   exit
 fi
@@ -155,5 +180,6 @@ fi
 # Markers older than two weeks are noise.
 find "${STATE_DIR}" -type f -name '*-20??-??-??*' -mtime +14 -delete
 
+reset
 morning
 evening

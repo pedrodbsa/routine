@@ -99,6 +99,7 @@ the compose file loads that with `env_file`. Full list with comments in `.env.ex
 | `TELEGRAM_CHAT_ID` | Optional. Where `util-telegram-send` posts; defaults to the first allowlisted id from pairing |
 | `COACH_MORNING_FROM`, `COACH_PLAN_CUTOFF` | Morning window for the scheduled `/plan`: default `05:00` and `12:00` |
 | `COACH_RECAP_AT`, `COACH_REPORT_DOW` | Evening `/recap` time (default `21:30`) and the weekday the report follows it (default `7`, Sunday) |
+| `COACH_RESET_AT` | When the Telegram session is restarted for a fresh context each night (default `03:30`, window ends at `COACH_MORNING_FROM`) |
 
 ## First deploy
 
@@ -147,6 +148,11 @@ Add a second Dokploy schedule against the `routine` service with command `cron-c
 `*/10 * * * *`. Almost every run is a no-op; the script gates on local time and per-day
 markers in `/root/.coach/state/`, so it doesn't matter which timezone Dokploy's cron uses.
 
+- **Night:** once between `COACH_RESET_AT` and `COACH_MORNING_FROM`, it kills the `telegram`
+  tmux session. The entrypoint recreates it within 30 s with an empty context, so the session
+  never carries days of history (every message would pay for it, and compaction summaries go
+  stale). Nothing is lost: the state is in the repo, and a message sent meanwhile waits on
+  Telegram.
 - **Morning:** from `COACH_MORNING_FROM` it checks Garmin for last night's sleep record — a
   plain `garminconnect` call with the MCP's cached token, no Claude involved. Once the record
   is there, it runs `/plan scheduled` and sends the plan. If there is no daily file and no
@@ -157,7 +163,7 @@ markers in `/root/.coach/state/`, so it doesn't matter which timezone Dokploy's 
 - **Failures are never silent.** A failed run sends a short notice with the exit code and
   retries on the next run, up to three attempts a day. A failing Garmin sleep check is
   reported once a day.
-- Test with `cron-coach --force morning|recap|report`. `COACH_DRY_RUN=1 COACH_NOW="2026-10-05
+- Test with `cron-coach --force morning|recap|report|reset`. `COACH_DRY_RUN=1 COACH_NOW="2026-10-05
   06:40" cron-coach` shows what a run would do at that time without running anything.
 
 ## Set up the sync schedule
