@@ -1,20 +1,9 @@
 # MEAL ROTATION - MASTER
 
-> Companion to `nutrition.md`. A fixed set of portion-locked meals so the day can be eaten to plan
-> without logging every item. `nutrition.md` holds the authoritative calorie tiers for every phase; these
-> cards are the eating mechanism for hitting them. The per-card portion tables are anchored to the Phase 4
-> cut tiers. **For the current phase (Reverse wk 3 → Build, from Oct 5 2026) use § Build Day Budgets**,
-> which re-derives the starch portions for the +300 tiers.
-> Last verified: 2026-09-29.
-
-> **Phase 4 target correction (2026-05-29 TDEE recalibration).** The cards below were originally built to
-> the draft Phase 4 tiers (Rest 1,850 / Easy 2,050 / Quality 2,300 / Long 2,500). `nutrition.md` has since
-> trimmed those by ~100 kcal/day to **Rest 1,750 / Easy 1,950 / Quality 2,200 / Long 2,400** (avg ~2,000).
-> The cards are **not** re-derived here — that 100 kcal sits inside the eyeballing noise of portion-locked
-> eating and the figure stays provisional until the ~Jun 11 weigh-in reconfirm. To hit the corrected target,
-> shave one carb portion on the highest days (drop ~one mug of cooked rice/potato, or the oats from the
-> post-session shake). The 7-day weight trend is the real governor. Once Jun 11 confirms the final tier, the
-> cards get re-anchored once.
+> Companion to `nutrition.md`, which holds the calorie tiers. These portion-locked cards are the eating
+> mechanism for hitting them. The per-card starch columns are sized for the Phase 4 cut tiers (Rest 1,750 /
+> Easy 1,950 / Quality 2,200 / Long 2,400); **for the Reverse and the Build use § Build Day Budgets**, which
+> sizes the starch for the +300 tiers.
 
 > **Athlete default — Greek yogurt: always 2% fat.** All yogurt in this file and in `/plan` outputs is 2% unless explicitly stated otherwise. Substitute 0% only if the active phase's lowest calorie tier needs the fat trim (per-100 g delta vs 2%: −14 kcal, −2 g F).
 
@@ -41,14 +30,14 @@ read that one word, then use the matching column.
 | Quality         | Intervals, tempo, threshold                 | Quality      |
 | Long            | Long run                                    | Long         |
 
-**Feeds per day (revised 2026-06-22 — fixed midafternoon snack on every day; see `nutrition.md` § Meal Distribution):**
+**Feeds per day (`nutrition.md` § Meal Distribution):**
 
-- **Easy / rest day — 4 feeds:** **small** Breakfast -> **big** Lunch -> **midafternoon snack** -> **big** Dinner. **No post-session shake** — on easy days breakfast is the post-run meal. Breakfast runs small to fund the snack (the snack is funded by the breakfast, not added on top — the day stays on tier). Lunch, snack, and dinner each clear ≥30 g protein.
-- **Quality / long / strength day — 5 feeds:** Breakfast (B1-B4) -> Post-session shake -> Lunch -> **midafternoon snack** -> Dinner. The shake is reserved for these sessions; the snack stays small here (the shake already spreads protein) and must not crowd the peri-workout carb.
+- **Easy / rest day — 4 feeds:** **small** Breakfast -> **big** Lunch -> **midafternoon snack** -> **big** Dinner -> small dessert. **No post-session shake** — on easy days breakfast is the post-run meal. Breakfast runs small to fund the snack (the snack is funded by the breakfast, not added on top — the day stays on tier). Lunch, snack, and dinner each clear ≥30 g protein.
+- **Quality / long / strength day — 5 feeds:** Breakfast (B1-B4) -> Post-session shake -> Lunch -> **midafternoon snack** -> Dinner -> small dessert. The shake is reserved for these sessions; the snack stays small here (the shake already spreads protein) and must not crowd the peri-workout carb.
 
 The **midafternoon snack** is a standing adherence anchor (~15:30-16:30) — it blunts evening appetite and pre-empts night grazing. Use a Snack card (S1-S3 below); skyr clears the 30 g bolus whey-free, the protein-weak Greek yogurt needs ½-1 scoop whey.
 
-Dinner finishes ~2–3 h before bed, and the small post-dinner dessert lands ≥60–90 min before bed (`nutrition.md` § Meal Distribution, relaxed from the old 3 h window by the 2026-09-29 audit).
+Dinner finishes ~2–3 h before bed; the small post-dinner dessert lands ≥60–90 min before bed.
 
 **Picking meals:** choose any breakfast, lunch, and dinner from the rotation freely. The set is built so
 that any combination lands close to target. Lunches are fully yours to standardise. Dinners give options
@@ -94,26 +83,20 @@ once and you can stop using the scale for carbs entirely.
 | Oats (dry)           | —     | 67 g  | 93 g    | 115 g |
 | Wholegrain bread     | —     | 93 g  | 130 g   | 160 g |
 
-Oats and bread have no Rest column in this Phase 4 table. Breakfast is eaten every day (the old "no breakfast on rest days" note was an intermittent-fasting leftover, removed by the 2026-09-29 audit); on rest days it runs small, and § Build Day Budgets carries the live rest-day portion (30 g oats).
+Breakfast is eaten every day. On rest days it runs small; § Build Day Budgets carries the rest-day oat portion (30 g).
 
-## Fruit Dessert Swap (athlete preference, 2026-06-18)
+## Fruit Dessert Swap
 
-> **Post-lunch slot reversed 2026-08-06 (athlete decision).** The post-lunch fruit is retired — the athlete
-> now uses **0-cal gelatin** for the sweet-craving role. That slot's carbohydrate is **folded back into
-> lunch**, so for lunch this swap runs in reverse: **spec the larger starch portion.** Everything below
-> stays live for **dinner** and for the general smaller-starch-plus-fruit preference elsewhere.
->
-> **Scope narrowly — this is not a "no fruit" rule.** Fruit stirred into oat breakfasts (§ Breakfast Oats —
-> Fruit Mix-In) and the post-dinner skyr + berries dessert are unaffected; they serve palatability and
-> evening hunger, not post-lunch craving control.
->
-> **The fold is not one-for-one.** Fruit is near-pure carbohydrate (~95 kcal per 22 g C); rice carrying the
-> same carbs also brings ~2 g protein and ~2 g batch cooking oil (~113 kcal). Calorie-neutral and
-> carb-neutral cannot both hold — pick one and state it.
+**Lunch:** no post-lunch fruit. The sweet-craving slot after lunch is 0-cal gelatin, so lunch carries the
+full starch portion.
 
-The athlete prefers a smaller starch portion at lunch and dinner with a piece of fruit afterwards as
-dessert, rather than a large serving of rice or potato. Honour this: cap the starch at a comfortable
-portion and take the remaining day-type carbs as fruit, eaten after the meal.
+**Dinner and other meals:** the athlete prefers a smaller starch portion with a piece of fruit afterwards.
+Cap the starch at a comfortable portion and take the remaining day-type carbs as fruit. Fruit stirred into
+oat breakfasts and the post-dinner dessert are separate and unaffected.
+
+Fruit and starch do not swap one-for-one: fruit is near-pure carbohydrate (~95 kcal per 22 g C), while rice
+carrying the same carbs also brings ~2 g protein and ~2 g cooking oil (~113 kcal). Pick whether calories
+or carbs give, and say so in the plan.
 
 **Mechanic — match by carbohydrate grams so calories and the day-type carb total stay on target.** Cap
 the starch around the Easy-tier portion the athlete actually eats (~140–160 g cooked rice, ~235 g potato,
@@ -122,7 +105,7 @@ the starch around the Easy-tier portion the athlete actually eats (~140–160 g 
 - One medium piece of fruit ≈ **20–25 g carbs** ≈ **~80 g cooked rice** / **~145 g boiled potato** / **~75 g cooked pasta**.
 - Carb-by-fruit quick reference: peach ~13 g · orange ~15 g · two kiwis ~20 g · apple ~22 g · pear ~25 g · one cup grapes ~26 g · banana ~27 g.
 
-So a Quality lunch specced at 200 g rice becomes ~140 g rice + one apple; a Long-day 246 g becomes
+So a Quality dinner specced at 200 g rice becomes ~140 g rice + one apple; a Long-day 246 g becomes
 ~160 g rice + a banana. `/plan` should present the starch at the comfortable cap and name the fruit that
 closes the carb gap.
 
@@ -232,7 +215,7 @@ Anchor: 150 g Greek yogurt (2%) + **1 scoop ON whey** + **1½ tbsp chia seeds** 
 | Post-session shake  | Training days, <30 min post-session | **1½ scoops ON whey** + 1 banana            | P37 C30 F2 · 306 kcal  |
 | Breakfast shake     | Rest days, morning (07:00-09:00) | **1 scoop ON whey** + 200 g Greek yogurt (2%) + 80 g berries + **1 tbsp almond butter** | P48 C20 F14 · 398 kcal |
 
-Creatine is not carried by either shake: the daily 5 g goes in the morning coffee on all seven days (`supplements.md`; removed from the shake specs by the 2026-09-29 audit).
+Creatine is never carried by a shake; the daily 5 g goes in the morning coffee (`supplements.md`).
 
 ## Lunches (fully standardised — these are yours)
 
@@ -358,56 +341,19 @@ On nights dinner is not yours to portion, do not try to force a card. Anchor on:
 Do not log it. Hit the protein anchor, match the carb to the day, and let the weekly weigh-in absorb the
 imprecision.
 
-## Sample Days
-
-One worked combination per day type, to show the rotation lands on target.
-
-| Day type | Meals                                                          | Total (as built)           | Corrected target |
-| -------- | -------------------------------------------------------------- | -------------------------- | ---------------- |
-| Rest     | Breakfast shake + L2 + **S4** + D2                             | P171 C135 F62 · 1,775 kcal | 1,750            |
-| Easy     | Small eggs breakfast + L1(↑quality carb) + **S4** + D1(↑quality carb) | P170 C176 F57 · 1,875 kcal | 1,950            |
-| Quality  | B1 + Post-session shake + L1 + **S4** + D4 (apply carb shave)  | ~P219 C235 F66 · 2,200 kcal | 2,200            |
-| Long     | B2 + Post-session shake + L1 + **S4** + D3 (apply carb shave)  | ~P225 C275 F62 · 2,400 kcal | 2,400            |
-
-The easy/rest rows now carry the **midafternoon snack** as a base feed: the small breakfast funds it, and
-lunch/dinner shift up a carb tier so the day still lands on target (the snack does not push it over). The
-quality/long rows add the snack as a 5th feed — protein then runs high, which is protective, not a problem,
-but **carbs must be protected**, so apply the carb shave to the breakfast/shake, never to the peri-workout
-meals.
-
-Each "as built" combination lands ~150-250 kcal above the corrected target before the shave — drop the oats
-from the post-session shake, or take rice/potato one tier down, to close the gap. Protein and fat stay put;
-only carbs come off. The 7-day weight trend governs from there.
-
-Across every possible meal combination the rotation lands each day type within roughly ±100 kcal of its
-target, with most combinations inside ±60. The 7-day weight trend governs from there.
-
 ## What to Watch
 
-The rotation is built to be eaten without arithmetic, but two numbers still deserve a glance:
+Floors are phase-aware (`nutrition.md` § Daily Targets): **P165 / F65** in the reverse, build and
+maintenance; **P170 / F60** in the cuts. The § Build Day Budgets rows clear the build floors. When mixing
+cards freely, the leanest combinations can land a few grams under either floor: one extra whey scoop
+closes protein, and 10–15 g of nuts built into a dish closes fat. Carbohydrate lands a little under the
+nominal figure because real food carries protein and fat above the minimums; what matters is calories on
+tier, the floors met, and carbs still cycled Rest < Easy < Quality < Long.
 
-> Floors are phase-aware: **P165 / F65 in the reverse, build and maintenance phases; P170 / F60 in the cut
-> phases** (`nutrition.md` § Daily Targets). The ranges below were measured on the Phase 4 cards; the
-> § Build Day Budgets rows were checked against the build floors separately.
+## Build Day Budgets (Oct 5 2026 – Jan 4 2027)
 
-- **Protein floor (165 g build and maintenance / 170 g cut).** Across all combinations the rotation lands protein 163–198 g. The leanest
-  combinations sit 1–2 g under the floor — close enough to ignore most days, but if a day's meals look
-  protein-light, one extra whey scoop closes the gap.
-- **Fat floor (65 g build and maintenance / 60 g cut).** The Phase 4 cards land fat 57–77 g. The leanest combinations land ~3 g under. If a day
-  is clearly fat-light, add 10–15 g of nuts or a teaspoon of olive oil.
-
-Carbohydrate intentionally lands a little below the nominal `nutrition.md` figures, because real food
-carries protein and fat above the bare minimums and calories are held to target. This is expected. What
-matters is met: calories on target, protein at floor, and carbohydrate still clearly cycled across day
-types (Rest < Easy < Quality < Long).
-
-## Build Day Budgets (Phase 6 wk 3 and Phase 7 Build, Oct 5 2026 – Jan 4 2027)
-
-Written 2026-09-29 after the consult set the Build tiers at **Rest 2,150 / Easy-Strength 2,250 / Quality
-2,550 / Long 2,750** (P165 / F65 floors; `nutrition.md` § Phase 7). The Phase 4 portion columns sit
-300–400 kcal below these, and the old "eat one carb tier up" shortcut only recovers ~50–100 kcal of that,
-so the starch portions are re-derived here. The components are the ones `/plan` actually uses (calibrated
-on the Sep 28 quality day, which landed at 2,481 kcal): an **L1-style lunch** (chicken + 80 g beans + veg +
+Starch portions for the Build tiers **Rest 2,150 / Easy-Strength 2,250 / Quality 2,550 / Long 2,750**
+(P165 / F65; `nutrition.md` § Phase 7). The components are the ones `/plan` uses: an **L1-style lunch** (chicken + 80 g beans + veg +
 1 tbsp oil cooked in; base ~430 kcal before rice) and a **D3-style dinner** (sirloin + veg + 1 tbsp oil
 into the pan; base ~420 kcal before potato). Any L or D card can stand in at the same starch weight.
 
@@ -437,13 +383,10 @@ Notes on the table:
 
 ## Other Phases
 
-The per-card tables are anchored to Phase 4 (Cut Block 1, Rest 1,750 / Easy 1,950 / Quality 2,200 / Long
-2,400). For other phases:
-
-- **Phase 6 wk 2 (Sep 28 – Oct 4, tiers 2,050 / 2,150 / 2,450 / 2,650):** use § Build Day Budgets and take
-  ~40 g rice and ~65 g potato off every row.
-- **Build (Oct 12 – Jan 4) and Phase 9 maintenance:** § Build Day Budgets. Phase 9 re-bases on the cut's
-  closing weight (roughly −50 kcal per kg lost), applied with the same ±40 g rice / ±65 g potato step.
+- **Reverse week Sep 28 – Oct 4 (tiers 2,050 / 2,150 / 2,450 / 2,650):** § Build Day Budgets with ~40 g rice
+  and ~65 g potato off every row.
+- **Phase 9 maintenance:** § Build Day Budgets re-based on the cut's closing weight (roughly −50 kcal per kg
+  lost), with the same ±40 g rice / ±65 g potato step.
 - **Cut 3 (Jan 5 – Apr 12) and the optional lean-out:** the tiers are derived on Jan 4 (`nutrition.md`
   § Phase 8). **Re-derive this table that day**: protein rises to 170 g, fat drops to 60 g (the lean S4
   loses its almonds), and the rest of the gap comes out of starch. Until then there are no cut portions.

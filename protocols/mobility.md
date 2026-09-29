@@ -1,8 +1,6 @@
 # MOBILITY AND PREHAB PROTOCOL - MASTER
 
-## Purpose
-
-Desk work, age, running volume, caloric deficit, and summer heat all increase the cost of skipping movement prep and tissue care.
+Desk work, age and running volume raise the cost of skipping movement prep and tissue care.
 
 ## Daily Mobility Routine (10 min)
 
@@ -16,6 +14,8 @@ Desk work, age, running volume, caloric deficit, and summer heat all increase th
 8. World's Greatest Stretch - 30s/side
 9. Standing Hamstring Sweep - 30s/side
 
+If morning mobility is missed, do the hip flexor and hamstring work before bed.
+
 ## Post-Run Cool-Down (5 min)
 
 1. Easy walk - 2-3 min
@@ -26,7 +26,7 @@ Desk work, age, running volume, caloric deficit, and summer heat all increase th
 
 ## Runner Prehab Microdose (2-3x/week, 5-7 min)
 
-Add this after easy runs or strength sessions:
+After easy runs or strength sessions — the minimum prehab layer for calves, Achilles, feet and knee control:
 
 1. Soleus calf raise - 2x15
 2. Tibialis raises - 2x15
@@ -34,22 +34,12 @@ Add this after easy runs or strength sessions:
 4. Single-leg balance reaches - 2x5/side
 5. Banded lateral walk or clamshell - 2x12/side
 
-This is the minimum prehab layer for calves, Achilles, feet, and knee control.
+The quality-day power drill lives in `running.md` § Pre-Run Warm-Up.
 
-## Phase 6 Quality-Day Elasticity Add-On
+## Recovery
 
-Before the 2 weekly quality sessions in Phase 6 only, add one short power-focused drill after the warm-up jog:
-
-- Broad Jumps - 3x5, or
-- Power A-Skips - 3x20 m
-
-Keep contacts crisp and low-volume. Skip if calf or Achilles pain is above 2/5.
-
-## Cut-Phase Recovery Emphasis (Apr 13 - Aug 30)
-
-- Foam rolling is useful after harder runs or double days, but not mandatory every day.
+- Foam rolling after harder runs or double days is useful, not mandatory.
 - Add 2 minutes of 90/90 switches after any double day.
-- If morning mobility is missed, do hip flexor + hamstring work before bed.
 
 ## Desk Worker Mini-Breaks (2 min, every 60-90 min)
 
@@ -60,11 +50,7 @@ Keep contacts crisp and low-volume. Skip if calf or Achilles pain is above 2/5.
 
 ## Pain Tracking
 
-Track pain in the daily Status table:
-
-`| Pain/Tightness | None / [location] [severity 1-5] |`
-
-### Severity Scale
+Record pain in the daily file's `## Actuals` as `Pain/Tightness: None / [location] [severity 1-5]`.
 
 - 1 = awareness only
 - 2 = mild tightness, disappears when warm
@@ -74,8 +60,8 @@ Track pain in the daily Status table:
 
 ### Rules
 
-- Severity 1-2: train normally, note it
-- Severity 3: reduce aggravating volume 30%, avoid speed if impact worsens it
-- Severity 4+: rest that pattern and substitute non-aggravating work
-- Same location at severity 3+ for 3 straight days: see physiotherapist
-- During cut phases, any severity 3+ also triggers a temporary bump to maintenance calories for 2 days
+- Severity 1-2: train normally, note it.
+- Severity 3: reduce aggravating volume 30%; avoid speed if impact worsens it.
+- Severity 4+: rest that pattern and substitute non-aggravating work.
+- Same location at severity 3+ for 3 straight days: see a physiotherapist.
+- In a cut phase, severity 3+ moves that day and the next to the day's tier +330 (`nutrition.md` § Tracking and Adjustments).
