@@ -10,7 +10,7 @@ reads the protocols and writes the logbook there. Everything else the container 
 claude.ai credentials, the workspace trust record, the Garmin token cache — lives on a
 `../files/home` mount. Both mounts survive redeploys.
 
-A Dokploy schedule runs `git-sync` on a cron. It commits whatever a session left uncommitted
+A Dokploy schedule runs `cron-git-sync` on a cron. It commits whatever a session left uncommitted
 and pushes to `origin`, so work reaches GitHub without you approving a push from your phone.
 
 Remote Control and the Telegram plugin make outbound HTTPS connections only. The container
@@ -22,11 +22,11 @@ The athlete's day-to-day interface is Telegram. Three kinds of Claude process ru
 container, all against the same `/app` repo.
 
 ```
-Dokploy cron */10 ─▶ coach-tick ─▶ claude -p "/plan scheduled" | "/recap" | "/report scheduled"
+Dokploy cron */10 ─▶ cron-coach-tick ─▶ claude -p "/plan scheduled" | "/recap" | "/report scheduled"
                                        └─ result ─▶ telegram-send (Bot API) ─▶ Telegram
 tmux "telegram":  claude --channels telegram  ◀─ polls ─ Telegram (the athlete's replies)
 tmux "rc":        claude remote-control       ◀─ claude.ai / Claude app (troubleshooting)
-Dokploy cron */10 ─▶ git-sync ─▶ GitHub
+Dokploy cron */10 ─▶ cron-git-sync ─▶ GitHub
 ```
 
 - **The Telegram session** is an interactive Claude Code session started with the Telegram
@@ -52,7 +52,7 @@ Dokploy cron */10 ─▶ git-sync ─▶ GitHub
   plugin starts polling in every Claude process that loads it and can see the token. The
   plugin is installed at user scope, so the Remote Control sessions and the `-p` runs load it
   too. The container therefore keeps the token as `COACH_TELEGRAM_BOT_TOKEN`, a name the plugin
-  ignores, and `session-telegram` exports it as `TELEGRAM_BOT_TOKEN` for the Telegram session
+  ignores, and `claude-session-telegram` exports it as `TELEGRAM_BOT_TOKEN` for the Telegram session
   alone. Never run `/telegram:configure` (it writes the token to a file every process reads),
   and never install the plugin on the desktop.
 
@@ -71,7 +71,7 @@ environment and is never written to `.git/config`.
 Create a **Compose** service — not an Application, which is oriented around HTTP and domains.
 
 - **Source**: this repository, branch `main`. **Compose path**: `docker-compose.yml`.
-- **Auto Deploy**: **off.** `git-sync` pushes to `main` every few minutes, and with Auto
+- **Auto Deploy**: **off.** `cron-git-sync` pushes to `main` every few minutes, and with Auto
   Deploy on each of those pushes redeploys the service and kills the running session.
   Dokploy's "on tag" trigger type would avoid this in principle, but there is an open bug
   reporting that it is ignored and pushes still trigger builds
@@ -79,7 +79,7 @@ Create a **Compose** service — not an Application, which is oriented around HT
   change the Dockerfile, which is rare.
 
 Do not set `COMPOSE_PROJECT_NAME`. Dokploy uses the project name to find the container when a
-schedule fires, and overriding it breaks `git-sync`.
+schedule fires, and overriding it breaks `cron-git-sync`.
 
 ## Environment
 
@@ -89,9 +89,9 @@ the compose file loads that with `env_file`. Full list with comments in `.env.ex
 | Variable | Purpose |
 | --- | --- |
 | `GARMIN_EMAIL`, `GARMIN_PASSWORD` | Expanded into the MCP server's environment by `.mcp.json` |
-| `GITHUB_TOKEN` | Push credential for `git-sync`; also needed for the first-boot clone if the repo is private |
+| `GITHUB_TOKEN` | Push credential for `cron-git-sync`; also needed for the first-boot clone if the repo is private |
 | `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL` | Identity on commits made from the container |
-| `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `coach-tick` gates on it |
+| `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `cron-coach-tick` gates on it |
 | `COACH_TELEGRAM_BOT_TOKEN` | The bot token from BotFather. Deliberately not `TELEGRAM_BOT_TOKEN` — see "One poller per bot" above |
 | `TELEGRAM_CHAT_ID` | Optional. The athlete's chat; defaults to the first allowlisted id from pairing |
 | `COACH_MORNING_FROM`, `COACH_PLAN_CUTOFF` | Morning window for the scheduled `/plan`: default `05:00` and `12:00` |
@@ -128,8 +128,8 @@ One-time setup.
    /plugin install telegram@claude-plugins-official
    ```
 
-   Exit, then restart the container. The entrypoint now also starts the `telegram` tmux
-   session.
+   Exit. The `telegram` tmux session has been waiting for the plugin and starts within a
+   minute; no restart is needed.
 3. Send any message to the bot. It replies with a pairing code. In the container terminal,
    `tmux attach -t telegram`, then:
 
@@ -148,7 +148,7 @@ container would find it, and they would all start polling.
 
 ## Set up the coach schedule
 
-Add a second Dokploy schedule against the `routine` service with command `coach-tick` and cron
+Add a second Dokploy schedule against the `routine` service with command `cron-coach-tick` and cron
 `*/10 * * * *`. Almost every tick is a no-op; the script gates on local time and per-day
 markers in `/root/.coach/state/`, so it doesn't matter which timezone Dokploy's cron uses.
 
@@ -162,12 +162,12 @@ markers in `/root/.coach/state/`, so it doesn't matter which timezone Dokploy's 
 - **Failures are never silent.** A failed run sends a short notice with the exit code and
   retries on the next tick, up to three attempts a day. A failing Garmin sleep check is
   reported once a day.
-- Test with `coach-tick --force morning|recap|report`. `COACH_DRY_RUN=1 COACH_NOW="2026-10-05
-  06:40" coach-tick` shows what a tick would do at that time without running anything.
+- Test with `cron-coach-tick --force morning|recap|report`. `COACH_DRY_RUN=1 COACH_NOW="2026-10-05
+  06:40" cron-coach-tick` shows what a tick would do at that time without running anything.
 
 ## Set up the sync schedule
 
-Add a Dokploy schedule against the `routine` service with command `git-sync` and cron
+Add a Dokploy schedule against the `routine` service with command `cron-git-sync` and cron
 `*/10 * * * *`. Each run logs to the Dokploy UI, so a failed push is visible rather than
 silent. The script skips its cycle if any file changed in the last minute, which keeps it from
 committing a plan while a session is still writing it, and on a rebase conflict it stops and
@@ -181,7 +181,7 @@ That broke in three ways, all from the same cause.
 - **Pushes failed silently.** Dokploy clones with a GitHub App installation token that expires
   after about an hour, and it embeds that token in the origin URL. Git uses credentials in the
   URL in preference to any credential helper, so once the token expired every push failed with
-  "Invalid username or token" — `git-sync`, the container's `GITHUB_TOKEN` helper, and
+  "Invalid username or token" — `cron-git-sync`, the container's `GITHUB_TOKEN` helper, and
   `gh auth setup-git` on the host alike. Pulls kept working because the repo is public, which
   hid the failure until twelve commits had piled up unpushed.
 - **A redeploy wiped unpushed work.** Dokploy re-clones its checkout on every deploy.
@@ -210,9 +210,10 @@ does, because it lives in the repo. Find the new session by name at claude.ai/co
 
 **Both Claude processes run in tmux.** `tmux attach -t rc` or `tmux attach -t telegram` from a
 container terminal shows the live session; `C-b d` detaches without stopping it. Each runs
-under a restart loop (`keep-alive`), and every restart is logged to the container log. If the
-`rc` session disappears altogether, the entrypoint exits and `restart: unless-stopped` brings
-the whole container back.
+under a restart loop (`keep-alive`), and every restart is logged to the container log. Session
+`<name>` runs the launcher `claude-session-<name>` (`docker/claude-session-*.sh`), which checks
+its own preconditions; the entrypoint only starts the sessions and, every 30 s, recreates any
+that was killed.
 
 **If a session goes quiet**, check the logs. Remote Control exits if the machine cannot
 reach the network for roughly ten minutes, and the restart loop brings it back. For the
@@ -226,7 +227,7 @@ A one-time procedure, run on the host, for a server still on the old `.:/app` mo
 1. **Make sure everything is pushed.** In the container, `git -C /app status -sb` must show
    no ahead/behind count and a clean tree. If the origin URL still carries a token, strip it
    first (`git -C /app remote set-url origin https://github.com/pedrodbsa/routine.git`) and
-   run `git-sync` once. Anything left unpushed here stays behind in `code/`.
+   run `cron-git-sync` once. Anything left unpushed here stays behind in `code/`.
 2. **Commit and push the compose, entrypoint and docs changes.**
 3. **Redeploy in Dokploy.** The container starts with an empty `../files/repo` and clones from
    GitHub on boot. The clone log line and any failure appear in the container logs.
@@ -234,8 +235,8 @@ A one-time procedure, run on the host, for a server still on the old `.:/app` mo
    - `git -C /app remote get-url origin` prints `https://github.com/pedrodbsa/routine.git`,
      with no credentials in it.
    - `git -C /app log -1` matches the latest commit on GitHub.
-   - `git-sync` prints "nothing to push".
-   - Make a test commit in `/app` and confirm the next scheduled `git-sync` run pushes it.
+   - `cron-git-sync` prints "nothing to push".
+   - Make a test commit in `/app` and confirm the next scheduled `cron-git-sync` run pushes it.
 5. **Verify the session.** Remote Control comes up with `/app` as its working directory, and
    the session picks up `.mcp.json` (the Garmin tools are available) and
    `.claude/settings.json` (the allowlist applies) from the new clone. The workspace trust

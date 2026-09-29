@@ -9,8 +9,8 @@
 #   recap    every day from COACH_RECAP_AT, plan or not: /recap.
 #   report   on COACH_REPORT_DOW, chained after a successful recap: /report scheduled.
 #
-# Usage: coach-tick                          normal tick
-#        coach-tick --force morning|recap|report
+# Usage: cron-coach-tick                          normal tick
+#        cron-coach-tick --force morning|recap|report
 #                                            run one job now, ignoring gates, markers and caps
 # COACH_DRY_RUN=1 prints what a tick would do without running Claude or sending anything.
 # COACH_NOW="2026-10-05 06:40" pretends it is that local time (testing the gates).
@@ -27,7 +27,7 @@ RUN_TIMEOUT="${COACH_RUN_TIMEOUT:-45m}"
 DRY_RUN="${COACH_DRY_RUN:-0}"
 
 # Scheduled runs must never see the bot token under the name the channel plugin reads, or their
-# copy of the plugin would start polling and evict the Telegram session (see session-telegram).
+# copy of the plugin would start polling and evict the Telegram session (see claude-session-telegram).
 unset TELEGRAM_BOT_TOKEN
 
 mkdir -p "${STATE_DIR}"
@@ -147,7 +147,7 @@ if [ "${1:-}" = "--force" ]; then
     morning) run_job morning "/plan scheduled" 1 ;;
     recap) run_job recap "/recap" 1 ;;
     report) run_job report "/report scheduled" 1 ;;
-    *) echo "usage: coach-tick [--force morning|recap|report]" >&2; exit 2 ;;
+    *) echo "usage: cron-coach-tick [--force morning|recap|report]" >&2; exit 2 ;;
   esac
   exit
 fi

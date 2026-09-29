@@ -48,51 +48,24 @@ if [ ! -f /root/.claude/.credentials.json ]; then
 
   Not signed in to claude.ai — Remote Control cannot start.
   Open a terminal on this container, run `claude`, use /login, then restart it.
-  Credentials persist on the /root mount. git-sync works without this.
+  Credentials persist on the /root mount. cron-git-sync works without this.
 
 EOF
   exec sleep infinity
 fi
 
-# Both long-lived Claude processes run in tmux sessions, so they are started, restarted and
-# inspected the same way: `tmux attach -t rc` or `tmux attach -t telegram`, detach with C-b d.
-# Each session <name> runs the script session-<name>.
+# Each long-lived Claude process runs in its own tmux session under keep-alive, so they are
+# started, restarted and inspected the same way: `tmux attach -t <name>`, detach with C-b d.
+# Session <name> runs the launcher claude-session-<name>, which owns its own preconditions.
 export TERM="${TERM:-xterm-256color}"
-keep-alive rc session-rc
 
-# The Telegram session needs the channel plugin installed (a one-time step, see
-# docs/container.md) and the bot token. The plugin polls in every Claude process that can see
-# the token, so the token is never stored where the plugin would find it on its own.
-telegram_ready() {
-  [ -n "${COACH_TELEGRAM_BOT_TOKEN:-}" ] \
-    && grep -qs "telegram@claude-plugins-official" /root/.claude/plugins/*.json
-}
-if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] || [ -f /root/.claude/channels/telegram/.env ]; then
-  echo "WARNING: a Telegram bot token is visible to every Claude process (TELEGRAM_BOT_TOKEN or" >&2
-  echo "         /root/.claude/channels/telegram/.env). Each one would poll the bot and steal the" >&2
-  echo "         Telegram session's messages. Use COACH_TELEGRAM_BOT_TOKEN only." >&2
-fi
-if telegram_ready; then
-  keep-alive telegram session-telegram
-elif [ -n "${COACH_TELEGRAM_BOT_TOKEN:-}" ]; then
-  cat <<'EOF'
-
-  COACH_TELEGRAM_BOT_TOKEN is set but the Telegram channel plugin is not installed, so the
-  Telegram session is not running. Install it once from a container terminal (see
-  docs/container.md, "Telegram"), then restart the container.
-
-EOF
-fi
-
-# PID 1 (under tini) only supervises. If the rc session disappears, the tmux server is gone, and
-# exiting lets `restart: unless-stopped` bring the whole container back.
+# PID 1 (under tini) only supervises: keep-alive is a no-op for a live session, so this just
+# recreates any session that was killed.
 trap 'tmux kill-server 2>/dev/null; exit 0' TERM INT
-while tmux has-session -t '=rc' 2>/dev/null; do
-  if telegram_ready && ! tmux has-session -t '=telegram' 2>/dev/null; then
-    keep-alive telegram session-telegram
-  fi
+while true; do
+  for name in rc telegram; do
+    keep-alive "${name}" "claude-session-${name}"
+  done
   sleep 30 &
   wait $!
 done
-echo "tmux session rc is gone; exiting so the container restarts" >&2
-exit 1

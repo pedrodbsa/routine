@@ -33,7 +33,7 @@ For training and nutrition data, pull live from the Garmin MCP. Never rely on ma
 runs — every run is on Garmin, and the recovery markers there are ground truth.
 
 Git is permitted in this repo without asking: commit protocol, logbook, memory, and report
-changes as units of work complete. Pushing is handled by the `git-sync` schedule on the
+changes as units of work complete. Pushing is handled by the `cron-git-sync` schedule on the
 server; do not push from a session unless asked.
 
 > Read `protocols/current-status.md` first before generating any plan from this stack.
@@ -84,7 +84,7 @@ design specs and runbooks in `docs/`
 ## Workflow
 
 The athlete talks to the coach on **Telegram**. The container on the server runs a Telegram
-session, and a `coach-tick` schedule starts the unattended runs and sends their output there.
+session, and a `cron-coach-tick` schedule starts the unattended runs and sends their output there.
 Remote Control (claude.ai or the Claude app) and the desktop remain available for
 troubleshooting and heavier work. They reach the same repo, so they see the same coach. Setup and
 architecture: `docs/container.md`.

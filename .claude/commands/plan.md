@@ -13,7 +13,7 @@ effort: high
 /plan scheduled
 ```
 
-`/plan scheduled` is the unattended morning run that `coach-tick` starts once Garmin
+`/plan scheduled` is the unattended morning run that `cron-coach-tick` starts once Garmin
 has the night's sleep record. It follows § Scheduled Mode below instead of stopping
 for review.
 
@@ -84,7 +84,7 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
 
 ## Scheduled Mode
 
-`/plan scheduled` runs headless (`claude -p`) from the container's `coach-tick`
+`/plan scheduled` runs headless (`claude -p`) from the container's `cron-coach-tick`
 schedule, and its final message is sent to the athlete on Telegram as the morning
 plan. Nobody is there to approve it, so the file it writes is a **draft**: the
 athlete corrects it by replying on Telegram, and the Telegram session edits the

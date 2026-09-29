@@ -164,7 +164,7 @@ in conversation is a defect.
    race dates and targets, phase boundaries, calorie tiers and floors (the macros
    must sum), HR anchors and volume bands. Fix any disagreement before finishing.
 7. Set `Last verified` in `current-status.md` to today, then commit (git is
-   permitted in this repo). Do not push; the `git-sync` schedule handles that.
+   permitted in this repo). Do not push; the `cron-git-sync` schedule handles that.
 
 ### 7. Close
 

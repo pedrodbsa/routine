@@ -16,7 +16,7 @@ effort: medium
 
 `/recap` closes the day's record from Garmin so that a bad day still leaves evidence
 rather than a hole (consult 2026-09-29, `memory/project-workflow-automated-record.md`).
-`coach-tick` runs it headless every evening at 21:30, **whether or not the day had a
+`cron-coach-tick` runs it headless every evening at 21:30, **whether or not the day had a
 plan**, and sends its final message to the athlete on Telegram. The athlete can also
 ask for it from Telegram at any time. It never touches Garmin Connect and never edits
 `protocols/`.

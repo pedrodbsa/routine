@@ -24,14 +24,14 @@ Design facts that are easy to get wrong later:
   if a credential ever appears in origin. **Host git work goes in `../files/repo`, never
   `code/`.** Agent state (credentials, trust record, Garmin token cache) lives on
   `../files/home`.
-- **Auto Deploy must stay off.** The `git-sync` schedule pushes to `main` every ~10 minutes;
+- **Auto Deploy must stay off.** The `cron-git-sync` schedule pushes to `main` every ~10 minutes;
   with Auto Deploy on, each push redeploys and kills the session. Dokploy's "on tag" trigger
   type would avoid this in theory but has an open bug (Dokploy#3710) where pushes still fire.
 - **Remote Control needs a full-scope claude.ai login** — not an API key, not
   `CLAUDE_CODE_OAUTH_TOKEN`. It cannot be supplied by env var, so first boot parks the container
   and waits for an interactive `/login` in the container terminal. Credentials persist on the
   `../files/home` mount (`/root`).
-- **Pushes come from a Dokploy schedule** running `git-sync` in the container, not from Claude.
+- **Pushes come from a Dokploy schedule** running `cron-git-sync` in the container, not from Claude.
   That is why `git push` can stay behind an approval prompt without stranding work.
 - The Garmin password moved out of `.mcp.json` into Dokploy's Environment tab via `${VAR}`
   expansion, and the old one was rotated — it is still in git history.
@@ -39,7 +39,7 @@ Design facts that are easy to get wrong later:
 - **Since 2026-09-29 the container also runs the Telegram coach.** Both long-lived Claude
   processes run in tmux sessions under a restart loop (`rc` = `claude remote-control`,
   `telegram` = `claude --channels` with the Telegram plugin), with tini as PID 1. A second
-  Dokploy schedule runs `coach-tick` every 10 minutes for the scheduled `/plan`, `/recap` and
+  Dokploy schedule runs `cron-coach-tick` every 10 minutes for the scheduled `/plan`, `/recap` and
   `/report`. See [[project-workflow-automated-record]] and [[reference-telegram-one-poller]].
 
 See also [[feedback-git-allowed-this-project]] and [[reference-repo-relevant-parts]].
