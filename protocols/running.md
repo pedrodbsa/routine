@@ -35,9 +35,9 @@ The Garmin watch only offers a 5-zone HR model (no native lactate-threshold anch
 - Easy = RPE 3-4 and full conversation.
 - If RPE exceeds 5, slow down even if HR looks acceptable.
 - Recovery jogs run **~135–145 bpm** — this athlete can't jog below ~130 (Zone 1 is walk-only), so don't chase a sub-133 "recovery jog" that doesn't exist for this physiology. Govern recovery by easing effort and letting HR fall, not by a walk-level number.
-- **Weekly treadmill control run (2026-06-12; protocol ratified 2026-09-07):** one of the week's easy runs is done on the treadmill under fixed conditions — **5.0 km at a locked belt speed of 8.6 km/h, 1% incline, treadmill mode, COROS armband always** (an entry on any other sensor is void). The tracked number is **avg HR**, not pace — the belt fixes pace, so avg HR at fixed work is the heat-independent fitness signal. Do not raise the belt speed (it restarts the series). The original "~30 min" wording is retired: every valid entry ran ~5.0 km / ~35 min, and since avg HR accumulates drift, only fixed-distance entries are comparable. Valid series: Jul 13 **137** · Jul 27 **136**. Log it as a normal easy run; `/report` reads the avg-HR trend.
+- **Treadmill control run (2026-06-12; protocol ratified 2026-09-07; cadence set to fortnightly 2026-09-29):** every other week, one of the week's easy runs is done on the treadmill under fixed conditions — **5.0 km at a locked belt speed of 8.6 km/h, 1% incline, treadmill mode, COROS armband always** (an entry on any other sensor is void). The tracked number is **avg HR**, not pace — the belt fixes pace, so avg HR at fixed work is the heat-independent fitness signal. Do not raise the belt speed (it restarts the series). The original "~30 min" wording is retired: every valid entry ran ~5.0 km / ~35 min, and since avg HR accumulates drift, only fixed-distance entries are comparable. Valid series: Jul 13 **137** · Jul 27 **136**. Log it as a normal easy run; `/report` reads the avg-HR trend.
 - **Weekly strides slot — standing, from 2026-08-08.** One easy run per week finishes with **6 × 20 s strides**, relaxed-fast at ~5K/mile turnover, RPE 7–8, **full walk-back recovery** between each. By feel, not by HR — 20 s is far too short for HR to mean anything. Stop the set early if form fades; this is a coordination stimulus, not a conditioning one.
-  - **Why it is a standing slot and not a menu item.** Stride length at a given cadence is an *output* of force production and elastic return, not something the athlete can choose — and the Dec 12 target needs it. Sub-47 (4:42/km = 3.55 m/s) requires roughly **cadence 180 × stride 118 cm**, against the Mar 8 race's **175.9 × 113.5**. Strides move that by letting the mechanics self-organise at speed. **Do not prescribe conscious form cueing to chase the same number** — deliberately lengthening the stride means landing ahead of the centre of mass, which is a braking force. See § Running Mechanics below.
+  - **Why it is a standing slot and not a menu item.** Stride length at a given cadence is an *output* of force production and elastic return, not something the athlete can choose — and the spring 2027 sub-47 target needs it. Sub-47 (4:42/km = 3.55 m/s) requires roughly **cadence 180 × stride 118 cm**, against the Mar 8 race's **175.9 × 113.5**. Strides move that by letting the mechanics self-organise at speed. **Do not prescribe conscious form cueing to chase the same number** — deliberately lengthening the stride means landing ahead of the centre of mass, which is a braking force. See § Running Mechanics below.
   - Cost is near zero (~4 min, negligible recovery), which is exactly why it kept getting dropped: nothing that cheap ever wins an argument against time pressure. It was programmed on 2026-06-23 and then vanished from every subsequent week.
   - **Do not stack it on a quality day or the day before one.** Its natural home is the easy run furthest from either quality session.
   - This is *not* the same thing as the Q2 survivability conversion (§ Weekly Rules) — that one replaces a missed quality session. This slot runs in a normal, fully-delivered week as well.
@@ -58,8 +58,11 @@ Everything through the May race block is complete (Base → Quality Reintro → 
 | ---------------------- | --------------- | ------------------------------------------------------- | ----------- |
 | Cut Block 1            | May 30 - Jul 5  | 2 quality/wk (1 harder + 1 lighter), 10K pace from wk 4 | 35-42 km/wk |
 | Cut Block 2 — extended (DONE)    | Jul 6 - Sep 20  | 2 quality/wk, synchronized deload every 3rd wk. Cut hard stop Sep 20 | 35-40 km/wk |
-| Reverse + Build (CURRENT) | Sep 21 - Oct 25 | Volume build at rising calories; 2 quality/wk; **Oct 25 B-race = hard supported hill effort** (counts as the week's harder quality, 2-3 easy days before, no full taper) | 40-50 km/wk |
-| 10K Peak               | Oct 26 - Dec 12 | 2 quality/wk + selective VO2max, taper last ~10-14 days, **A-race Dec 12** | 45-55 km/wk |
+| Reverse (CURRENT) | Sep 21 - Oct 11 | Reverse to the Build tiers; strength restarts; Sep 28 – Oct 4 declared a re-entry week (≥30 km, not scored) | ≥30 km/wk |
+| Build | Oct 12 - Jan 4 | **Strength-led build** (redefined 2026-09-29): 4 core runs + bonus 5th, one quality on the ladder + strides + a planned progression finish ≤ every other week; **Oct 25 B-race hard effort** (that week's quality, 2-3 easy days before, no taper); Nov 2–8 trekking exempt; Dec 12 social | 32-42 km/wk |
+| Cut 3 | Jan 5 - Apr 12 | Same running shape at 0.3 kg/wk; quality held to one; long run ≤14 km | 32-42 km/wk |
+| Maintenance + spring race | Apr 13 - Jun 14 | **Spring 10K A-race, sub-47** (race TBD by Feb 1); 3-4 week sharpen with 10K-pace work, short taper | 35-45 km/wk |
+| Lean-out (optional) | Jun 15 - Jul 26 | Running held; autumn 2027 10K (45:00 stretch) is built after Aug 1 | 32-42 km/wk |
 
 ## Race Schedule
 
@@ -67,8 +70,12 @@ Everything through the May race block is complete (Base → Quality Reintro → 
 | ---------------- | --------------- | ------------ | ---------- | ---------------------------------------- |
 | May 17 (Sun)     | 10K (road)      | Ansião 10K   | Done       | 52:16 / 5:13/km, avg HR 176 (raced hard) |
 | May 24 (Sun)     | 14.7 km (trail) | Anadia trail | Done       | 2:07:42, avg HR 172, 413 m climb         |
-| **Oct 25 (Sun)** | **10K (hilly)** | TBD          | **B-race** | **Hard supported effort inside the build** — race-effort hill run, no PR expectation on this course (calendar revised 2026-07-31) |
-| **Dec 12 (Sat)** | **10K**         | **S. Silvestre Coimbra, 18:30 (evening)** | **A-Race** | **Sub-47:00 (stretch 46)** — 2025 result ~54:00. Rides on the Phase 4-5 scoreboard (VO2max proxy ≥47 / ≤50:30, control-run trend, quality execution at HR) until the Phase 6-7 build validates it |
+| **Oct 25 (Sun)** | **10K (hilly)** | entered, name TBD | **B-race** | **Hard supported effort inside the build** — even effort at ~172–176 avg HR, no blow-up on the climbs; counts as that week's quality; no taper, no heavy Legs in the 3 days before. Recorded as a fitness read, not scored against a time |
+| **Dec 12 (Sat)** | **10K**         | S. Silvestre Coimbra, 18:30 | **Social (C)** | Leisure run with friends (athlete, 2026-09-29). **Mode decided by Dec 5:** group pace (= that week's long run) or a solo hard effort (3-day easy lead, recorded as a read; evening-race logistics in `protocols/archive/running-dec12-arace-plan.md`). No taper, no target |
+| **Spring 2027** (late Apr / May) | **10K** | **TBD by Feb 1** | **A-race** | **Sub-47:00** (4:42/km) at ~70–71.5 kg, raced at maintenance after Cut 3. Checkpoint ~Apr 12: confirm sub-47 or re-anchor to sub-48 on session evidence |
+| Autumn 2027 | 10K | TBD | A-race | **45:00 stretch** (4:30/km) — needs LT2 pace ~5:00 → ~4:35 and a year of consistent 40+ km weeks; the spring result decides |
+
+**Garmin 10K prediction milestones — a motivation line, never a governor (2026-09-29):** ≤50:30 by Oct 18 · ≤49:30 by Dec 1 · ≤48:30 by Apr 1. A miss triggers a look at volume in the report and nothing else. The predictor undershoots the sessions by ~1–2 min (Sep 2026: prediction 51:00 against threshold work reading ~48:00–49:30).
 
 ## Workout Types
 
@@ -107,7 +114,7 @@ All sub-T sessions target **152–165 bpm** (≈2.5–3.5 mmol/L, between LT1 14
 ### 10K-Pace Intervals
 
 - **Governor:** HR/effort, not pace. Run reps at 168-174 bpm (around LT2 172) at RPE 8-9.
-- **Pace:** currently ~4:55-5:05/km — current 10K race pace (≈5:00/km) sits right at LT2. Goal pace 4:42/km (sub-47) is a **convergence target**: the pace earned at the same HR as fitness rises, not a number to force from day one. Forcing 4:42 now drives HR into the VO2 zone (176+) and turns this into a VO2 session rather than threshold work.
+- **Pace:** currently ~4:55-5:05/km — current 10K race pace (≈5:00/km) sits right at LT2. Goal pace 4:42/km (sub-47, spring 2027) is a **convergence target**: the pace earned at the same HR as fitness rises, not a number to force from day one. Forcing 4:42 now drives HR into the VO2 zone (176+) and turns this into a VO2 session rather than threshold work.
 - **Structure:** 6-8x1 km or 4-5x1.5 km with 60 sec jog
 - **RPE:** 8-9
 - Introduce in Cut Block 1 (from week 4). This is the core 10K-specific session.
@@ -152,8 +159,15 @@ Scheduling is fully flexible across the week (Thursday no-running rule retired 2
 - **Q2 survivability rule (2026-06-12):** the second quality session has structural attrition — when a session is missed every week, the schedule is wrong, not the athlete. On any compromised week (readiness flags, family disruption, time pressure), Q2 converts to **6×20 s strides or 6×10-15 s hill sprints appended to an easy run** instead of being skipped. A 10-minute quality touch that happens beats a 40-minute session that doesn't. This conversion counts as Q2 completed for compliance.
 - **Phase 5:** cap volume at 40 km/week. If 7-day HRV average drops >10% below baseline, downgrade the lighter quality session of the week to an easy aerobic run. **"Baseline" defined 2026-09-07:** Garmin's **balanced-low bound** of the athlete's live HRV band (e.g. 65 on a 65–93 band) — the reading the stack has used consistently since Aug 12. Not the band midpoint. The bound moves as Garmin recalibrates; read it live each morning.
 - **Phase 5 deload weeks:** every 3rd week reduce run volume 15-20% and keep only one quality session.
-- **Phase 6 (Reverse + Build, Sep 21 - Oct 25):** two quality sessions per week, volume climbing 40-50 km as calories reverse to maintenance. The Oct 25 B-race replaces that week's harder quality — 2-3 easy days before it, normal week after 48-72 h of easy recovery.
-- **Phase 7 (10K Peak, Oct 26 - Dec 12):** keep two quality sessions per week, add selective VO2max, taper the last ~10-14 days into Dec 12.
+- **Phases 6-10 (from Sep 21; redefined 2026-09-29 — body comp > run fitness > racing):** the week is **four core runs plus a bonus fifth**, sized to the athlete's stated capacity (4–5 runs + 3 lifts), not to an ideal template:
+  1. **One quality session** on the sub-T → threshold → 10K-pace ladder (§ Quality Session Selection). The Oct 25 B-race replaces it that week — 2-3 easy days before, normal week after 48-72 h easy.
+  2. **One long run, 12-16 km** (≤14 km in Cut 3), cap 142, drift ceiling 145. A **progression finish only when planned**, at most every other week; it counts as the week's second quality. An unplanned fast finish is a breach of the easy contract, not a bonus.
+  3. **One easy run with the standing strides slot** (outdoor).
+  4. **One easy run = the treadmill control run, fortnightly** (5.0 km at 8.6 km/h, 1% incline, COROS armband), alternating with a second outdoor easy + strides on the other weeks. Three entries before any read.
+  5. **Bonus fifth easy run** (5-7 km) when the week has room. It is the first thing dropped.
+  Volume **floor 30 km, band 32-42**. Heavy rain: the treadmill is the fallback, not the plan — a rain-shortened week that still hits 30 km is fine. **No second full quality session** while body composition ranks first; the strides and the planned progression finish are the second stimulus. The 72 h quality-spacing and ≥36 h Legs-before-quality rules stand. **Drop order on a compromised week** (athlete's call: run over Legs): bonus run → strides → Legs → quality (to easy) → long run shortened to 10 km → Push and Pull merged into one upper session.
+- **Phase 9 (Maintenance + spring race, Apr 13 - Jun 14 2027):** the same shape, with a 3-4 week sharpen (10K-pace reps weekly, one short VO2 touch) and the § Race-Week Running Pattern into the spring 10K. No taper longer than 7 days.
+- **Scoreboard from Phase 6 onward (replaces the Phase 4-5 running success metrics):** (1) weekly volume ≥30 km and ≥4 runs, (2) the quality session completed at target HR, (3) the control-run avg-HR trend (fortnightly, ≥3 bpm across three entries is real), (4) long-run pace-at-HR on matched routes, (5) the Garmin prediction milestone line (§ Race Schedule). Easy pace-at-HR is back on the scoreboard from Sep 21.
 
 ## Heat and Weather Adaptation
 
@@ -201,24 +215,15 @@ Acute km this week / mean of the **four preceding weeks** (the acute week is not
 
 ## Taper and Race Execution
 
-### 10K A-Race — S. Silvestre Coimbra (Dec 12, 18:30 start)
+### 10K races under the 2026-09-29 stack
 
-- Pacing: start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10 (stretch pacing: 4:36-4:39 if fitness supports it). Reference: 2025 result ~54:00; current prediction 51:00 (Sep 29); threshold sessions read ~48:00–49:30 (see `logbook/2026-09/report.md`); re-test at the Oct 25 B-race.
-- No in-race fueling needed
-- Final 10 days: reduce volume, not intensity. Keep one short 10K-pace touchpoint each week.
+- **Oct 25 (B, hard effort):** even effort at ~172–176 avg HR; the climbs are run by effort, not pace; 2-3 easy days before, no taper; no heavy Legs in the 3 days before. Pre-race sodium + carbs per `nutrition.md` § Race and Long-Effort Fueling. Recorded as a fitness read.
+- **Dec 12 (social):** no taper, no target. If the athlete chooses a solo hard effort (decision due Dec 5), the evening-start logistics in `protocols/archive/running-dec12-arace-plan.md` apply verbatim — they are the only part of the retired A-race plan that is reusable.
+- **Spring 2027 (A, sub-47):** pacing template — start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10. Set the final pacing from the sharpen block's 10K-pace reps, not from this line. Race-week pattern below.
 
-**Evening-start logistics (18:30 — this is not a morning race day):**
+### Quality-Day Warm-Up Upgrade (from Phase 6)
 
-- **Fueling:** normal carb-forward breakfast and lunch (this is where the race-day carbs live, not a race breakfast); light familiar meal ~15:00-15:30 (~1 g/kg carbs, low fiber/fat); optional 20-30 g easy carbs ~17:30. Nothing new on race day.
-- **Caffeine: ~230 mg ~17:45-18:00.** This is a deliberate exception to the ~10-11:00 caffeine cutoff — accept the degraded post-race night as a known one-off cost; do not read the Dec 12-13 sleep data as a signal.
-- **Hydration:** sip through the day to clear urine by mid-afternoon (chronic under-hydration flag); ~500 mL with sodium 60-90 min pre-start, then stop — avoid a full bladder at the line.
-- **Conditions:** December evening in Coimbra ≈ 8-12 °C, full dark. Warm-up 15-20 min jog + 4-6 strides, finishing as close to the start as possible; keep a warm layer on until the last minutes. Cold start favors a slightly longer warm-up, not a faster opening km.
-- **Day structure:** stay off the legs in the afternoon; a normal short morning shakeout (10-15 min + 2 strides) is fine and helps burn off race-day nerves.
-- Practice the full evening-race day once in Phase 7 (a Saturday ~18:30 quality session run on the race-day eating schedule).
-
-### Phase 6-7 Quality-Day Warm-Up Upgrade
-
-On the 2 weekly quality sessions from Phase 6 (Sep 21) onward, extend the Daily 5 with one short power-focused drill after the jog warm-up:
+On the weekly quality session from Phase 6 (Sep 21) onward, extend the Daily 5 with one short power-focused drill after the jog warm-up:
 
 - Broad Jumps - 3x5, or
 - Power A-Skips - 3x20 m
@@ -249,7 +254,7 @@ Keep the contacts crisp and low-fatigue. This is for stiffness and elastic retur
 
 ## Longer-Race Fueling Reference
 
-Generic reference for any future HM or trail race around 90-120 minutes. None is currently on the calendar — the A-race is a 10K, which needs no in-race fuel — so this is kept only for if a longer event is added.
+Generic reference for any future HM or trail race around 90-120 minutes. None is currently on the calendar — every planned race is a 10K, which needs no in-race fuel — and an HM before June 2027 was explicitly deferred at the 2026-09-29 consult ("likely to change"; revisit at the Jan 4 checkpoint, since it would change the volume band and tiers inside the cut).
 
 - Carb load 36-48 h pre-race: 6-8 g/kg/day carbohydrate
 - Race breakfast 3-4 h pre-start: 1-1.5 g/kg carbohydrate

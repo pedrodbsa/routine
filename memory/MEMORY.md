@@ -13,7 +13,7 @@ See `coaching-lessons.md` for details.
 
 - 10K race: **March 8, 2026** (4 Estações Coimbra) — result: ~49:57 (PR, prev 52:12)
 - HM A-race: **March 29, 2026** (Meia Maratona de Fátima)
-- Post-HM races: 10K May 17, Trail 14.7 km May 24 (not 21K — corrected), ~~10K Jun 20~~ (benchmark dropped 2026-06-16), 10K Oct 25 (**B-race** — hilly, run as hard supported effort, demoted 2026-07-31), **10K Dec 12 (A-RACE, sub-47/stretch 46 — S. Silvestre Coimbra, 18:30 EVENING start; 2025 result ~54:00)**. Cut hard stop Sep 20 → reverse diet Sep 21 → maintenance through Dec 12 → cut resumes post-race
+- Post-HM races: 10K May 17, Trail 14.7 km May 24 (not 21K — corrected), ~~10K Jun 20~~ (benchmark dropped 2026-06-16), **10K Oct 25 (B-race — hilly, hard supported effort by HR)**, **10K Dec 12 (SOCIAL — S. Silvestre Coimbra 18:30, leisure run with friends; demoted from A-race 2026-09-29; mode decided by Dec 5)**, **spring 2027 10K (A-race, sub-47, TBD by Feb 1)**, autumn 2027 10K (45:00 stretch). Phases: Reverse Sep 21–Oct 11 → **Build Oct 12–Jan 4** (+300 tiers) → **Cut 3 Jan 5–Apr 12** (0.3 kg/wk) → maintenance + spring race → optional lean-out → **Aug 1 2027 scorecard**. See [[project-objective-athletic-summer-2027]]
 - Always read `protocols/current-status.md` first before any plan generation
 - Daily files: `logbook/YYYY-MM/YYYY-MM-DD.md` (plan + log in one file). Monthly reports live alongside as `logbook/YYYY-MM/report.md`. Reorg 2026-06-15: flat `plans/` + top-level `reports/` folded into per-month `logbook/` (earlier history: `days/` → `plans/`)
 - **Easy ceiling: 142 bpm all environments** (lab-prescribed, FCDEFUC 2026-04-28). LT1 145, LT2 172. Drift cap on long runs ≤145.
@@ -22,6 +22,15 @@ See `coaching-lessons.md` for details.
 - **Lab-tested LT2: 172 bpm @ 5:00/km** (was assumed ~170, close). Sub-T targets = 156-168 (91-98% LT2).
 - **Always pull Garmin data for run logging** — never rely on manual input for runs; athlete tracks all runs on Garmin
 - **Legs session moved to Mon Feb 16** — skipped Sun due to time, not fatigue. Pair with recovery run.
+
+## Objective (live)
+
+- [Athletic by summer 2027](project-objective-athletic-summer-2027.md) — **read first**: body comp > run fitness > racing, sleep governs; Aug 1 2027 scorecard (~15% / ~70–71.5 kg / four upper-body load markers / spring sub-47 / autumn 45:00 stretch); Dec 12 is social; consult record `logbook/2026-09/consult-2026-09-29.md`
+- [Motivation = running numbers](user-motivation-running-numbers.md) — keep the prediction line, control run and pace-at-HR visible every report even though body comp ranks first
+- [Run over Legs; Legs compressed](feedback-run-over-legs-legs-bulky.md) — drop order bonus run → strides → Legs → quality → long → upper merged; Legs is the 3-slot ~35-min version
+- [Strength tripwire rejected](feedback-strength-tripwire-rejected.md) — 3/3 Legs/Pull/Push written, delivery flagged only, never auto-downshifted; show commitment and delivered count side by side
+- [Lower tiers as social buffer](feedback-lower-tiers-as-social-buffer.md) — build at +300 not +400; 1–2 social evenings/wk with alcohol are a measured term in the cut derivation, never a reason to shrink plan days
+- [Automated daily record](project-workflow-automated-record.md) — scheduled morning /plan + evening reconciliation, one Telegram line/day, reason-less miss = breach; **schedules OPEN, coach, by Oct 5**
 
 ## Workflow Preferences
 
@@ -78,7 +87,7 @@ See `coaching-lessons.md` for details.
 
 ## Post-HM Plan (Apr-Oct 2026)
 
-- [Post-HM Holistic Plan](post-hm-plan.md) — 30-week concurrent cut + 10K peak, Approach B (NOTE: targets need recalc per Bod Pod data)
+- [Post-HM Holistic Plan](post-hm-plan.md) — **SUPERSEDED 2026-09-29** by the live objective above; history only
 - [Tracking & Adherence Feedback](feedback-tracking-adherence.md) — UPDATED Jun 18: athlete weighs food & follows the plan on non-social days, doesn't log digitally; stall = social-day surplus, not non-adherence
 - [Mythos Ligeiro yogurt](reference-mythos-ligeiro-yogurt.md) — athlete's staple Greek yogurt is protein-weak (5.3 g P/100 g); won't carry the protein floor alone — add whey
 - [No breakfast before a *quality* run](feedback-no-breakfast-before-run.md) — conditional on intensity: banana + coffee at most before quality/long, but easy runs tolerate breakfast fine (over-generalisation corrected 2026-08-03). On a pre-lunch double, breakfast is NEVER deleted — it sits between run and lift as the lift's fuel

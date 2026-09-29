@@ -49,7 +49,7 @@ Strength supports the running plan. Running quality stays protected. Scheduling 
 | Wed | Easy 5-6 km or rest | Legs (PM, after lunch) | Sole after-lunch session; ≥36 h before Fri Q2 ✓ (a Thu-PM Legs slot violates that rule — layout corrected 2026-07-31) |
 | Thu | Easy 5-6 km       | Upper Pull              | Pre-lunch double             |
 | Fri | Quality session 2 | --                      | No same-day lifting          |
-| Sat | Easy 5-6 km       | Arms/shoulders (short, standing) | Pre-lunch; first casualty on compressed weeks |
+| Sat | ~~Easy 5-6 km~~ rest | ~~Arms/shoulders~~ | Saturday is a standing rest day (`[[feedback-saturday-is-rest-day]]`); the arms session was retired 2026-09-29 — this column is a stale reference layout |
 | Sun | Long run 12-14 km (P4) / up to 16 km (P5) | --      | Fueled as quality day. P4 long run capped at 12-14 km to keep it ≤~35-40% of a ~35-42 km week (see running.md Phase 4 volume note). |
 
 Session timing follows the pre-lunch default (see `## Double-Day Guidelines`): upper lifts and easy runs cluster before lunch; Legs is the one PM session. Weekday placement remains flexible — the columns are a reference layout, not a constraint.
@@ -58,17 +58,25 @@ Of the two quality sessions per week, one must be the harder (10K-pace or sub-T)
 
 Legs day requires ≥36 h before the next quality run and should not stack on the same day as a hard run.
 
-### Phase 6 - Reverse + Build (Sep 21 - Oct 25)
+### Phases 6-10 — Reverse, Build, Cut 3, Maintenance, Lean-out (Sep 21 2026 – Jul 26 2027; redefined 2026-09-29)
 
-3 sessions/week (Push, Pull, Legs) at full volume — calories are rising, so this is the block where the retention volume starts paying as growth. No heavy legs in the 3 days before the Oct 25 B-race effort.
+**Legs / Pull / Push, 3 sessions every week, in every phase** — the athlete's stated commitment at the 2026-09-29 consult ("I want 3 workouts per week, same split"). Delivery is **flagged only** by `/report`; there is no automatic downshift (the coach's two-week tripwire was rejected and is recorded in `logbook/2026-09/consult-2026-09-29.md`). The strength taper that the retired Dec 12 A-race plan carried (3 → 2 → 1) is gone; the only race-driven exception is **no heavy Legs in the 3 days before a hard effort** (Oct 25; the spring 10K).
 
-### Phase 7 - 10K Peak (Oct 26 - Dec 12)
+**Reference week** (layout, not a constraint — Saturday is rest, `[[feedback-saturday-is-rest-day]]`):
 
-| Week Range              | Strength Schedule            | Notes                     |
-| ----------------------- | ---------------------------- | ------------------------- |
-| Weeks 1-5 (Oct 26-Nov 29) | 3 sessions: Push, Pull, Legs | Full schedule             |
-| Week 6 (Nov 30-Dec 6)   | 2 sessions: Push + Pull only | Drop legs                 |
-| Race week (Dec 7-12)    | 1 light upper session        | RPE 5 pump only           |
+| Day | Run | Strength | Notes |
+| --- | --- | --- | --- |
+| Mon | Easy — treadmill control run (fortnightly) or outdoor easy + strides | **Push** | One G1 trip, back-to-back |
+| Tue | Quality | — | No same-day lifting |
+| Wed | — | **Legs (PM)** | Compressed 3-slot session, ~35 min; ≥36 h before any quality |
+| Thu | Bonus easy 5-7 km if time | **Pull** | Pre-lunch double when the run happens |
+| Fri | Easy + strides (or rest if the bonus ran) | — | |
+| Sat | Rest | — | Standing |
+| Sun | Long 12-16 km | — | Planned progression finish ≤ every other week |
+
+**Build (Oct 12 – Jan 4):** upper body at full hypertrophy volume and progressive overload at the +300 tiers; Legs on the running-optimised spec. **Cut 3 (Jan 5 – Apr 12):** upper at retention volume (drop the last set of each accessory), same split; loads held are the lean-mass instrument. **Maintenance and lean-out:** as the build.
+
+**Drop order on a compromised week** (athlete's call — run over Legs): bonus run → strides → **Legs** → quality (to easy) → long run shortened to 10 km → Push and Pull merged into one upper session. Never below one upper session and one run.
 
 ## Rest-Day NEAT — Incline Walk (Cut Blocks, from 2026-06-18)
 
@@ -95,20 +103,26 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 ## Strength Focus
 
-### Cut Phases (Apr 13 - Sep 20)
+### Cut Phases (4-5, Apr 13 - Sep 20 2026 — historical; the retention principles carry into Cut 3)
 
-- Upper-body objective during the cut: **retention first, growth where it comes** (re-stated 2026-07-31). A 400+ kcal deficit plus 35-40 km/wk running does not support growth-grade volume; measurable hypertrophy is a post-reversal deliverable (Phase 6+, from Sep 21 at maintenance calories). The templates hold every small muscle group (biceps, triceps, side delts, rear delts) at **~6-9 direct sets/week** — the evidence-based retention band in a deficit — via the accessory slots below plus the standing arms/shoulders session. **Activation: first full week at the expanded volume is Aug 3+, aligned with the Aug 4 calorie checkpoint — do not stack the extra sets on the hot trim.**
+- Upper-body objective during the cut: **retention first, growth where it comes** (re-stated 2026-07-31). A 400+ kcal deficit plus 35-40 km/wk running does not support growth-grade volume; measurable hypertrophy is a post-reversal deliverable (Phase 6+, from Sep 21 at maintenance calories). The templates hold every small muscle group (biceps, triceps, side delts, rear delts) at **~6-9 direct sets/week** — the evidence-based retention band in a deficit — via the accessory slots below (the standing arms/shoulders session this paragraph used to reference was retired 2026-09-29 — never delivered). **Activation: first full week at the expanded volume is Aug 3+, aligned with the Aug 4 calorie checkpoint — do not stack the extra sets on the hot trim.**
 - **Legs are explicitly not a hypertrophy target** (standing decision 2026-06-12, athlete call): genetically well-developed legs, no added size wanted. Leg training exists for force production, running economy, and structural maintenance — see `## Leg Day` for the running-optimized spec.
 - Upper-body work stays mostly 8-12 reps.
 - RPE stays 7-8 max on working sets (upper). Leg working sets stay at RIR 2-3 — never to failure.
 
-### Build + Peak Phases (Sep 21 - Dec 12)
+### Build, Maintenance and Lean-out Phases (7, 9, 10 — from Oct 12 2026)
 
-- Phase 6 (Sep 21 - Oct 25) and Phase 7 weeks 1-5: full hypertrophy for upper body at maintenance calories, progressive overload; legs stay on the running-optimized spec
-- Phase 7 week 6: push + pull only
-- Race week (Dec 7-12): one light upper pump session
+- Upper body: **full hypertrophy volume and progressive overload** at the +300 plan-day tiers — this is the block that has to deliver the Aug 1 2027 load markers (bench 60 × 8, OHP 35 × 8, lat pulldown 130 × 8, bench dip +25 × 10; `strength-exercises.md`). "Athletic, not bulky" is the brief: arms, delts, chest and back grow; legs do not.
+- Legs stay on the running-optimised spec, compressed to three slots (§ Leg Day).
+- No strength taper for any race except **no heavy Legs in the 3 days before a hard effort**.
 
-## Leg Day — Running-Optimized (re-specified 2026-06-12)
+### Cut 3 (Phase 8, Jan 5 – Apr 12 2027)
+
+- Same split, **retention volume**: drop the last set of each accessory, keep the compounds at full sets. Loads held across the cut are the lean-mass instrument (no Bod Pod re-test — athlete's call). Loads falling on 2+ upper lifts across two sessions → +100 kcal carbs (`nutrition.md` § Phase 8).
+
+## Leg Day — Running-Optimized (re-specified 2026-06-12; compressed 2026-09-29)
+
+> **Compressed to three core slots (athlete's call, 2026-09-29 — "my legs are quite bulky"):** slots 1, 2 and 4 below are the session (~35 min). Slots 3 and 6 are optional add-ons when time allows, never a reason to skip the session. A short Legs that happens beats a long one that does not; the 6-slot version was delivered 5 times in 12 weeks.
 
 **Objective:** force production, running economy, and LBM/structural maintenance — **explicitly not hypertrophy** (athlete call: genetically well-developed legs, no added size wanted). The dose is heavy + low-rep + low-volume + explosive: this biases neural strength adaptations over fiber growth and carries the strongest evidence for running-economy improvement. Avoid the 8-15 rep near-failure zone and accessory quad volume — that is the hypertrophy stimulus this spec removes. Leg sets stop at **RIR 2-3, never failure**.
 
@@ -125,7 +139,7 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 - Stiffness and elastic return for running economy; near-zero hypertrophy stimulus. Stop the set the moment contacts lose snap.
 - This block also front-loads the Phase 6 quality-day power drills (`running.md`).
 
-**3. Single-leg pattern — stability/prehab dose**
+**3. Single-leg pattern — stability/prehab dose (optional from 2026-09-29)**
 
 - 2 x 8 reps/leg, light. This is a control and prehab slot, not a loading slot.
 - Options: Bulgarian Split Squat, Walking Lunges, Step-Ups
@@ -138,11 +152,11 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 - Calves are not trained directly: the athlete's calves are already large/disproportionate and he does not want added size (heavy-slow raises drive real calf hypertrophy). The run-relevant Achilles/calf-stiffness role this slot served is retained through the plyometric block (jumps / A-skips — elastic Achilles loading, minimal hypertrophy) plus running's own calf load.
 
-**6a. Core isometric / anti-extension**
+**6a. Core isometric / anti-extension (optional from 2026-09-29 — core lives in Push/Pull)**
 
 - 3 x 30-45 sec
 
-**6b. Core dynamic**
+**6b. Core dynamic (optional from 2026-09-29)**
 
 - 3 x 10-12 reps
 
@@ -214,15 +228,9 @@ Default training window is **before lunch** (athlete preference, standing 2026-0
 
 - 3 sets
 
-## Arms and Shoulders (standing short session, cut blocks)
+## Arms and Shoulders — retired 2026-09-29
 
-**Standing, not optional, from 2026-07-31** — ~20-25 min, pre-lunch like the other upper sessions, in Cut Blocks 1 and 2. It supplies the top-up that takes arms/delts from the ~5-6 retention-floor sets in Push/Pull to ~8-9. It remains the **lowest-priority strength session**: on a compressed week it is the first thing dropped (the compression rule below governs the big three), and it still drops same-day if Body Battery <30 at wake or sleep was <5 h.
-
-1. Lateral Raises - 3x15
-2. Rear Delt Flyes - 3x15
-3. Barbell Curls - 3x10-12
-4. Tricep Pushdowns - 3x12-15
-5. Hammer Curls - 2x12
+The standing short arms/shoulders session added on 2026-07-31 was retired at the 2026-09-29 consult: it was delivered roughly never, and in the build the Push/Pull accessory slots (triceps isolation, two biceps slots, lateral raises, face pulls) already carry arms and delts at 6-9 direct sets/week. Do not schedule it. If the athlete wants extra arm volume in the build, add a set to the existing accessory slots rather than a fourth session.
 
 ## Session Compression Priority (added 2026-07-31)
 
@@ -231,7 +239,7 @@ When a week runs short of 3/3, nothing used to say which session survives — in
 - **When the prior week ran <3/3, the current week opens with the most-overdue session type** — not with whichever slot is most convenient.
 - **Never run the same session type twice while another type is >10 days old.** The overdue one takes the slot.
 
-The standing arms/shoulders session is outside this rule — it is always the first casualty and never displaces Push/Pull/Legs.
+The standing arms/shoulders session was retired 2026-09-29. The full drop order for a compressed week (athlete's call: bonus run → strides → Legs → quality → long shortened → upper merged) lives in § Phases 6-10 above.
 
 ## Exercise Rotation Rules
 
@@ -297,7 +305,7 @@ Use this when family disruption, illness exposure, or repeated sleep loss makes 
 
 - 3 runs only: 2 easy + 1 short quality touch or steady aerobic run
 - 2 strength sessions only: 20-30 min upper/full-body minimum dose
-- No optional arms session
+- No fourth strength session of any kind
 - Calories stay at planned day type unless sleep is severely compromised, in which case use maintenance for 1-2 days
 - Exit the fallback week only after 2 nights of at least 6 h sleep and normal motivation
 

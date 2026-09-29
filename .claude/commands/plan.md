@@ -82,11 +82,14 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
 - Always be phase-aware and day-type-aware.
 - Never use a flat calorie number across the week.
 - Scheduling is fully flexible across weekdays (Thursday no-running rule retired
-  2026-05-28); Legs is the sole PM session, typically Thursday.
-- One easy run per week is the treadmill control run (2026-06-12): ~30 min,
-  HR ≤142, 1% incline, fixed conditions — see `protocols/running.md`
-  § Easy-Run Rules. When planning the week's easy runs, schedule it on the most
-  convenient easy day and label it in the plan file.
+  2026-05-28); Legs is the sole PM session, typically Wednesday (≥36 h before
+  any quality run).
+- **Week shape from 2026-09-29:** 4 core runs (quality · long · easy + strides ·
+  easy = the fortnightly treadmill control run, 5.0 km at 8.6 km/h, 1% incline)
+  plus a bonus 5th; Legs / Pull / Push 3/3; Saturday rest. See `training.md`
+  § Phases 6-10 for the reference week and the drop order. The control run
+  lands on the Monday easy slot every other week and is labelled in the plan
+  file; alternate weeks that slot is an outdoor easy + strides.
 - Long runs >90 min require banana + coffee and quality-day calories.
 - If sleep was <5 h or Body Battery <30, write a rest-day plan.
 - Rest-day plans may offer the **optional Rest-Day NEAT incline-walk block**
@@ -99,7 +102,9 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
   markers: apply the Cumulative-Load Rules in `protocols/training.md`
   § Sleep and Readiness Decision Tree. When a race or benchmark is within ~7
   days, bias the default toward freshness — rest/easy is the default day and any
-  quality must be short and specifically justified.
+  quality must be short and specifically justified. (From 2026-09-29 the only
+  hard efforts are Oct 25 and the spring 2027 10K; Dec 12 is social unless the
+  athlete decides otherwise by Dec 5.)
 - **Default discipline (symmetric).** Re-derive the session from the rules and
   data each morning; never carry forward yesterday's framing unexamined. When
   markers are green and no load rule fires, the conservative (easier) session is
@@ -142,6 +147,10 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
   down to match output** (cut carbs; hold the protein/fat floors).
 - Compute and include ACWR on Sundays, and Composite Load on Sundays when enough
   session data exists. Both go in the `## Context` section.
+- **Weigh-in and waist (2026-09-29):** the plan asks for the fasted weigh-in every
+  morning (decisions need ≥4/week) and, on Mondays, the navel waist tape. A
+  social evening planned for the day is written into the file as such and the
+  next day is planned as Rest tier (`nutrition.md` § Social Days).
 - The plan file follows `protocols/daily-template.md`. Standing daily commitments
   are referenced from `protocols/coaching.md`, not copied into the file.
 - `/plan` never uploads or schedules anything on Garmin Connect.

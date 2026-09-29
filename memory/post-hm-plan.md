@@ -1,8 +1,11 @@
 ---
 name: Post-HM Holistic Plan (Apr-Oct 2026)
-description: 30-week plan overview — beach body (21-23% BF by Aug) + 10K PR (sub-46 by Oct 25). Approach B concurrent periodization. Full spec at docs/superpowers/specs/2026-03-26-post-hm-holistic-plan-design.md
+description: "SUPERSEDED 2026-09-29 by [[project-objective-athletic-summer-2027]] — original 30-week plan (beach body + Oct 25 sub-46), kept as history only"
 type: project
 ---
+
+> **Superseded 2026-09-29.** The objective, race calendar, phases and targets below are all retired. Live objective: [[project-objective-athletic-summer-2027]]. Kept for the history of how the stack got here.
+
 
 ## Plan: Beach Ready + 10K Peak (Mar 30 – Oct 25, 2026)
 

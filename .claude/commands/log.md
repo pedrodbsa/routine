@@ -51,8 +51,10 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
 ### Body
 
 - Log weight and body-fat data to Status
-- Daily weigh-in protocol: morning, post-bathroom, pre-food
-- If 7 daily readings exist, compute the rolling average
+- Daily weigh-in protocol: morning, post-bathroom, pre-food (state, not clock)
+- Decisions need ≥4 fasted readings in the week; compute the rolling 7-day mean whenever ≥4 exist
+- Weekly navel waist tape (fasted, Monday by default) goes in `## Actuals` and the current-status Body Composition table
+- A social evening is logged with one word; the next day re-tiers to Rest (`nutrition.md` § Social Days)
 
 ### Weekly (Sundays)
 

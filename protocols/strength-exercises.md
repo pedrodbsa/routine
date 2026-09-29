@@ -5,6 +5,8 @@
 
 > ⚠ **Stale as of 2026-09-29:** no loaded session since **Aug 13 (Pull)** — Push Aug 10, Legs Aug 12 (Aug 18 banded Push only). Every working load below is ≥6 weeks old. Re-entry opens one step below the logged load (the Jul 29 "open below the band" rule); `/report` refreshes these cells from the first logged sessions back.
 
+> **Scorecard targets, Aug 1 2027 (set at the 2026-09-29 consult):** barbell bench **60 kg × 8** (from 50 × 12) · overhead press **35 kg × 8** (from 30 × 10) · lat pulldown **130 kg × 8** (from 120 × 8) · weighted bench dip **+25 kg × 10** (from +16 × 15). These four rows are the lean-mass instrument now that no Bod Pod re-test is planned; loads held through Cut 3 (Jan 5 – Apr 12) count as lean mass retained. Legs stay non-hypertrophy — no leg load target.
+
 ## Gyms & Equipment
 
 Three locations. The **Gym** column on each exercise says where it can be trained.
