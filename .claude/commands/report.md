@@ -16,7 +16,7 @@ effort: high
 
 `/report scheduled` is the unattended weekly run that `coach-tick` chains after the
 Sunday evening `/recap`. It follows § Scheduled Mode below. It replaces the cloud
-routine that used to run `/report`.
+routine "Weekly /report reminder", which only reminded the athlete to run it by hand.
 
 ## Function
 

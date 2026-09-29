@@ -54,7 +54,7 @@
 | Item | Owner | Source |
 | --- | --- | --- |
 | Agree the isotretinoin target duration and stop plan with the dermatologist | athlete | memory/project-isotretinoin-course.md |
-| Retire the cloud `/report` routine once the first scheduled Sunday report reaches Telegram | coach | 2026-09-29 automation |
+| Disable the cloud routine "Weekly /report reminder" (trig_01FHEGq1csjRWNEzYWo2DJw3) once the first scheduled Sunday report reaches Telegram | coach | 2026-09-29 automation |
 
 ## Done
 
