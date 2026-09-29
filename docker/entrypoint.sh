@@ -35,16 +35,31 @@ EOF
   exec sleep infinity
 fi
 
+# The Telegram channel plugin is installed at user scope but disabled there, before any session
+# starts: another Claude process that loaded it would poll the bot or, without the token, fail it
+# and make the Telegram session skip it. claude-session-telegram enables it for itself. Each step
+# is a no-op once done.
+sessions=(rc)
+if [ -n "${COACH_TELEGRAM_BOT_TOKEN:-}" ]; then
+  if claude plugin marketplace add anthropics/claude-plugins-official >/dev/null \
+    && claude plugin install telegram@claude-plugins-official --scope user >/dev/null \
+    && claude plugin disable telegram@claude-plugins-official --scope user >/dev/null; then
+    sessions+=(telegram)
+  else
+    echo "WARNING: Telegram plugin setup failed; no telegram session. Restart to retry." >&2
+  fi
+fi
+
 # Each long-lived Claude process runs in its own tmux session under util-keep-alive, so they are
 # started, restarted and inspected the same way: `tmux attach -t <name>`, detach with C-b d.
-# Session <name> runs the launcher claude-session-<name>, which owns its own preconditions.
+# Session <name> runs the launcher claude-session-<name>.
 export TERM="${TERM:-xterm-256color}"
 
 # PID 1 (under tini) only supervises: util-keep-alive is a no-op for a live session, so this just
 # recreates any session that was killed.
 trap 'tmux kill-server 2>/dev/null; exit 0' TERM INT
 while true; do
-  for name in rc telegram; do
+  for name in "${sessions[@]}"; do
     util-keep-alive "${name}" "claude-session-${name}"
   done
   sleep 30 &

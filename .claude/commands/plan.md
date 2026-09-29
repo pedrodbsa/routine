@@ -11,11 +11,12 @@ effort: high
 /plan
 /plan [schedule constraints]
 /plan scheduled
+/plan adjust <change>
 ```
 
 `/plan scheduled` is the unattended morning run that `cron-coach` starts once Garmin
 has the night's sleep record. It follows § Scheduled Mode below instead of stopping
-for review.
+for review. `/plan adjust` changes a plan that is already written (§ Adjust Mode).
 
 ## Function
 
@@ -118,6 +119,33 @@ file. Everything in § Function and § Requirements applies, with these changes:
 
 `/plan scheduled` still never touches Garmin Connect: "ok" on Telegram runs
 `/garmin` in the Telegram session, where the upload is approved with a button.
+
+## Adjust Mode
+
+`/plan adjust <change>` changes an already written plan for one request from the
+athlete, usually sent on Telegram: "swap the run to tomorrow", "only 30 min tonight",
+"skip legs, kid sick", "move the long run to Sunday". It edits the file rather than
+re-planning the day. Food-only changes (an ingredient swap, a meal eaten out) are
+`/log meal`, not this mode. With no file for the day, run the normal `/plan` with the
+change as a constraint.
+
+1. Read the day's file and its `## Context`: the readiness call and its reasons, the
+   load ledger, the streak counts and the rest-of-week table. Pull from Garmin only
+   what the change needs, which is usually nothing, or the day's activities when the
+   change depends on what already happened.
+2. Apply the change under the same rules as § Function step 6 and § Requirements. A
+   moved or dropped session re-runs the Cumulative-Load Rules against the ledger and
+   re-checks the week shape (the drop order in `training.md`). A change in output
+   re-tiers the day's food: a skipped or shortened session cuts carbs and holds the
+   protein and fat floors. A moved session updates the rest-of-week table.
+3. If the change breaks a rule (two hard days stacked, a quality session inside a
+   race taper), say so and give the compliant alternative. Apply the athlete's choice,
+   and log the override and its reason in `## Context`.
+4. Edit the file in place, remove a `Status: draft` line, add a dated one-line note to
+   `## Context` saying what changed and why, and commit.
+5. If the day's workouts were already uploaded (Garmin IDs in `## Context`), say that
+   "ok" will re-sync them through `/garmin`. This mode never touches Garmin.
+6. Reply with only the changed lines (session, tier, affected meals), as plain text.
 
 ## No Sleep Record
 

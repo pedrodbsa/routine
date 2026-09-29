@@ -12,8 +12,6 @@
             "Edit(calendar.md)",
             "Edit(logbook/**)",
             "Edit(memory/**)",
-            "Write(logbook/**)",
-            "Write(memory/**)",
             "mcp__garmin__count_activities",
             "mcp__garmin__get_activities",
             "mcp__garmin__get_activities_by_date",
@@ -91,7 +89,6 @@
         "ask": [
             "Bash(git push:*)",
             "Edit(protocols/**)",
-            "Write(protocols/**)",
             "mcp__garmin__add_body_composition",
             "mcp__garmin__add_weigh_in",
             "mcp__garmin__add_weigh_in_with_timestamps",

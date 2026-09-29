@@ -69,7 +69,7 @@ Protocol stack for a 40-year-old male whose objective (redefined 2026-09-29) is 
 | Supplements       | `protocols/supplements.md`        | Daily stack, optional items, finasteride compatibility                                                                          |
 | Mobility          | `protocols/mobility.md`           | Daily mobility, prehab, pain tracking                                                                                           |
 | Daily file format | `protocols/daily-template.md`     | Required daily fields, day type, ACWR, readiness notes                                                                          |
-| Command docs      | `.claude/commands/`               | `/plan`, `/recap`, `/garmin`, `/log`, `/report`, `/body`, `/audit`, `/consult` behavior                                         |
+| Command docs      | `.claude/commands/`               | `/plan`, `/recap`, `/garmin`, `/log`, `/report`, `/body`, `/audit`, `/consult`, `/escalate` behavior                                        |
 | Coaching memory   | `memory/`                         | Accumulated feedback, corrections, calibration — read `MEMORY.md` first                                                         |
 | Calendar          | `calendar.md`                     | Dates: races, phase boundaries, checkpoints, deadlines, reminders, TODOs (owns *when*; current-status owns *what/why*)          |
 
@@ -115,19 +115,34 @@ architecture: `docs/container.md`.
 
 Messages in the Telegram session come from the athlete, through the channel plugin, and every
 reply goes back through its `reply` tool. Keep replies short: a phone screen, plain text, no
-tables. Route by intent:
+tables.
 
-- **Daily line** ("4, skipped legs — kid sick") → `/log` § Daily line.
-- **"ok" / "upload"** → `/garmin` for today's file; remove the file's `Status: draft` line.
-- **Adjustments to today** ("swap the run to tomorrow", "lunch was out") → edit today's file per
-  the matching `/plan` or `/log` rules (re-tier food on a skipped session), then send back the
-  changed lines.
-- **"plan" / "recap" / "report"** → run that command interactively. "plan" is how a day gets
-  planned without a sleep record.
-- **"apply" [numbers]** → apply the latest `### Proposed protocol edits` from `report.md`
-  (`/report` § Scheduled Mode).
-- **Reminders and TODOs** → `calendar.md` via `/log` § Reminder / TODO.
-- **Questions** → answer as the coach, with the same rules as any session.
+**The Telegram session is a router, and it runs on Sonnet.** It does not do the coaching work
+itself: it maps each message to a command and runs that command, so the command's pinned model
+and effort do the work (`.claude/commands/*.md` frontmatter). A pin covers only the turn that
+invokes it, so a follow-up ("make it 6 km") is routed to the command again, never answered by
+editing the file directly. Route by intent:
+
+| Message | Command | Model |
+| --- | --- | --- |
+| Daily line ("4, skipped legs — kid sick") | `/log` § Daily line | Sonnet |
+| A meal: eaten, swapped, an ingredient or portion changed, eaten out | `/log meal …` | Sonnet |
+| Weigh-in, waist, other actuals, notes | `/log …` | Sonnet |
+| Reminders and TODOs | `/log` § Reminder / TODO (writes `calendar.md`) | Sonnet |
+| "ok" / "upload" | `/garmin` for the day's file, then remove its `Status: draft` line | Sonnet |
+| A session moved, swapped, skipped or shortened; a social evening added | `/plan adjust <change>` | Opus |
+| "plan" (no file yet, e.g. no sleep record) | `/plan` | Opus |
+| "recap" | `/recap` | Sonnet |
+| "report" | `/report` | Opus |
+| "apply" [numbers] | `/report apply [numbers]` | Opus |
+| Anything else that needs coaching judgment, or a message starting with "escalate" | `/escalate <message>` | Opus |
+
+**Answer directly only lookups:** a fact already written in the repo (today's file, a
+protocol, `calendar.md`). Anything that needs judgment ("why", "should I", "what if", advice,
+a trade-off) goes to its command, or to `/escalate` when no command fits. **Do not judge your
+own confidence: when unsure whether a request needs judgment, escalate it.** Follow-ups on an
+escalated answer are escalated too. When it is unclear what the athlete *means*, ask one short
+question instead.
 
 Actions that are behind an "ask" permission rule (Garmin writes, `protocols/` edits) arrive on
 Telegram as approve/deny buttons. **The Telegram plugin runs only in the container.** Telegram

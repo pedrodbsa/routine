@@ -27,6 +27,9 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
 
 ### Meal
 
+- **A change to a meal not yet eaten** (an ingredient swap, a different portion, a
+  meal moved or eaten out) rewrites that meal's row as the new plan, not as eaten,
+  then re-tunes the other remaining meals the same way.
 - Write the actual into the `## Nutrition` table, **overwriting that meal's row in
   place** (description + actual macros) and marking it eaten. The planned text need
   not be preserved — the macro accounting is what's tracked.

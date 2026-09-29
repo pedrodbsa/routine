@@ -12,6 +12,7 @@ effort: high
 /report weekly
 /report monthly
 /report scheduled
+/report apply [numbers]
 ```
 
 `/report scheduled` is the unattended weekly run that `cron-coach` chains after the
@@ -107,8 +108,9 @@ applies, with these changes:
    - *"Reply 'apply' to write the N protocol edits (details in report.md)."* when
      there are any.
 
-**Applying the edits.** When the athlete replies "apply" (all edits) or "apply 1, 3"
-on Telegram, the Telegram session applies the numbered edits from the latest
+**Applying the edits: `/report apply [numbers]`.** When the athlete replies "apply" (all
+edits) or "apply 1, 3" on Telegram, the Telegram session runs `/report apply`, which applies
+the numbered edits from the latest
 `### Proposed protocol edits` block. Each `protocols/` edit is approved with a
 Telegram button. The session then marks each edit applied or rejected in
 `report.md`, commits, and replies with one line. Edits that are neither applied nor

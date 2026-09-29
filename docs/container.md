@@ -49,9 +49,12 @@ Dokploy cron */10 ─▶ cron-git-sync ─▶ GitHub
   the Telegram session, behind a button: "ok" runs `/garmin`, and "apply" writes the protocol
   edits the Sunday report proposed.
 - **One poller per bot.** Telegram allows one `getUpdates` consumer per bot token, and the
-  plugin starts polling in every Claude process that loads it and can see the token. The
-  plugin is installed at user scope, so the Remote Control sessions and the `-p` runs load it
-  too. The container therefore keeps the token as `COACH_TELEGRAM_BOT_TOKEN`, a name the plugin
+  plugin starts polling in every Claude process that loads it and can see the token. A process
+  that loads it without the token fails it instead, and Claude Code caches that failure for 15
+  minutes in a file every process reads, so the Telegram session then skips the plugin (found
+  2026-09-29). So the plugin is installed at user scope but **disabled** there, and only
+  `claude-session-telegram` enables it, with `--settings`. Never add it to `enabledPlugins` in
+  `.claude/settings.json`. As a second guard the container keeps the token as `COACH_TELEGRAM_BOT_TOKEN`, a name the plugin
   ignores, and `claude-session-telegram` exports it as `TELEGRAM_BOT_TOKEN` for the Telegram session
   alone. Never run `/telegram:configure` (it writes the token to a file every process reads),
   and never install the plugin on the desktop.
@@ -93,7 +96,7 @@ the compose file loads that with `env_file`. Full list with comments in `.env.ex
 | `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_NAME`, `GIT_COMMITTER_EMAIL` | Identity on commits made from the container. Git needs both pairs; nothing writes a gitconfig |
 | `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `cron-coach` gates on it |
 | `COACH_TELEGRAM_BOT_TOKEN` | The bot token from BotFather. Deliberately not `TELEGRAM_BOT_TOKEN` — see "One poller per bot" above |
-| `TELEGRAM_CHAT_ID` | The athlete's numeric Telegram id (@userinfobot). Seeds the allowlist on first start, so no pairing is needed; without it, pair once |
+| `TELEGRAM_CHAT_ID` | Optional. Where `util-telegram-send` posts; defaults to the first allowlisted id from pairing |
 | `COACH_MORNING_FROM`, `COACH_PLAN_CUTOFF` | Morning window for the scheduled `/plan`: default `05:00` and `12:00` |
 | `COACH_RECAP_AT`, `COACH_REPORT_DOW` | Evening `/recap` time (default `21:30`) and the weekday the report follows it (default `7`, Sunday) |
 
@@ -115,25 +118,21 @@ dot.
 
 ## Telegram
 
-One-time setup. The `telegram` tmux session sets itself up: on first start it installs the
-channel plugin at user scope (on the persistent `/root` mount), and with `TELEGRAM_CHAT_ID` set it
-writes the allowlist, so no pairing is needed.
+One-time setup. On every start the entrypoint installs the channel plugin at user scope (on the
+persistent `/root` mount) and leaves it disabled there; only the `telegram` session enables it.
 
 1. In Telegram, message [@BotFather](https://t.me/BotFather), send `/newbot`, and copy the
-   token. Message [@userinfobot](https://t.me/userinfobot) for your numeric id. Set them as
-   `COACH_TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in the Environment tab and redeploy. The
-   container log shows `claude-session-telegram: installing …` and then `allowlisted chat …`.
-2. Without `TELEGRAM_CHAT_ID`, pair instead: send any message to the bot, which replies with a
-   pairing code, then in a container terminal `tmux attach -t telegram` and run
+   token. Set it as `COACH_TELEGRAM_BOT_TOKEN` in the Environment tab and redeploy.
+2. Send any message to the bot. It replies with a pairing code. In a container terminal,
+   `tmux attach -t telegram`, then:
 
    ```
    /telegram:access pair <code>
    /telegram:access policy allowlist
    ```
 
-   Detach with `C-b d`. Either way the allowlist lives in
-   `/root/.claude/channels/telegram/access.json`, and `util-telegram-send` falls back to the chat
-   id in it.
+   Detach with `C-b d`. The allowlist lives in `/root/.claude/channels/telegram/access.json`,
+   and `util-telegram-send` reads the chat id from it.
 3. Check it: send "hi" to the bot and get an answer; `docker exec` into the container and run
    `echo test | util-telegram-send`.
 
@@ -205,8 +204,8 @@ does, because it lives in the repo. Find the new session by name at claude.ai/co
 **Both Claude processes run in tmux.** `tmux attach -t rc` or `tmux attach -t telegram` from a
 container terminal shows the live session; `C-b d` detaches without stopping it. Each runs
 under a restart loop (`util-keep-alive`), and every restart is logged to the container log. Session
-`<name>` runs the launcher `claude-session-<name>` (`docker/claude-session-*.sh`), which checks
-its own preconditions; the entrypoint only starts the sessions and, every 30 s, recreates any
+`<name>` runs the launcher `claude-session-<name>` (`docker/claude-session-*.sh`); the entrypoint
+sets up the Telegram plugin, starts the sessions and, every 30 s, recreates any
 that was killed.
 
 **If a session goes quiet**, check the logs. Remote Control exits if the machine cannot
