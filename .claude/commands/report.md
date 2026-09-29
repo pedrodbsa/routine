@@ -14,7 +14,7 @@ effort: high
 /report scheduled
 ```
 
-`/report scheduled` is the unattended weekly run that `cron-coach-tick` chains after the
+`/report scheduled` is the unattended weekly run that `cron-coach` chains after the
 Sunday evening `/recap`. It follows § Scheduled Mode below. It replaces the cloud
 routine "Weekly /report reminder", which only reminded the athlete to run it by hand.
 
@@ -78,7 +78,7 @@ routine "Weekly /report reminder", which only reminded the athlete to run it by 
 
 ## Scheduled Mode
 
-`/report scheduled` runs headless (`claude -p`) from the container's `cron-coach-tick`
+`/report scheduled` runs headless (`claude -p`) from the container's `cron-coach`
 schedule, on Sunday evenings after `/recap`, and its final message is sent to the
 athlete on Telegram. It is the weekly pass of the monthly report
 (`memory/feedback-report-format.md`): it updates `logbook/YYYY-MM/report.md`

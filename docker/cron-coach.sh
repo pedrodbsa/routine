@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Runs the coach's scheduled jobs and sends their output to Telegram. Driven by a Dokploy
-# schedule every 10 minutes; each tick decides from local time and per-day markers whether
-# anything is due, so almost every tick is a no-op that costs no tokens.
+# schedule every 10 minutes; each run decides from local time and per-day markers whether
+# anything is due, so almost every run is a no-op that costs no tokens.
 #
 #   morning  from COACH_MORNING_FROM, once Garmin has today's sleep record: /plan scheduled.
 #            If there is still no daily file and no sleep record at COACH_PLAN_CUTOFF, the day
@@ -9,10 +9,10 @@
 #   recap    every day from COACH_RECAP_AT, plan or not: /recap.
 #   report   on COACH_REPORT_DOW, chained after a successful recap: /report scheduled.
 #
-# Usage: cron-coach-tick                          normal tick
-#        cron-coach-tick --force morning|recap|report
+# Usage: cron-coach                          normal run
+#        cron-coach --force morning|recap|report
 #                                            run one job now, ignoring gates, markers and caps
-# COACH_DRY_RUN=1 prints what a tick would do without running Claude or sending anything.
+# COACH_DRY_RUN=1 prints what a run would do without running Claude or sending anything.
 # COACH_NOW="2026-10-05 06:40" pretends it is that local time (testing the gates).
 set -euo pipefail
 
@@ -31,9 +31,9 @@ DRY_RUN="${COACH_DRY_RUN:-0}"
 unset TELEGRAM_BOT_TOKEN
 
 mkdir -p "${STATE_DIR}"
-exec 9>"${STATE_DIR}/tick.lock"
+exec 9>"${STATE_DIR}/run.lock"
 if ! flock -n 9; then
-  echo "previous tick still running; skipping"
+  echo "previous run still running; skipping"
   exit 0
 fi
 
@@ -147,7 +147,7 @@ if [ "${1:-}" = "--force" ]; then
     morning) run_job morning "/plan scheduled" 1 ;;
     recap) run_job recap "/recap" 1 ;;
     report) run_job report "/report scheduled" 1 ;;
-    *) echo "usage: cron-coach-tick [--force morning|recap|report]" >&2; exit 2 ;;
+    *) echo "usage: cron-coach [--force morning|recap|report]" >&2; exit 2 ;;
   esac
   exit
 fi

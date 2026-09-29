@@ -39,7 +39,7 @@ Design facts that are easy to get wrong later:
 - **Since 2026-09-29 the container also runs the Telegram coach.** Both long-lived Claude
   processes run in tmux sessions under a restart loop (`rc` = `claude remote-control`,
   `telegram` = `claude --channels` with the Telegram plugin), with tini as PID 1. A second
-  Dokploy schedule runs `cron-coach-tick` every 10 minutes for the scheduled `/plan`, `/recap` and
+  Dokploy schedule runs `cron-coach` every 10 minutes for the scheduled `/plan`, `/recap` and
   `/report`. See [[project-workflow-automated-record]] and [[reference-telegram-one-poller]].
 
 See also [[feedback-git-allowed-this-project]] and [[reference-repo-relevant-parts]].

@@ -22,7 +22,7 @@ The athlete's day-to-day interface is Telegram. Three kinds of Claude process ru
 container, all against the same `/app` repo.
 
 ```
-Dokploy cron */10 ─▶ cron-coach-tick ─▶ claude -p "/plan scheduled" | "/recap" | "/report scheduled"
+Dokploy cron */10 ─▶ cron-coach ─▶ claude -p "/plan scheduled" | "/recap" | "/report scheduled"
                                        └─ result ─▶ util-telegram-send (Bot API) ─▶ Telegram
 tmux "telegram":  claude --channels telegram  ◀─ polls ─ Telegram (the athlete's replies)
 tmux "rc":        claude remote-control       ◀─ claude.ai / Claude app (troubleshooting)
@@ -91,7 +91,7 @@ the compose file loads that with `env_file`. Full list with comments in `.env.ex
 | `GARMIN_EMAIL`, `GARMIN_PASSWORD` | Expanded into the MCP server's environment by `.mcp.json` |
 | `GITHUB_TOKEN` | Push credential for `cron-git-sync`; also needed for the first-boot clone if the repo is private |
 | `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_NAME`, `GIT_COMMITTER_EMAIL` | Identity on commits made from the container. Git needs both pairs; nothing writes a gitconfig |
-| `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `cron-coach-tick` gates on it |
+| `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `cron-coach` gates on it |
 | `COACH_TELEGRAM_BOT_TOKEN` | The bot token from BotFather. Deliberately not `TELEGRAM_BOT_TOKEN` — see "One poller per bot" above |
 | `TELEGRAM_CHAT_ID` | The athlete's numeric Telegram id (@userinfobot). Seeds the allowlist on first start, so no pairing is needed; without it, pair once |
 | `COACH_MORNING_FROM`, `COACH_PLAN_CUTOFF` | Morning window for the scheduled `/plan`: default `05:00` and `12:00` |
@@ -142,22 +142,22 @@ container would find it, and they would all start polling.
 
 ## Set up the coach schedule
 
-Add a second Dokploy schedule against the `routine` service with command `cron-coach-tick` and cron
-`*/10 * * * *`. Almost every tick is a no-op; the script gates on local time and per-day
+Add a second Dokploy schedule against the `routine` service with command `cron-coach` and cron
+`*/10 * * * *`. Almost every run is a no-op; the script gates on local time and per-day
 markers in `/root/.coach/state/`, so it doesn't matter which timezone Dokploy's cron uses.
 
 - **Morning:** from `COACH_MORNING_FROM` it checks Garmin for last night's sleep record — a
   plain `garminconnect` call with the MCP's cached token, no Claude involved. Once the record
   is there, it runs `/plan scheduled` and sends the plan. If there is no daily file and no
   sleep record by `COACH_PLAN_CUTOFF`, the day is skipped. A plan made by hand (send "plan" on
-  Telegram) counts, and the tick leaves that day alone.
+  Telegram) counts, and the run leaves that day alone.
 - **Evening:** at `COACH_RECAP_AT`, every day, `/recap`. On `COACH_REPORT_DOW` a successful
   recap is followed by `/report scheduled`, sent as a separate message.
 - **Failures are never silent.** A failed run sends a short notice with the exit code and
-  retries on the next tick, up to three attempts a day. A failing Garmin sleep check is
+  retries on the next run, up to three attempts a day. A failing Garmin sleep check is
   reported once a day.
-- Test with `cron-coach-tick --force morning|recap|report`. `COACH_DRY_RUN=1 COACH_NOW="2026-10-05
-  06:40" cron-coach-tick` shows what a tick would do at that time without running anything.
+- Test with `cron-coach --force morning|recap|report`. `COACH_DRY_RUN=1 COACH_NOW="2026-10-05
+  06:40" cron-coach` shows what a run would do at that time without running anything.
 
 ## Set up the sync schedule
 

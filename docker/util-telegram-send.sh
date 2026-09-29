@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Sends stdin to the athlete's Telegram chat as plain text. cron-coach-tick uses it to deliver the
+# Sends stdin to the athlete's Telegram chat as plain text. cron-coach uses it to deliver the
 # scheduled runs' output; the interactive Telegram session replies through the channel plugin.
 #
 # Sending does not conflict with the plugin's polling: only a second getUpdates consumer would.

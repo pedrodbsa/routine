@@ -84,7 +84,7 @@ design specs and runbooks in `docs/`
 ## Workflow
 
 The athlete talks to the coach on **Telegram**. The container on the server runs a Telegram
-session, and a `cron-coach-tick` schedule starts the unattended runs and sends their output there.
+session, and a `cron-coach` schedule starts the unattended runs and sends their output there.
 Remote Control (claude.ai or the Claude app) and the desktop remain available for
 troubleshooting and heavier work. They reach the same repo, so they see the same coach. Setup and
 architecture: `docs/container.md`.
