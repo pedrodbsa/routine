@@ -1,6 +1,92 @@
 # September 2026 — Monthly Progression Report (Cut Block 2 close → Reverse + Build)
 
-> Updated progressively. Opened **2026-09-07**, covering the week Aug 31 – Sep 6 plus the Sep 7 morning state. Source: live Garmin MCP (pull verified against every daily-file activity ID for the full week). August is closed retrospectively in `logbook/2026-08/report.md` — read its breach log for how the chronic base got here.
+> Updated progressively. Opened **2026-09-07**, covering the week Aug 31 – Sep 6 plus the Sep 7 morning state. **Second run 2026-09-29** closes the month: Sep 7 – Sep 28, of which Sep 12–27 has no daily files at all and was reconstructed from Garmin alone. Source: live Garmin MCP — activities Aug 24 – Sep 29 (17 runs, zero strength), weigh-ins, nightly sleep summaries, HRV trend, RHR, steps, intensity minutes, VO2max trend, race predictions. August is closed retrospectively in `logbook/2026-08/report.md`.
+
+# Run 2 — 2026-09-29 (Sep 7 – Sep 28, month close)
+
+## Headline
+
+1. **Strength is the real problem of September, and nothing in the stack was watching it.** There has been no loaded strength session since the **Aug 13 Upper Pull** (Push Aug 10, Legs Aug 12; the Aug 18 banded Push in Tavira was the last session of any kind). As of today that is **47 days**. The Sep 7–13 absence was the hand laceration and was declared in advance. The Sep 14–20 restart never happened and no reason was recorded, and Sep 21–27 was confirmed "no strength" without one. Lean-mass retention is co-first in the cut priority order and second in the build, and the strength-load tripwire that replaced the BIA channel in July has been dark for six weeks, so the stack has had no lean-mass instrument at all since mid-August. This week's Push/Legs/Pull restart outranks every other item in this report.
+2. **The cut closed on Sep 20 by calendar, at ~74.3 kg on a single reading, flat against where it stood in early August.** Sep 20 read **74.31 kg** at 07:27, 37 min after waking and before the 08:00 long run, so it is accepted as a fasted-morning reading. Against the Aug 4–11 mean of 74.38 it is level. The drop from Sep 9 (74.75) is **entirely water**: absolute body water fell 35.88 → 35.45 kg, 0.43 kg against a 0.44 kg weight change. The honest summary of Phase 5's last seven weeks is "held, did not lose." The Phase 6 reversal starts from ~74.3–74.8 kg, slightly better than the 74.5–75 expected on Sep 7.
+3. **The Sep 14 closing read died, the second pre-committed read in a row to do so.** The Sep 7–13 window, marked binding at 7/7, produced **2 readings** (Sep 7, Sep 9). Across the 22 days Sep 7–28 there are **3 readings** in total, and **0** since the reversal began. "Binding 7/7" has now failed twice in the same way, so the problem is the instrument design, not the athlete's intent. The Phase 6 monitoring rule below is rebuilt so that it can still decide on a thin series.
+4. **Running: two good weeks, then a collapse.** Sep 7–13 delivered **34.73 km** and Sep 14–20 **34.25 km**, each with two qualities counted (a real session plus the strides conversion) and one clean long run. Then Sep 21–27 delivered **17.54 km** from two runs, with Mon–Wed and Fri empty and no reason recorded. That is an **enforced volume-floor breach with ACWR 0.61**, and the corrective is logged below. Recovery markers during the collapse were the best of the month, so it was not fatigue.
+5. **The race-prediction deadline arrived, and the test was invalid.** The prediction reads **10K 51:00** today, still outside the ≤50:30 band. The Sep 7 condition was "if still >50:30 at end-September *with volume restored*", and volume was restored for two weeks and then halved in the final one. The session data point the other way. The Sep 11 tempo ran ~4.1 km at **~4:51/km at ~167 bpm**, Sep 16 reps 3–6 ran **~4:56 at ~168**, and Sep 28 reps 2–5 ran **~5:02 at ~163 at a dew point of 16**. Against the lab LT2 of 172 @ 5:00, that is threshold-ish work at 4:50–4:55, consistent with a current flat-course 10K of roughly **48:00–49:30**. That is better than the 49:57 PR and better than the predictor believes, but **not yet sub-47 fitness**, which needs 4:42/km. Verdict: no signal against Dec 12 and no validation of it either. **The Oct 25 B-race checkpoint remains the decision point.**
+
+## Weeks Sep 7 – Sep 27
+
+| Week | Runs (km, avg HR) | km | ACWR | Quality | Strength | Sleep ≥70 | Weigh-ins | Steps/day |
+| ---- | ----------------- | -- | ---- | ------- | -------- | --------- | --------- | --------- |
+| **Sep 7–13** | Easy 5.01 @140 · easy 7.12 + strides @137 · **tempo 7.85 @151/175** · **long 14.74 @147/171** | **34.73** | 1.42 | 2/2 (tempo + strides conversion) | 0/3, hand, declared in advance | 7/7 (avg 77) | 2/7 | 10,887 |
+| **Sep 14–20** | "Base" 5.01 @**148** · **10K-pace 6×1 km 10.01 @155/185** · easy 6.15 + strides @140 · long 13.07 @138/153 | **34.25** | 1.42 | 2/2 (10K-pace + strides conversion) | **0/3, no reason recorded** | 4/6 (Sep 14 **55**, Sep 15 no data, Sep 17 67) | 1/7 | 9,225 |
+| **Sep 21–27** | Easy 5.53 + strides @139 · long 12.01 @**145**/163 | **17.54** | **0.61** | 0/2 (strides only; no quality) | **0/3, confirmed, no reason** | 6/7 (avg 76), but see below | **0/7** | 5,880 |
+
+ACWR uses acute km over the mean of the **four preceding weeks** (chronic 24.45 / 24.11 / 28.67). This is the convention the Sep 7 run used. The Sep 28 daily file divided by a four-week mean that *included* the acute week and got 0.57, and the definition is now pinned in `running.md` § ACWR. The week of Sep 28 has a chronic of **30.92**, so the drawn 40 km week lands at **1.29**.
+
+**Composite load cannot be computed honestly.** RPE was not logged for 11 of the 14 runs, because there are no files. Running minutes stand in as the proxy: **224 / 219 / 116** against 236 in the week of Aug 31, a four-week mean of ~199. The Sep 21–27 week sat at **0.58×** the mean, which says the same thing as the ACWR.
+
+**Session reads that matter:**
+
+- **Sep 11 tempo — the best-executed threshold session since the lab.** The opening km ran 5:00 at 162, which was the instruction, and the block then sat at 4:37–4:55 with HR 168–171 and a max of 175 (+3 over the 172 ceiling, against +12 on Sep 2). The pacing lesson took, mostly.
+- **Sep 16 10K-pace 6×1 km — the opener repeated the Sep 2 error.** Reps 1–2 ran at 4:30 and hit 175 and 185. Reps 3–6 were correct 10K-pace work at 4:52–4:59 and ~168.
+- **Sep 28 sub-T 5×1 km — the opener fixed.** Rep 1 ran at 5:17 and 154, with rep maxima of 169–175 on reps 3–5 at dew 16. Full read in the daily file.
+- **Two of the three long runs were not easy.** Sep 13 ran its first 11 km at mostly 6:35–6:50 and 135–150, then the **last ~3.7 km at 5:40–5:50 and 161–164** (avg 147, over the 145 drift ceiling). Sep 27 surged at km 2–3 and averaged 145. Only Sep 20 (13.07 km, 6:33/km @ **138**, max 153) was the prescribed run. The Sep 13 finish is an unprescribed ~20 min of sub-T bolted onto a long run, which turns the week's easy anchor into a third hard day. If the athlete wants a progression long run, it goes into the plan as one and counts as the week's lighter quality. It should not happen by drift.
+- **Sep 15 "Base" 5 km at avg 148** was Garmin's suggested workout, run on RHR **59** after a 55-score night with 1.7 h awake. The first km was 5:37 at 150, and it finished at 5:56 and 158. It was the wrong day for it, and it is the second time this month a run went out on a flagged morning (Sep 4 was the first).
+- **Easy pace-at-HR is back on the scoreboard from Sep 21** (`running.md`: off it only until the reversal). The comparable Coimbra long runs read 6:39 @ 138 on Sep 6 and **6:33 @ 138 on Sep 20**, a ~1.5% gain at matched HR. Mildly positive, n = 2.
+
+## Recovery and sleep
+
+- **HRV has been BALANCED every day since Sep 11**, with the weekly average 67 → 69 → 70 → **73** (Sep 28 peak), 72 today. RHR ran 51–55 except for a cluster on **Sep 14–15 (58, 59)** and **Sep 17 (59)**. The first cluster followed the Sep 13 long run with its fast finish plus a bad night, and Sep 17 is the morning after the Sep 16 10K-pace session. That pattern is worth noting: the two hardest sessions of the month each produced an RHR spike to 58–59 the next morning.
+- **Sleep scores flatter the last week.** Sep 21–27 met the ≥70 target 6/7 times, but **durations were 5.7–5.8 h on Sep 23, 25 and 27**, and onset slipped past midnight on those same three nights (**00:05, 00:20, 00:52**). Last night (Sep 28→29) was **5.47 h** with onset 23:32 and wake 05:31, scoring 68. Onset latency, the known live issue, is back, and it coincides with the empty training days. Per `[[feedback-soft-markers-check-anxiety]]`, this looks stress-side rather than training-side (HRV rising, RHR at baseline), and the athlete knows the cause. **One sentence on what happened Sep 21–27 would resolve both the running gap and the sleep pattern.**
+- **Fitness Age 37.6** (updated Sep 28, from 38.1). **VO2max 48**, flat since July (integer endpoint). Vigorous intensity minutes ran 276 / 251 / 224 / **128** / 55 so far this week.
+
+## Scoreboard (Phase 4–5 scoreboard; per `running.md` it keeps governing the A-race target until the build validates it)
+
+1. **Control run: ✗ still dark, now 9 weeks** since Jul 27. It was due in the week of Sep 14 and did not happen. It is drawn for today (Sep 29) with Push, back-to-back at G1.
+2. **Qualities at target HR: 2/2, 2/2, 0/2.** Execution is improving (tempo +3 over the ceiling, Sep 28 opener fixed), but the openers of the 10K-pace sessions still overcook.
+3. **VO2max proxy: ✗ 51:00**, outside ≤50:30. The test was invalid at its deadline (headline 5). **The deadline is re-set to Oct 18**: two full build weeks at ≥40 km. If the prediction is still >50:30 then *and* the Oct 25 B-race confirms it, it is a real signal.
+4. **Volume ≥30 km: ✓ ✓ ✗.**
+
+**Verdict: amber.** The engine is fine, as the session paces and HRV show. Delivery is the problem: strength 0 for six weeks, one collapsed week, two long runs run hard, and the weight series and the control run both dark.
+
+## Body composition and nutrition
+
+- **Readings:** Sep 7 **75.25** (water 36.42 kg) · Sep 9 **74.75** (35.88 kg) · Sep 20 **74.31** (35.45 kg). The whole Sep 7 → Sep 20 decline of 0.94 kg is matched by 0.97 kg of body water, so tissue change is unresolvable and effectively flat. The cut closed at **~74.3 kg** on one reading.
+- **Adherence is unverifiable for Sep 12–27.** There are no daily files, and the athlete does not log digitally, so plan-day compliance, the protein floor, social days and **whether reversal week 1 (2,150) actually ran** are all unknown. The *3+ untracked days in a week* signal fires for all three weeks (Sep 10/12/13, then 7/7, then 7/7). This is flagged, not guessed.
+- **Rule overrides, logged:** *strength compliance <2/3 → −75–100 kcal* fired in all three weeks. It was **not applied**. On Sep 7–13 it was an injury week (Sep 8 file recommendation). For Sep 14–27, applying it would cut calories during the final cut week and then during a reverse diet whose whole design is rising intake, which inverts the phase. The lever for missed strength in Phase 6 is doing the sessions. **The rule is now scoped to cut phases in `nutrition.md`.**
+- **Phase 6 day-type split adopted** (the Sep 28 file deferred it here). Tiers are the Phase 5 live tiers plus a weekly offset, which keeps the day-type spacing:
+
+  | Week | Rest | Easy / Strength | Quality | Long | Avg on a 40 km week* |
+  | ---- | ---- | --------------- | ------- | ---- | -------------------- |
+  | 2 (Sep 28) | 2,050 | 2,150 | 2,450 | 2,650 | 2,293 (target 2,300) |
+  | 3 (Oct 5) → maintenance | 2,250 | 2,350 | 2,650 | 2,850 | 2,493 (target 2,500) |
+
+  *1 rest, 3 easy/strength, 2 quality, 1 long. P165 / F65 floors; carbs = (tier − 1,245) ÷ 4.
+- **Defect fixed: the Phase 6–7 macro table did not sum.** Every row's carbs were ~100–140 kcal short of its stated calories (week 2: P165 + C235 + F65 = 2,185, not 2,300). This is the same fault as the Phase 5 carb columns fixed on Jul 31. Carbs are now derived from the kcal tier.
+- **Monitoring rebuilt so it can decide.** Week 3's 2,500 average *is* the bottom of the maintenance band, so the only decision the monitoring note ever had to make is whether to rise above 2,500. Pre-committed: **the Oct 5 step goes ahead on schedule. Any move above the week-3 tiers requires ≥4 fasted-morning readings in each of two consecutive weeks.** Without data, intake stays at 2,500 average, which is maintenance and costs nothing. The 7/7 target stays as the target, but no decision now depends on hitting it.
+
+## Protocol sync check (2026-09-29 run)
+
+- **Unrecorded decisions swept.** (a) Sep 8: running-only week for the hand, declared by the athlete. It is in the Sep 8 file and now in the coaching log as the strength exemption for Sep 7–13. (b) Sep 8: the strength-compliance calorie override was recommended with a request for a coaching-log entry, and it is now logged. (c) The Sep 14 closing read is recorded as dead, and the Phase 5 status as closed. (d) **The four Sep 7 goal proposals were never confirmed.** The Sep 8 file says the athlete would "revisit in the protocol review session today with new intentions", and no trace of that session exists anywhere. Proposals 2 and 3 were already written into the `current-status.md` target table on Sep 7. Proposal 4 is moot, since the calendar passed it. **Proposal 1 (sub-47 stands, with an Oct 25 confirm-or-re-anchor checkpoint) is still open, and the athlete's "new intentions" from Sep 8 are unknown.** They are not reconstructed or adopted here, and the athlete needs to say what they were.
+- **Cross-file fixes applied.** `nutrition.md` Phase 6–7 carbs re-derived (they did not sum), the day-type split added, the strength-compliance rule scoped to cut phases, the Sep 14 read marked dead, and the protein floor line extended to Phases 6–7 (165 g) · `running.md` Cut Block 2 marked done, Reverse + Build marked current, ACWR definition pinned · `current-status.md` phase table, weigh-in section, binding list (the Phase 5 guardrail and cut tripwires retired, Phase 6 monitoring in), key metrics, adherence protein floor 170 → 165 · `.claude/commands/report.md` step 4 still quoted the retired 72.5–73 kg Sep 20 target, and now points to `current-status.md` § Goals.
+- **Staleness pass.** The August weigh-in narrative and the Aug 4 checkpoint block in `current-status.md` are dead narrative, since the cut is over, and are compressed to pointers. `Last verified` is set to 2026-09-29.
+- **Strength DB.** No sessions were logged, so there are no load updates. A staleness banner is added to `strength-exercises.md`: every working load is ≥6 weeks old, and re-entry opens one step below.
+
+## Actions
+
+1. **Lift this week: Push today, Legs Wed, Pull Thu. 3/3 is the non-negotiable.** Open below the logged loads and log the actual sets honestly. These sessions are the first lean-mass data since Aug 13.
+2. **Say what happened Sep 21–27** (running gap, late onsets) and **whether reversal week 1 ran at ~2,150.** One message each. It changes nothing retroactively, but the floor rule needs a reason recorded and the reversal needs its starting point.
+3. **Weigh in fasted at least 4 mornings this week.** It is the entry ticket for any intake above 2,500 from Oct 12.
+4. **Run the long runs as written.** Cap 142, drift ceiling 145, no fast finish unless the plan calls for a progression run.
+5. **Confirm or amend Sep 7 proposal 1** (sub-47 with the Oct 25 checkpoint), and say what the Sep 8 "new intentions" were.
+6. **Deliver the ~40 km week as drawn**, and only build to ~45 km in the week of Oct 5 if this one lands. No fallback week is needed, since markers are green and this is a rebuild, not a recovery.
+
+## Phase status
+
+**Phase 6 (Reverse + Build) is current, in week 2.** The next calorie step is **Oct 5** (week 3, ~2,500 average, which is maintenance), within 7 days. The Oct 25 B-race is 26 days out, and per `training.md` it gets no heavy legs in the 3 days before it. Phase 7 starts Oct 26.
+
+---
+
+# Run 1 — 2026-09-07 (week Aug 31 – Sep 6)
 
 ## Headline
 

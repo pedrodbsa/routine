@@ -3,6 +3,8 @@
 > Personal strength database: one row per exercise — where it can be trained, current working load, how to program it, and the verified Garmin Connect enum.
 > **Single source of truth for strength baselines** (migrated out of `current-status.md` on 2026-06-17). Nothing else holds working loads.
 
+> ⚠ **Stale as of 2026-09-29:** no loaded session since **Aug 13 (Pull)** — Push Aug 10, Legs Aug 12 (Aug 18 banded Push only). Every working load below is ≥6 weeks old. Re-entry opens one step below the logged load (the Jul 29 "open below the band" rule); `/report` refreshes these cells from the first logged sessions back.
+
 ## Gyms & Equipment
 
 Three locations. The **Gym** column on each exercise says where it can be trained.

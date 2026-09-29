@@ -13,4 +13,6 @@ When writing any checkpoint, tripwire, or re-read rule, test it two ways before 
 
 **Also check what happens between reads.** A decision that holds unmonitored for three weeks (a holiday with no scale) carries far more regret than one re-checkable in seven days. Bias toward the reversible action and move the real decision to the first date it can actually be measured — but **pre-commit the moved decision in writing**, or moving it is just a deferral.
 
+**Also check that it survives a thin series.** Calling the input "binding 7/7" does not produce readings. The Aug 31 read died with 0 of 7 readings and the Sep 14 closing read with 2 of 7, and with no `/plan` running, Sep 12–28 produced one weigh-in in 17 days. Specify the minimum n the decision needs (≥4 fasted readings/week from 2026-09-29), and pick a default that costs nothing when that n is missed, e.g. "no data → stay at maintenance". Do not pick a default that silently lapses the decision.
+
 Related: [[feedback-weight-drop-water-vs-tissue]] for decomposing a flat or fast scale before reading a rate at all, and [[feedback-benchmark-matched-reps]] for the same shape of error on the training side.

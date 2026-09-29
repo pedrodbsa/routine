@@ -57,8 +57,8 @@ Everything through the May race block is complete (Base → Quality Reintro → 
 | Phase                  | Dates           | Focus                                                   | Volume      |
 | ---------------------- | --------------- | ------------------------------------------------------- | ----------- |
 | Cut Block 1            | May 30 - Jul 5  | 2 quality/wk (1 harder + 1 lighter), 10K pace from wk 4 | 35-42 km/wk |
-| Cut Block 2 — extended (CURRENT) | Jul 6 - Sep 20  | 2 quality/wk, synchronized deload every 3rd wk. Cut hard stop Sep 20 | 35-40 km/wk |
-| Reverse + Build        | Sep 21 - Oct 25 | Volume build at rising calories; 2 quality/wk; **Oct 25 B-race = hard supported hill effort** (counts as the week's harder quality, 2-3 easy days before, no full taper) | 40-50 km/wk |
+| Cut Block 2 — extended (DONE)    | Jul 6 - Sep 20  | 2 quality/wk, synchronized deload every 3rd wk. Cut hard stop Sep 20 | 35-40 km/wk |
+| Reverse + Build (CURRENT) | Sep 21 - Oct 25 | Volume build at rising calories; 2 quality/wk; **Oct 25 B-race = hard supported hill effort** (counts as the week's harder quality, 2-3 easy days before, no full taper) | 40-50 km/wk |
 | 10K Peak               | Oct 26 - Dec 12 | 2 quality/wk + selective VO2max, taper last ~10-14 days, **A-race Dec 12** | 45-55 km/wk |
 
 ## Race Schedule
@@ -180,7 +180,7 @@ Portugal summer conditions change the session.
 
 ### ACWR
 
-Acute km this week / 4-week rolling average.
+Acute km this week / mean of the **four preceding weeks** (the acute week is not in its own denominator — pinned 2026-09-29 after the Sep 7 report and the Sep 28 daily file used different conventions and produced 0.61 vs 0.57 for the same week).
 
 | ACWR    | Status          | Action                 |
 | ------- | --------------- | ---------------------- |
@@ -203,7 +203,7 @@ Acute km this week / 4-week rolling average.
 
 ### 10K A-Race — S. Silvestre Coimbra (Dec 12, 18:30 start)
 
-- Pacing: start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10 (stretch pacing: 4:36-4:39 if fitness supports it). Reference: 2025 result ~54:00; current prediction 50:59 (Sep 7 — depressed by the Aug trough; re-test at the Oct 25 B-race).
+- Pacing: start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10 (stretch pacing: 4:36-4:39 if fitness supports it). Reference: 2025 result ~54:00; current prediction 51:00 (Sep 29); threshold sessions read ~48:00–49:30 (see `logbook/2026-09/report.md`); re-test at the Oct 25 B-race.
 - No in-race fueling needed
 - Final 10 days: reduce volume, not intensity. Keep one short 10K-pace touchpoint each week.
 
