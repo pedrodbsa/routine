@@ -10,14 +10,15 @@ effort: medium
 ```
 /recap
 /recap [YYYY-MM-DD]
+/recap scheduled
 ```
 
 ## Function
 
 `/recap` closes the day's record from Garmin so that a bad day still leaves evidence
 rather than a hole (consult 2026-09-29, `memory/project-workflow-automated-record.md`).
-`cron-coach` runs it headless every evening at 21:30, **whether or not the day had a
-plan**, and sends its final message to the athlete on Telegram. The athlete can also
+`cron-coach` runs `/recap scheduled` headless every evening at 21:30, **whether or not
+the day had a plan**, and sends its final message to the athlete on Telegram. The athlete can also
 ask for it from Telegram at any time. It never touches Garmin Connect and never edits
 `protocols/`.
 
@@ -52,8 +53,10 @@ ask for it from Telegram at any time. It never touches Garmin Connect and never 
 7. Read `calendar.md` for items due tomorrow, and for today's items that are still
    open.
 8. Commit the daily file.
-9. **The final message is the Telegram text**, and nothing else: plain text (no
-   markdown tables or headers), under ~1,000 characters. In order:
+9. **The final message.** In scheduled mode it is the Telegram text and nothing else:
+   Telegram HTML laid out per `docs/telegram-format.md` § Layouts (Evening recap),
+   under ~1,000 characters of visible text, sent with 1–5 buttons. Otherwise it is a
+   short summary with the same content, in the session's normal style. In order:
    - one line on what was delivered, with the key numbers (e.g. "Easy 8.1 km @ 139
      avg HR ✓ · Push ✓ — 3 sets each, loads per plan");
    - each miss, as "not delivered — reason?";
@@ -61,7 +64,8 @@ ask for it from Telegram at any time. It never touches Garmin Connect and never 
    - tomorrow's calendar items and anything today that is still open;
    - if there was no plan today, ask why in one line;
    - the ask, always last: *"Your line for today: motivation 1–5, and a word on
-     anything skipped."*
+     anything skipped."* (scheduled: *"Tap your motivation 1–5, and a word on anything
+     skipped."*)
 
 ## Requirements
 

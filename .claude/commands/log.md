@@ -83,6 +83,9 @@ legs — kid sick".
 - A reason for a past day goes into that day's file. If it arrives after the next
   morning's breach check, keep the breach mark and append "— reason given late:
   <reason>". It counts as a breach either way.
+- A bare number (a tap on the recap's 1–5 buttons) is the motivation alone. If the day
+  still has a "not delivered — reason?" or `Plan: none — reason?`, ask for the reason
+  in one line.
 - Reply with one line confirming what was recorded.
 
 ### Reminder / TODO

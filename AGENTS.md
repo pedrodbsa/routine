@@ -114,8 +114,9 @@ architecture: `docs/container.md`.
 ## Telegram channel
 
 Messages in the Telegram session come from the athlete, through the channel plugin, and every
-reply goes back through its `reply` tool. Keep replies short: a phone screen, plain text, no
-tables.
+reply goes back through its `reply` tool. Keep replies short, and lay them out per
+`docs/telegram-format.md`: MarkdownV2 through `reply`, resent as plain text on a parse error.
+That format is for Telegram only; it never applies to any other session.
 
 **Show progress.** The plugin marks each incoming message with the 👀 reaction (`ackReaction`
 in `access.json`), but that only says it arrived. Before running a slow command (`/plan`,
@@ -133,6 +134,7 @@ editing the file directly. Route by intent:
 | Message | Command | Model |
 | --- | --- | --- |
 | Daily line ("4, skipped legs — kid sick") | `/log` § Daily line | Sonnet |
+| A bare 1–5 (the recap's buttons) | `/log` § Daily line | Sonnet |
 | A meal: eaten, swapped, an ingredient or portion changed, eaten out | `/log meal …` | Sonnet |
 | Weigh-in, waist, other actuals, notes | `/log …` | Sonnet |
 | Reminders and TODOs | `/log` § Reminder / TODO (writes `calendar.md`) | Sonnet |

@@ -94,8 +94,9 @@ applies, with these changes:
    file, the exact change (old → new text, or the row to add), and a one-line
    reason. Edits to `logbook/`, `memory/` and `calendar.md` are applied directly.
 2. Commit `report.md` and anything else written.
-3. **The final message is the Telegram text**, and nothing else: plain text (no
-   markdown tables or headers), under ~2,000 characters. In order:
+3. **The final message is the Telegram text**, and nothing else: Telegram HTML laid out
+   per `docs/telegram-format.md` § Layouts (Weekly report), under ~2,000 characters of
+   visible text. In order:
    - the week in one line: km and runs vs the floor, lifts delivered vs the 3/3
      commitment, weight 7-day mean (with the reading count) vs the phase band, and
      the waist;

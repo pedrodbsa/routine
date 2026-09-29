@@ -6,7 +6,7 @@
 #   morning  from COACH_MORNING_FROM, once Garmin has today's sleep record: /plan scheduled.
 #            If there is still no daily file and no sleep record at COACH_PLAN_CUTOFF, the day
 #            is skipped and the evening recap asks why.
-#   recap    every day from COACH_RECAP_AT, plan or not: /recap.
+#   recap    every day from COACH_RECAP_AT, plan or not: /recap scheduled.
 #   reset    once a night between COACH_RESET_AT and COACH_MORNING_FROM: restarts the Telegram
 #            session, so it starts each day with an empty context. All state is in the repo.
 #   report   on COACH_REPORT_DOW, chained after a successful recap: /report scheduled.
@@ -56,6 +56,16 @@ notify() {
   fi
 }
 
+# How each job's result is sent: Telegram HTML (docs/telegram-format.md) plus the quick-reply
+# buttons its message asks for. The morning plan wants "ok"; the recap wants motivation 1–5.
+send_opts() {
+  case "$1" in
+    morning) echo --html --buttons ok ;;
+    recap) echo --html --buttons 1,2,3,4,5 ;;
+    *) echo --html ;;
+  esac
+}
+
 # Runs one Claude job and delivers its result. Returns non-zero if the job did not succeed.
 run_job() {
   local job=$1 prompt=$2 force=${3:-0}
@@ -83,7 +93,9 @@ run_job() {
   result="$(jq -r 'select(.is_error != true) | .result // empty' <<<"${out}" 2>/dev/null || true)"
 
   if [ "${rc}" -eq 0 ] && [ -n "${result}" ]; then
-    printf '%s\n' "${result}" | util-telegram-send || echo "${job}: util-telegram-send failed" >&2
+    # shellcheck disable=SC2046 # send_opts prints separate flags
+    printf '%s\n' "${result}" | util-telegram-send $(send_opts "${job}") \
+      || echo "${job}: util-telegram-send failed" >&2
     touch "$(marker "${job}").done"
     echo "${job}: done"
     return 0
@@ -138,7 +150,7 @@ evening() {
   if [[ "${now}" < "${RECAP_AT}" ]]; then return 0; fi
 
   if [ ! -e "$(marker recap).done" ]; then
-    run_job recap "/recap" || return 0
+    run_job recap "/recap scheduled" || return 0
   fi
   if [ "${dow}" = "${REPORT_DOW}" ] && [ ! -e "$(marker report).done" ]; then
     run_job report "/report scheduled" || true
@@ -169,7 +181,7 @@ reset() {
 if [ "${1:-}" = "--force" ]; then
   case "${2:-}" in
     morning) run_job morning "/plan scheduled" 1 ;;
-    recap) run_job recap "/recap" 1 ;;
+    recap) run_job recap "/recap scheduled" 1 ;;
     report) run_job report "/report scheduled" 1 ;;
     reset) reset_telegram ;;
     *) echo "usage: cron-coach [--force morning|recap|report|reset]" >&2; exit 2 ;;
