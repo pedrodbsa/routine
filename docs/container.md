@@ -13,8 +13,48 @@ claude.ai credentials, the workspace trust record, the Garmin token cache — li
 A Dokploy schedule runs `git-sync` on a cron. It commits whatever a session left uncommitted
 and pushes to `origin`, so work reaches GitHub without you approving a push from your phone.
 
-Remote Control makes outbound HTTPS connections only. The container publishes no ports and
-needs no domain, reverse proxy, or inbound firewall rule.
+Remote Control and the Telegram plugin make outbound HTTPS connections only. The container
+publishes no ports and needs no domain, reverse proxy, or inbound firewall rule.
+
+## How the pieces fit
+
+The athlete's day-to-day interface is Telegram. Three kinds of Claude process run in the
+container, all against the same `/app` repo.
+
+```
+Dokploy cron */10 ─▶ coach-tick ─▶ claude -p "/plan scheduled" | "/recap" | "/report scheduled"
+                                       └─ result ─▶ telegram-send (Bot API) ─▶ Telegram
+tmux "telegram":  claude --channels telegram  ◀─ polls ─ Telegram (the athlete's replies)
+tmux "rc":        claude remote-control       ◀─ claude.ai / Claude app (troubleshooting)
+Dokploy cron */10 ─▶ git-sync ─▶ GitHub
+```
+
+- **The Telegram session** is an interactive Claude Code session started with the Telegram
+  channel plugin (`--channels`). The plugin polls the bot, injects each message into the
+  session, and gives Claude a `reply` tool. Permission prompts — a Garmin upload, a protocol
+  edit — are relayed to Telegram as approve/deny buttons.
+- **Remote Control can't carry Telegram.** It is a remote screen onto Claude sessions and has
+  no Telegram side. Channels are switched on per session with a flag, and `claude
+  remote-control`'s server mode refuses flags it can't pass on to the sessions it spawns. So
+  the Telegram session is a separate process. Remote Control stays as the troubleshooting door
+  from claude.ai or the Claude app.
+- **The scheduled jobs are headless `claude -p` runs**, not messages into the Telegram session.
+  Cron can't type into an interactive session. A headless run has a clean context and an exit
+  code, and the wrapper — not the model — sends the result, so a crashed run still produces a
+  failure notice. The processes don't share conversation context and don't need to: the
+  daily file, `calendar.md` and `report.md` hold the state.
+- **Permissions:** a `-p` run can't answer a permission prompt, so anything behind an "ask" rule
+  in `.claude/settings.json` is refused. Scheduled runs read Garmin and write `logbook/`,
+  `memory/` and `calendar.md`, but never upload workouts or edit `protocols/`. Those happen in
+  the Telegram session, behind a button: "ok" runs `/garmin`, and "apply" writes the protocol
+  edits the Sunday report proposed.
+- **One poller per bot.** Telegram allows one `getUpdates` consumer per bot token, and the
+  plugin starts polling in every Claude process that loads it and can see the token. The
+  plugin is installed at user scope, so the Remote Control sessions and the `-p` runs load it
+  too. The container therefore keeps the token as `COACH_TELEGRAM_BOT_TOKEN`, a name the plugin
+  ignores, and `coach-telegram` exports it as `TELEGRAM_BOT_TOKEN` for the Telegram session
+  alone. Never run `/telegram:configure` (it writes the token to a file every process reads),
+  and never install the plugin on the desktop.
 
 ## Before you deploy
 
@@ -51,7 +91,11 @@ the compose file loads that with `env_file`. Full list with comments in `.env.ex
 | `GARMIN_EMAIL`, `GARMIN_PASSWORD` | Expanded into the MCP server's environment by `.mcp.json` |
 | `GITHUB_TOKEN` | Push credential for `git-sync`; also needed for the first-boot clone if the repo is private |
 | `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL` | Identity on commits made from the container |
-| `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time |
+| `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `coach-tick` gates on it |
+| `COACH_TELEGRAM_BOT_TOKEN` | The bot token from BotFather. Deliberately not `TELEGRAM_BOT_TOKEN` — see "One poller per bot" above |
+| `TELEGRAM_CHAT_ID` | Optional. The athlete's chat; defaults to the first allowlisted id from pairing |
+| `COACH_MORNING_FROM`, `COACH_PLAN_CUTOFF` | Morning window for the scheduled `/plan`: default `05:00` and `12:00` |
+| `COACH_RECAP_AT`, `COACH_REPORT_DOW` | Evening `/recap` time (default `21:30`) and the weekday the report follows it (default `7`, Sunday) |
 
 ## First deploy
 
@@ -65,8 +109,61 @@ the browser flow, then accept the workspace trust prompt while you are there. Re
 requires a full-scope claude.ai login on a Pro or Max plan; an API key will not work, and
 neither will a token from `claude setup-token`.
 
-Restart the container. It comes up running `claude remote-control`, and the session appears at
-[claude.ai/code](https://claude.ai/code) as `routine` with a green dot.
+Restart the container. It comes up running `claude remote-control` in the `rc` tmux session,
+and the session appears at [claude.ai/code](https://claude.ai/code) as `routine` with a green
+dot.
+
+## Telegram
+
+One-time setup.
+
+1. In Telegram, message [@BotFather](https://t.me/BotFather), send `/newbot`, and copy the
+   token. Set it as `COACH_TELEGRAM_BOT_TOKEN` in the Environment tab and redeploy.
+2. Open a terminal on the container and run `claude` (a plain session; it can't see the token
+   under the plugin's name, so it won't poll). Install the plugin at **user** scope, so it
+   lives on the persistent `/root` mount:
+
+   ```
+   /plugin marketplace add anthropics/claude-plugins-official
+   /plugin install telegram@claude-plugins-official
+   ```
+
+   Exit, then restart the container. The entrypoint now also starts the `telegram` tmux
+   session.
+3. Send any message to the bot. It replies with a pairing code. In the container terminal,
+   `tmux attach -t telegram`, then:
+
+   ```
+   /telegram:access pair <code>
+   /telegram:access policy allowlist
+   ```
+
+   Detach with `C-b d`. The allowlist lives in `/root/.claude/channels/telegram/access.json`,
+   and `telegram-send` reads the chat id from it.
+4. Check it: send "hi" to the bot and get an answer; `docker exec` into the container and run
+   `echo test | telegram-send`.
+
+Do not run `/telegram:configure`. It stores the token where every Claude process in the
+container would find it, and they would all start polling.
+
+## Set up the coach schedule
+
+Add a second Dokploy schedule against the `routine` service with command `coach-tick` and cron
+`*/10 * * * *`. Almost every tick is a no-op; the script gates on local time and per-day
+markers in `/root/.coach/state/`, so it doesn't matter which timezone Dokploy's cron uses.
+
+- **Morning:** from `COACH_MORNING_FROM` it checks Garmin for last night's sleep record — a
+  plain `garminconnect` call with the MCP's cached token, no Claude involved. Once the record
+  is there, it runs `/plan scheduled` and sends the plan. If there is no daily file and no
+  sleep record by `COACH_PLAN_CUTOFF`, the day is skipped. A plan made by hand (send "plan" on
+  Telegram) counts, and the tick leaves that day alone.
+- **Evening:** at `COACH_RECAP_AT`, every day, `/recap`. On `COACH_REPORT_DOW` a successful
+  recap is followed by `/report scheduled`, sent as a separate message.
+- **Failures are never silent.** A failed run sends a short notice with the exit code and
+  retries on the next tick, up to three attempts a day. A failing Garmin sleep check is
+  reported once a day.
+- Test with `coach-tick --force morning|recap|report`. `COACH_DRY_RUN=1 COACH_NOW="2026-10-05
+  06:40" coach-tick` shows what a tick would do at that time without running anything.
 
 ## Set up the sync schedule
 
@@ -111,8 +208,16 @@ which is deliberate — the running version changes only when you decide it does
 **A restart starts a fresh session.** The conversation does not carry over; the coaching state
 does, because it lives in the repo. Find the new session by name at claude.ai/code.
 
-**If the session goes quiet**, check the logs. Remote Control exits if the machine cannot
-reach the network for roughly ten minutes, and `restart: unless-stopped` brings it back.
+**Both Claude processes run in tmux.** `tmux attach -t rc` or `tmux attach -t telegram` from a
+container terminal shows the live session; `C-b d` detaches without stopping it. Each runs
+under a restart loop (`keep-alive`), and every restart is logged to the container log. If the
+`rc` session disappears altogether, the entrypoint exits and `restart: unless-stopped` brings
+the whole container back.
+
+**If a session goes quiet**, check the logs. Remote Control exits if the machine cannot
+reach the network for roughly ten minutes, and the restart loop brings it back. For the
+Telegram session, a `409 Conflict` in its pane means something else is polling the bot — see
+"One poller per bot".
 
 ## Migrating from the deploy-checkout layout
 
@@ -142,6 +247,8 @@ A one-time procedure, run on the host, for a server still on the old `.:/app` mo
 ## Permissions
 
 `.claude/settings.json` carries the shared allowlist, so it applies wherever this repo is
-checked out. Reads, Garmin reads, writes under `logbook/` and `memory/`, and `git add` and
-`git commit` run unattended. Garmin workout uploads, edits to `protocols/`, and `git push`
-prompt for approval — the actions worth a tap on your phone before they fire.
+checked out. Reads, Garmin reads, writes under `logbook/` and `memory/` and to `calendar.md`,
+the Telegram plugin's reply tools, and `git add` and `git commit` run unattended. Garmin
+workout uploads, edits to `protocols/`, and `git push` prompt for approval — the actions worth
+a tap on your phone before they fire. In the Telegram session the prompt arrives as buttons;
+in a scheduled `-p` run it is refused.

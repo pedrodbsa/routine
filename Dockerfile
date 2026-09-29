@@ -1,11 +1,13 @@
 # syntax=docker/dockerfile:1
 
-# Claude Code in Remote Control server mode, plus the Garmin MCP it needs.
+# Claude Code in Remote Control server mode and a Telegram channel session, plus the Garmin MCP
+# and the scheduled-job scripts they need.
 FROM debian:bookworm-slim
 
 ARG VERSION=0.1.1
 ARG CLAUDE_CODE_CHANNEL=latest
 ARG UV_VERSION=0.11.31
+ARG BUN_VERSION=1.4.2
 
 # Published at https://code.claude.com/docs/en/setup#binary-integrity-and-code-signing
 ARG CLAUDE_KEY_FINGERPRINT=31DDDE24DDFAB679F42D7BD2BAA929FF1A7ECACE
@@ -14,7 +16,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
-      ca-certificates curl git gnupg less procps tzdata \
+      ca-certificates curl git gnupg jq less procps tmux tzdata unzip \
  && rm -rf /var/lib/apt/lists/*
 
 # Anthropic's signed apt repository rather than npm: no Node runtime, and no background
@@ -39,8 +41,26 @@ RUN curl -LsSf "https://astral.sh/uv/${UV_VERSION}/install.sh" \
       | env UV_INSTALL_DIR=/usr/local/bin sh \
  && uv python install 3.12
 
+# Bun runs the Telegram channel plugin. The baseline x64 build avoids a hard AVX2 requirement on
+# the server's CPU.
+RUN case "$(dpkg --print-architecture)" in \
+      amd64) target=x64-baseline ;; \
+      arm64) target=aarch64 ;; \
+      *) echo "unsupported architecture" >&2; exit 1 ;; \
+    esac \
+ && curl -fsSL -o /tmp/bun.zip \
+      "https://github.com/oven-sh/bun/releases/download/bun-v${BUN_VERSION}/bun-linux-${target}.zip" \
+ && unzip -j /tmp/bun.zip "bun-linux-${target}/bun" -d /usr/local/bin \
+ && rm /tmp/bun.zip \
+ && bun --version
+
 COPY --chmod=0755 docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY --chmod=0755 docker/git-sync.sh   /usr/local/bin/git-sync
+COPY --chmod=0755 docker/keep-alive.sh /usr/local/bin/keep-alive
+COPY --chmod=0755 docker/coach-telegram.sh /usr/local/bin/coach-telegram
+COPY --chmod=0755 docker/coach-tick.sh /usr/local/bin/coach-tick
+COPY --chmod=0755 docker/telegram-send.sh /usr/local/bin/telegram-send
+COPY docker/garmin-sleep-ready.py /usr/local/lib/coach/garmin-sleep-ready.py
 
 WORKDIR /app
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

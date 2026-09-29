@@ -12,6 +12,8 @@ services:
     volumes:
       - ../files/repo:/app
       - ../files/home:/root
+    # tini as PID 1 reaps the orphans tmux and the Claude processes leave behind.
+    init: true
     stdin_open: true
     tty: true
     restart: unless-stopped

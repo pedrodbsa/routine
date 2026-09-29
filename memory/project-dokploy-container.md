@@ -36,4 +36,10 @@ Design facts that are easy to get wrong later:
 - The Garmin password moved out of `.mcp.json` into Dokploy's Environment tab via `${VAR}`
   expansion, and the old one was rotated — it is still in git history.
 
+- **Since 2026-09-29 the container also runs the Telegram coach.** Both long-lived Claude
+  processes run in tmux sessions under a restart loop (`rc` = `claude remote-control`,
+  `telegram` = `claude --channels` with the Telegram plugin), with tini as PID 1. A second
+  Dokploy schedule runs `coach-tick` every 10 minutes for the scheduled `/plan`, `/recap` and
+  `/report`. See [[project-workflow-automated-record]] and [[reference-telegram-one-poller]].
+
 See also [[feedback-git-allowed-this-project]] and [[reference-repo-relevant-parts]].
