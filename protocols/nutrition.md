@@ -120,15 +120,19 @@ Oct 25 (hard effort) and Dec 12 (social) sit inside these tiers as a Quality day
 
 Target rate **0.3 kg/wk** (~330 kcal/day), landing ~70–71.5 kg (~15% on 59.6–60.6 kg lean). Protein rises to **170 g**, fat drops to **60 g**; carbs = (tier − 1,220) ÷ 4. **Rest is never below 1,850** (the standing floor: rest-day carbs never below ~157 g).
 
-**Derivation (pre-committed 2026-09-29):**
+**Derivation (pre-committed 2026-09-29; formula corrected by the 2026-09-29 audit):**
 
-    maintenance_verified = the Build tiers, plus or minus any band adjustment that fired
-    social_term          = the average daily surplus the build's weight trend implies at the known plan tiers
-    cut tier             = maintenance_verified − 330 − social_term
+    build_tiers = the Build plan tiers, plus or minus any band adjustment that fired
+    drift       = 7,700 × the build's fasted-weight slope in kg/wk ÷ 7   (positive if weight rose)
+    cut tier    = build_tiers − 330 − drift
 
-Minimum data: **≥8 readable weeks (≥4 fasted readings each) of the 12**. Below that, the no-data default is the Build tiers −330 with the rest floor binding: **Rest 1,850 / Strength 1,920 / Quality 2,220 / Long 2,420**. If the social term comes out at ≥300/day, the honest choice is a 0.2 kg/wk cut with the social protocol enforced, not a −650 plan day — a plan-day deficit the athlete will not hold is worth less than a smaller one he will.
+The off-plan term (social evenings and unplanned days) is already inside the build's weight trend. If weight held flat at known plan tiers, then plan tiers plus the off-plan surplus equal maintenance, so taking 330 off the plan tiers produces a 330 kcal deficit as long as off-plan behaviour stays the same. The original formula subtracted a separately estimated social term on top of that, which counted it twice: a 300/day term turned a 330 cut into a 630 one. A weight trend also cannot separate the off-plan term from maintenance, so that term was never measurable. It enters the derivation only if off-plan behaviour is expected to change in the cut.
 
-**Rate reads at Feb 1, Mar 1 and Mar 29** compare the trailing 4-week fasted mean with the previous one (≥12 readings per 4 weeks; no data → hold). Target −1.2 kg per 4 weeks. Slower than −0.6 → the social protocol is the first lever, then −100 kcal carbs. Faster than −1.6 → +100 carbs. Strength loads falling on 2+ upper lifts across two sessions → +100 carbs regardless of the scale. The weekly waist tape is the fat-specific cross-check: ≥1 cm per 4 weeks confirms fat; a flat waist with a falling scale is water or lean.
+Minimum data: **≥8 readable weeks (≥4 fasted readings each) of the 12** to fit the slope. Below that, drift is taken as zero and the default is the Build tiers −330 with the rest floor binding: **Rest 1,850 / Strength 1,920 / Quality 2,220 / Long 2,420**. If drift comes out at ≥300/day (the build rose ≥0.27 kg/wk despite the band), the honest choice is a 0.2 kg/wk cut with the social protocol enforced, not a −630 plan day — a plan-day deficit the athlete will not hold is worth less than a smaller one he will.
+
+**Rate read #1 (Feb 1)** uses the least-squares slope of the fasted readings over cut weeks 2–4 (Jan 12 – Feb 1, ≥9 readings; no data → hold), against a target of −0.3 kg/wk. Slower than −0.15 kg/wk → the off-plan lever first, then −100 kcal carbs. Faster than −0.4 kg/wk → +100 carbs. Week 1 is excluded because the carb step drops glycogen water, and a mean-versus-mean read is wrong here: the previous four weeks are a flat build, so at the design rate the difference would be only ~−0.6 kg and would sit exactly on the trigger (audit 2026-09-29).
+
+**Rate reads #2 and #3 (Mar 1, Mar 29)** compare the trailing 4-week fasted mean with the previous one; both windows are inside the cut (≥12 readings per 4 weeks; no data → hold). Target −1.2 kg per 4 weeks. Slower than −0.6 → the off-plan lever first (the social protocol, or planning the unplanned days — whichever the daily files show is leaking), then −100 kcal carbs. Faster than −1.6 → +100 carbs. Strength loads falling on 2+ upper lifts across two sessions → +100 carbs regardless of the scale. The weekly waist tape is the fat-specific cross-check: ≥1 cm per 4 weeks confirms fat; a flat waist with a falling scale is water or lean.
 
 #### Phase 9 — Maintenance + spring race (Apr 13 – Jun 14)
 
