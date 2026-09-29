@@ -20,6 +20,11 @@ the coach records what happened below it. The athlete never writes to the file �
 ## Context — reference only
 ```
 
+A file written by the unattended morning run (`/plan scheduled`) carries a
+`Status: draft (scheduled HH:MM), awaiting the athlete's reply` line under the title.
+The Telegram session removes it once the athlete replies "ok" or the requested
+changes are made.
+
 ### `## Today`
 
 Four lines, no more:
@@ -82,7 +87,8 @@ Record, when present:
   session that did not happen, the reason. If no reason has arrived by the next
   morning, record the session as **"not delivered — no reason given"**; `/report`
   counts that as a breach. A miss with a reason is recorded as "not delivered —
-  <reason>".
+  <reason>". `/recap` writes the "not delivered — reason?" marks each evening; a day with
+  no plan gets `Plan: none — reason?` in place of the plan zone, under the same rule.
 - **Social evening**, one word, when it happened.
 - Subjective notes — how the session felt, any pain.
 

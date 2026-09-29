@@ -1,22 +1,25 @@
 ---
 name: project-workflow-automated-record
-description: "Decided 2026-09-29 — the daily record is automated (scheduled morning /plan + evening Garmin reconciliation), the athlete supplies one line a day (motivation 1–5 + skip reason) by Telegram, and a missing session with no reason by next morning is a breach; schedules OPEN (coach, by Oct 5) and conflict with the remote-coach map's 'manual /plan' rule"
+description: "Decided 2026-09-29, built the same day — morning /plan fires on Garmin's sleep record (skip at 12:00), /recap every evening, /report Sunday after the recap, all delivered on Telegram; one athlete line a day; a reason-less miss by next morning is a breach. Awaiting deploy + Telegram pairing"
 metadata:
   type: project
 ---
 
 At the 2026-09-29 consult the athlete chose **option A** for the silent-stretch problem (Aug 24–30 and Sep 21–27 had no files; every 7/7-dependent rule died from missing input):
 
-1. A **scheduled morning `/plan`** (~06:30) writes the day's file from Garmin readiness alone, whether or not he replies.
+1. A **scheduled morning `/plan`** (consult said ~06:30; built to fire on the sleep record, below) writes the day's file from Garmin readiness alone, whether or not he replies.
 2. A **scheduled evening reconciliation** pulls the day's Garmin activities and weigh-in into the file and marks anything planned-but-missing as *not delivered — reason?*.
 3. The athlete's job is **one line a day, by Telegram in the evening**: motivation 1–5 plus a word on anything skipped.
 4. A missing session with **no reason by the next morning is a breach** — the file records "not delivered, no reason" and `/report` counts it against the volume floor / exemption rules.
 
 **Why:** on a low day the record is the first thing that goes; the fix has to take the athlete off the record's critical path so a bad week produces evidence instead of a hole. The motivation score has been requested three times and delivered once — one number a day is the whole ask.
 
-**Status / OPEN (coach, by 2026-10-05):**
-- The schedules are not built yet. Mechanisms available: a cloud routine (the `schedule` skill) or a Dokploy schedule running `claude -p` in the container (`docs/container.md` already runs `git-sync` that way).
-- **Conflict to resolve:** the remote-coach map (`.scratch/coach-remote/map.md`, 2026-07-22) says `/plan` is manually triggered, never by cron, because it depends on the morning weigh-in landing first. The new design runs it at a fixed time and lets the evening pass pick up the weigh-in. Decide which wins when building the schedule; the consult decision is the newer one.
-- **The Telegram bot does not exist** (remote-coach ticket 07 open — [[project-remote-coach-service]]). Until it does, the daily line arrives through the Remote Control session on the phone.
+**Status (2026-09-29): built, not yet deployed.** Remaining: redeploy the container, create the bot, install + pair the Telegram plugin, add the `coach-tick` Dokploy schedule (`docs/container.md` § Telegram, § Set up the coach schedule), then retire the cloud `/report` routine after the first Sunday report lands (`calendar.md` TODO).
 
-**How to apply:** `/plan` written by the schedule is a draft the athlete corrects by replying, not a decision; `/log` and `/report` treat a reason-less miss as a breach; do not let the absence of the Telegram channel delay the schedules — the record can be automated before the channel is. Related: [[feedback-record-missed-sessions-same-day]], [[feedback-verify-session-completed-against-garmin]], [[project-dokploy-container]].
+How it was built (athlete decisions in the build session, 2026-09-29):
+- **Telegram is the single interface** — plan, recap and report all arrive there; Remote Control is for troubleshooting only. Telegram comes from the official channel plugin in a separate interactive session (tmux `telegram`), not the greenfield n8n bot of [[project-remote-coach-service]].
+- **Morning trigger = Garmin's sleep record, not a clock.** `coach-tick` polls a free `garminconnect` check every 10 min from 05:00; once the night is on Garmin it runs `/plan scheduled` (a draft; "ok" on Telegram uploads). **No file and no sleep record at 12:00 → the day's plan is skipped**; the athlete can always send "plan" (e.g. watch battery died → `/plan` § No Sleep Record). This resolves the old conflict with the remote-coach map's "manual /plan because of the weigh-in": the consult decision won, and the weigh-in is picked up by the recap.
+- **`/recap` runs every evening at 21:30, plan or not** — with no plan it writes a minimal file and asks why (`Plan: none — reason?`, same breach rule).
+- **`/report` runs Sunday 21:30 chained after the recap** ("a deeper recap"), moved off its cloud routine. Headless runs can't edit `protocols/`, so it proposes numbered edits in `report.md` and the athlete replies "apply".
+
+**How to apply:** `/plan` written by the schedule is a draft the athlete corrects by replying, not a decision; `/log` and `/report` treat a reason-less miss as a breach; a scheduled run failing is reported on Telegram, never silent. Related: [[feedback-record-missed-sessions-same-day]], [[feedback-verify-session-completed-against-garmin]], [[project-dokploy-container]].

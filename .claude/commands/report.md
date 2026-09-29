@@ -11,7 +11,12 @@ effort: high
 /report
 /report weekly
 /report monthly
+/report scheduled
 ```
+
+`/report scheduled` is the unattended weekly run that `coach-tick` chains after the
+Sunday evening `/recap`. It follows § Scheduled Mode below. It replaces the cloud
+routine that used to run `/report`.
 
 ## Function
 
@@ -61,9 +66,53 @@ effort: high
       superseded, completed, or >2 weeks dead-narrative moves to
       `protocols/archive/` (pointer left behind). `current-status.md` stays
       operational-only — if it is growing back toward pre-2026-07-31 size, trim it.
+    - **Calendar check.** Every date in `calendar.md` (races, phase boundaries,
+      checkpoints, athlete-owned deadlines) must match `current-status.md`'s race
+      and phase tables and the coaching log. `calendar.md` owns *when*;
+      current-status owns *what and why*. Fix a mismatch in the file that is wrong
+      and log it. Move past items to `## Done`, list overdue items, and list the
+      next 4 weeks in the report.
     This step is the weekly *sync* check. The deep false-assumption hunt
     (physiology claims, unattainable targets, zombie rules) stays with the `/audit`
     skill — run that on demand or roughly quarterly, not weekly.
+
+## Scheduled Mode
+
+`/report scheduled` runs headless (`claude -p`) from the container's `coach-tick`
+schedule, on Sunday evenings after `/recap`, and its final message is sent to the
+athlete on Telegram. It is the weekly pass of the monthly report
+(`memory/feedback-report-format.md`): it updates `logbook/YYYY-MM/report.md`
+progressively rather than writing a separate weekly file. Everything in § Function
+applies, with these changes:
+
+1. **A headless run cannot edit `protocols/`.** Steps 7–9 do all their analysis, but
+   every change they would make to a protocol file goes into a **`### Proposed
+   protocol edits`** block at the end of this week's section in `report.md`. That
+   includes the `Last verified` bump, the strength-load refresh in
+   `strength-exercises.md`, and any sync-check fix. Number each edit and give the
+   file, the exact change (old → new text, or the row to add), and a one-line
+   reason. Edits to `logbook/`, `memory/` and `calendar.md` are applied directly.
+2. Commit `report.md` and anything else written.
+3. **The final message is the Telegram text**, and nothing else: plain text (no
+   markdown tables or headers), under ~2,000 characters. In order:
+   - the week in one line: km and runs vs the floor, lifts delivered vs the 3/3
+     commitment, weight 7-day mean (with the reading count) vs the phase band, and
+     the waist;
+   - **the running numbers, always**: Garmin prediction vs the milestone line, the
+     control-run avg HR trend, and long-run pace-at-HR;
+   - the six adherence rows as hits/misses, and every breach
+     ("not delivered — no reason given") by date;
+   - flags that change next week (ACWR, a stall, sleep onset, a phase transition
+     or calendar item within 7 days);
+   - *"Reply 'apply' to write the N protocol edits (details in report.md)."* when
+     there are any.
+
+**Applying the edits.** When the athlete replies "apply" (all edits) or "apply 1, 3"
+on Telegram, the Telegram session applies the numbered edits from the latest
+`### Proposed protocol edits` block. Each `protocols/` edit is approved with a
+Telegram button. The session then marks each edit applied or rejected in
+`report.md`, commits, and replies with one line. Edits that are neither applied nor
+rejected stay listed. The next report re-proposes them if they still hold.
 
 ## Requirements
 

@@ -30,7 +30,7 @@ See `coaching-lessons.md` for details.
 - [Run over Legs; Legs compressed](feedback-run-over-legs-legs-bulky.md) — drop order bonus run → strides → Legs → quality → long → upper merged; Legs is the 3-slot ~35-min version
 - [Strength tripwire rejected](feedback-strength-tripwire-rejected.md) — 3/3 Legs/Pull/Push written, delivery flagged only, never auto-downshifted; show commitment and delivered count side by side
 - [Lower tiers as social buffer](feedback-lower-tiers-as-social-buffer.md) — build at +300 not +400; 1–2 social evenings/wk with alcohol are a measured term in the cut derivation, never a reason to shrink plan days
-- [Automated daily record](project-workflow-automated-record.md) — scheduled morning /plan + evening reconciliation, one Telegram line/day, reason-less miss = breach; **schedules OPEN, coach, by Oct 5**
+- [Automated daily record](project-workflow-automated-record.md) — Telegram is the single interface; `/plan scheduled` fires on Garmin's sleep record (skip at 12:00, "plan" on Telegram anytime), `/recap` every evening 21:30 plan or not, `/report` Sunday after it; reason-less miss by next morning = breach. **Built 2026-09-29, awaiting deploy + pairing**
 
 ## Workflow Preferences
 
@@ -74,6 +74,7 @@ See `coaching-lessons.md` for details.
 
 - [Git allowed in this project](feedback-git-allowed-this-project.md) — git is permitted in the routine repo (overrides global user-only rule); commit protocols/reports/logbook
 - [Dokploy container](project-dokploy-container.md) — repo runs as an always-on Remote Control session on the server; Auto Deploy must stay off, pushes come from a `git-sync` schedule; working repo is `../files/repo`, never git in the host `code/` checkout. Runbook: `docs/container.md`
+- [Telegram: one poller per bot](reference-telegram-one-poller.md) — the channel plugin polls in every Claude process that sees `TELEGRAM_BOT_TOKEN`; token lives as `COACH_TELEGRAM_BOT_TOKEN`, only the tmux `telegram` session gets it; never `/telegram:configure`, never on the desktop
 - **This directory is the memory.** Write new memories here as files + a pointer line above; never to `~/.claude/projects/<slug>/memory/`
 
 ## Active Build

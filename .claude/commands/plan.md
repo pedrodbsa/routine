@@ -10,7 +10,12 @@ effort: high
 ```
 /plan
 /plan [schedule constraints]
+/plan scheduled
 ```
+
+`/plan scheduled` is the unattended morning run that `coach-tick` starts once Garmin
+has the night's sleep record. It follows § Scheduled Mode below instead of stopping
+for review.
 
 ## Function
 
@@ -76,6 +81,55 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
      belong to `/report`.
 10. Tell the athlete the plan file is written, that the current-status snapshot
     was refreshed, and that `/garmin` will sync the workouts when they are ready.
+
+## Scheduled Mode
+
+`/plan scheduled` runs headless (`claude -p`) from the container's `coach-tick`
+schedule, and its final message is sent to the athlete on Telegram as the morning
+plan. Nobody is there to approve it, so the file it writes is a **draft**: the
+athlete corrects it by replying on Telegram, and the Telegram session edits the
+file. Everything in § Function and § Requirements applies, with these changes:
+
+1. **Breach check first.** Open yesterday's daily file. Any session still marked
+   "not delivered — reason?" (or a `Plan: none — reason?` line) with no reason
+   recorded becomes **"not delivered — no reason given (breach)"**
+   (`daily-template.md` § `## Actuals`). Write that before planning today.
+2. Run steps 1–6 unchanged, then read `calendar.md` for items due today, overdue
+   items, and the next 7 days.
+3. **Do not stop at step 7.** Write `logbook/YYYY-MM/YYYY-MM-DD.md` directly, with
+   `Status: draft (scheduled HH:MM), awaiting the athlete's reply` as the first line
+   under the title. Keep the step-7 material (the harder alternative and why it
+   was rejected, the load ledger, the streak counts, the rules that fired) in
+   `## Context`, where the athlete can read it if he asks.
+4. **Skip the step-9 `current-status.md` refresh.** A headless run cannot edit
+   `protocols/`, and the snapshot rows are not worth a tap. The readiness snapshot
+   lives in the daily file's `## Context`; `/report` refreshes current-status.
+5. Commit the daily file (and yesterday's file if the breach check touched it).
+6. **The final message is the Telegram text**, and nothing else: plain text (no
+   markdown tables or headers), under ~1,500 characters. In order:
+   - the day, the session(s), and the readiness call with its one-line reason;
+   - the calorie tier (kcal, P/C/F) and one line per meal;
+   - flags: breaches recorded from yesterday, a stale current-status, sleep
+     onset after 23:30, calendar items due today or overdue, and anything due
+     in the next 7 days that needs the athlete;
+   - the ask: the fasted weigh-in (and the waist tape on Mondays) if Garmin has
+     none yet, then *"Reply 'ok' to send the workouts to Garmin, or tell me what
+     to change."*
+
+`/plan scheduled` still never touches Garmin Connect: "ok" on Telegram runs
+`/garmin` in the Telegram session, where the upload is approved with a button.
+
+## No Sleep Record
+
+When Garmin has no sleep record for last night (the watch battery died, or the
+watch was off), plan anyway, in any mode:
+
+- Plan from what exists: the HRV and resting-HR trend of the previous nights, the
+  trailing load ledger, and Body Battery if the watch recorded any.
+- Ask the athlete for a subjective read: hours slept, onset time, and quality 1–5.
+- Mark the readiness call **provisional** and say which marker is missing. Apply
+  the decision tree once the subjective read arrives; until then default to the
+  session the load rules allow on the trend alone, never a harder one.
 
 ## Requirements
 

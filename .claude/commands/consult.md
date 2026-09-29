@@ -152,7 +152,8 @@ in conversation is a defect.
    adherence table), `nutrition.md`, `running.md`, `training.md`,
    `meal-rotation.md` if the portions change, `AGENTS.md` (Purpose and Coaching
    Primer) if the objectives change, and any command doc that restates a changed
-   value.
+   value. Every approved date (race, phase boundary, checkpoint, athlete-owned
+   deadline) also goes into `calendar.md`, which owns the dates.
 3. Add one coaching-log row per decision cluster to `current-status.md`, pointing
    to the consult record.
 4. Move superseded material to `protocols/archive/` and leave a pointer behind.

@@ -69,25 +69,70 @@ Protocol stack for a 40-year-old male whose objective (redefined 2026-09-29) is 
 | Supplements       | `protocols/supplements.md`        | Daily stack, optional items, finasteride compatibility                                                                          |
 | Mobility          | `protocols/mobility.md`           | Daily mobility, prehab, pain tracking                                                                                           |
 | Daily file format | `protocols/daily-template.md`     | Required daily fields, day type, ACWR, readiness notes                                                                          |
-| Command docs      | `.claude/commands/`               | `/plan`, `/garmin`, `/log`, `/report`, `/body`, `/audit`, `/consult` behavior                                                      |
+| Command docs      | `.claude/commands/`               | `/plan`, `/recap`, `/garmin`, `/log`, `/report`, `/body`, `/audit`, `/consult` behavior                                         |
 | Coaching memory   | `memory/`                         | Accumulated feedback, corrections, calibration — read `MEMORY.md` first                                                         |
+| Calendar          | `calendar.md`                     | Dates: races, phase boundaries, checkpoints, deadlines, reminders, TODOs (owns *when*; current-status owns *what/why*)          |
 
 ## Layout
 
 Protocols in `protocols/`
 daily files and monthly reports in `logbook/YYYY-MM/`
+dates, reminders and TODOs in `calendar.md`
 memory in `memory/`
 design specs and runbooks in `docs/`
 
 ## Workflow
 
-1. Morning: `/plan` generates `logbook/YYYY-MM/YYYY-MM-DD.md`. It is interactive — it pulls data, presents the key decisions for review, and writes the file on approval. `/plan` does not touch Garmin.
-2. After reviewing the plan: `/garmin` uploads the day's prescribed workouts to Garmin Connect and schedules them for the plan date, replacing any existing workout for that date. See `.claude/commands/garmin.md` for the upload behavior.
-3. After training: `/log [details]`
-4. After meals: `/log meal [details]`
-5. Weekly: `/report` updates the active current-status file
-6. As needed: `/body` syncs scale data and target deltas
-7. Per training block, or when the goals stop matching reality: `/consult` runs the full interactive redefinition of objectives, goals, phase timeline, nutrition targets and training structure, and writes the approved decisions to every protocol file in the same session. `/audit` (on demand, roughly quarterly) hunts for false assumptions in the rules themselves.
+The athlete talks to the coach on **Telegram**. The container on the server runs a Telegram
+session, and a `coach-tick` schedule starts the unattended runs and sends their output there.
+Remote Control (claude.ai or the Claude app) and the desktop remain available for
+troubleshooting and heavier work. They reach the same repo, so they see the same coach. Setup and
+architecture: `docs/container.md`.
+
+1. **Morning, automatic.** Once Garmin has the night's sleep record, `/plan scheduled` writes the
+   day's file as a draft (`logbook/YYYY-MM/YYYY-MM-DD.md`) and sends the plan on Telegram. If
+   there is still no file and no sleep record at 12:00, the day's plan is skipped. The athlete
+   can always send "plan" to run the normal interactive `/plan` instead, for example when the
+   watch battery died. `/plan` never touches Garmin.
+2. **After the plan:** "ok" on Telegram runs `/garmin`, which uploads the day's prescribed
+   workouts and schedules them for the plan date, replacing any existing workout for that date.
+   The upload is approved with a Telegram button. See `.claude/commands/garmin.md`.
+3. **During the day:** `/log [details]` and `/log meal [details]`. On Telegram, a plain message
+   is enough; the session routes it.
+4. **Evening, automatic, every day:** `/recap` reconciles the day against Garmin, marks each miss
+   "not delivered — reason?", and asks for the athlete's daily line (motivation 1–5 plus a word
+   on anything skipped). A miss still without a reason at the next morning's plan is a breach.
+5. **Sunday evening, automatic:** `/report scheduled` runs after the recap. It updates the monthly
+   report and sends the week's summary. Protocol changes it wants are proposed, not applied; the
+   athlete replies "apply" to write them.
+6. As needed: `/body` syncs scale data and target deltas.
+7. Per training block, or when the goals stop matching reality: `/consult` runs the full
+   interactive redefinition of objectives, goals, phase timeline, nutrition targets and training
+   structure, and writes the approved decisions to every protocol file in the same session.
+   `/audit` (on demand, roughly quarterly) hunts for false assumptions in the rules themselves.
+
+## Telegram channel
+
+Messages in the Telegram session come from the athlete, through the channel plugin, and every
+reply goes back through its `reply` tool. Keep replies short: a phone screen, plain text, no
+tables. Route by intent:
+
+- **Daily line** ("4, skipped legs — kid sick") → `/log` § Daily line.
+- **"ok" / "upload"** → `/garmin` for today's file; remove the file's `Status: draft` line.
+- **Adjustments to today** ("swap the run to tomorrow", "lunch was out") → edit today's file per
+  the matching `/plan` or `/log` rules (re-tier food on a skipped session), then send back the
+  changed lines.
+- **"plan" / "recap" / "report"** → run that command interactively. "plan" is how a day gets
+  planned without a sleep record.
+- **"apply" [numbers]** → apply the latest `### Proposed protocol edits` from `report.md`
+  (`/report` § Scheduled Mode).
+- **Reminders and TODOs** → `calendar.md` via `/log` § Reminder / TODO.
+- **Questions** → answer as the coach, with the same rules as any session.
+
+Actions that are behind an "ask" permission rule (Garmin writes, `protocols/` edits) arrive on
+Telegram as approve/deny buttons. **The Telegram plugin runs only in the container.** Telegram
+allows one poller per bot, so never install the plugin on the desktop or give it the bot token
+anywhere else.
 
 ## Coaching Primer
 

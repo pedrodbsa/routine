@@ -64,6 +64,35 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
 - Display 7-day weight average and body-comp trend
 - Carry sleep, pain, and heat flags into `/report`
 
+### Daily line
+
+The athlete's one line a day (consult 2026-09-29), usually a Telegram reply to the
+evening `/recap`: motivation 1–5 plus a word on anything skipped, e.g. "3, skipped
+legs — kid sick".
+
+- Record `Motivation: N/5` (and the athlete's words, if they add anything) under
+  the daily-line bullet in `## Actuals`.
+- Replace each "not delivered — reason?" with "not delivered — <reason>", and a
+  `Plan: none — reason?` line with "Plan: none — <reason>". A reason is whatever the
+  athlete gives. Do not judge it here; `/report` weighs the pattern.
+- If the line names a skip the file doesn't show as missed, record it as given and
+  flag the mismatch against Garmin.
+- A reason for a past day goes into that day's file. If it arrives after the next
+  morning's breach check, keep the breach mark and append "— reason given late:
+  <reason>". It counts as a breach either way.
+- Reply with one line confirming what was recorded.
+
+### Reminder / TODO
+
+Any dated or undated item to keep, e.g. "remind me Friday to buy gels" or "todo:
+book the derm follow-up".
+
+- Add a row to `calendar.md` under `## Upcoming` (dated) or `## Undated TODO`, with
+  Kind `reminder` or `todo`, Owner `athlete` unless the item is the coach's, and
+  Source `telegram YYYY-MM-DD`. Resolve relative dates ("Friday") against today's
+  local date, and state the resolved date back.
+- "done <item>" moves the row to `## Done` with the date.
+
 ### Note
 
 - Append to Notes
