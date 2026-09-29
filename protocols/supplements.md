@@ -17,7 +17,6 @@
 
 - Omega-3 fish oil: 2 g combined EPA/DHA
 - Finasteride: 1 mg
-- Zinc: 20 mg — **on hold pending a stated reason.** None is on file, and 20 mg plus the multivitamin's zinc plus a meat-heavy diet approaches the 40 mg adult upper limit (chronic excess impairs copper absorption). Check the multivitamin label before resuming.
 
 ### Pre-Bed (~22:00)
 
@@ -38,5 +37,6 @@
 | Supplement         | Reason                                                      | Revisit                                |
 | ------------------ | ----------------------------------------------------------- | -------------------------------------- |
 | B12 + Folate       | Bloodwork showed B12 elevated; multivitamin covers baseline | Next bloodwork                         |
+| Zinc               | No stated need; the multivitamin and a meat-heavy diet cover intake, and 20 mg on top approaches the 40 mg upper limit | A measured deficiency |
 | Ashwagandha KSM-66 | Inconsistent use and unclear need                           | If stress profile changes materially   |
 | L-Theanine         | Sleep-onset evidence is weak; kept off by athlete preference (supplements only when heavily backed) | — |

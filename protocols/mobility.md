@@ -10,9 +10,8 @@ Desk work, age and running volume raise the cost of skipping movement prep and t
 4. Cat-Cow - 60s
 5. Thread the Needle - 30s/side
 6. Wall Ankle Dorsiflexion - 45s/side
-7. Calf Raises with Pause - 30s
-8. World's Greatest Stretch - 30s/side
-9. Standing Hamstring Sweep - 30s/side
+7. World's Greatest Stretch - 30s/side
+8. Standing Hamstring Sweep - 30s/side
 
 If morning mobility is missed, do the hip flexor and hamstring work before bed.
 
@@ -26,13 +25,12 @@ If morning mobility is missed, do the hip flexor and hamstring work before bed.
 
 ## Runner Prehab Microdose (2-3x/week, 5-7 min)
 
-After easy runs or strength sessions — the minimum prehab layer for calves, Achilles, feet and knee control:
+After easy runs or strength sessions — the minimum prehab layer for shins, feet and knee control. Running and the quality-day power drill load the calves and Achilles, so no calf raise of any kind appears here or anywhere else (`[[feedback-no-calf-training]]`).
 
-1. Soleus calf raise - 2x15
-2. Tibialis raises - 2x15
-3. Spanish squat hold or wall sit - 2x30-45 sec
-4. Single-leg balance reaches - 2x5/side
-5. Banded lateral walk or clamshell - 2x12/side
+1. Tibialis raises - 2x15
+2. Spanish squat hold or wall sit - 2x30-45 sec
+3. Single-leg balance reaches - 2x5/side
+4. Banded lateral walk or clamshell - 2x12/side
 
 The quality-day power drill lives in `running.md` § Pre-Run Warm-Up.
 

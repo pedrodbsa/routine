@@ -37,7 +37,7 @@
 | 2027-04-13 Tue | phase | **Maintenance + spring race** starts (Apr 13 – Jun 14): hold ~70–71.5 kg | coach | current-status § Phase & Timeline |
 | 2027-06-15 Tue | phase | **Optional lean-out** starts (Jun 15 – Jul 26), only if stage 1 fell short | coach | current-status § Phase & Timeline |
 | 2027-07-26 Mon | phase | The lean-out ends | coach | current-status § Phase & Timeline |
-| 2027-08-01 Sun | checkpoint | **Scorecard**: ~15% BF / ~70–71.5 kg, the four upper-body load markers, the spring 10K result | coach | current-status § Goals & Priorities |
+| 2027-08-01 Sun | checkpoint | **Scorecard**: ~15% BF / ~70–71.5 kg, the upper-body strength markers, the spring 10K result | coach | current-status § Goals & Priorities |
 
 ## Recurring
 
@@ -56,7 +56,6 @@
 | Agree the isotretinoin target duration and stop plan with the dermatologist | athlete | memory/project-isotretinoin-course.md |
 | Urine-SG strips on 3 fasted mornings: ≥2 above 1.020 keeps the 3.5–4.5 L fluid guide, otherwise ~3.0 L | athlete | audit 2026-09-29 |
 | 25(OH)D blood test before taking D3 above 2,000–4,000 IU | athlete | audit 2026-09-29 |
-| Zinc: state a reason to keep it and check the multivitamin's zinc content; on hold until then | athlete | audit 2026-09-29 |
 | Garmin profile: height 172 → 170 cm (the Index scale uses it), and add Thursday to the training days | athlete | audit 2026-09-29 |
 | Disable the cloud routine "Weekly /report reminder" (trig_01FHEGq1csjRWNEzYWo2DJw3) once the first scheduled Sunday report reaches Telegram | coach | 2026-09-29 automation |
 

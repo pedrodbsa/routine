@@ -33,7 +33,7 @@ Legs sits on Thursday because on Wednesday it would follow the Sunday long run a
 
 ### Build, Maintenance and Lean-out (Phases 7, 9, 10)
 
-- This block has to deliver the Aug 1 2027 load markers (bench 60 × 8, OHP 35 × 8, lat pulldown 130 × 8, bench dip +25 × 10; `strength-exercises.md`). "Athletic, not bulky": arms, delts, chest and back grow; legs do not.
+- This block has to deliver the Aug 1 2027 load markers (bench 60 × 8, OHP 35 × 8, lat pulldown 110 × 12 × 4, bench dip +25 × 10, 5 strict pull-ups; `strength-exercises.md`). "Athletic, not bulky": arms, delts, chest and back grow; legs do not.
 - **Build volume = the Push and Pull templates below, +1 set on every accessory slot (Push 3-6, Pull 3-7).** That gives side delts ~8, biceps and triceps ~7-8, and chest and back ~12 hard sets a week.
 - Extra arm volume goes into the existing accessory slots, never a fourth session.
 
@@ -82,7 +82,7 @@ The dose is heavy, low-rep, low-volume and explosive. That biases adaptation tow
 
 ## Upper Pull
 
-1. **Vertical pull** — 4 x 6-10 (lat pulldown, fixed)
+1. **Vertical pull** — 4 x 8-12 lat pulldown (fixed). 110 kg is the stack's top, so progress by reps to 12 across, then by a 3-s lowering. **When a bar is available, open with pull-up practice:** 3-5 strict singles (dead hang to chin over the bar, 60-90 s rest) and 3 slow negatives (5 s down), then take the pulldown for 3 sets.
 2. **Horizontal row** — 4 x 8-12
 3. **Row accessory** — 3 x 10-12
 4. **Face pulls** — 3 x 15-20
@@ -98,7 +98,7 @@ The dose is heavy, low-rep, low-volume and explosive. That biases adaptation tow
 
 ## Exercise Rotation Rules
 
-- **The four scorecard lifts are fixed in their slots in every phase:** bench press (Push 1), overhead press (Push 2), weighted bench dip (Push 4), lat pulldown (Pull 1). Rotation applies to the other slots.
+- **The four scorecard lifts are fixed in their slots in every phase:** bench press (Push 1), overhead press (Push 2), weighted bench dip (Push 4), lat pulldown and pull-up practice (Pull 1). Rotation applies to the other slots.
 - Never repeat the exact same selection of the other slots two weeks in a row; swap at least 2-3 of them when repeating the session type.
 - Keep the movement pattern constant; change the implement or variation.
 - Lateral raises, face pulls, jumps/plyo and some core slots can repeat.

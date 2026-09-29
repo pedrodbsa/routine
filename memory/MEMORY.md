@@ -25,7 +25,7 @@ See `coaching-lessons.md` for details.
 
 ## Objective (live)
 
-- [Athletic by summer 2027](project-objective-athletic-summer-2027.md) — **read first**: body comp > run fitness > racing, sleep governs; Aug 1 2027 scorecard (~15% / ~70–71.5 kg / four upper-body load markers / spring sub-47 / autumn 45:00 stretch); Dec 12 is social; consult record `logbook/2026-09/consult-2026-09-29.md`
+- [Athletic by summer 2027](project-objective-athletic-summer-2027.md) — **read first**: body comp > run fitness > racing, sleep governs; Aug 1 2027 scorecard (~15% / ~70–71.5 kg / upper-body strength markers / spring sub-47 / autumn 45:00 stretch); Dec 12 is social; consult record `logbook/2026-09/consult-2026-09-29.md`
 - [Motivation = running numbers](user-motivation-running-numbers.md) — keep the prediction line, control run and pace-at-HR visible every report even though body comp ranks first
 - [Run over Legs; Legs compressed](feedback-run-over-legs-legs-bulky.md) — drop order bonus run → strides → Legs → quality → long → upper merged; Legs is the 3-slot ~35-min version
 - [Strength tripwire rejected](feedback-strength-tripwire-rejected.md) — 3/3 Legs/Pull/Push written, delivery flagged only, never auto-downshifted; show commitment and delivered count side by side
@@ -61,7 +61,7 @@ See `coaching-lessons.md` for details.
 - [Garmin on-watch strength loads](feedback-garmin-onwatch-strength-loads.md) — watch doesn't display structured target weights mid-workout; embed loads in step name/description or the athlete lifts blind
 - [Garmin watch = offsite reference](feedback-garmin-watch-offsite-reference.md) — watch is the only gym-side reference; embed execution data (loads/structure) there, keep nutrition OUT (always done at home, consultable)
 - [No box jumps](feedback-no-box-jumps.md) — athlete won't jump onto a bench/box; default the leg explosive block to light jump squats (or broad jumps / A-skips), never box jumps
-- [No calf training](feedback-no-calf-training.md) — never program direct calf work (calves already too big/disproportionate); Achilles/stiffness role covered by the plyo block + running, removed from the leg-day spec
+- [No calf training](feedback-no-calf-training.md) — no calf work of any kind, incl. bodyweight/soleus raises in mobility and prehab (low insertions, legs bulky, wants them smaller); running + plyos carry the Achilles role
 - [Treadmill control run protocol](project-treadmill-control-run-protocol.md) — fix the belt at 8.6 km/h, 1% incline, 30:00, treadmill mode; tracked number is avg HR. Do NOT raise the belt speed (restarts the series). Watch under-reads belt by 2.4%
 - [Verify a load baseline before flagging a regression](feedback-verify-load-baseline-against-athlete.md) — Garmin pre-fills strength reps from the prescription; uniform rep counts across a session mean the reps are fiction. The athlete's "I tried it, too heavy" outranks the record (20 kg DB press baseline retracted 2026-08-10)
 - [Core needs ≥2 options per pattern](feedback-core-needs-two-options-per-pattern.md) — a rotation rule can't rotate a one-option pattern, so the slot gets dropped; select core by pattern (anti-rotation / anti-lateral for runners), not novelty
