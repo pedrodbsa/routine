@@ -18,7 +18,7 @@ Single lab session at FCDEFUC (Faculdade de Ciências do Desporto, U. Coimbra) o
 - Resting lactate: 1.37 mmol/L
 - Ramp test peak HR: ~180 bpm (true max from race history is 190)
 
-**Hydration status:** Lab flagged "Mal Hidratado" — urine SG 1.021, osmolality 750 mOsm/kg. Treat as chronic habitual deficit, not acute.
+**Hydration status:** Lab flagged "Mal Hidratado" — urine SG 1.021, osmolality 750 mOsm/kg. That is one spot sample; "chronic" is an inference, not a measurement. A urine-SG strip re-test is pending (`calendar.md`).
 
 **Why:** Prior body comp targets (70-72 kg / 21-23% BF) were anchored to scale BIA which overestimated BF by ~7 percentage points and underestimated lean mass by ~5.7 kg. The original "70-72 kg" weight target now means 16-18% BF, not 21-23%. Lab's own recommendation: 14% BF (~69 kg). Sub-T targets of 158-168 bpm in older notes were anchored to assumed LT 170; actual LT2 is 172, so the range is approximately right but should be reframed as 91-98% of measured LT2 (156-168).
 
@@ -26,4 +26,4 @@ Single lab session at FCDEFUC (Faculdade de Ciências do Desporto, U. Coimbra) o
 - Use Bod Pod 76.11 kg / 21.7% / 59.6 kg LBM as the body comp baseline. Scale BIA history is no longer the reference.
 - Use HR zones anchored to LT1 145 / LT2 172 / max 190. Lab-prescribed easy ceiling is 142 bpm across all environments — retired the prior 148 outdoor / 142 treadmill split.
 - Recomp goals require recalculation: goal must be expressed in BF% terms (anchor on 59.6 kg LBM) not weight terms.
-- Hydration is now a tracked protocol concern — performance limiter, not just a wellness item.
+- Hydration is steered by urine colour until the re-test settles whether the deficit is real.

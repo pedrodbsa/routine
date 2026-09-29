@@ -69,8 +69,8 @@ per Garmin `<id>`").
 
 Record, when present:
 
-- Run — distance, pace, average and max HR, RPE (from Garmin), plus any sleep,
-  heat, or pain modification.
+- Run — distance, pace, average and max HR, RPE (Garmin `workout_rpe` ÷ 10), plus any
+  sleep, heat, or pain modification.
 - Strength — per-exercise working load, reps, and RPE. This is the capture point
   `/report` promotes into `strength-exercises.md`.
 - Meals — **only genuine deviations, swaps, and flags** (e.g. a meal swap, an
@@ -110,7 +110,8 @@ Garmin workout IDs written by `/garmin`.
   `protocols/coaching.md` under "Operational Floor". A daily file may reference
   that section but must not copy it.
 - On Sundays the `## Context` section also carries the weekly check: ACWR,
-  Composite Load, 7-day weight average (with its reading count — decisions need
+  Composite Load (duration × Garmin session RPE, sessions without an RPE excluded
+  and counted), 7-day weight average (with its reading count — decisions need
   ≥4 fasted), body-comp trend against the phase band, recovery flags, the six
   adherence rows from `current-status.md` (runs ≥4 and ≥30 km, lifts 3/3, fasted
   weigh-ins ≥4/7, waist 1/wk, sleep onset ≤23:30 5/7, sleep score ≥70 5/7), and

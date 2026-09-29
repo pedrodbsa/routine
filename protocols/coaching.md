@@ -32,13 +32,13 @@
 These are the non-negotiable daily and per-session standards. They are constant,
 so daily plan files reference this section instead of reproducing it.
 
-- **Every morning:** Withings weigh-in in the fasted post-void, pre-food state (a state, not a clock time — `[[feedback-weigh-in-state-not-clock]]`); Mondays add the navel waist tape. Decisions need ≥4 fasted readings a week; 7/7 is the target. The day's plan is drafted by `/plan` (scheduled from Oct 2026 — `memory/project-workflow-automated-record.md`).
-- **Every session:** logged with the metrics the protocol requires. Runs —
-  distance, duration, avg HR, max HR, RPE. Lifts — working weight, reps, and RPE
-  per exercise.
+- **Every morning:** Garmin Index scale weigh-in in the fasted post-void, pre-food state (a state, not a clock time — `[[feedback-weigh-in-state-not-clock]]`); Mondays add the navel waist tape. Decisions need ≥4 fasted readings a week; 7/7 is the target. The day's plan is drafted by `/plan` (scheduled from Oct 2026 — `memory/project-workflow-automated-record.md`).
+- **Every session:** recorded on Garmin, and rated on the watch's post-activity
+  perceived-effort prompt (the session RPE). Lifts: working weight and actual reps
+  per set, edited on the watch so the record is not the pre-filled prescription.
 - **Every day:** eaten to the portion-locked rotation / `/plan` meal table (no digital food-logging — weighed
   portions are the mechanism, the 7-day weight trend is the feedback loop), protein floor (>=165 g in the build
-  and maintenance phases, >=170 g in the cuts; see `nutrition.md`) hit, hydration floor (>=3.5 L) hit, 10-minute mobility done, supplements
+  and maintenance phases, >=170 g in the cuts; see `nutrition.md`) hit, urine pale straw (hydration), 10-minute mobility done, supplements
   taken. **Daily steps / walking (NEAT) are opportunistic extra, not a daily commitment (2026-06-23)** — done when
   time allows, never prescribed to compensate for a skipped session. Steps are still pulled end-of-day as an
   expenditure/coaching input, just not a floor.

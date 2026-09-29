@@ -35,7 +35,7 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
   not be preserved — the macro accounting is what's tracked.
 - **Re-tune the remaining (not-yet-eaten) meals' targets** to absorb any macro or
   calorie deviation and hold the day-type tier. Respect the protein-distribution rule
-  (≥3 boluses ≥30 g, pre-bed ≥40 g) and the fat floor when re-tuning.
+  (≥3 boluses ≥30 g, dinner ≥40 g) and the fat floor when re-tuning.
 - Keep the section's macro-tracking summary current: **Expected** (day-type tier) /
   **Actual so far** (eaten meals) / **Projected** (day end).
 - `## Actuals` carries **only genuine deviations, swaps, and flags** — not a duplicate
@@ -53,7 +53,7 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
 
 ### Body
 
-- Log weight and body-fat data to Status
+- Log weight with its state in `## Actuals` (scale BF% is BIA, context only)
 - Daily weigh-in protocol: morning, post-bathroom, pre-food (state, not clock)
 - Decisions need ≥4 fasted readings in the week; compute the rolling 7-day mean whenever ≥4 exist
 - Weekly navel waist tape (fasted, Monday by default) goes in `## Actuals` and the current-status Body Composition table
@@ -62,7 +62,7 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
 ### Weekly (Sundays)
 
 - Compute ACWR from week km / mean km of the four preceding weeks (`running.md` § ACWR)
-- Compute Composite Load from session duration x RPE across all runs and lifts
+- Compute Composite Load from session duration × Garmin session RPE (`workout_rpe` ÷ 10) across all runs and lifts; sessions without an RPE are excluded and counted
 - Flag >1.3 or <0.8
 - Display 7-day weight average and body-comp trend
 - Carry sleep, pain, and heat flags into `/report`

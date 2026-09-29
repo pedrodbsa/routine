@@ -6,7 +6,7 @@ See `coaching-lessons.md` for details.
 
 - **Recovery markers are ground truth** — HRV, BB, RHR, stress determine training readiness, not assumptions
 - **Don't extend easy-only blocks beyond 1 week** without reassessing recovery data
-- **Vigorous minutes drive Garmin fitness age** — easy-only training will always regress it
+- **Garmin fitness age now tracks scale BIA body fat** (its priority-1 component; vigorous minutes already met at ~176/wk) — context only, never a lever
 - **Athlete expects push-back** — be critical, don't be passive. The user trusts coaching autonomy.
 
 ## Project Conventions
@@ -17,9 +17,9 @@ See `coaching-lessons.md` for details.
 - Always read `protocols/current-status.md` first before any plan generation
 - Daily files: `logbook/YYYY-MM/YYYY-MM-DD.md` (plan + log in one file). Monthly reports live alongside as `logbook/YYYY-MM/report.md`. Reorg 2026-06-15: flat `plans/` + top-level `reports/` folded into per-month `logbook/` (earlier history: `days/` → `plans/`)
 - **Easy ceiling: 142 bpm all environments** (lab-prescribed, FCDEFUC 2026-04-28). LT1 145, LT2 172. Drift cap on long runs ≤145.
-- **Treadmill easy pace: 8-9 km/h** (6:40-7:30/km). Outdoor costs ~6-10 bpm more at same effort.
+- **Treadmill easy pace: 8-9 km/h** (6:40-7:30/km). Outdoor easy pace currently runs ~6% faster than the control belt at the same HR — compare pace-at-HR within one environment only.
 - **HR monitor: COROS armband** (optical arm-worn, accurate — trust the data)
-- **Lab-tested LT2: 172 bpm @ 5:00/km** (was assumed ~170, close). Sub-T targets = 156-168 (91-98% LT2).
+- **Lab-tested LT2: 172 bpm @ 5:00/km** (was assumed ~170, close). Sub-T work band 152-165, hard ceiling 168.
 - **Always pull Garmin data for run logging** — never rely on manual input for runs; athlete tracks all runs on Garmin
 - **Legs session moved to Mon Feb 16** — skipped Sun due to time, not fatigue. Pair with recovery run.
 
@@ -34,6 +34,7 @@ See `coaching-lessons.md` for details.
 
 ## Workflow Preferences
 
+- [Protocols are forward-looking](feedback-protocols-forward-looking.md) — state rules as they stand; no audit/change tags, "corrected" notes or strikethroughs in protocol files; history → coaching log + logbook record, completed material → archive
 - [Check time before nutrition](feedback-check-time-before-nutrition.md) — get the actual local time (`date` / `Get-Date`) before sequencing meals or pre/post-workout feeds; don't assume a morning start (root of the 2026-06-29 phantom-07:30-breakfast miss)
 - [Record decisions same-session](feedback-record-decisions-same-session.md) — calendar/goal changes agreed in chat must be written to the stack before the session ends; the Oct→Dec A-race move lived only in conversation and later sessions planned against a stale calendar (fixed 2026-07-31)
 - [Re-derive, don't inherit](feedback-rederive-not-inherit.md) — rebuild the week's shape from rules+data each morning, never carry yesterday's "recovery week" frame forward; capture the watch DSW and justify any conservative default (symmetric discipline). Root of the 2026-06-24 easy-vs-quality miss
@@ -56,7 +57,7 @@ See `coaching-lessons.md` for details.
 - [Weigh-in: state, not clock](feedback-weigh-in-state-not-clock.md) — anchor is post-void + pre-food, NOT a fixed time; bowel timing isn't controllable and coffee precedes it by design. Never prescribe a clock time (wrong advice given 2026-07-22, corrected by athlete)
 - [VO2max endpoint](reference-garmin-vo2max-endpoint.md) — VO2max MCP endpoints unreliable; use 10K race prediction as proxy (≤~50:00-50:30 ≈ VO2max ~47)
 - [Quality session periodization](feedback-quality-session-periodization.md) — derive the harder quality from the sub-T→threshold→10K-pace→VO2 ladder + phase week; cross-check the Garmin DSW; don't pull a rung forward on the athlete's phrasing
-- [Garmin easy paces work](feedback-garmin-easy-paces-work.md) — athlete saw race-prediction gains following Garmin's easy/base paces exactly (~6:20/km zone 2); lean polarized, keep easy days genuinely easy, weigh the DSW as a real input (don't auto-stack a 2nd full quality on green markers)
+- [Garmin easy paces work](feedback-garmin-easy-paces-work.md) — athlete saw race-prediction gains running easy days genuinely easy; lean polarized. The DSW itself is de-emphasized (plan.md, 2026-07-23): glance only when it diverges
 - [Garmin on-watch strength loads](feedback-garmin-onwatch-strength-loads.md) — watch doesn't display structured target weights mid-workout; embed loads in step name/description or the athlete lifts blind
 - [Garmin watch = offsite reference](feedback-garmin-watch-offsite-reference.md) — watch is the only gym-side reference; embed execution data (loads/structure) there, keep nutrition OUT (always done at home, consultable)
 - [No box jumps](feedback-no-box-jumps.md) — athlete won't jump onto a bench/box; default the leg explosive block to light jump squats (or broad jumps / A-skips), never box jumps

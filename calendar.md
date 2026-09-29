@@ -54,6 +54,10 @@
 | Item | Owner | Source |
 | --- | --- | --- |
 | Agree the isotretinoin target duration and stop plan with the dermatologist | athlete | memory/project-isotretinoin-course.md |
+| Urine-SG strips on 3 fasted mornings: ≥2 above 1.020 keeps the 3.5–4.5 L fluid guide, otherwise ~3.0 L | athlete | audit 2026-09-29 |
+| 25(OH)D blood test before taking D3 above 2,000–4,000 IU | athlete | audit 2026-09-29 |
+| Zinc: state a reason to keep it and check the multivitamin's zinc content; on hold until then | athlete | audit 2026-09-29 |
+| Garmin profile: height 172 → 170 cm (the Index scale uses it), and add Thursday to the training days | athlete | audit 2026-09-29 |
 | Disable the cloud routine "Weekly /report reminder" (trig_01FHEGq1csjRWNEzYWo2DJw3) once the first scheduled Sunday report reaches Telegram | coach | 2026-09-29 automation |
 
 ## Done

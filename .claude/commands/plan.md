@@ -75,9 +75,9 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
    - Write `logbook/YYYY-MM/YYYY-MM-DD.md` using the structure in
      `protocols/daily-template.md`.
    - Refresh `protocols/current-status.md`: update the `## Key Metrics` recovery
-     rows (Sleep, HRV, Resting HR, Body Battery, Stress) with today's pulled
+     rows (Sleep, HRV, Resting HR, Body Battery) with today's pulled
      values and dates, the snapshot date in that section's note, and the
-     `Recent scale weigh-ins` line if Garmin returned a newer reading. Touch
+     `Weight` row if Garmin returned a newer fasted reading. Touch
      nothing else — `Last verified`, phase, baselines, and the coaching log
      belong to `/report`.
 10. Tell the athlete the plan file is written, that the current-status snapshot
@@ -167,7 +167,7 @@ watch was off), plan anyway, in any mode:
 - Always be phase-aware and day-type-aware.
 - Never use a flat calorie number across the week.
 - Scheduling is fully flexible across weekdays (Thursday no-running rule retired
-  2026-05-28); Legs is the sole PM session, typically Wednesday (≥36 h before
+  2026-05-28); Legs is the sole PM session, typically Thursday (≥36 h before
   any quality run).
 - **Week shape from 2026-09-29:** 4 core runs (quality · long · easy + strides ·
   easy = the fortnightly treadmill control run, 5.0 km at 8.6 km/h, 1% incline)
@@ -175,7 +175,8 @@ watch was off), plan anyway, in any mode:
   § Phases 6-10 for the reference week and the drop order. The control run
   lands on the Monday easy slot every other week and is labelled in the plan
   file; alternate weeks that slot is an outdoor easy + strides.
-- Long runs >90 min require banana + coffee and quality-day calories.
+- Long runs: banana + coffee pre-run; the day is on the Long tier whatever the
+  duration.
 - If sleep was <5 h or Body Battery <30, write a rest-day plan.
 - Rest-day plans may offer the **optional Rest-Day NEAT incline-walk block**
   (`training.md` § Rest-Day NEAT — incline 8% / 5.0 km/h / 40 min / HR ≤125,
@@ -217,9 +218,9 @@ watch was off), plan anyway, in any mode:
 - Before a trail or long race, include gut-training practice on 2-3 long runs
   over 75 min.
 - Nutrition follows `nutrition.md` § Meal Distribution: **4 feeds on easy/rest
-  days** (small breakfast → big lunch → midafternoon snack → pre-bed dinner; no
-  post-run shake — breakfast is the post-run meal; the dropped shake is a
-  deliberate ~240 kcal deficit lever) and **5 on quality/long/strength days**
+  days** (small breakfast → big lunch → midafternoon snack → dinner → small
+  dessert; no post-run shake — breakfast is the post-run meal) and **5 on
+  quality/long/strength days**
   (+ post-session shake). A **fixed midafternoon protein snack** anchors every
   day (adherence/appetite-control lever) — build it from a `meal-rotation.md`
   Snack card (S4/S5 skyr builds are the lean default), keep it protein-forward

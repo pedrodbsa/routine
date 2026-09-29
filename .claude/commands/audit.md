@@ -6,10 +6,21 @@ effort: xhigh
 # Protocol Stack Audit — Hunt False Assumptions & Inconsistencies
 
 ## Objective
-Audit the full protocol stack for claims that are internally contradictory,
-physiologically/nutritionally wrong, or unsupported by the athlete's own measured
-data — anything that would mis-target a prescription and make adherence effort
-unproductive. Find the false premises, not just typos or stale wording.
+Make the stack a lean, correct, forward-looking context for the agents that execute it:
+
+- **Detect inconsistencies** between files, and between a rule and the data.
+- **Push back on suboptimal premises**: claims that are physiologically or
+  nutritionally wrong, or unsupported by the athlete's measured data — anything that
+  would mis-target a prescription and make adherence effort unproductive.
+- **Drop dead weight**: completed-phase material, expired rules, change narratives.
+  Wording is just enough to execute its function, which is to provide context.
+- **Make the agents more effective**: a rule an agent can apply without reading its
+  history.
+
+Protocols are forward-looking and carry historical protocols or data only when they
+are still valuable for a decision. Completed material moves to `protocols/archive/`
+with a pointer; the reasoning for a change goes in the coaching log and the audit
+record, never into the rule's text.
 
 ## Ground-truth hierarchy (what wins when sources disagree)
 1. **Lab measurements** (FCDEFUC 2026-04-28: lactate thresholds, Bod Pod body
@@ -20,7 +31,7 @@ unproductive. Find the false premises, not just typos or stale wording.
    data shows is unattainable or false is a defect, regardless of how reasonable
    it looks on paper.
 3. **Standing athlete decisions/preferences** in the coaching log (pre-lunch
-   training, 2 quality/wk, no leg hypertrophy, daily breakfast / no IF, etc.).
+   training, one quality/wk, no leg hypertrophy, daily breakfast / no IF, etc.).
 4. **Generic textbook defaults** — lowest priority. Flag anywhere a generic
    default contradicts 1–3.
 
@@ -45,6 +56,9 @@ docs as live: their defaults regenerate into daily files every run.
   Thursday no-running rule, IF eating window.)
 - **E. Regenerating defaults** — a default baked into a command doc that re-emits
   a bad value on every run. (Precedent: Garmin warmup ≤125 / cooldown ≤130.)
+- **F. Dead weight** — completed-phase tables, expired rules, struck-through text,
+  dated "corrected on / moved from" narratives, duplicated sections, and dangling
+  pointers. The fix is deletion or archiving, not annotation.
 
 ## Method
 1. Re-read current-status.md first to load current lab anchors, phase, goals, and
@@ -83,3 +97,8 @@ STOP and wait for approval before changing anything — same as the HR-range pas
   preference is not a defect; a preference dressed as a physiological fact is.
 - Skepticism over politeness. Flag what's wrong even in decisions a prior session
   or the athlete made.
+- When applying fixes, state the rule as it now stands. No "(audit YYYY-MM-DD)"
+  tags, "corrected"/"retracted" notes or struck-through text in protocol files; a
+  one-clause reason stays only where it stops an agent from undoing the rule. The
+  change history goes in the `current-status.md` coaching log and
+  `logbook/YYYY-MM/audit-YYYY-MM-DD.md`.

@@ -76,8 +76,8 @@ gives the athlete nothing to aim for on the watch.
   walk level. The old "warmup ≤125 / cooldown ≤130 / recovery ≤133" defaults were
   unattainable without walking and tripped constant "too high" alerts on a normal
   jog. Jog-step HR **ceilings stay at jog level (~145–150)**; floors stay low
-  (~110) so they never false-alert "too low." This applies to every easy/jog step:
-  warmup, cooldown, and recovery jogs between reps.
+  (~110) so they never false-alert "too low." This applies to every jog step:
+  warmup and cooldown.
 - **Easy runs and long runs are ONE step (athlete correction 2026-09-08).** No
   warmup or cooldown block: the Daily 5 is the warmup, and the main set already
   *is* the easy effort. A first-km "warmup" step with a looser ceiling than the
@@ -94,7 +94,8 @@ gives the athlete nothing to aim for on the watch.
 - **Quality steps (intervals, tempo, threshold, 10K-pace):** use the HR or pace
   range from `protocols/running.md` for that session type. Never leave a "hard
   effort" step open.
-- **Recovery jogs between reps:** HR **120–150** (post-rep HR is high and falling —
+- **Recovery between reps is a walk** (or jog → walk), with a time or lap-button end
+  condition and HR **100–150** as the display band (post-rep HR is high and falling —
   let it drift down, do not force it to walk level), or pace 7:30+/km.
 
 If the plan file gives explicit numbers, those win. If not, derive from
@@ -135,4 +136,4 @@ new trap) so the next upload doesn't repeat the guess.
   record it as a closest-category + note.
 - Loads come from the plan file. If the plan only gives a range or "RPE 7", pick
   a starting load from the last logged session in `protocols/strength-exercises.md`
-  § Working Loads and use that as the prescribed load.
+  § Exercises (Working load × reps) and use that as the prescribed load.

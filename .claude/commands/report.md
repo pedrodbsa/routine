@@ -28,8 +28,8 @@ routine "Weekly /report reminder", which only reminded the athlete to run it by 
 5. Review the six measured adherence rows in `current-status.md` (runs, lifts, fasted weigh-ins ≥4/7, waist 1/wk, sleep onset ≤23:30 5/7, sleep score ≥70 5/7); ≥3 onsets after 23:30 in a week is a flag with bedtime as the lever, not a training change
 6. Run phase-aware weekly checks:
     - Compute ACWR and flag >1.3 or <0.8. **An ACWR <0.8 or a week below the 30 km volume floor is not advisory** (2026-06-12): it requires a logged corrective action in the coaching log, same as >1.5.
-    - Score the running scoreboard (`running.md` § Weekly Rules, "Scoreboard from Phase 6 onward"): volume ≥30 km and ≥4 runs, the quality session at target HR, the fortnightly control-run avg-HR trend (three entries before any read), long-run pace-at-HR on matched routes, and the Garmin prediction milestone line (≤50:30 Oct 18 · ≤49:30 Dec 1 · ≤48:30 Apr 1 — a motivation line; a miss prompts a look at volume, never a plan change on its own). **Always report the running numbers** — they are the athlete's motivation driver even though body composition ranks first.
-    - Compute Composite Load and compare it to the rolling 4-week average
+    - Score the running scoreboard (`running.md` § Weekly Rules, "Scoreboard"): volume ≥30 km and ≥4 runs, the quality session at target HR, the fortnightly control-run avg-HR trend (three entries before any read), long-run pace-at-HR on matched routes, and the Garmin prediction milestone line (≤50:30 Oct 18 · ≤49:30 Dec 1 · ≤48:30 Apr 1 — a motivation line; a miss prompts a look at volume, never a plan change on its own). **Always report the running numbers** — they are the athlete's motivation driver even though body composition ranks first.
+    - Compute Composite Load (duration × Garmin session RPE, `workout_rpe` ÷ 10; state how many sessions lacked an RPE) and compare it to the rolling 4-week average
     - Compute 7-day weight average and compare to prior week
     - Flag stalls during cut phases
     - Check whether heat or sleep modified the week materially

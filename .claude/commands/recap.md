@@ -34,7 +34,9 @@ ask for it from Telegram at any time. It never touches Garmin Connect and never 
    A session is delivered only if Garmin has it. Unequipped sessions with no upload
    trail are delivered only if the athlete has said so in the file.
    - Delivered: write the actuals into `## Actuals` per `daily-template.md` (run
-     distance, pace, average and max HR; strength per exercise from
+     distance, pace, average and max HR; session RPE from `get_activity`'s
+     `workout_rpe` ÷ 10 for runs and lifts, or "RPE not rated" when absent;
+     strength per exercise from
      `get_activity_exercise_sets`, flagging uniform pre-filled reps as unverified per
      `memory/feedback-verify-load-baseline-against-athlete.md`).
    - Not delivered, and no reason recorded yet: write
