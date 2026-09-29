@@ -20,8 +20,8 @@ Design facts that are easy to get wrong later:
   `code/` clone is build input only. It embeds an ~1 h GitHub App token in its origin URL, which
   git prefers over the `GITHUB_TOKEN` helper, so pushes from it fail silently once the token
   expires (12 commits sat unpushed before this was found); deploys also wipe it. The entrypoint
-  clones `../files/repo` (mounted at `/app`) from GitHub on first boot with a bare URL and warns
-  if a credential ever appears in origin. **Host git work goes in `../files/repo`, never
+  clones `../files/repo` (mounted at `/app`) from GitHub on first boot with a bare URL; the image's
+  `/etc/gitconfig` credential helper supplies `GITHUB_TOKEN`. **Host git work goes in `../files/repo`, never
   `code/`.** Agent state (credentials, trust record, Garmin token cache) lives on
   `../files/home`.
 - **Auto Deploy must stay off.** The `cron-git-sync` schedule pushes to `main` every ~10 minutes;
