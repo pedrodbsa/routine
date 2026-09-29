@@ -71,7 +71,7 @@ During cut phases (4, 5, 8, 10), allow 1 flex day per week at maintenance calori
 
 ### Social Days (all phases — written 2026-09-29)
 
-The athlete has **1–2 social evenings a week, usually with alcohol** (stated at the 2026-09-29 consult). Each runs roughly +1,500 kcal over tier, so they are worth +300–430 kcal/day averaged over the week — the whole plan-day deficit of the last cut, and the only explanation on file for seven flat weeks at ~2,015 kcal. They are assumed in every piece of calorie arithmetic in this file; they are not a moral question, they are a term in the equation.
+The athlete has **1–2 social evenings a week, usually with alcohol** (stated at the 2026-09-29 consult). Each runs roughly +1,500 kcal over tier, so they are worth +300–430 kcal/day averaged over the week — the whole plan-day deficit of the last cut. They are one of two explanations on file for seven flat weeks at ~2,015 kcal; the other is intake on unplanned days, since about half the days in Aug–Sep had no daily file and nothing measured what was eaten on them (audit 2026-09-29). They are assumed in every piece of calorie arithmetic in this file; they are not a moral question, they are a term in the equation.
 
 Protocol on a social day:
 
@@ -81,7 +81,7 @@ Protocol on a social day:
 - **The next day is re-tiered to Rest** regardless of what it was — that is the whole compensation. No further cutting, no added cardio, no skipped feeds. Chasing a surplus with a deficit the next day is how a 2-day event becomes a 4-day one.
 - **In the cut**, a second social day in the same week fires the flex-day flag above; in the build, the weight band catches it.
 
-The build's weight trend at known plan tiers is what measures the real cost of these days (the "social term" in § Phase 8). If the term comes out large, the cut gets slower, not the plan days smaller.
+The build's weight trend at known plan tiers measures the combined cost of social and unplanned days (the "drift" in § Phase 8). If it comes out large, the cut gets slower, not the plan days smaller.
 
 ### Phases 6-10 — Reverse, Build, Cut 3, Maintenance, Lean-out (redefined by `/consult` 2026-09-29)
 
@@ -110,7 +110,7 @@ Athlete's call (2026-09-29): the lower of the two candidate tables, as a buffer 
 | Quality | 2,550 | 165 g | 326 g | 65 g |
 | Long | 2,750 | 165 g | 376 g | 65 g |
 
-Week average on the build's standard shape (2 rest, 3 easy/strength, 1 quality, 1 long; ~2,350 on a 1-rest week): **~2,340**. With 1–2 social evenings at roughly +1,500 each, the true weekly average sits ~2,650–2,750 unless § Social Days holds — which is why the band, not the tier, is the governor.
+Week average on the reference week (1 rest, 4 easy/strength, 1 quality, 1 long — `training.md` § Phases 6-10): **~2,350** (~2,340 on a 2-rest week). With 1–2 social evenings at roughly +1,500 each, the true weekly average sits ~2,650–2,750 unless § Social Days holds — which is why the band, not the tier, is the governor.
 
 **Build weight band (pre-committed).** Expected 74.5–75.5 kg: the reverse alone returns ~1.0–1.2 kg of glycogen and water (the athlete's own July 2026 data), so a rise into that band is not fat. **Ceiling 76.0 / floor 73.5**, read on the 7-day fasted mean, and acted on only when **two consecutive weeks each carry ≥4 fasted readings**: above 76.0 → hold the tiers and take 100 kcal off carbs on every row; below 73.5 → add 100 to carbs on every row. No data → hold. A single-week move is noise (100 kcal/day ≈ 0.09 kg/wk against ~0.11 kg of standard error on a two-week difference). First possible read: Oct 26.
 
@@ -159,7 +159,7 @@ Unchanged: 4 feeds on rest/easy days, 5 on strength/quality/long days, the fixed
 
 If sleep was <6 h, do not force fasted running.
 
-**No breakfast before a run (athlete-corrected 2026-07-31):** the athlete does not run on a full stomach. Never sequence a full breakfast pre-run regardless of the time gap — pre-run is at most banana + coffee per the table above; breakfast is always the post-run meal. On pre-lunch double days, post-run breakfast remains the pre-lift fuel (a whey shake can bridge if the lift is close).
+**Breakfast and running depend on intensity (athlete-corrected 2026-07-31, refined 2026-08-03):** before a **quality or long run**, pre-run is at most banana + coffee and breakfast lands after the run. Before an **easy run**, breakfast may sit either side — the athlete runs easy on breakfast fine (`[[feedback-no-breakfast-before-run]]`). On pre-lunch double days breakfast is never dropped: it sits between the run and the lift and is the lift's fuel (a whey shake can bridge if the lift is close).
 
 ## Meal Distribution
 
@@ -169,10 +169,10 @@ The governed variable is **protein distribution, not meal count.** Meal frequenc
 
 **The midafternoon snack is an adherence anchor, not a macro requirement (2026-06-22).** The athlete reports that a planned afternoon protein feed blunts evening hunger and keeps him off a night-grazing pattern — a real compliance lever for *him*. Because meal count is fat-loss-neutral, the snack costs nothing on macros and the extra protein bolus is marginally LBM-positive, so it is adopted on every day. **Critical constraint: the snack is funded by a smaller breakfast, never added on top.** A snack treated as a freebie alongside three full meals is ~+250 kcal/day and feeds the stall directly — so breakfast runs small (eggs ± a little oats, ~300 kcal) and the snack carries the calories that left it. The day stays on its tier; only the distribution changes. This revises the 2026-06-18 "fewer, larger meals" structure: the athlete now prefers *less in the morning plus a guaranteed afternoon feed*, which costs nothing and improves adherence.
 
-- **Easy / rest days — 4 feeds:** small breakfast → big lunch → **midafternoon protein snack** → pre-bed dinner. **No separate post-run shake** — breakfast is the post-run meal (an easy/short run does not need pre-run carbs *and* a shake *and* breakfast). Dropping the easy-day shake still trims ~240 kcal (a deliberate deficit lever, 2026-06-18). Breakfast runs small to fund the afternoon snack; lunch and dinner stay the anchors.
+- **Easy / rest days — 4 feeds:** small breakfast → big lunch → **midafternoon protein snack** → pre-bed dinner. **No separate post-run shake** — breakfast is the post-run meal (an easy/short run does not need pre-run carbs *and* a shake *and* breakfast). Dropping the shake is a structural choice, not a deficit lever: the day lands on its tier either way (the "~240 kcal lever" claim was retired by the 2026-09-29 audit). Breakfast runs small to fund the afternoon snack; lunch and dinner stay the anchors.
 - **Quality / long / strength days — 5 feeds:** breakfast → post-workout shake (within 30 min; the session earns it) → lunch (post-workout, largest carb) → **midafternoon protein snack** → dinner ≥40 g. On these days the snack is the least necessary feed — the morning shake already spreads protein — but is kept for habit consistency; keep it small and protein-forward so it does not crowd the peri-workout carb.
 - **Midafternoon snack (all days):** ~200-280 kcal, protein-forward (≥30 g, low fat) — a skyr or Greek-yogurt + whey bowl is the default (see `meal-rotation.md` § Snacks). Timed ~15:30-16:30 to bridge lunch → dinner and pre-empt evening appetite. Skyr (high-protein) clears the 30 g bolus whey-free; the athlete's staple Greek yogurt is protein-weak (~5.3 g/100 g) and needs ½-1 scoop whey to clear it.
-- **Soft eating window:** stop eating ~3 h before bed. Captures the digestive and sleep benefit of time-restricted eating without the LBM cost of a hard fasting window.
+- **Late-feed timing:** dinner finishes ~2–3 h before bed, and the small post-dinner dessert (`[[feedback-post-dinner-snack-hunger]]`) lands **≥60–90 min before bed**. Sleep onset is the live constraint, so keep late feeds small and away from bedtime. (The former "stop eating ~3 h before bed" window contradicted the dessert every build day carries and was relaxed by the 2026-09-29 audit.)
 - **Race days:** breakfast 2-3 h pre-race regardless.
 
 Easy short runs (<60 min, well-rested) may still be done fasted by preference — breakfast then comes immediately after the run, not skipped. Strength, quality, long-run, and race-day sessions are not fasted.
@@ -184,7 +184,7 @@ Easy short runs (<60 min, well-rested) may still be done fasted by preference �
 | Breakfast (small)  | 07:00-09:00 | Protein-forward but **run small** — eggs ± a little oats (~300 kcal, ~25-35 g protein), held down to fund the afternoon snack |
 | Lunch              | 13:00-14:00 | **Larger** — protein + carb + veg + fat (~50-55 g protein)     |
 | Midafternoon snack | 15:30-16:30 | Skyr / Greek-yogurt + whey bowl (~30-40 g protein, low fat). The adherence anchor — blunts evening appetite |
-| Dinner             | 19:30-20:30 | **Larger** — protein + carb + veg, ≥40 g pre-bed. Finish ~3 h before bed. |
+| Dinner             | 19:30-20:30 | **Larger** — protein + carb + veg, ≥40 g protein. Finish ~2–3 h before bed; the small dessert follows it. |
 
 Four feeds keep protein in ≥3 boluses ≥30 g (lunch, snack, dinner clear it; the small breakfast may run under and is the lighter fourth). Fat is the binding constraint at the easy/rest tier — hold whole eggs to ~3 and take the snack's protein from lean skyr + whey so fat lands at the ~60 g floor, not over it. The snack is **funded by the smaller breakfast, not added on top** — the day stays on tier.
 
@@ -194,10 +194,10 @@ Four feeds keep protein in ≥3 boluses ≥30 g (lunch, snack, dinner clear it; 
 | ------------------ | ---------------- | ---------------------------------------------------------------- |
 | Breakfast          | 07:00-09:00      | 35-50 g protein + carbs (B1-B4 from meal rotation).              |
 | Pre-session snack  | 30-45 min pre    | Optional if breakfast was recent. Banana + whey on quality/long. |
-| Post-session shake | within 30 min    | 35-45 g whey + carb + 5 g creatine. **This is the feed dropped on easy days.** |
+| Post-session shake | within 30 min    | 35-45 g whey + carb (no creatine — the daily dose rides the morning coffee, `supplements.md`). **This is the feed dropped on easy days.** |
 | Lunch              | 13:00-14:00      | Protein + carb + veg + fat (post-workout, largest carb)          |
 | Midafternoon snack | 15:30-16:30      | Small, protein-forward — kept for habit consistency; do not let it crowd the peri-workout carb |
-| Dinner             | 19:30-20:30      | Protein + carb + veg, ≥40 g pre-bed. Finish ~3 h before bed.     |
+| Dinner             | 19:30-20:30      | Protein + carb + veg, ≥40 g protein. Finish ~2–3 h before bed; the small dessert follows it. |
 
 Protein and fat stay mostly constant; carbs move up or down with day type and session. **An easy run is not a 5-feed day** — it follows the 4-feed easy/rest structure above (no separate post-run shake; breakfast is the post-run meal). Reserve the shake for quality, long, and strength sessions, which need the recovery fuel.
 
@@ -228,7 +228,7 @@ Default training is clustered before lunch (run before breakfast, upper lift bef
 - **Lunch is the post-workout meal** — place the largest single carb feed here, right after the lift.
 - Snack and dinner carry the remainder; do not back-load most of the day's carbs to dinner.
 
-**Legs day (PM, after lunch — typically Wednesday):**
+**Legs day (PM, after lunch — typically Thursday):**
 
 - Lunch is the pre-lift meal — ~35-45% of the day's carbs in the 2-3 h before the session.
 - Dinner is the post-workout + pre-bed protein meal — a large carb feed plus ≥40 g slow protein.
@@ -237,7 +237,7 @@ Default training is clustered before lunch (run before breakfast, upper lift bef
 
 ### Post-Workout Shake
 
-- 35 g whey + 1 banana + 5 g creatine + ~250 mL unsweetened almond milk
+- 35 g whey + 1 banana + ~250 mL unsweetened almond milk (creatine is not carried here — morning coffee, `supplements.md`)
 
 > Athlete default liquid for shakes: unsweetened almond milk (~30 kcal / cup, +1 g P / +1 g C / +2.5 g F vs water). Substitute water only when the calorie tier is the lowest of the active phase and the liquid kcal need to be trimmed.
 
@@ -271,9 +271,9 @@ The athlete prefers a smaller starch portion at lunch and dinner with a piece of
 
 ## Hydration and Heat Rules
 
-- Daily baseline: **3.5-4.5 L fluids** (raised from 3.0-4.0 due to chronic under-hydration lab flag, 2026-04-28; heavy daily salt intake increases the water requirement, it does not substitute for it)
+- Daily guide: **3.5-4.5 L fluids, governed by urine colour (pale straw), not a litre count.** The lab measured one concentrated spot sample (urine SG 1.021, osmolality 750 mOsm/kg, 2026-04-28). That is a measured fact, but one sample cannot show a chronic deficit, so the "chronic" label is an assumption until the urine-SG strip re-test (`calendar.md`): if ≥2 of 3 fasted mornings read >1.020, the guide stands; if not, it relaxes to ~3.0 L. Heavy daily salt intake increases the water requirement; it does not substitute for it.
 - Quality, long, or hot-weather days: add 500-1000 mL above baseline
-- **Pre-run sodium loading** (Quality, Long Run, or temps >24 C): 600-800 mg sodium with 500 mL water 60-90 min pre-run. Timing-driven for plasma-volume expansion, not additive to daily intake. Dose kept modest because daily salt is already high — 1 g+ pre-run risks GI distress at this baseline
+- **Pre-run sodium loading** (Quality, Long Run, or temps >24 C): 600-800 mg sodium with 500 mL water 60-90 min pre-run. The aim is to start the session euhydrated; this dose is far too small to expand plasma volume meaningfully (sodium-loading protocols use several grams), so do not claim that for it. It is not additive to daily intake. `running.md` § Heat defers to this line. Dose kept modest because daily salt is already high — 1 g+ pre-run risks GI distress at this baseline
 - For runs >60-75 min in warm weather: 400-700 mL fluid/hour and 300-600 mg sodium/hour
 - **Daily potassium target ~3,500-4,000 mg from food.** Sources: potato (~900 mg), banana (~400 mg), cooked spinach (~840 mg/cup), Greek yogurt (~250 mg/cup), salmon (~400 mg/serving), beans (~700 mg/cup). A standard multivitamin covers <5% of this — must come from food
 - **Daily magnesium target ~400 mg.** Food sources: pumpkin seeds (~150 mg/oz), almonds (~80 mg/oz), cooked spinach (~150 mg/cup), dark chocolate 70%+ (~65 mg/oz). Multis typically cover only 12-25%; supplemental Mg glycinate **200-350 mg** pre-bed is acceptable (kept at or below the 350 mg supplemental UL, since the food target already supplies ~400 mg). Benefit for sleep onset is modest and evidence-light — keep it because Mg is well-tolerated and corrects a common dietary shortfall, not as a primary sleep lever. (Single supplement spec lives in `supplements.md`.)
@@ -299,7 +299,7 @@ For the sweat number to be usable: weigh **before the post-run shake**, nude and
 
 ### 10K
 
-- Final 3 days: 300 g+ carbs, reduce fiber, use familiar foods
+- Final 3 days: the day-type tier carbs (no separate carb load for a 10K — § Phase 7), reduce fiber, use familiar foods
 - Race morning: 50-80 g easy carbs, 500 mL water, caffeine ~230 mg 30-60 min pre-race
 - No in-race fueling needed
 
@@ -321,14 +321,14 @@ For the sweat number to be usable: weigh **before the post-run shake**, nude and
 
 | Signal                                  | Action                                               |
 | --------------------------------------- | ---------------------------------------------------- |
-| 7-day weight average stalls 2+ weeks    | Reduce daily target by 100 cal from carbs            |
+| 7-day weight average stalls 2+ weeks    | **Cut phases only (4, 5, 8, 10 — scoped 2026-09-29 audit).** Reduce daily target by 100 cal from carbs. In the build a flat weight is the design; the § Phase 7 band governs there |
 | 7-day weight average drops >0.8 kg/week | Add 100 cal, carbs first                             |
-| Motivation <2 for 3+ days               | Insert unplanned refeed day at 2,300 cal             |
-| Lean mass declines 2+ weeks             | Raise calories 100-200, carbs first                  |
+| Motivation <2 for 3+ days               | Insert an unplanned refeed day at the day's tier +300 (carbs). The old fixed 2,300 sat below the build's Quality and Long tiers |
+| Upper loads fall on 2+ lifts across two sessions | Raise calories 100, carbs first (§ Phase 8). Replaces "lean mass declines 2+ weeks": BIA lean mass is creatine- and hydration-sensitive and no Bod Pod re-test is planned, so loads are the only lean-mass instrument (2026-09-29 audit) |
 | 3+ untracked days in a week             | Flag in weekly report and audit honestly             |
 | Strength compliance <2/3 sessions in a week | **Cut phases only (4, 5, 8, 10 — scoped 2026-09-29).** Reduce next week's daily targets by 75-100 cal (carbs first); flag in weekly report. Calories are "earned" by stimulus — but at the weekly level, not punitively same-day. In the reverse, build and maintenance phases (6, 7, 9) missed strength is **flagged only** and fixed by scheduling, never by calories (athlete's call at the 2026-09-29 consult: no automatic structural downshift either) |
 | Low motivation 5+ days                  | Consider moving diet break earlier                   |
-| Pain severity 3+ in cut phase           | Raise intake to 2,300 for that day plus the next day |
+| Pain severity 3+ in cut phase           | The day's tier +330 (≈ maintenance) for that day plus the next day (matches `mobility.md`) |
 | Sleep <5 h for 2 nights                 | Use maintenance calories for 1-2 days                |
 
 ### Phase 5 Guardrail Against Compound Stress
@@ -346,9 +346,9 @@ If 3 or more of the following occur in the same week during Cut Block 2:
 
 > Superseded 2026-09-29 by the § Phase 7 build weight band (ceiling 76.0 / floor 73.5 on two consecutive ≥4-reading weeks). The reverse now ends at the +300 tiers on Oct 5 with no further step, so there is nothing left for this note to gate; the principle — a jump beyond the glycogen/water rebound is a hold, not a signal to rise — lives on in the band.
 
-### Pre-Bed Protein Rule
+### Dinner Protein Rule (renamed from "Pre-Bed Protein Rule", 2026-09-29 audit)
 
-The final meal of the day contains **≥40 g of slow-digesting or mixed protein** (casein, Greek yogurt, cottage cheese, mixed dinner protein). Non-negotiable on PM lift days. Supports overnight MPS during the deficit and across nights shortened by early waking.
+Dinner contains **≥40 g of protein** (mixed dinner protein; casein-rich dairy counts). Non-negotiable on PM lift days. It is the last of the ≥3 boluses the distribution rule needs. The overnight-MPS rationale that used to be attached here belongs to a feed eaten ~30 min before sleep; it does not transfer to a dinner eaten 2–3 h before bed, so it is no longer claimed.
 
 ## Diet Breaks
 
