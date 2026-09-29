@@ -69,7 +69,7 @@ Definitive post-HM protocol stack for a 40-year-old male balancing body recompos
 | Supplements       | `protocols/supplements.md`        | Daily stack, optional items, finasteride compatibility                                                                          |
 | Mobility          | `protocols/mobility.md`           | Daily mobility, prehab, pain tracking                                                                                           |
 | Daily file format | `protocols/daily-template.md`     | Required daily fields, day type, ACWR, readiness notes                                                                          |
-| Command docs      | `.claude/commands/`               | `/plan`, `/garmin`, `/log`, `/report`, `/body` behavior                                                                         |
+| Command docs      | `.claude/commands/`               | `/plan`, `/garmin`, `/log`, `/report`, `/body`, `/audit`, `/consult` behavior                                                      |
 | Coaching memory   | `memory/`                         | Accumulated feedback, corrections, calibration — read `MEMORY.md` first                                                         |
 
 ## Layout
@@ -87,6 +87,7 @@ design specs and runbooks in `docs/`
 4. After meals: `/log meal [details]`
 5. Weekly: `/report` updates the active current-status file
 6. As needed: `/body` syncs scale data and target deltas
+7. Per training block, or when the goals stop matching reality: `/consult` runs the full interactive redefinition of objectives, goals, phase timeline, nutrition targets and training structure, and writes the approved decisions to every protocol file in the same session. `/audit` (on demand, roughly quarterly) hunts for false assumptions in the rules themselves.
 
 ## Coaching Primer
 

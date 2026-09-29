@@ -74,7 +74,7 @@ ACWR uses acute km over the mean of the **four preceding weeks** (chronic 24.45 
 ## Athlete response (2026-09-29, same session)
 
 - **Sep 21–27:** the gap was **low motivation, which has a specific cause**. The breach reason is now recorded, and the cause stays with the athlete. Given that, this week's ~40 km is a target, not a test. If motivation is still low, the minimum-effective-dose fallback week is the right shape, and lifting 3/3 outranks the km.
-- **Goal proposal 1 and the protocol generally:** to be revised in a dedicated protocol-refinement session (date TBD). Until then the files stand as written.
+- **Goal proposal 1 and the protocol generally:** to be revised in a dedicated `/consult` session (command created 2026-09-29, date TBD). Until then the files stand as written.
 - **Weigh-ins:** committed to ≥4 fasted this week.
 - Still unknown: whether reversal week 1 (~2,150) ran. The ≥4-readings gate makes this non-blocking.
 
