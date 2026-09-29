@@ -25,10 +25,11 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 
 ## Training
 
-- [Run over Legs; Legs compressed](feedback-run-over-legs-legs-bulky.md) — drop order bonus run → strides → Legs → quality → long → upper merged; Legs is the 3-slot version + a lateral raise/triceps superset (~45 min)
-- [Strength tripwire rejected](feedback-strength-tripwire-rejected.md) — 3/3 Legs/Pull/Push written, delivery flagged only, never auto-downshifted; show commitment and delivered count side by side
+- [Run over Legs; Legs compressed](feedback-run-over-legs-legs-bulky.md) — drop order bonus run → strides → leg half of Legs + shoulders → quality → long → upper merged; the leg half is the 3-slot version
+- [Strength tripwire rejected](feedback-strength-tripwire-rejected.md) — 3/3 written, delivery flagged only, never auto-downshifted; show commitment and delivered count side by side
 - [No calf training](feedback-no-calf-training.md) — no calf work of any kind, incl. bodyweight/soleus raises in mobility and prehab (low insertions, legs bulky, wants them smaller); running + plyos carry the Achilles role
 - [No box jumps](feedback-no-box-jumps.md) — default the plyo slot to light jump squats (or broad jumps / A-skips)
+- [Split = major + minor](feedback-split-major-plus-minor.md) — Chest + biceps / Back + triceps / Legs + shoulders, abs every session; athlete-designed, don't restructure unasked
 - [Strength rotation: two-session lookback](feedback-strength-rotation-two-session-lookback.md) — rotate non-fixed slots against the last TWO same-type sessions
 - [Core needs ≥2 options per pattern](feedback-core-needs-two-options-per-pattern.md) — a one-option pattern gets dropped, not rotated; select core by pattern (anti-rotation / anti-lateral for runners)
 - [Verify a load baseline before flagging a regression](feedback-verify-load-baseline-against-athlete.md) — Garmin pre-fills reps from the prescription; uniform reps = fiction; the athlete's account outranks the record

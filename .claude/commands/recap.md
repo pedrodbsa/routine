@@ -60,7 +60,7 @@ ask for it from Telegram at any time. It never touches Garmin Connect and never 
    under ~1,000 characters of visible text, sent with 1–5 buttons. Otherwise it is a
    short summary with the same content, in the session's normal style. In order:
    - one line on what was delivered, with the key numbers (e.g. "Easy 8.1 km @ 139
-     avg HR ✓ · Push ✓ — 3 sets each, loads per plan");
+     avg HR ✓ · Chest + biceps ✓ — 3 sets each, loads per plan");
    - each miss, as "not delivered — reason?";
    - the weigh-in if there was one (fasted or not);
    - tomorrow's calendar items and anything today that is still open;

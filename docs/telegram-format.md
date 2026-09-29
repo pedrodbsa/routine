@@ -44,10 +44,10 @@ When a reply is short and has nothing to lay out, plain `format: "text"` is fine
 **Morning plan** (`/plan scheduled`, HTML):
 
 ```
-<b>Mon 5 Oct · Easy + Push</b> · 🟢 Green
+<b>Mon 5 Oct · Easy + Chest/Biceps</b> · 🟢 Green
 💤 7h10, onset 23:05 · HRV 58 (balanced)
 🏃 <b>Easy 8 km</b> · HR ≤142 · RPE 3
-🏋️ <b>Push</b> · 5 slots, ~45 min
+🏋️ <b>Chest + biceps</b> · 6 slots, ~45 min
 🍽 <b>Easy tier</b> · 2,250 kcal · P165 C251 F65
 <pre>07:30 Breakfast  380 P30
 12:30 Lunch      720 P50

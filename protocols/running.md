@@ -131,7 +131,7 @@ Scheduling is fully flexible; these rules set session counts and spacing. The we
 - Volume **floor 30 km, band 32-42**. Heavy rain: the treadmill is the fallback, not the plan.
 - **No second full quality session** while body composition ranks first; strides and the planned progression finish are the second stimulus.
 - Qualities ≥72 h apart; Legs ≥36 h before any quality and never on the same day as a hard run.
-- **Drop order on a compromised week** (athlete's call: run over Legs): bonus run → strides → Legs → quality (to easy) → long run shortened to 10 km → Push and Pull merged.
+- **Drop order on a compromised week** (athlete's call: run over Legs): bonus run → strides → the leg half of Legs + shoulders → quality (to easy) → long run shortened to 10 km → Chest and Back merged.
 - **Phase 9 (Apr 13 – Jun 14 2027):** the same shape plus a 3-4 week sharpen (10K-pace reps weekly, one short VO2 touch) and § Race-Week Running Pattern into the spring 10K. No taper longer than 7 days.
 
 **Scoreboard** (reported weekly, every week — the running numbers are the athlete's motivation driver): (1) volume ≥30 km and ≥4 runs, (2) the quality session at target HR, (3) the control-run avg-HR trend, (4) long-run and easy pace-at-HR on matched routes, (5) the Garmin prediction milestone line (`current-status.md` § Race Schedule).

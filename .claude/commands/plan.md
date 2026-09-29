@@ -167,11 +167,12 @@ watch was off), plan anyway, in any mode:
 - Always be phase-aware and day-type-aware.
 - Never use a flat calorie number across the week.
 - Scheduling is fully flexible across weekdays (Thursday no-running rule retired
-  2026-05-28); Legs is the sole PM session, typically Thursday (≥36 h before
+  2026-05-28); Legs + shoulders is the sole PM session, typically Thursday (≥36 h before
   any quality run).
 - **Week shape from 2026-09-29:** 4 core runs (quality · long · easy + strides ·
   easy = the fortnightly treadmill control run, 5.0 km at 8.6 km/h, 1% incline)
-  plus a bonus 5th; Legs / Pull / Push 3/3; Saturday rest. See `training.md`
+  plus a bonus 5th; Chest + biceps / Back + triceps / Legs + shoulders 3/3, abs
+  in every session; Saturday rest. See `training.md`
   § Phases 6-10 for the reference week and the drop order. The control run
   lands on the Monday easy slot every other week and is labelled in the plan
   file; alternate weeks that slot is a plain outdoor easy (no strides the day

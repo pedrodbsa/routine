@@ -14,7 +14,7 @@ Whenever `/plan` prescribes a **treadmill run** on a day that also carries a **s
 **How to apply:**
 - Prescribe the treadmill run + lift as one contiguous block (default pre-lunch double per `training.md` § Double-Day Guidelines), not two separately-timed sessions.
 - Sequence peri-workout fuel for back-to-back: if done fasted, take the post-run shake *before* the lift so it isn't done empty (the double-day guideline already covers this); breakfast/lunch land after the block.
-- Applies specifically to the fortnightly **treadmill control run** (the fixed-protocol easy run) when it lands on a Push/Pull/Legs day — pair it with that session rather than spreading them across the day.
+- Applies specifically to the fortnightly **treadmill control run** (the fixed-protocol easy run) when it lands on a lifting day — pair it with that session rather than spreading them across the day.
 - Outdoor runs are unaffected (those can be run-before-breakfast, lift-before-lunch); this is about the treadmill run sharing the gym trip with the lift.
 
 Related: [[feedback-adjust-day-on-skipped-session]], [[feedback-garmin-watch-offsite-reference]].

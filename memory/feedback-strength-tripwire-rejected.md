@@ -1,6 +1,6 @@
 ---
 name: feedback-strength-tripwire-rejected
-description: "Athlete rejected the auto-downshift strength tripwire (2 weeks <2/3 → 2/wk) on 2026-09-29 — wants Legs/Pull/Push 3/3 written and delivery flagged only; do not re-propose without new evidence, but keep the delivered count next to the commitment every report"
+description: "Athlete rejected the auto-downshift strength tripwire (2 weeks <2/3 → 2/wk) on 2026-09-29 — wants 3/3 (Chest + biceps / Back + triceps / Legs + shoulders) written and delivery flagged only; do not re-propose without new evidence, but keep the delivered count next to the commitment every report"
 metadata:
   type: feedback
 ---
@@ -10,7 +10,7 @@ At the 2026-09-29 consult the coach recommended an automatic tripwire — two co
 **Why:** the athlete owns the commitment and wants the plan to reflect it. Auto-downshifting would have made the stack quietly agree with the pattern he is trying to break.
 
 **How to apply:**
-- Write 3/3 Legs / Pull / Push in every phase; never plan 2/wk by default.
+- Write 3/3 Chest + biceps / Back + triceps / Legs + shoulders in every phase; never plan 2/wk by default.
 - `/report` puts the commitment and the delivered count side by side every week, in plain sight, without editorialising — that is the whole enforcement.
 - Do not re-propose the tripwire unless something changes materially (e.g. the delivered rate is still under 50% after eight scored weeks from Oct 5). If it is re-proposed, say what changed since Sep 29.
 - The strength-compliance *calorie* rule is scoped to cut phases only (`nutrition.md`); in the build, missed strength never touches calories.

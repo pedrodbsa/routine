@@ -41,9 +41,9 @@ Four lines, no more:
 Concise session detail.
 
 - Running: distance, HR cap, pace guide, RPE. Note any heat or sleep modification.
-- Strength: the exercise table — slot, exercise, sets x reps, rest, load note. Legs is the compressed
-  three-slot session (primary lift, plyo, hamstring; single-leg and core optional — `training.md`
-  § Leg Day).
+- Strength: the exercise table — slot, exercise, sets x reps, rest, load note. The three sessions are
+  Chest + biceps, Back + triceps and Legs + shoulders, each closing with abs; the leg half is
+  the compressed three-slot version (`training.md` § Legs + Shoulders).
 - Rest day: state it in one line, optionally offering the incline-walk NEAT block
   (`training.md` § Rest-Day NEAT) as a nice-to-have — NEAT is opportunistic, not a
   prescription; omit it when recovery is depleted or time is short.
