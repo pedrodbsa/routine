@@ -48,7 +48,7 @@ read that one word, then use the matching column.
 
 The **midafternoon snack** is a standing adherence anchor (~15:30-16:30) — it blunts evening appetite and pre-empts night grazing. Use a Snack card (S1-S3 below); skyr clears the 30 g bolus whey-free, the protein-weak Greek yogurt needs ½-1 scoop whey.
 
-Dinner finishes ~3 h before bed on every day. This is a soft eating window — captures the sleep and digestive benefit of time-restricted eating without the LBM cost of a hard fasting protocol.
+Dinner finishes ~2–3 h before bed, and the small post-dinner dessert lands ≥60–90 min before bed (`nutrition.md` § Meal Distribution, relaxed from the old 3 h window by the 2026-09-29 audit).
 
 **Picking meals:** choose any breakfast, lunch, and dinner from the rotation freely. The set is built so
 that any combination lands close to target. Lunches are fully yours to standardise. Dinners give options
@@ -94,7 +94,7 @@ once and you can stop using the scale for carbs entirely.
 | Oats (dry)           | —     | 67 g  | 93 g    | 115 g |
 | Wholegrain bread     | —     | 93 g  | 130 g   | 160 g |
 
-Oats and bread have no Rest column — breakfast is not eaten on rest days.
+Oats and bread have no Rest column in this Phase 4 table. Breakfast is eaten every day (the old "no breakfast on rest days" note was an intermittent-fasting leftover, removed by the 2026-09-29 audit); on rest days it runs small, and § Build Day Budgets carries the live rest-day portion (30 g oats).
 
 ## Fruit Dessert Swap (athlete preference, 2026-06-18)
 
@@ -133,7 +133,7 @@ stays as the starch anchor. On easy and rest days this distinction does not matt
 
 Fruit eaten as dessert does not change the protein or fat anchors — only the scalable carb moves.
 
-## Breakfasts (training days)
+## Breakfasts
 
 On easy/rest days breakfast **runs small** — eggs ± a little oats, or the Breakfast shake (see Shakes section) — because the day now carries lunch, a midafternoon snack, and dinner. A full B-card is a quality/long-day breakfast; on easy/rest days hold it down to ~300 kcal to fund the afternoon snack and keep the day on tier.
 
@@ -229,8 +229,10 @@ Anchor: 150 g Greek yogurt (2%) + **1 scoop ON whey** + **1½ tbsp chia seeds** 
 
 | Shake               | When                  | Build                                                                  | Total                  |
 | ------------------- | --------------------- | ---------------------------------------------------------------------- | ---------------------- |
-| Post-session shake  | Training days, <30 min post-session | **1½ scoops ON whey** + 1 banana + 5 g creatine            | P37 C30 F2 · 306 kcal  |
-| Breakfast shake     | Rest days, morning (07:00-09:00) | **1 scoop ON whey** + 200 g Greek yogurt (2%) + 80 g berries + **1 tbsp almond butter** + 5 g creatine | P48 C20 F14 · 398 kcal |
+| Post-session shake  | Training days, <30 min post-session | **1½ scoops ON whey** + 1 banana            | P37 C30 F2 · 306 kcal  |
+| Breakfast shake     | Rest days, morning (07:00-09:00) | **1 scoop ON whey** + 200 g Greek yogurt (2%) + 80 g berries + **1 tbsp almond butter** | P48 C20 F14 · 398 kcal |
+
+Creatine is not carried by either shake: the daily 5 g goes in the morning coffee on all seven days (`supplements.md`; removed from the shake specs by the 2026-09-29 audit).
 
 ## Lunches (fully standardised — these are yours)
 
@@ -388,10 +390,10 @@ The rotation is built to be eaten without arithmetic, but two numbers still dese
 > phases** (`nutrition.md` § Daily Targets). The ranges below were measured on the Phase 4 cards; the
 > § Build Day Budgets rows were checked against the build floors separately.
 
-- **Protein floor (165 g).** Across all combinations the rotation lands protein 163–198 g. The leanest
+- **Protein floor (165 g build and maintenance / 170 g cut).** Across all combinations the rotation lands protein 163–198 g. The leanest
   combinations sit 1–2 g under the floor — close enough to ignore most days, but if a day's meals look
   protein-light, one extra whey scoop closes the gap.
-- **Fat floor (60 g).** The rotation lands fat 57–77 g. The leanest combinations land ~3 g under. If a day
+- **Fat floor (65 g build and maintenance / 60 g cut).** The Phase 4 cards land fat 57–77 g. The leanest combinations land ~3 g under. If a day
   is clearly fat-light, add 10–15 g of nuts or a teaspoon of olive oil.
 
 Carbohydrate intentionally lands a little below the nominal `nutrition.md` figures, because real food
@@ -413,7 +415,7 @@ into the pan; base ~420 kcal before potato). Any L or D card can stand in at the
 | --- | --- | --- | --- | --- | --- | --- |
 | **Rest (2,150)** — 4 feeds | Small breakfast: 3 eggs + 30 g oats + 80 g strawberries (~355) | **200 g rice** | **Lean S4**: 200 g skyr + 1 scoop whey + 80 g fruit + **10 g almonds** (~330) | **300 g potato** | Dessert: 100 g Greek yogurt + 100 g frozen mango (~122) | ~2,150 · P166 F66 |
 | **Easy run only (2,250)** — 4 feeds | Post-run breakfast: 3 eggs + **60 g oats** + fruit (~470) | **200 g rice** | Lean S4 (~330) | **280 g potato** | Dessert (~122) | ~2,250 · P170 F68 |
-| **Lift, with or without an easy run (2,250)** — 5 feeds | Small breakfast (~355) + post-lift shake: whey + banana + creatine (~270) | **130 g rice** | Lean S4 (~330) | **200 g potato** | Dessert (~122) | ~2,250 · P191 F70 |
+| **Lift, with or without an easy run (2,250)** — 5 feeds | Small breakfast (~355) + post-lift shake: whey + banana (~270) | **130 g rice** | Lean S4 (~330) | **200 g potato** | Dessert (~122) | ~2,250 · P191 F70 |
 | **Quality (2,550)** — 5 feeds | Banana + coffee pre-run only; post-run shake: whey + **80 g oats** (~424) | **260 g rice** | **Full S4** with 30 g almonds (~416) | **400 g potato** | Dessert (~122) | ~2,570 · P184 F66 |
 | **Long (2,750)** — 5 feeds | Banana + coffee pre-run; post-run shake: whey + **100 g oats** (~500) | **300 g rice** | Full S4 (~416) | **450 g potato** | Dessert (~122) | ~2,740 · P185 F67 |
 

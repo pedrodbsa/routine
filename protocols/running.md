@@ -8,15 +8,15 @@ Primary limiter remains cardiovascular, not muscular. Post-smoking aerobic devel
 
 | Zone | Name          | HR Range  | % of LT2 | Purpose                                            |
 | ---- | ------------- | --------- | -------- | -------------------------------------------------- |
-| 1    | Recovery      | <125      | <73%     | Walk breaks, shakeouts, recovery jogs              |
+| 1    | Recovery      | <125      | <73%     | Walking only — walk breaks and interval walk-recoveries (no jog exists down here for this athlete) |
 | 2    | Aerobic Base  | 125-142   | 73-83%   | Easy runs, long runs, base building (cap = lab IT) |
-| 3    | Aerobic Dev   | 143-155   | 83-90%   | Steady aerobic, marathon-pace work                 |
-| 4    | Sub-Threshold | 156-168   | 91-98%   | Norwegian / cruise intervals (just under LT2)      |
+| 3    | Aerobic Dev   | 143-151   | 83-88%   | Steady aerobic, marathon-pace work                 |
+| 4    | Sub-Threshold | 152-168   | 88-98%   | Norwegian / cruise intervals: work band 152-165, hard ceiling 168 (just under LT2) |
 | 5    | Threshold     | 169-175   | 98-102%  | Tempo, threshold reps, 10K race effort             |
 | 6    | VO2max        | 176-185   | 102-108% | Hard intervals, late-race surge                    |
 | 7    | Anaerobic     | >185      | >108%    | Sprints, final kick                                |
 
-Anchors: LT1 = 145, LT2 = 172, max ~190 (race-observed). Treadmill ≈ outdoor at same HR — pace differs, HR doesn't.
+Anchors: LT1 = 145, LT2 = 172, max ~190 (race-observed). The HR zones apply in every environment, but pace-at-HR does not transfer between them. In September 2026 outdoor easy pace ran ~6% faster than the control belt at the same HR (6:33–6:39/km @138 outdoors on Sep 6 and Sep 20, against 8.6 km/h = 6:59/km @136–137 on the treadmill). The 1% incline and the belt calibration are confounds. Compare pace-at-HR within one environment only (2026-09-29 audit; zone 3/4 boundary moved 155/156 → 151/152 to match the sub-T sessions the stack actually prescribes).
 
 **Athlete compressed-range note (2026-06-13):** this athlete cannot run below ~130 bpm — below that is a walk, not a jog. Two consequences for the zone table: (1) **Zone 1 (<125) is walk-only** — "recovery jogs" do not exist down there; a real recovery jog runs ~135–145. (2) The **functional easy-running band is ~135–142**, not the full 125–142 — a ~7 bpm window pinned just under the cap. Easy runs intrinsically sit near the 142 ceiling (logged easy runs average ~138–142); brief drift to 143–145 is this athlete's natural easy ceiling, governed by RPE/conversation, not a discipline failure. The easy–to–sub-T gap is only ~10 bpm (142 → 152), so easy and sub-T cannot be separated by HR alone — RPE and pace must do that work. This is also why outdoor easy pace-at-HR is a noisy fitness signal (always at the rail) and the treadmill control run is the cleaner read.
 
@@ -35,6 +35,7 @@ The Garmin watch only offers a 5-zone HR model (no native lactate-threshold anch
 - Easy = RPE 3-4 and full conversation.
 - If RPE exceeds 5, slow down even if HR looks acceptable.
 - Recovery jogs run **~135–145 bpm** — this athlete can't jog below ~130 (Zone 1 is walk-only), so don't chase a sub-133 "recovery jog" that doesn't exist for this physiology. Govern recovery by easing effort and letting HR fall, not by a walk-level number.
+- **Between interval reps the recovery is a walk** (or jog → walk), never a jog. In ~90 s HR won't fall into any jog band. Walk recovery also lowers rep-entry HR, so judge a rep by its end-of-rep max HR, not the rep average (`[[feedback-walk-recovery-intervals]]`; tables below corrected 2026-09-29 audit).
 - **Treadmill control run (2026-06-12; protocol ratified 2026-09-07; cadence set to fortnightly 2026-09-29):** every other week, one of the week's easy runs is done on the treadmill under fixed conditions — **5.0 km at a locked belt speed of 8.6 km/h, 1% incline, treadmill mode, COROS armband always** (an entry on any other sensor is void). The tracked number is **avg HR**, not pace — the belt fixes pace, so avg HR at fixed work is the heat-independent fitness signal. Do not raise the belt speed (it restarts the series). The original "~30 min" wording is retired: every valid entry ran ~5.0 km / ~35 min, and since avg HR accumulates drift, only fixed-distance entries are comparable. Valid series: Jul 13 **137** · Jul 27 **136**. Log it as a normal easy run; `/report` reads the avg-HR trend.
 - **Weekly strides slot — standing, from 2026-08-08.** One easy run per week finishes with **6 × 20 s strides**, relaxed-fast at ~5K/mile turnover, RPE 7–8, **full walk-back recovery** between each. By feel, not by HR — 20 s is far too short for HR to mean anything. Stop the set early if form fades; this is a coordination stimulus, not a conditioning one.
   - **Why it is a standing slot and not a menu item.** Stride length at a given cadence is an *output* of force production and elastic return, not something the athlete can choose — and the spring 2027 sub-47 target needs it. Sub-47 (4:42/km = 3.55 m/s) requires roughly **cadence 180 × stride 118 cm**, against the Mar 8 race's **175.9 × 113.5**. Strides move that by letting the mechanics self-organise at speed. **Do not prescribe conscious form cueing to chase the same number** — deliberately lengthening the stride means landing ahead of the centre of mass, which is a braking force. See § Running Mechanics below.
@@ -97,12 +98,12 @@ Everything through the May race block is complete (Base → Quality Reintro → 
 
 | Session          | Structure        | HR Target      | Recovery      |
 | ---------------- | ---------------- | -------------- | ------------- |
-| Norwegian Long   | 3x10 to 4x10 min | 152-165        | 60-90 sec jog |
-| Norwegian Short  | 8-10x3 min       | 152-165        | 45-60 sec jog |
-| Cruise Intervals | 5-6x1 km         | 152-165        | 60-90 sec jog |
-| HM-pace          | 4-6x2 km         | Goal HM effort | 60 sec jog    |
+| Norwegian Long   | 3x10 to 4x10 min | 152-165        | 60-90 sec walk |
+| Norwegian Short  | 8-10x3 min       | 152-165        | 45-60 sec walk |
+| Cruise Intervals | 5-6x1 km         | 152-165        | 60-90 sec walk |
+| HM-pace          | 4-6x2 km         | Goal HM effort | 60 sec walk    |
 
-All sub-T sessions target **152–165 bpm** (≈2.5–3.5 mmol/L, between LT1 145 and LT2 172). Longer reps (Norwegian Long) sit toward the low end (~152–160); shorter reps (Cruise/Short) can reach ~165. **Hard ceiling 168** — past that you've drifted into threshold (athlete tendency: Jun 2 reps spiked to 179, over-cooked). HR is lactate-anchored and environment-independent — the same numbers apply on the treadmill.
+All sub-T sessions target **152–165 bpm**, between LT1 145 and LT2 172. The "≈2.5–3.5 mmol/L" mapping once written here assumed lactate rises linearly between the two thresholds; it rises convexly, so the bottom of the band is likely nearer ~2.2 mmol. It is unverified until the raw ramp steps are on file (2026-09-29 audit). Longer reps (Norwegian Long) sit toward the low end (~152–160); shorter reps (Cruise/Short) can reach ~165. **Hard ceiling 168** — past that you've drifted into threshold (athlete tendency: Jun 2 reps spiked to 179, over-cooked). HR is lactate-anchored and environment-independent — the same numbers apply on the treadmill.
 
 ### Tempo (threshold)
 
@@ -115,16 +116,16 @@ All sub-T sessions target **152–165 bpm** (≈2.5–3.5 mmol/L, between LT1 14
 
 - **Governor:** HR/effort, not pace. Run reps at 168-174 bpm (around LT2 172) at RPE 8-9.
 - **Pace:** currently ~4:55-5:05/km — current 10K race pace (≈5:00/km) sits right at LT2. Goal pace 4:42/km (sub-47, spring 2027) is a **convergence target**: the pace earned at the same HR as fitness rises, not a number to force from day one. Forcing 4:42 now drives HR into the VO2 zone (176+) and turns this into a VO2 session rather than threshold work.
-- **Structure:** 6-8x1 km or 4-5x1.5 km with 60 sec jog
+- **Structure:** 6-8x1 km or 4-5x1.5 km with 60-90 sec walk
 - **RPE:** 8-9
-- Introduce in Cut Block 1 (from week 4). This is the core 10K-specific session.
+- In the build from week 7 (§ Build Quality Ladder). This is the core 10K-specific session.
 
 ### VO2max Intervals
 
 - **HR:** 175-185 by end of rep
 - **Pace:** faster than 10K pace, usually 400-1000 m reps
 - **RPE:** 9-10
-- Reserve for late Cut Block 1 and Phase 6 when recovery and calories support it.
+- One touch in build week 11 (§ Build Quality Ladder), then the Phase 9 sharpen; only when recovery supports it.
 
 ### X-Element
 
@@ -137,12 +138,29 @@ All sub-T sessions target **152–165 bpm** (≈2.5–3.5 mmol/L, between LT1 14
 Before naming the week's harder quality run, do not reach for the session in the athlete's words ("speed work") or the prior day's frame — derive it. Answer these, and surface the derivation in one or two lines in the `/plan` summary:
 
 1. **Recent quality history** — the last 2–3 quality session types (read the daily files). Don't repeat a stimulus blindly or skip a rung.
-2. **Ladder + phase week** — the current rung on sub-T → threshold → 10K-pace → VO2, and what the phase/week schedules (e.g. 10K-pace enters Cut Block 1 wk4; VO2 is late Cut Block 1 / Phase 6). The default session is the **next correct rung**.
+2. **Ladder + phase week** — the current rung on sub-T → threshold → 10K-pace → VO2, and what the phase/week schedules (§ Build Quality Ladder below; the Phase 9 sharpen in § Weekly Rules). The default session is the **next correct rung**.
 3. **Block gap** — the under-trained stimulus this block; bias toward closing it.
 4. **Recovery + trailing load** — can today carry the intended intensity, or does it down-dose one rung?
-5. **Goal relevance** — what the next race actually needs *now* (threshold base before speed sharpening for the December 10K).
+5. **Goal relevance** — what the next hard effort actually needs *now* (the Oct 25 B-race, then the spring 2027 10K): threshold base before speed sharpening.
 
 Pick the session this produces. If it deviates from the next rung — pulled forward or held back — log the explicit reason in the daily file. Garmin's Daily Suggested Workout is a useful independent cross-check, not an authority (its pace targets are heat-blind; govern by HR). A 22-min threshold tempo, not 10K-pace intervals, is the wk3 default after a sub-T-only block (2026-06-16 lesson).
+
+### Build Quality Ladder (Oct 12 2026 – Jan 3 2027; written 2026-09-29 audit)
+
+The default rung for the week's one quality session. § Quality Session Selection may hold or drop a rung with a logged reason, but never pulls one forward on the athlete's phrasing.
+
+| Build week | Dates | Default quality |
+| --- | --- | --- |
+| 1 | Oct 12–18 | Sub-T (cruise or Norwegian) |
+| 2 | Oct 19–25 | **Oct 25 B-race replaces it** (2-3 easy days before) |
+| 3 | Oct 26 – Nov 1 | Sub-T (after 48-72 h easy) |
+| 4 | Nov 2–8 | Trekking — exempt, no quality |
+| 5–6 | Nov 9–22 | Threshold (tempo 20-30 min or 3×7-8 min) |
+| 7–10 | Nov 23 – Dec 20 | 10K-pace reps (Dec 12 social sits in week 9; if run hard, it is that week's quality) |
+| 11 | Dec 21–27 | One short VO2 touch |
+| 12 | Dec 28 – Jan 3 | Back down a rung (threshold) into Cut 3 |
+
+Cut 3 holds one quality a week, cycling threshold and 10K-pace. Phase 9 runs the sharpen in § Weekly Rules.
 
 ## Weekly Rules by Phase
 
@@ -176,7 +194,7 @@ Portugal summer conditions change the session.
 - If temperature is `>=18 C` or dew point is `>=16 C`, anchor the run to HR and RPE, not pace.
 - Expect roughly 3-5 sec/km pace loss at the same effort in warm conditions. Do not chase normal splits.
 - If temperature is `>=24 C`, shorten quality-session volume 10-20% unless the workout is done very early or late.
-- If temperature is `>=24 C`, take 500-800 mg sodium with about 400 mL water 60 minutes pre-run for quality sessions and long runs.
+- If temperature is `>=24 C`, take the pre-run sodium and fluid dose in `nutrition.md` § Hydration and Heat Rules (600-800 mg sodium with 500 mL water, 60-90 min pre-run) for quality sessions and long runs.
 - Prefer outdoor quality before 09:00 or after 19:30 in summer.
 - For easy runs in heat, walk 20-30 sec if HR drifts above target instead of forcing shuffle pace.
 - For trail or long runs >75 min in heat, carry fluids.
@@ -205,11 +223,11 @@ Acute km this week / mean of the **four preceding weeks** (the acute week is not
 
 ### Warning Signs
 
-- Easy-run HR elevated 5+ bpm above baseline for 3 runs -> extra rest day
+- Easy runs slowing at the capped HR for 3 runs on matched routes -> extra rest day. With easy HR held at ≤142, the signal shows up as pace-at-HR, not as HR (the old "easy HR +5 bpm" trigger could not fire under the cap — 2026-09-29 audit)
 - Sleep score <60 for 2 nights -> replace quality with easy
-- RHR elevated 5+ bpm above baseline -> reduce weekly volume 20%
-- HRV drops >15% from 7-day average -> optional rest day or quality downgrade
-- In Phase 5, tighten the HRV rule: if the 7-day HRV average falls >10% below baseline, remove that week's remaining quality session ("baseline" = Garmin's balanced-low bound, defined 2026-09-07 — see § Weekly Rules; the original "Friday" wording predates flexible scheduling)
+- RHR +5 bpm above baseline for 3 days -> reduce weekly volume 20% (same trigger as `training.md` § Override Rules)
+- HRV >15% below the 7-day average for 3 days -> 2 easy or rest days (same trigger as `training.md` § Override Rules; a single-night drop is noise)
+- ~~In Phase 5, tighten the HRV rule~~ — expired with Phase 5 (Sep 20)
 - Body Battery <30 at wake -> full rest day
 - Heat + poor sleep on the same day -> no intensity
 
@@ -219,7 +237,7 @@ Acute km this week / mean of the **four preceding weeks** (the acute week is not
 
 - **Oct 25 (B, hard effort):** even effort at ~172–176 avg HR; the climbs are run by effort, not pace; 2-3 easy days before, no taper; no heavy Legs in the 3 days before. Pre-race sodium + carbs per `nutrition.md` § Race and Long-Effort Fueling. Recorded as a fitness read.
 - **Dec 12 (social):** no taper, no target. If the athlete chooses a solo hard effort (decision due Dec 5), the evening-start logistics in `protocols/archive/running-dec12-arace-plan.md` apply verbatim — they are the only part of the retired A-race plan that is reusable.
-- **Spring 2027 (A, sub-47):** pacing template — start 4:50/km, settle 4:42-4:46 by km 3, hold through km 8, kick km 9-10. Set the final pacing from the sharpen block's 10K-pace reps, not from this line. Race-week pattern below.
+- **Spring 2027 (A, sub-47):** pacing template — even at 4:42/km: km 1 no faster than 4:40 and no slower than 4:45, hold 4:40-4:43 to km 8, then whatever is left over km 9-10. (The earlier "start 4:50, settle 4:42-4:46" template could not average 4:42 without a ~4:20 kick — 2026-09-29 audit.) Set the final pacing from the sharpen block's 10K-pace reps, not from this line. Race-week pattern below.
 
 ### Quality-Day Warm-Up Upgrade (from Phase 6)
 
