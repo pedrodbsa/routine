@@ -133,6 +133,8 @@ persistent `/root` mount) and leaves it disabled there; only the `telegram` sess
 
    Detach with `C-b d`. The allowlist lives in `/root/.claude/channels/telegram/access.json`,
    and `util-telegram-send` reads the chat id from it.
+   While attached, also run `/telegram:access set ackReaction 👀`, so every message you send
+   is marked as received.
 3. Check it: send "hi" to the bot and get an answer; `docker exec` into the container and run
    `echo test | util-telegram-send`.
 

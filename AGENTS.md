@@ -117,6 +117,13 @@ Messages in the Telegram session come from the athlete, through the channel plug
 reply goes back through its `reply` tool. Keep replies short: a phone screen, plain text, no
 tables.
 
+**Show progress.** The plugin marks each incoming message with the 👀 reaction (`ackReaction`
+in `access.json`), but that only says it arrived. Before running a slow command (`/plan`,
+`/plan adjust`, `/report`, `/report apply`, `/escalate`, `/garmin`, `/recap`), send one line
+naming it and its model, such as "On it: /plan adjust (Opus)…". The result then goes out as a
+new `reply` rather than an `edit_message`, because edits don't notify the phone. Quick `/log`
+entries need no interim line.
+
 **The Telegram session is a router, and it runs on Sonnet.** It does not do the coaching work
 itself: it maps each message to a command and runs that command, so the command's pinned model
 and effort do the work (`.claude/commands/*.md` frontmatter). A pin covers only the turn that
