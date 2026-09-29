@@ -40,6 +40,12 @@ RUN curl -LsSf "https://astral.sh/uv/${UV_VERSION}/install.sh" \
       | env UV_INSTALL_DIR=/usr/local/bin sh \
  && uv python install 3.12
 
+# git authenticates to GitHub with GITHUB_TOKEN from the environment, read when git asks, so the
+# token is never written to disk. A token in the remote URL would land in .git/config in
+# cleartext and outrank this helper once it went stale.
+RUN git config --system credential.https://github.com.helper \
+      '!f() { echo username=x-access-token; echo "password=${GITHUB_TOKEN}"; }; f'
+
 # Bun runs the Telegram channel plugin: one binary, copied from the official image.
 COPY --from=docker.io/oven/bun:1.4.2-slim /usr/local/bin/bun /usr/local/bin/bun
 

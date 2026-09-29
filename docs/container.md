@@ -63,8 +63,8 @@ is still in the history on GitHub; removing it from the current files does not c
 Rotate it, then put the new one in Dokploy's Environment tab.
 
 **Create a GitHub token.** A fine-grained personal access token scoped to `pedrodbsa/routine`
-with `contents: write`. The container uses it through a credential helper, so it stays in the
-environment and is never written to `.git/config`.
+with `contents: write`. The image's credential helper (`/etc/gitconfig`) reads it from the
+environment whenever git asks, so it is never written to disk.
 
 ## Create the Dokploy application
 
@@ -90,7 +90,7 @@ the compose file loads that with `env_file`. Full list with comments in `.env.ex
 | --- | --- |
 | `GARMIN_EMAIL`, `GARMIN_PASSWORD` | Expanded into the MCP server's environment by `.mcp.json` |
 | `GITHUB_TOKEN` | Push credential for `cron-git-sync`; also needed for the first-boot clone if the repo is private |
-| `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL` | Identity on commits made from the container |
+| `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_NAME`, `GIT_COMMITTER_EMAIL` | Identity on commits made from the container. Git needs both pairs; nothing writes a gitconfig |
 | `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `cron-coach-tick` gates on it |
 | `COACH_TELEGRAM_BOT_TOKEN` | The bot token from BotFather. Deliberately not `TELEGRAM_BOT_TOKEN` — see "One poller per bot" above |
 | `TELEGRAM_CHAT_ID` | The athlete's numeric Telegram id (@userinfobot). Seeds the allowlist on first start, so no pairing is needed; without it, pair once |
@@ -184,8 +184,8 @@ That broke in three ways, all from the same cause.
 
 Now the deploy checkout is build input only: the image is built from it and nothing else reads
 it. The working repo on `../files/repo` has a bare origin URL, pushes through the
-`GITHUB_TOKEN` helper, and is never touched by a deploy. The entrypoint never writes a token
-into the URL, and it logs a warning on every start if it finds one there.
+`GITHUB_TOKEN` helper, and is never touched by a deploy. Nothing writes a token into the
+URL.
 
 ## Operating it
 
