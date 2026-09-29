@@ -27,7 +27,7 @@ RUN_TIMEOUT="${COACH_RUN_TIMEOUT:-45m}"
 DRY_RUN="${COACH_DRY_RUN:-0}"
 
 # Scheduled runs must never see the bot token under the name the channel plugin reads, or their
-# copy of the plugin would start polling and evict the Telegram session (see coach-telegram).
+# copy of the plugin would start polling and evict the Telegram session (see session-telegram).
 unset TELEGRAM_BOT_TOKEN
 
 mkdir -p "${STATE_DIR}"

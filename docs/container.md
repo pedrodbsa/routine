@@ -52,7 +52,7 @@ Dokploy cron */10 ─▶ git-sync ─▶ GitHub
   plugin starts polling in every Claude process that loads it and can see the token. The
   plugin is installed at user scope, so the Remote Control sessions and the `-p` runs load it
   too. The container therefore keeps the token as `COACH_TELEGRAM_BOT_TOKEN`, a name the plugin
-  ignores, and `coach-telegram` exports it as `TELEGRAM_BOT_TOKEN` for the Telegram session
+  ignores, and `session-telegram` exports it as `TELEGRAM_BOT_TOKEN` for the Telegram session
   alone. Never run `/telegram:configure` (it writes the token to a file every process reads),
   and never install the plugin on the desktop.
 

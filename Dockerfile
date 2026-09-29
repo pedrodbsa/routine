@@ -57,7 +57,8 @@ RUN case "$(dpkg --print-architecture)" in \
 COPY --chmod=0755 docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY --chmod=0755 docker/git-sync.sh   /usr/local/bin/git-sync
 COPY --chmod=0755 docker/keep-alive.sh /usr/local/bin/keep-alive
-COPY --chmod=0755 docker/coach-telegram.sh /usr/local/bin/coach-telegram
+COPY --chmod=0755 docker/session-rc.sh /usr/local/bin/session-rc
+COPY --chmod=0755 docker/session-telegram.sh /usr/local/bin/session-telegram
 COPY --chmod=0755 docker/coach-tick.sh /usr/local/bin/coach-tick
 COPY --chmod=0755 docker/telegram-send.sh /usr/local/bin/telegram-send
 COPY docker/garmin-sleep-ready.py /usr/local/lib/coach/garmin-sleep-ready.py

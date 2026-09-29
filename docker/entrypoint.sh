@@ -56,8 +56,9 @@ fi
 
 # Both long-lived Claude processes run in tmux sessions, so they are started, restarted and
 # inspected the same way: `tmux attach -t rc` or `tmux attach -t telegram`, detach with C-b d.
+# Each session <name> runs the script session-<name>.
 export TERM="${TERM:-xterm-256color}"
-keep-alive rc claude remote-control --name "${SESSION_NAME:-routine}" --spawn=same-dir
+keep-alive rc session-rc
 
 # The Telegram session needs the channel plugin installed (a one-time step, see
 # docs/container.md) and the bot token. The plugin polls in every Claude process that can see
@@ -72,7 +73,7 @@ if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] || [ -f /root/.claude/channels/telegram/.env
   echo "         Telegram session's messages. Use COACH_TELEGRAM_BOT_TOKEN only." >&2
 fi
 if telegram_ready; then
-  keep-alive telegram coach-telegram
+  keep-alive telegram session-telegram
 elif [ -n "${COACH_TELEGRAM_BOT_TOKEN:-}" ]; then
   cat <<'EOF'
 
@@ -88,7 +89,7 @@ fi
 trap 'tmux kill-server 2>/dev/null; exit 0' TERM INT
 while tmux has-session -t '=rc' 2>/dev/null; do
   if telegram_ready && ! tmux has-session -t '=telegram' 2>/dev/null; then
-    keep-alive telegram coach-telegram
+    keep-alive telegram session-telegram
   fi
   sleep 30 &
   wait $!
