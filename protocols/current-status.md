@@ -22,7 +22,7 @@
 
 ## Goals & Priorities
 
-**Objective (redefined 2026-09-29): "athletic" by summer 2027** — low body fat, a good amount of muscle without bulk, and faster running. Dec 12 is a leisure race with friends; there is no A-race until spring 2027.
+**Objective (redefined 2026-09-29): "athletic" by summer 2027** — low body fat, a good amount of muscle without bulk, and faster running. Dec 12 is run hard with friends as a B effort; there is no A-race until spring 2027.
 
 **Scorecard, Aug 1 2027** (measured against Bod Pod lean 59.6 kg; scale BF% never scores it):
 
@@ -46,7 +46,7 @@ Redefined 2026-09-29. The premise of the previous table — a Dec 12 A-race to p
 | 4. Cut Block 1 | May 30 - Jul 5 | 6 | Main fat-loss push | ~2,000 | 35-42 | 3-4x/wk | DONE |
 | 5. Cut Block 2 (extended) | Jul 6 - Sep 20 | 11 | Closed on the hard stop at 74.31 kg — flat vs early Aug; strength 0/3 its last 5 weeks | ~2,015 | 35-40 | 3x/wk | DONE |
 | 6. Reverse | Sep 21 - Oct 11 | 3 | Reverse to the +300 tiers; strength restarts; **Sep 28 – Oct 4 is a declared re-entry week (≥30 km, strength as it happens, not scored)** | 2,150 → ~2,340 | ≥30 | restart | **CURRENT** (wk 2) |
-| 7. Build | Oct 12 - Jan 4 | 12 | **Strength-led build at plan-day +300 tiers**, weight band 74.5–75.5 (ceiling 76.0 / floor 73.5); 4–5 runs, 1 quality; **Oct 25 hard effort; Nov 2–8 trekking (exempt); Dec 12 social**; Christmas at the tiers | ~2,350 plan-day | 32-42 | 3x/wk full upper | Planned |
+| 7. Build | Oct 12 - Jan 4 | 12 | **Strength-led build at plan-day +300 tiers**, weight band 74.5–75.5 (ceiling 76.0 / floor 73.5); 4–5 runs, 1 quality; **Oct 25 and Dec 12 hard efforts; Nov 2–8 trekking (exempt)**; Christmas at the tiers | ~2,350 plan-day | 32-42 | 3x/wk full upper | Planned |
 | 8. Cut 3 | Jan 5 - Apr 12 | 14 | **0.3 kg/wk** (~330/day below verified maintenance, minus the social term); strength 3x/wk at retention volume; 4-week rate reads Feb 1 / Mar 1 / Mar 29 | derived Jan 4 | 32-42 | 3x/wk retention | Planned |
 | 9. Maintenance + spring race | Apr 13 - Jun 14 | 9 | Hold ~70–71.5; **spring 10K A-race, sub-47** | maintenance | 35-45 | 3x/wk | Planned |
 | 10. Lean-out (optional) | Jun 15 - Jul 26 | 6 | Last ≤1.5 kg at ≤0.25 kg/wk, only if stage 1 fell short | ~−250/day | 32-42 | 3x/wk | Planned |
@@ -62,7 +62,7 @@ Tiers, the weight band and the cut derivation live in `nutrition.md` § Phases 6
 | May 17 | 10K | Ansião 10K | done | 52:16 / 5:13/km, avg HR 176 — raced near-max |
 | May 24 | 14.7 km trail | Anadia trail | done | 2:07:42, avg HR 172, 413 m climb — raced hard |
 | **Oct 25 (Sun)** | **10K (hilly)** | entered, name TBD | **B-race** | **Hard supported effort inside the build** — even effort at ~172–176 avg HR, no blow-up on the climbs; counts as that week's quality; 2-3 easy days before, no taper, no heavy Legs in the 3 days before. Result recorded as a fitness read, not scored against a time |
-| **Dec 12 (Sat)** | **10K** | S. Silvestre Coimbra, 18:30 | **Social (C)** | Leisure run with friends. **Mode decided by Dec 5:** group pace (counts as that week's long run) or a solo hard effort (a 3-day easy lead, recorded as a read). No taper, no target. 2025 result ~54:00 |
+| **Dec 12 (Sat)** | **10K** | S. Silvestre Coimbra, 18:30 | **B-race** | **Run hard, with friends** (athlete, 2026-09-29): even effort at ~172–176 avg HR; 3 easy days before, no taper, no heavy Legs in the 3 days before; replaces that week's quality and long run. Recorded as a fitness read, the last before the cut. 2025 result ~54:00 |
 | **Spring 2027 (late Apr / May)** | **10K** | **TBD by Feb 1** | **A-race** | **Sub-47:00** at ~70–71.5 kg, raced at maintenance after the Jan–Apr cut. Checkpoint at the end of the cut (~Apr 12): confirm sub-47 or re-anchor to sub-48 on the session evidence |
 | Autumn 2027 | 10K | TBD | A-race | **45:00 stretch** — needs LT2 pace ~5:00 → ~4:35; the spring result decides whether it stays |
 
@@ -104,7 +104,7 @@ No HM or trail race is planned before June 2027 ("likely to change" — revisit 
 5. **Volume floor 30 km, band 32–42**, 4 core runs + bonus 5th. Sep 28 – Oct 4 is a declared re-entry week; Nov 2–8 is a declared trekking week. Both exempt in advance.
 6. **Long-run discipline:** cap 142, drift ceiling 145; a progression finish only when planned, at most every other week, and it counts as the week's second quality.
 7. **Sleep:** onset ≤23:30 is the target (5/7). ≥3 onsets after 23:30 in a week → report flag; bedtime is the lever, training is unchanged. Same-day <6 h rules in `training.md` still apply.
-8. **Jan 4 checkpoint:** cut tiers derived (`nutrition.md` § Cut 3 derivation); HM/trail question reopened; Dec 12 mode already decided by Dec 5.
+8. **Jan 4 checkpoint:** cut tiers derived (`nutrition.md` § Cut 3 derivation); HM/trail question reopened.
 
 ## Training Load
 
@@ -181,4 +181,5 @@ Anchored to lab-prescribed individual threshold (2026-04-28): 142 bpm @ 6:00/km.
 | **2026-09-29** | **`/consult` — nutrition.** Build at **+300 tiers** (athlete: buffer for 1–2 social days with alcohol), avg ~2,340; weight band 74.5–75.5, ceiling 76.0 / floor 73.5 on two ≥4-reading weeks; **cut tiers derived Jan 4** = verified maintenance − 330 − social term; social-day protocol written; +550 and race-week rows retired | `nutrition.md` § Phases 6-10, § Social Days. Oct 5 step goes to +300, not +400 |
 | **2026-09-29** | **`/consult` — training.** 4 core runs + bonus 5th, floor 30 / band 32–42, one quality + strides + planned progression finish ≤ every other week; control run fortnightly; **Legs / Pull / Push 3/3**, Legs compressed to 3 core slots, arms session retired, Phase 7 strength taper retired; drop order bonus → strides → Legs → quality → long → upper merged; **strength delivery flag-only (athlete rejected the auto-downshift tripwire)** | `training.md` § Phases 6-10, § Leg Day, § Session Compression; `running.md` § Weekly Rules |
 | **2026-09-29** | **`/audit`.** Cut 3 formula no longer double-counts the social term; Feb 1 rate read is a weeks 2–4 slope; Legs moved to Thursday, Pull to Wednesday; build upper volume +1 accessory set and a Pull lateral raise; scorecard lifts fixed in their slots; bench baseline 50 × 10 × 4; sleep thresholds unified; walk recovery on intervals; build quality ladder; RPE from Garmin; Phases 1-5 material archived | Record: `logbook/2026-09/audit-2026-09-29.md`. Athlete answers the same day: the unsourced scale-offset clause deleted (weights are home-scale readings); lat pulldown marker 110 × 12 × 4 at the stack's top plus 5 strict pull-ups; zinc dropped; calf raises removed from mobility and prehab |
+| **2026-09-29** | **Audit review.** Dec 12 becomes a B hard effort (athlete: "i'm gonna run hard anyway"). Monday strides removed (day before quality). Rate read #1 needs ≥15 readings, triggers −0.1 / −0.5. Flex day removed; refeeds only when triggered. Drift window Oct 19 – Dec 20. Pull-ups practised at home on a door bar. **Split redistributed:** Push + biceps, Pull, Legs + lateral raise/triceps superset | Record: `logbook/2026-09/audit-2026-09-29.md` § Later the same day. D3 5,000 IU Oct–Mar with a Jan 18 25(OH)D test; SG-strip re-test dropped |
 | **2026-09-29** | **`/consult` — monitoring and workflow.** Adherence table cut to six measured rows; prediction milestones as a motivation line; sleep-onset flag; **scheduled morning `/plan` + evening Garmin reconciliation, one Telegram line/day, missing session with no reason = breach** | Schedules **built 2026-09-29** (deploy + Telegram pairing pending, by Oct 5). Telegram is the single interface. `/plan scheduled` fires on Garmin's sleep record and is skipped at 12:00 if there is none; `/recap` runs daily at 21:30; `/report` runs Sunday after the recap. The "manual /plan" conflict is resolved in favour of the consult, and dates now live in `calendar.md` (`memory/project-workflow-automated-record.md`). Sep 28 – Oct 4 declared re-entry week; Nov 2–8 trekking exempt |

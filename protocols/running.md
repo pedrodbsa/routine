@@ -112,7 +112,7 @@ A deviation from the default rung needs its reason logged in the daily file. Gar
 | 3 | Oct 26 – Nov 1 | Sub-T, after 48-72 h easy |
 | 4 | Nov 2–8 | Trekking — exempt, no quality |
 | 5–6 | Nov 9–22 | Threshold |
-| 7–10 | Nov 23 – Dec 20 | 10K-pace reps (Dec 12 sits in week 9; run hard, it is that week's quality) |
+| 7–10 | Nov 23 – Dec 20 | 10K-pace reps. Week 9 (Dec 7–13): the Dec 12 hard effort replaces the quality and the long run, with 3 easy days before |
 | 11 | Dec 21–27 | One short VO2 touch |
 | 12 | Dec 28 – Jan 3 | Threshold |
 
@@ -125,7 +125,7 @@ Scheduling is fully flexible; these rules set session counts and spacing. The we
 1. **One quality session** on the ladder. The Oct 25 B-race replaces it that week, then 48-72 h easy.
 2. **One long run** (§ Long Runs).
 3. **One easy run with the strides slot** (outdoor).
-4. **One easy run on the Monday slot:** the treadmill control run on alternate weeks, an outdoor easy + strides on the others.
+4. **One easy run on the Monday slot:** the treadmill control run on alternate weeks, a plain outdoor easy on the others (no strides: Monday is the day before the quality).
 5. **Bonus easy run** (5-7 km) when the week has room; the first thing dropped.
 
 - Volume **floor 30 km, band 32-42**. Heavy rain: the treadmill is the fallback, not the plan.
@@ -176,7 +176,7 @@ Acute km this week ÷ mean km of the **four preceding weeks** (the acute week is
 ## Race Execution
 
 - **Oct 25 (B, hard effort):** even effort at ~172–176 avg HR, climbs run by effort; 2-3 easy days before, no taper, no heavy Legs in the 3 days before. Fueling per `nutrition.md` § Race Fueling. Recorded as a fitness read.
-- **Dec 12 (social):** no taper, no target. If the athlete picks a solo hard effort (decision due Dec 5), the evening-start logistics in `protocols/archive/running-dec12-arace-plan.md` apply.
+- **Dec 12 (B, hard effort, run with friends):** even effort at ~172–176 avg HR; 3 easy days before, no taper, no heavy Legs in the 3 days before; no separate long run that week. The evening-start logistics in `protocols/archive/running-dec12-arace-plan.md` apply. Recorded as a fitness read, the last one before the cut.
 - **Spring 2027 (A, sub-47):** even pacing at 4:42/km — km 1 between 4:40 and 4:45, hold 4:40-4:43 to km 8, then whatever is left. Set the final pace from the sharpen block's 10K-pace reps.
 
 ### Race-Week Running Pattern

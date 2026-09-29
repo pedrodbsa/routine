@@ -53,7 +53,7 @@ outside `memory/` is invisible everywhere else.
 
 ## Purpose
 
-Protocol stack for a 40-year-old male whose objective (redefined 2026-09-29) is **"athletic" by summer 2027**: ~15% body fat with a good amount of upper-body muscle and no added leg size, and faster running inside that. **Priority: body composition > running fitness > racing; sleep onset governs.** Oct 25 is a hard supported effort, Dec 12 is a leisure run with friends, the spring 2027 10K (TBD) is the sub-47 A-race, and 45:00 is an autumn 2027 stretch. Scorecard date: Aug 1 2027. Consult record: `logbook/2026-09/consult-2026-09-29.md`.
+Protocol stack for a 40-year-old male whose objective (redefined 2026-09-29) is **"athletic" by summer 2027**: ~15% body fat with a good amount of upper-body muscle and no added leg size, and faster running inside that. **Priority: body composition > running fitness > racing; sleep onset governs.** Oct 25 and Dec 12 are hard supported efforts (Dec 12 run with friends), the spring 2027 10K (TBD) is the sub-47 A-race, and 45:00 is an autumn 2027 stretch. Scorecard date: Aug 1 2027. Consult record: `logbook/2026-09/consult-2026-09-29.md`.
 
 ## Protocol Lookup
 
@@ -161,7 +161,7 @@ anywhere else.
 ## Coaching Primer
 
 - Check the current phase first. Day type, calories, and strength structure all change by phase. Phases from Sep 21 2026: Reverse → **Build (Oct 12 – Jan 4, +300 plan-day tiers, weight band 74.5–75.5)** → Cut 3 (Jan 5 – Apr 12, 0.3 kg/wk, tiers derived Jan 4) → maintenance + spring race → optional lean-out → Aug 1 2027 scorecard.
-- The week is **4 core runs + a bonus 5th, and Legs / Pull / Push 3/3** (athlete commitment; delivery flagged, never auto-downshifted). One quality session, strides, a planned progression finish at most every other week, the control run fortnightly on the Monday easy slot, Saturday rest. Drop order on a compromised week: bonus run → strides → Legs → quality → long shortened → upper merged. Legs is the compressed 3-slot version (~35 min).
+- The week is **4 core runs + a bonus 5th, and Legs / Pull / Push 3/3** (athlete commitment; delivery flagged, never auto-downshifted). One quality session, strides, a planned progression finish at most every other week, the control run fortnightly on the Monday easy slot, Saturday rest. Drop order on a compromised week: bonus run → strides → Legs → quality → long shortened → upper merged. Legs is the compressed 3-slot version plus a lateral raise + triceps superset (~45 min); biceps ride Push.
 - The athlete's motivation driver is **running numbers improving** — keep the prediction line, control run and pace-at-HR visible in every report even though they no longer rank first.
 - Calorie cycling is mandatory. Never use one flat calorie target across the week.
 - Scheduling is fully flexible — any run or strength session can land on any day. The phase templates describe weekly volume, day-type distribution, and quality/easy split; they do not pin sessions to specific weekdays.

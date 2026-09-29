@@ -42,21 +42,21 @@ The reference week (1 rest, 4 easy/strength, 1 quality, 1 long — `training.md`
 
 **Build weight band.** Expected 74.5–75.5 kg: the reverse returns ~1.0–1.2 kg of glycogen and water (the athlete's own July 2026 data), so a rise into that band is not fat. **Ceiling 76.0 / floor 73.5**, read on the 7-day fasted mean and acted on only when **two consecutive weeks each carry ≥4 fasted readings**: above 76.0 → take 100 kcal off carbs on every row; below 73.5 → add 100. No data → hold. A single week cannot decide, because 100 kcal/day ≈ 0.09 kg/wk sits under the ~0.11 kg standard error of a two-week difference. First possible read: Oct 26.
 
-Oct 25 (hard effort) is a Quality day and Dec 12 (social) a Long day; pre-race sodium and carbs per § Race Fueling, no carb load. The Nov 4–8 trek runs on the Long tier on hiking days. Christmas week stays on the tiers with § Social Days applied.
+Oct 25 and Dec 12 (hard efforts) are Quality days; pre-race sodium and carbs per § Race Fueling, no carb load. The Nov 4–8 trek runs on the Long tier on hiking days. Christmas week stays on the tiers with § Social Days applied.
 
 ### Phase 8 — Cut 3 (Jan 5 – Apr 12): tiers derived on Jan 4
 
 Target **0.3 kg/wk** (~330 kcal/day), landing ~70–71.5 kg (~15% on 59.6–60.6 kg lean). P170 / F60; carbs = (tier − 1,220) ÷ 4. **Rest is never below 1,850** (rest-day carbs never below ~157 g).
 
     build_tiers = the Build plan tiers, plus or minus any band adjustment that fired
-    drift       = 7,700 × the build's fasted-weight slope in kg/wk ÷ 7   (positive if weight rose)
+    drift       = 7,700 × the fasted-weight slope in kg/wk over Oct 19 – Dec 20 ÷ 7   (positive if weight rose)
     cut tier    = build_tiers − 330 − drift
 
-The off-plan surplus (social evenings, unplanned days) is already inside the build's weight trend, so the deficit comes off the plan tiers. Do not also subtract a separately estimated social term: it would count twice, and a weight trend cannot isolate it anyway. It enters only if off-plan behaviour is expected to change in the cut.
+The off-plan surplus (social evenings, unplanned days) is already inside the build's weight trend, so the deficit comes off the plan tiers. Do not also subtract a separately estimated social term: it would count twice, and a weight trend cannot isolate it anyway. It enters only if off-plan behaviour is expected to change in the cut. The window starts after the reverse's glycogen refill and ends before Christmas, whose water would sit at the end of the fit, where it pulls the slope hardest.
 
-The slope needs **≥8 readable weeks (≥4 fasted readings each) of the 12**. Below that, drift is zero and the tiers are **Rest 1,850 / Strength 1,920 / Quality 2,220 / Long 2,420**. If drift comes out at ≥300/day, run a 0.2 kg/wk cut with the social protocol enforced rather than a −630 plan day: a plan-day deficit the athlete will not hold is worth less than a smaller one he will.
+The slope needs **≥7 readable weeks (≥4 fasted readings each) of those 9**. Below that, drift is zero and the tiers are **Rest 1,850 / Strength 1,920 / Quality 2,220 / Long 2,420**. If drift comes out at ≥300/day, run a 0.2 kg/wk cut with the social protocol enforced rather than a −630 plan day: a plan-day deficit the athlete will not hold is worth less than a smaller one he will.
 
-**Rate read #1 (Feb 1):** the least-squares slope of fasted readings over cut weeks 2–4 (Jan 12 – Feb 1, ≥9 readings; no data → hold), against −0.3 kg/wk. Week 1 is excluded (glycogen water off the carb step), and a mean-versus-mean read cannot be used here because the previous window is a flat build. Slower than −0.15 kg/wk → the off-plan lever, then −100 kcal carbs. Faster than −0.4 → +100 carbs.
+**Rate read #1 (Feb 1):** the least-squares slope of fasted readings over cut weeks 2–4 (Jan 12 – Feb 1), against −0.3 kg/wk. It needs **≥15 fasted readings**; below that it holds and read #2 decides. Week 1 is excluded (glycogen water off the carb step), and a mean-versus-mean read cannot be used here because the previous window is a flat build. Slower than −0.1 kg/wk → the off-plan lever, then −100 kcal carbs. Faster than −0.5 → +100 carbs. The ±0.2 band is what clears the slope's noise (SE ~0.12 kg/wk at 15 readings); do not tighten it.
 
 **Rate reads #2 and #3 (Mar 1, Mar 29):** the trailing 4-week fasted mean against the previous one (≥12 readings per 4 weeks; no data → hold). Target −1.2 kg per 4 weeks. Slower than −0.6 → the off-plan lever (the social protocol, or planning the unplanned days — whichever the daily files show is leaking), then −100 kcal carbs. Faster than −1.6 → +100 carbs.
 
@@ -78,11 +78,7 @@ The athlete has **1–2 social evenings a week, usually with alcohol**. Each run
 - **Drinks capped:** the athlete sets the cap before the evening; 2–3 is the working number.
 - **Logged as social** in the daily file (one word). The day's tier is not touched.
 - **The next day is re-tiered to Rest**, whatever it was. That is the whole compensation: no further cutting, no added cardio, no skipped feeds.
-- **In a cut**, a second social day in the week fires the flex-day flag below; in the build, the band catches it.
-
-### Social Flex Rule (cut phases)
-
-One flex day per week at maintenance calories absorbs social events, family meals and imperfect days. The weekly average is the governing metric; the protein floor still applies; a 7-day average within 5% of the phase target is compliant. Two or more flex days in one week → flag it and consider pulling a diet break forward.
+- **In a cut**, the build's social frequency is already priced into the tiers (§ Phase 8 drift). `/report` counts social days per week against the build's average from the daily files; running above it is the off-plan lever the rate reads point to. In the build, the band catches it.
 
 ### Consecutive Low-Cal Rule (cut phases)
 
@@ -197,4 +193,4 @@ On morning-run days the athlete weighs twice: fasted pre-run, and immediately po
 
 ## Diet Breaks and Refeeds
 
-Cut 3 has no scheduled break; Phase 9 maintenance follows it. One unplanned refeed per week is available in a cut: use it rather than hold it in reserve, and log it without guilt. Pull a one-week break at the Build tiers forward if upper loads keep falling after the +100, or if quality-session pace-at-HR degrades across two consecutive sessions.
+Cut 3 has no scheduled break; Phase 9 maintenance follows it. Refeeds are triggered, not scheduled: the motivation row in § Tracking and Adjustments, at most one a week, logged without guilt. Pull a one-week break at the Build tiers forward if upper loads keep falling after the +100, or if two consecutive same-type quality sessions read slower at the same HR on matched reps.

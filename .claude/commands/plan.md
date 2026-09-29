@@ -174,7 +174,8 @@ watch was off), plan anyway, in any mode:
   plus a bonus 5th; Legs / Pull / Push 3/3; Saturday rest. See `training.md`
   § Phases 6-10 for the reference week and the drop order. The control run
   lands on the Monday easy slot every other week and is labelled in the plan
-  file; alternate weeks that slot is an outdoor easy + strides.
+  file; alternate weeks that slot is a plain outdoor easy (no strides the day
+  before the quality).
 - Long runs: banana + coffee pre-run; the day is on the Long tier whatever the
   duration.
 - If sleep was <5 h or Body Battery <30, write a rest-day plan.
@@ -189,8 +190,7 @@ watch was off), plan anyway, in any mode:
   § Sleep and Readiness Decision Tree. When a race or benchmark is within ~7
   days, bias the default toward freshness — rest/easy is the default day and any
   quality must be short and specifically justified. (From 2026-09-29 the only
-  hard efforts are Oct 25 and the spring 2027 10K; Dec 12 is social unless the
-  athlete decides otherwise by Dec 5.)
+  hard efforts are Oct 25, Dec 12 and the spring 2027 10K.)
 - **Default discipline (symmetric).** Re-derive the session from the rules and
   data each morning; never carry forward yesterday's framing unexamined. When
   markers are green and no load rule fires, the conservative (easier) session is

@@ -24,13 +24,12 @@
 | 2026-10-25 Sun | race | Hilly 10K, **B-race**: a hard supported effort at ~172–176 avg HR, recorded as a fitness read. 2–3 easy days before, no heavy Legs in the 3 days before | athlete | current-status § Race Schedule |
 | 2026-11-02 Mon | phase | Nov 2–8 is a declared exempt week (trekking Nov 4–8): no volume floor, no strength expected, tiers unchanged, Long tier on hiking days | athlete | current-status § Weigh-In Series & Monitoring |
 | 2026-12-01 Tue | checkpoint | Garmin 10K prediction ≤49:30 (motivation line) | coach | current-status § Race Schedule |
-| 2026-12-05 Sat | deadline | **Decide the Dec 12 mode**: group pace (counts as the long run) or a solo hard effort (3-day easy lead) | athlete | consult 2026-09-29 |
-| 2026-12-12 Sat | race | S. Silvestre Coimbra 10K, 18:30. A **social** run with friends: no taper, no target | athlete | current-status § Race Schedule |
+| 2026-12-12 Sat | race | S. Silvestre Coimbra 10K, 18:30, with friends. **B effort, run hard** at ~172–176 avg HR, recorded as a fitness read. 3 easy days before, no heavy Legs in the 3 days before, no separate long run that week | athlete | current-status § Race Schedule |
 | 2027-01-04 Mon | checkpoint | **Jan 4 checkpoint**: derive the Cut 3 tiers from verified maintenance; reopen the HM/trail question | coach | consult 2026-09-29 |
 | 2027-01-05 Tue | phase | **Cut 3** starts (Jan 5 – Apr 12) at 0.3 kg/wk | coach | current-status § Phase & Timeline |
 | 2027-01-18 Mon | appointment | 25(OH)D blood test after ~3.5 months at 5,000 IU D3: 30–60 ng/mL holds the dose, above 60 drops it to 2,000–3,000 | athlete | supplements.md |
 | 2027-02-01 Mon | deadline | **Name the spring 10K A-race** (late Apr / May preferred) | athlete | consult 2026-09-29 |
-| 2027-02-01 Mon | checkpoint | Cut 3 4-week rate read #1 | coach | current-status § Phase & Timeline |
+| 2027-02-01 Mon | checkpoint | Cut 3 rate read #1 (weeks 2–4 slope, ≥15 fasted readings) | coach | current-status § Phase & Timeline |
 | 2027-03-01 Mon | checkpoint | Cut 3 4-week rate read #2 | coach | current-status § Phase & Timeline |
 | 2027-03-29 Mon | checkpoint | Cut 3 4-week rate read #3 | coach | current-status § Phase & Timeline |
 | 2027-04-01 Thu | checkpoint | Garmin 10K prediction ≤48:30 (motivation line) | coach | current-status § Race Schedule |
@@ -63,3 +62,4 @@
 | Date | Kind | Item | Owner |
 | --- | --- | --- | --- |
 | 2026-09-29 | todo | Garmin profile: height 170 cm, Thursday added to the training days | athlete |
+| 2026-09-29 | todo | Buy a door pull-up bar (pull-up practice, `training.md` § Pull-up practice) | athlete |

@@ -19,13 +19,13 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 
 ## Objective (live)
 
-- [Athletic by summer 2027](project-objective-athletic-summer-2027.md) — **read first**: body comp > run fitness > racing, sleep governs; Aug 1 2027 scorecard (~15% / ~70–71.5 kg home scale / upper-body strength markers incl. 5 pull-ups / spring sub-47 / autumn 45:00 stretch); Dec 12 is social
+- [Athletic by summer 2027](project-objective-athletic-summer-2027.md) — **read first**: body comp > run fitness > racing, sleep governs; Aug 1 2027 scorecard (~15% / ~70–71.5 kg home scale / upper-body strength markers incl. 5 pull-ups / spring sub-47 / autumn 45:00 stretch); Dec 12 is a hard B effort with friends
 - [Motivation = running numbers](user-motivation-running-numbers.md) — keep the prediction line, control run and pace-at-HR visible every report even though body comp ranks first
 - [Lab-tested physiology](lab-tested-physiology.md) — Bod Pod + lactate ramp 2026-04-28; supersedes BIA and assumed LT
 
 ## Training
 
-- [Run over Legs; Legs compressed](feedback-run-over-legs-legs-bulky.md) — drop order bonus run → strides → Legs → quality → long → upper merged; Legs is the 3-slot ~35-min version
+- [Run over Legs; Legs compressed](feedback-run-over-legs-legs-bulky.md) — drop order bonus run → strides → Legs → quality → long → upper merged; Legs is the 3-slot version + a lateral raise/triceps superset (~45 min)
 - [Strength tripwire rejected](feedback-strength-tripwire-rejected.md) — 3/3 Legs/Pull/Push written, delivery flagged only, never auto-downshifted; show commitment and delivered count side by side
 - [No calf training](feedback-no-calf-training.md) — no calf work of any kind, incl. bodyweight/soleus raises in mobility and prehab (low insertions, legs bulky, wants them smaller); running + plyos carry the Achilles role
 - [No box jumps](feedback-no-box-jumps.md) — default the plyo slot to light jump squats (or broad jumps / A-skips)
