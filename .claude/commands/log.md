@@ -1,3 +1,8 @@
+---
+model: sonnet
+effort: medium
+# Actuals plus re-tuning the remaining meals' macros.
+---
 # Log - Track Any Daily Entry (MASTER)
 
 ## Usage
@@ -51,7 +56,7 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
 
 ### Weekly (Sundays)
 
-- Compute ACWR from week km / 4-week average km
+- Compute ACWR from week km / mean km of the four preceding weeks (`running.md` § ACWR)
 - Compute Composite Load from session duration x RPE across all runs and lifts
 - Flag >1.3 or <0.8
 - Display 7-day weight average and body-comp trend

@@ -1,3 +1,8 @@
+---
+model: opus
+effort: high
+# Multi-week data synthesis plus cross-file protocol edits.
+---
 # Report - Weekly / Monthly Progression Review (MASTER)
 
 ## Usage

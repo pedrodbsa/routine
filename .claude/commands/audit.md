@@ -1,3 +1,8 @@
+---
+model: best
+effort: xhigh
+# One long false-assumption hunt ending in a findings report; the pin covers the whole pass.
+---
 # Protocol Stack Audit — Hunt False Assumptions & Inconsistencies
 
 ## Objective

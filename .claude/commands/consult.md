@@ -1,3 +1,8 @@
+---
+model: best
+effort: high
+# Sets goals every later command inherits. Pin covers the opening turn only; set the session model to match for the rest (/model).
+---
 # Consult - Full Goals & Protocol Redefinition (MASTER)
 
 ## Usage

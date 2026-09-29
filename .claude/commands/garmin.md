@@ -1,3 +1,8 @@
+---
+model: sonnet
+effort: medium
+# Spec-following payload build with read-back verification.
+---
 # Garmin - Sync the Day's Workouts to Garmin Connect (MASTER)
 
 ## Usage

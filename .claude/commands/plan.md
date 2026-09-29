@@ -1,3 +1,8 @@
+---
+model: opus
+effort: high
+# Readiness rules, load ledger and macro arithmetic that the day runs on. Pin covers the data pull and draft; follow-up turns use the session model.
+---
 # Plan - Daily Workout and Nutrition Plan (MASTER)
 
 ## Usage

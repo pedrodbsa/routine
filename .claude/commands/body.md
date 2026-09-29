@@ -1,3 +1,8 @@
+---
+model: sonnet
+effort: low
+# Short data entry, but it writes to Garmin, the ground-truth record.
+---
 # Body - Sync Smart Scale to Garmin (MASTER)
 
 ## Usage
@@ -11,7 +16,6 @@
 1. Ask for smart-scale measurements
 2. Sync them to Garmin
 3. Display current vs baseline vs target
-4. Remind the user to export CSVs if needed
 
 ## Progress Table
 
@@ -29,4 +33,3 @@
 - Compare against the Bod Pod baseline 76.11 kg / 21.7% BF / 59.6 kg lean (2026-04-28), per `current-status.md`.
 - Use target 71 kg / 16% BF, holding 59.6 kg lean mass.
 - Scale BF% is BIA (~7 pp high vs Bod Pod); report the weight trend and lean retention as the governing signals, not scale BF%.
-- Include reminder to export Garmin CSVs after sync.
