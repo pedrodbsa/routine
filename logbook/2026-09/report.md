@@ -71,6 +71,13 @@ ACWR uses acute km over the mean of the **four preceding weeks** (chronic 24.45 
 - **Staleness pass.** The August weigh-in narrative and the Aug 4 checkpoint block in `current-status.md` are dead narrative, since the cut is over, and are compressed to pointers. `Last verified` is set to 2026-09-29.
 - **Strength DB.** No sessions were logged, so there are no load updates. A staleness banner is added to `strength-exercises.md`: every working load is ≥6 weeks old, and re-entry opens one step below.
 
+## Athlete response (2026-09-29, same session)
+
+- **Sep 21–27:** the gap was **low motivation, which has a specific cause**. The breach reason is now recorded, and the cause stays with the athlete. Given that, this week's ~40 km is a target, not a test. If motivation is still low, the minimum-effective-dose fallback week is the right shape, and lifting 3/3 outranks the km.
+- **Goal proposal 1 and the protocol generally:** to be revised in a dedicated protocol-refinement session (date TBD). Until then the files stand as written.
+- **Weigh-ins:** committed to ≥4 fasted this week.
+- Still unknown: whether reversal week 1 (~2,150) ran. The ≥4-readings gate makes this non-blocking.
+
 ## Actions
 
 1. **Lift this week: Push today, Legs Wed, Pull Thu. 3/3 is the non-negotiable.** Open below the logged loads and log the actual sets honestly. These sessions are the first lean-mass data since Aug 13.
