@@ -28,9 +28,9 @@ rolling average, never a "cleaner" single reading.
 
 **How to apply:** convert every timestamp before trending. Trend from fasted-morning readings only.
 The athlete now takes a deliberate second post-run reading as a sweat-rate metric (his request, and
-genuinely useful given his chronic under-hydration lab flag) — file it as hydration data, never in
+useful given the lab's hydration flag) — file it as hydration data, never in
 the weight trend, and discard its BIA body-fat/water channel entirely (post-exercise BIA is junk;
 two readings 76 s apart disagreed by 1.1 points of body water). Protocol lives in `nutrition.md`
 § Paired Weigh-In and Sweat-Rate Tracking.
 
-Related: [[feedback-garmin-mcp-over-csv]], [[feedback-tracking-adherence]]
+Related: [[feedback-weigh-in-state-not-clock]], [[feedback-tracking-adherence]]

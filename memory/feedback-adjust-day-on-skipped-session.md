@@ -12,8 +12,8 @@ When the athlete says the day changed — he had to skip, swap, or add a trainin
 **Why:** Time is his binding constraint (work + toddler). He cannot squeeze a run, a lift, AND a walk into one day. NEAT (the ~8–10k steps) is **opportunistic extra**, not an on-demand lever he can pull to offset a missed session. Pushing compensatory walking when he reports a skip is exactly the wrong response and frustrates him (said plainly 2026-06-23). Lower output → lower intake is the correct, simple energy-balance move for him.
 
 **How to apply:**
-- A skipped easy run on a strength day → re-tier from Easy/Strength (1,950) toward strength-only (~1,800), the cut coming **entirely out of carbs**.
-- **Floors do not scale with activity.** Protein (165 g Phase 4) and fat (60 g) are LBM/health floors — never cut them to hit a lower number. "Adjust everything down" means carbs, the flexible macro.
+- A skipped session → re-tier the day down toward the tier its actual output matches (a lost run on a quality day → the Easy/Strength tier; everything lost → Rest), the cut coming **entirely out of carbs**.
+- **Floors do not scale with activity.** The phase's protein and fat targets (`nutrition.md`) are LBM/health floors — never cut them to hit a lower number. "Adjust everything down" means carbs, the flexible macro.
 - Floor math sets a hard lower bound on any given day: kcal already eaten + (remaining protein×4 + remaining fat×9) ≈ the realistic minimum. Don't promise a target below that.
 - Don't re-litigate with "the tier didn't fund the run" pedantry — the tiers are coarse; a no-run day genuinely has lower TDEE. Just adjust the food and move on.
 

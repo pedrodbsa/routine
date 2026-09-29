@@ -10,7 +10,7 @@ metadata:
 
 The `garmin` MCP server is the normal data path, but it breaks on upstream dependency drift and an `.mcp.json` fix needs a **session restart** to take effect — which would block `/plan` for the day. It does not have to.
 
-**Fallback:** a throwaway Python script run through `uvx --python 3.12 --with garminconnect python <script>` reaches the same API with no MCP involved. Auth needs no credentials — `Garmin().login(os.path.expanduser("~/.garminconnect"))` resumes from the cached token at `C:\Users\Pedro\.garminconnect`.
+**Fallback:** a throwaway Python script run through `uvx --python 3.12 --with garminconnect python <script>` reaches the same API with no MCP involved. Auth needs no credentials — `Garmin().login(os.path.expanduser("~/.garminconnect"))` resumes from the cached token (in the container, `~` is the persisted `../files/home` mount).
 
 Useful methods: `get_sleep_data`, `get_hrv_data`, `get_body_battery(start, end)`, `get_rhr_day`, `get_stats`, `get_training_readiness` (usually empty for this athlete), `get_activities_by_date`, `get_body_composition(start, end)`.
 
@@ -20,4 +20,3 @@ Two gotchas:
 
 Known break (2026-07-29): `ModuleNotFoundError: No module named 'mcp.server.fastmcp'` — the current `mcp` SDK dropped that module. Fixed by adding `--with mcp>=1.2,<2` to the `uvx` args in `.mcp.json`.
 
-Related: [[feedback-garmin-mcp-over-csv]] — the `data/*.csv` exports are stale and are not an acceptable substitute for a live pull.

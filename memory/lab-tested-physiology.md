@@ -20,7 +20,7 @@ Single lab session at FCDEFUC (Faculdade de Ciências do Desporto, U. Coimbra) o
 
 **Hydration status:** Lab flagged "Mal Hidratado" — urine SG 1.021, osmolality 750 mOsm/kg. That is one spot sample; "chronic" is an inference, not a measurement.
 
-**Why:** Prior body comp targets (70-72 kg / 21-23% BF) were anchored to scale BIA which overestimated BF by ~7 percentage points and underestimated lean mass by ~5.7 kg. The original "70-72 kg" weight target now means 16-18% BF, not 21-23%. Lab's own recommendation: 14% BF (~69 kg). Sub-T targets of 158-168 bpm in older notes were anchored to assumed LT 170; actual LT2 is 172, so the range is approximately right but should be reframed as 91-98% of measured LT2 (156-168).
+**Why:** Prior body comp targets (70-72 kg / 21-23% BF) were anchored to scale BIA which overestimated BF by ~7 percentage points and underestimated lean mass by ~5.7 kg. The original "70-72 kg" weight target now means 16-18% BF, not 21-23%. Lab's own recommendation: 14% BF (~69 kg). Zones are re-anchored to the measured LT2 172 (sub-T work band 152-165, ceiling 168; `running.md`).
 
 **How to apply:**
 - Use Bod Pod 76.11 kg / 21.7% / 59.6 kg LBM as the body comp baseline. Scale BIA history is no longer the reference.

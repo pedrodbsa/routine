@@ -1,6 +1,6 @@
 ---
 name: feedback-rederive-not-inherit
-description: "Re-derive each day's session from rules + data + the watch DSW; never inherit yesterday's \"week shape,\" and justify any conservative default."
+description: "Re-derive each day's session from rules + data; never inherit yesterday's \"week shape,\" and justify any conservative default."
 metadata: 
   node_type: memory
   type: feedback
@@ -13,8 +13,8 @@ On 2026-06-24 `/plan` prescribed an easy run when a quality (threshold) session 
 
 **How to apply:**
 - **Re-derive the week's shape (quality count, long run, volume) from the phase template + recovery each morning — do not edit yesterday's "Week ahead" table forward.** A "recovery week" label set days ago is a hypothesis to re-test, not a fact. When a race rolls from one week into the next, re-check whether *this* week still warrants reduced load, and re-check the slot logic against every day including today.
-- **Capture the watch DSW every plan** (`get_training_status` is unreliable for this athlete — ask him what the watch suggests). If the prescription is easier than the DSW, justify the gap out loud.
+- The watch DSW is de-emphasized: glance at it only when it diverges (a rest flag or a jump to a hard session), and justify the gap out loud when it does.
 - **Default discipline is symmetric.** Green markers + no load rule firing ≠ "easy is safe." Surface the case for the harder alternative and give the specific reason for the call either way. Legitimate reasons to default easy are nameable (a load rule fired, race within ~7 days, softening markers); "it was a recovery week" inherited from a file is not.
-- Encoded in `.claude/commands/plan.md` (step 4 DSW pull, step 6 weekly re-derivation, step 7 reconcile-vs-DSW + justify-the-default, Requirements "Default discipline (symmetric)").
+- Encoded in `.claude/commands/plan.md` (weekly re-derivation, justify-the-default, Requirements "Default discipline (symmetric)").
 
 Related: [[feedback-quality-session-periodization]] (derive the harder quality from the ladder + phase week, cross-check the DSW), [[feedback-adjust-day-on-skipped-session]], [[feedback-trailing-load-check]].

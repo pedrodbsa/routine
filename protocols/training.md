@@ -10,7 +10,7 @@ Scheduling is fully flexible: any run or strength session can land on any day. T
 
 **Legs / Pull / Push, 3 sessions every week, in every phase** (athlete's commitment). `/report` flags missed sessions; there is no automatic downshift. The only race-driven strength exception is **no heavy Legs in the 3 days before a hard effort** (Oct 25, the spring 10K).
 
-**Running:** 4 core runs plus a bonus 5th (`running.md` § Weekly Rules). Saturday is rest (`[[feedback-saturday-is-rest-day]]`).
+**Running:** 4 core runs plus a bonus 5th (`running.md` § Weekly Rules). Saturday is rest.
 
 | Day | Run | Strength | Notes |
 | --- | --- | --- | --- |

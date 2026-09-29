@@ -1,11 +1,12 @@
 ---
-name: Pace-HR calibration for sub-threshold work
-description: Sub-T pace prescriptions must be calibrated off recent race performance, not optimistic cruise targets. Athlete runs higher HR than generic tables suggest.
-type: feedback
-originSessionId: 2cc065f3-0c54-4927-9da1-f98b599cc6b8
+name: Pace-HR calibration for quality work
+description: Quality-session paces come from the athlete's own recent sessions and races at the target HR, never from generic cruise/threshold tables
+metadata:
+  type: feedback
 ---
-Do not prescribe sub-threshold paces faster than ~5:00/km based on generic cruise-interval references. Calibrate off recent race performance.
 
-**Why:** Athlete's 10K PR is 49:57 (~4:59/km, 2026-03-08) with observed LT ~170. A 4:30/km pace sits near 5K pace / above LT — HR will run 170+, not the 158-165 sub-T window. Prescribing 4:30-4:45 at 158-165 HR is internally inconsistent and the athlete called it out directly.
+Prescribe quality-session pace from the athlete's own recent sessions at the target HR, not from generic tables. An early prescription of 4:30–4:45/km at a 158–165 sub-T band was internally inconsistent (that pace sat near his 5K effort) and the athlete called it out.
 
-**How to apply:** For sub-T / cruise intervals targeting 158-165 HR, prescribe pace in the 5:00-5:15/km range. For true threshold work (168-172 HR), use ~4:50-5:00/km. Always cross-check pace against current 10K pace (~4:59/km) — sub-T should be *slower than* or *at* 10K pace, not faster. Run on HR first, pace second, but get the pace reference right so the target is plausible.
+**Why:** his HR runs high for a given pace; the lab anchors are LT1 145, LT2 172 @ 5:00/km. Recent evidence (Sep 2026): tempo ~4:51 @ 167, 1 km reps ~4:56 @ 168.
+
+**How to apply:** HR is the governor and pace the plausibility check. Sub-T work band 152–165 (ceiling 168) should be at or slower than current 10K pace; threshold sits near LT2. Re-read the pace from the last two comparable sessions before writing a target. Related: [[feedback-benchmark-matched-reps]], [[feedback-walk-recovery-intervals]].

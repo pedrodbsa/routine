@@ -64,4 +64,3 @@ Withings→Garmin job. Signal was already replaced by Telegram.
 **Prerequisite that stands regardless:** the Garmin password is committed in `.mcp.json` and
 must move to a secret before any remote exists (ticket 07).
 
-Git is permitted in this repo — see [[feedback-git-allowed-this-project]].

@@ -8,7 +8,7 @@ metadata:
   modified: 2026-07-27T13:18:30.592Z
 ---
 
-When programming a strength day, rotate the exercise selection against the **two most recent same-type sessions**, not just the last one. `strength-exercises.md` § *Pattern / rotation* says "rotate the selection vs the last same-type session", and following that literally produces an A/B flip-flop.
+When programming a strength day, rotate the exercise selection against the **two most recent same-type sessions**, not just the last one. A one-session lookback produces an A/B flip-flop. The four scorecard lifts and pull-up practice are exempt: they are fixed in their slots.
 
 **Why:** On 2026-07-27 the prescribed Upper Push repeated **six of seven slots** from Jul 13 (flat bench, barbell OHP, low-to-high cable flye, bench dip, DB lateral raise, plank) because `/plan` rotated off Jul 20 — straight back into Jul 13. The athlete noticed before the coach did ("different exercises because you carbon copied the previous one") and substituted incline barbell press and DB flyes himself, which was better programming than what was prescribed.
 

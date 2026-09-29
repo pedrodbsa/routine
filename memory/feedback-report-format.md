@@ -1,11 +1,12 @@
 ---
-name: Report format preference
-description: Reports are monthly only (reports/YYYY-MM.md), updated progressively — no standalone weekly reports
-type: feedback
+name: feedback-report-format
+description: Reports are monthly — one logbook/YYYY-MM/report.md updated progressively; the Sunday /report is a weekly pass inside it, never a separate weekly file
+metadata:
+  type: feedback
 ---
 
-Don't create standalone weekly report files. Reports are monthly (`reports/YYYY-MM.md`), updated progressively through the month as `/report` is run.
+Reports are monthly: one `logbook/YYYY-MM/report.md` per month, updated progressively. The Sunday `/report` is a weekly pass that adds a section to that file and sends its summary on Telegram. Never create a standalone weekly report file.
 
-**Why:** User finds weekly report files not useful — monthly is the right granularity.
+**Why:** the athlete finds weekly report files not useful; monthly is the right granularity for the record.
 
-**How to apply:** When running `/report`, create or update the current month's file (`reports/YYYY-MM.md`). Add new sections or update existing ones with each run. Never create `*-weekly.md` files.
+**How to apply:** `/report` creates or updates the current month's file and nothing else (`.claude/commands/report.md` § Scheduled Mode).

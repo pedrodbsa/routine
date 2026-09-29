@@ -18,4 +18,3 @@ The athlete eats something sweet after lunch because the sweetness blunts cravin
 
 **Scope this narrowly — it is the post-lunch slot only.** Strawberries/mango stirred into oats ([[feedback-oats-fruit-mix-in]]) and the post-dinner skyr + berries dessert ([[feedback-post-dinner-snack-hunger]]) are untouched and serve different purposes (palatability; evening hunger). Do not generalise this into "no fruit" — that is the same over-generalisation error made with the no-breakfast-before-a-run rule.
 
-**Consequence for the Fruit Dessert Swap mechanic** (`nutrition.md` and `meal-rotation.md`): that mechanic exists to trade lunch/dinner starch *down* in exchange for fruit as dessert. For the post-lunch slot it now runs in reverse — the starch goes back **up**. It remains live for the post-dinner slot. Related: [[feedback-starch-at-both-main-meals]].

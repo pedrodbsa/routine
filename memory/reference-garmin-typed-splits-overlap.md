@@ -30,7 +30,7 @@ finding was then used to argue the session's pace-at-HR improvement was a confou
 artifact, and to recommend a protocol change for the next benchmark. The athlete caught it.
 The duration sum would have caught it immediately.
 
-Related: [[feedback-garmin-mcp-over-csv]], [[feedback-benchmark-matched-reps]],
+Related: [[feedback-benchmark-matched-reps]],
 [[feedback-verify-load-baseline-against-athlete]] — the same lesson as the retracted
 20 kg DB press baseline, in a different channel: **check the record against the athlete's
 account before building a recommendation on it.**

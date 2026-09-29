@@ -1,18 +1,12 @@
 ---
 name: tracking-adherence-feedback
-description: "Athlete weighs food and follows the prescribed plan exactly on non-social days; does NOT log digitally. Stall is social-day surplus, not plan-day non-adherence."
-metadata: 
-  node_type: memory
+description: "Athlete weighs food and follows the plan exactly on plan days but does not log digitally — Garmin nutrition endpoints are empty; a stall is an off-plan (social/unplanned day) or TDEE question, not a plan-day compliance one"
+metadata:
   type: feedback
-  originSessionId: 1c553e91-48f3-4bb5-bcde-a9a9c91fccf4
 ---
 
-**Updated 2026-06-18 (supersedes the Mar-26 "poor tracking" read).** The athlete **weighs his food and follows the prescribed plan exactly on non-social days.** He does **not** log in Garmin or Cronometer — he executes the plan I write and reports back only the things he needs to change. So Garmin nutrition endpoints (`get_nutrition_daily_food_log`, etc.) are empty; do not try to pull logged intake, and do not read blank logbook calorie totals as "untracked/non-adherent." Strength compliance also recovered (3/3 in the Jun 8–14 week).
+The athlete **weighs his food and follows the prescribed plan exactly on plan days.** He does not log in Garmin or Cronometer; he executes the plan and reports only what changed. Garmin nutrition endpoints are empty, so do not pull logged intake and do not read a blank calorie total as non-adherence.
 
-**Why:** In June the cut stalled (weight stuck 76–77 kg since May 30) and I wrongly defaulted to the old "is he tracking honestly?" framing. He corrected it: plan days are accurate. The real swing factors are (1) **social-day surplus** — 1–2 alcohol-heavy days/wk each run +1,500–2,000 over tier and erase the weekly deficit — and (2) a possible modest TDEE overestimate.
+**Why:** in June 2026 the cut stalled and the coach defaulted to "is he tracking honestly?". He corrected it: plan days are accurate. The swing factors are off-plan days (1–2 social evenings a week with alcohol, plus days with no plan file) and a possibly overestimated TDEE.
 
-**How to apply:**
-- Treat plan-day intake as accurate. The first question on a stall is **not** "are you tracking?" — it's "what did the social days cost, and is TDEE right?"
-- The deficit lever is social-day damage control + added activity (see [[feedback-prefers-activity-over-food-cuts]]), **not** cutting his weighed plan-day meals — cutting those punishes good adherence.
-- Still flag skipped strength, but it is no longer the chronic gap it was in Feb–Mar.
-- Related: [[feedback-tracking-adherence]] history, [[post-hm-plan]], [[lab-tested-physiology]].
+**How to apply:** on a stall, the first question is what the off-plan days cost and whether TDEE is right, never "are you tracking?". Do not cut his weighed plan-day meals to fix it ([[feedback-prefers-activity-over-food-cuts]], [[feedback-lower-tiers-as-social-buffer]]).

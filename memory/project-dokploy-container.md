@@ -42,4 +42,4 @@ Design facts that are easy to get wrong later:
   Dokploy schedule runs `cron-coach` every 10 minutes for the scheduled `/plan`, `/recap` and
   `/report`. See [[project-workflow-automated-record]] and [[reference-telegram-one-poller]].
 
-See also [[feedback-git-allowed-this-project]] and [[reference-repo-relevant-parts]].
+Runbook: `docs/container.md`.

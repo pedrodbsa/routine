@@ -12,6 +12,6 @@ The midafternoon protein anchor is **a solid, not a drink**: skyr or high-protei
 
 **Why:** A drink does not control appetite for this athlete the way a bowl does. Whey stirred *into* the yogurt is fine and does not violate the preference — the objection is to the pourable format, not to the whey.
 
-**How to apply:** Default to ~200 g skyr + 1 scoop whey + ~100 g frozen fruit. Prefer skyr (~11 g P/100 g) over [[reference-mythos-ligeiro-yogurt]] (5.3 g P/100 g) — with the Mythos the same build lands ~11 g short and puts the day on the P170 floor rather than clear of it. Reserve pourable shakes for genuine peri-workout slots where speed matters.
+**How to apply:** Default to ~200 g skyr + 1 scoop whey + ~100 g frozen fruit. Prefer skyr (~11 g P/100 g) over [[reference-mythos-ligeiro-yogurt]] (5.3 g P/100 g) — with the Mythos the same build lands ~11 g short and puts the day on the protein floor rather than clear of it. Reserve pourable shakes for genuine peri-workout slots where speed matters.
 
 **Do not over-fit the anchor's size in either direction.** An earlier version of this memory said the anchor must be the *smallest* feed and the first place to take calories from; that was drawn from one sentence and the athlete reversed it within the hour. Size it by [[feedback-no-single-dominant-feed]]. Related: [[feedback-post-dinner-snack-hunger]], [[feedback-starch-at-both-main-meals]], [[feedback-living-nutrition-table]].
