@@ -88,7 +88,6 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Automated daily record](project-workflow-automated-record.md) — Telegram is the single interface; `/plan scheduled` on the sleep record, `/recap` 21:30 daily, `/report` Sunday; reason-less miss by next morning = breach
 - [Dokploy container](project-dokploy-container.md) — always-on Remote Control + Telegram sessions; Auto Deploy off; working repo `../files/repo`, never git in `code/`
 - [Telegram: one poller per bot](reference-telegram-one-poller.md) — token lives as `COACH_TELEGRAM_BOT_TOKEN`, only the tmux `telegram` session gets it; never `/telegram:configure`, never on the desktop
-- [Remote Coach Service](project-remote-coach-service.md) — greenfield n8n + TypeScript `coach` CLI design (2026-07); status unconfirmed since the container + Telegram plugin shipped
 - **This directory is the memory.** Write new memories here as files + a pointer line above; never to `~/.claude/projects/<slug>/memory/`.
 
 ## Medical

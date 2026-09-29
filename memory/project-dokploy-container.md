@@ -9,11 +9,6 @@ Built 2026-08-06. This repo ships a `Dockerfile` + `docker-compose.yml` that run
 Remote Control server mode on the athlete's Dokploy server, so the coach is reachable from
 claude.ai/code and the Claude mobile app. Full runbook: `docs/container.md`.
 
-**Why it matters for planning:** this is a far cheaper path to "coach reachable away from the
-desktop" than the greenfield build in [[project-remote-coach-service]] (n8n + bespoke TypeScript
-`coach` CLI + Telegram, in the separate `X:\coach` repo). Before proposing work on that build,
-check whether the container already covers the need.
-
 Design facts that are easy to get wrong later:
 
 - **The working repo is `../files/repo`, not Dokploy's checkout (since 2026-09-29).** Dokploy's
