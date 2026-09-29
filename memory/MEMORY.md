@@ -73,7 +73,7 @@ See `coaching-lessons.md` for details.
 ## Tooling & Workflow
 
 - [Git allowed in this project](feedback-git-allowed-this-project.md) — git is permitted in the routine repo (overrides global user-only rule); commit protocols/reports/logbook
-- [Dokploy container](project-dokploy-container.md) — repo runs as an always-on Remote Control session on the server; Auto Deploy must stay off, pushes come from a `git-sync` schedule. Runbook: `docs/container.md`
+- [Dokploy container](project-dokploy-container.md) — repo runs as an always-on Remote Control session on the server; Auto Deploy must stay off, pushes come from a `git-sync` schedule; working repo is `../files/repo`, never git in the host `code/` checkout. Runbook: `docs/container.md`
 - **This directory is the memory.** Write new memories here as files + a pointer line above; never to `~/.claude/projects/<slug>/memory/`
 
 ## Active Build
