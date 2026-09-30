@@ -96,7 +96,7 @@ architecture: `docs/container.md`.
    watch battery died. `/plan` never touches Garmin.
 2. **After the plan:** "ok" on Telegram runs `/garmin`, which uploads the day's prescribed
    workouts and schedules them for the plan date, replacing any existing workout for that date.
-   The upload is approved with a Telegram button. See `.claude/commands/garmin.md`.
+   The upload runs without a permission prompt. See `.claude/commands/garmin.md`.
 3. **During the day:** `/log [details]` and `/log meal [details]`. On Telegram, a plain message
    is enough; the session routes it.
 4. **Evening, automatic, every day:** `/recap` reconciles the day against Garmin, marks each miss
@@ -153,8 +153,9 @@ own confidence: when unsure whether a request needs judgment, escalate it.** Fol
 escalated answer are escalated too. When it is unclear what the athlete *means*, ask one short
 question instead.
 
-Actions that are behind an "ask" permission rule (Garmin writes, `protocols/` edits) arrive on
-Telegram as approve/deny buttons. **The Telegram plugin runs only in the container.** Telegram
+The coach runs autonomously in the container: Garmin writes, logbook, memory and calendar
+writes, and shell commands need no approval. The one exception is `protocols/` edits, which
+arrive on Telegram as approve/deny buttons (and are refused in scheduled runs). **The Telegram plugin runs only in the container.** Telegram
 allows one poller per bot, so never install the plugin on the desktop or give it the bot token
 anywhere else.
 

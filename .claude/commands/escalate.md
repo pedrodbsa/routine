@@ -24,8 +24,8 @@ other.
    the question touches. For training and recovery questions, pull live from Garmin.
 2. If a command covers the request after all (a session change is `/plan adjust`, a meal
    change is `/log meal`), follow that command's rules rather than improvising.
-3. Answer or act. Writes follow the normal permission rules, so a `protocols/` edit or a
-   Garmin write arrives as a Telegram button.
+3. Answer or act. Writes follow the normal permission rules: a `protocols/` edit arrives as a
+   Telegram button, and everything else, Garmin writes included, runs without one.
 4. Reply as plain text sized for a phone. Lead with the answer; give the reasoning only as
    far as it changes what the athlete does.
 

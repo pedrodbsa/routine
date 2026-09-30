@@ -107,10 +107,10 @@ file. Everything in § Function and § Requirements applies, with these changes:
    lives in the daily file's `## Context`; `/report` refreshes current-status.
 5. Commit the daily file (and yesterday's file if the breach check touched it).
 6. **The final message is the Telegram text**, and nothing else: Telegram HTML laid out
-   per `docs/telegram-format.md` § Layouts (Morning plan), under ~1,500 characters of
+   per `docs/telegram-format.md` § Layouts (Morning plan), under ~2,500 characters of
    visible text. It is sent with an "ok" button. In order:
    - the day, the session(s), and the readiness call with its one-line reason;
-   - the calorie tier (kcal, P/C/F) and one line per meal;
+   - the calorie tier (kcal, P/C/F), then each meal with its ingredient quantities;
    - flags: breaches recorded from yesterday, a stale current-status, sleep
      onset after 23:30, calendar items due today or overdue, and anything due
      in the next 7 days that needs the athlete;
@@ -121,7 +121,7 @@ file. Everything in § Function and § Requirements applies, with these changes:
      rules that fired) folded into an expandable quote at the end, before the ask.
 
 `/plan scheduled` still never touches Garmin Connect: "ok" on Telegram runs
-`/garmin` in the Telegram session, where the upload is approved with a button.
+`/garmin` in the Telegram session, which uploads without a further prompt.
 
 ## Adjust Mode
 

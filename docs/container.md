@@ -31,8 +31,8 @@ Dokploy cron */10 ─▶ cron-git-sync ─▶ GitHub
 
 - **The Telegram session** is an interactive Claude Code session started with the Telegram
   channel plugin (`--channels`). The plugin polls the bot, injects each message into the
-  session, and gives Claude a `reply` tool. Permission prompts — a Garmin upload, a protocol
-  edit — are relayed to Telegram as approve/deny buttons.
+  session, and gives Claude a `reply` tool. The one routine permission prompt, a protocol
+  edit, is relayed to Telegram as approve/deny buttons.
 - **Remote Control can't carry Telegram.** It is a remote screen onto Claude sessions and has
   no Telegram side. Channels are switched on per session with a flag, and `claude
   remote-control`'s server mode refuses flags it can't pass on to the sessions it spawns. So
@@ -43,11 +43,10 @@ Dokploy cron */10 ─▶ cron-git-sync ─▶ GitHub
   code, and the wrapper — not the model — sends the result, so a crashed run still produces a
   failure notice. The processes don't share conversation context and don't need to: the
   daily file, `calendar.md` and `report.md` hold the state.
-- **Permissions:** a `-p` run can't answer a permission prompt, so anything behind an "ask" rule
-  in `.claude/settings.json` is refused. Scheduled runs read Garmin and write `logbook/`,
-  `memory/` and `calendar.md`, but never upload workouts or edit `protocols/`. Those happen in
-  the Telegram session, behind a button: "ok" runs `/garmin`, and "apply" writes the protocol
-  edits the Sunday report proposed.
+- **Permissions:** the coach runs unattended, so everything is allowed except `protocols/`
+  edits and `git push` (§ Permissions). A `-p` run can't answer a permission prompt, so a
+  scheduled run can never change a protocol; it proposes, and "apply" in the Telegram session
+  writes the edits behind a button.
 - **One poller per bot.** Telegram allows one `getUpdates` consumer per bot token, and the
   plugin starts polling in every Claude process that loads it and can see the token. A process
   that loads it without the token fails it instead, and Claude Code caches that failure for 15
@@ -248,9 +247,20 @@ A one-time procedure, run on the host, for a server still on the old `.:/app` mo
 
 ## Permissions
 
-`.claude/settings.json` carries the shared allowlist, so it applies wherever this repo is
-checked out. Reads, Garmin reads, writes under `logbook/` and `memory/` and to `calendar.md`,
-the Telegram plugin's reply tools, and `git add` and `git commit` run unattended. Garmin
-workout uploads, edits to `protocols/`, and `git push` prompt for approval — the actions worth
-a tap on your phone before they fire. In the Telegram session the prompt arrives as buttons;
-in a scheduled `-p` run it is refused.
+The agents here are meant to run fully autonomously. The one thing that needs the athlete is a
+protocol change, so an unattended run can never rewrite the rules it coaches by.
+
+- **`.claude/settings.json`** is the whole policy, identical on the desktop and in the
+  container. It allows `Bash`, `Edit`, `WebFetch`, `WebSearch`, every Garmin tool
+  (`mcp__garmin`, reads and writes) and the Telegram plugin's tools. Its `ask` rules are
+  `Edit(protocols/**)` and `git push`, and an `ask` rule outranks any allow. Writes under
+  `.claude/` and `.git/` are protected paths and still prompt.
+- **Hooks** (`.claude/hooks/`, registered in `.claude/settings.json`):
+  `guard-protocols-bash.sh` blocks Bash commands that look like writes under `protocols/`
+  (`sed -i`, redirects, `mv`, scripts), so the broad `Bash` allow can't get around the `Edit`
+  gate. It is a heuristic and also blocks a script that merely mentions the path; use Edit.
+  `guard-telegram-format.sh` rejects a `reply` whose text is escaped for MarkdownV2 but
+  doesn't set `format: "markdownv2"`.
+
+In the Telegram session a `protocols/` edit arrives as approve/deny buttons; in a scheduled
+`-p` run it is refused. `git push` is left to `cron-git-sync`.
