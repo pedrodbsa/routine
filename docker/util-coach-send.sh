@@ -8,6 +8,9 @@
 set -euo pipefail
 
 SESSION="${COACH_SESSION:-coach}"
+# "=name:" is an exact session match. send-keys takes a pane target, where a bare "=name" is
+# not found ("can't find pane").
+TARGET="=${SESSION}:"
 WAIT_S="${COACH_IDLE_WAIT_S:-60}"
 
 # Nothing here may see the bot token under the name the channel plugin reads (see
@@ -17,7 +20,7 @@ unset TELEGRAM_BOT_TOKEN
 # The Claude process in the pane, matched by PID rather than name so it holds across /clear.
 status() {
   local pane pid
-  pane="$(tmux list-panes -t "=${SESSION}" -F '#{pane_pid}' 2>/dev/null | head -1)"
+  pane="$(tmux list-panes -t "${TARGET}" -F '#{pane_pid}' 2>/dev/null | head -1)"
   pid="$( [ -n "${pane}" ] && pgrep -P "${pane}" | head -1 || true)"
   [ -n "${pid}" ] || { echo missing; return; }
   claude agents --json 2>/dev/null \
@@ -35,9 +38,9 @@ for line in "$@"; do
     sleep 2
     waited=$((waited + 2))
   done
-  tmux send-keys -t "=${SESSION}" -l "${line}"
+  tmux send-keys -t "${TARGET}" -l "${line}"
   sleep 1
-  tmux send-keys -t "=${SESSION}" Enter
+  tmux send-keys -t "${TARGET}" Enter
   echo "util-coach-send: sent \"${line}\""
   sleep 2
 done
