@@ -37,11 +37,11 @@ Design facts that are easy to get wrong later:
   schedules run the cron scripts.
 - **One coach session; crons are a gate plus a send (2026-10-01).** The athlete's replies went to
   a session that never saw the headless `claude -p` plan/recap. Now `cron-morning` (not sent
-  today, no daily file, sleep record ready → `/clear` + `/plan scheduled`), `cron-recap` and
-  `cron-report` each check a gate, then `util-coach-send` types the command into the `coach`
+  today, no daily file, sleep record ready → `/clear` + `/plan scheduled`), `cron-activity` (per new activity id) each check a gate, then `util-coach-send` types the command into the `coach`
   tmux pane once `claude agents --json` reports it `idle` (keys during a permission dialog
   would answer it). The athlete asked for exactly this shape — keep crons dumb, no completion
-  tracking or retries in them. The session sends scheduled messages itself via
+  tracking or retries in them. `cron-recap` and `cron-report` are single shots at a fixed time
+  with no gate (athlete's call): they wait up to 30 min for an idle session. The session sends scheduled messages itself via
   `util-telegram-send` (buttons). See [[project-workflow-automated-record]] and [[reference-telegram-one-poller]].
 
 Runbook: `docs/container.md`.

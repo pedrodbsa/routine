@@ -147,9 +147,11 @@ container would find it, and they would all start polling.
 
 ## Set up the coach schedules
 
-Add four Dokploy schedules against the `routine` service. Each script is a gate and a send;
-the time window lives in the cron expression, and a per-day marker in `/root/.coach/state/`
-makes every run after the first a no-op. Dokploy evaluates the expressions in its own
+Add four Dokploy schedules against the `routine` service. Each script is a gate and a send.
+The morning and activity scripts poll every 10 minutes through a window, and a marker in
+`/root/.coach/state/` makes every run after the one that sent a no-op. The recap and the report
+fire once at a fixed time with no gate; if the session is busy they wait up to half an hour
+for it to go idle, so the report also waits for the recap to finish. Dokploy evaluates the expressions in its own
 timezone, which is usually UTC: Lisbon is UTC+0 in winter and UTC+1 in summer, so these
 windows land an hour later in local time during summer.
 
@@ -157,8 +159,8 @@ windows land an hour later in local time during summer.
 | --- | --- | --- | --- |
 | `cron-morning` | `*/10 5-11 * * *` | not yet sent today, no daily file yet (a plan made by hand counts), Garmin has last night's sleep record | `/clear`, `/plan scheduled` |
 | `cron-activity` | `*/10 6-21 * * *` | today's daily file exists; per activity, not yet sent | `/log activity <id>` for each new Garmin activity today |
-| `cron-recap` | `*/10 21-23 * * *` | not yet sent today | `/recap scheduled` |
-| `cron-report` | `*/10 21-23 * * 0` | not yet sent today, and today's recap has been sent | `/report scheduled` |
+| `cron-recap` | `30 21 * * *` | none (single shot) | `/recap scheduled` |
+| `cron-report` | `0 22 * * 0` | none (single shot, after the recap) | `/report scheduled` |
 
 - **`cron-activity` waits for the plan.** Before the daily file exists, the plan reads the
   activity from Garmin itself, and the morning `/clear` would wipe a log made earlier. On a
@@ -174,8 +176,9 @@ windows land an hour later in local time during summer.
   starts it empty; nothing is lost, because the state is in the repo.
 - **A sent command is not checked.** The marker means "typed into the session", not "done". If
   a plan never arrives, send "plan" on Telegram; the evening recap flags a day with no plan.
-- To run one by hand: `rm /root/.coach/state/morning-$(date +%F)` and `cron-morning`, or type
-  the command directly with `util-coach-send "/recap scheduled"`.
+- To run one by hand: `cron-recap` or `cron-report` directly; for the morning,
+  `rm /root/.coach/state/morning-$(date +%F)` first, then `cron-morning`. Or type any command
+  with `util-coach-send "/plan scheduled"`.
 
 ## Set up the sync schedule
 
