@@ -16,6 +16,8 @@
 
 | Date | Kind | Item | Owner | Source |
 | --- | --- | --- | --- | --- |
+| 2026-10-02 Fri – 2026-10-05 Mon | appointment | **Holiday.** No long run this weekend; training only as the athlete decides each morning. The Oct 5 control run and waist tape slip to the first day back; the athlete's return day is to be confirmed | athlete | Telegram 2026-10-01 |
+| 2026-10-06 Tue | todo | Revisit the 2-quality question (athlete, 2026-10-01 07:50, "next week"): Option A keep one quality + a post-Oct 25 checkpoint for a second short threshold touch from Nov 9, or Option B a 2-quality trial (Tue + Fri, leg half dropped) reviewed at Oct 25. Any protocol edit goes through the approve button | athlete | Telegram 2026-10-01 |
 | 2026-10-05 Mon | deadline | Scheduled morning `/plan`, evening `/recap` and Telegram delivery live on the server | coach | consult 2026-09-29 |
 | 2026-10-05 Mon | phase | The re-entry week ends, and scoring starts against the six adherence rows. The +300 tiers are in force | coach | consult 2026-09-29 |
 | 2026-10-06 Tue | checkpoint | Full training capacity from today (athlete-stated) | athlete | consult 2026-09-29 |
