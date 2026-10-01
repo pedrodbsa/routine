@@ -3,6 +3,11 @@
 # Dokploy runs it every 10 minutes through the morning window (docs/container.md).
 set -euo pipefail
 
+# One run at a time: if another run holds the lock, this one exits.
+mkdir -p /root/.coach/state
+exec 9>"/root/.coach/state/${0##*/}.lock"
+flock -n 9 || exit 0
+
 today="$(date +%F)"
 marker="/root/.coach/state/morning-${today}"
 
@@ -16,4 +21,4 @@ uvx --quiet --python 3.12 --with garminconnect==0.3.2 \
 
 # 3. Send.
 util-coach-send "/clear" "/plan scheduled"
-mkdir -p "${marker%/*}" && touch "${marker}"
+touch "${marker}"
