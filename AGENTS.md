@@ -85,14 +85,14 @@ design specs and runbooks in `docs/`
 
 The athlete talks to the coach on **Telegram**. The container on the server runs one
 long-lived session, `coach`, that carries the Telegram channel and does all the coaching. A
-`cron-coach` schedule does only the deterministic work (clock gates, the Garmin sleep check) and
-types the scheduled commands into that session, so the plan, the recap and the athlete's
+set of cron scripts (`cron-morning`, `cron-recap`, `cron-report`) each check a gate and type one
+command into that session, so the plan, the recap and the athlete's
 replies to them share one conversation.
 Remote Control (claude.ai or the Claude app) and the desktop remain available for
 troubleshooting and heavier work. They reach the same repo, so they see the same coach. Setup and
 architecture: `docs/container.md`.
 
-1. **Morning, automatic.** Once Garmin has the night's sleep record, `cron-coach` sends `/clear`
+1. **Morning, automatic.** Once Garmin has the night's sleep record, `cron-morning` sends `/clear`
    to start the day's conversation, then `/plan scheduled`, which writes the
    day's file as a draft (`logbook/YYYY-MM/YYYY-MM-DD.md`) and sends the plan on Telegram. If
    there is still no file and no sleep record at 12:00, the day's plan is skipped. The athlete
@@ -119,7 +119,7 @@ architecture: `docs/container.md`.
 
 Messages in the coach session come from the athlete, through the channel plugin, and every
 reply goes back through its `reply` tool. The exception is a scheduled command (`/clear`,
-`/plan scheduled`, `/recap scheduled`, `/report scheduled`) that `cron-coach` typed into the
+`/plan scheduled`, `/recap scheduled`, `/report scheduled`) that a cron script typed into the
 terminal: it sends no progress line and delivers its one message with `util-telegram-send`, as
 its command doc says. Keep replies short, and lay them out per
 `docs/telegram-format.md`: MarkdownV2 through `reply`, resent as plain text on a parse error.

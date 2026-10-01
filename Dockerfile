@@ -54,7 +54,10 @@ COPY --chmod=0755 docker/cron-git-sync.sh   /usr/local/bin/cron-git-sync
 COPY --chmod=0755 docker/util-keep-alive.sh /usr/local/bin/util-keep-alive
 COPY --chmod=0755 docker/claude-session-rc.sh /usr/local/bin/claude-session-rc
 COPY --chmod=0755 docker/claude-session-coach.sh /usr/local/bin/claude-session-coach
-COPY --chmod=0755 docker/cron-coach.sh /usr/local/bin/cron-coach
+COPY --chmod=0755 docker/cron-morning.sh /usr/local/bin/cron-morning
+COPY --chmod=0755 docker/cron-recap.sh /usr/local/bin/cron-recap
+COPY --chmod=0755 docker/cron-report.sh /usr/local/bin/cron-report
+COPY --chmod=0755 docker/util-coach-send.sh /usr/local/bin/util-coach-send
 COPY --chmod=0755 docker/util-telegram-send.sh /usr/local/bin/util-telegram-send
 COPY docker/garmin-sleep-ready.py /usr/local/lib/coach/garmin-sleep-ready.py
 

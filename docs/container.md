@@ -25,7 +25,7 @@ container, both against the same `/app` repo, and all the coaching happens in on
 tmux "coach":  claude -n coach --channels telegram  ◀─ polls ─ Telegram (the athlete's messages)
                   ▲  types /clear, /plan scheduled,       └─ reply / util-telegram-send ─▶ Telegram
                   │  /recap scheduled, /report scheduled
-Dokploy cron */10 ─▶ cron-coach (clock gates, Garmin sleep check, done checks)
+Dokploy crons ─▶ cron-morning | cron-recap | cron-report: gate, then util-coach-send
 tmux "rc":     claude remote-control                ◀─ claude.ai / Claude app (troubleshooting)
 Dokploy cron */10 ─▶ cron-git-sync ─▶ GitHub
 ```
@@ -41,19 +41,16 @@ Dokploy cron */10 ─▶ cron-git-sync ─▶ GitHub
   from claude.ai or the Claude app.
 - **The scheduled jobs run inside the coach session.** Until 2026-10-01 they were headless
   `claude -p` runs, and the session the athlete replied to had no idea what the morning plan
-  or the evening recap had said. Now `cron-coach` does only the deterministic work and types
-  each command into the `coach` tmux pane (`tmux send-keys`), so a reply to the plan lands in
-  the conversation that wrote it. The session sends the scheduled message itself with
-  `util-telegram-send`, which supports the HTML layout and quick-reply buttons that the
-  plugin's `reply` lacks.
-- **A command is typed only while the session is idle.** `cron-coach` asks `claude agents
-  --json` for the status of the Claude process in the pane. Keys sent mid-turn would queue
-  behind it, and keys sent while a permission dialog is open would answer the dialog. A busy
-  session just means the job waits for the next run.
-- **The wrapper still checks the work.** With no exit code to read, a job counts as done once
-  the session is idle again, `util-telegram-send` has sent since the command went in (it
-  touches `/root/.coach/state/last-telegram-send`), and for the plan and the report their file
-  has changed. Otherwise the athlete gets a failure notice and the job is retried.
+  or the evening recap had said. Now each cron script is two steps: a gate that decides
+  whether to run, then `util-coach-send`, which types the command into the `coach` tmux pane
+  (`tmux send-keys`). A reply to the plan lands in the conversation that wrote it. The
+  session sends the scheduled message itself with `util-telegram-send`, which supports the
+  HTML layout and quick-reply buttons that the plugin's `reply` lacks.
+- **A command is typed only while the session is idle.** `util-coach-send` asks `claude agents
+  --json` for the status of the Claude process in the pane and waits up to a minute for
+  `idle`. Keys sent mid-turn would queue behind the turn, and keys sent while a permission
+  dialog is open would answer the dialog. If it stays busy, nothing is typed, no marker is
+  written, and the next cron run tries again.
 - **Permissions:** the coach runs unattended, so everything is allowed except `protocols/`
   edits and `git push` (§ Permissions). The scheduled commands never change a protocol: they
   propose, and "apply" writes the edits behind a button.
@@ -103,12 +100,9 @@ the compose file loads that with `env_file`. Full list with comments in `.env.ex
 | `GARMIN_EMAIL`, `GARMIN_PASSWORD` | Expanded into the MCP server's environment by `.mcp.json` |
 | `GITHUB_TOKEN` | Push credential for `cron-git-sync`; also needed for the first-boot clone if the repo is private |
 | `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_NAME`, `GIT_COMMITTER_EMAIL` | Identity on commits made from the container. Git needs both pairs; nothing writes a gitconfig |
-| `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `cron-coach` gates on it |
+| `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and the cron scripts' per-day markers use the local date |
 | `COACH_TELEGRAM_BOT_TOKEN` | The bot token from BotFather. Deliberately not `TELEGRAM_BOT_TOKEN` — see "One poller per bot" above |
 | `TELEGRAM_CHAT_ID` | Optional. Where `util-telegram-send` posts; defaults to the first allowlisted id from pairing |
-| `COACH_MORNING_FROM`, `COACH_PLAN_CUTOFF` | Morning window for the scheduled `/clear` + `/plan`: default `05:00` and `12:00` |
-| `COACH_RECAP_AT`, `COACH_REPORT_DOW` | Evening `/recap` time (default `21:30`) and the weekday the report follows it (default `7`, Sunday) |
-| `COACH_RUN_TIMEOUT_MIN` | Minutes a typed command may run before it is reported as stuck (default `45`) |
 
 ## First deploy
 
@@ -151,30 +145,31 @@ persistent `/root` mount) and leaves it disabled there; only the `coach` session
 Do not run `/telegram:configure`. It stores the token where every Claude process in the
 container would find it, and they would all start polling.
 
-## Set up the coach schedule
+## Set up the coach schedules
 
-Add a second Dokploy schedule against the `routine` service with command `cron-coach` and cron
-`*/10 * * * *`. Almost every run is a no-op; the script gates on local time and per-day
-markers in `/root/.coach/state/`, so it doesn't matter which timezone Dokploy's cron uses.
+Add three Dokploy schedules against the `routine` service. Each script is a gate and a send;
+the time window lives in the cron expression, and a per-day marker in `/root/.coach/state/`
+makes every run after the first a no-op. Dokploy evaluates the expressions in its own
+timezone, which is usually UTC: Lisbon is UTC+0 in winter and UTC+1 in summer, so these
+windows land an hour later in local time during summer.
 
-- **Morning:** from `COACH_MORNING_FROM` it checks Garmin for last night's sleep record — a
-  plain `garminconnect` call with the MCP's cached token, no Claude involved. Once the record
-  is there, it types `/clear` into the coach session, which starts the day's conversation, and
-  then `/plan scheduled`. Clearing here rather than at night keeps yesterday's recap in context
-  until the new plan, so a late answer to it still makes sense. If there is no daily file and
-  no sleep record by `COACH_PLAN_CUTOFF`, the day is skipped. A plan made by hand (send "plan"
-  on Telegram) counts, and the run leaves that day alone, without clearing.
-- **Evening:** at `COACH_RECAP_AT`, every day, `/recap scheduled`. On `COACH_REPORT_DOW`,
-  once the recap is done, `/report scheduled`, sent as a separate message.
-- **Failures are never silent.** A job that ends without its file or its message sends a short
-  notice and is retried on the next run, up to three attempts a day. A job still running after
-  `COACH_RUN_TIMEOUT_MIN` is reported once. A failing Garmin sleep check is reported once a day.
-- **Context grows only between clears.** A day planned by hand or skipped is not cleared, so
-  the session carries on until the next scheduled plan. A restart of the session also starts
-  it empty; nothing is lost, because the state is in the repo.
-- Test with `cron-coach --force morning|recap|report` (it still waits for an idle session).
-  `COACH_DRY_RUN=1 COACH_NOW="2026-10-05 06:40" cron-coach` shows what a run would do at that
-  time without typing or sending anything.
+| Command | Cron | Gate | Sends |
+| --- | --- | --- | --- |
+| `cron-morning` | `*/10 5-11 * * *` | not yet sent today, no daily file yet (a plan made by hand counts), Garmin has last night's sleep record | `/clear`, `/plan scheduled` |
+| `cron-recap` | `*/10 21-23 * * *` | not yet sent today | `/recap scheduled` |
+| `cron-report` | `*/10 21-23 * * 0` | not yet sent today, and today's recap has been sent | `/report scheduled` |
+
+- **The sleep check** is a plain `garminconnect` call with the MCP's cached token
+  (`garmin-sleep-ready.py`), no Claude involved. Its status line is in the schedule's log.
+- **The morning `/clear` starts the day's conversation.** Clearing then, rather than at night,
+  keeps yesterday's recap in context until the new plan, so a late answer to it still makes
+  sense. A day planned by hand, or skipped because the sleep record never came by noon, is not
+  cleared, and the context carries on until the next scheduled plan. A session restart also
+  starts it empty; nothing is lost, because the state is in the repo.
+- **A sent command is not checked.** The marker means "typed into the session", not "done". If
+  a plan never arrives, send "plan" on Telegram; the evening recap flags a day with no plan.
+- To run one by hand: `rm /root/.coach/state/morning-$(date +%F)` and `cron-morning`, or type
+  the command directly with `util-coach-send "/recap scheduled"`.
 
 ## Set up the sync schedule
 

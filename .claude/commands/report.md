@@ -15,7 +15,7 @@ effort: high
 /report apply [numbers]
 ```
 
-`/report scheduled` is the unattended weekly run that `cron-coach` chains after the
+`/report scheduled` is the unattended weekly run that `cron-report` sends after the
 Sunday evening `/recap`. It follows § Scheduled Mode below. It replaces the cloud
 routine "Weekly /report reminder", which only reminded the athlete to run it by hand.
 
@@ -79,7 +79,7 @@ routine "Weekly /report reminder", which only reminded the athlete to run it by 
 
 ## Scheduled Mode
 
-`/report scheduled` is typed into the coach session by the container's `cron-coach`
+`/report scheduled` is typed into the coach session by the container's `cron-report`
 schedule on Sunday evenings, once `/recap` has finished, and the session sends its
 final message to the athlete on Telegram. It is the weekly pass of the monthly report
 (`memory/feedback-report-format.md`): it updates `logbook/YYYY-MM/report.md`
@@ -97,8 +97,7 @@ applies, with these changes:
 2. Commit `report.md` and anything else written.
 3. **Send the Telegram message yourself** with `util-telegram-send --html`, the text in
    a quoted heredoc (`<<'EOF'`), not with the plugin's `reply`, then end the turn with
-   one line saying it was sent. `cron-coach` confirms the job by `report.md` changing and
-   this send going out, so if it fails, send it plain. It is Telegram HTML laid out per
+   one line saying it was sent. If the send fails, send it plain. It is Telegram HTML laid out per
    `docs/telegram-format.md` § Layouts (Weekly report), under ~2,000 characters of
    visible text. In order:
    - the week in one line: km and runs vs the floor, lifts delivered vs the 3/3

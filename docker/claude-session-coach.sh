@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # The coach session: the one long-lived Claude Code session that does all the coaching. The
-# athlete's Telegram messages arrive through the channel plugin, and cron-coach types the
-# scheduled commands (/clear, /plan scheduled, /recap scheduled, /report scheduled) into this
+# athlete's Telegram messages arrive through the channel plugin, and the cron-* scripts type
+# the scheduled commands (/clear, /plan scheduled, /recap scheduled, /report scheduled) into this
 # pane, so everything the coach did today is in the context the athlete replies to.
 #
 # The entrypoint installs the Telegram plugin disabled at user scope; --settings enables it for

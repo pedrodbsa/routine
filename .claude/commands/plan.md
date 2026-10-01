@@ -14,7 +14,7 @@ effort: high
 /plan adjust <change>
 ```
 
-`/plan scheduled` is the unattended morning run that `cron-coach` starts once Garmin
+`/plan scheduled` is the unattended morning run that `cron-morning` sends into the coach session once Garmin
 has the night's sleep record. It follows § Scheduled Mode below instead of stopping
 for review. `/plan adjust` changes a plan that is already written (§ Adjust Mode).
 
@@ -85,7 +85,7 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
 
 ## Scheduled Mode
 
-`/plan scheduled` is typed into the coach session by the container's `cron-coach`
+`/plan scheduled` is typed into the coach session by the container's `cron-morning`
 schedule, right after a `/clear` that starts the day's conversation. Its final
 message goes to the athlete on Telegram as the morning plan. Nobody is there to
 approve it, so the file it writes is a **draft**: the athlete corrects it by
@@ -110,8 +110,7 @@ edits the file. Everything in § Function and § Requirements applies, with thes
 5. Commit the daily file (and yesterday's file if the breach check touched it).
 6. **Send the Telegram message yourself** with `util-telegram-send --html --buttons ok`,
    the text in a quoted heredoc (`<<'EOF'`). Not the plugin's `reply`, which has no
-   buttons and no HTML. `cron-coach` confirms the job by the daily file changing and
-   this send going out, so if it fails, fix the markup or send it plain, but send it.
+   buttons and no HTML. If the send fails, fix the markup or send it plain, but send it.
    Then end the turn with one line saying it was sent. The message is Telegram HTML
    laid out per `docs/telegram-format.md` § Layouts (Morning plan), under ~2,500
    characters of visible text. In order:

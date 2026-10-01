@@ -1,6 +1,6 @@
 """Exit 0 once Garmin holds a finished sleep record for today, 1 while it does not, 2 on error.
 
-cron-coach polls this every 10 minutes from the morning window's start, so the scheduled /plan
+cron-morning polls this every 10 minutes through the morning window, so the scheduled /plan
 fires after the watch has synced the night rather than at a fixed clock time.
 
 It reuses the Garmin MCP's token cache and never logs in with the password: a rate-limited SSO
