@@ -9,7 +9,11 @@ effort: medium
 
 ```
 /log [entry details]
+/log activity <garmin activity id>
 ```
+
+`/log activity <id>` is typed into the coach session by the container's `cron-activity`
+schedule for each new Garmin activity of the day (§ Garmin Activity).
 
 ## Function
 
@@ -50,6 +54,23 @@ nothing to record (see `protocols/daily-template.md` § `## Actuals`).
 - Record if the session was modified by sleep, pain, or heat
 - Pull daily steps from Garmin when assessing NEAT / expenditure, and record the
   figure in `## Actuals` — steps are a coaching input, not a checklist item
+
+### Garmin Activity
+
+`/log activity <id>` records one activity that has just synced from the watch.
+
+- Pull it with `get_activity` (and `get_activity_splits` for a run,
+  `get_activity_exercise_sets` for a lift). If the day's `## Actuals` already records
+  this activity, stop without a message.
+- Match it to the day's prescription and write the actuals exactly as `/recap` step 4
+  does: run distance, pace, average and max HR, RPE, strength per exercise with
+  pre-filled reps flagged. A swap or an extra is recorded as such.
+- If it changes the day's output (shorter, easier, swapped, or an extra session),
+  re-tune the remaining meals per § Meal and the skipped-session rule in `AGENTS.md`.
+- Send the athlete one short message with `util-telegram-send --html`, the text in a
+  quoted heredoc (`<<'EOF'`), not the plugin's `reply`: a ✅ line with the key numbers
+  against the prescription, and the changed meals with their quantities if any were
+  re-tuned. Then end the turn with one line saying it was sent.
 
 ### Body
 

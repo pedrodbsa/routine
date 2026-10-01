@@ -57,9 +57,11 @@ COPY --chmod=0755 docker/claude-session-coach.sh /usr/local/bin/claude-session-c
 COPY --chmod=0755 docker/cron-morning.sh /usr/local/bin/cron-morning
 COPY --chmod=0755 docker/cron-recap.sh /usr/local/bin/cron-recap
 COPY --chmod=0755 docker/cron-report.sh /usr/local/bin/cron-report
+COPY --chmod=0755 docker/cron-activity.sh /usr/local/bin/cron-activity
 COPY --chmod=0755 docker/util-coach-send.sh /usr/local/bin/util-coach-send
 COPY --chmod=0755 docker/util-telegram-send.sh /usr/local/bin/util-telegram-send
 COPY docker/garmin-sleep-ready.py /usr/local/lib/coach/garmin-sleep-ready.py
+COPY docker/garmin-activities.py /usr/local/lib/coach/garmin-activities.py
 
 WORKDIR /app
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

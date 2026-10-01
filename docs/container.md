@@ -25,7 +25,7 @@ container, both against the same `/app` repo, and all the coaching happens in on
 tmux "coach":  claude -n coach --channels telegram  ◀─ polls ─ Telegram (the athlete's messages)
                   ▲  types /clear, /plan scheduled,       └─ reply / util-telegram-send ─▶ Telegram
                   │  /recap scheduled, /report scheduled
-Dokploy crons ─▶ cron-morning | cron-recap | cron-report: gate, then util-coach-send
+Dokploy crons ─▶ cron-morning | cron-activity | cron-recap | cron-report: gate, then util-coach-send
 tmux "rc":     claude remote-control                ◀─ claude.ai / Claude app (troubleshooting)
 Dokploy cron */10 ─▶ cron-git-sync ─▶ GitHub
 ```
@@ -147,7 +147,7 @@ container would find it, and they would all start polling.
 
 ## Set up the coach schedules
 
-Add three Dokploy schedules against the `routine` service. Each script is a gate and a send;
+Add four Dokploy schedules against the `routine` service. Each script is a gate and a send;
 the time window lives in the cron expression, and a per-day marker in `/root/.coach/state/`
 makes every run after the first a no-op. Dokploy evaluates the expressions in its own
 timezone, which is usually UTC: Lisbon is UTC+0 in winter and UTC+1 in summer, so these
@@ -156,11 +156,17 @@ windows land an hour later in local time during summer.
 | Command | Cron | Gate | Sends |
 | --- | --- | --- | --- |
 | `cron-morning` | `*/10 5-11 * * *` | not yet sent today, no daily file yet (a plan made by hand counts), Garmin has last night's sleep record | `/clear`, `/plan scheduled` |
+| `cron-activity` | `*/10 6-21 * * *` | today's daily file exists; per activity, not yet sent | `/log activity <id>` for each new Garmin activity today |
 | `cron-recap` | `*/10 21-23 * * *` | not yet sent today | `/recap scheduled` |
 | `cron-report` | `*/10 21-23 * * 0` | not yet sent today, and today's recap has been sent | `/report scheduled` |
 
+- **`cron-activity` waits for the plan.** Before the daily file exists, the plan reads the
+  activity from Garmin itself, and the morning `/clear` would wipe a log made earlier. On a
+  day with no plan, the recap reconciles. Activities after the window are left to the recap
+  too. Each activity is marked in `/root/.coach/state/activity-<id>` once sent.
 - **The sleep check** is a plain `garminconnect` call with the MCP's cached token
-  (`garmin-sleep-ready.py`), no Claude involved. Its status line is in the schedule's log.
+  (`garmin-sleep-ready.py`), no Claude involved; so is the activity list
+  (`garmin-activities.py`). Its status line is in the schedule's log.
 - **The morning `/clear` starts the day's conversation.** Clearing then, rather than at night,
   keeps yesterday's recap in context until the new plan, so a late answer to it still makes
   sense. A day planned by hand, or skipped because the sleep record never came by noon, is not

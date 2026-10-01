@@ -85,7 +85,7 @@ design specs and runbooks in `docs/`
 
 The athlete talks to the coach on **Telegram**. The container on the server runs one
 long-lived session, `coach`, that carries the Telegram channel and does all the coaching. A
-set of cron scripts (`cron-morning`, `cron-recap`, `cron-report`) each check a gate and type one
+set of cron scripts (`cron-morning`, `cron-activity`, `cron-recap`, `cron-report`) each check a gate and type one
 command into that session, so the plan, the recap and the athlete's
 replies to them share one conversation.
 Remote Control (claude.ai or the Claude app) and the desktop remain available for
@@ -102,7 +102,9 @@ architecture: `docs/container.md`.
    workouts and schedules them for the plan date, replacing any existing workout for that date.
    The upload runs without a permission prompt. See `.claude/commands/garmin.md`.
 3. **During the day:** `/log [details]` and `/log meal [details]`. On Telegram, a plain message
-   is enough; the session routes it.
+   is enough; the session routes it. Each activity that syncs from the watch is logged
+   automatically: `cron-activity` sends `/log activity <id>`, which records it against the plan
+   and re-tunes the remaining meals if the output changed.
 4. **Evening, automatic, every day:** `/recap` reconciles the day against Garmin, marks each miss
    "not delivered — reason?", and asks for the athlete's daily line (motivation 1–5 plus a word
    on anything skipped). A miss still without a reason at the next morning's plan is a breach.
@@ -119,7 +121,7 @@ architecture: `docs/container.md`.
 
 Messages in the coach session come from the athlete, through the channel plugin, and every
 reply goes back through its `reply` tool. The exception is a scheduled command (`/clear`,
-`/plan scheduled`, `/recap scheduled`, `/report scheduled`) that a cron script typed into the
+`/plan scheduled`, `/log activity`, `/recap scheduled`, `/report scheduled`) that a cron script typed into the
 terminal: it sends no progress line and delivers its one message with `util-telegram-send`, as
 its command doc says. Keep replies short, and lay them out per
 `docs/telegram-format.md`: MarkdownV2 through `reply`, resent as plain text on a parse error.
