@@ -87,7 +87,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Record decisions same-session](feedback-record-decisions-same-session.md) — a decision agreed in chat is written to the stack before the session ends
 - [Report format](feedback-report-format.md) — one monthly report updated progressively; no weekly files
 - [Automated daily record](project-workflow-automated-record.md) — Telegram is the single interface; `/plan scheduled` on the sleep record, `/recap` 21:30 daily, `/report` Sunday; reason-less miss by next morning = breach
-- [Dokploy container](project-dokploy-container.md) — always-on Remote Control + Telegram sessions; Auto Deploy off; working repo `../files/repo`, never git in `code/`
+- [Dokploy container](project-dokploy-container.md) — always-on Remote Control + one `coach` session (Telegram; cron types commands into it); Auto Deploy off; working repo `../files/repo`, never git in `code/`
 - [Telegram: one poller per bot](reference-telegram-one-poller.md) — token lives as `COACH_TELEGRAM_BOT_TOKEN`, only the tmux `telegram` session gets it; never `/telegram:configure`, never on the desktop
 - **This directory is the memory.** Write new memories here as files + a pointer line above; never to `~/.claude/projects/<slug>/memory/`.
 

@@ -33,8 +33,16 @@ Design facts that are easy to get wrong later:
 
 - **Since 2026-09-29 the container also runs the Telegram coach.** Both long-lived Claude
   processes run in tmux sessions under a restart loop (`rc` = `claude remote-control`,
-  `telegram` = `claude --channels` with the Telegram plugin), with tini as PID 1. A second
+  `coach` = `claude -n coach --channels` with the Telegram plugin), with tini as PID 1. A second
   Dokploy schedule runs `cron-coach` every 10 minutes for the scheduled `/plan`, `/recap` and
-  `/report`. See [[project-workflow-automated-record]] and [[reference-telegram-one-poller]].
+  `/report`.
+- **One coach session, cron only types into it (2026-10-01).** The athlete's replies went to a
+  session that never saw the headless `claude -p` plan/recap, so it had no idea what it was
+  answering. Now `cron-coach` does the deterministic gates and `tmux send-keys` the commands
+  (`/clear` + `/plan scheduled` in the morning, `/recap scheduled`, `/report scheduled`) into
+  the `coach` pane, only when `claude agents --json` reports it `idle` (keys during a
+  permission dialog would answer it). The session sends scheduled messages itself via
+  `util-telegram-send` (buttons); cron confirms by file mtime + the send stamp. The nightly
+  session kill is gone; the morning `/clear` replaces it. See [[project-workflow-automated-record]] and [[reference-telegram-one-poller]].
 
 Runbook: `docs/container.md`.

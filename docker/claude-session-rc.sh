@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # The Remote Control session: the troubleshooting door from claude.ai or the Claude app.
 # Server mode spawns a fresh session in /app for each connection. It must never see the
-# Telegram bot token (see claude-session-telegram).
+# Telegram bot token (see claude-session-coach).
 set -euo pipefail
 
 cd /app

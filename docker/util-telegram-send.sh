@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
-# Sends stdin to the athlete's Telegram chat. cron-coach uses it to deliver the scheduled runs'
-# output; the interactive Telegram session replies through the channel plugin.
+# Sends stdin to the athlete's Telegram chat. The coach session uses it for the final message of a
+# scheduled command, which needs HTML and quick-reply buttons; its other replies go through the
+# channel plugin. cron-coach uses it for failure notices. Every successful send touches
+# $COACH_STATE_DIR/last-telegram-send, which cron-coach reads to confirm a scheduled job's
+# message went out; COACH_SEND_STAMP=0 (cron-coach's own notices) skips that.
 # Usage: util-telegram-send [--html] [--buttons "ok,escalate"]
 #   --html     parse as Telegram HTML (docs/telegram-format.md). A chunk Telegram rejects is
 #              sent again as plain text with the tags stripped, so bad markup never loses a
 #              message.
 #   --buttons  quick-reply buttons under the last chunk. Tapping one sends its label as an
-#              ordinary message, which the Telegram session routes like typed text.
+#              ordinary message, which the coach session routes like typed text.
 #
 # Sending does not conflict with the plugin's polling: only a second getUpdates consumer would.
 set -euo pipefail
@@ -100,3 +103,8 @@ for i in "${!chunks[@]}"; do
     send "${chunks[$i]}" ""
   fi
 done
+
+if [ "${COACH_SEND_STAMP:-1}" = 1 ]; then
+  state_dir="${COACH_STATE_DIR:-/root/.coach/state}"
+  mkdir -p "${state_dir}" && touch "${state_dir}/last-telegram-send"
+fi

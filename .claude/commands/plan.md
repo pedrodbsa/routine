@@ -85,11 +85,12 @@ touch Garmin Connect — uploading workouts is the separate `/garmin` command.
 
 ## Scheduled Mode
 
-`/plan scheduled` runs headless (`claude -p`) from the container's `cron-coach`
-schedule, and its final message is sent to the athlete on Telegram as the morning
-plan. Nobody is there to approve it, so the file it writes is a **draft**: the
-athlete corrects it by replying on Telegram, and the Telegram session edits the
-file. Everything in § Function and § Requirements applies, with these changes:
+`/plan scheduled` is typed into the coach session by the container's `cron-coach`
+schedule, right after a `/clear` that starts the day's conversation. Its final
+message goes to the athlete on Telegram as the morning plan. Nobody is there to
+approve it, so the file it writes is a **draft**: the athlete corrects it by
+replying on Telegram, and the same session, which now holds the plan in context,
+edits the file. Everything in § Function and § Requirements applies, with these changes:
 
 1. **Breach check first.** Open yesterday's daily file. Any session still marked
    "not delivered — reason?" (or a `Plan: none — reason?` line) with no reason
@@ -102,13 +103,18 @@ file. Everything in § Function and § Requirements applies, with these changes:
    under the title. Keep the step-7 material (the harder alternative and why it
    was rejected, the load ledger, the streak counts, the rules that fired) in
    `## Context`, where the athlete can read it if he asks.
-4. **Skip the step-9 `current-status.md` refresh.** A headless run cannot edit
-   `protocols/`, and the snapshot rows are not worth a tap. The readiness snapshot
+4. **Skip the step-9 `current-status.md` refresh.** An unattended run never
+   edits `protocols/` (the edit would sit on an approval button nobody is watching),
+   and the snapshot rows are not worth a tap. The readiness snapshot
    lives in the daily file's `## Context`; `/report` refreshes current-status.
 5. Commit the daily file (and yesterday's file if the breach check touched it).
-6. **The final message is the Telegram text**, and nothing else: Telegram HTML laid out
-   per `docs/telegram-format.md` § Layouts (Morning plan), under ~2,500 characters of
-   visible text. It is sent with an "ok" button. In order:
+6. **Send the Telegram message yourself** with `util-telegram-send --html --buttons ok`,
+   the text in a quoted heredoc (`<<'EOF'`). Not the plugin's `reply`, which has no
+   buttons and no HTML. `cron-coach` confirms the job by the daily file changing and
+   this send going out, so if it fails, fix the markup or send it plain, but send it.
+   Then end the turn with one line saying it was sent. The message is Telegram HTML
+   laid out per `docs/telegram-format.md` § Layouts (Morning plan), under ~2,500
+   characters of visible text. In order:
    - the day, the session(s), and the readiness call with its one-line reason;
    - the calorie tier (kcal, P/C/F), then each meal with its ingredient quantities;
    - flags: breaches recorded from yesterday, a stale current-status, sleep
@@ -121,7 +127,7 @@ file. Everything in § Function and § Requirements applies, with these changes:
      rules that fired) folded into an expandable quote at the end, before the ask.
 
 `/plan scheduled` still never touches Garmin Connect: "ok" on Telegram runs
-`/garmin` in the Telegram session, which uploads without a further prompt.
+`/garmin` in the coach session, which uploads without a further prompt.
 
 ## Adjust Mode
 

@@ -1,8 +1,8 @@
 # Telegram message format
 
 This applies **only to text that goes to Telegram**: the final message of a `scheduled` run
-(`/plan scheduled`, `/recap scheduled`, `/report scheduled`), which `cron-coach` sends, and
-the `reply` calls of the Telegram session. It never applies to a terminal, desktop or Remote
+(`/plan scheduled`, `/recap scheduled`, `/report scheduled`), which the coach session sends
+with `util-telegram-send`, and its `reply` calls. It never applies to a terminal, desktop or Remote
 Control session, which keep the normal output of each command.
 
 Telegram has no tables and no headings, and the athlete reads on a phone. The message is a
@@ -12,8 +12,8 @@ glance summary; the daily file and `report.md` hold the detail.
 
 | Where | Syntax | How it is sent |
 | --- | --- | --- |
-| Final message of a scheduled run | **HTML** | `util-telegram-send --html`, which resends as plain text if Telegram rejects the markup |
-| Telegram session replies | **MarkdownV2** | `reply` with `format: "markdownv2"`; if the tool returns a parse error, send the same text again with `format: "text"` and the markup removed |
+| Final message of a scheduled run | **HTML** | `util-telegram-send --html` (with `--buttons` where the layout says), which resends as plain text if Telegram rejects the markup |
+| Coach session replies | **MarkdownV2** | `reply` with `format: "markdownv2"`; if the tool returns a parse error, send the same text again with `format: "text"` and the markup removed |
 
 HTML only needs `<`, `>` and `&` escaped (`&lt;` `&gt;` `&amp;`) outside tags. Newlines are
 literal; there is no `<br>`. Allowed tags: `<b>`, `<i>`, `<u>`, `<s>`, `<code>`, `<pre>`,

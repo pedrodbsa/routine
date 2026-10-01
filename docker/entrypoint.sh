@@ -37,16 +37,16 @@ fi
 
 # The Telegram channel plugin is installed at user scope but disabled there, before any session
 # starts: another Claude process that loaded it would poll the bot or, without the token, fail it
-# and make the Telegram session skip it. claude-session-telegram enables it for itself. Each step
+# and make the coach session skip it. claude-session-coach enables it for itself. Each step
 # is a no-op once done.
 sessions=(rc)
 if [ -n "${COACH_TELEGRAM_BOT_TOKEN:-}" ]; then
   if claude plugin marketplace add anthropics/claude-plugins-official >/dev/null \
     && claude plugin install telegram@claude-plugins-official --scope user >/dev/null \
     && claude plugin disable telegram@claude-plugins-official --scope user >/dev/null; then
-    sessions+=(telegram)
+    sessions+=(coach)
   else
-    echo "WARNING: Telegram plugin setup failed; no telegram session. Restart to retry." >&2
+    echo "WARNING: Telegram plugin setup failed; no coach session. Restart to retry." >&2
   fi
 fi
 

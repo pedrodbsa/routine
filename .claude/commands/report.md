@@ -79,14 +79,15 @@ routine "Weekly /report reminder", which only reminded the athlete to run it by 
 
 ## Scheduled Mode
 
-`/report scheduled` runs headless (`claude -p`) from the container's `cron-coach`
-schedule, on Sunday evenings after `/recap`, and its final message is sent to the
-athlete on Telegram. It is the weekly pass of the monthly report
+`/report scheduled` is typed into the coach session by the container's `cron-coach`
+schedule on Sunday evenings, once `/recap` has finished, and the session sends its
+final message to the athlete on Telegram. It is the weekly pass of the monthly report
 (`memory/feedback-report-format.md`): it updates `logbook/YYYY-MM/report.md`
 progressively rather than writing a separate weekly file. Everything in § Function
 applies, with these changes:
 
-1. **A headless run cannot edit `protocols/`.** Steps 7–9 do all their analysis, but
+1. **An unattended run never edits `protocols/`.** The athlete approves protocol
+   changes deliberately, not as a button in the middle of the weekly summary. Steps 7–9 do all their analysis, but
    every change they would make to a protocol file goes into a **`### Proposed
    protocol edits`** block at the end of this week's section in `report.md`. That
    includes the `Last verified` bump, the strength-load refresh in
@@ -94,8 +95,11 @@ applies, with these changes:
    file, the exact change (old → new text, or the row to add), and a one-line
    reason. Edits to `logbook/`, `memory/` and `calendar.md` are applied directly.
 2. Commit `report.md` and anything else written.
-3. **The final message is the Telegram text**, and nothing else: Telegram HTML laid out
-   per `docs/telegram-format.md` § Layouts (Weekly report), under ~2,000 characters of
+3. **Send the Telegram message yourself** with `util-telegram-send --html`, the text in
+   a quoted heredoc (`<<'EOF'`), not with the plugin's `reply`, then end the turn with
+   one line saying it was sent. `cron-coach` confirms the job by `report.md` changing and
+   this send going out, so if it fails, send it plain. It is Telegram HTML laid out per
+   `docs/telegram-format.md` § Layouts (Weekly report), under ~2,000 characters of
    visible text. In order:
    - the week in one line: km and runs vs the floor, lifts delivered vs the 3/3
      commitment, weight 7-day mean (with the reading count) vs the phase band, and
@@ -110,7 +114,7 @@ applies, with these changes:
      there are any.
 
 **Applying the edits: `/report apply [numbers]`.** When the athlete replies "apply" (all
-edits) or "apply 1, 3" on Telegram, the Telegram session runs `/report apply`, which applies
+edits) or "apply 1, 3" on Telegram, the coach session runs `/report apply`, which applies
 the numbered edits from the latest
 `### Proposed protocol edits` block. Each `protocols/` edit is approved with a
 Telegram button. The session then marks each edit applied or rejected in

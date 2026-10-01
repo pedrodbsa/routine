@@ -18,43 +18,53 @@ publishes no ports and needs no domain, reverse proxy, or inbound firewall rule.
 
 ## How the pieces fit
 
-The athlete's day-to-day interface is Telegram. Three kinds of Claude process run in the
-container, all against the same `/app` repo.
+The athlete's day-to-day interface is Telegram. Two long-lived Claude processes run in the
+container, both against the same `/app` repo, and all the coaching happens in one of them.
 
 ```
-Dokploy cron */10 ─▶ cron-coach ─▶ claude -p "/plan scheduled" | "/recap" | "/report scheduled"
-                                       └─ result ─▶ util-telegram-send (Bot API) ─▶ Telegram
-tmux "telegram":  claude --channels telegram  ◀─ polls ─ Telegram (the athlete's replies)
-tmux "rc":        claude remote-control       ◀─ claude.ai / Claude app (troubleshooting)
+tmux "coach":  claude -n coach --channels telegram  ◀─ polls ─ Telegram (the athlete's messages)
+                  ▲  types /clear, /plan scheduled,       └─ reply / util-telegram-send ─▶ Telegram
+                  │  /recap scheduled, /report scheduled
+Dokploy cron */10 ─▶ cron-coach (clock gates, Garmin sleep check, done checks)
+tmux "rc":     claude remote-control                ◀─ claude.ai / Claude app (troubleshooting)
 Dokploy cron */10 ─▶ cron-git-sync ─▶ GitHub
 ```
 
-- **The Telegram session** is an interactive Claude Code session started with the Telegram
-  channel plugin (`--channels`). The plugin polls the bot, injects each message into the
-  session, and gives Claude a `reply` tool. The one routine permission prompt, a protocol
+- **The coach session** is an interactive Claude Code session named `coach`, started with the
+  Telegram channel plugin (`--channels`). The plugin polls the bot, injects each message into
+  the session, and gives Claude a `reply` tool. The one routine permission prompt, a protocol
   edit, is relayed to Telegram as approve/deny buttons.
 - **Remote Control can't carry Telegram.** It is a remote screen onto Claude sessions and has
   no Telegram side. Channels are switched on per session with a flag, and `claude
   remote-control`'s server mode refuses flags it can't pass on to the sessions it spawns. So
-  the Telegram session is a separate process. Remote Control stays as the troubleshooting door
+  the coach session is a separate process. Remote Control stays as the troubleshooting door
   from claude.ai or the Claude app.
-- **The scheduled jobs are headless `claude -p` runs**, not messages into the Telegram session.
-  Cron can't type into an interactive session. A headless run has a clean context and an exit
-  code, and the wrapper — not the model — sends the result, so a crashed run still produces a
-  failure notice. The processes don't share conversation context and don't need to: the
-  daily file, `calendar.md` and `report.md` hold the state.
+- **The scheduled jobs run inside the coach session.** Until 2026-10-01 they were headless
+  `claude -p` runs, and the session the athlete replied to had no idea what the morning plan
+  or the evening recap had said. Now `cron-coach` does only the deterministic work and types
+  each command into the `coach` tmux pane (`tmux send-keys`), so a reply to the plan lands in
+  the conversation that wrote it. The session sends the scheduled message itself with
+  `util-telegram-send`, which supports the HTML layout and quick-reply buttons that the
+  plugin's `reply` lacks.
+- **A command is typed only while the session is idle.** `cron-coach` asks `claude agents
+  --json` for the status of the Claude process in the pane. Keys sent mid-turn would queue
+  behind it, and keys sent while a permission dialog is open would answer the dialog. A busy
+  session just means the job waits for the next run.
+- **The wrapper still checks the work.** With no exit code to read, a job counts as done once
+  the session is idle again, `util-telegram-send` has sent since the command went in (it
+  touches `/root/.coach/state/last-telegram-send`), and for the plan and the report their file
+  has changed. Otherwise the athlete gets a failure notice and the job is retried.
 - **Permissions:** the coach runs unattended, so everything is allowed except `protocols/`
-  edits and `git push` (§ Permissions). A `-p` run can't answer a permission prompt, so a
-  scheduled run can never change a protocol; it proposes, and "apply" in the Telegram session
-  writes the edits behind a button.
+  edits and `git push` (§ Permissions). The scheduled commands never change a protocol: they
+  propose, and "apply" writes the edits behind a button.
 - **One poller per bot.** Telegram allows one `getUpdates` consumer per bot token, and the
   plugin starts polling in every Claude process that loads it and can see the token. A process
   that loads it without the token fails it instead, and Claude Code caches that failure for 15
-  minutes in a file every process reads, so the Telegram session then skips the plugin (found
+  minutes in a file every process reads, so the coach session then skips the plugin (found
   2026-09-29). So the plugin is installed at user scope but **disabled** there, and only
-  `claude-session-telegram` enables it, with `--settings`. Never add it to `enabledPlugins` in
+  `claude-session-coach` enables it, with `--settings`. Never add it to `enabledPlugins` in
   `.claude/settings.json`. As a second guard the container keeps the token as `COACH_TELEGRAM_BOT_TOKEN`, a name the plugin
-  ignores, and `claude-session-telegram` exports it as `TELEGRAM_BOT_TOKEN` for the Telegram session
+  ignores, and `claude-session-coach` exports it as `TELEGRAM_BOT_TOKEN` for the coach session
   alone. Never run `/telegram:configure` (it writes the token to a file every process reads),
   and never install the plugin on the desktop.
 
@@ -96,9 +106,9 @@ the compose file loads that with `env_file`. Full list with comments in `.env.ex
 | `TZ` | `Europe/Lisbon`. Meal and session sequencing depends on local time, and `cron-coach` gates on it |
 | `COACH_TELEGRAM_BOT_TOKEN` | The bot token from BotFather. Deliberately not `TELEGRAM_BOT_TOKEN` — see "One poller per bot" above |
 | `TELEGRAM_CHAT_ID` | Optional. Where `util-telegram-send` posts; defaults to the first allowlisted id from pairing |
-| `COACH_MORNING_FROM`, `COACH_PLAN_CUTOFF` | Morning window for the scheduled `/plan`: default `05:00` and `12:00` |
+| `COACH_MORNING_FROM`, `COACH_PLAN_CUTOFF` | Morning window for the scheduled `/clear` + `/plan`: default `05:00` and `12:00` |
 | `COACH_RECAP_AT`, `COACH_REPORT_DOW` | Evening `/recap` time (default `21:30`) and the weekday the report follows it (default `7`, Sunday) |
-| `COACH_RESET_AT` | When the Telegram session is restarted for a fresh context each night (default `03:30`, window ends at `COACH_MORNING_FROM`) |
+| `COACH_RUN_TIMEOUT_MIN` | Minutes a typed command may run before it is reported as stuck (default `45`) |
 
 ## First deploy
 
@@ -119,12 +129,12 @@ dot.
 ## Telegram
 
 One-time setup. On every start the entrypoint installs the channel plugin at user scope (on the
-persistent `/root` mount) and leaves it disabled there; only the `telegram` session enables it.
+persistent `/root` mount) and leaves it disabled there; only the `coach` session enables it.
 
 1. In Telegram, message [@BotFather](https://t.me/BotFather), send `/newbot`, and copy the
    token. Set it as `COACH_TELEGRAM_BOT_TOKEN` in the Environment tab and redeploy.
 2. Send any message to the bot. It replies with a pairing code. In a container terminal,
-   `tmux attach -t telegram`, then:
+   `tmux attach -t coach`, then:
 
    ```
    /telegram:access pair <code>
@@ -147,23 +157,24 @@ Add a second Dokploy schedule against the `routine` service with command `cron-c
 `*/10 * * * *`. Almost every run is a no-op; the script gates on local time and per-day
 markers in `/root/.coach/state/`, so it doesn't matter which timezone Dokploy's cron uses.
 
-- **Night:** once between `COACH_RESET_AT` and `COACH_MORNING_FROM`, it kills the `telegram`
-  tmux session. The entrypoint recreates it within 30 s with an empty context, so the session
-  never carries days of history (every message would pay for it, and compaction summaries go
-  stale). Nothing is lost: the state is in the repo, and a message sent meanwhile waits on
-  Telegram.
 - **Morning:** from `COACH_MORNING_FROM` it checks Garmin for last night's sleep record — a
   plain `garminconnect` call with the MCP's cached token, no Claude involved. Once the record
-  is there, it runs `/plan scheduled` and sends the plan. If there is no daily file and no
-  sleep record by `COACH_PLAN_CUTOFF`, the day is skipped. A plan made by hand (send "plan" on
-  Telegram) counts, and the run leaves that day alone.
-- **Evening:** at `COACH_RECAP_AT`, every day, `/recap`. On `COACH_REPORT_DOW` a successful
-  recap is followed by `/report scheduled`, sent as a separate message.
-- **Failures are never silent.** A failed run sends a short notice with the exit code and
-  retries on the next run, up to three attempts a day. A failing Garmin sleep check is
-  reported once a day.
-- Test with `cron-coach --force morning|recap|report|reset`. `COACH_DRY_RUN=1 COACH_NOW="2026-10-05
-  06:40" cron-coach` shows what a run would do at that time without running anything.
+  is there, it types `/clear` into the coach session, which starts the day's conversation, and
+  then `/plan scheduled`. Clearing here rather than at night keeps yesterday's recap in context
+  until the new plan, so a late answer to it still makes sense. If there is no daily file and
+  no sleep record by `COACH_PLAN_CUTOFF`, the day is skipped. A plan made by hand (send "plan"
+  on Telegram) counts, and the run leaves that day alone, without clearing.
+- **Evening:** at `COACH_RECAP_AT`, every day, `/recap scheduled`. On `COACH_REPORT_DOW`,
+  once the recap is done, `/report scheduled`, sent as a separate message.
+- **Failures are never silent.** A job that ends without its file or its message sends a short
+  notice and is retried on the next run, up to three attempts a day. A job still running after
+  `COACH_RUN_TIMEOUT_MIN` is reported once. A failing Garmin sleep check is reported once a day.
+- **Context grows only between clears.** A day planned by hand or skipped is not cleared, so
+  the session carries on until the next scheduled plan. A restart of the session also starts
+  it empty; nothing is lost, because the state is in the repo.
+- Test with `cron-coach --force morning|recap|report` (it still waits for an idle session).
+  `COACH_DRY_RUN=1 COACH_NOW="2026-10-05 06:40" cron-coach` shows what a run would do at that
+  time without typing or sending anything.
 
 ## Set up the sync schedule
 
@@ -208,7 +219,7 @@ which is deliberate — the running version changes only when you decide it does
 **A restart starts a fresh session.** The conversation does not carry over; the coaching state
 does, because it lives in the repo. Find the new session by name at claude.ai/code.
 
-**Both Claude processes run in tmux.** `tmux attach -t rc` or `tmux attach -t telegram` from a
+**Both Claude processes run in tmux.** `tmux attach -t rc` or `tmux attach -t coach` from a
 container terminal shows the live session; `C-b d` detaches without stopping it. Each runs
 under a restart loop (`util-keep-alive`), and every restart is logged to the container log. Session
 `<name>` runs the launcher `claude-session-<name>` (`docker/claude-session-*.sh`); the entrypoint
@@ -217,7 +228,7 @@ that was killed.
 
 **If a session goes quiet**, check the logs. Remote Control exits if the machine cannot
 reach the network for roughly ten minutes, and the restart loop brings it back. For the
-Telegram session, a `409 Conflict` in its pane means something else is polling the bot — see
+coach session, a `409 Conflict` in its pane means something else is polling the bot — see
 "One poller per bot".
 
 ## Migrating from the deploy-checkout layout
@@ -262,5 +273,5 @@ protocol change, so an unattended run can never rewrite the rules it coaches by.
   `guard-telegram-format.sh` rejects a `reply` whose text is escaped for MarkdownV2 but
   doesn't set `format: "markdownv2"`.
 
-In the Telegram session a `protocols/` edit arrives as approve/deny buttons; in a scheduled
-`-p` run it is refused. `git push` is left to `cron-git-sync`.
+In the coach session a `protocols/` edit arrives as approve/deny buttons; the scheduled
+commands propose protocol edits instead of making them. `git push` is left to `cron-git-sync`.

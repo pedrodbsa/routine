@@ -13,7 +13,7 @@ effort: high
 
 ## Function
 
-The Telegram session runs on Sonnet and only routes (`AGENTS.md` § Telegram channel). It
+The coach session runs on Sonnet and only routes (`AGENTS.md` § Telegram channel). It
 sends a message here when no command in the routing table fits and the answer needs coaching
 judgment, when it is unsure whether it does, or when the athlete starts a message with
 "escalate". This is a full coaching session for one request, under the same rules as any

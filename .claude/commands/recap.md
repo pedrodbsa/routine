@@ -17,8 +17,10 @@ effort: medium
 
 `/recap` closes the day's record from Garmin so that a bad day still leaves evidence
 rather than a hole (consult 2026-09-29, `memory/project-workflow-automated-record.md`).
-`cron-coach` runs `/recap scheduled` headless every evening at 21:30, **whether or not
-the day had a plan**, and sends its final message to the athlete on Telegram. The athlete can also
+`cron-coach` types `/recap scheduled` into the coach session every evening at 21:30,
+**whether or not the day had a plan**, and the session sends its final message to the
+athlete on Telegram, so the athlete's reply lands in a conversation that knows what the
+recap asked. The athlete can also
 ask for it from Telegram at any time. It never touches Garmin Connect and never edits
 `protocols/`.
 
@@ -55,9 +57,12 @@ ask for it from Telegram at any time. It never touches Garmin Connect and never 
 7. Read `calendar.md` for items due tomorrow, and for today's items that are still
    open.
 8. Commit the daily file.
-9. **The final message.** In scheduled mode it is the Telegram text and nothing else:
-   Telegram HTML laid out per `docs/telegram-format.md` § Layouts (Evening recap),
-   under ~1,000 characters of visible text, sent with 1–5 buttons. Otherwise it is a
+9. **The final message.** In scheduled mode, send it yourself with
+   `util-telegram-send --html --buttons 1,2,3,4,5`, the text in a quoted heredoc
+   (`<<'EOF'`), not with the plugin's `reply`, then end the turn with one line saying it
+   was sent. `cron-coach` confirms the job by that send, so if it fails, send it plain.
+   It is Telegram HTML laid out per `docs/telegram-format.md` § Layouts (Evening recap),
+   under ~1,000 characters of visible text. Otherwise it is a
    short summary with the same content, in the session's normal style. In order:
    - one line on what was delivered, with the key numbers (e.g. "Easy 8.1 km @ 139
      avg HR ✓ · Chest + biceps ✓ — 3 sets each, loads per plan");
