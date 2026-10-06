@@ -129,7 +129,7 @@ Scheduling is fully flexible; these rules set session counts and spacing. The we
 5. **Bonus easy run** (5-7 km) when the week has room; the first thing dropped.
 
 - Volume **floor 30 km, band 32-42**. Heavy rain: the treadmill is the fallback, not the plan.
-- **No second full quality session** while body composition ranks first; strides and the planned progression finish are the second stimulus.
+- **No second full quality session** while body composition ranks first; strides and the planned progression finish are the second stimulus. **Exception, trial Oct 9 – Oct 20 2026 (athlete's call 2026-10-06, Option B):** Tuesday is the main quality and Friday carries a second, shorter one (threshold touch; Fridays Oct 9 and Oct 16, Tuesday Oct 20; Oct 23 is race-adjacent and stays easy). Qualities stay ≥72 h apart, Friday's replaces the strides run, and the leg half of Legs + shoulders is dropped for the length of the trial. Any warning-sign rule below turns that Friday back into an easy run. Reviewed at Oct 25 on delivered strength, control-run HR, easy pace-at-HR and sleep/HRV.
 - Qualities ≥72 h apart; Legs ≥36 h before any quality and never on the same day as a hard run.
 - **Drop order on a compromised week** (athlete's call: run over Legs): bonus run → strides → the leg half of Legs + shoulders → quality (to easy) → long run shortened to 10 km → Chest and Back merged.
 - **Phase 9 (Apr 13 – Jun 14 2027):** the same shape plus a 3-4 week sharpen (10K-pace reps weekly, one short VO2 touch) and § Race-Week Running Pattern into the spring 10K. No taper longer than 7 days.

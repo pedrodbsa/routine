@@ -24,7 +24,7 @@ Scheduling is fully flexible: any run or strength session can land on any day. T
 
 Legs sits on Thursday because on Wednesday it would follow the Sunday long run and the Tuesday quality, which § Cumulative-Load Rules forbid.
 
-**Drop order on a compromised week** (athlete's call — run over Legs): bonus run → strides → **the leg half of Legs + shoulders** → quality (to easy) → long run shortened to 10 km → Chest and Back merged into one upper session. Never below one upper session and one run. When the leg half is dropped, the shoulder half (overhead press + lateral raise) still runs, on its own or added to the next upper session.
+**Drop order on a compromised week** (athlete's call — run over Legs): bonus run → strides → **the leg half of Legs + shoulders** → quality (to easy) → long run shortened to 10 km → Chest and Back merged into one upper session. Never below one upper session and one run. When the leg half is dropped, the shoulder half (overhead press + lateral raise) still runs, on its own or added to the next upper session. **Trial Oct 9 – Oct 20 2026 (Option B, athlete's call 2026-10-06):** the leg half is dropped on purpose, because Friday carries a second quality and Legs must sit ≥36 h before it. Thursday is shoulders only; strength still counts 3/3 sessions, with no loaded legs until the trial ends.
 
 ## Strength Focus
 
