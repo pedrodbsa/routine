@@ -17,13 +17,14 @@
 | Date | Kind | Item | Owner | Source |
 | --- | --- | --- | --- | --- |
 | 2026-10-02 Fri – 2026-10-05 Mon | appointment | **Holiday.** No long run this weekend; training only as the athlete decides each morning. The Oct 5 control run and waist tape slip to the first day back; the athlete's return day is to be confirmed | athlete | Telegram 2026-10-01 |
-| 2026-10-06 Tue | todo | Revisit the 2-quality question (athlete, 2026-10-01 07:50, "next week"): Option A keep one quality + a post-Oct 25 checkpoint for a second short threshold touch from Nov 9, or Option B a 2-quality trial (Tue + Fri, leg half dropped) reviewed at Oct 25. Any protocol edit goes through the approve button | athlete | Telegram 2026-10-01 |
 | 2026-10-05 Mon | deadline | Scheduled morning `/plan`, evening `/recap` and Telegram delivery live on the server | coach | consult 2026-09-29 |
 | 2026-10-05 Mon | phase | The re-entry week ends, and scoring starts against the six adherence rows. The +300 tiers are in force | coach | consult 2026-09-29 |
 | 2026-10-06 Tue | checkpoint | Full training capacity from today (athlete-stated) | athlete | consult 2026-09-29 |
+| 2026-10-09 Fri | phase | **2-quality trial starts** (Option B): a second, short quality on Fridays with Tuesday as the main one (Oct 9, 13, 16, 20). Legs + shoulders runs as shoulders only while it lasts. Any marker rule firing turns that Friday back into an easy run | coach | Telegram 2026-10-06 |
 | 2026-10-12 Mon | phase | **Build** starts (Oct 12 – Jan 4): +300 plan-day tiers, weight band 74.5–75.5 | coach | current-status § Phase & Timeline |
 | 2026-10-18 Sun | checkpoint | Garmin 10K prediction ≤50:30 (motivation line). First control-run pair due by now | coach | current-status § Race Schedule |
 | 2026-10-25 Sun | race | Hilly 10K, **B-race**: a hard supported effort at ~172–176 avg HR, recorded as a fitness read. 2–3 easy days before, no heavy Legs in the 3 days before | athlete | current-status § Race Schedule |
+| 2026-10-25 Sun | checkpoint | **2-quality trial review.** Oct 23 is not a quality day (race in 2 days), so the sample is two Fridays (Oct 9, 16) plus Tuesday Oct 20. Read it on delivered strength, control-run HR, easy pace-at-HR and sleep/HRV, then keep, widen or end the trial | coach | Telegram 2026-10-06 |
 | 2026-11-02 Mon | phase | Nov 2–8 is a declared exempt week (trekking Nov 4–8): no volume floor, no strength expected, tiers unchanged, Long tier on hiking days | athlete | current-status § Weigh-In Series & Monitoring |
 | 2026-12-01 Tue | checkpoint | Garmin 10K prediction ≤49:30 (motivation line) | coach | current-status § Race Schedule |
 | 2026-12-12 Sat | race | S. Silvestre Coimbra 10K, 18:30, with friends. **B effort, run hard** at ~172–176 avg HR, recorded as a fitness read. 3 easy days before, no heavy Legs in the 3 days before, no separate long run that week | athlete | current-status § Race Schedule |
@@ -65,3 +66,4 @@
 | --- | --- | --- | --- |
 | 2026-09-29 | todo | Garmin profile: height 170 cm, Thursday added to the training days | athlete |
 | 2026-09-29 | todo | Buy a door pull-up bar (pull-up practice, `training.md` § Pull-up practice) | athlete |
+| 2026-10-06 | todo | Revisit the 2-quality question: athlete chose **Option B** (2-quality trial, Tue + Fri, leg half dropped, reviewed Oct 25) | athlete |
