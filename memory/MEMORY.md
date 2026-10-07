@@ -46,6 +46,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Easy run = one Garmin step](feedback-easy-run-single-step.md) — no warmup/cooldown blocks on easy or long runs
 - [Garmin on-watch strength loads](feedback-garmin-onwatch-strength-loads.md) — the watch hides structured weights; put loads in the step name/description
 - [Garmin watch = offsite reference](feedback-garmin-watch-offsite-reference.md) — execution data on the watch; nutrition never
+- [Re-entry loads and G1 equipment](feedback-reentry-loads-and-g1-equipment-reality.md) — re-entry must be lighter than "one step below"; G1 "lat pulldown" = dual pulley per side, row = 16/20 kg kettlebell
 - [Ask for the exact location](feedback-ask-exact-location.md) — get the exact town before building routes; a region menu is not an answer
 
 ## Nutrition
