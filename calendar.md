@@ -16,11 +16,6 @@
 
 | Date | Kind | Item | Owner | Source |
 | --- | --- | --- | --- | --- |
-| 2026-10-02 Fri – 2026-10-05 Mon | appointment | **Holiday.** No long run this weekend; training only as the athlete decides each morning. The Oct 5 control run and waist tape slip to the first day back; the athlete's return day is to be confirmed | athlete | Telegram 2026-10-01 |
-| 2026-10-05 Mon | deadline | Scheduled morning `/plan`, evening `/recap` and Telegram delivery live on the server | coach | consult 2026-09-29 |
-| 2026-10-05 Mon | phase | The re-entry week ends, and scoring starts against the six adherence rows. The +300 tiers are in force | coach | consult 2026-09-29 |
-| 2026-10-06 Tue | checkpoint | Full training capacity from today (athlete-stated) | athlete | consult 2026-09-29 |
-| 2026-10-09 Fri | phase | **2-quality trial starts** (Option B): a second, short quality on Fridays with Tuesday as the main one (Oct 9, 13, 16, 20). Legs + shoulders runs as shoulders only while it lasts. Any marker rule firing turns that Friday back into an easy run | coach | Telegram 2026-10-06 |
 | 2026-10-12 Mon | phase | **Build** starts (Oct 12 – Jan 4): +300 plan-day tiers, weight band 74.5–75.5 | coach | current-status § Phase & Timeline |
 | 2026-10-18 Sun | checkpoint | Garmin 10K prediction ≤50:30 (motivation line). First control-run pair due by now | coach | current-status § Race Schedule |
 | 2026-10-25 Sun | race | Hilly 10K, **B-race**: a hard supported effort at ~172–176 avg HR, recorded as a fitness read. 2–3 easy days before, no heavy Legs in the 3 days before | athlete | current-status § Race Schedule |
@@ -66,4 +61,9 @@
 | --- | --- | --- | --- |
 | 2026-09-29 | todo | Garmin profile: height 170 cm, Thursday added to the training days | athlete |
 | 2026-09-29 | todo | Buy a door pull-up bar (pull-up practice, `training.md` § Pull-up practice) | athlete |
+| 2026-10-05 | appointment | Holiday Oct 2–5. Oct 2 run and Back + triceps missed without a reason; no long run that weekend | athlete |
+| 2026-10-05 | deadline | Scheduled morning `/plan`, evening `/recap` and Telegram delivery live on the server (running since Oct 1) | coach |
+| 2026-10-05 | phase | Re-entry week ended (20.62 km, ACWR 0.67, Chest + biceps 1/3); scoring against the six adherence rows started | coach |
+| 2026-10-06 | checkpoint | Full training capacity from Oct 6 (athlete-stated) | athlete |
+| 2026-10-09 | phase | 2-quality trial started (Option B). The Oct 9 Friday quality ran against a failed resting-HR gate; the trial runs to Oct 20, review Oct 25 | coach |
 | 2026-10-06 | todo | Revisit the 2-quality question: athlete chose **Option B** (2-quality trial, Tue + Fri, leg half dropped, reviewed Oct 25) | athlete |
