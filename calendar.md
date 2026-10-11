@@ -53,7 +53,6 @@
 | Item | Owner | Source |
 | --- | --- | --- |
 | Agree the isotretinoin target duration and stop plan with the dermatologist | athlete | memory/project-isotretinoin-course.md |
-| Disable the cloud routine "Weekly /report reminder" (trig_01FHEGq1csjRWNEzYWo2DJw3) once the first scheduled Sunday report reaches Telegram | coach | 2026-09-29 automation |
 
 ## Done
 
@@ -66,4 +65,5 @@
 | 2026-10-05 | phase | Re-entry week ended (20.62 km, ACWR 0.67, Chest + biceps 1/3); scoring against the six adherence rows started | coach |
 | 2026-10-06 | checkpoint | Full training capacity from Oct 6 (athlete-stated) | athlete |
 | 2026-10-09 | phase | 2-quality trial started (Option B). The Oct 9 Friday quality ran against a failed resting-HR gate; the trial runs to Oct 20, review Oct 25 | coach |
+| 2026-10-11 | todo | Cloud routine "Weekly /report reminder" (trig_01FHEGq1csjRWNEzYWo2DJw3) disabled after the first scheduled Sunday report reached Telegram | coach |
 | 2026-10-06 | todo | Revisit the 2-quality question: athlete chose **Option B** (2-quality trial, Tue + Fri, leg half dropped, reviewed Oct 25) | athlete |
