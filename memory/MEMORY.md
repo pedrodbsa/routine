@@ -43,6 +43,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Benchmark on matched reps](feedback-benchmark-matched-reps.md) — compare repeat sessions on the warmed-up reps, not session means
 - [Treadmill control run protocol](project-treadmill-control-run-protocol.md) — 5.0 km at a locked 8.6 km/h, 1%, treadmill mode, armband; tracked number is avg HR; never raise the belt
 - [Treadmill run back-to-back with lift](feedback-treadmill-run-backtoback-with-lift.md) — a treadmill run + lift on one day is one gym trip; fuel accordingly
+- [Easy run always with a lift](feedback-easy-run-always-with-a-lift.md) — a day is quality, or an easy run + a lift; a lone easy run is "a waste" (2026-10-13); bonus run drops first
 - [Easy run = one Garmin step](feedback-easy-run-single-step.md) — no warmup/cooldown blocks on easy or long runs
 - [Garmin on-watch strength loads](feedback-garmin-onwatch-strength-loads.md) — the watch hides structured weights; put loads in the step name/description
 - [Garmin watch = offsite reference](feedback-garmin-watch-offsite-reference.md) — execution data on the watch; nutrition never
