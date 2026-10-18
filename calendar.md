@@ -16,8 +16,6 @@
 
 | Date | Kind | Item | Owner | Source |
 | --- | --- | --- | --- | --- |
-| 2026-10-12 Mon | phase | **Build** starts (Oct 12 – Jan 4): +300 plan-day tiers, weight band 74.5–75.5 | coach | current-status § Phase & Timeline |
-| 2026-10-18 Sun | checkpoint | Garmin 10K prediction ≤50:30 (motivation line). First control-run pair due by now | coach | current-status § Race Schedule |
 | 2026-10-25 Sun | race | Hilly 10K, **B-race**: a hard supported effort at ~172–176 avg HR, recorded as a fitness read. 2–3 easy days before, no heavy Legs in the 3 days before | athlete | current-status § Race Schedule |
 | 2026-10-25 Sun | checkpoint | **2-quality trial review.** Oct 23 is not a quality day (race in 2 days), so the sample is two Fridays (Oct 9, 16) plus Tuesday Oct 20. Read it on delivered strength, control-run HR, easy pace-at-HR and sleep/HRV, then keep, widen or end the trial | coach | Telegram 2026-10-06 |
 | 2026-11-02 Mon | phase | Nov 2–8 is a declared exempt week (trekking Nov 4–8): no volume floor, no strength expected, tiers unchanged, Long tier on hiking days | athlete | current-status § Weigh-In Series & Monitoring |
@@ -66,4 +64,6 @@
 | 2026-10-06 | checkpoint | Full training capacity from Oct 6 (athlete-stated) | athlete |
 | 2026-10-09 | phase | 2-quality trial started (Option B). The Oct 9 Friday quality ran against a failed resting-HR gate; the trial runs to Oct 20, review Oct 25 | coach |
 | 2026-10-11 | todo | Cloud routine "Weekly /report reminder" (trig_01FHEGq1csjRWNEzYWo2DJw3) disabled after the first scheduled Sunday report reached Telegram | coach |
+| 2026-10-12 | phase | Build started (Oct 12 – Jan 4) at the +300 tiers | coach |
+| 2026-10-18 | checkpoint | Garmin 10K prediction ≤50:30: **missed** (51:44). First control-run pair: missed (series dark since Jul 27) | coach |
 | 2026-10-06 | todo | Revisit the 2-quality question: athlete chose **Option B** (2-quality trial, Tue + Fri, leg half dropped, reviewed Oct 25) | athlete |

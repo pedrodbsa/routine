@@ -7,6 +7,8 @@ metadata:
   originSessionId: 200467c8-362c-40a2-aeb1-24774d250c59
 ---
 
+> **Correction 2026-10-18 (running review, `logbook/2026-10/review-2026-10-18.md`):** the lesson below came from one remark and is contradicted by the Garmin record. The block in which the prediction improved most (Feb 2 – Mar 22, 49:01 → 47:45) ran ~37 km/week with a weekly 13–19 km long run at avg HR 158–168. The easy-disciplined cut (May 30 – Sep 20, ~31 km/week) lost ~1:12 on the prediction. What moved the line was **≥35 km for consecutive weeks plus a long run**, not easy-pace purity. Keep easy days easy, but never use this memory to justify low volume or a single quality by itself. Figures are the review agent's reconstruction and were not re-checked line by line.
+
 The athlete reports that **when he followed Garmin's suggested base paces exactly, his race predictions improved** (stated 2026-06-30). Following them meant his easy days were actually easy instead of drifting toward moderate.
 
 **Why:** the gain came from a polarized distribution — genuinely easy base, quality on its own cadence. The lesson is "run easy days truly easy", not "obey the watch".

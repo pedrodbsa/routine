@@ -38,7 +38,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Soft markers — check anxiety first](feedback-soft-markers-check-anxiety.md) — long awake time on balanced HRV + normal deep sleep = rumination, not training fatigue
 - [Quality session periodization](feedback-quality-session-periodization.md) — pick the rung from the ladder + phase week, not the athlete's phrasing
 - [Pace-HR calibration](feedback-pace-hr-calibration.md) — quality paces come from his recent sessions at the target HR, never generic tables
-- [Garmin easy paces work](feedback-garmin-easy-paces-work.md) — race predictions improved when easy days were genuinely easy; one quality a week; DSW only when it diverges
+- [Garmin easy paces work](feedback-garmin-easy-paces-work.md) — **corrected 2026-10-18:** the prediction moved with ≥35 km/wk + a weekly long run (Feb–Mar), not easy-pace purity; keep easy days easy but never use this to justify low volume
 - [Walk recovery on intervals](feedback-walk-recovery-intervals.md) — walk, not jog; read end-of-rep max HR, not rep average
 - [Benchmark on matched reps](feedback-benchmark-matched-reps.md) — compare repeat sessions on the warmed-up reps, not session means
 - [Treadmill control run protocol](project-treadmill-control-run-protocol.md) — 5.0 km at a locked 8.6 km/h, 1%, treadmill mode, armband; tracked number is avg HR; never raise the belt
