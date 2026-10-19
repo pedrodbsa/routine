@@ -120,6 +120,13 @@ new trap) so the next upload doesn't repeat the guess.
   **reps** end condition (`conditionTypeId: 10`, value = target reps; use the low
   end of a rep range), or a **time** end condition for held movements (planks,
   carries).
+- **Supersets are one repeat group, not two (athlete, 2026-10-19).** When the plan pairs
+  two slots as a superset, build a single `RepeatGroupDTO` with
+  `numberOfIterations` = sets, wrapping `[exercise A, short rest (~15 s), exercise B,
+  full rest]`. Two separate groups with "rest 15 s, then B" in the text leave the watch
+  repeating A for every set, because it never advances to B. The paired slots must have
+  the same set count; if the plan gives them different counts, use the lower count in
+  the group and add the extra sets as a stand-alone group after it.
 - **Use the actual Garmin exercise.** Set `category` and `exerciseName` to real
   Garmin library values (e.g. `CURL` / `DUMBBELL_HAMMER_CURL`, `LATERAL_RAISE` /
   `DUMBBELL_LATERAL_RAISE`, `CRUNCH` / `CABLE_CRUNCH`, `PLANK` / `PLANK`). Add
