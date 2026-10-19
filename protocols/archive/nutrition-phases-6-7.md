@@ -22,4 +22,6 @@ The tiers sat at +300 rather than +400, as a buffer for 1–2 social evenings a 
 | Quality | 2,550 | 165 g | 326 g | 65 g |
 | Long | 2,750 | 165 g | 376 g | 65 g |
 
+The meal-rotation portions for these tiers (§ Build Day Budgets) were: Rest 3 eggs + 30 g oats breakfast, 200 g rice, lean S4 with 10 g almonds, 300 g potato · Easy run 60 g oats, 200 g rice, 280 g potato · Lift whey + banana shake, 130 g rice, 200 g potato · Quality whey + 80 g oats, 260 g rice, full S4 with 30 g almonds, 400 g potato · Long whey + 100 g oats, 300 g rice, 450 g potato; dessert 100 g Greek yogurt + 100 g mango on every row.
+
 The reference week averaged ~2,350. **Build weight band:** expected 74.5–75.5 kg, ceiling 76.0 / floor 73.5 on two consecutive ≥4-reading weeks (∓100 kcal carbs). It never read: no week of the build carried four fasted readings. The "+1.0–1.2 kg is glycogen and water" premise behind the band was never measured.

@@ -33,7 +33,7 @@ Four lines, no more:
   Add **Social** when a social evening is planned; the next day is then planned on the Rest tier
   (`nutrition.md` § Social Days)
 - Readiness call — Green / Modified / Rest
-- Calorie target — phase and day-type tier (build portions: `meal-rotation.md` § Build Day Budgets)
+- Calorie target — phase and day-type tier (slow-cut portions: `meal-rotation.md` § Slow-Cut Portions)
 - Shape of day — one line describing how the day runs
 
 ### `## Workout`

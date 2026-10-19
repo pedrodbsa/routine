@@ -9,8 +9,10 @@ Offered +400 (~2,440 avg, the maintenance estimate) or +300 (~2,340) plan-day ti
 
 **Why:** this is the reconciliation of two facts the stack had never put together — plan-day adherence is exact ([[feedback-tracking-adherence]]) and the scale did not move for seven weeks at ~2,015. Social evenings at roughly +1,500 each are +300–430 kcal/day averaged, the whole plan-day deficit of the last cut. The athlete would rather run the plan days slightly low than give up the evenings, which is a legitimate preference as long as the arithmetic includes it.
 
+**Superseded in part (2026-10-19):** the +300 build tiers still produced ~+1 kg beyond glycogen in three weeks, so the build was closed and a slow cut runs on the Phase 5 tiers, which the August record shows are maintenance *with* the social evenings included ([[user-regains-fast-prefers-light-deficit]]). The standing lesson holds: social evenings are priced into the tiers once, never subtracted twice.
+
 **How to apply:**
-- Treat social days as part of the energy balance, not a compliance failure. The build's fasted weight trend at known plan tiers already contains them, so the Jan 4 cut derivation (`nutrition.md` § Phase 8: build tiers − 330 − drift) must not subtract them a second time. They enter separately only if off-plan behaviour is expected to change in the cut.
+- Treat social days as part of the energy balance, not a compliance failure. The slow-cut tiers already price in 1–2 a week, so a stalled rate read checks the social and snack counts first and never subtracts a separately estimated social term (`nutrition.md` § Phase 8).
 - `nutrition.md` § Social Days is the protocol: protein first, drinks capped, next day re-tiered to Rest, nothing further. Never prescribe compensatory cutting beyond the Rest re-tier.
-- When the athlete asks for a lower tier "as a buffer," accept it and name the cost once (less muscle built at a plan-day deficit) — the 73.5 floor rule covers the downside.
+- When the athlete asks for a lower tier "as a buffer," accept it and name the cost once (less muscle built at a plan-day deficit). In the slow cut the floor is the July tiers (Rest 1,750).
 - Related: [[project-objective-athletic-summer-2027]], [[feedback-checkpoint-must-be-able-to-decide]].

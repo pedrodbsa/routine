@@ -37,8 +37,8 @@ so daily plan files reference this section instead of reproducing it.
   perceived-effort prompt (the session RPE). Lifts: working weight and actual reps
   per set, edited on the watch so the record is not the pre-filled prescription.
 - **Every day:** eaten to the portion-locked rotation / `/plan` meal table (no digital food-logging — weighed
-  portions are the mechanism, the 7-day weight trend is the feedback loop), protein floor (>=165 g in the build
-  and maintenance phases, >=170 g in the cuts; see `nutrition.md`) hit, urine pale straw (hydration), 10-minute mobility done, supplements
+  portions are the mechanism, the 7-day weight trend is the feedback loop), protein floor (>=165 g in the maintenance
+  phases, >=170 g in the cuts, including the Phase 8 slow cut; see `nutrition.md`) hit, urine pale straw (hydration), 10-minute mobility done, supplements
   taken. **Daily steps / walking (NEAT) are opportunistic extra, not a daily commitment (2026-06-23)** — done when
   time allows, never prescribed to compensate for a skipped session. Steps are still pulled end-of-day as an
   expenditure/coaching input, just not a floor.

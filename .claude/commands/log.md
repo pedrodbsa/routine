@@ -96,6 +96,10 @@ legs — kid sick".
 
 - Record `Motivation: N/5` (and the athlete's words, if they add anything) under
   the daily-line bullet in `## Actuals`.
+- **"social" or "snack" in the line** (consult 2026-10-19) is recorded as `Social: yes`
+  or `Snack: yes` on that bullet. `/report` counts both per week against the slow
+  cut's rate reads (`nutrition.md` § Social Days). Unplanned snacking is not
+  re-tiered or judged; it is only counted.
 - Replace each "not delivered — reason?" with "not delivered — <reason>", and a
   `Plan: none — reason?` line with "Plan: none — <reason>". A reason is whatever the
   athlete gives. Do not judge it here; `/report` weighs the pattern.

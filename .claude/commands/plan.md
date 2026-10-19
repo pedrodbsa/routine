@@ -175,11 +175,12 @@ watch was off), plan anyway, in any mode:
   2026-05-28); Legs + shoulders is the sole PM session, typically Thursday (≥36 h before
   any quality run).
 - **Week shape from 2026-09-29:** 4 core runs (quality · long · easy + strides ·
-  easy = the fortnightly treadmill control run, 5.0 km at 8.6 km/h, 1% incline)
+  easy = the treadmill control run, weekly until three valid entries exist then fortnightly, 34:53 at 8.6 km/h, 1% incline)
   plus a bonus 5th; Chest + biceps / Back + triceps / Legs + shoulders 3/3, abs
   in every session; Saturday rest. See `training.md`
-  § Phases 6-10 for the reference week and the drop order. The control run
-  lands on the Monday easy slot every other week and is labelled in the plan
+  § Phases 8-10 for the reference week and the drop order. The control run
+  lands on the Monday easy slot weekly until three valid entries exist, then every
+  other week, and is labelled in the plan
   file; alternate weeks that slot is a plain outdoor easy (no strides the day
   before the quality).
 - Long runs: banana + coffee pre-run; the day is on the Long tier whatever the
@@ -239,8 +240,11 @@ watch was off), plan anyway, in any mode:
   down to match output** (cut carbs; hold the protein/fat floors).
 - Compute and include ACWR on Sundays, and Composite Load on Sundays when enough
   session data exists. Both go in the `## Context` section.
-- **Weigh-in and waist (2026-09-29):** the plan asks for the fasted weigh-in every
-  morning (decisions need ≥4/week) and, on Mondays, the navel waist tape. A
+- **Weigh-in and waist (2026-10-19):** when no reading has synced, the plan opens its
+  ask with the fasted weigh-in: after urinating, before food or drink, no bowel
+  movement needed; a reading before voiding is marked and still counts. Fewer than 4
+  in a week is a report breach, and the slow cut's rate reads need them
+  (`nutrition.md` § Phase 8). On Mondays it also asks for the navel waist tape. A
   social evening planned for the day is written into the file as such and the
   next day is planned as Rest tier (`nutrition.md` § Social Days).
 - The plan file follows `protocols/daily-template.md`. Standing daily commitments

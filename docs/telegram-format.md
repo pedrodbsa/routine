@@ -66,7 +66,7 @@ the resend after a parse error.
 🏃 <b>Easy 8 km</b> · HR ≤142 · RPE 3
 🏋️ <b>Chest + biceps</b> · 6 slots, ~45 min
 
-🍽 <b>Easy tier</b> · 2,250 kcal · P165 C251 F65
+🍽 <b>Easy tier</b> · 1,950 kcal · P170 C183 F60
 
 <b>07:30 Breakfast</b> · 380 · P30
 3 eggs · 40 g oats · 80 g strawberries
@@ -81,7 +81,7 @@ the resend after a parse error.
 150 g salmon · 200 g potato · 250 g veg · 1 tbsp oil in the pan
 
 ⚠️ Fasted weigh-in + waist tape (Monday)
-📅 Oct 12: Build starts, +300 tiers
+📅 Nov 22: rate read #1
 
 <blockquote expandable>Why easy, not quality: …
 Load: 4 run days in a row, last hard Sat …</blockquote>

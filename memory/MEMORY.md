@@ -19,7 +19,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 
 ## Objective (live)
 
-- [Athletic by summer 2027](project-objective-athletic-summer-2027.md) — **read first**: body comp > run fitness > racing, sleep governs; Aug 1 2027 scorecard (~15% / ~70–71.5 kg home scale / upper-body strength markers incl. 5 pull-ups / spring sub-47 / autumn 45:00 stretch); Dec 12 is a hard B effort with friends
+- [Athletic by summer 2027](project-objective-athletic-summer-2027.md) — **read first**: body comp > run fitness > racing, sleep governs; Aug 1 2027 scorecard (~15% / ~70.0–70.5 kg home scale / upper-body strength markers incl. 5 pull-ups / spring sub-47 / autumn 45:00 stretch); Dec 12 is a hard B effort with friends. **Since 2026-10-19: Phase 8 slow cut Oct 20 – Apr 12 at 0.2 kg/wk** (the build closed after a week)
 - [Motivation = running numbers](user-motivation-running-numbers.md) — keep the prediction line, control run and pace-at-HR visible every report even though body comp ranks first
 - [Lab-tested physiology](lab-tested-physiology.md) — Bod Pod + lactate ramp 2026-04-28; supersedes BIA and assumed LT
 
@@ -55,7 +55,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 
 - [Tracking & adherence](feedback-tracking-adherence.md) — weighs food, follows plan days exactly, logs nothing digitally; a stall is an off-plan or TDEE question
 - [Prefers activity over food cuts](feedback-prefers-activity-over-food-cuts.md) — but NEAT is opportunistic and "more cardio" never means more hard running
-- [Lower tiers as social buffer](feedback-lower-tiers-as-social-buffer.md) — build at +300 not +400; the build's weight trend already prices in social evenings, so the cut must not subtract them twice
+- [Lower tiers as social buffer](feedback-lower-tiers-as-social-buffer.md) — social evenings are priced into the tiers once, never subtracted twice; the +300 build that used it was closed 2026-10-19
 - [Adjust day on skipped session](feedback-adjust-day-on-skipped-session.md) — re-tier the day's food down from carbs, hold the floors, **name the feed to cut** (left alone he deletes the afternoon snack)
 - [Living nutrition table](feedback-living-nutrition-table.md) — on `/log meal`, overwrite the eaten row, re-tune the rest to hold the tier; a Projected row over Expected is a defect when written
 - [Check time before nutrition](feedback-check-time-before-nutrition.md) — get the real local time before sequencing feeds
@@ -70,7 +70,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [No grams for eggs](feedback-no-grams-for-eggs.md) — eggs and whites as counts, never grams
 - [Rice served with beans](reference-rice-served-with-beans.md) — count ~80 g beans and ~2.4 g oil fat per 100 g cooked rice
 - [Mythos Ligeiro yogurt](reference-mythos-ligeiro-yogurt.md) — protein-weak (5.3 g/100 g); buy on the protein number
-- [Regains fast; prefers a light deficit](user-regains-fast-prefers-light-deficit.md) — 74→76 in weeks on the build; felt better and more committed on the cut; Phase 5 tiers (~2,035 avg) = his real maintenance with socials
+- [Regains fast; prefers a light deficit](user-regains-fast-prefers-light-deficit.md) — 74→76 in weeks on the build; felt better and more committed on the cut; Phase 5 tiers (~2,050 avg) = his real maintenance with socials; led to the 2026-10-19 slow cut
 - [Daily supplement → daily anchor](feedback-daily-supplement-daily-anchor.md) — hang daily doses on a fixture that never moves; BIA muscle mass is creatine-sensitive
 
 ## Data and measurement

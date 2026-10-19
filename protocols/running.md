@@ -105,7 +105,7 @@ Derive the week's quality session; never reach for the athlete's phrasing ("spee
 
 A deviation from the default rung needs its reason logged in the daily file. **Easy days may follow the watch's Base suggestion at the same ≤142 cap** (athlete preference). The coach owns the quality, the long run and the week shape; the watch's threshold and VO2 suggestions are ignored.
 
-### Cut Quality Ladder (Phase 8 Slow cut, Oct 19 2026 – Jan 3 2027)
+### Cut Quality Ladder (Phase 8 Slow cut from Oct 20 2026; weeks run Mon–Sun, to Jan 3 2027)
 
 | Week | Dates | Default quality |
 | --- | --- | --- |
