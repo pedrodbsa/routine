@@ -1,6 +1,6 @@
 # NUTRITION PROTOCOL - MASTER
 
-> Single source of truth for calorie tiers and macro floors. Lean-mass anchor 59.6 kg (Bod Pod 2026-04-28); BMR (Katch-McArdle) 1,657 kcal. Phases 6-10 were set at the 2026-09-29 consult (`logbook/2026-09/consult-2026-09-29.md`). Completed phases: `protocols/archive/nutrition-phases-1-3.md`, `nutrition-phases-4-5.md`, `nutrition-phase-5-checkpoints.md`.
+> Single source of truth for calorie tiers and macro floors. Lean-mass anchor 59.6 kg (Bod Pod 2026-04-28); BMR (Katch-McArdle) 1,657 kcal. Phases 8-10 were set at the 2026-10-19 consult (`logbook/2026-10/consult-2026-10-19.md`), which replaced the Build and Cut 3 of the 2026-09-29 consult. Completed phases: `protocols/archive/nutrition-phases-1-3.md`, `nutrition-phases-4-5.md`, `nutrition-phase-5-checkpoints.md`, `nutrition-phases-6-7.md`.
 
 ## Daily Targets
 

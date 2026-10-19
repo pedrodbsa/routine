@@ -35,9 +35,11 @@ The watch zones are entered in bpm: Warm Up ≥95, Easy ≥120, Aerobic ≥143, 
 | All         | 142 bpm | 145 bpm   | 6:30-7:30/km outdoor, 6:40-7:30/km treadmill |
 
 - Easy = RPE 3-4 and full conversation. RPE above 5 → slow down, whatever the HR says.
+- **A run averaging above 142 is logged as moderate, not easy**, and counts as hard-ish in the stacked-hard rule. Set a watch HR alert at 145.
+- **Easy runs are prescribed at 7–9 km**; 5–6 km only on a marker day or a drop-order day.
 - Easy and long runs are **one Garmin step** at the cap, with no warmup or cooldown block (`[[feedback-easy-run-single-step]]`).
 - **Between interval reps the recovery is a walk** (or jog → walk): HR will not fall into any jog band in ~90 s. Walk recovery lowers rep-entry HR, so judge a rep by its end-of-rep max, not its average.
-- **Treadmill control run, fortnightly on the Monday easy slot:** **belt locked at 8.6 km/h, 1% incline, treadmill mode, COROS armband always** (an entry on any other sensor is void), **34:53 of running (a time end condition on the Garmin workout, athlete's call 2026-10-19), which is 5.0 km of belt**. The watch's distance depends on its stride calibration (Oct 19 read 8.59 km/h against 8.41–8.43 in July), so the end condition is time, not distance. The tracked number is **avg HR**. Never raise the belt: it restarts the series. Valid series: Jul 13 **137** · Jul 27 **136**. Three entries before any read; ≥3 bpm across three entries is a real change.
+- **Treadmill control run, weekly on the Monday easy slot until three valid entries exist, then fortnightly:** **belt locked at 8.6 km/h, 1% incline, treadmill mode, COROS armband always** (an entry on any other sensor is void), **34:53 of running (a time end condition on the Garmin workout, athlete's call 2026-10-19), which is 5.0 km of belt**. The watch's distance depends on its stride calibration (Oct 19 read 8.59 km/h against 8.41–8.43 in July), so the end condition is time, not distance. The tracked number is **avg HR**. Never raise the belt: it restarts the series. Valid series: Jul 13 **137** · Jul 27 **136** · Oct 19 **132** (entry 1 of the restarted series). Three entries before any read; ≥3 bpm across three entries is a real change.
 - **Weekly strides slot:** one easy run a week finishes with **6 × 20 s strides**, relaxed-fast at ~5K/mile turnover, RPE 7–8, full walk-back recovery, by feel rather than HR. Stop early if form fades. Its home is the easy run furthest from the quality day; never on the quality day or the day before it. The reason it is standing: sub-47 (4:42/km) needs roughly cadence 180 × stride 118 cm, against the Mar 8 race's 175.9 × 113.5. Stride length is an output of force and elastic return, and strides let it self-organise at speed. **Never prescribe conscious stride lengthening**: overreaching lands ahead of the centre of mass and brakes.
 
 ## Pre-Run Warm-Up (Daily 5)
@@ -58,8 +60,8 @@ The watch zones are entered in bpm: Warm Up ≥95, Easy ≥120, Aerobic ≥143, 
 
 ### Long Runs
 
-- **HR:** ~135-142, drift ceiling 145 (LT1). **Distance:** 12-16 km (≤14 km in Cut 3). **RPE:** 4-5.
-- A progression finish only when planned, at most every other week; it counts as the week's second stimulus. An unplanned fast finish is a breach of the easy contract.
+- **HR:** ~135-142, drift ceiling 145 (LT1). **Distance:** 12–14 km, building to 16 km by Nov 29. **RPE:** 4-5. The long run is the last run dropped in a compromised week.
+- **Progression finish every other week, planned:** the last 2–3 km at 150–160 bpm. It counts as the week's second stimulus; the weeks between are easy throughout. An unplanned fast finish is a breach of the easy contract.
 - Banana + coffee before; the day is on the Long tier.
 
 ### Sub-Threshold Intervals
@@ -96,27 +98,27 @@ Sub-T sits between LT1 145 and LT2 172. **Hard ceiling 168**; past it the sessio
 Derive the week's quality session; never reach for the athlete's phrasing ("speed work") or the prior day's frame. Surface the derivation in one or two lines of the `/plan` summary:
 
 1. **Recent quality history:** the last 2–3 quality types in the daily files. Don't repeat a stimulus blindly or skip a rung.
-2. **Ladder:** the default rung from § Build Quality Ladder (the Phase 9 sharpen in § Weekly Rules).
+2. **Ladder:** the default rung from § Cut Quality Ladder (the Phase 9 sharpen in § Weekly Rules).
 3. **Block gap:** the under-trained stimulus this block.
 4. **Recovery and trailing load:** can today carry it, or does it drop a rung?
 5. **Goal relevance:** what the next hard effort needs now — the Oct 25 B-race, then the spring 10K. Threshold base comes before speed sharpening.
 
-A deviation from the default rung needs its reason logged in the daily file. Garmin's Daily Suggested Workout is a cross-check, not an authority (its paces are heat-blind).
+A deviation from the default rung needs its reason logged in the daily file. **Easy days may follow the watch's Base suggestion at the same ≤142 cap** (athlete preference). The coach owns the quality, the long run and the week shape; the watch's threshold and VO2 suggestions are ignored.
 
-### Build Quality Ladder (Oct 12 2026 – Jan 3 2027)
+### Cut Quality Ladder (Phase 8 Slow cut, Oct 19 2026 – Jan 3 2027)
 
-| Build week | Dates | Default quality |
+| Week | Dates | Default quality |
 | --- | --- | --- |
-| 1 | Oct 12–18 | Sub-T (cruise or Norwegian) |
-| 2 | Oct 19–25 | Oct 25 B-race replaces it (2-3 easy days before) |
-| 3 | Oct 26 – Nov 1 | Sub-T, after 48-72 h easy |
-| 4 | Nov 2–8 | Trekking — exempt, no quality |
-| 5–6 | Nov 9–22 | Threshold |
-| 7–10 | Nov 23 – Dec 20 | 10K-pace reps. Week 9 (Dec 7–13): the Dec 12 hard effort replaces the quality and the long run, with 3 easy days before |
-| 11 | Dec 21–27 | One short VO2 touch |
-| 12 | Dec 28 – Jan 3 | Threshold |
+| 1 | Oct 19–25 | Oct 25 B-race replaces it (2-3 easy days before) |
+| 2 | Oct 26 – Nov 1 | **Continuous threshold, 3 × 7 min at 165–172, walk 2 min**, after 48-72 h easy |
+| 3 | Nov 2–8 | Trekking — exempt, no quality |
+| 4–5 | Nov 9–22 | **2 × 12 min → 25 min continuous at 165–172** |
+| 6–7 | Nov 23 – Dec 6 | **5–6 × 1 km at 10K pace with walk recovery** |
+| 8–9 | Dec 7–20 | 10K-pace reps. Dec 7–13: the Dec 12 hard effort replaces the quality and the long run, with 3 easy days before |
+| 10 | Dec 21–27 | One short VO2 touch |
+| 11 | Dec 28 – Jan 3 | Threshold |
 
-Cut 3 holds one quality a week, alternating threshold and 10K-pace.
+Sub-threshold 5 × 1 km cruises are retired for the cut (eight sessions since June, flat matched reps). From Jan 4 to Apr 12 the cut holds one quality a week, alternating threshold and 10K-pace.
 
 ## Weekly Rules (Phases 6-10)
 
@@ -125,13 +127,13 @@ Scheduling is fully flexible; these rules set session counts and spacing. The we
 1. **One quality session** on the ladder. The Oct 25 B-race replaces it that week, then 48-72 h easy.
 2. **One long run** (§ Long Runs).
 3. **One easy run with the strides slot** (outdoor).
-4. **One easy run on the Monday slot:** the treadmill control run on alternate weeks, a plain outdoor easy on the others (no strides: Monday is the day before the quality).
+4. **One easy run on the Monday slot:** the treadmill control run (weekly until three valid entries exist, then alternate weeks), a plain outdoor easy on the others (no strides: Monday is the day before the quality).
 5. **Bonus easy run** (5-7 km) when the week has room; the first thing dropped.
 
-- Volume **floor 30 km, band 32-42**. Heavy rain: the treadmill is the fallback, not the plan.
-- **No second full quality session** while body composition ranks first; strides and the planned progression finish are the second stimulus. **Exception, trial Oct 9 – Oct 20 2026 (athlete's call 2026-10-06, Option B):** Tuesday is the main quality and Friday carries a second, shorter one (threshold touch; Fridays Oct 9 and Oct 16, Tuesday Oct 20; Oct 23 is race-adjacent and stays easy). Qualities stay ≥72 h apart, Friday's replaces the strides run, and the leg half of Legs + shoulders is dropped for the length of the trial. Any warning-sign rule below turns that Friday back into an easy run. Reviewed at Oct 25 on delivered strength, control-run HR, easy pace-at-HR and sleep/HRV.
-- Qualities ≥72 h apart; Legs ≥36 h before any quality and never on the same day as a hard run.
-- **Drop order on a compromised week** (athlete's call: run over Legs): bonus run → strides → the leg half of Legs + shoulders → quality (to easy) → long run shortened to 10 km → Chest and Back merged.
+- Volume **floor 30 km, target 36–40** (band 32–42). Easy runs are prescribed at **7–9 km**; 5–6 km only on a marker or drop-order day. The long run is 12–14 km, building to 16 km by Nov 29. The ramp starts Oct 26 (ACWR 1.49 on Oct 18). In the slow cut this volume carries the deficit as well as the speed. Heavy rain: the treadmill is the fallback, not the plan.
+- **One quality session a week until a second is earned.** The Option B trial ends at the Oct 25 review (sample void: Oct 9 against a failed gate, Oct 16 cancelled, Oct 20 gated). **A second, short quality (threshold touch or 10K-pace reps, ≥72 h from the first, the leg half ≥48 h away) is added from Nov 23 only if:** ≥36 km was delivered in all three non-exempt weeks (Oct 26, Nov 9, Nov 16; Nov 2–8 trekking is exempt), the long run was run every one of those weeks, resting HR ≤55 and HRV in band on ≥5 of the 7 prior mornings, and the week's lifts were delivered. Otherwise the planned progression finish (every other week) stays the second stimulus.
+- Qualities ≥72 h apart. **The leg half sits ≥48 h from both the quality and the long run, either side**, and never on the same day as a hard run. After a layoff of ≥3 weeks, two sessions at the re-entry load before any load step.
+- **Drop order on a compromised week** (athlete's call: run over Legs): bonus run → strides → the leg half of Legs + shoulders → quality (to easy) → Chest and Back merged → long run shortened to 10 km.
 - **Phase 9 (Apr 13 – Jun 14 2027):** the same shape plus a 3-4 week sharpen (10K-pace reps weekly, one short VO2 touch) and § Race-Week Running Pattern into the spring 10K. No taper longer than 7 days.
 
 **Scoreboard** (reported weekly, every week — the running numbers are the athlete's motivation driver): (1) volume ≥30 km and ≥4 runs, (2) the quality session at target HR, (3) the control-run avg-HR trend, (4) long-run and easy pace-at-HR on matched routes, (5) the Garmin prediction milestone line (`current-status.md` § Race Schedule).
@@ -166,7 +168,8 @@ Acute km this week ÷ mean km of the **four preceding weeks** (the acute week is
 
 ### Warning Signs
 
-- Easy runs slowing at the capped HR for 3 runs on matched routes → extra rest day (under the 142 cap, the signal shows up as pace, not HR)
+- Easy runs slowing at the capped HR for 3 runs on matched routes → extra rest day
+- **3 consecutive easy or long runs averaging above 142, or >5% slower than the Sep 20 reference (~6:30/km at 138–141 outdoors), → the next quality converts to easy.** HR tends to float over the cap instead of pace slowing, so both forms count.
 - Sleep score <60 for 2 nights → replace quality with easy
 - RHR +5 bpm above baseline for 3 days → reduce weekly volume 20%
 - HRV >15% below the 7-day average for 3 days → 2 easy or rest days
@@ -175,8 +178,8 @@ Acute km this week ÷ mean km of the **four preceding weeks** (the acute week is
 
 ## Race Execution
 
-- **Oct 25 (B, hard effort):** even effort at ~172–176 avg HR, climbs run by effort; 2-3 easy days before, no taper, no heavy Legs in the 3 days before. Fueling per `nutrition.md` § Race Fueling. Recorded as a fitness read.
-- **Dec 12 (B, hard effort, run with friends):** even effort at ~172–176 avg HR; 3 easy days before, no taper, no heavy Legs in the 3 days before; no separate long run that week. The evening-start logistics in `protocols/archive/running-dec12-arace-plan.md` apply. Recorded as a fitness read, the last one before the cut.
+- **Oct 25 (B, hard effort):** even effort at ~172–176 avg HR, climbs run by effort; 2-3 easy days before, no taper, no heavy Legs in the 3 days before. Fueling per `nutrition.md` § Race Fueling. Recorded as a fitness read. **Hard only if the Oct 24 resting HR is ≤55 and HRV is in band; otherwise run as a tempo capped at 172.**
+- **Dec 12 (B, hard effort, run with friends):** even effort at ~172–176 avg HR; 3 easy days before, no taper, no heavy Legs in the 3 days before; no separate long run that week. The evening-start logistics in `protocols/archive/running-dec12-arace-plan.md` apply. Recorded as a fitness read; a Quality day inside the slow cut.
 - **Spring 2027 (A, sub-47):** even pacing at 4:42/km — km 1 between 4:40 and 4:45, hold 4:40-4:43 to km 8, then whatever is left. Set the final pace from the sharpen block's 10K-pace reps.
 
 ### Race-Week Running Pattern
@@ -190,7 +193,7 @@ Acute km this week ÷ mean km of the **four preceding weeks** (the acute week is
 ## Post-Race Recovery
 
 - **After a hard 10K:** 48 h easy walking and mobility, no lower-body lifting; an easy run at 72 h only if legs feel normal and pain ≤2/5; resume the full week once sleep, HR and soreness normalise.
-- **After an HM or trail 21K:** 3 days minimum without quality, 5-7 days before hard lower-body lifting, 2 days at maintenance calories. Fueling for those distances: `nutrition.md` § Race Fueling (none is planned before June 2027; revisit at the Jan 4 checkpoint).
+- **After an HM or trail 21K:** 3 days minimum without quality, 5-7 days before hard lower-body lifting, 2 days at maintenance calories. Fueling for those distances: `nutrition.md` § Race Fueling (none is planned before June 2027).
 
 ## Data Source
 
