@@ -70,6 +70,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [No grams for eggs](feedback-no-grams-for-eggs.md) — eggs and whites as counts, never grams
 - [Rice served with beans](reference-rice-served-with-beans.md) — count ~80 g beans and ~2.4 g oil fat per 100 g cooked rice
 - [Mythos Ligeiro yogurt](reference-mythos-ligeiro-yogurt.md) — protein-weak (5.3 g/100 g); buy on the protein number
+- [Regains fast; prefers a light deficit](user-regains-fast-prefers-light-deficit.md) — 74→76 in weeks on the build; felt better and more committed on the cut; Phase 5 tiers (~2,035 avg) = his real maintenance with socials
 - [Daily supplement → daily anchor](feedback-daily-supplement-daily-anchor.md) — hang daily doses on a fixture that never moves; BIA muscle mass is creatine-sensitive
 
 ## Data and measurement
