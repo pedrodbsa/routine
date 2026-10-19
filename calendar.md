@@ -40,7 +40,7 @@
 
 | Rule | Owner | Source |
 | --- | --- | --- |
-| Treadmill control run every other Monday on the easy slot (5.0 km, 8.6 km/h, 1%, COROS armband); the next is due two weeks after the last logged entry | athlete | current-status § Aerobic Threshold Compliance |
+| Treadmill control run every other Monday on the easy slot (8.6 km/h, 1%, 34:53 time-based = 5.0 km of belt, COROS armband); the next is due two weeks after the last logged entry | athlete | current-status § Aerobic Threshold Compliance |
 | Navel waist tape, fasted, every Monday | athlete | current-status § Adherence Targets |
 | Fasted weigh-in (post-void, pre-food) on at least 4 mornings a week | athlete | current-status § Adherence Targets |
 | Sleep onset ≤23:30 on at least 5 nights a week | athlete | current-status § Adherence Targets |

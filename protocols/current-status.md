@@ -132,7 +132,7 @@ Anchored to lab-prescribed individual threshold (2026-04-28): 142 bpm @ 6:00/km.
 - **Easy ceiling (all environments):** ≤142 bpm
 - **Long-run drift ceiling:** ≤145 bpm (LT1)
 - Old MAF 148 outdoor ceiling retired
-- **Treadmill control run:** 5.0 km, belt locked 8.6 km/h, 1% incline — the tracked number is avg HR (Jul 13: **137** · Jul 27: **136**). Do not raise the belt. **HR source: COROS armband, always** — an entry recorded on any other sensor is void. **Cadence: fortnightly on the Monday easy slot (2026-09-29)**, alternating with an outdoor easy run + strides; three entries before any read; ≥3 bpm across three entries is a real change.
+- **Treadmill control run:** belt locked 8.6 km/h, 1% incline, **34:53 of running (time end condition from 2026-10-19, = 5.0 km of belt)** — the tracked number is avg HR (Jul 13: **137** · Jul 27: **136** · Oct 19: **132**, entry 1 of 3 in the restarted series). Do not raise the belt. **HR source: COROS armband, always** — an entry recorded on any other sensor is void. **Cadence: fortnightly on the Monday easy slot (2026-09-29)**, alternating with an outdoor easy run + strides; three entries before any read; ≥3 bpm across three entries is a real change.
   - **Jul 27 corrected 137 → 136 on 2026-08-06** against the Garmin activity record (id `23748807045`, avg HR 136).
   - ✅ **Ratified 2026-09-07: the protocol is 5.0 km at 8.6 km/h** — the written "30:00" is retired. ⚠ **Series dark since Jul 27** (9 weeks); restarts on the first Monday it lands.
   - **Aug 5 (avg HR 129) is void** — armband not worn *and* a different device calibration (8.57 km/h implied vs 8.41–8.43). Do not enter it.

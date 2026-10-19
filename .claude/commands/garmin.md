@@ -85,6 +85,7 @@ gives the athlete nothing to aim for on the watch.
   km where going out too fast happens, and protects against nothing. Build the
   whole distance as a single step at the plan's cap (`110–142`, or the long-run
   drift ceiling if the plan sets one).
+- **Treadmill control run (2026-10-19, athlete's call):** one step with a **time** end condition of 34:53 (2,093 s), not a distance, and an HR display band 110–150. The belt is locked at 8.6 km/h, so time fixes the work and the watch's distance calibration cannot change it.
 - **Warmup (quality sessions only):** HR **110–150** (a jog band that builds toward
   the work), or pace 7:00–8:00/km. Override with the plan file's specifics if
   present.
