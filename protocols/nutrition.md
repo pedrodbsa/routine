@@ -12,63 +12,52 @@ On the lowest-calorie days, protein and fat come first.
 
 ## Maintenance
 
-Maintenance is an estimate, not a measurement. Bottom-up: BMR 1,657 × 1.2 ≈ 1,990, plus ~350/day from 35–40 km and ~130/day from three lifts ≈ **~2,450**. The history disagrees with itself: July's trimmed tiers (~1,915 avg) lost weight at a rate implying ~2,500 (part of it glycogen water), while August's restored tiers (~2,015) held flat, implying ~2,100 on plan days once unlogged social and unplanned days are counted. The build's weight band resolves it, and the cut tiers are derived from what the band shows.
+Bottom-up, BMR 1,657 × 1.2 ≈ 1,990, plus ~350/day from 35–40 km and ~130/day from three lifts, gives **~2,450** on plan days. That figure ignores the off-plan days, and the weight record does not support it. **Measured:** the Phase 5 tiers (reference-week average ~2,050) held weight flat from Aug 4 to Sep 20 with 1–2 social evenings a week, no lifting and ~31 km a week; the +300 Build tiers (~2,350) put on about 1 kg beyond glycogen and water in three weeks. **The Phase 5 tiers are the athlete's effective maintenance at ~31 km with no lifting, social evenings included.** Running 36–40 km and three lifts add ~200 kcal/day on top, and that is the slow cut's deficit.
 
-## Phases 6-10
+## Phases 8-10
 
-### Phase 6 — Reverse (Sep 21 – Oct 11)
+Phases 6 (Reverse) and 7 (Build, closed after one week on Oct 19) are archived in `protocols/archive/nutrition-phases-6-7.md`.
 
-Offsets on the Phase 5 tiers (Rest 1,850 / Easy 1,950 / Quality 2,250 / Long 2,450):
+### Phase 8 — Slow cut (Oct 20 – Apr 12)
 
-| Week | Offset | Rest | Easy / Strength | Quality | Long |
-| --- | --- | --- | --- | --- | --- |
-| Sep 28 — declared re-entry week | +200 | 2,050 | 2,150 | 2,450 | 2,650 |
-| Oct 5 → the Build tiers | +300 | 2,150 | 2,250 | 2,550 | 2,750 |
-
-The Oct 5 step needs no data.
-
-### Phase 7 — Build (Oct 12 – Jan 4)
-
-The tiers sit at +300 rather than +400, as a buffer for 1–2 social evenings a week (athlete's call). The cost is that a small plan-day deficit adds less muscle than full maintenance would; the band floor compensates. P165 / F65 on every tier; carbs = (tier − 1,245) ÷ 4.
+Target **0.2 kg/wk** (~220 kcal/day), landing at **~70.0–70.5 kg** (~15% on the lab lean of 59.6 kg; no net lean gain is assumed in a deficit). From ~75.7 kg on Oct 19, that is ~1 kg of glycogen water in the first two weeks and ~4.6 kg of tissue over the 23 weeks after it. P170 / F60 on every tier; carbs = (tier − 1,220) ÷ 4.
 
 | Day type | Calories | Protein | Carbs | Fat |
 | --- | --- | --- | --- | --- |
-| Rest | 2,150 | 165 g | 226 g | 65 g |
-| Easy / Strength (any easy run, any lift, or both) | 2,250 | 165 g | 251 g | 65 g |
-| Quality | 2,550 | 165 g | 326 g | 65 g |
-| Long | 2,750 | 165 g | 376 g | 65 g |
+| Rest | 1,850 | 170 g | 158 g | 60 g |
+| Easy / Strength (any easy run, any lift, or both) | 1,950 | 170 g | 183 g | 60 g |
+| Quality | 2,250 | 170 g | 258 g | 60 g |
+| Long | 2,450 | 170 g | 308 g | 60 g |
 
-The reference week (1 rest, 4 easy/strength, 1 quality, 1 long — `training.md` § Phases 6-10) averages **~2,350**. With 1–2 social evenings at roughly +1,500 each, the true weekly average sits ~2,650–2,750 unless § Social Days holds, which is why the band, not the tier, is the governor.
+The reference week (1 rest, 4 easy/strength, 1 quality, 1 long — `training.md`) averages **~2,050**. The deficit is not in the plan-day tiers alone: they are the measured maintenance, and the deficit comes from the training volume (`running.md` § Weekly Rules, 36–40 km) and three lifts, held in place by § Social Days and the rule that re-tiers a skipped session's day down. **1–2 social evenings a week are priced in** (athlete, 2026-10-19: "knowing that social events will happen"); more than that is the first lever when the rate stalls.
 
-**Build weight band.** Expected 74.5–75.5 kg: the reverse returns ~1.0–1.2 kg of glycogen and water (the athlete's own July 2026 data), so a rise into that band is not fat. **Ceiling 76.0 / floor 73.5**, read on the 7-day fasted mean and acted on only when **two consecutive weeks each carry ≥4 fasted readings**: above 76.0 → take 100 kcal off carbs on every row; below 73.5 → add 100. No data → hold. A single week cannot decide, because 100 kcal/day ≈ 0.09 kg/wk sits under the ~0.11 kg standard error of a two-week difference. First possible read: Oct 26.
+Oct 25 and Dec 12 (hard efforts) are Quality days; pre-race sodium and carbs per § Race Fueling, no carb load. The Nov 4–8 trek runs on the Long tier on hiking days. **Christmas (Dec 21 – Jan 10)** stays on the tiers with § Social Days applied, and is excluded from the rate reads: holiday water would distort the slope, so in practice it acts as a maintenance break.
 
-Oct 25 and Dec 12 (hard efforts) are Quality days; pre-race sodium and carbs per § Race Fueling, no carb load. The Nov 4–8 trek runs on the Long tier on hiking days. Christmas week stays on the tiers with § Social Days applied.
+**Rate reads.** Each read is the least-squares slope of the fasted readings in its window, against −0.2 kg/wk. The first two weeks (Oct 20 – Nov 1) are glycogen water off the carb step and enter no window.
 
-### Phase 8 — Cut 3 (Jan 5 – Apr 12): tiers derived on Jan 4
+| Read | Window | Minimum fasted readings |
+| --- | --- | --- |
+| #1 Nov 22 | Nov 2 – Nov 22 | 12 |
+| #2 Dec 20 | Nov 23 – Dec 20 | 15 |
+| #3 Feb 7 | Jan 11 – Feb 7 | 15 |
+| #4 Mar 7 | Feb 8 – Mar 7 | 15 |
+| #5 Apr 4 | Mar 8 – Apr 4 | 15 |
 
-Target **0.3 kg/wk** (~330 kcal/day), landing ~70–71.5 kg (~15% on 59.6–60.6 kg lean). P170 / F60; carbs = (tier − 1,220) ÷ 4. **Rest is never below 1,850** (rest-day carbs never below ~157 g).
+- **Slower than −0.1 kg/wk:** count the social and snack days in the window from the daily files. Above 2 social evenings a week, or snack days most weeks, is the lever: fix that first. Otherwise, and only on **two consecutive reads** slower than −0.1 (a single read's SE, ~0.12–0.15 kg/wk, is larger than the 0.1 margin), take **−100 kcal carbs on every row**: Rest 1,750 / C133 · Easy-Strength 1,850 / C158 · Quality 2,150 / C233 · Long 2,350 / C283 (the July 2026 tiers).
+- **The July tiers are the floor.** A stall below them is fixed by behaviour (social and snack frequency), never by a further tier cut: a Rest day of 1,650 puts carbs at ~107 g, rejected on 2026-05-06.
+- **Faster than −0.4 kg/wk** on a single read: +100 kcal carbs.
+- **Below the minimum readings:** hold. No data never triggers a cut.
+- **In every read:** upper loads falling on 2+ lifts across two sessions → +100 carbs regardless of the scale. The weekly waist tape is the fat-specific cross-check: ≥1 cm per 4 weeks confirms fat; a flat waist with a falling scale is water or lean.
 
-    build_tiers = the Build plan tiers, plus or minus any band adjustment that fired
-    drift       = 7,700 × the fasted-weight slope in kg/wk over Oct 19 – Dec 20 ÷ 7   (positive if weight rose)
-    cut tier    = build_tiers − 330 − drift
-
-The off-plan surplus (social evenings, unplanned days) is already inside the build's weight trend, so the deficit comes off the plan tiers. Do not also subtract a separately estimated social term: it would count twice, and a weight trend cannot isolate it anyway. It enters only if off-plan behaviour is expected to change in the cut. The window starts after the reverse's glycogen refill and ends before Christmas, whose water would sit at the end of the fit, where it pulls the slope hardest.
-
-The slope needs **≥7 readable weeks (≥4 fasted readings each) of those 9**. Below that, drift is zero and the tiers are **Rest 1,850 / Strength 1,920 / Quality 2,220 / Long 2,420**. If drift comes out at ≥300/day, run a 0.2 kg/wk cut with the social protocol enforced rather than a −630 plan day: a plan-day deficit the athlete will not hold is worth less than a smaller one he will.
-
-**Rate read #1 (Feb 1):** the least-squares slope of fasted readings over cut weeks 2–4 (Jan 12 – Feb 1), against −0.3 kg/wk. It needs **≥15 fasted readings**; below that it holds and read #2 decides. Week 1 is excluded (glycogen water off the carb step), and a mean-versus-mean read cannot be used here because the previous window is a flat build. Slower than −0.1 kg/wk → the off-plan lever, then −100 kcal carbs. Faster than −0.5 → +100 carbs. The ±0.2 band is what clears the slope's noise (SE ~0.12 kg/wk at 15 readings); do not tighten it.
-
-**Rate reads #2 and #3 (Mar 1, Mar 29):** the trailing 4-week fasted mean against the previous one (≥12 readings per 4 weeks; no data → hold). Target −1.2 kg per 4 weeks. Slower than −0.6 → the off-plan lever (the social protocol, or planning the unplanned days — whichever the daily files show is leaking), then −100 kcal carbs. Faster than −1.6 → +100 carbs.
-
-In every read: upper loads falling on 2+ lifts across two sessions → +100 carbs regardless of the scale. The weekly waist tape is the fat-specific cross-check: ≥1 cm per 4 weeks confirms fat; a flat waist with a falling scale is water or lean.
+The weigh-in is **daily**: after urinating and before food or drink, with no bowel movement required (a no-movement morning reads a few hundred grams high, and the slope averages it out). A reading taken before voiding is marked and still counts. Fewer than 4 fasted readings in a week is a report breach.
 
 ### Phase 9 — Maintenance + spring race (Apr 13 – Jun 14)
 
-The Build tiers, re-based on the cut's closing weight (roughly −50 kcal per kg lost), set at the Apr 12 close. The spring 10K is raced at maintenance.
+Set at the Apr 12 close: the Phase 8 tiers plus the deficit the rate reads measured (7,700 × the measured kg/wk ÷ 7), minus ~50 kcal per kg lost. The spring 10K is raced at maintenance.
 
 ### Phase 10 — Lean-out, optional (Jun 15 – Jul 26)
 
-Only if stage 1 fell short: Phase 9 tiers −250/day, ≤0.25 kg/wk, P170 / F60, the same rest floor. Skip it if the loads and the mirror say the fat is gone.
+Only if the slow cut fell short: Phase 9 tiers −250/day, ≤0.25 kg/wk, P170 / F60, Rest never below 1,750. Skip it if the loads and the mirror say the fat is gone.
 
 ## Social Days
 
@@ -78,7 +67,7 @@ The athlete has **1–2 social evenings a week, usually with alcohol**. Each run
 - **Drinks capped:** the athlete sets the cap before the evening; 2–3 is the working number.
 - **Logged as social** in the daily file (one word). The day's tier is not touched.
 - **The next day is re-tiered to Rest**, whatever it was. That is the whole compensation: no further cutting, no added cardio, no skipped feeds.
-- **In a cut**, the build's social frequency is already priced into the tiers (§ Phase 8 drift). `/report` counts social days per week against the build's average from the daily files; running above it is the off-plan lever the rate reads point to. In the build, the band catches it.
+- **In the slow cut**, 1–2 social evenings a week are priced into the tiers (§ Phase 8). `/report` counts social days and **snack days** (unplanned snacking, logged as one word in the daily line, e.g. "4, snack") per week from the daily files. Social evenings above 2 a week, or snack days most weeks, are the off-plan lever the rate reads point to.
 
 ### Consecutive Low-Cal Rule (cut phases)
 
@@ -175,13 +164,13 @@ On morning-run days the athlete weighs twice: fasted pre-run, and immediately po
 
 ## Tracking and Adjustments
 
-**Daily:** eat to the `/plan` meal table or the portion-locked rotation, fasted morning weigh-in, protein floor. There is no digital food logging: the weighed portions are the mechanism and the 7-day fasted trend is the feedback loop. The trend uses fasted morning readings only; check timestamps, because post-run readings run ~0.9 kg low.
+**Daily:** eat to the `/plan` meal table or the portion-locked rotation, fasted morning weigh-in (after urinating, before food; § Phase 8), protein floor. There is no digital food logging: the weighed portions are the mechanism and the 7-day fasted trend is the feedback loop. The trend uses fasted morning readings only; check timestamps, because post-run readings run ~0.9 kg low.
 
-**Weekly:** 7-day fasted mean (with its reading count) against the phase band or rate.
+**Weekly:** 7-day fasted mean with its reading count (context; decisions come from the Phase 8 rate reads), social days and snack days.
 
 | Signal | Action |
 | --- | --- |
-| 7-day average stalls 2+ weeks (cut phases) | −100 kcal from carbs. In the build the band governs |
+| Rate slower than −0.1 kg/wk (cut phases) | § Phase 8 rate reads: behaviour lever first, −100 only on two consecutive reads, never below the July tiers. No single-week action |
 | 7-day average drops >0.8 kg/week | +100 kcal, carbs |
 | Upper loads fall on 2+ lifts across two sessions | +100 kcal, carbs |
 | Strength <2/3 sessions in a week | Cut phases: −75–100 kcal next week, carbs first. Build and maintenance: flag only, fixed by scheduling (athlete's call) |
@@ -193,4 +182,4 @@ On morning-run days the athlete weighs twice: fasted pre-run, and immediately po
 
 ## Diet Breaks and Refeeds
 
-Cut 3 has no scheduled break; Phase 9 maintenance follows it. Refeeds are triggered, not scheduled: the motivation row in § Tracking and Adjustments, at most one a week, logged without guilt. Pull a one-week break at the Build tiers forward if upper loads keep falling after the +100, or if two consecutive same-type quality sessions read slower at the same HR on matched reps.
+The slow cut has no scheduled break beyond Christmas (Dec 21 – Jan 10, on the tiers and excluded from the rate reads); Phase 9 maintenance follows it. Refeeds are triggered, not scheduled: the motivation row in § Tracking and Adjustments, at most one a week, logged without guilt. Pull a one-week break at the tiers +200 forward if upper loads keep falling after the +100, or if two consecutive same-type quality sessions read slower at the same HR on matched reps.

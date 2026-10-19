@@ -6,7 +6,7 @@
 
 Scheduling is fully flexible: any run or strength session can land on any day. The reference week below is a layout, not a constraint. Scheduling is anchored to § Double-Day Guidelines, the readiness decision tree and recovery between hard sessions.
 
-## Phases 6-10 — Reverse, Build, Cut 3, Maintenance, Lean-out (Sep 21 2026 – Jul 26 2027)
+## Phases 8-10 — Slow cut, Maintenance, Lean-out (Oct 20 2026 – Jul 26 2027)
 
 **Three sessions every week, in every phase, each one major + one minor muscle group** (athlete's design): **Chest + biceps**, **Back + triceps**, **Legs + shoulders**. Abs close every session. `/report` flags missed sessions; there is no automatic downshift. The only race-driven strength exception is **no heavy leg work in the 3 days before a hard effort** (Oct 25, Dec 12, the spring 10K); the shoulder half can stay.
 
@@ -14,17 +14,17 @@ Scheduling is fully flexible: any run or strength session can land on any day. T
 
 | Day | Run | Strength | Notes |
 | --- | --- | --- | --- |
-| Mon | Easy — treadmill control run (fortnightly) or outdoor easy, no strides | **Chest + biceps** | One G1 trip, back-to-back |
+| Mon | Easy 7-9 km — treadmill control run (weekly until three valid entries, then fortnightly) or outdoor easy, no strides | **Chest + biceps** | One G1 trip, back-to-back |
 | Tue | Quality | — | No same-day lifting |
 | Wed | Bonus easy 5-7 km if time | **Back + triceps** | Pre-lunch double when the run happens |
 | Thu | — | **Legs + shoulders (PM)** | Legs first, then shoulders |
-| Fri | Easy + strides (or rest if the bonus ran) | — | |
+| Fri | Easy 7-9 km + strides (or rest if the bonus ran) | — | |
 | Sat | Rest | — | Standing |
-| Sun | Long 12-16 km | — | Planned progression finish ≤ every other week |
+| Sun | Long 12-14 km, 16 by Nov 29 | — | Progression finish (last 2-3 km at 150-160) every other week |
 
-Legs sits on Thursday because on Wednesday it would follow the Sunday long run and the Tuesday quality, which § Cumulative-Load Rules forbid.
+Legs sits on Thursday because the leg half must sit ≥48 h from both the quality and the long run, either side (`running.md` § Weekly Rules): Thursday PM is ~55 h after Tuesday's quality and ~64 h before Sunday's long run.
 
-**Drop order on a compromised week** (athlete's call — run over Legs): bonus run → strides → **the leg half of Legs + shoulders** → quality (to easy) → long run shortened to 10 km → Chest and Back merged into one upper session. Never below one upper session and one run. When the leg half is dropped, the shoulder half (overhead press + lateral raise) still runs, on its own or added to the next upper session. **Trial Oct 9 – Oct 20 2026 (Option B, athlete's call 2026-10-06):** the leg half is dropped on purpose, because Friday carries a second quality and Legs must sit ≥36 h before it. Thursday is shoulders only; strength still counts 3/3 sessions, with no loaded legs until the trial ends.
+**Drop order on a compromised week** (athlete's call — run over Legs): bonus run → strides → **the leg half of Legs + shoulders** → quality (to easy) → Chest and Back merged into one upper session → long run shortened to 10 km. Never below one upper session and one run. When the leg half is dropped, the shoulder half (overhead press + lateral raise) still runs, on its own or added to the next upper session.
 
 ## Strength Focus
 
@@ -32,16 +32,17 @@ Legs sits on Thursday because on Wednesday it would follow the Sunday long run a
 - Upper-body work stays mostly 8-12 reps, RPE 7-8 on working sets. Leg working sets stay at RIR 2-3, never to failure.
 - **Arms pair with the opposing major:** biceps with chest, triceps with back. Each arm muscle is fresh for its direct work, then gets a second, indirect hit 48 h away (rows for biceps, bench and dips for triceps). **Shoulders go with legs**, which keeps the overhead press off the bench day and away from anything that tires the delts.
 
-### Build, Maintenance and Lean-out (Phases 7, 9, 10)
+### Slow cut, Maintenance and Lean-out (Phases 8, 9, 10)
 
+- Upper volume stays at **build volume through the slow cut** (athlete's call, consult 2026-10-19): at a small deficit, for a returning lifter, volume is what protects and regains muscle.
 - This block has to deliver the Aug 1 2027 load markers (bench 60 × 8, OHP 35 × 8, lat pulldown 110 × 12 × 4, bench dip +25 × 10, 5 strict pull-ups; `strength-exercises.md`). "Athletic, not bulky": arms, delts, chest and back grow; legs do not.
 - **Build volume = the templates below, +1 set on every accessory slot** (Chest 2, 4, 5; Back 3, 4, 5; Legs + shoulders 6, 7). That gives chest ~12, back ~12 plus rear delts 4, biceps ~8, triceps ~8 plus the dips, and side delts 5 plus the overhead press.
 - Extra arm volume goes into the existing accessory slots, never a fourth session.
 - Supersets save time without costing growth when the two muscles don't compete: chest accessory + curl, row accessory + triceps, lateral raise + rear delt.
 
-### Cut 3 (Phase 8, Jan 5 – Apr 12 2027)
+### Lean-mass check in the slow cut (Phase 8, Oct 20 2026 – Apr 12 2027)
 
-Same split at **retention volume**: the templates as written (no added accessory set), compounds at full sets. Loads held across the cut are the lean-mass instrument (no Bod Pod re-test). Upper loads falling on 2+ lifts across two sessions → +100 kcal carbs (`nutrition.md` § Phase 8).
+Loads held across the cut are the lean-mass instrument (no Bod Pod re-test). Upper loads falling on 2+ lifts across two sessions → +100 kcal carbs (`nutrition.md` § Phase 8), and the volume is reviewed; working sets stay RPE 7-8, never to failure.
 
 ### Abs (every session)
 
@@ -122,12 +123,13 @@ The leg dose is heavy, low-rep, low-volume and explosive. That biases adaptation
 - Double progression (upper body): hit the top of the rep range with clean form → add load → reset to the lower end.
 - **Legs: load progression at fixed reps, governed by RIR.** When the primary lift feels like RIR 4+ at the prescribed reps, add load; reps stay at 4-6. Never chase rep PRs or grind to failure.
 - A lift regressing >10% for 2 sessions → cut one set before cutting the weight.
+- **After a layoff of ≥3 weeks, two sessions at the re-entry load before any load step.**
 - RPE staying 9+ despite normal recovery → reduce load 5% and reassess calories and sleep.
 - No logged loads means no progression decision.
 
 ## Deload Rules
 
-- The 12-week build has no scheduled deload: the Nov 2–8 trekking week (build week 4) is its deload.
+- No scheduled deload: the Nov 2–8 trekking week is the first one, and the Christmas fortnight (Dec 21 – Jan 3) runs lighter by circumstance.
 - Otherwise, an autoregulated mini-deload only when ACWR, soreness or sleep markers justify it. Keep intensity touches; remove junk volume.
 
 ## Double-Day Guidelines
@@ -136,7 +138,7 @@ The default training window is **before lunch** (athlete preference): run before
 
 - Run first, lift second. Breakfast between the run and the lift is the lift's fuel. If both are done fasted back-to-back, take the post-run shake before the lift.
 - The pre-lunch double suits an easy run + an upper session. Quality days carry no lifting.
-- **Legs + shoulders is the one PM session, typically Thursday.** Lunch fuels it; dinner is the post-workout meal. It needs ≥36 h before the next quality run.
+- **Legs + shoulders is the one PM session, typically Thursday.** Lunch fuels it; dinner is the post-workout meal. The leg half sits ≥48 h from both the quality and the long run, either side.
 - Low energy for the second session → drop 1 set per exercise before considering cancellation.
 - Never schedule hard running and Legs on the same day.
 

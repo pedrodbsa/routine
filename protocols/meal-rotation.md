@@ -2,8 +2,8 @@
 
 > Companion to `nutrition.md`, which holds the calorie tiers. These portion-locked cards are the eating
 > mechanism for hitting them. The per-card starch columns are sized for the Phase 4 cut tiers (Rest 1,750 /
-> Easy 1,950 / Quality 2,200 / Long 2,400); **for the Reverse and the Build use § Build Day Budgets**, which
-> sizes the starch for the +300 tiers.
+> Easy 1,950 / Quality 2,200 / Long 2,400); **for the Phase 8 slow cut use § Slow-Cut Portions**, which
+> gives the small offsets from those columns to the live tiers.
 
 > **Athlete default — Greek yogurt: always 2% fat.** All yogurt in this file and in `/plan` outputs is 2% unless explicitly stated otherwise. Substitute 0% only if the active phase's lowest calorie tier needs the fat trim (per-100 g delta vs 2%: −14 kcal, −2 g F).
 
@@ -83,7 +83,7 @@ once and you can stop using the scale for carbs entirely.
 | Oats (dry)           | —     | 67 g  | 93 g    | 115 g |
 | Wholegrain bread     | —     | 93 g  | 130 g   | 160 g |
 
-Breakfast is eaten every day. On rest days it runs small; § Build Day Budgets carries the rest-day oat portion (30 g).
+Breakfast is eaten every day. On rest days it runs small: 3 eggs + 30 g oats + fruit.
 
 ## Fruit Dessert Swap
 
@@ -343,8 +343,8 @@ imprecision.
 
 ## What to Watch
 
-Floors are phase-aware (`nutrition.md` § Daily Targets): **P165 / F65** in the reverse, build and
-maintenance; **P170 / F60** in the cuts. The § Build Day Budgets rows clear the build floors. When mixing
+Floors are phase-aware (`nutrition.md` § Daily Targets): **P165 / F65** in maintenance;
+**P170 / F60** in the cuts, including the Phase 8 slow cut. When mixing
 cards freely, the leanest combinations can land a few grams under either floor: one extra whey scoop
 closes protein, and 10–15 g of nuts built into a dish closes fat. Carbohydrate lands a little under the
 nominal figure because real food carries protein and fat above the minimums; what matters is calories on
