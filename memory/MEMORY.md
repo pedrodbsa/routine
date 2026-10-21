@@ -57,6 +57,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Prefers activity over food cuts](feedback-prefers-activity-over-food-cuts.md) — but NEAT is opportunistic and "more cardio" never means more hard running
 - [Lower tiers as social buffer](feedback-lower-tiers-as-social-buffer.md) — social evenings are priced into the tiers once, never subtracted twice; the +300 build that used it was closed 2026-10-19
 - [Adjust day on skipped session](feedback-adjust-day-on-skipped-session.md) — re-tier the day's food down from carbs, hold the floors, **name the feed to cut** (left alone he deletes the afternoon snack)
+- [No bench dip on chest day](feedback-no-bench-dip-on-chest-day.md) — he reads Chest slot 3 as a chest dip; the bench dip is triceps work after Back + triceps (2026-10-21); needs a protocol move via /report
 - [Living nutrition table](feedback-living-nutrition-table.md) — on `/log meal`, overwrite the eaten row, re-tune the rest to hold the tier; a Projected row over Expected is a defect when written
 - [Check time before nutrition](feedback-check-time-before-nutrition.md) — get the real local time before sequencing feeds
 - [No single dominant feed](feedback-no-single-dominant-feed.md) — meals ~450–750, snack ~250–300, protein boluses ≤~45 g; spread a shortfall, don't dump it into dinner
