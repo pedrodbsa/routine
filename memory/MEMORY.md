@@ -63,7 +63,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [No single dominant feed](feedback-no-single-dominant-feed.md) — meals ~450–750, snack ~250–300, protein boluses ≤~45 g; spread a shortfall, don't dump it into dinner
 - [Starch at both main meals](feedback-starch-at-both-main-meals.md) — shrink rice/potato, never delete it
 - [Fat floor — never a pourable drizzle](feedback-fat-floor-lean-fish-dinners.md) — build fat into the dish and bank it in the at-home meals; assume one meal gets swapped
-- [Solid snack, not a shake](feedback-solid-snack-over-shake.md) — afternoon anchor is ~200 g skyr + whey stirred in + fruit
+- [Solid snack, not a shake](feedback-solid-snack-over-shake.md) — afternoon anchor is ~200 g skyr + whey stirred in + fruit; whey is never off, used when a yogurt volume gets silly (2026-10-21)
 - [Post-dinner dessert for evening hunger](feedback-post-dinner-snack-hunger.md) — evening is the hard window; small afternoon snack, dessert after dinner
 - [Post-lunch sweet = craving control](feedback-fruit-after-lunch-craving-control.md) — 0-cal gelatin since 2026-08-06, carbs folded into lunch; post-lunch slot only
 - [No breakfast before a *quality* run](feedback-no-breakfast-before-run.md) — banana + coffee before quality/long; easy runs tolerate breakfast; on a pre-lunch double breakfast fuels the lift
