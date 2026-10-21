@@ -122,7 +122,7 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 | HRV | overnight **79**, weekly **65 — BALANCED** | 2026-10-20 | Oct 21: no data |
 | Resting HR | **53 bpm** (baseline 52) | 2026-10-20 | The +5 for 3 days rule fired Oct 16–18. Oct 21: Garmin shows 57 from a partial record, not used |
 | Body Battery | +67 to HIGH | 2026-10-20 | Oct 21: no data |
-| Weight | **76.06 kg** before voiding (~75.7) | 2026-10-19 | Last confirmed fasted 73.79 (Sep 30) |
+| Weight | **75.42 kg** (void state unconfirmed; Oct 20: 75.08 / 74.86) | 2026-10-21 | Last confirmed fasted 73.79 (Sep 30) |
 | Fitness Age | **37.4 yr** | 2026-09-29 | Context only: Garmin ranks scale body fat (BIA, ~7 pp high) as its priority-1 component, so it mostly tracks the scale's BF% |
 | Race prediction | **10K 51:43** / HM 1:57:48 | 2026-10-19 | ≤50:30 by Oct 18 missed; next milestone ≤50:30 by Dec 1. Sessions read slower than in September by ~2–3% at threshold (`logbook/2026-10/review-2026-10-18.md`) |
 | Control run | **132 bpm** (Jul 27: 136) | 2026-10-19 | Entry 1 of the restarted series, armband, time end condition |
