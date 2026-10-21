@@ -114,14 +114,14 @@ Tracked in `logbook/YYYY-MM/YYYY-MM-DD.md`, summarized by `/report`: weekly runn
 
 ## Key Metrics (Latest Snapshot)
 
-> Recovery rows refreshed daily by `/plan` — snapshot 2026-10-19 (`/consult`). Older snapshots: archive.
+> Recovery rows refreshed daily by `/plan` — snapshot 2026-10-21 (no sleep record: watch battery died; Oct 20 values kept). Older snapshots: archive.
 
 | Metric | Value | Date | Notes |
 | --- | --- | --- | --- |
-| Sleep | **8.43 h**, score **95** | 2026-10-19 | Night of Oct 18→19, onset **22:03**. Oct 17 and 18 were 5.8 h / 5.6 h with onsets 02:06 / 01:12 (the second after drinks); 3 onsets after 23:30 in the week of Oct 12–18 |
-| HRV | overnight **79**, weekly **64 — BALANCED** | 2026-10-19 | Back in band from 39 on Oct 18 |
-| Resting HR | **51 bpm** (baseline 52) | 2026-10-19 | The +5 for 3 days rule fired Oct 16–18 |
-| Body Battery | +68 to HIGH | 2026-10-19 | From 29 at wake on Oct 18 |
+| Sleep | **6.48 h**, score **80**, onset 22:36 | 2026-10-20 | Night of Oct 19→20. Oct 20→21 has no record (watch died); the athlete reports ~8 h, bed 22:00, up 06:00, quality 4 |
+| HRV | overnight **79**, weekly **65 — BALANCED** | 2026-10-20 | Oct 21: no data |
+| Resting HR | **53 bpm** (baseline 52) | 2026-10-20 | The +5 for 3 days rule fired Oct 16–18. Oct 21: Garmin shows 57 from a partial record, not used |
+| Body Battery | +67 to HIGH | 2026-10-20 | Oct 21: no data |
 | Weight | **76.06 kg** before voiding (~75.7) | 2026-10-19 | Last confirmed fasted 73.79 (Sep 30) |
 | Fitness Age | **37.4 yr** | 2026-09-29 | Context only: Garmin ranks scale body fat (BIA, ~7 pp high) as its priority-1 component, so it mostly tracks the scale's BF% |
 | Race prediction | **10K 51:43** / HM 1:57:48 | 2026-10-19 | ≤50:30 by Oct 18 missed; next milestone ≤50:30 by Dec 1. Sessions read slower than in September by ~2–3% at threshold (`logbook/2026-10/review-2026-10-18.md`) |
