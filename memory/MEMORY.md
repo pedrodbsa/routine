@@ -76,6 +76,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 
 ## Data and measurement
 
+- [Sedative confounds HRV/RHR](feedback-sedative-confounds-hrv-rhr.md) — diazepam before bed lowers HRV and raises RHR; ask about medication before reading a soft morning as load; keep it off the night before a race gate (2026-10-22)
 - [Check weigh-in timestamps](feedback-weigh-in-check-timestamps.md) — classify fasted-morning vs post-run before trending; post-run reads ~0.9 kg low
 - [Weigh-in: state, not clock](feedback-weigh-in-state-not-clock.md) — post-void, pre-food, whenever that lands; never prescribe a clock time
 - [Weight drop: water vs tissue](feedback-weight-drop-water-vs-tissue.md) — hydration-matched subset + absolute body water in kg; sanity-check the implied TDEE
