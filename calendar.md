@@ -16,15 +16,12 @@
 
 | Date | Kind | Item | Owner | Source |
 | --- | --- | --- | --- | --- |
-| 2026-10-20 Tue | phase | **Phase 8 Slow cut starts** (Oct 20 – Apr 12) at 0.2 kg/wk: Rest 1,850 / Easy-Strength 1,950 / Quality 2,250 / Long 2,450, P170 / F60 | coach | consult 2026-10-19 |
-| 2026-10-25 Sun | race | Hilly 10K, **B-race**: a hard supported effort at ~172–176 avg HR, recorded as a fitness read. **Hard only if the Oct 24 resting HR is ≤55 and HRV is in band; otherwise a tempo capped at 172.** 2–3 easy days before, no heavy Legs in the 3 days before | athlete | current-status § Race Schedule |
-| 2026-10-25 Sun | checkpoint | **Option B trial ends** (consult 2026-10-19; the sample was void). From Oct 26: one quality a week on the cut ladder, the leg half of Legs + shoulders back, the volume ramp to 36–40 km starts | coach | running.md § Weekly Rules |
 | 2026-11-02 Mon | phase | Nov 2–8 is a declared exempt week (trekking Nov 4–8): no volume floor, no strength expected, tiers unchanged, Long tier on hiking days | athlete | current-status § Weigh-In Series & Monitoring |
-| 2026-11-22 Sun | checkpoint | **Rate read #1**: slope of fasted readings Nov 2–22 (≥12) against −0.2 kg/wk. Slower than −0.1 → social and snack count first; a −100 step needs two consecutive slow reads. Faster than −0.4 → +100. No data → hold | coach | nutrition.md § Phase 8 |
 | 2026-11-15 Sun | checkpoint | **Second-quality gate, read #1** for the week of Nov 16 (athlete's call 2026-10-20): ≥36 km in the weeks of Oct 26 and Nov 9, the long run in both, RHR ≤55 and HRV in band on ≥5 of 7 mornings, the lifts delivered. The Nov 16 week is laid out for it (Legs not on Thursday) | coach | running.md § Weekly Rules |
 | 2026-11-22 Sun | checkpoint | **Second-quality gate, fallback read** (only if Nov 15 failed): the same test with Nov 16 added, opening Nov 23 | coach | running.md § Weekly Rules |
+| 2026-11-22 Sun | checkpoint | **Rate read #1**: slope of fasted readings Nov 2–22 (≥12) against −0.2 kg/wk. Slower than −0.1 → social and snack count first; a −100 step needs two consecutive slow reads. Faster than −0.4 → +100. No data → hold | coach | nutrition.md § Phase 8 |
 | 2026-11-29 Sun | checkpoint | Long run reaches 16 km | coach | running.md § Long Runs |
-| 2026-12-01 Tue | checkpoint | Garmin 10K prediction ≤50:30 (motivation line) | coach | current-status § Race Schedule |
+| 2026-12-01 Tue | checkpoint | Garmin 10K prediction ≤50:30 (motivation line). **Met early: 48:53 on Oct 25** | coach | current-status § Race Schedule |
 | 2026-12-12 Sat | race | S. Silvestre Coimbra 10K, 18:30, with friends. **B effort, run hard** at ~172–176 avg HR, recorded as a fitness read. A Quality day inside the slow cut. 3 easy days before, no heavy Legs in the 3 days before, no separate long run that week | athlete | current-status § Race Schedule |
 | 2026-12-20 Sun | checkpoint | **Rate read #2**: slope Nov 23 – Dec 20 (≥15 fasted readings) | coach | nutrition.md § Phase 8 |
 | 2026-12-21 Mon | phase | **Christmas window Dec 21 – Jan 10**: tiers and § Social Days hold; excluded from the rate reads | coach | nutrition.md § Phase 8 |
@@ -63,6 +60,9 @@
 
 | Date | Kind | Item | Owner |
 | --- | --- | --- | --- |
+| 2026-10-20 | phase | Phase 8 Slow cut started (Oct 20 – Apr 12) on Rest 1,850 / Easy-Strength 1,950 / Quality 2,250 / Long 2,450, P170 / F60 | coach |
+| 2026-10-25 | race | Condeixa 10K (course changed to flat): **49:27** at the 10 km lap (watch, official pending), avg HR 178, negative split 25:24 / 24:03, a PR. Run uncapped on the athlete's override (Oct 24 gate failed on a diazepam-confounded morning; race morning green) | athlete |
+| 2026-10-25 | checkpoint | Option B trial ended (sample void). One quality a week from Oct 26, the leg half back, the ramp to 36–40 km | coach |
 | 2026-09-29 | todo | Garmin profile: height 170 cm, Thursday added to the training days | athlete |
 | 2026-09-29 | todo | Buy a door pull-up bar (pull-up practice, `training.md` § Pull-up practice) | athlete |
 | 2026-10-05 | appointment | Holiday Oct 2–5. Oct 2 run and Back + triceps missed without a reason; no long run that weekend | athlete |

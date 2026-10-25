@@ -11,7 +11,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 
 ## Standing facts
 
-- PRs: 10K **49:57** (Mar 8 2026, 4 Estações Coimbra); HM Fátima Mar 29 2026. Dates and phases live in `calendar.md` and `current-status.md`.
+- PRs: 10K **49:27** (Oct 25 2026, Condeixa, watch; official pending; previous 49:57 Mar 8); HM Fátima Mar 29 2026. Dates and phases live in `calendar.md` and `current-status.md`.
 - **Easy ceiling 142 bpm in every environment** (lab, 2026-04-28). LT1 145, LT2 172 @ 5:00/km. Long-run drift cap ≤145. Sub-T work band 152-165, ceiling 168.
 - Treadmill easy pace 8-9 km/h. Outdoor easy runs ~6% faster than the belt at the same HR — compare pace-at-HR within one environment only.
 - HR source: COROS armband (trust it).
@@ -41,6 +41,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Garmin easy paces work](feedback-garmin-easy-paces-work.md) — **corrected 2026-10-18:** the prediction moved with ≥35 km/wk + a weekly long run (Feb–Mar), not easy-pace purity; keep easy days easy but never use this to justify low volume
 - [Walk recovery on intervals](feedback-walk-recovery-intervals.md) — walk, not jog; read end-of-rep max HR, not rep average
 - [Benchmark on matched reps](feedback-benchmark-matched-reps.md) — compare repeat sessions on the warmed-up reps, not session means
+- [Race: start slower, finish fast](feedback-race-start-slower-negative-split.md) — km 1 ~10 s/km slower than goal pace, HR ≤170, close from km 8; expect ~176–180 avg for a 10K (Oct 25 PR 49:27 on 25:24 / 24:03)
 - [Treadmill control run protocol](project-treadmill-control-run-protocol.md) — 5.0 km at a locked 8.6 km/h, 1%, treadmill mode, armband; tracked number is avg HR; never raise the belt
 - [Treadmill run back-to-back with lift](feedback-treadmill-run-backtoback-with-lift.md) — a treadmill run + lift on one day is one gym trip; fuel accordingly
 - [Easy run always with a lift](feedback-easy-run-always-with-a-lift.md) — a day is quality, or an easy run + a lift; a lone easy run is "a waste" (2026-10-13); bonus run drops first
@@ -76,7 +77,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 
 ## Data and measurement
 
-- [Sedative confounds HRV/RHR](feedback-sedative-confounds-hrv-rhr.md) — diazepam before bed lowers HRV and raises RHR; ask about medication before reading a soft morning as load; keep it off the night before a race gate (2026-10-22)
+- [Sedative confounds HRV/RHR](feedback-sedative-confounds-hrv-rhr.md) — diazepam before bed lowers HRV and raises RHR; ask about medication before reading a soft morning as load; read race gates on race morning (Oct 24 failed confounded, Oct 25 green, PR)
 - [Check weigh-in timestamps](feedback-weigh-in-check-timestamps.md) — classify fasted-morning vs post-run before trending; post-run reads ~0.9 kg low
 - [Weigh-in: state, not clock](feedback-weigh-in-state-not-clock.md) — post-void, pre-food, whenever that lands; never prescribe a clock time
 - [Weight drop: water vs tissue](feedback-weight-drop-water-vs-tissue.md) — hydration-matched subset + absolute body water in kg; sanity-check the implied TDEE

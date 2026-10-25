@@ -273,3 +273,120 @@ Nothing below has been applied. Reply "apply" (all) or "apply 1, 3 …". These s
 12. **`running.md` § Race Execution, Oct 25 line:** append "**Hard only if the Oct 24 resting HR is ≤55 and HRV is in band; otherwise run as a tempo capped at 172.**" *Reason: written in the Oct 18 file, needs to live in the protocol.*
 13. **`nutrition.md` § Phase 7, build weight band:** "the reverse returns ~1.0–1.2 kg of glycogen and water (the athlete's own July 2026 data), so a rise into that band is not fat" → "a rise into that band is expected from glycogen and water, **but this has not been measured**". "No data → hold." → "No data → hold; **until two ≥4-reading weeks exist the band is unreadable, the Monday waist tape is the fat channel, and reports say 'unreadable', never 'water'**." Same wording in `current-status.md` § Body Composition, build target row. *Reason: the claim has no source, and the band has not read once.*
 14. **Milestone and control run.** `current-status.md` § Race Schedule: "≤49:30 by Dec 1" → "**≤50:30 by Dec 1**" (calendar row to match on apply). `running.md` § Easy-Run Rules, control run: "fortnightly on the Monday easy slot" → "**weekly on Mondays until three valid entries exist, then fortnightly**" (and in `current-status.md` § Aerobic Threshold Compliance, `calendar.md` § Recurring). *Reason: fortnightly cannot produce a read before Dec 12; the old milestone sat 1:30 under today's value.*
+
+# Run 3 — 2026-10-25 (Oct 19 – Oct 25, Slow cut week 1, race week)
+
+> Source: live Garmin MCP (activities Sep 21 – Oct 25, sleep summaries Oct 19–25, HRV, resting HR, Body Battery, weigh-ins, daily steps, race predictions) and the daily files Oct 19–25. Unattended run: nothing in `protocols/` was touched. **The Run 2 (Oct 18) edits are closed.** The 2026-10-19 consult applied or superseded them: `running.md` carries the 36–40 km target, the reordered drop order, the Oct 25 gate and the weekly control run, `current-status.md` carries Phase 8 as CURRENT with Last verified 2026-10-19, and `strength-exercises.md` carries the re-entry refresh to Oct 19.
+
+## Headline
+
+1. **The Oct 25 10K ran in 49:27 at the 10 km lap (watch), a PR by ~30 s on the 49:57 of Mar 8, pending the official time.** It was a negative split, 25:24 then 24:03, with the last four km at 4:49, 4:50, 4:42 and 4:33, avg HR 178 and max 187. The course changed to flat on the morning (+45 m on the watch).
+2. **The PR ran against the written race rule, on the athlete's override.** The gate read on Oct 24 failed (RHR 56, HRV 57) one clean night after two diazepam doses. Race morning was the greenest of the fortnight (HRV 78 BALANCED, RHR 53, sleep 8.86 h, score 83). The plan kept the 172 cap as written and recommended opening it to 172–176. The athlete lifted the cap entirely and chose a slow start himself ("last time I started way too fast"). Both calls were right on the day. The rule read the wrong morning (edit 7).
+3. **Garmin's 10K prediction moved 51:43 → 48:53 in a week.** The ≤50:30 milestone due Dec 1 is met five weeks early, and the Apr 1 line (≤48:30) is 23 s away. The prediction is the athlete's motivation line, and it is now moving the right way.
+4. **Volume closed at 29.66 km over 4 runs, 0.34 km under the 30 km floor.** It is not a breach: the race-week cut was declared in advance on Oct 18 (the RHR rule, −20%, ~28 km planned), and Oct 22 was lost to a neck contracture. No warm-up or cool-down was recorded on race day, which is where the planned ~3 km went. The corrective action is the ramp to 36–40 km that the stack already starts tomorrow, folded around the post-race rule (Actions). ACWR **1.16**.
+5. **The week's weak spots are off the run:** strength 2/3 (reason on file), the scale dark since Oct 22, no waist tape for the fourth Monday, and **no daily line (motivation 1–5) for 14 days**, through a week in which the athlete reported anxiety, a low mood and thoughts of quitting (Oct 21–24).
+
+## Week
+
+| Week | Runs (km, avg HR) | km | ACWR | Quality | Strength | Fasted weigh-ins | Sleep ≥70 | Onset ≤23:30 |
+| ---- | ----------------- | -- | ---- | ------- | -------- | ---------------- | --------- | ------------ |
+| **Oct 19–25** | control 5.01 @132 · **sharpener 3 × 1 km, 8.01 @148/178** · easy 6.59 @139 (+3 strides) · **10K race 10.05 @178/187** | **29.66** | **1.16** | 2 (Oct 20 sharpener, Oct 25 race) | **2/3** (Back + triceps Oct 19, Chest + biceps Oct 21; Legs + shoulders not delivered — neck contracture, medication) | **4/7** (Oct 19 pre-void, Oct 20, Oct 21 partial void, Oct 22 void unconfirmed) | **5/6 recorded** (95, 80, —, 82, 65, 76, 83) | **7/7** (22:03, 22:36, ~22:00 by report, 22:30, 22:29, 22:19, 22:35 WEST) |
+
+**ACWR:** 29.66 ÷ mean(17.54, 20.62, 27.25, 37.02) = 29.66 ÷ 25.61 = **1.16** (sweet spot).
+
+**Composite load:** **~1,614 min·RPE** over 6 sessions, all rated: control 35 × 3, Back + triceps 51 × 5, sharpener 52 × 5, Chest + biceps 67 × 6, easy 49 × 3, race 50 × 9. The three rated weeks before it averaged 1,198 (679, 1,367, 1,549), so this is 1.35× that and the highest on record, carried by the race. There is still no clean 4-week average.
+
+**Steps:** 8,988/day (11,323 · 13,445 · 4,759 · 2,461 · 11,246 · 5,910 · 13,775). Context only.
+
+**Social days:** none reported. **Snack days:** at least one. The athlete reported pre-bed snacking on Oct 22 (cereal with milk, "etc"), and the frequency and bowl size were asked and never answered, so the count is a floor, not a number.
+
+## Session reads
+
+- **Oct 19 control run:** 5.01 km at 8.6 km/h, avg **132**, entry 1 of the restarted series (Jul 27: 136). Valid. The watch's implied speed (8.59 km/h) differs from July's 8.41–8.43, so compare HR, never the watch pace.
+- **Oct 20 sharpener 3 × 1 km:** 5:00 / 4:53 / 4:49 at 160 / 166 / 168, a clean negative split, but rep 1 opened faster than "no faster than 5:05" and **rep 3's end-of-rep maximum was 178 against the 176 ceiling**. It is the third quality running (Oct 6, Oct 14, Oct 20) where the closing reps passed the ceiling. The race shows the engine is there. The ceiling is a guardrail that keeps getting leaned on, not a fitness limit.
+- **Oct 23 easy + strides:** 6.00 km easy at 7:24/km and ~139, with laps 4–6 at 143–145 (over the cap by 1–3 bpm, no walk break). 3 of 4 strides landed. Garmin feel 25 on a diazepam-confounded morning.
+- **Oct 25 race:** 10.05 km in 49:39, 10 km lap 49:27. Km 1 at 5:16 and HR 169 against a planned 5:10; km 2–4 at 5:08, 4:55, 4:56; km 5–6 at 5:09 on the course's rise; km 7–10 at 4:49 → 4:33. HR held 179–180 from km 3 to km 9, then 181 on km 10, with a max of 187. TE 5.0, RPE 9, Body Battery −24. **Read:** a race HR of ~178 for 10 km at a 4:57 average sits 6 bpm over LT2 (172 @ 5:00 in April), and it moved faster than LT2 pace at that HR. That points to a threshold pace a little under 5:00 now. The next continuous-threshold session (week of Oct 26) is where that gets tested, at 165–172.
+- **Strength:** Back + triceps (Oct 19) delivered two compounds in full and short arm slots. Barbell row reached 45 × 10, 9, the lat pulldown 100 × 10, 10, 10, 8, and the pull-up test came in at **0 strict**. Chest + biceps (Oct 21) delivered all 22 sets: bench 50 × 10 then 45 × 8 × 3 (a step under Oct 12), barbell curl 25 × 10, 9, 7, 8, and bench dip +16 × 15 × 3, run against `feedback-no-bench-dip-on-chest-day`. Loads for `strength-exercises.md` are in edit 6.
+
+## Running numbers (motivation line, always reported)
+
+- **Race: 49:27 at 10 km (watch), PR (49:57, Mar 8), official time pending.** May 17 Ansião: 52:16 at avg 176.
+- **Garmin 10K prediction: 48:53** (Oct 19: 51:43). **≤50:30 by Dec 1: met early.** ≤48:30 by Apr 1: 23 s away. HM 1:54:24.
+- **Control run:** 132 (entry 1 of 3, Oct 19). Entry 2 is due Monday, but the post-race rule blocks it (Actions). No read is possible until three entries exist.
+- **Long-run pace-at-HR:** no long run this week (race week). The last clean reference is still Sep 20 (~6:28–6:33 at 138–141). It is the first number to restart next week.
+- **Spring sub-47 needs 4:42/km.** From 49:27 that is 2:27 (5%) in ~6 months, ambitious but no longer remote. The stack's own Apr 12 checkpoint decides it.
+
+## Recovery and sleep
+
+- **HRV:** overnight 79 → 79 → — → 56 → 56 → 57 → **78**, weekly 67 (BALANCED, band 60–87). The Oct 22–24 dip lines up with diazepam (doses on the nights of Oct 21→22 and Oct 22→23) and the anxiety the athlete reported from Oct 21. It reversed on the second clean night.
+- **Resting HR:** 51 → 53 → (57 partial) → 56 → 59 → 56 → **53**. No override rule fired. The Oct 16–18 RHR rule set this week's −20%.
+- **Sleep: the best week on record for onset, 7/7 before 23:30**, with every recorded night between 22:03 and 22:36. Scores were ≥70 on 5 of 6 recorded nights (Oct 23 at 65, diazepam, REM 22 min). The Oct 18 bedtime flag is closed.
+- **Mood:** the athlete reported anxiety and a low mood from Oct 21, demotivation and "thinking of abandoning this fitness journey" on Oct 22, and early-cut hunger. `/escalate` answered each, and advised the prescriber or GP if it persists. It is in the record because it moves the markers and the adherence. It is not a coaching verdict.
+
+## Body composition and nutrition
+
+- **Fasted series (one reading a day):** Oct 19 **76.06** (07:54, before voiding) · Oct 20 **75.08** (06:13; 74.86 at 06:45) · Oct 21 **75.42** (09:06, partial void) · Oct 22 **76.25** (08:17, void unconfirmed). **Mean 75.70 kg on 4 readings**, level with the consult's ~75.7 starting point. Oct 20 – Nov 1 is the glycogen-water window and enters no rate read. The first window, Nov 2 – Nov 22, needs ≥12 fasted readings, so the scale has to come back now. Three days went dark at the end of the week.
+- **Waist tape:** not recorded (the tape measure was "on its way" on Oct 20). Fourth Monday missed. The waist is the slow cut's fat channel and has no first entry.
+- **Tiers:** unchanged. There is no data that could move them (no rate read before Nov 22), and the default holds.
+- **Day-type discipline:** every plan day ran on its tier with the food re-tuned meal by meal (Oct 19 shake skipped, Oct 20 no whey or nuts, Oct 25 the Nestum swap and unplanned eggs). No skipped session needed re-tiering this week: the Oct 22 rest day was already planned on the Rest tier.
+
+## Breaches since the last report (Oct 18)
+
+None. Every miss carries a reason on file: Legs + shoulders (shoulder half dropped Oct 22, neck contracture and medication; leg half off under the race-week rules). The 30 km floor was missed by 0.34 km under a reduction declared in advance. The weigh-in row cleared its minimum (4/7). The breach the template cannot see is the **daily line: none received since Oct 11**, so the motivation series is empty for the whole slow cut so far.
+
+## Protocol sync check (2026-10-25 run)
+
+- **Unrecorded decisions swept.**
+  - (a) The **race-day override** (no cap) and its result are in the Oct 25 file only. Edit 5 logs them, and edit 7 turns the lesson into the Dec 12 rule.
+  - (b) The **negative-split start** was the athlete's own call, after the May race went out at ~4:30. It is written to memory directly (`memory/feedback-race-start-slower-negative-split.md`) and feeds edit 7.
+  - (c) The **Oct 22 snacking question** (nights per week, bowl size) is still open. The Oct 22 file says that if it persists after Oct 25 with a week of data, run `/consult`. That week of data does not exist, because the athlete never answered. Carried forward in the Actions.
+  - (d) **Bench dips on chest day:** the memory (Oct 21) says they need a protocol move. `training.md` § Chest + Biceps still lists slot 3 in a way he reads as a chest dip, so edit 8 proposes the move.
+- **Cross-file consistency.** The Oct 25 race lines in `running.md` § Race Execution, `current-status.md` § Race Schedule and `calendar.md` are now past (edits 4 and 7; calendar moved directly). The Dec 12 "172–176 avg" appears in all three and changes together on apply (edit 7). `current-status.md` § Athlete Profile still carries the 49:57 PR (edit 3). The Key Metrics snapshot is dated Oct 21 (edit 2). The calorie tiers sum correctly on every Phase 8 row (P170 / F60, carbs = (tier − 1,220) ÷ 4: 158 / 183 / 258 / 308 ✓).
+- **Staleness.** The Option B material is dead after Oct 25. `running.md` § Weekly Rules mentions its end once ("The Option B trial ends at the Oct 25 review…"), and edit 9 trims it to the forward rule. `current-status.md` stays at operational size.
+- **Memory.** Added `feedback-race-start-slower-negative-split.md`. `feedback-sedative-confounds-hrv-rhr.md` gains the Oct 24 → 25 evidence (a failed gate on a confounded morning, then a green race morning and a PR).
+- **Calendar.** Moved to Done: the Oct 20 phase start, the Oct 25 race (49:27 on the watch) and the Option B end. The Dec 1 milestone row is annotated as met early (48:53). Nothing overdue. **Next 4 weeks:** Oct 26 the ramp starts, under the post-race rule; Oct 26 the waist tape; Nov 2–8 the exempt trekking week (Nov 4–8); Nov 15 the second-quality gate, read #1 (needs ≥36 km in the weeks of Oct 26 and Nov 9); Nov 22 rate read #1 and the fallback gate read.
+
+## Actions
+
+1. **Post-race, then the ramp (Oct 26 – Nov 1).** Mon–Tue: walking, mobility and the shoulder half (upper body, allowed). No lower-body lifting until Tue ~11:30, and the first easy run Wed (72 h) only if the legs feel normal and pain is ≤2/5. That leaves Wed–Sun for four runs with Saturday rest, so 36 km is a stretch target this week and **the 30 km floor is the commitment**. The long run (12–13 km, Sunday) is the run to protect, and the quality (continuous threshold 3 × 7 min at 165–172) goes Thursday or Friday at ≥72 h from the race. The leg half is the next thing dropped if the week compresses (drop order). `/plan` lays it out day by day. **The control run (entry 2) moves to Wed Oct 28 as the first post-race run** if the legs are normal. A treadmill easy at 8.6 km/h is exactly the 72 h run the rule allows.
+2. **Weigh in every morning, starting tomorrow, and the waist tape tomorrow.** Rate read #1 needs ≥12 fasted readings from Nov 2 – Nov 22, and the trekking week sits inside that window.
+3. **The daily line, one number a night.** Fourteen days without it, through a hard mood week. The 1–5 buttons on the recap are enough.
+4. **Snacking:** how many nights a week, and the bowl size. It is the leak the athlete named himself, and it is the first lever the Nov 22 read will look at.
+5. **Reply "apply" to write the 9 protocol edits below**, or "apply" with numbers. Edit 7 (the Dec 12 race rule) is the one that matters.
+
+## Phase status
+
+**Phase 8 (Slow cut), week 1 of 25, done; week 2 starts tomorrow.** The race is behind; the trekking week (Nov 2–8, exempt) is 8 days out. **No fallback week is needed:** the markers are back to their Oct 19 level and sleep onset was perfect. The post-race 48 h is a rule, not a fallback.
+
+### Proposed protocol edits
+
+Nothing below has been applied. Reply "apply" (all) or "apply 1, 3 …".
+
+1. **`current-status.md` header:** `> Last verified: 2026-10-19` → `> Last verified: 2026-10-25`. *Reason: the weekly report ran.*
+2. **`current-status.md` § Key Metrics**, snapshot note → "snapshot 2026-10-25", rows:
+   - Sleep: **8.86 h**, score **83**, onset 22:35 WEST (2026-10-25; the DST change added an hour in bed).
+   - HRV: overnight **78**, weekly **67 — BALANCED** (2026-10-25; Oct 22–24 at 56–57 on diazepam nights).
+   - Resting HR: **53 bpm** (2026-10-25).
+   - Body Battery: **+59**, HIGH (2026-10-25).
+   - Weight: **75.70 kg**, 7-day mean of 4 fasted readings (Oct 19–22; last 76.25 on Oct 22, void unconfirmed). Notes → "Glycogen window Oct 20 – Nov 1 enters no rate read."
+   - Race prediction: **10K 48:53** / HM 1:54:24 (2026-10-25). Notes → "≤50:30 by Dec 1 met early; next ≤48:30 by Apr 1."
+   - *Reason: the snapshot is dated Oct 21.*
+3. **`current-status.md` § Athlete Profile:** `- **Recent 10K PR:** 49:57 (2026-03-08) — pace 5:00/km, almost exactly LT2` → `- **Recent 10K PR:** **49:27** (2026-10-25, Corrida Quatro Estações – Condeixa, flat; watch 10 km lap, official time pending) — 4:57/km at avg HR 178, negative split 25:24 / 24:03. Previous: 49:57 (2026-03-08).` *Reason: new PR; update to the official time when the athlete sends it.*
+4. **`current-status.md` § Race Schedule:** the Oct 25 row → `| ~~Oct 25~~ | 10K | Corrida Quatro Estações – Condeixa (course changed to flat on race morning) | done | **49:27** at the 10 km lap (watch; official pending), avg HR 178 / max 187, negative split 25:24 / 24:03. Run uncapped on the athlete's override: the Oct 24 gate failed (RHR 56, HRV 57) on a diazepam-confounded morning; race morning passed it (RHR 53, HRV 78). PR by ~30 s |`. The milestone line: `**≤50:30 by Dec 1**` → `~~≤50:30 by Dec 1~~ (**met Oct 25, 48:53**)`. *Reason: the race is past and the milestone was met.*
+5. **`current-status.md` § Coaching Log, add:** `| **2026-10-25** | **Oct 25 10K: 49:27 (watch), PR.** Gate as written (Oct 24 read) failed on a diazepam-confounded morning; race morning green (HRV 78, RHR 53). Plan kept the 172 cap and recommended 172–176; **the athlete overrode to uncapped** and chose a slow start (km 1 5:16 → km 10 4:33). Week Oct 19–25: 29.66 km, 0.34 under the floor, reduction declared Oct 18 (RHR rule); corrective: the ramp from Oct 26 with the 30 km floor as the commitment in the post-race week. Prediction 51:43 → 48:53 | Dec 12 rule rewritten (edit 7 of the Oct 25 report). Gates read on race morning from now on |`. *Reason: a race result and an override with live consequences.*
+6. **`strength-exercises.md`, Oct 21 Chest + biceps refresh** (Last logged → 2026-10-21 on each):
+   - Barbell bench: Notes gain "Oct 21: 50 × 10, then 45 × 8, 8, 8 (a step under Oct 12)". Working load unchanged (50 × 10 × 4 baseline; consolidate at 50 next).
+   - Low-to-high cable flye: Working load `10 kg × 15, 15, 12 (seeded)` → `10 kg × 15, 15, 14, 12`; Last logged 2026-07-13 → 2026-10-21.
+   - Barbell curl: Notes gain "Oct 21: 25 × 10, 9, 7, 8, so 25 holds". Last logged 2026-09-30 → 2026-10-21.
+   - Bench dip (weighted): Working load `+16 kg × 15, 15, 14` → `**+16 kg × 15, 15, 15**` (top of the range: step to +18 next time, on a Back + triceps day). Last logged → 2026-10-21.
+   - Hammer curl: Working load `14 kg × 10, 10` → `**14 kg × 12, 11, 11, 11**`. Last logged 2026-09-30 → 2026-10-21.
+   - Long-lever plank: Last logged → 2026-10-21, note "30 s × 3 (pre-filled, unverified)".
+   - Re-entry banner: `Re-entry Sep 30 – Oct 19` → `Re-entry Sep 30 – Oct 21`.
+   - *Reason: the Oct 21 session is not in the source of truth.*
+7. **`running.md` § Race Execution** (with `current-status.md` § Race Schedule's Dec 12 row and the `calendar.md` Dec 12 row to match):
+   - Delete the Oct 25 line (past; the record lives in the coaching log).
+   - Dec 12: `even effort at ~172–176 avg HR, climbs run by effort` → `**negative split**: km 1 ~10 s/km slower than goal pace with HR ≤170, goal pace km 2–7, close from km 8. Expect avg HR ~176–180 (Oct 25: 178 on 25:24 / 24:03, PR). **Gate, read on race morning:** hard only if resting HR is ≤55 and HRV is in band; otherwise a tempo capped at 172. Keep diazepam off the two nights before`.
+   - Add under § Race Execution: "**Every race gate reads race-morning markers.** The day-before read failed on Oct 24 on a confounded morning, and race morning was the cleanest read of the fortnight."
+   - *Reason: the Oct 25 race showed the 172–176 band under-states his race effort, the fast start is his known failure mode, and the day-before gate read the wrong morning.*
+8. **`training.md` § Chest + Biceps and § Back + Triceps:** Chest slot 3 `3. **Dips** — 3 x 8-12 (weighted bench dip, fixed)` → `3. **Second chest movement** — 3 x 10-12 (incline DB press or DB flye from the rotation group; never a dip)`. Back slot 4 `4. **Triceps isolation** — 3 x 10-15 (cable pushdown)` → `4. **Triceps isolation** — 3 x 10-15 (cable pushdown, alternating with the **weighted bench dip, 3 x 8-15**, the scorecard marker: the dip runs at least every other Back day)`. *Reason: `memory/feedback-no-bench-dip-on-chest-day.md` (Oct 21) asks for the move, and he reads slot 3 as a chest dip. The bench dip is a scorecard marker, so it moves rather than disappears.*
+9. **`running.md` § Weekly Rules:** in the quality bullet, delete "The Option B trial ends at the Oct 25 review (sample void: Oct 9 against a failed gate, Oct 16 cancelled, Oct 20 gated)." The rest of the bullet stands. *Reason: past material; protocols are forward-looking.*
