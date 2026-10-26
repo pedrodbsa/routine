@@ -42,6 +42,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Walk recovery on intervals](feedback-walk-recovery-intervals.md) — walk, not jog; read end-of-rep max HR, not rep average
 - [Benchmark on matched reps](feedback-benchmark-matched-reps.md) — compare repeat sessions on the warmed-up reps, not session means
 - [Race: start slower, finish fast](feedback-race-start-slower-negative-split.md) — km 1 ~10 s/km slower than goal pace, HR ≤170, close from km 8; expect ~176–180 avg for a 10K (Oct 25 PR 49:27 on 25:24 / 24:03)
+- [Dec 12 hill prep](project-dec12-hill-prep.md) — rolling course +119 m; treadmill hill strides every other week from Nov 16, incline threshold Nov 9–22, rolling saved-course long runs
 - [Treadmill control run protocol](project-treadmill-control-run-protocol.md) — 5.0 km at a locked 8.6 km/h, 1%, treadmill mode, armband; tracked number is avg HR; never raise the belt
 - [Treadmill run back-to-back with lift](feedback-treadmill-run-backtoback-with-lift.md) — a treadmill run + lift on one day is one gym trip; fuel accordingly
 - [Easy run always with a lift](feedback-easy-run-always-with-a-lift.md) — a day is quality, or an easy run + a lift; a lone easy run is "a waste" (2026-10-13); bonus run drops first

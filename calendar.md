@@ -17,6 +17,8 @@
 | Date | Kind | Item | Owner | Source |
 | --- | --- | --- | --- | --- |
 | 2026-11-02 Mon | phase | Nov 2–8 is a declared exempt week (trekking Nov 4–8): no volume floor, no strength expected, tiers unchanged, Long tier on hiking days | athlete | current-status § Weigh-In Series & Monitoring |
+| 2026-11-09 Mon | reminder | Dec 12 hill prep starts: the Nov 9–22 continuous threshold runs on the treadmill with incline changes (3 min 1% / 2 min 3–4%, HR 165–172) | coach | memory/project-dec12-hill-prep.md |
+| 2026-11-16 Mon | reminder | Hill strides (6 × 15 s at 6–8% treadmill, after an easy run) replace the flat strides this week and on Nov 30; none in the Dec 7–13 race week | coach | memory/project-dec12-hill-prep.md |
 | 2026-11-15 Sun | checkpoint | **Second-quality gate, read #1** for the week of Nov 16 (athlete's call 2026-10-20): ≥36 km in the weeks of Oct 26 and Nov 9, the long run in both, RHR ≤55 and HRV in band on ≥5 of 7 mornings, the lifts delivered. The Nov 16 week is laid out for it (Legs not on Thursday) | coach | running.md § Weekly Rules |
 | 2026-11-22 Sun | checkpoint | **Second-quality gate, fallback read** (only if Nov 15 failed): the same test with Nov 16 added, opening Nov 23 | coach | running.md § Weekly Rules |
 | 2026-11-22 Sun | checkpoint | **Rate read #1**: slope of fasted readings Nov 2–22 (≥12) against −0.2 kg/wk. Slower than −0.1 → social and snack count first; a −100 step needs two consecutive slow reads. Faster than −0.4 → +100. No data → hold | coach | nutrition.md § Phase 8 |
