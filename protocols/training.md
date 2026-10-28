@@ -72,7 +72,7 @@ One slot of 3 sets closing each session, rotating the pattern across the week: a
 
 ## Legs + Shoulders
 
-**Legs first, while fresh:** slots 1, 2 and 4 are the leg half (~35 min). Slot 3 is optional, never a reason to skip the session. No calf work (`[[feedback-no-calf-training]]`), no box jumps (`[[feedback-no-box-jumps]]`).
+**Legs first, while fresh:** slots 1, 2, 3 and 4 are the full leg half (~40 min), and all four run whenever the day's markers allow it. A marker-downgraded day drops slot 3 first, then slot 4, and the downgrade is re-checked the next morning rather than carried forward. Slots 3 and 4 **rotate against the last two Legs sessions**, so no option repeats within three sessions. The shoulder half never outweighs the leg half: if the leg half is cut to fewer than 8 working sets, the shoulders drop to the press plus one superset (athlete, 2026-10-28: "way too shoulder heavy, and light on the legs"). No calf work (`[[feedback-no-calf-training]]`), no box jumps (`[[feedback-no-box-jumps]]`).
 
 The leg dose is heavy, low-rep, low-volume and explosive. That biases adaptation toward neural strength rather than fibre growth, and it has the strongest evidence for running economy. Avoid the 8-15 rep near-failure zone and accessory quad volume.
 
@@ -80,7 +80,7 @@ The leg dose is heavy, low-rep, low-volume and explosive. That biases adaptation
 
 - 3-4 x 4-6 reps **heavy**, RIR 2-3, rest 2-3 min
 - Alternate squat-dominant and hinge-dominant emphasis by week
-- Options: Back Squat, Front Squat, Romanian Deadlift, Trap-Bar Deadlift, Hip Thrust (Leg Press on PT days)
+- Options: Back Squat, Front Squat, Romanian Deadlift, Barbell Deadlift, Hip Thrust (Leg Press on PT days). Trap-bar deadlift is dropped: neither self-led gym has a trap bar.
 
 **2. Explosive / plyometric block**
 
@@ -88,20 +88,21 @@ The leg dose is heavy, low-rep, low-volume and explosive. That biases adaptation
 - Options: light Jump Squats (default), Broad Jumps, Power A-Skips 3x20 m
 - Stop the set the moment contacts lose snap. This block also carries the Achilles/calf-stiffness role, since calves are not trained directly.
 
-**3. Single-leg — prehab dose (optional)**
+**3. Single-leg — prehab dose (rotating)**
 
 - 2 x 8 reps/leg, light: a control slot, not a loading slot
-- Options: Bulgarian Split Squat, Walking Lunges, Step-Ups
+- Options, rotated against the last two Legs sessions: Bulgarian Split Squat, Walking Lunges, Reverse Lunge, Step-Ups. It stays at 2 x 8 light, because a quad-size mover works against the no-added-leg-size goal.
 
-**4. Hamstring curl**
+**4. Hamstring / posterior chain**
 
-- 2 x 8-10 reps, moderate load, RIR 3 (hamstring-strain insurance for quality running)
+- 2 x 8-10 reps (Nordic 2-3 x 5-6), moderate load, RIR 3 (hamstring-strain insurance for quality running)
+- Options, rotated against the last two Legs sessions: Back Extension (the G1 machine), Nordic Ham Curl, Single-Leg RDL, Leg Curl (PT days). Nordics have the strongest injury-prevention evidence (meta-analysis, injury risk ratio ~0.5, mostly team sports), so they come up at least every third session.
 
 **5. Vertical press** — 3 x 8-12 overhead press (fixed)
 
-**6. Lateral raise** — 4 x 12-15, superset with slot 7
+**6. Lateral raise** — 4 x 12-15, superset with slot 7. Alternate DB and cable, a different implement each session. No front raises: the overhead press and the bench already load the front delt.
 
-**7. Rear delt** — 3 x 15-20, face pull or reverse fly
+**7. Rear delt** — 3 x 15-20, rotating face pull, cable reverse fly (X) and the prone DB reverse fly against the last two sessions
 
 **8. Abs** — 3 sets
 
