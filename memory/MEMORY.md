@@ -31,6 +31,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [No box jumps](feedback-no-box-jumps.md) — default the plyo slot to light jump squats (or broad jumps / A-skips)
 - [Split = major + minor](feedback-split-major-plus-minor.md) — Chest + biceps / Back + triceps / Legs + shoulders, abs every session; athlete-designed, don't restructure unasked
 - [Strength rotation: two-session lookback](feedback-strength-rotation-two-session-lookback.md) — rotate non-fixed slots against the last TWO same-type sessions
+- [Legs day variety and leg share](feedback-legs-day-variety-and-leg-share.md) — Oct 28: felt shoulder-heavy, light on legs, repetitive; run all four leg slots when markers allow and rotate the single-leg and hamstring slots
 - [Core needs ≥2 options per pattern](feedback-core-needs-two-options-per-pattern.md) — a one-option pattern gets dropped, not rotated; select core by pattern (anti-rotation / anti-lateral for runners)
 - [Verify a load baseline before flagging a regression](feedback-verify-load-baseline-against-athlete.md) — Garmin pre-fills reps from the prescription; uniform reps = fiction; the athlete's account outranks the record
 - [Re-derive, don't inherit](feedback-rederive-not-inherit.md) — rebuild the week's shape from rules + data each morning; a conservative default needs a reason too
