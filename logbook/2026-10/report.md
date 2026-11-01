@@ -390,3 +390,133 @@ Nothing below has been applied. Reply "apply" (all) or "apply 1, 3 …".
    - *Reason: the Oct 25 race showed the 172–176 band under-states his race effort, the fast start is his known failure mode, and the day-before gate read the wrong morning.*
 8. **`training.md` § Chest + Biceps and § Back + Triceps:** Chest slot 3 `3. **Dips** — 3 x 8-12 (weighted bench dip, fixed)` → `3. **Second chest movement** — 3 x 10-12 (incline DB press or DB flye from the rotation group; never a dip)`. Back slot 4 `4. **Triceps isolation** — 3 x 10-15 (cable pushdown)` → `4. **Triceps isolation** — 3 x 10-15 (cable pushdown, alternating with the **weighted bench dip, 3 x 8-15**, the scorecard marker: the dip runs at least every other Back day)`. *Reason: `memory/feedback-no-bench-dip-on-chest-day.md` (Oct 21) asks for the move, and he reads slot 3 as a chest dip. The bench dip is a scorecard marker, so it moves rather than disappears.*
 9. **`running.md` § Weekly Rules:** in the quality bullet, delete "The Option B trial ends at the Oct 25 review (sample void: Oct 9 against a failed gate, Oct 16 cancelled, Oct 20 gated)." The rest of the bullet stands. *Reason: past material; protocols are forward-looking.*
+
+# Run 4 — 2026-11-01 (Oct 26 – Nov 1, Slow cut week 2, post-race ramp)
+
+> Source: live Garmin MCP (activities Oct 25 – Nov 1, sleep summaries Oct 26 – Nov 1, HRV, resting HR, Body Battery, weigh-ins, daily steps, race predictions) and the daily files Oct 26 – Nov 1. Unattended run: nothing in `protocols/` was touched. **None of the nine Run 3 edits has been applied**; the ones that still hold are re-proposed below, and Run 3's edit 6 is folded into the new strength refresh. This week closes October; the November report opens with the trekking week.
+
+## Headline
+
+1. **The ramp landed: 36.05 km over four runs, the first week inside the 36–40 target since the slow cut began**, with 3/3 lifts delivered. ACWR **1.26**. The margin is thin and partly soft: the long run is a Strava import whose 12.85 km (against 12 planned) carries a GPS spike, so the true week is somewhere between ~35.2 and 36.05 km.
+2. **The threshold session put threshold pace back at September level: 3 × 7 min at 4:49/km and ~165 avg HR** (Sep 11 tempo: ~4:51 at 167). That is the race's read (a threshold a little under 5:00) confirmed in training. It ran on the athlete's override of a resting-HR gate, ~41 h after the leg half instead of 48, and all three end-of-rep maxima (174–176) passed the 172 ceiling. It is the fourth quality in a row to lean on the ceiling.
+3. **Recovery did not keep pace with the load.** Resting HR sat at 57–60 for six mornings (Oct 26–31, the +5 rule fired the whole week) before easing to 56, and HRV slid from 67 BALANCED a week ago to **58, UNBALANCED** on Nov 1, under Garmin's LOW line on the last two mornings. Sleep was not the cause (6/7 nights scored ≥70, 5/7 onsets on target). The question of what else is in play (alcohol, a cold, stress, medication) has been asked four times since Oct 29 and is unanswered.
+4. **The scale went almost dark: 2 fasted readings, a report breach, and no waist tape for the fifth Monday.** Rate read #1 opens tomorrow (Nov 2 – Nov 22, ≥12 readings) with the trek inside it. The default on a thin series is hold, so the slow cut cannot be steered by data until the scale comes back.
+
+## Week
+
+| Week | Runs (km, avg HR) | km | ACWR | Quality | Strength | Fasted weigh-ins | Sleep ≥70 | Onset ≤23:30 |
+| ---- | ----------------- | -- | ---- | ------- | -------- | ---------------- | --------- | ------------ |
+| **Oct 26 – Nov 1** | easy 8.10 @145 (moderate, with a friend) · easy 7.01 @140 · **threshold 3 × 7, 8.09 @152 (work ~165)** · **long 12.85 @143/163** (Strava import) | **36.05** | **1.26** | 1 (Oct 30) | **3/3** (Back + triceps Oct 26, Legs + shoulders Oct 28 a day late, Chest + biceps Oct 29 at 18/22 sets, abs skipped) | **2/7** ✗ (Oct 28 74.77 post-run, Oct 29 74.89) | **6/7** (75, 77, 83, 70, 78, 64, 71) | **5/7** (21:59, 22:08, 21:58, **00:19**, 22:47, **23:48**, 21:45) |
+
+**ACWR:** 36.05 ÷ mean(20.62, 27.25, 37.02, 29.66) = 36.05 ÷ 28.64 = **1.26** (sweet spot; 1.23 at 12.0 km for the long run).
+
+**Composite load:** **~1,696 min·RPE** over 6 rated sessions (elapsed duration × `workout_rpe` ÷ 10): Back + triceps 77 × 5, easy 56 × 3, Legs + shoulders 55 × 4, easy 50 × 3, Chest + biceps 79 × 6, threshold 50 × 6. **One session unrated**: the imported long run (77 min), which would add ~300–350 at RPE 4–4.5. Against the four preceding weeks (679, 1,367, 1,549, 1,614; mean 1,302) that is **1.30×** on the rated sessions alone, ~1.55× with the long run counted. The highest on record, in a week that also carried six mornings of elevated resting HR.
+
+**Steps:** 9,278/day (6,608 · 3,332 · 16,134 · 13,643 · 12,648 · 7,140 · 5,441; Nov 1 misses the run, the watch was dead). Context only.
+
+**Social days:** none reported; whether Friday Oct 30 was one was asked twice and not answered. **Snack days:** none reported. **Daily lines:** 3 of 7 (Oct 26 5/5, Oct 29 4/5, Oct 30 4/5); Oct 27, Oct 28, Oct 31 and Nov 1 are missing.
+
+## Session reads
+
+- **Oct 28 easy + Legs + shoulders:** 8.10 km at 6:58/km and avg 145 (moderate by the rule; run and chatting with a friend, the athlete's note). The leg half ran a day late after the Oct 27 miss: RDL 55, 55, 60 and OHP 35, 30, 30 (set 1 at the scorecard load, reps unverified, not promoted). 20 of 21 sets.
+- **Oct 29 easy + Chest + biceps (PT):** 7.01 km at 7:10/km and avg 140, alone; the last 3 km drifted to 142–145 on a climb. Chest + biceps 18/22 sets on the athlete's account (the watch ran the pre-correction workout): bench 45 × 10 then 50 × 8, 8, 10; incline DB press 20 × 10 × 3 in place of the dips; hammer 14 × 12 × 3. Abs skipped, reason not given.
+- **Oct 30 threshold 3 × 7 min:** reps 4:46 / 4:57 / 4:44 at 165 / 167 / 162 avg, maxima 174 / 175 / 176, walk recoveries to 143–149. The stop rule (two end-of-rep maxima over 172) was passed after rep 2 and rep 3 was run anyway. Rep 3 was the fastest at the lowest average, which points to the ceiling being a lagging-HR artefact on a 7-minute rep as much as a fatigue signal. That is a question for the next review of the ceiling rule, not a reason to drop it.
+- **Nov 1 long run (Strava import, watch battery died):** 12.85 km, avg 143, max 163, 138 m of climb, 77.5 min elapsed. Avg 1 bpm over the 142 cap; the max is 18 bpm over the 145 drift ceiling and unexplained (hills, a surge, or a fast finish; asked). One lap, no splits, no RPE, and a 10.1 m/s max-speed spike, so **the pace is not usable** (`memory/reference-strava-import-when-watch-dies.md`).
+- **Strength:** loads for `strength-exercises.md` are in edit 11. The headline numbers: **hammer curl reached 14 × 12 across** (the load-up condition), bench dip held +16 × 15 × 3 (Oct 21) and repeated on Back day, chest-supported row back at 20 kg, the cable chop back at 30. The bench is still short of 50 × 10 × 4 (best set 50 × 10).
+
+## Running numbers (motivation line, always reported)
+
+- **Garmin 10K prediction: 48:53** (unchanged since Oct 25), HM 1:54:45, 5K 23:46. ≤50:30 by Dec 1: met. **≤48:30 by Apr 1: 23 s away.**
+- **Quality at target HR: 4:49/km at ~165** over 21 min of work (Sep 11: ~4:51 at 167; Oct 9: ~5:00 at 167–171). The October slide is closed.
+- **Control run:** still **132, entry 1 of 3**. Entry 2 was moved to Oct 28 and became an outdoor easy with a friend. It is due tomorrow; no read until three entries exist.
+- **Long-run pace-at-HR:** **no valid read** (Strava import, GPS spike). Avg HR 143 over 12.85 km with 138 m of climb is the only usable number. The last clean reference is still Sep 20 (~6:28–6:33 at 138–141).
+- **Easy pace-at-HR (outdoor):** 7:10/km at 140 alone (Oct 29, 36 m climb) against 6:58 at 145 with a friend (Oct 28). Neither is a matched route.
+- **Spring sub-47 needs 4:42/km.** Threshold work at 4:49 and a 49:27 race say ~2:30 is still the gap.
+
+## Recovery and sleep
+
+- **HRV:** overnight 57 → 58 → 69 → 59 → 60 → 52 → **54**; weekly 67 BALANCED (Oct 25) → **58 UNBALANCED** (Nov 1). Under the LOW line (55) on Oct 31 and Nov 1. The 15%-for-3-days rule did not fire.
+- **Resting HR:** 60 → 59 → 57 → 60 → 59 → 56 → **56** (baseline 52). The +5 rule fired Oct 26–31 and was applied (Thursday 7 km, the long run first set at 11). Six mornings at +5 after a maximal 10K is longer than the race explains; SpO2 and respiration stayed normal, so there is no sign of illness in the data.
+- **Sleep:** 6/7 scored ≥70 and onset was on target 5/7. The two late onsets (Oct 28→29 00:19, Oct 30→31 23:48) are under the ≥3 flag. The Oct 30→31 night (onset 23:48, sleep stress 33, HRV 52) reads like a late Friday evening.
+- **Read:** this is the first week of the ramp, and it stacked a race recovery, a moderate run, a quality on an overridden gate and the highest composite load on record. The markers are drifting, not crashing, and the trek week (exempt, no strength) follows. **No fallback week is needed**, but the first post-trek week (Nov 9) should open only when HRV is back in the band.
+
+## Body composition and nutrition
+
+- **Fasted series:** Oct 28 **74.77** (fasted, after the run, likely ~0.5–0.9 low) · Oct 29 **74.89** (post-void; 75.31 pre-void). **Mean 74.83 kg on 2 readings**, against 75.70 on 4 the week before. Oct 20 – Nov 1 is the glycogen-water window and enters no read, so the −0.87 kg says the carb step happened, nothing about tissue.
+- **Waist tape:** not recorded, fifth Monday in a row. The slow cut's fat channel still has no first entry.
+- **Tiers:** unchanged. No read is possible before Nov 22.
+- **Day-type discipline:** every day ran on its tier and the food was re-tuned meal by meal (Oct 30 re-sequenced for the morning run, Nov 1 eggs and oats for the shake). No skipped session needed re-tiering: the Oct 27 miss fell on a day already on the Easy-Strength tier, and the session moved to Oct 28 rather than disappearing.
+
+## Breaches since the last report (Oct 25)
+
+1. **Oct 27 — Legs + shoulders: not delivered, no reason given (breach).** It was delivered on Oct 28, so the week still closed 3/3, but the Oct 27 file keeps the breach.
+2. **Weigh-ins 2/7 (<4): report breach.** No reason given.
+
+Not breaches, and on file as overrides: the Oct 30 quality on a failed resting-HR gate, ~41 h after the leg half and through the stop rule; the Oct 28 easy run at avg 145 (reason given). Open, with no reason: the skipped abs on Oct 29, and the Nov 1 long-run max of 163.
+
+## Protocol sync check (2026-11-01 run)
+
+- **Unrecorded decisions swept.**
+  - (a) The Oct 30 override is in the daily file with its reason; it has a live consequence only through the composite-load spike, so it goes in the coaching log row (edit 10), not a rule change.
+  - (b) **The long run went from the written 11 km to 12 km on Nov 1**, inside the rules (the RHR rule had stopped firing). Recorded in the Nov 1 file; nothing to propagate.
+  - (c) **The Nov 15 gate was misread in the daily files.** The Oct 30, Oct 31 and Nov 1 plans said read #1 "already fails" because resting HR was never ≤55 this week. The rule reads the **7 mornings before Nov 15** (Nov 9–15), not this week. On km it passes for the Oct 26 week, but only just (36.05 on the recorded distance, with GPS doubt). **Read #1 is live**, and it now depends on ≥36 km plus the long run in the Nov 9 week and on the Nov 9–15 mornings. Corrected here; the Nov 2 plan should carry it.
+  - (d) The Strava-import route is new; written to memory directly (`reference-strava-import-when-watch-dies.md`).
+- **Cross-file consistency.** `.claude/commands/report.md` step 6 still lists the prediction milestones as "≤50:30 Oct 18 · ≤49:30 Dec 1 · ≤48:30 Apr 1"; `current-status.md` and `calendar.md` have ≤50:30 by Dec 1 (met) and ≤48:30 by Apr 1 (edit 12). The Run 3 inconsistencies are unchanged because none of its edits was applied: the Athlete Profile still carries the 49:57 PR, the Oct 25 race row is still in the future tense, and the Key Metrics snapshot is dated Oct 21. The Phase 8 tiers still sum (carbs = (tier − 1,220) ÷ 4: 158 / 183 / 258 / 308 ✓). HR anchors (142 / 145 / 172) and the volume band (floor 30, target 36–40) agree across `running.md`, `training.md`, `current-status.md` and `AGENTS.md`.
+- **Staleness.** `current-status.md` is **13 days** past its Last verified date because the Run 3 edits are still waiting. The Oct 25 race material moves out on apply (edits 4 and 7). The trekking line in § Active Constraints stays until Nov 8.
+- **Memory.** Added `reference-strava-import-when-watch-dies.md`.
+- **Calendar.** Nothing to move to Done (the Upcoming table already starts at Nov 2). Nothing overdue. **Next 4 weeks:** Nov 2 the exempt trekking week opens (trek Nov 4–8), with control-run entry 2 and the waist tape on Monday; Nov 9 the Dec 12 hill prep starts (incline threshold on the treadmill); Nov 15 second-quality gate read #1; Nov 16 hill strides; Nov 22 rate read #1 (≥12 readings Nov 2–22) and the fallback gate read; Nov 29 the long run reaches 16 km (the steps run 12 → 13.5 → 15 → 16 over Nov 1 / 15 / 22 / 29, since Nov 8 is the trek).
+
+## Actions
+
+1. **The scale, every morning, including the trek where a scale exists.** Rate read #1 needs 12 readings in 21 days and the trek takes five of them. Below 12 the read holds by default, and the first steer of the slow cut slides to Dec 20.
+2. **Tomorrow: control-run entry 2 and the first waist tape.** If resting HR is ≥57, the control run is a shadow reading and runs as a plain easy run; entry 2 then waits for Nov 9.
+3. **No quality before the trek unless HRV is back in its band.** The trek is five days of load on its own. The week after it opens with an easy run, not the threshold, if HRV is still under 60.
+4. **Answer the open question:** what kept resting HR at 57–60 for six mornings (alcohol, a cold, stress, medication)? If it was social evenings, they go in the count, and that count is the first lever the Nov 22 read looks at.
+5. **The daily line, one tap a night.** 3 of 7 this week.
+6. **Reply "apply" to write the protocol edits below**, or "apply" with numbers. Edits 1–2 clear the staleness flag; edit 7 (the Dec 12 race rule) is the one with consequences.
+
+## Phase status
+
+**Phase 8 (Slow cut), week 2 of 25, done; week 3 (Nov 2–8) is the declared exempt trekking week**: no volume floor, no strength expected, the Long tier on hiking days. Rate read #1's window opens tomorrow. **No fallback week is needed.**
+
+### Proposed protocol edits
+
+Nothing below has been applied. Reply "apply" (all) or "apply 1, 3 …". Edits 3, 4, 5, 7, 8 and 9 are Run 3's edits of the same numbers, re-proposed unchanged; Run 3's edit 6 is replaced by edit 11.
+
+1. **`current-status.md` header:** `> Last verified: 2026-10-19` → `> Last verified: 2026-11-01`. *Reason: the weekly report ran.*
+2. **`current-status.md` § Key Metrics**, snapshot note → "snapshot 2026-11-01", rows:
+   - Sleep: **7.53 h**, score **71**, onset 21:45 (2026-11-01).
+   - HRV: overnight **54**, weekly **58 — UNBALANCED** (2026-11-01; under LOW 55 on Oct 31 and Nov 1).
+   - Resting HR: **56 bpm** (baseline 52) (2026-11-01). Notes → "The +5 rule fired Oct 26–31."
+   - Body Battery: **27 → 78 (+51)** (2026-11-01).
+   - Weight: **74.83 kg**, mean of 2 fasted readings (Oct 28 74.77 post-run, Oct 29 74.89). Notes → "Glycogen window Oct 20 – Nov 1 enters no rate read; read #1 window Nov 2 – 22 needs ≥12."
+   - Race prediction: **10K 48:53** / HM 1:54:45 (2026-11-01). Notes → "≤50:30 by Dec 1 met Oct 25; next ≤48:30 by Apr 1."
+   - § Body Composition, `Current` row → `**74.89 kg** fasted post-void (Oct 29); Oct 28 74.77 fasted post-run. Two readings Oct 26 – Nov 1 | 2026-10-29 | scale, weight channel only`.
+   - *Reason: the snapshot is dated Oct 21.*
+3. **`current-status.md` § Athlete Profile:** the PR line, as Run 3 edit 3. *Reason: new PR.*
+4. **`current-status.md` § Race Schedule:** the Oct 25 row and the milestone line, as Run 3 edit 4. *Reason: the race is past and the milestone was met.*
+5. **`current-status.md` § Coaching Log:** the 2026-10-25 row, as Run 3 edit 5. *Reason: a race result and an override with live consequences.*
+6. *(Run 3 edit 6: replaced by edit 11.)*
+7. **`running.md` § Race Execution** (+ the Dec 12 rows in `current-status.md` § Race Schedule and `calendar.md`), as Run 3 edit 7. *Reason: the Oct 25 race showed the 172–176 band under-states his race effort; gates read race morning.*
+8. **`training.md` § Chest + Biceps / § Back + Triceps:** the dip moves from Chest slot 3 to Back slot 4, as Run 3 edit 8. *Reason: `memory/feedback-no-bench-dip-on-chest-day.md`. On Oct 29 the athlete already did incline DB press in that slot, and the dip ran on Back day Oct 26, so the edit matches what he does.*
+9. **`running.md` § Weekly Rules:** delete the Option B sentence, as Run 3 edit 9. *Reason: past material.*
+10. **`current-status.md` § Coaching Log, add:** `| 2026-11-01 | **Slow cut week 2 (Oct 26 – Nov 1): the ramp landed** at 36.05 km over 4 runs (long run a Strava import, watch died; ~35.2–36.05 km), ACWR 1.26, lifts 3/3, threshold 3 × 7 at 4:49/km @ ~165 (back to September). The quality ran on the athlete's override of the resting-HR gate, ~41 h after the leg half; composite load the highest on record (~1,696 rated, ~1.3× the 4-week mean). RHR +5 rule fired Oct 26–31 (cause unanswered); HRV 67 BALANCED → 58 UNBALANCED. **Breaches:** Oct 27 Legs + shoulders (no reason; delivered Oct 28), weigh-ins 2/7 | Rate read #1 (Nov 2–22) at risk on the reading count; the Nov 15 gate reads Nov 9–15 mornings and is live |`. *Reason: the week has live consequences for the Nov 15 and Nov 22 reads.*
+11. **`strength-exercises.md`, Oct 21 – Oct 29 refresh** (Last logged on each row as given; reps the watch pre-filled are marked unverified, and the athlete's account outranks the record):
+    - Banner: `Re-entry Sep 30 – Oct 19` → `Re-entry Sep 30 – Oct 21; build volume from Oct 26`.
+    - Barbell bench press: Notes gain "Oct 21: 50 × 10, then 45 × 8 × 3. Oct 29 (PT): 45 × 10, then 50 × 8, 8, 10." Working load unchanged (50 × 10 × 4); Last logged → 2026-10-29.
+    - Incline DB press: Notes gain "Oct 29: 20 kg/DB × 10 × 3 (in the Chest slot 3 the dip used to hold)." Working load unchanged (22 ceiling); Last logged 2026-07-01 → 2026-10-29.
+    - Low-to-high cable flye: Working load `10 kg × 15, 15, 12 (seeded)` → `10 kg × 15, 15, 14, 12` (Oct 21). Notes gain "Oct 29 (PT): cable flye 15 kg × 3 then 20, reps 15 (likely pre-filled; variation unconfirmed), not promoted." Last logged → 2026-10-29.
+    - Hammer curl: Working load `14 kg × 10, 10` → `**14 kg × 12, 12, 12**` (Oct 29, athlete's account; Oct 21 12, 11, 11, 11). Notes: "12 across reached: **load-up to 16 kg next**." Last logged → 2026-10-29.
+    - Bench dip (weighted): Working load `+16 kg × 15, 15, 14` → `**+16 kg × 15, 15, 15**` (Oct 21). Notes gain "Oct 26 (Back day): +16 × 3, reps unverified. **Next: +18**, on Back day." Last logged → 2026-10-26.
+    - Lat pulldown: Notes gain "Oct 26: 100 × 4 sets (reps unverified)." Working load unchanged; Last logged → 2026-10-26.
+    - Chest-supported DB row: Notes gain "Oct 26: 20 kg × 4 sets (reps unverified), two above the prescription; 20 holds." Last logged 2026-08-13 → 2026-10-26.
+    - Straight-arm cable pulldown: Notes gain "Oct 26: **straight bar**, 15, 20, 20 (reps unverified). A third attachment; not promoted." Last logged → 2026-10-26.
+    - Overhead cable triceps ext: Notes gain "Oct 26: 15 × 3 (1–2 genuine sets). Hold 15." Last logged → 2026-10-26.
+    - Half-kneeling cable chop: Notes gain "Oct 26: 25 × 12, 25 × 12, 30 × 10." Working load (30) holds; Last logged 2026-10-07 → 2026-10-26.
+    - Romanian deadlift: Notes gain "Oct 28: 55, 55, 60 (reps read 5, 6, 6, unverified), RIR 3 prescribed." Working load unchanged; Last logged → 2026-10-28.
+    - Overhead press: Notes gain "Oct 28: 35, 30, 30 (reps read 8, 12, 10, unverified). 35 not promoted; the queued step is still 32.5." Last logged → 2026-10-28.
+    - DB lateral raise: Notes gain "Oct 28: 10 kg × 5 sets (12, 12, 10 recorded on three)." Last logged → 2026-10-28.
+    - Cable reverse fly (X): Working load `10 kg × 15, 12, 12` → `10 kg × 15, 12, 8` (Oct 28, behind the lateral-raise superset; hold 10). Last logged 2026-07-30 → 2026-10-28.
+    - Suitcase carry: Notes gain "Oct 28: 24 kg × 3 × 30 s/side." Last logged 2026-06-17 → 2026-10-28.
+    - *Reason: four sessions (Oct 21, 26, 28, 29) are missing from the source of truth.*
+12. **`.claude/commands/report.md` § Function step 6:** `the Garmin prediction milestone line (≤50:30 Oct 18 · ≤49:30 Dec 1 · ≤48:30 Apr 1 — a motivation line; …)` → `the Garmin prediction milestone line (`current-status.md` § Race Schedule — currently ≤50:30 by Dec 1, met Oct 25, and ≤48:30 by Apr 1; a motivation line; …)`. *Reason: the command doc disagrees with current-status and calendar; it should point at the source, not copy it.*

@@ -90,6 +90,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Typed splits overlap](reference-garmin-typed-splits-overlap.md) — filter INTERVAL_* vs RWD_* before summing; check against total duration
 - [VO2max endpoint](reference-garmin-vo2max-endpoint.md) — unreliable; use the 10K prediction as proxy
 - [Garmin direct-pull fallback](reference-garmin-direct-pull-fallback.md) — MCP down? `uvx --with garminconnect` + the token cache; never block /plan on it
+- [Strava import when the watch dies](reference-strava-import-when-watch-dies.md) — Export Original → Garmin Import Data; HR survives, no splits/RPE/TE; its GPS pace is not a pace-at-HR read
 
 ## Workflow and tooling
 
