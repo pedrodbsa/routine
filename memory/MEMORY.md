@@ -41,6 +41,7 @@ One line per memory. Protocols own the rules; these files hold the corrections, 
 - [Pace-HR calibration](feedback-pace-hr-calibration.md) — quality paces come from his recent sessions at the target HR, never generic tables
 - [Garmin easy paces work](feedback-garmin-easy-paces-work.md) — **corrected 2026-10-18:** the prediction moved with ≥35 km/wk + a weekly long run (Feb–Mar), not easy-pace purity; keep easy days easy but never use this to justify low volume
 - [Walk recovery on intervals](feedback-walk-recovery-intervals.md) — walk, not jog; read end-of-rep max HR, not rep average
+- [Always completes, no stop rules](feedback-always-completes-workout-no-stop-rules.md) — he eases off on the beep and finishes every rep; don't plan in-session stop rules, judge afterwards on rep average HR and pace-at-HR, noting wind (2026-11-03)
 - [Benchmark on matched reps](feedback-benchmark-matched-reps.md) — compare repeat sessions on the warmed-up reps, not session means
 - [Race: start slower, finish fast](feedback-race-start-slower-negative-split.md) — km 1 ~10 s/km slower than goal pace, HR ≤170, close from km 8; expect ~176–180 avg for a 10K (Oct 25 PR 49:27 on 25:24 / 24:03)
 - [Soreness rarely limiting](user-muscle-soreness-rarely-limiting.md) — legs 2–3/10 the day after a PR race; not a constraint on hills/downhills; read recovery from RHR, HRV, sleep
