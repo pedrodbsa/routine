@@ -16,7 +16,6 @@
 
 | Date | Kind | Item | Owner | Source |
 | --- | --- | --- | --- | --- |
-| 2026-11-02 Mon | phase | Nov 2–8 is a declared exempt week (trekking Nov 4–8): no volume floor, no strength expected, tiers unchanged, Long tier on hiking days | athlete | current-status § Weigh-In Series & Monitoring |
 | 2026-11-09 Mon | reminder | Dec 12 hill prep starts: the Nov 9–22 continuous threshold runs on the treadmill with incline changes (3 min 1% / 2 min 3–4%, HR 165–172) | coach | memory/project-dec12-hill-prep.md |
 | 2026-11-16 Mon | reminder | Hill strides (6 × 15 s at 6–8% treadmill, after an easy run) replace the flat strides this week and on Nov 30; none in the Dec 7–13 race week | coach | memory/project-dec12-hill-prep.md |
 | 2026-11-15 Sun | checkpoint | **Second-quality gate, read #1** for the week of Nov 16 (athlete's call 2026-10-20): ≥36 km in the weeks of Oct 26 and Nov 9, the long run in both, RHR ≤55 and HRV in band on ≥5 of 7 mornings, the lifts delivered. The Nov 16 week is laid out for it (Legs not on Thursday) | coach | running.md § Weekly Rules |
@@ -64,6 +63,7 @@
 | --- | --- | --- | --- |
 | 2026-10-20 | phase | Phase 8 Slow cut started (Oct 20 – Apr 12) on Rest 1,850 / Easy-Strength 1,950 / Quality 2,250 / Long 2,450, P170 / F60 | coach |
 | 2026-10-25 | race | Condeixa 10K (course changed to flat): **49:27** at the 10 km lap (watch, official pending), avg HR 178, negative split 25:24 / 24:03, a PR. Run uncapped on the athlete's override (Oct 24 gate failed on a diazepam-confounded morning; race morning green) | athlete |
+| 2026-11-08 | phase | Exempt trekking week Nov 2–8 closed: 12.53 km run, 107.9 km walked over five trek days (Nov 4–8), lifts 1/3, ACWR 0.39; HRV 63 → 40 LOW, RHR 60–62 on Nov 4–8 | athlete |
 | 2026-10-25 | checkpoint | Option B trial ended (sample void). One quality a week from Oct 26, the leg half back, the ramp to 36–40 km | coach |
 | 2026-09-29 | todo | Garmin profile: height 170 cm, Thursday added to the training days | athlete |
 | 2026-09-29 | todo | Buy a door pull-up bar (pull-up practice, `training.md` § Pull-up practice) | athlete |
